@@ -507,6 +507,70 @@ def make_story(g, pool, sims):
     }
 
 
+POSIBLES_MAX = 60          # tope total de la pestaña "Posibles noticias"
+POSIBLES_PER_CHIP = 8      # tope por categoría/región
+POSIBLES_MIN_PER_CHIP = 3  # se reservan hasta 3 por categoría/región para que no las tapen otras
+
+
+def build_posibles(candidates, out_cats, region_labels):
+    """Grupos con 2-4 medios distintos que no están en ninguna pestaña de consenso (5+).
+    Se descarta cualquier grupo que comparta una nota con una historia ya confirmada, y los
+    grupos repetidos entre el corpus general, el regional y el cripto se fusionan (se queda el
+    de más medios y se juntan las etiquetas de categoría/región)."""
+    cat_labels = dict(CATEGORIES) | {"cripto": "Criptomonedas"}
+    confirmed = {src["url"] for c in out_cats if c["id"] not in ("buenas", "posibles")
+                 for s in c["stories"] for src in s["sources"]}
+    kept = []
+    for c in sorted(candidates, key=lambda s: (s["outlets"], bool(s.get("region")), s["_last"]), reverse=True):
+        urls = {src["url"] for src in c["sources"]}
+        if urls & confirmed:
+            continue
+        chips = []
+        if c.get("category") in cat_labels:
+            chips.append(c["category"])
+        if c.get("region") in region_labels:
+            chips.append(c["region"])
+        dup = next((k for k in kept if urls & k["_urls"]), None)
+        if dup:
+            for ch in chips:
+                if ch not in dup["_chips"]:
+                    dup["_chips"].append(ch)
+            continue
+        c["_urls"], c["_chips"] = urls, chips
+        kept.append(c)
+
+    def main_chip(c):
+        # Las regiones mandan para el tope: así Costa Rica o Centroamérica no quedan tapadas.
+        regs = [ch for ch in c["_chips"] if ch in region_labels]
+        return regs[0] if regs else (c["_chips"][0] if c["_chips"] else "otros")
+
+    order = sorted(kept, key=lambda s: (s["outlets"], s["_last"]), reverse=True)
+    chosen, per = [], Counter()
+    for c in order:                      # 1) reserva mínima por categoría/región
+        if per[main_chip(c)] < POSIBLES_MIN_PER_CHIP:
+            chosen.append(c)
+            per[main_chip(c)] += 1
+    for c in order:                      # 2) relleno por medios y recencia, con tope por etiqueta
+        if len(chosen) >= POSIBLES_MAX:
+            break
+        if c not in chosen and per[main_chip(c)] < POSIBLES_PER_CHIP:
+            chosen.append(c)
+            per[main_chip(c)] += 1
+    chosen.sort(key=lambda s: (s["outlets"], s["_last"]), reverse=True)
+    chosen = chosen[:POSIBLES_MAX]
+    out = []
+    for i, c in enumerate(chosen):
+        c["chips"] = [{"id": ch, "label": cat_labels.get(ch) or region_labels.get(ch)} for ch in c["_chips"]]
+        for k in ("_urls", "_chips", "_last", "category", "region"):
+            c.pop(k, None)
+        c["id"] = f"posibles-{i + 1}"
+        out.append(c)
+    report = {"candidates": len(candidates), "afterDedupe": len(kept), "shown": len(out),
+              "byOutlets": dict(sorted(Counter(c["outlets"] for c in out).items())),
+              "byChip": dict(Counter(ch["id"] for c in out for ch in c["chips"]))}
+    return out, report
+
+
 def main():
     now = datetime.now(timezone.utc)
     ok_feeds, failed = [], []
@@ -569,6 +633,7 @@ def main():
     groups, sims = cluster(pool, idf, df)
 
     stories_by_cat = defaultdict(list)
+    candidates = []          # grupos de 2-4 medios: van a "Posibles noticias"
     debug_rows = []
     for g in groups:
         members = [pool[i] for i in g]
@@ -584,6 +649,8 @@ def main():
             cat = "guerras"
         debug_rows.append((cat, len(orgs), members))
         if len(orgs) < MIN_OUTLETS:
+            story["category"] = cat
+            candidates.append(story)
             continue
         stories_by_cat[cat].append(story)
 
@@ -604,6 +671,9 @@ def main():
             try:
                 import cripto
                 crypto_stories, crypto_report, crypto_debug = cripto.build(now, pool)
+                for c in crypto_report.pop("_candidates", []):
+                    c["category"] = "cripto"
+                    candidates.append(c)
                 out_cats.append({"id": "cripto", "label": "Criptomonedas", "minOutlets": cripto.MIN_OUTLETS,
                                  "stories": crypto_stories})
                 summary_counts["cripto"] = len(crypto_stories)
@@ -620,9 +690,12 @@ def main():
 
     # Pestañas regionales: 5+ medios distintos, región por lugares nombrados (ver regiones.py).
     region_report = None
+    region_labels = {}
     try:
         import regiones
         reg_cats, region_report, reg_debug = regiones.build(now, pool, {f[1] for f in FEEDS})
+        candidates.extend(region_report.pop("_candidates", []))
+        region_labels = dict(regiones.REGIONS)
         out_cats.extend(reg_cats)
         for c in reg_cats:
             summary_counts[c["id"]] = len(c["stories"])
@@ -636,6 +709,17 @@ def main():
     except Exception as exc:  # nunca romper la actualización principal
         region_report = {"error": f"{type(exc).__name__}: {exc}"}
         print("regiones FAIL", type(exc).__name__, exc)
+
+    # Pestaña "Posibles noticias": grupos de 2-4 medios distintos que NO llegaron a 5.
+    try:
+        posibles, posibles_report = build_posibles(candidates, out_cats, region_labels)
+        out_cats.append({"id": "posibles", "label": "Posibles noticias", "minOutlets": 2,
+                         "maxOutlets": MIN_OUTLETS - 1, "stories": posibles})
+        summary_counts["posibles"] = len(posibles)
+        print("posibles", posibles_report)
+    except Exception as exc:
+        posibles_report = {"error": f"{type(exc).__name__}: {exc}"}
+        print("posibles FAIL", type(exc).__name__, exc)
 
     # Pestaña "Buenas noticias": basta 1 fuente confiable (ver buenas.py).
     good_report = None
@@ -673,6 +757,7 @@ def main():
         "goodNews": good_report,
         "crypto": crypto_report,
         "regions": region_report,
+        "possible": posibles_report,
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print("clusters", len(groups), "consensus", summary_counts)

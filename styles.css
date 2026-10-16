@@ -73,3 +73,6 @@ h1 { margin: 0; font-family: Georgia, "Iowan Old Style", Palatino, serif; font-s
 .outlets.one { background: transparent; color: inherit; opacity: .75; }
 .note { font-size: .85rem; opacity: .8; margin: 0 0 12px; }
 .reddit { font-size: .78rem; opacity: .75; margin: 8px 0 0; }
+.chip { font-size: .72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #eef0f3; color: #3c4653; }
+.outlets.maybe { background: #fff3e0; color: #8a4b00; }
+.note.warn { background: #fff8e6; border-left: 3px solid #e0a100; }

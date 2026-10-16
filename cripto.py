@@ -104,6 +104,7 @@ def build(now, general_pool):
         results = list(ex.map(A.fetch_feed, CRYPTO_FEEDS))
 
     pool, seen = [], set()
+    candidates = []  # grupos de 2-4 medios para "Posibles noticias"
     feeds_ok, feeds_failed, rejected = [], [], Counter()
 
     def add(it):
@@ -184,6 +185,8 @@ def build(now, general_pool):
             if len(orgs) >= 2:
                 debug.append((len(orgs), members))
             if len(orgs) < MIN_OUTLETS:
+                if len(orgs) >= 2:
+                    candidates.append(A.make_story(g, pool, sims))
                 continue
             stories.append(A.make_story(g, pool, sims))
     stories.sort(key=lambda s: (s["outlets"], s["_last"]), reverse=True)
@@ -194,6 +197,7 @@ def build(now, general_pool):
 
     org_counts = Counter(len({pool[i]["org"] for i in g}) for g in groups)
     report = {
+        "_candidates": candidates,
         "minOutlets": MIN_OUTLETS,
         "feedsOk": feeds_ok, "feedsFailed": feeds_failed,
         "knownFails": [{"id": a, "url": b, "error": c} for a, b, c in CRYPTO_KNOWN_FAILS],

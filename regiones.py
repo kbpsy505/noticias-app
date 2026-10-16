@@ -250,12 +250,16 @@ def fold(s):
     return A.fold(s).lower()
 
 
+# Nombres que contienen un lugar pero no hablan de él (grupo británico "Palestine Action").
+NOT_PLACE = re.compile(r"palestine action")
+
+
 def region_votes(members):
     votes, kw_orgs, local_orgs = Counter(), {}, {}
     us = 0
     for m in members:
-        t = fold(m["title"])
-        su = fold(m["summary"][:200])
+        t = NOT_PLACE.sub(" ", fold(m["title"]))
+        su = NOT_PLACE.sub(" ", fold(m["summary"][:200]))
         for r, rx in KW.items():
             n = 2 * len(rx.findall(t)) + len(rx.findall(su))
             if n:
@@ -267,21 +271,35 @@ def region_votes(members):
     return votes, us, kw_orgs, local_orgs
 
 
-def pick_region(members):
+def pick_region(members, loose=False):
     """Región de un grupo: la más nombrada, pero solo si al menos 2 medios distintos nombran
     un lugar de esa región y, entre medios que la nombran y medios locales de ella, suman
     la mitad de los medios del grupo. Así una noticia global (p. ej. un producto de Tesla)
     no cae en una región solo porque la cubren medios de allí."""
     votes, us, kw_orgs, local_orgs = region_votes(members)
+    if loose and len(local_orgs) == 1:
+        # Para "Posibles noticias": si todos los medios del grupo son de una misma región,
+        # la nota es de esa región aunque no nombre el lugar (p. ej. dos medios ticos).
+        (r, lo), = local_orgs.items()
+        if lo == {m["org"] for m in members} and us <= max(votes.get(r, 0), 1) * 1.5:
+            return r, votes
     if not votes:
         return None, votes
+    orgs = {m["org"] for m in members}
+    if loose:
+        # Si la mitad o más de los medios son de una región que además se nombra, es de esa región
+        # (p. ej. medios venezolanos sobre Diosdado Cabello aunque el titular diga "Suiza").
+        for r, lo in sorted(local_orgs.items(), key=lambda x: -len(x[1])):
+            if len(lo) * 2 >= len(orgs) and votes.get(r, 0) > 0 and us <= votes[r] * 1.5:
+                if r in ("centroamerica", "latam") and votes.get("costarica", 0) >= votes[r] * 0.6:
+                    r = "costarica"
+                return r, votes
     best, n = votes.most_common(1)[0]
     # Costa Rica es parte de Centroamérica: si hay señales de ambas y CR pesa, va a Costa Rica.
-    if best == "centroamerica" and votes.get("costarica", 0) >= n * 0.6:
+    if best in ("centroamerica", "latam") and votes.get("costarica", 0) >= n * 0.6:
         best, n = "costarica", votes["costarica"]
     if us > n * 1.5:
         return None, votes          # historia sobre todo de EE. UU.
-    orgs = {m["org"] for m in members}
     named = kw_orgs.get(best, set())
     support = named | local_orgs.get(best, set())
     if len(named) < 2 or len(support) * 2 < len(orgs):
@@ -339,19 +357,25 @@ def build(now, general_pool, main_feed_urls):
     groups, sims = A.cluster(pool, idf, df)
 
     by_region = defaultdict(list)
+    candidates = []    # grupos de 2-4 medios con región, para "Posibles noticias"
     near = Counter()   # grupos con 3-4 medios por región (para el informe)
     debug = []
     for g in groups:
         members = [pool[i] for i in g]
         k = len({m["org"] for m in members})
-        if k < 3:
+        if k < 2:
             continue
-        region, votes = pick_region(members)
+        region, votes = pick_region(members, loose=k < A.MIN_OUTLETS)
         if not region:
             continue
-        debug.append((region, k, members))
+        if k >= 3:
+            debug.append((region, k, members))
         if k < A.MIN_OUTLETS:
-            near[region] += 1
+            if k >= 3:
+                near[region] += 1
+            c = A.make_story(g, pool, sims)
+            c["region"] = region
+            candidates.append(c)
             continue
         s = A.make_story(g, pool, sims)
         s["region"] = region
@@ -368,6 +392,7 @@ def build(now, general_pool, main_feed_urls):
         cats.append({"id": rid, "label": label, "group": "region", "minOutlets": A.MIN_OUTLETS, "stories": lst})
 
     report = {
+        "_candidates": candidates,
         "minOutlets": A.MIN_OUTLETS,
         "feedsOk": feeds_ok, "feedsFailed": feeds_failed,
         "knownFails": [{"id": a, "url": b, "error": c} for a, b, c in REGION_KNOWN_FAILS],

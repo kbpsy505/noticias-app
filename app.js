@@ -77,8 +77,9 @@ function card(s) {
   const art = el("article", "card");
   const top = el("div", "cardtop");
   if (s.subtopicLabel) top.append(el("span", "subtopic st-" + s.subtopic, s.subtopicLabel));
+  (s.chips || []).forEach((c) => top.append(el("span", "chip", c.label)));
   if (!s.subtopic || s.outlets > 1) {
-    top.append(el("span", "outlets" + (s.outlets >= 5 ? " hot" : ""), s.outlets + " medios"));
+    top.append(el("span", "outlets" + (s.outlets >= 5 ? " hot" : "") + (state.cat === "posibles" ? " maybe" : ""), s.outlets + " medios"));
   } else {
     top.append(el("span", "outlets one", s.outletNames[0]));
   }
@@ -135,9 +136,13 @@ function renderList() {
     let msg = "En esta actualización ninguna historia de esta categoría fue publicada por 5 o más medios distintos. Vuelve a revisar en la próxima actualización.";
     if (state.cat === "buenas") msg = "Ahora mismo no hay buenas noticias confirmadas por un medio confiable.";
     if (cat && cat.group === "region") msg = "En esta actualización ninguna noticia de " + cat.label + " fue publicada por 5 o más medios distintos. Vuelve a revisar en la próxima actualización.";
+    if (state.cat === "posibles") msg = "En esta actualización no hay historias publicadas por 2 a 4 medios distintos fuera de las ya confirmadas.";
     if (state.cat === "cripto") msg = "En esta actualización ninguna noticia de criptomonedas fue publicada por 5 o más medios distintos, así que no hay nada verificado que mostrar. Vuelve a revisar en la próxima actualización.";
     list.append(el("p", "empty", msg));
     return;
+  }
+  if (cat.id === "posibles") {
+    list.append(el("p", "note warn", "Sin confirmar todavía: estas historias las publican solo 2 a 4 medios distintos, no los 5 o más que exigen las demás pestañas. Pueden ser ciertas, pero tómalas con cautela. Si más medios las publican, pasan a su pestaña."));
   }
   if (cat.id === "cripto") {
     list.append(el("p", "note", "Solo noticias de criptomonedas verificadas por 5 o más medios distintos. Sin comunicados, contenido patrocinado ni predicciones de precio."));

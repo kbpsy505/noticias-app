@@ -75,6 +75,15 @@ Agregar un resumen escrito por IA para cada historia de consenso, que explique e
 - La región sale de los lugares, países y personajes que nombran los titulares y resúmenes. Para asignarla, al menos 2 medios distintos deben nombrar un lugar de esa región, y entre esos y los medios locales de la región deben sumar la mitad del grupo. Las historias que son sobre todo de EE. UU. no van a ninguna región. Una historia puede salir también en su pestaña de tema.
 - Informe en `noticias.json` → `regions` (feeds que fallaron, medios locales activos por región, grupos de 3–4 medios que no llegaron a 5).
 
+## Pestaña "Posibles noticias"
+
+Historias **sin confirmar** que publican **2 a 4 medios distintos** (no llegaron a los 5 de consenso). Salen de los mismos agrupamientos de las pestañas de tema, de región y de cripto. Cada tarjeta lleva etiquetas de categoría/región, el número de medios y las fuentes.
+
+- Nada se repite con las pestañas de consenso: se descarta cualquier grupo que comparta una nota con una historia de 5+ medios. Los grupos repetidos entre corpus se fusionan.
+- Orden: más medios primero y luego lo más reciente. Hay tope de 60 en total y 8 por categoría/región, y se reservan hasta 3 por cada una para que Costa Rica o Centroamérica no queden tapadas (`POSIBLES_*` en `actualizar.py`).
+- Si todos los medios de un grupo son de la misma región, o la mitad lo son y la región se nombra, la historia va a esa región aunque el titular no diga el lugar.
+- Informe en `noticias.json` → `possible`.
+
 ## Pestaña "Criptomonedas"
 
 `cripto.py` arma una pestaña con consenso estricto: una noticia de criptomonedas solo aparece si la publican **5 o más medios distintos** (misma regla de organizaciones que el resto).
