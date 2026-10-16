@@ -375,10 +375,12 @@ def cos(a, b):
     return sum(v * b.get(w, 0.0) for w, v in a.items())
 
 
-def cluster(items, idf, df):
+def cluster(items, idf, df, n_ref=None):
+    """n_ref: tamaño del corpus con el que se calcularon idf/df (si es mayor que items)."""
     n = len(items)
-    rare_cut = math.log((n + 1) / (max(4, n * 0.012) + 0.5))   # término "distintivo"
-    common_cut = n * 0.06
+    N = n_ref or n
+    rare_cut = math.log((N + 1) / (max(4, N * 0.012) + 0.5))   # término "distintivo"
+    common_cut = N * 0.06
     index = defaultdict(list)
     for i, it in enumerate(items):
         for w in it["_all"]:
@@ -459,6 +461,51 @@ def next_cron(now: datetime) -> datetime:
     return base.replace(hour=0) + timedelta(hours=h)
 
 
+def make_story(g, pool, sims):
+    """Arma la tarjeta de un grupo: titular y resumen por idioma (el más central), medios y fuentes."""
+    members = [pool[i] for i in g]
+    orgs = {m["org"] for m in members}
+
+    def centrality(i):
+        return sum(sims.get((min(i, j), max(i, j)), 0.0) for j in g if j != i)
+    by_lang = {}
+    for lang in ("es", "en"):
+        cands = [i for i in g if pool[i]["lang"] == lang]
+        if cands:
+            cands.sort(key=lambda i: (centrality(i), len(pool[i]["summary"]) > 60), reverse=True)
+            by_lang[lang] = cands
+
+    def best_summary(lang):
+        for i in by_lang.get(lang, []):
+            if len(pool[i]["summary"]) >= 60:
+                return pool[i]["summary"], pool[i]["source"]
+        return None, None
+
+    ts = [m["_ts"] for m in members]
+    es_sum, es_src = best_summary("es")
+    en_sum, en_src = best_summary("en")
+    head_es = pool[by_lang["es"][0]]["title"] if "es" in by_lang else None
+    head_en = pool[by_lang["en"][0]]["title"] if "en" in by_lang else None
+    sources = []
+    for m in sorted(members, key=lambda m: m["_ts"]):
+        sources.append({"source": m["source"], "lang": m["lang"], "title": m["title"],
+                        "url": m["url"], "publishedAt": m["publishedAt"]})
+    return {
+        "headline": head_es or head_en,
+        "headlineLang": "es" if head_es else "en",
+        "headlineEs": head_es,
+        "headlineEn": head_en,
+        "summaryEs": es_sum, "summaryEsSource": es_src,
+        "summaryEn": en_sum, "summaryEnSource": en_src,
+        "outlets": len(orgs),
+        "outletNames": sorted({m["source"].replace(" Español", "").replace(" English", "") for m in members}),
+        "languages": sorted({m["lang"] for m in members}),
+        "firstSeen": iso(min(ts)), "lastSeen": iso(max(ts)),
+        "sources": sources,
+        "_last": max(ts),
+    }
+
+
 def main():
     now = datetime.now(timezone.utc)
     ok_feeds, failed = [], []
@@ -527,53 +574,17 @@ def main():
         orgs = {m["org"] for m in members}
         if len(orgs) < 2:
             continue
-        # Representante por idioma: el más central del grupo.
-        def centrality(i):
-            return sum(sims.get((min(i, j), max(i, j)), 0.0) for j in g if j != i)
-        by_lang = {}
-        for lang in ("es", "en"):
-            cands = [i for i in g if pool[i]["lang"] == lang]
-            if cands:
-                cands.sort(key=lambda i: (centrality(i), len(pool[i]["summary"]) > 60), reverse=True)
-                by_lang[lang] = cands
-        def best_summary(lang):
-            for i in by_lang.get(lang, []):
-                if len(pool[i]["summary"]) >= 60:
-                    return pool[i]["summary"], pool[i]["source"]
-            return None, None
-
+        story = make_story(g, pool, sims)
         # Categoría por votos; "guerras" y "sucesos" ganan empates porque son más específicas.
         votes = Counter(m["category"] for m in members)
         prio = {"guerras": 6, "sucesos": 5, "ciencias": 4, "finanzas": 3, "politica": 2, "mundo": 1}
         cat = max(votes, key=lambda c: (votes[c], prio[c]))
         if votes.get("guerras", 0) * 3 >= len(members) and cat != "guerras":
             cat = "guerras"
-        ts = [m["_ts"] for m in members]
-        es_sum, es_src = best_summary("es")
-        en_sum, en_src = best_summary("en")
-        head_es = pool[by_lang["es"][0]]["title"] if "es" in by_lang else None
-        head_en = pool[by_lang["en"][0]]["title"] if "en" in by_lang else None
-        sources = []
-        for m in sorted(members, key=lambda m: m["_ts"]):
-            sources.append({"source": m["source"], "lang": m["lang"], "title": m["title"],
-                            "url": m["url"], "publishedAt": m["publishedAt"]})
-        story = {
-            "headline": head_es or head_en,
-            "headlineLang": "es" if head_es else "en",
-            "headlineEs": head_es,
-            "headlineEn": head_en,
-            "summaryEs": es_sum, "summaryEsSource": es_src,
-            "summaryEn": en_sum, "summaryEnSource": en_src,
-            "outlets": len(orgs),
-            "outletNames": sorted({m["source"].replace(" Español", "").replace(" English", "") for m in members}),
-            "languages": sorted({m["lang"] for m in members}),
-            "firstSeen": iso(min(ts)), "lastSeen": iso(max(ts)),
-            "sources": sources,
-            "_last": max(ts),
-        }
         stories_by_cat[cat].append(story)
         debug_rows.append((cat, len(orgs), members))
 
+    crypto_report = None
     out_cats = []
     summary_counts = {}
     for cid, label in CATEGORIES:
@@ -585,6 +596,24 @@ def main():
             s["id"] = f"{cid}-{i + 1}"
         summary_counts[cid] = len(lst)
         out_cats.append({"id": cid, "label": label, "stories": lst})
+        if cid == "finanzas":
+            # Pestaña "Criptomonedas": solo historias con 5+ medios distintos (ver cripto.py).
+            try:
+                import cripto
+                crypto_stories, crypto_report, crypto_debug = cripto.build(now, pool)
+                out_cats.append({"id": "cripto", "label": "Criptomonedas", "minOutlets": cripto.MIN_OUTLETS,
+                                 "stories": crypto_stories})
+                summary_counts["cripto"] = len(crypto_stories)
+                print("cripto", crypto_report["itemsGathered"], "notas,", crypto_report["groupsByOutletCount"])
+                if DEBUG:
+                    with open(ROOT / "debug_cripto.txt", "w", encoding="utf-8") as fh:
+                        for k, members in sorted(crypto_debug, key=lambda r: -r[0]):
+                            fh.write(f"\n=== {k} medios\n")
+                            for m in sorted(members, key=lambda m: m["org"]):
+                                fh.write(f"  {m['lang']} {m['source'][:16]:16s} {m['publishedAt'][5:16]} {m['title'][:105]}\n")
+            except Exception as exc:  # nunca romper la actualización principal
+                crypto_report = {"error": f"{type(exc).__name__}: {exc}"}
+                print("cripto FAIL", type(exc).__name__, exc)
 
     # Pestaña "Buenas noticias": basta 1 fuente confiable (ver buenas.py).
     good_report = None
@@ -612,7 +641,7 @@ def main():
             "feedsFailed": len([f for f in failed]),
             "itemsGathered": len(pool),
             "clusters": len(groups),
-            "consensusStories": sum(v for k, v in summary_counts.items() if k != "buenas"),
+            "consensusStories": sum(v for k, v in summary_counts.items() if k not in ("buenas", "cripto")),
             "perCategory": summary_counts,
         },
         "sourcesUsed": sorted({f["source"] for f in ok_feeds if f["kept"] > 0}),
@@ -620,6 +649,7 @@ def main():
         "feedsOk": ok_feeds,
         "feedsFailed": failed,
         "goodNews": good_report,
+        "crypto": crypto_report,
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print("clusters", len(groups), "consensus", summary_counts)

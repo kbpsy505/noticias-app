@@ -65,3 +65,12 @@ Agregar un resumen escrito por IA para cada historia de consenso, que explique e
 - Filtro solo con código: palabras de progreso (ES/EN) y de impacto medible; se descartan las notas negativas, amarillistas, de relleno (famosos, marcas, momentos virales sin impacto), de opinión y las listas.
 - Reddit (r/UpliftingNews, r/science, etc.) y 9gag solo sirven como pistas: una pista entra únicamente si enlaza a un medio confiable, y lo que se muestra es ese medio.
 - Máximo 40 notas, 5 por medio y 10 por subtema (12 en medio ambiente). El informe completo (feeds, pistas confirmadas y descartadas) queda en `noticias.json` → `goodNews`.
+
+## Pestaña "Criptomonedas"
+
+`cripto.py` arma una pestaña con consenso estricto: una noticia de criptomonedas solo aparece si la publican **5 o más medios distintos** (misma regla de organizaciones que el resto).
+
+- Fuentes: los feeds generales y financieros de la app más medios cripto y de negocios con RSS público (CoinDesk, The Block, Decrypt, Cointelegraph, The Defiant, Unchained, Protos, CryptoSlate, Crypto Briefing, CriptoNoticias, DiarioBitcoin, BeInCrypto, Bloomberg, FT, Expansión, Investing.com…).
+- Se descartan comunicados de prensa (PR Newswire, GlobeNewswire, Business Wire…), contenido patrocinado, predicciones de precio, listas de "monedas para comprar" y airdrops.
+- La agrupación usa el mismo código que las demás pestañas; la rareza de los términos se mide contra todo el corpus del día.
+- Si ninguna noticia llega a 5 medios, la pestaña lo dice en vez de mostrar algo sin verificar. Informe en `noticias.json` → `crypto`.
