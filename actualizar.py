@@ -618,6 +618,25 @@ def main():
                 crypto_report = {"error": f"{type(exc).__name__}: {exc}"}
                 print("cripto FAIL", type(exc).__name__, exc)
 
+    # Pestañas regionales: 5+ medios distintos, región por lugares nombrados (ver regiones.py).
+    region_report = None
+    try:
+        import regiones
+        reg_cats, region_report, reg_debug = regiones.build(now, pool, {f[1] for f in FEEDS})
+        out_cats.extend(reg_cats)
+        for c in reg_cats:
+            summary_counts[c["id"]] = len(c["stories"])
+        print("regiones", region_report["perRegion"], "medios locales", region_report["workingLocalOutletsPerRegion"])
+        if DEBUG:
+            with open(ROOT / "debug_regiones.txt", "w", encoding="utf-8") as fh:
+                for r, k, members in sorted(reg_debug, key=lambda x: (x[0], -x[1])):
+                    fh.write(f"\n=== [{r}] {k} medios\n")
+                    for m in sorted(members, key=lambda m: m["org"]):
+                        fh.write(f"  {m['lang']} {m['source'][:18]:18s} {m['title'][:105]}\n")
+    except Exception as exc:  # nunca romper la actualización principal
+        region_report = {"error": f"{type(exc).__name__}: {exc}"}
+        print("regiones FAIL", type(exc).__name__, exc)
+
     # Pestaña "Buenas noticias": basta 1 fuente confiable (ver buenas.py).
     good_report = None
     try:
@@ -644,7 +663,7 @@ def main():
             "feedsFailed": len([f for f in failed]),
             "itemsGathered": len(pool),
             "clusters": len(groups),
-            "consensusStories": sum(v for k, v in summary_counts.items() if k not in ("buenas", "cripto")),
+            "consensusStories": sum(v for k, v in summary_counts.items() if k in ("sucesos", "politica", "finanzas", "mundo", "ciencias", "guerras")),
             "perCategory": summary_counts,
         },
         "sourcesUsed": sorted({f["source"] for f in ok_feeds if f["kept"] > 0}),
@@ -653,6 +672,7 @@ def main():
         "feedsFailed": failed,
         "goodNews": good_report,
         "crypto": crypto_report,
+        "regions": region_report,
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print("clusters", len(groups), "consensus", summary_counts)
