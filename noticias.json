@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T07:21:31Z",
+ "updatedAt": "2026-10-16T07:25:47Z",
  "nextRefreshAt": "2026-10-16T09:00:00Z",
  "refreshHours": 3,
  "method": {
@@ -9,17 +9,17 @@
   "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 2+ medios distintos."
  },
  "stats": {
-  "feedsOk": 94,
-  "feedsFailed": 10,
-  "itemsGathered": 1837,
+  "feedsOk": 95,
+  "feedsFailed": 9,
+  "itemsGathered": 1838,
   "clusters": 1534,
-  "consensusStories": 91,
+  "consensusStories": 93,
   "perCategory": {
-   "sucesos": 14,
+   "sucesos": 15,
    "politica": 30,
    "finanzas": 19,
    "mundo": 17,
-   "ciencias": 3,
+   "ciencias": 4,
    "guerras": 8
   }
  },
@@ -58,6 +58,7 @@
   "Monumental",
   "NPR",
   "Nature",
+  "New Scientist",
   "Noticias ONU",
   "RFI",
   "RFI Español",
@@ -587,6 +588,44 @@
      "id": "sucesos-5"
     },
     {
+     "headline": "¿Se dirige la industria de los semiconductores hacia un colapso catastrófico?",
+     "headlineLang": "es",
+     "headlineEs": "¿Se dirige la industria de los semiconductores hacia un colapso catastrófico?",
+     "headlineEn": "Is the semiconductor industry headed for an almighty crash?",
+     "summaryEs": "Hay razones para creer que una caída, si llega a producirse, será menos vertiginosa que el auge",
+     "summaryEsSource": "Infobae",
+     "summaryEn": "There are reasons to believe a bust, if it comes, will be less vertiginous than the boom",
+     "summaryEnSource": "The Economist",
+     "outlets": 2,
+     "outletNames": [
+      "Infobae",
+      "The Economist"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T09:04:50Z",
+     "lastSeen": "2026-10-16T07:18:08Z",
+     "sources": [
+      {
+       "source": "The Economist",
+       "lang": "en",
+       "title": "Is the semiconductor industry headed for an almighty crash?",
+       "url": "https://www.economist.com/business/2026/10/15/is-the-semiconductor-industry-headed-for-an-almighty-crash",
+       "publishedAt": "2026-10-15T09:04:50Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "¿Se dirige la industria de los semiconductores hacia un colapso catastrófico?",
+       "url": "https://www.infobae.com/economist/2026/10/16/se-dirige-la-industria-de-los-semiconductores-hacia-un-colapso-catastrofico/",
+       "publishedAt": "2026-10-16T07:18:08Z"
+      }
+     ],
+     "id": "sucesos-6"
+    },
+    {
      "headline": "Un terremoto de magnitud 6,9 sacude la península rusa de Kamchatka",
      "headlineLang": "es",
      "headlineEs": "Un terremoto de magnitud 6,9 sacude la península rusa de Kamchatka",
@@ -621,7 +660,7 @@
        "publishedAt": "2026-10-16T06:19:41Z"
       }
      ],
-     "id": "sucesos-6"
+     "id": "sucesos-7"
     },
     {
      "headline": "Google activa en Panamá sistema de alertas para advertir sobre terremotos",
@@ -658,7 +697,7 @@
        "publishedAt": "2026-10-16T01:03:31Z"
       }
      ],
-     "id": "sucesos-7"
+     "id": "sucesos-8"
     },
     {
      "headline": "Portugal’s Housing Protest Draws Thousands After Police Clashes",
@@ -695,7 +734,7 @@
        "publishedAt": "2026-10-15T23:21:39Z"
       }
      ],
-     "id": "sucesos-8"
+     "id": "sucesos-9"
     },
     {
      "headline": "Mother of Henry Nowak killer could be deported",
@@ -732,7 +771,7 @@
        "publishedAt": "2026-10-15T19:43:07Z"
       }
      ],
-     "id": "sucesos-9"
+     "id": "sucesos-10"
     },
     {
      "headline": "Cargas policiales, altercados y un detenido en Pamplona durante una protesta contra Vito Quiles",
@@ -769,7 +808,7 @@
        "publishedAt": "2026-10-15T19:01:46Z"
       }
      ],
-     "id": "sucesos-10"
+     "id": "sucesos-11"
     },
     {
      "headline": "Cambio de rumbo en el régimen de excepción de El Salvador: Nayib Bukele plantea liberar a la mitad de los presos",
@@ -806,7 +845,7 @@
        "publishedAt": "2026-10-15T19:00:27Z"
       }
      ],
-     "id": "sucesos-11"
+     "id": "sucesos-12"
     },
     {
      "headline": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
@@ -844,7 +883,7 @@
        "publishedAt": "2026-10-15T15:55:14Z"
       }
      ],
-     "id": "sucesos-12"
+     "id": "sucesos-13"
     },
     {
      "headline": "French anti-terror investigators probe True Crime Community link to school shooting",
@@ -881,7 +920,7 @@
        "publishedAt": "2026-10-15T10:14:57Z"
       }
      ],
-     "id": "sucesos-13"
+     "id": "sucesos-14"
     },
     {
      "headline": "Desperate to clear toxic haze, Indonesia douses its skies with dry ice",
@@ -918,7 +957,7 @@
        "publishedAt": "2026-10-15T04:25:03Z"
       }
      ],
-     "id": "sucesos-14"
+     "id": "sucesos-15"
     }
    ]
   },
@@ -1138,6 +1177,83 @@
      "id": "politica-2"
     },
     {
+     "headline": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
+     "headlineLang": "es",
+     "headlineEs": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
+     "headlineEn": "Bolsonaro, Lula in Tight Race Ahead of Runoff, Poll Shows",
+     "summaryEs": "El presidente brasileño, Luiz Inácio Lula da Silva, anunció este jueves 15 de octubre que impulsará una enmienda constitucional para ofrecer transporte gratuito durante los fines de semana, luego de que el Senado aprobara la reducción de la jornada laboral de 44 a 40 horas semanales. Flávio Bolsonaro, su rival en el balotaje, acusó al mandatario de hacer promesas que no cumplirá, mientras una…",
+     "summaryEsSource": "France 24 Español",
+     "summaryEn": "Flávio Bolsonaro and President Luiz Inácio Lula da Silva are locked in a close race ahead of Brazil’s runoff election, according to a new poll.",
+     "summaryEnSource": "Bloomberg",
+     "outlets": 6,
+     "outletNames": [
+      "Bloomberg",
+      "Clarín",
+      "El Comercio (Perú)",
+      "France 24",
+      "Infobae",
+      "RFI"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T09:23:13Z",
+     "lastSeen": "2026-10-16T07:17:53Z",
+     "sources": [
+      {
+       "source": "RFI Español",
+       "lang": "es",
+       "title": "Brasil aprueba reducir la jornada laboral en vísperas del balotaje",
+       "url": "https://www.rfi.fr/es/am%C3%A9ricas/20261015-brasil-aprueba-reducir-la-jornada-laboral-en-v%C3%ADsperas-del-balotaje",
+       "publishedAt": "2026-10-15T09:23:13Z"
+      },
+      {
+       "source": "Bloomberg",
+       "lang": "en",
+       "title": "Bolsonaro, Lula in Tight Race Ahead of Runoff, Poll Shows",
+       "url": "https://www.bloomberg.com/news/articles/2026-10-15/bolsonaro-lula-in-tight-race-ahead-of-brazil-runoff-poll-shows",
+       "publishedAt": "2026-10-15T21:53:59Z"
+      },
+      {
+       "source": "Clarín",
+       "lang": "es",
+       "title": "Nueva promesa electoral de Lula: tras la reducción de la jornada laboral, quiere transporte público gratis los fines de semana",
+       "url": "https://www.clarin.com/mundo/nueva-promesa-electoral-lula-reduccion-jornada-laboral-quiere-transporte-publico-gratis-fines-semana_0_3oPc8BWA1f.html",
+       "publishedAt": "2026-10-15T23:43:47Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Brasil: Lula promete transporte público gratuito los fines de semana",
+       "url": "https://elcomercio.pe/mundo/latinoamerica/elecciones-brasil-2026-luiz-inacio-lula-da-silva-promete-transporte-publico-gratuito-los-fines-de-semana-flavio-bolsonaro-brasilia-sao-paulo-ultimas-noticia/",
+       "publishedAt": "2026-10-16T02:01:06Z"
+      },
+      {
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
+       "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261016-rebaja-de-la-jornada-laboral-y-transporte-gratuito-lula-apunta-a-la-econom%C3%ADa-en-v%C3%ADsperas-del-balotaje",
+       "publishedAt": "2026-10-16T02:10:45Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Flávio Bolsonaro acusa a Lula de mentir sobre anuncio de transporte gratuito en Brasil",
+       "url": "https://elcomercio.pe/mundo/latinoamerica/elecciones-brasil-2026-flavio-bolsonaro-acusa-a-luiz-inacio-lula-da-silva-de-mentir-sobre-anuncio-de-transporte-gratuito-ultimas-noticia/",
+       "publishedAt": "2026-10-16T04:30:59Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Lula da Silva prometió transporte público gratuito los fines de semana en Brasil y Bolsonaro aseguró que no lo cumplirá",
+       "url": "https://www.infobae.com/america/america-latina/2026/10/16/lula-da-silva-prometio-transporte-publico-gratuito-los-fines-de-semana-en-brasil-y-bolsonaro-aseguro-que-no-lo-cumplira/",
+       "publishedAt": "2026-10-16T07:17:53Z"
+      }
+     ],
+     "id": "politica-3"
+    },
+    {
      "headline": "Trump says execution of Fort Hood shooter will not be livestreamed",
      "headlineLang": "en",
      "headlineEs": null,
@@ -1209,75 +1325,6 @@
        "title": "Trump Cancels Planned Execution Livestream of Nidal Hasan, Fort Hood Shooter",
        "url": "https://www.nytimes.com/2026/10/15/us/politics/trump-hasan-fort-hood-execution-livestream.html",
        "publishedAt": "2026-10-16T02:22:17Z"
-      }
-     ],
-     "id": "politica-3"
-    },
-    {
-     "headline": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
-     "headlineLang": "es",
-     "headlineEs": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
-     "headlineEn": "Bolsonaro, Lula in Tight Race Ahead of Runoff, Poll Shows",
-     "summaryEs": "El presidente brasileño, Luiz Inácio Lula da Silva, anunció este jueves 15 de octubre que impulsará una enmienda constitucional para ofrecer transporte gratuito durante los fines de semana, luego de que el Senado aprobara la reducción de la jornada laboral de 44 a 40 horas semanales. Flávio Bolsonaro, su rival en el balotaje, acusó al mandatario de hacer promesas que no cumplirá, mientras una…",
-     "summaryEsSource": "France 24 Español",
-     "summaryEn": "Flávio Bolsonaro and President Luiz Inácio Lula da Silva are locked in a close race ahead of Brazil’s runoff election, according to a new poll.",
-     "summaryEnSource": "Bloomberg",
-     "outlets": 5,
-     "outletNames": [
-      "Bloomberg",
-      "Clarín",
-      "El Comercio (Perú)",
-      "France 24",
-      "RFI"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-15T09:23:13Z",
-     "lastSeen": "2026-10-16T04:30:59Z",
-     "sources": [
-      {
-       "source": "RFI Español",
-       "lang": "es",
-       "title": "Brasil aprueba reducir la jornada laboral en vísperas del balotaje",
-       "url": "https://www.rfi.fr/es/am%C3%A9ricas/20261015-brasil-aprueba-reducir-la-jornada-laboral-en-v%C3%ADsperas-del-balotaje",
-       "publishedAt": "2026-10-15T09:23:13Z"
-      },
-      {
-       "source": "Bloomberg",
-       "lang": "en",
-       "title": "Bolsonaro, Lula in Tight Race Ahead of Runoff, Poll Shows",
-       "url": "https://www.bloomberg.com/news/articles/2026-10-15/bolsonaro-lula-in-tight-race-ahead-of-brazil-runoff-poll-shows",
-       "publishedAt": "2026-10-15T21:53:59Z"
-      },
-      {
-       "source": "Clarín",
-       "lang": "es",
-       "title": "Nueva promesa electoral de Lula: tras la reducción de la jornada laboral, quiere transporte público gratis los fines de semana",
-       "url": "https://www.clarin.com/mundo/nueva-promesa-electoral-lula-reduccion-jornada-laboral-quiere-transporte-publico-gratis-fines-semana_0_3oPc8BWA1f.html",
-       "publishedAt": "2026-10-15T23:43:47Z"
-      },
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Brasil: Lula promete transporte público gratuito los fines de semana",
-       "url": "https://elcomercio.pe/mundo/latinoamerica/elecciones-brasil-2026-luiz-inacio-lula-da-silva-promete-transporte-publico-gratuito-los-fines-de-semana-flavio-bolsonaro-brasilia-sao-paulo-ultimas-noticia/",
-       "publishedAt": "2026-10-16T02:01:06Z"
-      },
-      {
-       "source": "France 24 Español",
-       "lang": "es",
-       "title": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
-       "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261016-rebaja-de-la-jornada-laboral-y-transporte-gratuito-lula-apunta-a-la-econom%C3%ADa-en-v%C3%ADsperas-del-balotaje",
-       "publishedAt": "2026-10-16T02:10:45Z"
-      },
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Flávio Bolsonaro acusa a Lula de mentir sobre anuncio de transporte gratuito en Brasil",
-       "url": "https://elcomercio.pe/mundo/latinoamerica/elecciones-brasil-2026-flavio-bolsonaro-acusa-a-luiz-inacio-lula-da-silva-de-mentir-sobre-anuncio-de-transporte-gratuito-ultimas-noticia/",
-       "publishedAt": "2026-10-16T04:30:59Z"
       }
      ],
      "id": "politica-4"
@@ -1541,65 +1588,6 @@
      "id": "politica-9"
     },
     {
-     "headline": "Farage defends Reform's vetting after councillors filmed making racist comments",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Farage defends Reform's vetting after councillors filmed making racist comments",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "The Reform leader says \"you can't vet for future comments\", after undercover filming of party activists.",
-     "summaryEnSource": "BBC",
-     "outlets": 3,
-     "outletNames": [
-      "BBC",
-      "Financial Times",
-      "The Guardian"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T10:20:51Z",
-     "lastSeen": "2026-10-15T23:52:27Z",
-     "sources": [
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Reform faces criticism after councillors filmed making racist comments",
-       "url": "https://www.bbc.co.uk/news/articles/cw3dj458re1vo",
-       "publishedAt": "2026-10-15T10:20:51Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Farage defends Reform's vetting after councillors filmed making racist comments",
-       "url": "https://www.bbc.co.uk/news/articles/crlykvgx1wvxo",
-       "publishedAt": "2026-10-15T16:36:32Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Farage accused of ‘protecting’ Reform candidate over racist slurs against David Lammy",
-       "url": "https://www.theguardian.com/politics/2026/oct/15/farage-accused-protecting-reform-candidate-racist-slurs-david-lammy-itv-film",
-       "publishedAt": "2026-10-15T19:09:46Z"
-      },
-      {
-       "source": "Financial Times",
-       "lang": "en",
-       "title": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
-       "url": "https://www.ft.com/content/317796f3-af18-4acb-a482-ec0bdd0edf45",
-       "publishedAt": "2026-10-15T21:05:45Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Reform faces questions over candidate vetting after undercover filming",
-       "url": "https://www.bbc.co.uk/news/articles/cqm26yr42ezko",
-       "publishedAt": "2026-10-15T23:52:27Z"
-      }
-     ],
-     "id": "politica-10"
-    },
-    {
      "headline": "Diputado denuncia a Laura Fernández y Rodrigo Chaves por presunto nombramiento ilegal del director de la DIS",
      "headlineLang": "es",
      "headlineEs": "Diputado denuncia a Laura Fernández y Rodrigo Chaves por presunto nombramiento ilegal del director de la DIS",
@@ -1642,7 +1630,7 @@
        "publishedAt": "2026-10-15T22:56:09Z"
       }
      ],
-     "id": "politica-11"
+     "id": "politica-10"
     },
     {
      "headline": "James Talarico Raises Quarterly Record of $64 Million in Texas Senate Race Against Ken Paxton",
@@ -1694,7 +1682,7 @@
        "publishedAt": "2026-10-15T22:11:08Z"
       }
      ],
-     "id": "politica-12"
+     "id": "politica-11"
     },
     {
      "headline": "Albania registra nuevos enfrentamientos en Tirana durante las protestas que exigen la dimisión de Rama",
@@ -1761,7 +1749,7 @@
        "publishedAt": "2026-10-15T19:23:34Z"
       }
      ],
-     "id": "politica-13"
+     "id": "politica-12"
     },
     {
      "headline": "Police raid the major pro-opposition Halk TV channel in Turkey",
@@ -1806,7 +1794,7 @@
        "publishedAt": "2026-10-15T16:48:00Z"
       }
      ],
-     "id": "politica-14"
+     "id": "politica-13"
     },
     {
      "headline": "Decenas de miles marchan en Colombia en la primera protesta contra el gobierno de De la Espriella",
@@ -1865,52 +1853,7 @@
        "publishedAt": "2026-10-15T16:00:03Z"
       }
      ],
-     "id": "politica-15"
-    },
-    {
-     "headline": "La Junta Electoral abre expediente sancionador a Sánchez por la rueda de prensa en La Moncloa donde anunció los decretos sobre vivienda",
-     "headlineLang": "es",
-     "headlineEs": "La Junta Electoral abre expediente sancionador a Sánchez por la rueda de prensa en La Moncloa donde anunció los decretos sobre vivienda",
-     "headlineEn": null,
-     "summaryEs": "El órgano concluye que en esa comparecencia el presidente pudo vulnerar el “deber de neutralidad política que deben respetar los poderes públicos durante los períodos electorales”",
-     "summaryEsSource": "El País",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "El País",
-      "Euronews",
-      "La Vanguardia"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T14:34:32Z",
-     "lastSeen": "2026-10-15T15:30:32Z",
-     "sources": [
-      {
-       "source": "El País",
-       "lang": "es",
-       "title": "La Junta Electoral abre expediente sancionador a Sánchez por la rueda de prensa en La Moncloa donde anunció los decretos sobre vivienda",
-       "url": "https://elpais.com/espana/2026-10-15/la-junta-electoral-abre-expediente-sancionador-a-sanchez-por-la-rueda-de-prensa-en-la-moncloa-donde-anuncio-los-decretos-sobre-vivienda.html",
-       "publishedAt": "2026-10-15T14:34:32Z"
-      },
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "La Junta Electoral abre expediente a Sánchez por no respetar la “neutralidad electoral”",
-       "url": "https://www.lavanguardia.com/politica/20261015/11659919/junta-electoral-llama-sancionar-sanchez-respetar-neutralidad-electoral.html",
-       "publishedAt": "2026-10-15T14:49:04Z"
-      },
-      {
-       "source": "Euronews Español",
-       "lang": "es",
-       "title": "La Junta Electoral abre expediente a Sánchez por una rueda de prensa desde la Moncloa tras convocar elecciones",
-       "url": "https://es.euronews.com/2026/10/15/la-junta-electoral-abre-expediente-a-sanchez",
-       "publishedAt": "2026-10-15T15:30:32Z"
-      }
-     ],
-     "id": "politica-16"
+     "id": "politica-14"
     },
     {
      "headline": "Porn showing choking or incest to be banned from early November, government says",
@@ -1947,7 +1890,7 @@
        "publishedAt": "2026-10-16T07:09:49Z"
       }
      ],
-     "id": "politica-17"
+     "id": "politica-15"
     },
     {
      "headline": "Una nueva incursión de Marruecos en aguas españolas contradice el discurso de \"hecho puntual\" de Sánchez",
@@ -1984,7 +1927,7 @@
        "publishedAt": "2026-10-16T07:05:40Z"
       }
      ],
-     "id": "politica-18"
+     "id": "politica-16"
     },
     {
      "headline": "Més y Frente Amplio cierran un acuerdo al Congreso en Balears sin Podemos",
@@ -2021,7 +1964,7 @@
        "publishedAt": "2026-10-16T07:02:41Z"
       }
      ],
-     "id": "politica-19"
+     "id": "politica-17"
     },
     {
      "headline": "El PP de Ayuso apuesta por Cayetana Álvarez de Toledo como número dos por Madrid en las generales",
@@ -2058,7 +2001,7 @@
        "publishedAt": "2026-10-16T03:30:01Z"
       }
      ],
-     "id": "politica-20"
+     "id": "politica-18"
     },
     {
      "headline": "Kristi Noem deja de ser enviada especial para el Escudo de las Américas, pero sigue como asesora en el Departamento de Estado",
@@ -2096,7 +2039,7 @@
        "publishedAt": "2026-10-16T00:37:21Z"
       }
      ],
-     "id": "politica-21"
+     "id": "politica-19"
     },
     {
      "headline": "Detienen a policía del MSP encargado de vigilar a Diablo y Tan por ingresar con celular y cargadores a Máxima Seguridad",
@@ -2133,7 +2076,7 @@
        "publishedAt": "2026-10-15T23:23:26Z"
       }
      ],
-     "id": "politica-22"
+     "id": "politica-20"
     },
     {
      "headline": "PLN negocia con PPSO propuesta de consenso sobre armonización eléctrica",
@@ -2170,7 +2113,7 @@
        "publishedAt": "2026-10-15T22:40:20Z"
       }
      ],
-     "id": "politica-23"
+     "id": "politica-21"
     },
     {
      "headline": "Puigdemont confirma que no será jefe de la oposición en el Parlament cuando regrese a Catalunya",
@@ -2207,7 +2150,44 @@
        "publishedAt": "2026-10-15T21:51:07Z"
       }
      ],
-     "id": "politica-24"
+     "id": "politica-22"
+    },
+    {
+     "headline": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Senior aide to Reform UK leader pushed to have Chris Parry thrown out of the party, according to TV documentary",
+     "summaryEnSource": "Financial Times",
+     "outlets": 2,
+     "outletNames": [
+      "Financial Times",
+      "The Guardian"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T19:09:46Z",
+     "lastSeen": "2026-10-15T21:05:45Z",
+     "sources": [
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Farage accused of ‘protecting’ Reform candidate over racist slurs against David Lammy",
+       "url": "https://www.theguardian.com/politics/2026/oct/15/farage-accused-protecting-reform-candidate-racist-slurs-david-lammy-itv-film",
+       "publishedAt": "2026-10-15T19:09:46Z"
+      },
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
+       "url": "https://www.ft.com/content/317796f3-af18-4acb-a482-ec0bdd0edf45",
+       "publishedAt": "2026-10-15T21:05:45Z"
+      }
+     ],
+     "id": "politica-23"
     },
     {
      "headline": "Texas sued after glitch delays almost 600,000 voter registrations",
@@ -2244,7 +2224,7 @@
        "publishedAt": "2026-10-15T17:49:57Z"
       }
      ],
-     "id": "politica-25"
+     "id": "politica-24"
     },
     {
      "headline": "El Supremo ordena reabrir una causa contra la etarra Natividad Jáuregui por un atentado en 1981",
@@ -2281,7 +2261,7 @@
        "publishedAt": "2026-10-15T17:09:10Z"
       }
      ],
-     "id": "politica-26"
+     "id": "politica-25"
     },
     {
      "headline": "Un juez abre diligencias por el gas pimienta exhibido por una diputada del PP en el Congreso",
@@ -2316,6 +2296,43 @@
        "title": "Un juez abre diligencias por el gas pimienta exhibido por una diputada del PP en el Congreso",
        "url": "https://www.elmundo.es/espana/2026/10/15/6ad0fbede85ece6f548b4577.html",
        "publishedAt": "2026-10-15T16:27:48Z"
+      }
+     ],
+     "id": "politica-26"
+    },
+    {
+     "headline": "La Junta Electoral abre expediente sancionador a Sánchez por la rueda de prensa en La Moncloa donde anunció los decretos sobre vivienda",
+     "headlineLang": "es",
+     "headlineEs": "La Junta Electoral abre expediente sancionador a Sánchez por la rueda de prensa en La Moncloa donde anunció los decretos sobre vivienda",
+     "headlineEn": null,
+     "summaryEs": "El órgano concluye que en esa comparecencia el presidente pudo vulnerar el “deber de neutralidad política que deben respetar los poderes públicos durante los períodos electorales”",
+     "summaryEsSource": "El País",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "El País",
+      "Euronews"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T14:34:32Z",
+     "lastSeen": "2026-10-15T15:30:32Z",
+     "sources": [
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "La Junta Electoral abre expediente sancionador a Sánchez por la rueda de prensa en La Moncloa donde anunció los decretos sobre vivienda",
+       "url": "https://elpais.com/espana/2026-10-15/la-junta-electoral-abre-expediente-sancionador-a-sanchez-por-la-rueda-de-prensa-en-la-moncloa-donde-anuncio-los-decretos-sobre-vivienda.html",
+       "publishedAt": "2026-10-15T14:34:32Z"
+      },
+      {
+       "source": "Euronews Español",
+       "lang": "es",
+       "title": "La Junta Electoral abre expediente a Sánchez por una rueda de prensa desde la Moncloa tras convocar elecciones",
+       "url": "https://es.euronews.com/2026/10/15/la-junta-electoral-abre-expediente-a-sanchez",
+       "publishedAt": "2026-10-15T15:30:32Z"
       }
      ],
      "id": "politica-27"
@@ -2522,7 +2539,7 @@
       {
        "source": "Financial Times",
        "lang": "en",
-       "title": "Healey signals tax raid on banks in UK Budget",
+       "title": "Healey signals tax raid on banks in Budget",
        "url": "https://www.ft.com/content/09e07278-8479-49bb-a145-51e5d93828a2",
        "publishedAt": "2026-10-16T07:08:49Z"
       },
@@ -2582,6 +2599,43 @@
      "id": "finanzas-3"
     },
     {
+     "headline": "Rodrigo Paz recibirá a José Antonio Kast con miras a fortalecer el comercio y la seguridad entre Bolivia y Chile",
+     "headlineLang": "es",
+     "headlineEs": "Rodrigo Paz recibirá a José Antonio Kast con miras a fortalecer el comercio y la seguridad entre Bolivia y Chile",
+     "headlineEn": null,
+     "summaryEs": "Las autoridades bolivianas anticiparon que la cita incluirá también asuntos económicos y tendrá el objetivo de avanzar con “confianza mutua” en materias bilaterales que abarcan el control limítrofe y la coordinación contra delitos",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "El Tiempo",
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T03:10:00Z",
+     "lastSeen": "2026-10-16T07:21:03Z",
+     "sources": [
+      {
+       "source": "El Tiempo",
+       "lang": "es",
+       "title": "Presidente de Chile, José Antonio Kast, se reúne con Rodrigo Paz en Bolivia para revitalizar las relaciones bilaterales: las claves del encuentro",
+       "url": "https://www.eltiempo.com/mundo/latinoamerica/presidente-de-chile-jose-antonio-kast-se-reune-con-rodrigo-paz-en-bolivia-para-revitalizar-las-relaciones-bilaterales-las-claves-del-encuentro-3593871",
+       "publishedAt": "2026-10-16T03:10:00Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Rodrigo Paz recibirá a José Antonio Kast con miras a fortalecer el comercio y la seguridad entre Bolivia y Chile",
+       "url": "https://www.infobae.com/america/america-latina/2026/10/16/rodrigo-paz-recibira-a-jose-antonio-kast-con-miras-a-fortalecer-el-comercio-y-la-seguridad-entre-bolivia-y-chile/",
+       "publishedAt": "2026-10-16T07:21:03Z"
+      }
+     ],
+     "id": "finanzas-4"
+    },
+    {
      "headline": "LetterOne pone en la presidencia de Dia a su CEO, Jonathan Muir",
      "headlineLang": "es",
      "headlineEs": "LetterOne pone en la presidencia de Dia a su CEO, Jonathan Muir",
@@ -2616,7 +2670,7 @@
        "publishedAt": "2026-10-16T06:54:52Z"
       }
      ],
-     "id": "finanzas-4"
+     "id": "finanzas-5"
     },
     {
      "headline": "Bets on Fed rate hold in October strengthen after Warsh comments",
@@ -2667,7 +2721,44 @@
        "publishedAt": "2026-10-16T06:37:09Z"
       }
      ],
-     "id": "finanzas-5"
+     "id": "finanzas-6"
+    },
+    {
+     "headline": "Consumo abre expediente a una empresa de telecomunicaciones por prácticas abusivas y blinda al usuario con el prefijo 400",
+     "headlineLang": "es",
+     "headlineEs": "Consumo abre expediente a una empresa de telecomunicaciones por prácticas abusivas y blinda al usuario con el prefijo 400",
+     "headlineEn": null,
+     "summaryEs": "La empresa se arriesga a multas millonarias y serán nulos los contratos logrados en llamadas no consentidas Leer",
+     "summaryEsSource": "El Mundo",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "El Mundo",
+      "La Vanguardia"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T06:19:46Z",
+     "lastSeen": "2026-10-16T06:22:21Z",
+     "sources": [
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Consumo abre expediente a una empresa de telecomunicaciones por prácticas abusivas y blinda al usuario con el prefijo 400",
+       "url": "https://www.elmundo.es/economia/2026/10/16/6ad1c14921efa029108b45b0.html",
+       "publishedAt": "2026-10-16T06:19:46Z"
+      },
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Consumo abre expediente a una empresa de telecomunicaciones por cláusulas abusivas",
+       "url": "https://www.lavanguardia.com/economia/20261016/11660383/consumo-abre-expediente-empresa-telecomunicaciones-clausulas-abusivas.html",
+       "publishedAt": "2026-10-16T06:22:21Z"
+      }
+     ],
+     "id": "finanzas-7"
     },
     {
      "headline": "BBVA y Sabadell redefinen sus estrategias en solitario un año después del fracaso de la opa",
@@ -2704,7 +2795,7 @@
        "publishedAt": "2026-10-16T03:00:00Z"
       }
      ],
-     "id": "finanzas-6"
+     "id": "finanzas-8"
     },
     {
      "headline": "Meta releases Muse Spark Open, a new ‘open-weight’ AI model",
@@ -2741,7 +2832,7 @@
        "publishedAt": "2026-10-16T00:34:28Z"
       }
      ],
-     "id": "finanzas-7"
+     "id": "finanzas-9"
     },
     {
      "headline": "France and Germany agree to ease EU car emissions rules in new deal",
@@ -2778,7 +2869,7 @@
        "publishedAt": "2026-10-15T23:48:57Z"
       }
      ],
-     "id": "finanzas-8"
+     "id": "finanzas-10"
     },
     {
      "headline": "Proyecto busca sancionar el acoso laboral en instituciones públicas y empresas privadas",
@@ -2815,7 +2906,7 @@
        "publishedAt": "2026-10-15T23:40:57Z"
       }
      ],
-     "id": "finanzas-9"
+     "id": "finanzas-11"
     },
     {
      "headline": "El precio del petróleo de Texas sube un leve 0,11%, hasta los US$95,19 el barril",
@@ -2852,7 +2943,7 @@
        "publishedAt": "2026-10-15T23:00:54Z"
       }
      ],
-     "id": "finanzas-10"
+     "id": "finanzas-12"
     },
     {
      "headline": "Contraloría detecta ineficacia en el control tributario de Hacienda con impuesto sobre la renta",
@@ -2897,7 +2988,7 @@
        "publishedAt": "2026-10-15T22:54:19Z"
       }
      ],
-     "id": "finanzas-11"
+     "id": "finanzas-13"
     },
     {
      "headline": "Harvard’s endowment returns surge on back of AI and SpaceX investments",
@@ -2934,44 +3025,7 @@
        "publishedAt": "2026-10-15T20:06:22Z"
       }
      ],
-     "id": "finanzas-12"
-    },
-    {
-     "headline": "El Foro Económico Mundial podría designar a Lagarde presidenta en noviembre",
-     "headlineLang": "es",
-     "headlineEs": "El Foro Económico Mundial podría designar a Lagarde presidenta en noviembre",
-     "headlineEn": null,
-     "summaryEs": "El nombramiento no implica que Lagarde renuncie a la presidencia del Banco Central Europeo. Leer",
-     "summaryEsSource": "Expansión",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 2,
-     "outletNames": [
-      "Expansión",
-      "La Vanguardia"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T15:55:40Z",
-     "lastSeen": "2026-10-15T17:15:31Z",
-     "sources": [
-      {
-       "source": "Expansión",
-       "lang": "es",
-       "title": "El Foro Económico Mundial podría designar a Lagarde presidenta en noviembre",
-       "url": "https://www.expansion.com/mercados/2026/10/15/6ad0f6ffe5fdea831d8b45a3.html",
-       "publishedAt": "2026-10-15T15:55:40Z"
-      },
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "Christine Lagarde gana puntos para la presidencia del Foro Económico de Davos",
-       "url": "https://www.lavanguardia.com/economia/20261015/11660031/christine-lagarde-gana-puntos-presidencia-foro-economico-davos.html",
-       "publishedAt": "2026-10-15T17:15:31Z"
-      }
-     ],
-     "id": "finanzas-13"
+     "id": "finanzas-14"
     },
     {
      "headline": "Los inversores prevén un nuevo máximo histórico del oro en el plazo de dos años",
@@ -3009,7 +3063,7 @@
        "publishedAt": "2026-10-15T16:18:22Z"
       }
      ],
-     "id": "finanzas-14"
+     "id": "finanzas-15"
     },
     {
      "headline": "Nandy 'minded to intervene' in Sky's £1.6bn takeover of ITV entertainment arm",
@@ -3044,43 +3098,6 @@
        "title": "Lisa Nandy ‘minded to intervene’ in Sky’s £1.6bn purchase of ITV",
        "url": "https://www.theguardian.com/business/2026/oct/15/lisa-nandy-culture-secretary-intervene-sky-purchase-itv",
        "publishedAt": "2026-10-15T15:44:48Z"
-      }
-     ],
-     "id": "finanzas-15"
-    },
-    {
-     "headline": "Almeida bajará el IBI al mínimo legal en 2027, con un ahorro de 31 millones para los madrileños",
-     "headlineLang": "es",
-     "headlineEs": "Almeida bajará el IBI al mínimo legal en 2027, con un ahorro de 31 millones para los madrileños",
-     "headlineEn": null,
-     "summaryEs": "El alcalde de Madrid, José Luis Martínez-Almeida, ha anunciado este jueves la sexta y definitiva bajada del Impuesto de Bienes Inmuebles (IBI) desde 2019. Se situará en el 0,4%, el mínimo legal permitido. Leer",
-     "summaryEsSource": "Expansión",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 2,
-     "outletNames": [
-      "Expansión",
-      "La Vanguardia"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T10:01:38Z",
-     "lastSeen": "2026-10-15T10:11:43Z",
-     "sources": [
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "Almeida anuncia que bajará el IBI para el 2027 “al tipo mínimo legal”",
-       "url": "https://www.lavanguardia.com/local/madrid/20261015/11659612/almeida-anuncia-bajara-ibi-2027-tipo-minimo-legal.html",
-       "publishedAt": "2026-10-15T10:01:38Z"
-      },
-      {
-       "source": "Expansión",
-       "lang": "es",
-       "title": "Almeida bajará el IBI al mínimo legal en 2027, con un ahorro de 31 millones para los madrileños",
-       "url": "https://www.expansion.com/economia/2026/10/15/almeida-bajara-ibi-minimo-legal-2027-ahorro-31-millones-madrilenos.html",
-       "publishedAt": "2026-10-15T10:11:43Z"
       }
      ],
      "id": "finanzas-16"
@@ -3339,75 +3356,6 @@
      "id": "mundo-1"
     },
     {
-     "headline": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
-     "headlineLang": "es",
-     "headlineEs": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
-     "headlineEn": null,
-     "summaryEs": "La escritora chilena Isabel Allende ha ganado este jueves por la noche el 75 Premio Planeta de Novela, dotado con 1 millón de euros, con 'La hora antes del alba', una continuación cronológica de 'La casa de los espíritus'.",
-     "summaryEsSource": "Europa Press",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 6,
-     "outletNames": [
-      "20minutos",
-      "DW",
-      "El Comercio (Perú)",
-      "Europa Press",
-      "Expansión",
-      "La Nación (Costa Rica)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T20:54:06Z",
-     "lastSeen": "2026-10-16T01:40:16Z",
-     "sources": [
-      {
-       "source": "Europa Press",
-       "lang": "es",
-       "title": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
-       "url": "https://www.europapress.es/catalunya/noticia-isabel-allende-gana-75-premio-planeta-hora-antes-alba-20261015225406.html",
-       "publishedAt": "2026-10-15T20:54:06Z"
-      },
-      {
-       "source": "20minutos",
-       "lang": "es",
-       "title": "Bombazo en el 75º premio Planeta: Isabel Allende gana con 'La hora antes del Alba', una secuela de 'La casa de los espíritus'",
-       "url": "https://www.20minutos.es/libros/bombazo-75o-premio-planeta-isabel-allende-gana-con-hora-antes-alba-una-secuela-casa-los-espiritus_7049023_0.html",
-       "publishedAt": "2026-10-15T20:54:12Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "La escritora chilena Isabel Allende gana el Premio Planeta de novela 2026",
-       "url": "https://www.nacion.com/ancora/la-escritora-chilena-isabel-allende-gana-el-premio/NDOEOL25ANHWZGAEJHU2PWDVAY/story/",
-       "publishedAt": "2026-10-15T21:15:25Z"
-      },
-      {
-       "source": "DW Español",
-       "lang": "es",
-       "title": "Isabel Allende gana el Premio Planeta de novela 2026",
-       "url": "https://www.dw.com/es/isabel-allende-gana-el-premio-planeta-de-novela-2026/a-79674853?maca=spa-rss-sp-all-1122-xml-mrss",
-       "publishedAt": "2026-10-15T21:55:00Z"
-      },
-      {
-       "source": "Expansión",
-       "lang": "es",
-       "title": "Isabel Allende gana el Planeta dando \"cierre\" al universo de 'La casa de los espíritus'",
-       "url": "https://www.expansion.com/sociedad/2026/10/16/isabel-allende-gana-planeta-dando-cierre-universo-casa-espiritus.html",
-       "publishedAt": "2026-10-15T22:36:30Z"
-      },
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Isabel Allende gana el Premio Planeta 2026 con la continuación de “La casa de los espíritus”",
-       "url": "https://elcomercio.pe/luces/libros/isabel-allende-gana-el-premio-planeta-2026-con-la-continuacion-de-la-casa-de-los-espiritus-ultimas-noticia/",
-       "publishedAt": "2026-10-16T01:40:16Z"
-      }
-     ],
-     "id": "mundo-2"
-    },
-    {
      "headline": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
      "headlineLang": "es",
      "headlineEs": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
@@ -3472,6 +3420,67 @@
        "title": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
        "url": "https://www.abc.es/internacional/maria-corina-machado-denuncia-eeuu-excluido-negociaciones-20261016064325-nt.html",
        "publishedAt": "2026-10-16T04:43:25Z"
+      }
+     ],
+     "id": "mundo-2"
+    },
+    {
+     "headline": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
+     "headlineLang": "es",
+     "headlineEs": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
+     "headlineEn": null,
+     "summaryEs": "La escritora chilena Isabel Allende ha ganado este jueves por la noche el 75 Premio Planeta de Novela, dotado con 1 millón de euros, con 'La hora antes del alba', una continuación cronológica de 'La casa de los espíritus'.",
+     "summaryEsSource": "Europa Press",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 5,
+     "outletNames": [
+      "20minutos",
+      "DW",
+      "Europa Press",
+      "Expansión",
+      "La Nación (Costa Rica)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T20:54:06Z",
+     "lastSeen": "2026-10-15T22:36:30Z",
+     "sources": [
+      {
+       "source": "Europa Press",
+       "lang": "es",
+       "title": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
+       "url": "https://www.europapress.es/catalunya/noticia-isabel-allende-gana-75-premio-planeta-hora-antes-alba-20261015225406.html",
+       "publishedAt": "2026-10-15T20:54:06Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Bombazo en el 75º premio Planeta: Isabel Allende gana con 'La hora antes del Alba', una secuela de 'La casa de los espíritus'",
+       "url": "https://www.20minutos.es/libros/bombazo-75o-premio-planeta-isabel-allende-gana-con-hora-antes-alba-una-secuela-casa-los-espiritus_7049023_0.html",
+       "publishedAt": "2026-10-15T20:54:12Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "La escritora chilena Isabel Allende gana el Premio Planeta de novela 2026",
+       "url": "https://www.nacion.com/ancora/la-escritora-chilena-isabel-allende-gana-el-premio/NDOEOL25ANHWZGAEJHU2PWDVAY/story/",
+       "publishedAt": "2026-10-15T21:15:25Z"
+      },
+      {
+       "source": "DW Español",
+       "lang": "es",
+       "title": "Isabel Allende gana el Premio Planeta de novela 2026",
+       "url": "https://www.dw.com/es/isabel-allende-gana-el-premio-planeta-de-novela-2026/a-79674853?maca=spa-rss-sp-all-1122-xml-mrss",
+       "publishedAt": "2026-10-15T21:55:00Z"
+      },
+      {
+       "source": "Expansión",
+       "lang": "es",
+       "title": "Isabel Allende gana el Planeta dando \"cierre\" al universo de 'La casa de los espíritus'",
+       "url": "https://www.expansion.com/sociedad/2026/10/16/isabel-allende-gana-planeta-dando-cierre-universo-casa-espiritus.html",
+       "publishedAt": "2026-10-15T22:36:30Z"
       }
      ],
      "id": "mundo-3"
@@ -3667,9 +3676,9 @@
      "id": "mundo-6"
     },
     {
-     "headline": "Adiós al spam telefónico en España: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
+     "headline": "Adiós al spam telefónico: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
      "headlineLang": "es",
-     "headlineEs": "Adiós al spam telefónico en España: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
+     "headlineEs": "Adiós al spam telefónico: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
      "headlineEn": null,
      "summaryEs": "A partir del 17 de octubre, las empresas obligadas por la Ley de Servicios de Atención a la Clientela solo podrán hacer llamadas comerciales desde números que empiecen por 400, y los operadores tendrán que bloquear las que no cumplan.",
      "summaryEsSource": "Euronews Español",
@@ -3704,7 +3713,7 @@
       {
        "source": "Euronews Español",
        "lang": "es",
-       "title": "Adiós al spam telefónico en España: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
+       "title": "Adiós al spam telefónico: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
        "url": "https://es.euronews.com/2026/10/16/adios-spam-telefonico-las-llamadas-comerciales-tendran-que-identificarse-con-prefijo-400",
        "publishedAt": "2026-10-16T07:07:33Z"
       }
@@ -4128,6 +4137,43 @@
    "label": "Ciencias",
    "stories": [
     {
+     "headline": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Computer models suggest that unrealistically cold oceans would be insufficient to stop Thwaites glacier retreating, although a neighbouring glacier might begin to grow",
+     "summaryEnSource": "New Scientist",
+     "outlets": 2,
+     "outletNames": [
+      "Euronews",
+      "New Scientist"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T20:00:00Z",
+     "lastSeen": "2026-10-16T06:02:15Z",
+     "sources": [
+      {
+       "source": "New Scientist",
+       "lang": "en",
+       "title": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
+       "url": "https://www.newscientist.com/article/2594246-antarcticas-doomsday-glacier-will-keep-melting-even-if-oceans-cool/",
+       "publishedAt": "2026-10-15T20:00:00Z"
+      },
+      {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Doomsday Glacier will keep melting even if oceans cool. Here’s why cutting emissions still matters",
+       "url": "https://www.euronews.com/2026/10/16/doomsday-glacier-will-keep-melting-even-if-oceans-cool-heres-why-cutting-emissions-still-m",
+       "publishedAt": "2026-10-16T06:02:15Z"
+      }
+     ],
+     "id": "ciencias-1"
+    },
+    {
      "headline": "El neandertal que murió atravesado por una lanza hace 75.000 años y que muestra cómo cuidaban de sus heridos y sus muertos",
      "headlineLang": "es",
      "headlineEs": "El neandertal que murió atravesado por una lanza hace 75.000 años y que muestra cómo cuidaban de sus heridos y sus muertos",
@@ -4162,7 +4208,7 @@
        "publishedAt": "2026-10-15T16:31:48Z"
       }
      ],
-     "id": "ciencias-1"
+     "id": "ciencias-2"
     },
     {
      "headline": "El Seprona y el fotógrafo Pedro Armestre, galardonados con los Premios Biodiversidad",
@@ -4199,7 +4245,7 @@
        "publishedAt": "2026-10-15T16:06:09Z"
       }
      ],
-     "id": "ciencias-2"
+     "id": "ciencias-3"
     },
     {
      "headline": "Virus del Nilo Occidental: Europa vive su peor temporada mientras los casos se extienden al norte",
@@ -4236,7 +4282,7 @@
        "publishedAt": "2026-10-15T15:40:40Z"
       }
      ],
-     "id": "ciencias-3"
+     "id": "ciencias-4"
     }
    ]
   },
@@ -4352,6 +4398,76 @@
      "id": "guerras-1"
     },
     {
+     "headline": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
+     "headlineLang": "es",
+     "headlineEs": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
+     "headlineEn": "Ukraine resumes attacks on Russian refineries as Zelenskyy says 'we're done'",
+     "summaryEs": "Zelenski da por terminada la tregua energética anunciada por Trump, mientras Lavrov rechaza el último plan de paz impulsado por Washington y advierte de que el conflicto se decidirá en el campo de batalla.",
+     "summaryEsSource": "20minutos",
+     "summaryEn": "Volodymyr Zelenskyy has said Ukraine will again attack Russian energy sites, as Moscow has ignored a claim by US President Trump that an \"energy ceasefire\" had been agreed. Russia reported two attacks on refineries.",
+     "summaryEnSource": "DW",
+     "outlets": 6,
+     "outletNames": [
+      "20minutos",
+      "BBC",
+      "DW",
+      "NPR",
+      "The Guardian",
+      "The New York Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T10:05:58Z",
+     "lastSeen": "2026-10-16T02:48:41Z",
+     "sources": [
+      {
+       "source": "NPR",
+       "lang": "en",
+       "title": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
+       "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war",
+       "publishedAt": "2026-10-15T10:05:58Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
+       "url": "https://www.20minutos.es/internacional/kiev-golpea-una-refineria-200-kilometros-moscu-los-ataques-cruzados-alejan-una-posible-tregua-hemos-tenido-suficiente_7049236_0.html",
+       "publishedAt": "2026-10-15T13:49:23Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "Ukraine resumes attacks on Russian refineries as Zelenskyy says 'we're done'",
+       "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-we-re-done/a-79667757?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-15T14:51:00Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
+       "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o",
+       "publishedAt": "2026-10-15T16:50:18Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Russia and Ukraine trade strikes as Trump ‘energy ceasefire’ collapses",
+       "url": "https://www.theguardian.com/world/2026/oct/15/us-effort-to-get-russia-ukraine-energy-ceasefire-collapses",
+       "publishedAt": "2026-10-15T23:57:20Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
+       "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html",
+       "publishedAt": "2026-10-16T02:48:41Z"
+      }
+     ],
+     "id": "guerras-2"
+    },
+    {
      "headline": "What is Starshield, SpaceX's military version of Starlink?",
      "headlineLang": "en",
      "headlineEs": null,
@@ -4415,68 +4531,6 @@
        "title": "What to know about Starshield, SpaceX's military-focused Starlink service",
        "url": "https://www.cnbc.com/2026/10/15/what-is-starshield-spacex-starlink-military.html",
        "publishedAt": "2026-10-16T06:25:31Z"
-      }
-     ],
-     "id": "guerras-2"
-    },
-    {
-     "headline": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
-     "headlineLang": "es",
-     "headlineEs": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
-     "headlineEn": "Ukraine resumes attacks on Russian refineries as Zelenskyy says 'we're done'",
-     "summaryEs": "Zelenski da por terminada la tregua energética anunciada por Trump, mientras Lavrov rechaza el último plan de paz impulsado por Washington y advierte de que el conflicto se decidirá en el campo de batalla.",
-     "summaryEsSource": "20minutos",
-     "summaryEn": "Volodymyr Zelenskyy has said Ukraine will again attack Russian energy sites, as Moscow has ignored a claim by US President Trump that an \"energy ceasefire\" had been agreed. Russia reported two attacks on refineries.",
-     "summaryEnSource": "DW",
-     "outlets": 5,
-     "outletNames": [
-      "20minutos",
-      "BBC",
-      "DW",
-      "NPR",
-      "The New York Times"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-15T10:05:58Z",
-     "lastSeen": "2026-10-16T02:48:41Z",
-     "sources": [
-      {
-       "source": "NPR",
-       "lang": "en",
-       "title": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
-       "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war",
-       "publishedAt": "2026-10-15T10:05:58Z"
-      },
-      {
-       "source": "20minutos",
-       "lang": "es",
-       "title": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
-       "url": "https://www.20minutos.es/internacional/kiev-golpea-una-refineria-200-kilometros-moscu-los-ataques-cruzados-alejan-una-posible-tregua-hemos-tenido-suficiente_7049236_0.html",
-       "publishedAt": "2026-10-15T13:49:23Z"
-      },
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "Ukraine resumes attacks on Russian refineries as Zelenskyy says 'we're done'",
-       "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-we-re-done/a-79667757?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-15T14:51:00Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
-       "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o",
-       "publishedAt": "2026-10-15T16:50:18Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
-       "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html",
-       "publishedAt": "2026-10-16T02:48:41Z"
       }
      ],
      "id": "guerras-3"
@@ -5072,6 +5126,15 @@
    "newest": "2026-10-14T10:35:00Z"
   },
   {
+   "id": "newscientist",
+   "source": "New Scientist",
+   "lang": "en",
+   "url": "https://www.newscientist.com/feed/home/",
+   "itemsInFeed": 10,
+   "kept": 7,
+   "newest": "2026-10-16T06:00:00Z"
+  },
+  {
    "id": "guardian-world",
    "source": "The Guardian",
    "lang": "en",
@@ -5455,8 +5518,8 @@
    "lang": "es",
    "url": "https://www.lavanguardia.com/rss/home.xml",
    "itemsInFeed": 146,
-   "kept": 86,
-   "newest": "2026-10-16T05:58:58Z"
+   "kept": 87,
+   "newest": "2026-10-16T06:59:38Z"
   },
   {
    "id": "europapress",
@@ -5482,8 +5545,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "itemsInFeed": 100,
-   "kept": 52,
-   "newest": "2026-10-16T07:10:38Z"
+   "kept": 43,
+   "newest": "2026-10-16T07:20:16Z"
   },
   {
    "id": "infobae-america",
@@ -5491,8 +5554,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/america/",
    "itemsInFeed": 100,
-   "kept": 92,
-   "newest": "2026-10-16T04:53:05Z"
+   "kept": 90,
+   "newest": "2026-10-16T07:21:03Z"
   },
   {
    "id": "infobae-eco",
@@ -5500,8 +5563,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/economia/",
    "itemsInFeed": 100,
-   "kept": 64,
-   "newest": "2026-10-16T05:03:21Z"
+   "kept": 69,
+   "newest": "2026-10-16T05:12:00Z"
   },
   {
    "id": "clarin-mundo",
@@ -5545,7 +5608,7 @@
    "lang": "es",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
    "itemsInFeed": 100,
-   "kept": 59,
+   "kept": 58,
    "newest": "2026-10-16T06:33:00Z"
   },
   {
@@ -5586,12 +5649,6 @@
   }
  ],
  "feedsFailed": [
-  {
-   "id": "newscientist",
-   "source": "New Scientist",
-   "url": "https://www.newscientist.com/feed/home/",
-   "error": "HTTPError: HTTP Error 406: Not Acceptable"
-  },
   {
    "id": "reuters",
    "source": "reuters",
