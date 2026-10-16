@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-10-16T08:41:00Z",
- "nextRefreshAt": "2026-10-16T09:00:00Z",
+ "updatedAt": "2026-10-16T09:22:00Z",
+ "nextRefreshAt": "2026-10-16T12:00:00Z",
  "refreshHours": 3,
  "method": {
   "minOutlets": 5,
@@ -11,18 +11,18 @@
  "stats": {
   "feedsOk": 95,
   "feedsFailed": 9,
-  "itemsGathered": 1825,
-  "clusters": 1526,
+  "itemsGathered": 1833,
+  "clusters": 1530,
   "consensusStories": 14,
   "perCategory": {
    "sucesos": 3,
-   "politica": 4,
+   "politica": 3,
    "finanzas": 0,
    "cripto": 2,
-   "mundo": 3,
+   "mundo": 4,
    "ciencias": 0,
    "guerras": 4,
-   "buenas": 33
+   "buenas": 35
   }
  },
  "sourcesUsed": [
@@ -78,12 +78,12 @@
    "minOutlets": 5,
    "stories": [
     {
-     "headline": "Un tiroteo en una escuela primaria de Oregón deja tres niños y un profesor muertos",
+     "headline": "Tiroteo en un colegio de Oregon deja 4 muertos entre ellos 3 niños de 5 a 11 años",
      "headlineLang": "es",
-     "headlineEs": "Un tiroteo en una escuela primaria de Oregón deja tres niños y un profesor muertos",
+     "headlineEs": "Tiroteo en un colegio de Oregon deja 4 muertos entre ellos 3 niños de 5 a 11 años",
      "headlineEn": "Three children, one teacher killed in Oregon school shooting",
-     "summaryEs": "El pistolero fue abatido por una persona que estaba en el lugar y lo enfrentó, informaron las autoridades",
-     "summaryEsSource": "El País",
+     "summaryEs": "Un joven de 16 años abrió fuego en una escuela primaria de Bend (Oregón) y mató a tres niños de 5, 8 y 11 años y a una profesora. El sospechoso apareció muerto; otro menor y una maestra están heridos graves.",
+     "summaryEsSource": "Euronews Español",
      "summaryEn": "The police chief in Bend, Oregon, identified the shooter as a 16-year-old who was killed by a bystander at the school.",
      "summaryEnSource": "Al Jazeera",
      "outlets": 18,
@@ -113,7 +113,7 @@
       "es"
      ],
      "firstSeen": "2026-10-15T21:59:00Z",
-     "lastSeen": "2026-10-16T08:05:51Z",
+     "lastSeen": "2026-10-16T08:38:52Z",
      "sources": [
       {
        "source": "DW",
@@ -146,7 +146,7 @@
       {
        "source": "Sky News",
        "lang": "en",
-       "title": "Member of the public shot dead US school gunman who killed three children and teacher",
+       "title": "Children aged 5, 8 and 11 killed in US school shooting",
        "url": "https://news.sky.com/story/multiple-fatalities-after-school-shooting-in-oregon-nbc-news-reports-13599795",
        "publishedAt": "2026-10-15T23:09:00Z"
       },
@@ -267,7 +267,7 @@
        "lang": "es",
        "title": "Al menos cuatro muertos en un tiroteo en una escuela de Oregón (EE.UU.)",
        "url": "https://www.abc.es/internacional/cuatro-muertos-tiroteo-escuela-oregon-eeuu-20261016005748-nt.html",
-       "publishedAt": "2026-10-16T08:05:51Z"
+       "publishedAt": "2026-10-16T08:38:52Z"
       }
      ],
      "id": "sucesos-1"
@@ -391,7 +391,7 @@
      "summaryEsSource": "El Mundo",
      "summaryEn": "Nineteen people have been injured after a collision between a bus and a train on the French side of the Channel Tunnel.",
      "summaryEnSource": "Sky News",
-     "outlets": 8,
+     "outlets": 9,
      "outletNames": [
       "BBC",
       "DW",
@@ -399,6 +399,7 @@
       "El Mundo",
       "Euronews",
       "France 24",
+      "Le Monde",
       "RFI",
       "Sky News"
      ],
@@ -464,6 +465,13 @@
        "title": "Minibus crashes into train at French Channel Tunnel entrance, injuring 19",
        "url": "https://www.france24.com/en/europe/20261016-19-injured-as-minibus-crashes-into-train-at-channel-tunnel-entrance",
        "publishedAt": "2026-10-16T00:53:16Z"
+      },
+      {
+       "source": "Le Monde",
+       "lang": "en",
+       "title": "Bus hits train near Channel Tunnel in France, 19 hurt",
+       "url": "https://www.lemonde.fr/en/france/article/2026/10/16/bus-hits-train-near-channel-tunnel-in-france-19-hurt_6758665_7.html",
+       "publishedAt": "2026-10-16T05:08:17Z"
       },
       {
        "source": "RFI",
@@ -690,14 +698,13 @@
      "headline": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
      "headlineLang": "es",
      "headlineEs": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
-     "headlineEn": "Bolsonaro, Lula in Tight Race Ahead of Runoff, Poll Shows",
+     "headlineEn": null,
      "summaryEs": "El presidente brasileño, Luiz Inácio Lula da Silva, anunció este jueves 15 de octubre que impulsará una enmienda constitucional para ofrecer transporte gratuito durante los fines de semana, luego de que el Senado aprobara la reducción de la jornada laboral de 44 a 40 horas semanales. Flávio Bolsonaro, su rival en el balotaje, acusó al mandatario de hacer promesas que no cumplirá, mientras una…",
      "summaryEsSource": "France 24 Español",
-     "summaryEn": "Flávio Bolsonaro and President Luiz Inácio Lula da Silva are locked in a close race ahead of Brazil’s runoff election, according to a new poll.",
-     "summaryEnSource": "Bloomberg",
-     "outlets": 6,
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 5,
      "outletNames": [
-      "Bloomberg",
       "Clarín",
       "El Comercio (Perú)",
       "France 24",
@@ -705,7 +712,6 @@
       "RFI"
      ],
      "languages": [
-      "en",
       "es"
      ],
      "firstSeen": "2026-10-15T09:23:13Z",
@@ -717,13 +723,6 @@
        "title": "Brasil aprueba reducir la jornada laboral en vísperas del balotaje",
        "url": "https://www.rfi.fr/es/am%C3%A9ricas/20261015-brasil-aprueba-reducir-la-jornada-laboral-en-v%C3%ADsperas-del-balotaje",
        "publishedAt": "2026-10-15T09:23:13Z"
-      },
-      {
-       "source": "Bloomberg",
-       "lang": "en",
-       "title": "Bolsonaro, Lula in Tight Race Ahead of Runoff, Poll Shows",
-       "url": "https://www.bloomberg.com/news/articles/2026-10-15/bolsonaro-lula-in-tight-race-ahead-of-brazil-runoff-poll-shows",
-       "publishedAt": "2026-10-15T21:53:59Z"
       },
       {
        "source": "Clarín",
@@ -762,74 +761,6 @@
       }
      ],
      "id": "politica-3"
-    },
-    {
-     "headline": "Trump says execution of Fort Hood shooter will not be livestreamed",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Trump says execution of Fort Hood shooter will not be livestreamed",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Trump said the execution of Nidal Malik Hasan can be viewed in person by families of the victims if they wish. The decision comes after bipartisan backlash regarding the Pentagon's plans to livestream the execution.",
-     "summaryEnSource": "DW",
-     "outlets": 5,
-     "outletNames": [
-      "BBC",
-      "CBS News",
-      "DW",
-      "The Guardian",
-      "The New York Times"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T15:36:00Z",
-     "lastSeen": "2026-10-16T02:22:17Z",
-     "sources": [
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "Trump says execution of Fort Hood shooter will not be livestreamed",
-       "url": "https://www.dw.com/en/trump-says-execution-of-fort-hood-shooter-will-not-be-livestreamed/a-79672036?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-15T15:36:00Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Hegseth church allies backed plan for ‘public’ execution of Fort Hood shooter",
-       "url": "https://www.theguardian.com/us-news/2026/oct/15/pete-hegseth-crec-church-execution-livestream",
-       "publishedAt": "2026-10-15T16:00:35Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Trump calls off plan to livestream Fort Hood shooter's execution",
-       "url": "https://www.cbsnews.com/news/trump-fort-hood-shooter-nidal-hasan-execution-live-stream/",
-       "publishedAt": "2026-10-15T17:07:00Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Trump calls off livestream of Fort Hood attacker's execution by firing squad",
-       "url": "https://www.bbc.co.uk/news/articles/crx23qlnj27qo",
-       "publishedAt": "2026-10-15T17:47:22Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Many Figures Opposed Hegseth’s Plan to Livestream Fort Hood Shooter’s Execution",
-       "url": "https://www.nytimes.com/2026/10/15/us/politics/hegseth-livestream-execution-hasan.html",
-       "publishedAt": "2026-10-15T19:36:03Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Trump Cancels Planned Execution Livestream of Nidal Hasan, Fort Hood Shooter",
-       "url": "https://www.nytimes.com/2026/10/15/us/politics/trump-hasan-fort-hood-execution-livestream.html",
-       "publishedAt": "2026-10-16T02:22:17Z"
-      }
-     ],
-     "id": "politica-4"
     }
    ]
   },
@@ -1036,6 +967,75 @@
      "id": "mundo-1"
     },
     {
+     "headline": "Machado denuncia que Estados Unidos la ha excluido de las negociaciones sobre Venezuela",
+     "headlineLang": "es",
+     "headlineEs": "Machado denuncia que Estados Unidos la ha excluido de las negociaciones sobre Venezuela",
+     "headlineEn": "Venezuela’s Opposition Leader Calls Trump’s New Oil Partner Corrupt",
+     "summaryEs": "La líder opositora venezolana y premio Nobel de la Paz María Corina Machado denunció que Estados Unidos la dejó fuera de las negociaciones que celebran esta semana en Caracas el Gobierno de la presidenta encargada, Delcy Rodríguez, y un sector de la oposición, en una entrevista publicada este jueves por The New York Times.",
+     "summaryEsSource": "El Comercio (Perú)",
+     "summaryEn": "As ties with the Trump administration fray, María Corina Machado said her return to Venezuela would come “sooner than you would expect.”",
+     "summaryEnSource": "The New York Times",
+     "outlets": 5,
+     "outletNames": [
+      "El Comercio (Perú)",
+      "El Mundo",
+      "El País",
+      "El Tiempo",
+      "The New York Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-14T15:50:55Z",
+     "lastSeen": "2026-10-16T07:31:50Z",
+     "sources": [
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "EEUU retira las sanciones al hermano de Delcy Rodríguez en vísperas de la tercera ronda de negociaciones en Caracas",
+       "url": "https://www.elmundo.es/internacional/2026/10/14/6acfa3bb21efa0907d8b45a5.html",
+       "publishedAt": "2026-10-14T15:50:55Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Turno para María Corina Machado tras el perdón al hermano de Delcy Rodríguez",
+       "url": "https://www.elmundo.es/internacional/2026/10/16/6ad112d3e85ecea61e8b45b4.html",
+       "publishedAt": "2026-10-15T22:01:53Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Venezuela’s Opposition Leader Calls Trump’s New Oil Partner Corrupt",
+       "url": "https://www.nytimes.com/2026/10/15/world/americas/venezuela-machado-trump-oil-deal.html",
+       "publishedAt": "2026-10-15T23:24:50Z"
+      },
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "María Corina Machado califica de “corrupto” a Alejandro Betancourt, socio petrolero de Trump",
+       "url": "https://elpais.com/america/2026-10-16/maria-corina-machado-califica-de-corrupto-a-alejandro-betancourt-socio-petrolero-de-trump.html",
+       "publishedAt": "2026-10-16T01:39:34Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Machado denuncia que Estados Unidos la ha excluido de las negociaciones sobre Venezuela",
+       "url": "https://elcomercio.pe/mundo/venezuela/venezuela-maria-corina-machado-denuncia-que-estados-unidos-la-ha-excluido-de-las-negociaciones-sobre-caracas-delcy-rodriguez-ultimas-noticia/",
+       "publishedAt": "2026-10-16T03:01:00Z"
+      },
+      {
+       "source": "El Tiempo",
+       "lang": "es",
+       "title": "María Corina Machado denuncia que Estados Unidos la ha excluido de las negociaciones sobre Venezuela: 'La gente exige justicia'",
+       "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/maria-corina-machado-denuncia-que-estados-unidos-la-ha-excluido-de-las-negociaciones-sobre-venezuela-la-gente-exige-justicia-3593950",
+       "publishedAt": "2026-10-16T07:31:50Z"
+      }
+     ],
+     "id": "mundo-2"
+    },
+    {
      "headline": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
      "headlineLang": "es",
      "headlineEs": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
@@ -1145,7 +1145,7 @@
        "publishedAt": "2026-10-15T20:02:55Z"
       }
      ],
-     "id": "mundo-2"
+     "id": "mundo-3"
     },
     {
      "headline": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
@@ -1213,7 +1213,7 @@
        "publishedAt": "2026-10-14T19:56:42Z"
       }
      ],
-     "id": "mundo-3"
+     "id": "mundo-4"
     }
    ]
   },
@@ -1555,6 +1555,43 @@
    "minOutlets": 1,
    "stories": [
     {
+     "headline": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "A phase 1 trial shows that treatment of patients with high-grade serous ovarian cancer with personalized neoantigen vaccines combined with PD-1 blockade was feasible and led to tumor-specific immune responses in many patients and putative mechanisms of resistance related to antigen presentation were identified via cell-free DNA analysis.",
+     "summaryEnSource": "Nature",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Nature"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T00:34:46Z",
+     "lastSeen": "2026-10-16T00:34:46Z",
+     "sources": [
+      {
+       "source": "Nature",
+       "lang": "en",
+       "title": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
+       "url": "https://www.nature.com/articles/s41591-026-04717-8",
+       "publishedAt": "2026-10-16T00:34:46Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "science",
+       "url": "https://www.reddit.com/r/science/comments/1x72apz/new_phase_1_trial_results_published_in_nature/"
+      }
+     ],
+     "id": "buenas-1"
+    },
+    {
      "headline": "Vecinos de Moravia podrán acceder a vacunación y chequeos médicos gratuitos este viernes",
      "headlineLang": "es",
      "headlineEs": "Vecinos de Moravia podrán acceder a vacunación y chequeos médicos gratuitos este viernes",
@@ -1584,7 +1621,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-1"
+     "id": "buenas-2"
     },
     {
      "headline": "Complex surgery successfully separates Fijian conjoined twins",
@@ -1621,7 +1658,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x72agg/complex_surgery_successfully_separates_fijian/"
       }
      ],
-     "id": "buenas-2"
+     "id": "buenas-3"
     },
     {
      "headline": "Parada cardiaca: las ventilaciones también salvan vidas",
@@ -1653,7 +1690,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-3"
+     "id": "buenas-4"
     },
     {
      "headline": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
@@ -1685,7 +1722,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-4"
+     "id": "buenas-5"
     },
     {
      "headline": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
@@ -1717,7 +1754,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-5"
+     "id": "buenas-6"
     },
     {
      "headline": "Rigorous Analysis Confirms NASA’s Artemis II Heat Shield Performance",
@@ -1749,7 +1786,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-6"
+     "id": "buenas-7"
     },
     {
      "headline": "China reduced extreme poverty fast, but Indonesia hasn’t been far behind",
@@ -1786,7 +1823,44 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6jm7a/china_reduced_extreme_poverty_fast_but_indonesia/"
       }
      ],
-     "id": "buenas-7"
+     "id": "buenas-8"
+    },
+    {
+     "headline": "UK astronomers help reveal host galaxy of most distant fast radio burst",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "UK astronomers help reveal host galaxy of most distant fast radio burst",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "UK astronomers helped trace the most distant fast radio burst ever found to a small young galaxy billions of light-years away.The discovery gives scientists new clues about what may cause these brief but powerful flashes from deep space.The findings suggest fast radio bursts can happen soon after stars are born, helping researchers understand ho...",
+     "summaryEnSource": "University of Manchester",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "University of Manchester"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T10:22:37Z",
+     "lastSeen": "2026-10-15T10:22:37Z",
+     "sources": [
+      {
+       "source": "University of Manchester",
+       "lang": "en",
+       "title": "UK astronomers help reveal host galaxy of most distant fast radio burst",
+       "url": "https://www.manchester.ac.uk/about/news/uk-astronomers-help-reveal-host-galaxy-of-most-distant-fast-radio-burst/",
+       "publishedAt": "2026-10-15T10:22:37Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "science",
+       "url": "https://www.reddit.com/r/science/comments/1x6i011/uk_astronomers_help_reveal_host_galaxy_of_most/"
+      }
+     ],
+     "id": "buenas-9"
     },
     {
      "headline": "Critically endangered frogs bred for first time at London Zoo",
@@ -1823,7 +1897,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6h347/london_zoo_hatches_15_tiny_frogs_from_a_species/"
       }
      ],
-     "id": "buenas-8"
+     "id": "buenas-10"
     },
     {
      "headline": "How a contested B.C. supportive housing project won over its neighbours",
@@ -1860,7 +1934,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x71z1i/how_a_contested_bc_supportive_housing_project_won/"
       }
      ],
-     "id": "buenas-9"
+     "id": "buenas-11"
     },
     {
      "headline": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
@@ -1892,7 +1966,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-10"
+     "id": "buenas-12"
     },
     {
      "headline": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
@@ -1924,7 +1998,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-11"
+     "id": "buenas-13"
     },
     {
      "headline": "Superplantas en Ecuador: son alimento, reducen monocultivos y agroquímicos y podrían enfrentar la crisis climática",
@@ -1956,7 +2030,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-12"
+     "id": "buenas-14"
     },
     {
      "headline": "Cornell scientists identify rare human genetic disorder in two unusually long-legged cats",
@@ -1988,7 +2062,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-13"
+     "id": "buenas-15"
     },
     {
      "headline": "Painted turbines can save millions of birds",
@@ -2020,7 +2094,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-14"
+     "id": "buenas-16"
     },
     {
      "headline": "How one Chicago program is diversifying the solar workforce",
@@ -2052,7 +2126,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-15"
+     "id": "buenas-17"
     },
     {
      "headline": "A planet 320 light-years away confirms what scientists long suspected",
@@ -2084,7 +2158,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-16"
+     "id": "buenas-18"
     },
     {
      "headline": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
@@ -2116,7 +2190,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-17"
+     "id": "buenas-19"
     },
     {
      "headline": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
@@ -2148,7 +2222,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-18"
+     "id": "buenas-20"
     },
     {
      "headline": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
@@ -2180,7 +2254,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-19"
+     "id": "buenas-21"
     },
     {
      "headline": "Scientists recreate a bizarre quantum effect that stops a particle cold",
@@ -2212,7 +2286,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-20"
+     "id": "buenas-22"
     },
     {
      "headline": "Qcells aims to build a giant factory for next-gen tandem solar",
@@ -2244,7 +2318,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-21"
+     "id": "buenas-23"
     },
     {
      "headline": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
@@ -2276,7 +2350,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-22"
+     "id": "buenas-24"
     },
     {
      "headline": "Nueva combinación de medicamentos restaura el control del VIH",
@@ -2308,7 +2382,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-23"
+     "id": "buenas-25"
     },
     {
      "headline": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
@@ -2340,7 +2414,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-24"
+     "id": "buenas-26"
     },
     {
      "headline": "La FDA aprueba el primer antiviral oral contra el herpes resistente en casi 30 años",
@@ -2372,7 +2446,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-25"
+     "id": "buenas-27"
     },
     {
      "headline": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
@@ -2404,7 +2478,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-26"
+     "id": "buenas-28"
     },
     {
      "headline": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
@@ -2436,7 +2510,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-27"
+     "id": "buenas-29"
     },
     {
      "headline": "Scientists created a tiny device that can control your nerves to treat chronic pain",
@@ -2468,7 +2542,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-28"
+     "id": "buenas-30"
     },
     {
      "headline": "Still wielding a chainsaw at 85: the Australians restoring nature in retirement",
@@ -2500,7 +2574,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-29"
+     "id": "buenas-31"
     },
     {
      "headline": "October Big Day en América Latina: de la emoción de descubrir un ave a la defensa de su hábitat",
@@ -2532,7 +2606,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-30"
+     "id": "buenas-32"
     },
     {
      "headline": "Australia Announces 3 New National Parks to Protect Gliders, Owls, and Other Victoria Wildlife",
@@ -2564,7 +2638,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-31"
+     "id": "buenas-33"
     },
     {
      "headline": "Instagram Photo Reveals New Species of Giant Waterlily",
@@ -2596,7 +2670,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-32"
+     "id": "buenas-34"
     },
     {
      "headline": "Scientists find hidden materials that could improve batteries and solar fuels",
@@ -2628,7 +2702,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-33"
+     "id": "buenas-35"
     }
    ]
   }
@@ -2641,16 +2715,16 @@
    "url": "https://feeds.bbci.co.uk/news/rss.xml",
    "itemsInFeed": 34,
    "kept": 22,
-   "newest": "2026-10-16T08:37:49Z"
+   "newest": "2026-10-16T09:18:51Z"
   },
   {
    "id": "bbc-world",
    "source": "BBC",
    "lang": "en",
    "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
-   "itemsInFeed": 34,
-   "kept": 23,
-   "newest": "2026-10-15T23:38:46Z"
+   "itemsInFeed": 36,
+   "kept": 24,
+   "newest": "2026-10-16T08:45:54Z"
   },
   {
    "id": "bbc-politics",
@@ -2659,7 +2733,7 @@
    "url": "https://feeds.bbci.co.uk/news/politics/rss.xml",
    "itemsInFeed": 54,
    "kept": 16,
-   "newest": "2026-10-16T07:59:47Z"
+   "newest": "2026-10-16T08:47:32Z"
   },
   {
    "id": "bbc-business",
@@ -2748,7 +2822,7 @@
    "lang": "es",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada",
    "itemsInFeed": 22,
-   "kept": 18,
+   "kept": 17,
    "newest": "2026-10-16T03:45:01Z"
   },
   {
@@ -2756,7 +2830,7 @@
    "source": "El País",
    "lang": "es",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "itemsInFeed": 105,
+   "itemsInFeed": 104,
    "kept": 48,
    "newest": "2026-10-16T03:30:01Z"
   },
@@ -2810,18 +2884,18 @@
    "source": "El Mundo",
    "lang": "es",
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
-   "itemsInFeed": 26,
+   "itemsInFeed": 25,
    "kept": 21,
-   "newest": "2026-10-16T08:27:58Z"
+   "newest": "2026-10-16T08:56:28Z"
   },
   {
    "id": "elmundo-int",
    "source": "El Mundo",
    "lang": "es",
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml",
-   "itemsInFeed": 53,
-   "kept": 32,
-   "newest": "2026-10-16T06:29:39Z"
+   "itemsInFeed": 52,
+   "kept": 33,
+   "newest": "2026-10-16T06:30:10Z"
   },
   {
    "id": "elmundo-esp",
@@ -2829,8 +2903,8 @@
    "lang": "es",
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml",
    "itemsInFeed": 49,
-   "kept": 35,
-   "newest": "2026-10-16T08:12:48Z"
+   "kept": 34,
+   "newest": "2026-10-16T08:13:12Z"
   },
   {
    "id": "elmundo-eco",
@@ -2838,7 +2912,7 @@
    "lang": "es",
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/economia.xml",
    "itemsInFeed": 50,
-   "kept": 39,
+   "kept": 38,
    "newest": "2026-10-16T08:14:02Z"
   },
   {
@@ -2855,9 +2929,9 @@
    "source": "Expansión",
    "lang": "es",
    "url": "https://e00-expansion.uecdn.es/rss/portada.xml",
-   "itemsInFeed": 73,
+   "itemsInFeed": 72,
    "kept": 57,
-   "newest": "2026-10-16T08:21:57Z"
+   "newest": "2026-10-16T08:52:26Z"
   },
   {
    "id": "econ-int",
@@ -2928,8 +3002,8 @@
    "lang": "en",
    "url": "https://feeds.bloomberg.com/markets/news.rss",
    "itemsInFeed": 20,
-   "kept": 15,
-   "newest": "2026-10-16T08:17:07Z"
+   "kept": 14,
+   "newest": "2026-10-16T09:00:06Z"
   },
   {
    "id": "bbg-politics",
@@ -2937,8 +3011,8 @@
    "lang": "en",
    "url": "https://feeds.bloomberg.com/politics/news.rss",
    "itemsInFeed": 20,
-   "kept": 16,
-   "newest": "2026-10-16T08:15:13Z"
+   "kept": 15,
+   "newest": "2026-10-16T09:00:07Z"
   },
   {
    "id": "bbg-econ",
@@ -2983,7 +3057,7 @@
    "url": "https://www.theguardian.com/world/rss",
    "itemsInFeed": 45,
    "kept": 32,
-   "newest": "2026-10-16T08:14:53Z"
+   "newest": "2026-10-16T09:05:55Z"
   },
   {
    "id": "guardian-us",
@@ -2991,8 +3065,8 @@
    "lang": "en",
    "url": "https://www.theguardian.com/us-news/rss",
    "itemsInFeed": 33,
-   "kept": 12,
-   "newest": "2026-10-16T01:53:19Z"
+   "kept": 11,
+   "newest": "2026-10-16T09:00:56Z"
   },
   {
    "id": "guardian-politics",
@@ -3000,8 +3074,8 @@
    "lang": "en",
    "url": "https://www.theguardian.com/politics/rss",
    "itemsInFeed": 21,
-   "kept": 8,
-   "newest": "2026-10-16T05:00:51Z"
+   "kept": 9,
+   "newest": "2026-10-16T09:00:56Z"
   },
   {
    "id": "guardian-business",
@@ -3009,7 +3083,7 @@
    "lang": "en",
    "url": "https://www.theguardian.com/uk/business/rss",
    "itemsInFeed": 40,
-   "kept": 17,
+   "kept": 16,
    "newest": "2026-10-16T05:00:51Z"
   },
   {
@@ -3027,7 +3101,7 @@
    "lang": "en",
    "url": "https://www.theguardian.com/environment/rss",
    "itemsInFeed": 34,
-   "kept": 9,
+   "kept": 8,
    "newest": "2026-10-16T07:00:54Z"
   },
   {
@@ -3036,7 +3110,7 @@
    "lang": "en",
    "url": "https://www.theguardian.com/world/ukraine/rss",
    "itemsInFeed": 20,
-   "kept": 9,
+   "kept": 10,
    "newest": "2026-10-16T00:43:27Z"
   },
   {
@@ -3055,43 +3129,43 @@
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
    "itemsInFeed": 22,
    "kept": 19,
-   "newest": "2026-10-16T08:22:08Z"
+   "newest": "2026-10-16T09:17:11Z"
   },
   {
    "id": "nyt-world",
    "source": "The New York Times",
    "lang": "en",
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
-   "itemsInFeed": 56,
-   "kept": 40,
-   "newest": "2026-10-16T04:39:04Z"
+   "itemsInFeed": 55,
+   "kept": 39,
+   "newest": "2026-10-16T09:00:13Z"
   },
   {
    "id": "nyt-politics",
    "source": "The New York Times",
    "lang": "en",
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
-   "itemsInFeed": 25,
-   "kept": 16,
-   "newest": "2026-10-16T02:22:17Z"
+   "itemsInFeed": 26,
+   "kept": 17,
+   "newest": "2026-10-16T09:02:07Z"
   },
   {
    "id": "nyt-business",
    "source": "The New York Times",
    "lang": "en",
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
-   "itemsInFeed": 50,
+   "itemsInFeed": 49,
    "kept": 34,
-   "newest": "2026-10-16T02:34:29Z"
+   "newest": "2026-10-16T09:04:12Z"
   },
   {
    "id": "nyt-science",
    "source": "The New York Times",
    "lang": "en",
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
-   "itemsInFeed": 21,
+   "itemsInFeed": 22,
    "kept": 18,
-   "newest": "2026-10-15T13:20:19Z"
+   "newest": "2026-10-16T09:02:57Z"
   },
   {
    "id": "npr-news",
@@ -3099,8 +3173,8 @@
    "lang": "en",
    "url": "https://feeds.npr.org/1001/rss.xml",
    "itemsInFeed": 10,
-   "kept": 10,
-   "newest": "2026-10-16T06:27:30Z"
+   "kept": 9,
+   "newest": "2026-10-16T09:00:00Z"
   },
   {
    "id": "npr-world",
@@ -3108,8 +3182,8 @@
    "lang": "en",
    "url": "https://feeds.npr.org/1004/rss.xml",
    "itemsInFeed": 10,
-   "kept": 7,
-   "newest": "2026-10-15T08:46:09Z"
+   "kept": 10,
+   "newest": "2026-10-16T08:51:17Z"
   },
   {
    "id": "npr-politics",
@@ -3117,8 +3191,8 @@
    "lang": "en",
    "url": "https://feeds.npr.org/1014/rss.xml",
    "itemsInFeed": 10,
-   "kept": 6,
-   "newest": "2026-10-15T09:00:00Z"
+   "kept": 4,
+   "newest": "2026-10-15T16:45:02Z"
   },
   {
    "id": "npr-business",
@@ -3126,7 +3200,7 @@
    "lang": "en",
    "url": "https://feeds.npr.org/1006/rss.xml",
    "itemsInFeed": 10,
-   "kept": 2,
+   "kept": 1,
    "newest": "2026-10-14T13:33:44Z"
   },
   {
@@ -3144,7 +3218,7 @@
    "lang": "en",
    "url": "https://www.aljazeera.com/xml/rss/all.xml",
    "itemsInFeed": 25,
-   "kept": 15,
+   "kept": 14,
    "newest": "2026-10-16T08:36:13Z"
   },
   {
@@ -3189,8 +3263,8 @@
    "lang": "en",
    "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
    "itemsInFeed": 30,
-   "kept": 29,
-   "newest": "2026-10-16T08:13:42Z"
+   "kept": 30,
+   "newest": "2026-10-16T08:52:54Z"
   },
   {
    "id": "dw-en",
@@ -3198,8 +3272,8 @@
    "lang": "en",
    "url": "https://rss.dw.com/rdf/rss-en-all",
    "itemsInFeed": 135,
-   "kept": 34,
-   "newest": "2026-10-16T08:37:00Z"
+   "kept": 33,
+   "newest": "2026-10-16T09:16:00Z"
   },
   {
    "id": "dw-en-bus",
@@ -3226,7 +3300,7 @@
    "url": "https://www.france24.com/en/rss",
    "itemsInFeed": 24,
    "kept": 19,
-   "newest": "2026-10-16T08:36:46Z"
+   "newest": "2026-10-16T08:53:57Z"
   },
   {
    "id": "f24-en-europe",
@@ -3235,7 +3309,7 @@
    "url": "https://www.france24.com/en/europe/rss",
    "itemsInFeed": 30,
    "kept": 17,
-   "newest": "2026-10-15T18:38:17Z"
+   "newest": "2026-10-15T19:02:14Z"
   },
   {
    "id": "f24-en-me",
@@ -3288,8 +3362,8 @@
    "lang": "es",
    "url": "https://www.rfi.fr/es/rss",
    "itemsInFeed": 28,
-   "kept": 23,
-   "newest": "2026-10-15T15:37:17Z"
+   "kept": 22,
+   "newest": "2026-10-16T09:06:33Z"
   },
   {
    "id": "euronews-en",
@@ -3297,8 +3371,8 @@
    "lang": "en",
    "url": "https://www.euronews.com/rss",
    "itemsInFeed": 50,
-   "kept": 37,
-   "newest": "2026-10-16T08:29:51Z"
+   "kept": 36,
+   "newest": "2026-10-16T09:20:40Z"
   },
   {
    "id": "euronews-es",
@@ -3307,7 +3381,7 @@
    "url": "https://es.euronews.com/rss",
    "itemsInFeed": 50,
    "kept": 41,
-   "newest": "2026-10-16T08:14:55Z"
+   "newest": "2026-10-16T09:19:12Z"
   },
   {
    "id": "un-en",
@@ -3333,7 +3407,7 @@
    "lang": "en",
    "url": "https://www.lemonde.fr/en/rss/une.xml",
    "itemsInFeed": 14,
-   "kept": 9,
+   "kept": 10,
    "newest": "2026-10-16T08:05:33Z"
   },
   {
@@ -3351,17 +3425,17 @@
    "lang": "es",
    "url": "https://www.abc.es/rss/2.0/portada/",
    "itemsInFeed": 25,
-   "kept": 12,
-   "newest": "2026-10-16T08:14:03Z"
+   "kept": 14,
+   "newest": "2026-10-16T08:56:52Z"
   },
   {
    "id": "lavanguardia",
    "source": "La Vanguardia",
    "lang": "es",
    "url": "https://www.lavanguardia.com/rss/home.xml",
-   "itemsInFeed": 145,
-   "kept": 86,
-   "newest": "2026-10-16T07:43:47Z"
+   "itemsInFeed": 144,
+   "kept": 87,
+   "newest": "2026-10-16T08:14:10Z"
   },
   {
    "id": "europapress",
@@ -3370,7 +3444,7 @@
    "url": "https://www.europapress.es/rss/rss.aspx",
    "itemsInFeed": 10,
    "kept": 9,
-   "newest": "2026-10-16T08:06:55Z"
+   "newest": "2026-10-16T08:43:23Z"
   },
   {
    "id": "20minutos",
@@ -3378,8 +3452,8 @@
    "lang": "es",
    "url": "https://www.20minutos.es/rss/",
    "itemsInFeed": 191,
-   "kept": 109,
-   "newest": "2026-10-16T08:03:21Z"
+   "kept": 111,
+   "newest": "2026-10-16T09:09:58Z"
   },
   {
    "id": "infobae",
@@ -3387,8 +3461,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "itemsInFeed": 100,
-   "kept": 23,
-   "newest": "2026-10-16T08:36:00Z"
+   "kept": 32,
+   "newest": "2026-10-16T09:13:08Z"
   },
   {
    "id": "infobae-america",
@@ -3396,8 +3470,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/america/",
    "itemsInFeed": 100,
-   "kept": 89,
-   "newest": "2026-10-16T04:53:05Z"
+   "kept": 88,
+   "newest": "2026-10-16T07:46:36Z"
   },
   {
    "id": "infobae-eco",
@@ -3423,8 +3497,8 @@
    "lang": "es",
    "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
    "itemsInFeed": 93,
-   "kept": 48,
-   "newest": "2026-10-16T08:13:00Z"
+   "kept": 50,
+   "newest": "2026-10-16T09:00:00Z"
   },
   {
    "id": "eltiempo-mundo",
@@ -3460,7 +3534,7 @@
    "url": "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml",
    "itemsInFeed": 100,
    "kept": 49,
-   "newest": "2026-10-16T08:15:00Z"
+   "newest": "2026-10-16T09:10:00Z"
   },
   {
    "id": "elfinanciero-cr",
@@ -3579,14 +3653,6 @@
     "kind": "good",
     "itemsInFeed": 100,
     "kept": 3
-   },
-   {
-    "id": "pos-anthropocene",
-    "source": "Anthropocene Magazine",
-    "url": "https://www.anthropocenemagazine.org/feed/",
-    "kind": "good",
-    "itemsInFeed": 30,
-    "kept": 0
    },
    {
     "id": "pos-owid",
@@ -3831,6 +3897,12 @@
   ],
   "feedsFailed": [
    {
+    "id": "pos-anthropocene",
+    "source": "Anthropocene Magazine",
+    "url": "https://www.anthropocenemagazine.org/feed/",
+    "error": "ParseError: not well-formed (invalid token): line 1, column 119"
+   },
+   {
     "id": "pos-nih",
     "source": "NIH",
     "url": "https://www.nih.gov/news-releases/feed.xml",
@@ -3944,44 +4016,302 @@
    [
     "descartada",
     "UpliftingNews",
-    "Prince Charles Cinema secures 25-year lease after closure threat",
-    "https://goodnewsdigest.app/stories/prince-charles-cinema-secures-25-year-lease-after-closure-threat-e07c51d7"
-   ],
-   [
-    "descartada",
-    "UpliftingNews",
     "Glasgow great-great-grandmother, 104, meets her brother again after 60 years apart. Susan Gair of Pollok turned 104 this",
     "https://sheets.works/story/a-sunday-roast-in-leeds?r=stories"
    ],
    [
     "descartada",
-    "HumansBeingBros",
-    "This would be the best guy to sit on a plane with",
-    "https://v.redd.it/n0i5q1z9iqvh1"
+    "UpliftingNews",
+    "Prince Charles Cinema secures 25-year lease after closure threat",
+    "https://goodnewsdigest.app/stories/prince-charles-cinema-secures-25-year-lease-after-closure-threat-e07c51d7"
    ],
    [
     "descartada",
-    "Futurology",
-    "First-Ever Public Confirmation of 'Zero-Click' Spyware Delivered Via Targeted Ads. A firm called Discover-Tech has ads o",
-    "https://www.reddit.com/r/Futurology/comments/1x6zi5u/firstever_public_confirmation_of_zeroclick/"
+    "science",
+    "Nine in ten research papers disputing definition of ultraprocessed foods have industry ties.",
+    "https://www.theexamination.org/articles/nova-ultraprocessed-foods-industry-ties-study"
    ],
    [
     "descartada",
-    "Futurology",
-    "German police arrest two people accused of using a €10,000 Unitree robot to sexually assault a teen girl.",
-    "https://www.reddit.com/r/Futurology/comments/1x6p7xl/german_police_arrest_two_people_accused_of_using/"
+    "science",
+    "A common stomach bug (H pylori) that causes stomach ulcers may be linked to about 1 in 5 colon cancer cases worldwide, s",
+    "https://www.med.hku.hk/en/news/press/20260928-hkumed-led-international-study-finds-helicobacter-pylori-exposure-may-be-associated"
    ],
    [
     "descartada",
-    "Futurology",
-    "In the future we will have online virtual workspaces or think-tanks or brainstorm places where people will combine and g",
-    "https://www.reddit.com/r/Futurology/comments/1x6i41d/in_the_future_we_will_have_online_virtual/"
+    "science",
+    "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own gene",
+    "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
    ],
    [
     "descartada",
-    "Futurology",
-    "Elon Musk really brought a flying car. Tesla Roadster just pulled off an inverted ramp climb and mid-air flip.",
-    "https://www.ibtimes.co.uk/tesla-roadster-mid-air-flip-long-awaited-demo-1825958"
+    "science",
+    "A new long-term study has linked late-night eating with a significantly higher risk of developing cirrhosis and metaboli",
+    "https://www.sciencealert.com/one-common-eating-habit-is-linked-to-higher-risk-of-2-liver-diseases"
+   ],
+   [
+    "descartada",
+    "science",
+    "Overcoming Detection Lag in a Cryptic Panzootic: Chytrid Invasion Linked to Historically Enigmatic Amphibian Declines in",
+    "https://onlinelibrary.wiley.com/doi/10.1111/mec.70573"
+   ],
+   [
+    "descartada",
+    "science",
+    "Control theory of aging and longevity for gerotherapeutic drug discovery: state space, vector fields, modalities, safety",
+    "https://doi.org/10.18632/aging.206422"
+   ],
+   [
+    "descartada",
+    "science",
+    "Research investigates the “mean-regression trap”. Authors proposed a two-step advancement in model architecture. The GCN",
+    "https://doi.org/10.18653/v1/2026.semeval-1.53"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "\"You don't have to talk, I'll talk enough for the both of us\"",
+    "https://v.redd.it/jgfvr7e41ovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "oh, the beauty of a child’s heart ❤️",
+    "https://v.redd.it/bvk3di5vdmvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Kermit and a 4 year old (1972)",
+    "https://v.redd.it/1cdglrm5xqvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Terry Crews bringing pure energy to SoFi Stadium",
+    "https://v.redd.it/ln25hd8i3pvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A woman grew out her hair to donate to her mother 🎀",
+    "https://v.redd.it/p2kcu1u4gnvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "The ultimate side quest",
+    "https://v.redd.it/chahywkb3qvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Can you imagine?",
+    "https://i.redd.it/03rresfzvhuh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Watching her little mind figure this out",
+    "https://v.redd.it/d1v4yv4y8ovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Mother worked abroad as housekeeper for decades to fund sons education, now he is pilot of her flight",
+    "https://v.redd.it/njqpqjpmfqvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "I’m not sure what this kid has but he is special.",
+    "https://v.redd.it/4cob4vayuqvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Memories from the 80s.",
+    "https://v.redd.it/c71ggc9mqpvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "[OC] I left work early today to Volunteer at my kids book fair. My company gave me $100 to help kids who cannot afford o",
+    "https://i.redd.it/z9qq4et5zovh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Blind man wins 10 second challenge at barber shop for free haircuts",
+    "https://v.redd.it/wyenoegkzovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Cows love music & it is the wildest thing to watch",
+    "https://v.redd.it/sjhbtex8qlvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Young foxes playing",
+    "https://v.redd.it/ax9snv4fcpvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A baby owl",
+    "https://v.redd.it/094l5jo7xnvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Teen speaks out after viral video showed him giving elderly man the shoes off his feet (OC)",
+    "https://www.unilad.com/news/us-news/jordan-hope-arizona-kindness-shoes-video-903685-20261015"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Tiger cubs",
+    "https://v.redd.it/l5al9uljxrvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Paparazzi for Halloween 🎃",
+    "https://v.redd.it/aizuhzht3qvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Just a kid living his best life (by@__ha.do)",
+    "https://v.redd.it/a1jephcyonvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "How many plates of beans did you eat?",
+    "https://v.redd.it/a4cqfvufpnvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "I need her to teach me",
+    "https://v.redd.it/knlii153hlvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Beavers Destroy Sign Warning People About....Beavers",
+    "https://notesfrompoland.com/2026/10/08/beavers-destroy-sign-warning-about-beavers/"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Every year since my daughter turned 1 I add a charm to this necklace which marks something in the year. Tomorrow she is ",
+    "https://i.redd.it/mcv5446opovh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Bears kept stealing a man's honey, so he enlisted them as taste tasters.",
+    "https://v.redd.it/2897duoi7qvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Dog saves a tiny stray kitten by bringing it home",
+    "https://v.redd.it/80o0ho0yscvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A young fox",
+    "https://v.redd.it/h6p4nagamsvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Bibbity, Bibbity, BOO! 🦇",
+    "https://v.redd.it/5iocmghb6nvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "🎵 🎶 Soup for my grandma 🎵 🎶",
+    "https://v.redd.it/84uxmdqdcovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Doggo delivering goods",
+    "https://i.redd.it/gf10g7ceymvh1.png"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Years of hard work paying off - Nene Royal's Zombie",
+    "https://v.redd.it/78ttx6znzmvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "These squeaky bunny noises",
+    "https://v.redd.it/6b42tucl1uuh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "The athlete with Down syndrome, noticing the sadness of his defeated opponent, immediately ran up to him and raised his ",
+    "https://v.redd.it/ura6k4m3kgvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A country meadow living the dream",
+    "https://i.redd.it/64zu7aidzqvh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Our new lab loves playing hide and seek..",
+    "https://www.reddit.com/gallery/1x6wegz"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "🥹🥰🫠really made me smile",
+    "https://i.redd.it/i85lxa4zksvh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Carmel brothers help to save grandmother, 2 toddlers from retention pond",
+    "https://fox59.com/news/carmel-brothers-help-to-save-grandmother-2-toddlers-from-retention-pond/"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "To prank her",
+    "https://v.redd.it/ptjaqpletovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Thanks, Goodwill",
+    "https://i.redd.it/oiav7umaknvh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Tomorrow is my 400th consecutive day on Reddit",
+    "https://i.redd.it/snac67nacovh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Man tells a wild bear to wait while he prepares it a sandwich, and it listens",
+    "https://v.redd.it/9y06seynqlvh1"
    ],
    [
     "descartada",
@@ -4057,9 +4387,93 @@
    ],
    [
     "descartada",
-    "Futurology",
-    "Could ASI be the Great Filter? If creating superintelligence is just the next evolutionary step for biological life, cou",
-    "https://www.astronomy.com/science/the-great-filter-a-possible-solution-to-the-fermi-paradox/"
+    "science",
+    "Nearly half of people who started GLP-1 drugs like Ozempic or Wegovy say they now drink less alcohol, and among heavier ",
+    "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2854926?guestAccessKey=8c64289b-1f09-44b7-89a0-7c584fe2ea58"
+   ],
+   [
+    "descartada",
+    "science",
+    "Scientists trusted less than business leaders when discussing social issues, study finds",
+    "https://www.manchester.ac.uk/about/news/scientists-trusted-less-than-business-leaders/"
+   ],
+   [
+    "descartada",
+    "science",
+    "AI assistants can easily manipulate users into making disadvantageous decisions when the AI operates with a hidden agend",
+    "https://www.eurekalert.org/news-releases/1147838"
+   ],
+   [
+    "descartada",
+    "science",
+    "A new set of remains found in modern-day Iraq suggests that one Neandertal probably suffered a devastating blow to the f",
+    "https://www.sciencenews.org/article/hole-neandertal-bone-fatal-spear"
+   ],
+   [
+    "descartada",
+    "science",
+    "Green space is linked with fewer gun-related homicides, but not everywhere: the association is strongest in wealthier ne",
+    "https://news.osu.edu/green-space-is-linked-with-fewer-gun-related-homicides--but-not-everywhere/"
+   ],
+   [
+    "descartada",
+    "science",
+    "National Data Show High Rates of Anxiety in U.S Adolescents. Only half of adolescents with moderate or severe anxiety sy",
+    "https://today.uconn.edu/2026/10/national-data-show-high-rates-of-anxiety-in-adolescents/"
+   ],
+   [
+    "descartada",
+    "science",
+    "Survey of 102 cities reveals more than 40,000 new viruses. A study involving Brazilian researchers analyzed samples from",
+    "https://www.eurekalert.org/news-releases/1147767"
+   ],
+   [
+    "descartada",
+    "science",
+    "An aging-sensitive secreted phospholipase confers neuroprotection and cognitive resilience | Nature Neuroscience",
+    "https://www.nature.com/articles/s41593-026-02465-z"
+   ],
+   [
+    "descartada",
+    "science",
+    "Reversing age by reprogramming gene expression networks. Aging-specific screening platform identifies gene with multifac",
+    "https://www.eurekalert.org/news-releases/1147754"
+   ],
+   [
+    "descartada",
+    "science",
+    "Reprogrammed NK immune cells target cancer and autoimmune disorders",
+    "https://news.mit.edu/2026/reprogrammed-nk-immune-cells-target-cancer-and-autoimmune-disorders-1013"
+   ],
+   [
+    "descartada",
+    "science",
+    "What makes us human. A first atlas of functional DNA changes offers new clues. Researchers identify evolutionary DNA cha",
+    "https://www.eurekalert.org/news-releases/1147810"
+   ],
+   [
+    "confirmada",
+    "science",
+    "UK astronomers help reveal host galaxy of most distant fast radio burst. The findings suggest fast radio bursts can happ",
+    "https://www.manchester.ac.uk/about/news/uk-astronomers-help-reveal-host-galaxy-of-most-distant-fast-radio-burst/"
+   ],
+   [
+    "confirmada",
+    "science",
+    "New phase 1 trial results published in Nature Medicine show that combining a personalized neoantigen-targeting cancer va",
+    "https://www.nature.com/articles/s41591-026-04717-8"
+   ],
+   [
+    "descartada",
+    "science",
+    "Google’s quantum Willow chip may be able to grow ‘magic states'—helping improve quantum computers’ accuracy in complex c",
+    "https://www.scientificamerican.com/article/googles-quantum-willow-chip-may-be-able-to-grow-magic-states/"
+   ],
+   [
+    "descartada",
+    "science",
+    "About 1 in 4 men in the Army may have low testosterone, study finds",
+    "https://www.washingtonpost.com/national-security/2026/10/15/about-1-4-men-army-may-have-low-testosterone-study-finds/"
    ]
   ],
   "fluffDropped": [
@@ -4072,7 +4486,6 @@
    "NPR-Inspired Homework Leads Teen to Find Hidden Message a Decade After a Stranger’s Kindness",
    "Cards Against Humanity has donated 5,000-plus games to public libraries to help 'fend off AI and brainrot'",
    "Meet the first bear to ever receive a prosthetic paw: 'We do whatever it takes to help'",
-   "Scientists built a soundtrack to lure baby corals to their cyborg reef",
    "Scientists make stunning discovery that could help explain why life exists",
    "NASA captures a stunning transformation in Australia's red outback",
    "Scientists make stunning discovery that could help explain why life exists",
@@ -4087,18 +4500,17 @@
    "Investors dump data centre bonds as AI borrowers face ‘Darwin moment’",
    "Netflix Replaces Bela Bajaria as Chief Content Officer",
    "Netflix Chief Content Officer Bela Bajaria is leaving, will be replaced by Peter Rice",
-   "AI-assisted dying? Doris Dörrie's new film addresses prospect of care robots",
-   "Anunció su retiro en 2002, pero una negociación de último momento lo cambió todo: así sumó Ferguson una década extra en Manchester United"
+   "AI-assisted dying? Doris Dörrie's new film addresses prospect of care robots"
   ],
-  "candidates": 40,
+  "candidates": 42,
   "fromGeneralFeeds": 1,
   "rejected": {
    "formato": 93,
-   "relleno (sin impacto medible)": 4,
+   "relleno (sin impacto medible)": 3,
    "relleno": 10,
-   "poco positivo": 294,
-   "negativo": 141,
-   "negativo-resumen": 2
+   "poco positivo": 286,
+   "negativo": 143,
+   "negativo-resumen": 1
   },
   "reddit": {
    "UpliftingNews": {
@@ -4107,14 +4519,14 @@
     "error": null
    },
    "HumansBeingBros": {
-    "ok": true,
-    "items": 1,
-    "error": null
-   },
-   "science": {
     "ok": false,
     "items": 0,
     "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "science": {
+    "ok": true,
+    "items": 22,
+    "error": null
    },
    "worldnews": {
     "ok": false,
@@ -4122,14 +4534,14 @@
     "error": "HTTPError: HTTP Error 429: Too Many Requests"
    },
    "Futurology": {
-    "ok": true,
-    "items": 5,
-    "error": null
-   },
-   "MadeMeSmile": {
     "ok": false,
     "items": 0,
     "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "MadeMeSmile": {
+    "ok": true,
+    "items": 41,
+    "error": null
    }
   },
   "ninegag": {
@@ -4138,16 +4550,16 @@
    "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "leads": {
-   "total": 26,
-   "confirmed": 4,
-   "dropped": 22,
+   "total": 83,
+   "confirmed": 6,
+   "dropped": 77,
    "confirmedVia": {
-    "enlace a medio confiable (leído de su página)": 4
+    "enlace a medio confiable (leído de su página)": 6
    },
    "droppedReasons": {
-    "enlace a sitio no verificado": 13,
-    "medio confiable pero nota no positiva": 4,
-    "medio confiable pero no se pudo leer la página": 3,
+    "enlace a sitio no verificado": 56,
+    "medio confiable pero nota no positiva": 10,
+    "medio confiable pero no se pudo leer la página": 9,
     "nota antigua": 2
    },
    "droppedExamples": [
@@ -4183,45 +4595,45 @@
     },
     {
      "sub": "UpliftingNews",
-     "title": "Prince Charles Cinema secures 25-year lease after closure threat",
-     "link": "https://goodnewsdigest.app/stories/prince-charles-cinema-secures-25-year-lease-after-closure-threat-e07c51d7"
-    },
-    {
-     "sub": "UpliftingNews",
      "title": "Glasgow great-great-grandmother, 104, meets her brother again after 60 years apart. Susan Gair of Pollok turned 104 this summer. Her brother",
      "link": "https://sheets.works/story/a-sunday-roast-in-leeds?r=stories"
     },
     {
-     "sub": "HumansBeingBros",
-     "title": "This would be the best guy to sit on a plane with",
-     "link": "https://v.redd.it/n0i5q1z9iqvh1"
+     "sub": "UpliftingNews",
+     "title": "Prince Charles Cinema secures 25-year lease after closure threat",
+     "link": "https://goodnewsdigest.app/stories/prince-charles-cinema-secures-25-year-lease-after-closure-threat-e07c51d7"
     },
     {
-     "sub": "Futurology",
-     "title": "First-Ever Public Confirmation of 'Zero-Click' Spyware Delivered Via Targeted Ads. A firm called Discover-Tech has ads on 200,000 websites t",
-     "link": "https://www.reddit.com/r/Futurology/comments/1x6zi5u/firstever_public_confirmation_of_zeroclick/"
+     "sub": "science",
+     "title": "Nine in ten research papers disputing definition of ultraprocessed foods have industry ties.",
+     "link": "https://www.theexamination.org/articles/nova-ultraprocessed-foods-industry-ties-study"
     },
     {
-     "sub": "Futurology",
-     "title": "German police arrest two people accused of using a €10,000 Unitree robot to sexually assault a teen girl.",
-     "link": "https://www.reddit.com/r/Futurology/comments/1x6p7xl/german_police_arrest_two_people_accused_of_using/"
+     "sub": "science",
+     "title": "A common stomach bug (H pylori) that causes stomach ulcers may be linked to about 1 in 5 colon cancer cases worldwide, says a review of 43 s",
+     "link": "https://www.med.hku.hk/en/news/press/20260928-hkumed-led-international-study-finds-helicobacter-pylori-exposure-may-be-associated"
     },
     {
-     "sub": "Futurology",
-     "title": "In the future we will have online virtual workspaces or think-tanks or brainstorm places where people will combine and gather and join much ",
-     "link": "https://www.reddit.com/r/Futurology/comments/1x6i41d/in_the_future_we_will_have_online_virtual/"
+     "sub": "science",
+     "title": "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own genes, not from how thei",
+     "link": "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
+    },
+    {
+     "sub": "science",
+     "title": "A new long-term study has linked late-night eating with a significantly higher risk of developing cirrhosis and metabolic dysfunction-associ",
+     "link": "https://www.sciencealert.com/one-common-eating-habit-is-linked-to-higher-risk-of-2-liver-diseases"
     }
    ]
   },
   "perSubtopic": {
-   "salud": 8,
-   "ciencia": 8,
+   "salud": 9,
+   "ciencia": 9,
    "ambiente": 12,
    "social": 1,
    "acciones": 3,
    "comunidad": 1
   },
-  "allStoriesBeforeCap": 40
+  "allStoriesBeforeCap": 42
  },
  "crypto": {
   "minOutlets": 5,
@@ -4244,8 +4656,8 @@
     "id": "cr-decrypt",
     "source": "Decrypt",
     "url": "https://decrypt.co/feed",
-    "itemsInFeed": 56,
-    "kept": 20
+    "itemsInFeed": 36,
+    "kept": 21
    },
    {
     "id": "cr-cointelegraph",
@@ -4273,7 +4685,7 @@
     "source": "The Defiant",
     "url": "https://thedefiant.io/api/feed",
     "itemsInFeed": 100,
-    "kept": 37
+    "kept": 38
    },
    {
     "id": "cr-unchained",
@@ -4315,7 +4727,7 @@
     "source": "DiarioBitcoin",
     "url": "https://www.diariobitcoin.com/feed/",
     "itemsInFeed": 20,
-    "kept": 5
+    "kept": 4
    },
    {
     "id": "cr-bbg-crypto",
@@ -4357,7 +4769,7 @@
     "source": "Expansión",
     "url": "https://e00-expansion.uecdn.es/rss/mercados/criptomonedas.xml",
     "itemsInFeed": 50,
-    "kept": 5
+    "kept": 4
    },
    {
     "id": "cr-investing-crypto",
@@ -4391,7 +4803,7 @@
     "id": "cr-nyt-tech",
     "source": "The New York Times",
     "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
-    "itemsInFeed": 23,
+    "itemsInFeed": 20,
     "kept": 0
    },
    {
@@ -4476,10 +4888,10 @@
    "predicción/promo/formato": 2,
    "sección no noticiosa": 1
   },
-  "clusters": 157,
+  "clusters": 156,
   "groupsByOutletCount": {
-   "1": 137,
-   "2": 12,
+   "1": 135,
+   "2": 13,
    "3": 5,
    "4": 1,
    "5": 2
