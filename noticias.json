@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T07:19:35Z",
+ "updatedAt": "2026-10-16T07:21:31Z",
  "nextRefreshAt": "2026-10-16T09:00:00Z",
  "refreshHours": 3,
  "method": {
@@ -9,18 +9,18 @@
   "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 2+ medios distintos."
  },
  "stats": {
-  "feedsOk": 93,
-  "feedsFailed": 11,
-  "itemsGathered": 1801,
-  "clusters": 1517,
-  "consensusStories": 92,
+  "feedsOk": 94,
+  "feedsFailed": 10,
+  "itemsGathered": 1837,
+  "clusters": 1534,
+  "consensusStories": 91,
   "perCategory": {
-   "sucesos": 13,
+   "sucesos": 14,
    "politica": 30,
-   "finanzas": 20,
-   "mundo": 16,
+   "finanzas": 19,
+   "mundo": 17,
    "ciencias": 3,
-   "guerras": 10
+   "guerras": 8
   }
  },
  "sourcesUsed": [
@@ -43,6 +43,7 @@
   "El País",
   "El País English",
   "El Tiempo",
+  "Euronews",
   "Euronews Español",
   "Europa Press",
   "Expansión",
@@ -217,6 +218,13 @@
        "publishedAt": "2026-10-16T03:22:07Z"
       },
       {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Three children and one teacher killed in Oregon elementary school shooting",
+       "url": "https://www.euronews.com/2026/10/16/four-killed-in-oregon-elementary-school-shooting-including-three-children-aged-5-to-11",
+       "publishedAt": "2026-10-16T03:23:21Z"
+      },
+      {
        "source": "BBC",
        "lang": "en",
        "title": "Three children and teacher killed in US primary school shooting",
@@ -272,11 +280,11 @@
      "headline": "Al menos 19 heridos en un choque entre un minibús y un tren en el túnel del Canal de la Mancha",
      "headlineLang": "es",
      "headlineEs": "Al menos 19 heridos en un choque entre un minibús y un tren en el túnel del Canal de la Mancha",
-     "headlineEn": "19 injured as minibus slams into Channel Tunnel shuttle train",
+     "headlineEn": "19 injured after Channel Tunnel collision between bus and train",
      "summaryEs": "Transportaba a conductores de camiones que se disponían a embarcar en un servicio de enlace de LeShuttle. \"No hay que lamentar ninguna víctima mortal y ningún herido se encuentra en estado crítico\", según un comunicado de la prefectura Leer",
      "summaryEsSource": "El Mundo",
-     "summaryEn": "A minibus carrying truck drivers crashed into a train transporting vehicles through the busy Channel Tunnel between France and England has injured 19 people, French authorities said.",
-     "summaryEnSource": "RFI",
+     "summaryEn": "Nineteen people have been injured after a collision between a bus and a train on the French side of the Channel Tunnel.",
+     "summaryEnSource": "Sky News",
      "outlets": 9,
      "outletNames": [
       "BBC",
@@ -318,6 +326,13 @@
        "publishedAt": "2026-10-15T19:58:05Z"
       },
       {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "At least 19 injured as minibus collides with train near Channel Tunnel",
+       "url": "https://www.euronews.com/2026/10/15/at-least-19-injured-as-coach-collides-with-train-near-channel-tunnel",
+       "publishedAt": "2026-10-15T20:15:46Z"
+      },
+      {
        "source": "Euronews Español",
        "lang": "es",
        "title": "Al menos 19 heridos al chocar un autocar con un tren cerca del Eurotúnel",
@@ -341,7 +356,7 @@
       {
        "source": "France 24",
        "lang": "en",
-       "title": "19 injured as minibus crashes into train at Channel Tunnel entrance",
+       "title": "Minibus crashes into train at French Channel Tunnel entrance, injuring 19",
        "url": "https://www.france24.com/en/europe/20261016-19-injured-as-minibus-crashes-into-train-at-channel-tunnel-entrance",
        "publishedAt": "2026-10-16T00:53:16Z"
       },
@@ -646,6 +661,43 @@
      "id": "sucesos-7"
     },
     {
+     "headline": "Portugal’s Housing Protest Draws Thousands After Police Clashes",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Portugal’s Housing Protest Draws Thousands After Police Clashes",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Thousands of people took to the streets of Portugal’s second-largest city Thursday to protest against the country’s soaring home prices after the police clashed with demonstrators in the early morning hours, increasing pressure on the government to act.",
+     "summaryEnSource": "Bloomberg",
+     "outlets": 2,
+     "outletNames": [
+      "Bloomberg",
+      "Euronews"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T17:39:55Z",
+     "lastSeen": "2026-10-15T23:21:39Z",
+     "sources": [
+      {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Dozens reportedly injured in police crackdown on Portugal housing protest",
+       "url": "https://www.euronews.com/2026/10/15/dozens-reportedly-injured-in-police-crackdown-on-portugal-housing-protest",
+       "publishedAt": "2026-10-15T17:39:55Z"
+      },
+      {
+       "source": "Bloomberg",
+       "lang": "en",
+       "title": "Portugal’s Housing Protest Draws Thousands After Police Clashes",
+       "url": "https://www.bloomberg.com/news/articles/2026-10-15/portugal-s-housing-protest-draws-thousands-after-police-clashes",
+       "publishedAt": "2026-10-15T23:21:39Z"
+      }
+     ],
+     "id": "sucesos-8"
+    },
+    {
      "headline": "Mother of Henry Nowak killer could be deported",
      "headlineLang": "en",
      "headlineEs": null,
@@ -680,7 +732,7 @@
        "publishedAt": "2026-10-15T19:43:07Z"
       }
      ],
-     "id": "sucesos-8"
+     "id": "sucesos-9"
     },
     {
      "headline": "Cargas policiales, altercados y un detenido en Pamplona durante una protesta contra Vito Quiles",
@@ -717,7 +769,7 @@
        "publishedAt": "2026-10-15T19:01:46Z"
       }
      ],
-     "id": "sucesos-9"
+     "id": "sucesos-10"
     },
     {
      "headline": "Cambio de rumbo en el régimen de excepción de El Salvador: Nayib Bukele plantea liberar a la mitad de los presos",
@@ -754,7 +806,7 @@
        "publishedAt": "2026-10-15T19:00:27Z"
       }
      ],
-     "id": "sucesos-10"
+     "id": "sucesos-11"
     },
     {
      "headline": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
@@ -792,7 +844,7 @@
        "publishedAt": "2026-10-15T15:55:14Z"
       }
      ],
-     "id": "sucesos-11"
+     "id": "sucesos-12"
     },
     {
      "headline": "French anti-terror investigators probe True Crime Community link to school shooting",
@@ -829,7 +881,7 @@
        "publishedAt": "2026-10-15T10:14:57Z"
       }
      ],
-     "id": "sucesos-12"
+     "id": "sucesos-13"
     },
     {
      "headline": "Desperate to clear toxic haze, Indonesia douses its skies with dry ice",
@@ -866,7 +918,7 @@
        "publishedAt": "2026-10-15T04:25:03Z"
       }
      ],
-     "id": "sucesos-13"
+     "id": "sucesos-14"
     }
    ]
   },
@@ -1008,7 +1060,7 @@
      "summaryEsSource": "BBC Mundo",
      "summaryEn": "Katie Zacharia does not appear to be registered to the legal bar in any state where she has lived.",
      "summaryEnSource": "BBC",
-     "outlets": 6,
+     "outlets": 7,
      "outletNames": [
       "BBC",
       "BBC Mundo",
@@ -1016,14 +1068,15 @@
       "CBS News",
       "DW",
       "El País",
-      "El Tiempo"
+      "El Tiempo",
+      "Euronews"
      ],
      "languages": [
       "en",
       "es"
      ],
      "firstSeen": "2026-10-15T08:41:04Z",
-     "lastSeen": "2026-10-16T04:21:00Z",
+     "lastSeen": "2026-10-16T06:13:09Z",
      "sources": [
       {
        "source": "BBC",
@@ -1073,6 +1126,13 @@
        "title": "Katie Zacharia, la nueva secretaria de prensa de la Casa Blanca, se defiende por presentarse como abogada y admite que no aprobó el examen profesional",
        "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/katie-zacharia-la-nueva-secretaria-de-prensa-de-la-casa-blanca-se-defiende-por-presentarse-como-abogada-y-admite-que-no-aprobo-el-examen-profesional-3593937",
        "publishedAt": "2026-10-16T04:21:00Z"
+      },
+      {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "New White House press secretary Katie Zacharia says China lacked 'proper' toilets",
+       "url": "https://www.euronews.com/2026/10/16/new-white-house-press-secretary-katie-zacharia-says-china-lacked-proper-toilets",
+       "publishedAt": "2026-10-16T06:13:09Z"
       }
      ],
      "id": "politica-2"
@@ -1481,6 +1541,65 @@
      "id": "politica-9"
     },
     {
+     "headline": "Farage defends Reform's vetting after councillors filmed making racist comments",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Farage defends Reform's vetting after councillors filmed making racist comments",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "The Reform leader says \"you can't vet for future comments\", after undercover filming of party activists.",
+     "summaryEnSource": "BBC",
+     "outlets": 3,
+     "outletNames": [
+      "BBC",
+      "Financial Times",
+      "The Guardian"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T10:20:51Z",
+     "lastSeen": "2026-10-15T23:52:27Z",
+     "sources": [
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Reform faces criticism after councillors filmed making racist comments",
+       "url": "https://www.bbc.co.uk/news/articles/cw3dj458re1vo",
+       "publishedAt": "2026-10-15T10:20:51Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Farage defends Reform's vetting after councillors filmed making racist comments",
+       "url": "https://www.bbc.co.uk/news/articles/crlykvgx1wvxo",
+       "publishedAt": "2026-10-15T16:36:32Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Farage accused of ‘protecting’ Reform candidate over racist slurs against David Lammy",
+       "url": "https://www.theguardian.com/politics/2026/oct/15/farage-accused-protecting-reform-candidate-racist-slurs-david-lammy-itv-film",
+       "publishedAt": "2026-10-15T19:09:46Z"
+      },
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
+       "url": "https://www.ft.com/content/317796f3-af18-4acb-a482-ec0bdd0edf45",
+       "publishedAt": "2026-10-15T21:05:45Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Reform faces questions over candidate vetting after undercover filming",
+       "url": "https://www.bbc.co.uk/news/articles/cqm26yr42ezko",
+       "publishedAt": "2026-10-15T23:52:27Z"
+      }
+     ],
+     "id": "politica-10"
+    },
+    {
      "headline": "Diputado denuncia a Laura Fernández y Rodrigo Chaves por presunto nombramiento ilegal del director de la DIS",
      "headlineLang": "es",
      "headlineEs": "Diputado denuncia a Laura Fernández y Rodrigo Chaves por presunto nombramiento ilegal del director de la DIS",
@@ -1523,7 +1642,7 @@
        "publishedAt": "2026-10-15T22:56:09Z"
       }
      ],
-     "id": "politica-10"
+     "id": "politica-11"
     },
     {
      "headline": "James Talarico Raises Quarterly Record of $64 Million in Texas Senate Race Against Ken Paxton",
@@ -1575,7 +1694,7 @@
        "publishedAt": "2026-10-15T22:11:08Z"
       }
      ],
-     "id": "politica-11"
+     "id": "politica-12"
     },
     {
      "headline": "Albania registra nuevos enfrentamientos en Tirana durante las protestas que exigen la dimisión de Rama",
@@ -1621,6 +1740,13 @@
        "publishedAt": "2026-10-15T12:27:24Z"
       },
       {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Albanian PM condemns 'chaos' as violent protests enter third day",
+       "url": "https://www.euronews.com/2026/10/15/albanian-pm-condemns-chaos-as-violent-protests-enter-third-day",
+       "publishedAt": "2026-10-15T14:11:48Z"
+      },
+      {
        "source": "France 24",
        "lang": "en",
        "title": "Albania's leader defies calls to resign as student protesters rampage in capital",
@@ -1635,7 +1761,7 @@
        "publishedAt": "2026-10-15T19:23:34Z"
       }
      ],
-     "id": "politica-12"
+     "id": "politica-13"
     },
     {
      "headline": "Police raid the major pro-opposition Halk TV channel in Turkey",
@@ -1680,7 +1806,7 @@
        "publishedAt": "2026-10-15T16:48:00Z"
       }
      ],
-     "id": "politica-13"
+     "id": "politica-14"
     },
     {
      "headline": "Decenas de miles marchan en Colombia en la primera protesta contra el gobierno de De la Espriella",
@@ -1739,7 +1865,7 @@
        "publishedAt": "2026-10-15T16:00:03Z"
       }
      ],
-     "id": "politica-14"
+     "id": "politica-15"
     },
     {
      "headline": "La Junta Electoral abre expediente sancionador a Sánchez por la rueda de prensa en La Moncloa donde anunció los decretos sobre vivienda",
@@ -1784,7 +1910,7 @@
        "publishedAt": "2026-10-15T15:30:32Z"
       }
      ],
-     "id": "politica-15"
+     "id": "politica-16"
     },
     {
      "headline": "Porn showing choking or incest to be banned from early November, government says",
@@ -1821,7 +1947,7 @@
        "publishedAt": "2026-10-16T07:09:49Z"
       }
      ],
-     "id": "politica-16"
+     "id": "politica-17"
     },
     {
      "headline": "Una nueva incursión de Marruecos en aguas españolas contradice el discurso de \"hecho puntual\" de Sánchez",
@@ -1858,7 +1984,7 @@
        "publishedAt": "2026-10-16T07:05:40Z"
       }
      ],
-     "id": "politica-17"
+     "id": "politica-18"
     },
     {
      "headline": "Més y Frente Amplio cierran un acuerdo al Congreso en Balears sin Podemos",
@@ -1895,7 +2021,7 @@
        "publishedAt": "2026-10-16T07:02:41Z"
       }
      ],
-     "id": "politica-18"
+     "id": "politica-19"
     },
     {
      "headline": "El PP de Ayuso apuesta por Cayetana Álvarez de Toledo como número dos por Madrid en las generales",
@@ -1932,7 +2058,7 @@
        "publishedAt": "2026-10-16T03:30:01Z"
       }
      ],
-     "id": "politica-19"
+     "id": "politica-20"
     },
     {
      "headline": "Kristi Noem deja de ser enviada especial para el Escudo de las Américas, pero sigue como asesora en el Departamento de Estado",
@@ -1970,7 +2096,7 @@
        "publishedAt": "2026-10-16T00:37:21Z"
       }
      ],
-     "id": "politica-20"
+     "id": "politica-21"
     },
     {
      "headline": "Detienen a policía del MSP encargado de vigilar a Diablo y Tan por ingresar con celular y cargadores a Máxima Seguridad",
@@ -2007,7 +2133,7 @@
        "publishedAt": "2026-10-15T23:23:26Z"
       }
      ],
-     "id": "politica-21"
+     "id": "politica-22"
     },
     {
      "headline": "PLN negocia con PPSO propuesta de consenso sobre armonización eléctrica",
@@ -2044,7 +2170,7 @@
        "publishedAt": "2026-10-15T22:40:20Z"
       }
      ],
-     "id": "politica-22"
+     "id": "politica-23"
     },
     {
      "headline": "Puigdemont confirma que no será jefe de la oposición en el Parlament cuando regrese a Catalunya",
@@ -2079,43 +2205,6 @@
        "title": "Puigdemont prepara su regreso y descarta ejercer como jefe de la oposición en el Parlament",
        "url": "https://www.europapress.es/catalunya/noticia-puigdemont-asegura-prepara-regreso-no-quiso-escapar-esconderse-belgica-20261015235107.html",
        "publishedAt": "2026-10-15T21:51:07Z"
-      }
-     ],
-     "id": "politica-23"
-    },
-    {
-     "headline": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Senior aide to Reform UK leader pushed to have Chris Parry thrown out of the party, according to TV documentary",
-     "summaryEnSource": "Financial Times",
-     "outlets": 2,
-     "outletNames": [
-      "Financial Times",
-      "The Guardian"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T19:09:46Z",
-     "lastSeen": "2026-10-15T21:05:45Z",
-     "sources": [
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Farage accused of ‘protecting’ Reform candidate over racist slurs against David Lammy",
-       "url": "https://www.theguardian.com/politics/2026/oct/15/farage-accused-protecting-reform-candidate-racist-slurs-david-lammy-itv-film",
-       "publishedAt": "2026-10-15T19:09:46Z"
-      },
-      {
-       "source": "Financial Times",
-       "lang": "en",
-       "title": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
-       "url": "https://www.ft.com/content/317796f3-af18-4acb-a482-ec0bdd0edf45",
-       "publishedAt": "2026-10-15T21:05:45Z"
       }
      ],
      "id": "politica-24"
@@ -2530,44 +2619,6 @@
      "id": "finanzas-4"
     },
     {
-     "headline": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
-     "headlineLang": "es",
-     "headlineEs": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
-     "headlineEn": "Tesla reveals next-generation Roadster after almost a decade of delays",
-     "summaryEs": "Musk aseguró que el Roadster incorpora \"propulsores de control de altitud y un motor principal trasero, de modo que puede prácticamente volar como un cohete\".",
-     "summaryEsSource": "Euronews Español",
-     "summaryEn": "Elon Musk first debuted the Roadster refresh concept in 2017 but Tesla has since missed every targeted delivery date.",
-     "summaryEnSource": "CNBC",
-     "outlets": 2,
-     "outletNames": [
-      "CNBC",
-      "Euronews"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-16T03:47:50Z",
-     "lastSeen": "2026-10-16T06:48:25Z",
-     "sources": [
-      {
-       "source": "CNBC",
-       "lang": "en",
-       "title": "Tesla reveals next-generation Roadster after almost a decade of delays",
-       "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
-       "publishedAt": "2026-10-16T03:47:50Z"
-      },
-      {
-       "source": "Euronews Español",
-       "lang": "es",
-       "title": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
-       "url": "https://es.euronews.com/2026/10/16/bueno-ha-funcionado-elon-musk-presenta-el-nuevo-tesla-roadster-que-puede-volar",
-       "publishedAt": "2026-10-16T06:48:25Z"
-      }
-     ],
-     "id": "finanzas-5"
-    },
-    {
      "headline": "Bets on Fed rate hold in October strengthen after Warsh comments",
      "headlineLang": "en",
      "headlineEs": null,
@@ -2616,7 +2667,7 @@
        "publishedAt": "2026-10-16T06:37:09Z"
       }
      ],
-     "id": "finanzas-6"
+     "id": "finanzas-5"
     },
     {
      "headline": "BBVA y Sabadell redefinen sus estrategias en solitario un año después del fracaso de la opa",
@@ -2653,7 +2704,7 @@
        "publishedAt": "2026-10-16T03:00:00Z"
       }
      ],
-     "id": "finanzas-7"
+     "id": "finanzas-6"
     },
     {
      "headline": "Meta releases Muse Spark Open, a new ‘open-weight’ AI model",
@@ -2690,7 +2741,7 @@
        "publishedAt": "2026-10-16T00:34:28Z"
       }
      ],
-     "id": "finanzas-8"
+     "id": "finanzas-7"
     },
     {
      "headline": "France and Germany agree to ease EU car emissions rules in new deal",
@@ -2727,7 +2778,7 @@
        "publishedAt": "2026-10-15T23:48:57Z"
       }
      ],
-     "id": "finanzas-9"
+     "id": "finanzas-8"
     },
     {
      "headline": "Proyecto busca sancionar el acoso laboral en instituciones públicas y empresas privadas",
@@ -2764,7 +2815,7 @@
        "publishedAt": "2026-10-15T23:40:57Z"
       }
      ],
-     "id": "finanzas-10"
+     "id": "finanzas-9"
     },
     {
      "headline": "El precio del petróleo de Texas sube un leve 0,11%, hasta los US$95,19 el barril",
@@ -2801,7 +2852,7 @@
        "publishedAt": "2026-10-15T23:00:54Z"
       }
      ],
-     "id": "finanzas-11"
+     "id": "finanzas-10"
     },
     {
      "headline": "Contraloría detecta ineficacia en el control tributario de Hacienda con impuesto sobre la renta",
@@ -2846,7 +2897,7 @@
        "publishedAt": "2026-10-15T22:54:19Z"
       }
      ],
-     "id": "finanzas-12"
+     "id": "finanzas-11"
     },
     {
      "headline": "Harvard’s endowment returns surge on back of AI and SpaceX investments",
@@ -2883,7 +2934,7 @@
        "publishedAt": "2026-10-15T20:06:22Z"
       }
      ],
-     "id": "finanzas-13"
+     "id": "finanzas-12"
     },
     {
      "headline": "El Foro Económico Mundial podría designar a Lagarde presidenta en noviembre",
@@ -2920,7 +2971,7 @@
        "publishedAt": "2026-10-15T17:15:31Z"
       }
      ],
-     "id": "finanzas-14"
+     "id": "finanzas-13"
     },
     {
      "headline": "Los inversores prevén un nuevo máximo histórico del oro en el plazo de dos años",
@@ -2958,7 +3009,7 @@
        "publishedAt": "2026-10-15T16:18:22Z"
       }
      ],
-     "id": "finanzas-15"
+     "id": "finanzas-14"
     },
     {
      "headline": "Nandy 'minded to intervene' in Sky's £1.6bn takeover of ITV entertainment arm",
@@ -2995,7 +3046,7 @@
        "publishedAt": "2026-10-15T15:44:48Z"
       }
      ],
-     "id": "finanzas-16"
+     "id": "finanzas-15"
     },
     {
      "headline": "Almeida bajará el IBI al mínimo legal en 2027, con un ahorro de 31 millones para los madrileños",
@@ -3032,7 +3083,7 @@
        "publishedAt": "2026-10-15T10:11:43Z"
       }
      ],
-     "id": "finanzas-17"
+     "id": "finanzas-16"
     },
     {
      "headline": "EU leaders head into high-stakes budget battle as elections loom",
@@ -3069,7 +3120,7 @@
        "publishedAt": "2026-10-15T06:03:27Z"
       }
      ],
-     "id": "finanzas-18"
+     "id": "finanzas-17"
     },
     {
      "headline": "Inflación en Estados Unidos: el índice de precios al consumidor creció al 3,7% interanual en septiembre",
@@ -3106,7 +3157,7 @@
        "publishedAt": "2026-10-15T03:20:00Z"
       }
      ],
-     "id": "finanzas-19"
+     "id": "finanzas-18"
     },
     {
      "headline": "Why Trump’s Russian Diesel Deal Is Unlikely to Lower Fuel Costs",
@@ -3143,7 +3194,7 @@
        "publishedAt": "2026-10-14T21:25:26Z"
       }
      ],
-     "id": "finanzas-20"
+     "id": "finanzas-19"
     }
    ]
   },
@@ -3176,16 +3227,9 @@
       "en",
       "es"
      ],
-     "firstSeen": "2026-10-14T07:27:26Z",
+     "firstSeen": "2026-10-14T09:08:30Z",
      "lastSeen": "2026-10-15T20:02:55Z",
      "sources": [
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Pope Leo Has Lung Cancer, Vatican Says",
-       "url": "https://www.nytimes.com/2026/10/13/world/europe/pope-leo-lung-surgery.html",
-       "publishedAt": "2026-10-14T07:27:26Z"
-      },
       {
        "source": "RFI Español",
        "lang": "es",
@@ -3599,6 +3643,13 @@
        "publishedAt": "2026-10-15T12:00:00Z"
       },
       {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Kenya records second Ebola case as outbreak in Congo keeps growing",
+       "url": "https://www.euronews.com/2026/10/15/kenya-records-second-ebola-case-as-outbreak-in-congo-keeps-growing",
+       "publishedAt": "2026-10-15T13:34:28Z"
+      },
+      {
        "source": "Euronews Español",
        "lang": "es",
        "title": "Kenya confirma su segundo caso de ébola mientras el brote en Congo crece",
@@ -3803,6 +3854,51 @@
      "id": "mundo-10"
     },
     {
+     "headline": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
+     "headlineLang": "es",
+     "headlineEs": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
+     "headlineEn": "'Well, it worked': Elon Musk unveils new Tesla Roadster that can fly",
+     "summaryEs": "Musk aseguró que el Roadster incorpora \"propulsores de control de altitud y un motor principal trasero, de modo que puede prácticamente volar como un cohete\".",
+     "summaryEsSource": "Euronews Español",
+     "summaryEn": "Musk said the Roadster has \"altitude control thrusters and main thrusters in the rear, so it can basically fly like a rocket.\"",
+     "summaryEnSource": "Euronews",
+     "outlets": 2,
+     "outletNames": [
+      "Euronews",
+      "Financial Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-16T02:41:40Z",
+     "lastSeen": "2026-10-16T06:48:25Z",
+     "sources": [
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Tesla unveils ‘flying’ sports car with SpaceX rocket thrusters",
+       "url": "https://www.ft.com/content/a43a24b7-2127-400e-8b75-fe970931df51",
+       "publishedAt": "2026-10-16T02:41:40Z"
+      },
+      {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "'Well, it worked': Elon Musk unveils new Tesla Roadster that can fly",
+       "url": "https://www.euronews.com/2026/10/16/well-it-worked-elon-musk-unveils-new-tesla-roadster-that-can-fly",
+       "publishedAt": "2026-10-16T06:25:22Z"
+      },
+      {
+       "source": "Euronews Español",
+       "lang": "es",
+       "title": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
+       "url": "https://es.euronews.com/2026/10/16/bueno-ha-funcionado-elon-musk-presenta-el-nuevo-tesla-roadster-que-puede-volar",
+       "publishedAt": "2026-10-16T06:48:25Z"
+      }
+     ],
+     "id": "mundo-11"
+    },
+    {
      "headline": "Fiscalía pide prisión preventiva contra futbolista de la Selección de Costa Rica investigado por extorsión y lavado de dinero",
      "headlineLang": "es",
      "headlineEs": "Fiscalía pide prisión preventiva contra futbolista de la Selección de Costa Rica investigado por extorsión y lavado de dinero",
@@ -3837,7 +3933,7 @@
        "publishedAt": "2026-10-16T04:10:35Z"
       }
      ],
-     "id": "mundo-11"
+     "id": "mundo-12"
     },
     {
      "headline": "Costa Rica extraditará a Estados Unidos a tres mexicanos vinculados con el Cártel de Sinaloa por presunta conspiración para introducir cocaína a ese país",
@@ -3874,7 +3970,7 @@
        "publishedAt": "2026-10-16T03:00:43Z"
       }
      ],
-     "id": "mundo-12"
+     "id": "mundo-13"
     },
     {
      "headline": "US police identify remains of man found in barrel in shrinking reservoir",
@@ -3911,7 +4007,7 @@
        "publishedAt": "2026-10-16T01:35:40Z"
       }
      ],
-     "id": "mundo-13"
+     "id": "mundo-14"
     },
     {
      "headline": "Más de la mitad de los aspirantes a médicos en Costa Rica reprobaron examen obligatorio: estas fueron las universidades con mejores resultados",
@@ -3948,7 +4044,7 @@
        "publishedAt": "2026-10-16T00:33:05Z"
       }
      ],
-     "id": "mundo-14"
+     "id": "mundo-15"
     },
     {
      "headline": "Diego Poncelet, el español que viaja con un monje budista, récord Guinness a más de 150 km/h sobre un monopatín: “Quería sentir algo que nadie hubiera sentido”",
@@ -3985,7 +4081,7 @@
        "publishedAt": "2026-10-15T16:47:02Z"
       }
      ],
-     "id": "mundo-15"
+     "id": "mundo-16"
     },
     {
      "headline": "Rusia: arrestan al redactor jefe de Nóvaya Gazeta, medio independiente en la mira del Kremlin",
@@ -4023,7 +4119,7 @@
        "publishedAt": "2026-10-15T13:35:35Z"
       }
      ],
-     "id": "mundo-16"
+     "id": "mundo-17"
     }
    ]
   },
@@ -4149,6 +4245,113 @@
    "label": "Guerras actuales",
    "stories": [
     {
+     "headline": "Ataque con misiles contra el palacio presidencial en Yemen deja muertos y heridos",
+     "headlineLang": "es",
+     "headlineEs": "Ataque con misiles contra el palacio presidencial en Yemen deja muertos y heridos",
+     "headlineEn": "Houthi missiles strike Yemen presidential palace, killing five",
+     "summaryEs": "Rebeldes hutíes atacaron la sede del Gobierno de Yemen en Adén. Arabia Saudita acusó a Irán por la escalada militar que golpea a la región.",
+     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEn": "Attack was the first on Aden’s Al-Maashiq palace ⁠in the latest fighting between ​the Iran-aligned Houthis and Saudi Arabia Yemen’s Houthis fired missiles at the presidential palace complex in the southern city of Aden on Thursday, killing five people, the government said, as the Saudi-led coalition listed dozens of Houthi attacks on Saudi infrastructure in ⁠recent weeks. The attack was the first…",
+     "summaryEnSource": "The Guardian",
+     "outlets": 8,
+     "outletNames": [
+      "BBC",
+      "DW",
+      "France 24",
+      "Infobae",
+      "La Nación (Costa Rica)",
+      "RFI",
+      "The Guardian",
+      "The New York Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-14T12:26:13Z",
+     "lastSeen": "2026-10-16T06:51:03Z",
+     "sources": [
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Houthi missile hits Aramco building after Saudi-led coalition strike on Yemen fuel depot",
+       "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o",
+       "publishedAt": "2026-10-14T12:26:13Z"
+      },
+      {
+       "source": "RFI Español",
+       "lang": "es",
+       "title": "Arabia Saudita: los hutíes de Yemen reivindican un ataque contra objetivos de petrolera Aramco",
+       "url": "https://www.rfi.fr/es/oriente-medio/20261014-arabia-saudita-los-hut%C3%ADes-de-yemen-reivindican-un-ataque-contra-objetivos-de-petrolera-aramco",
+       "publishedAt": "2026-10-14T13:39:11Z"
+      },
+      {
+       "source": "France 24",
+       "lang": "en",
+       "title": "Houthis threaten escalation after strike on Saudi oil giant Aramco",
+       "url": "https://www.france24.com/en/middle-east/20261014-yemen-houthis-vow-continue-saudi-attacks-oil-giant-aramco-headquarters-hit",
+       "publishedAt": "2026-10-14T16:21:53Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "Middle East updates: Houthis target Yemen government palace in Aden",
+       "url": "https://www.dw.com/en/middle-east-updates-houthis-target-yemen-government-palace-in-aden/live-79672880?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-15T17:44:00Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Ataque con misiles contra el palacio presidencial en Yemen deja muertos y heridos",
+       "url": "https://www.nacion.com/el-mundo/ataque-con-misiles-contra-el-palacio-presidencial/XQDW26HBIFGCPFOP4YWDXWXK3E/story/",
+       "publishedAt": "2026-10-15T19:21:24Z"
+      },
+      {
+       "source": "France 24",
+       "lang": "en",
+       "title": "Houthi attack on palace used by Yemen government in Aden kills five",
+       "url": "https://www.france24.com/en/middle-east/20261015-houthi-attack-on-palace-used-by-yemen-government-in-aden-kills-five",
+       "publishedAt": "2026-10-15T19:57:48Z"
+      },
+      {
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "Yemen: rebeldes hutíes atacan el Palacio Presidencial de Adén y matan a dos guardias",
+       "url": "https://www.france24.com/es/medio-oriente/20261015-yemen-rebeldes-hut%C3%ADes-atacan-el-palacio-presidencial-de-ad%C3%A9n-y-matan-a-dos-guardias",
+       "publishedAt": "2026-10-15T20:51:35Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
+       "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo",
+       "publishedAt": "2026-10-15T23:38:46Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Houthi Missiles Strike Government Headquarters in Yemen",
+       "url": "https://www.nytimes.com/2026/10/15/world/middleeast/yemen-strike-aden-palace.html",
+       "publishedAt": "2026-10-16T00:14:38Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Houthi missiles strike Yemen presidential palace, killing five",
+       "url": "https://www.theguardian.com/world/2026/oct/15/houthi-missiles-strike-aden-yemen",
+       "publishedAt": "2026-10-16T00:27:21Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Los hutíes lanzaron un ataque contra el Palacio Presidencial de Adén, en Yemen: al menos 5 muertos y 16 heridos",
+       "url": "https://www.infobae.com/america/mundo/2026/10/15/los-huties-lanzaron-un-ataque-contra-el-palacio-presidencial-de-aden-en-yemen/",
+       "publishedAt": "2026-10-16T06:51:03Z"
+      }
+     ],
+     "id": "guerras-1"
+    },
+    {
      "headline": "What is Starshield, SpaceX's military version of Starlink?",
      "headlineLang": "en",
      "headlineEs": null,
@@ -4214,7 +4417,7 @@
        "publishedAt": "2026-10-16T06:25:31Z"
       }
      ],
-     "id": "guerras-1"
+     "id": "guerras-2"
     },
     {
      "headline": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
@@ -4274,67 +4477,6 @@
        "title": "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
        "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html",
        "publishedAt": "2026-10-16T02:48:41Z"
-      }
-     ],
-     "id": "guerras-2"
-    },
-    {
-     "headline": "Houthi missiles strike Yemen presidential palace, killing five",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Houthi missiles strike Yemen presidential palace, killing five",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Attack was the first on Aden’s Al-Maashiq palace ⁠in the latest fighting between ​the Iran-aligned Houthis and Saudi Arabia Yemen’s Houthis fired missiles at the presidential palace complex in the southern city of Aden on Thursday, killing five people, the government said, as the Saudi-led coalition listed dozens of Houthi attacks on Saudi infrastructure in ⁠recent weeks. The attack was the first…",
-     "summaryEnSource": "The Guardian",
-     "outlets": 5,
-     "outletNames": [
-      "BBC",
-      "DW",
-      "France 24",
-      "The Guardian",
-      "The New York Times"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T17:44:00Z",
-     "lastSeen": "2026-10-16T00:27:21Z",
-     "sources": [
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "Middle East updates: Houthis target Yemen government palace in Aden",
-       "url": "https://www.dw.com/en/middle-east-updates-houthis-target-yemen-government-palace-in-aden/live-79672880?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-15T17:44:00Z"
-      },
-      {
-       "source": "France 24",
-       "lang": "en",
-       "title": "Houthi attack on palace used by Yemen government in Aden kills five",
-       "url": "https://www.france24.com/en/middle-east/20261015-houthi-attack-on-palace-used-by-yemen-government-in-aden-kills-five",
-       "publishedAt": "2026-10-15T19:57:48Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Houthi missile attack on Yemeni presidential palace kills five, minister says",
-       "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo",
-       "publishedAt": "2026-10-15T23:38:46Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Houthi Missiles Strike Government Headquarters in Yemen",
-       "url": "https://www.nytimes.com/2026/10/15/world/middleeast/yemen-strike-aden-palace.html",
-       "publishedAt": "2026-10-16T00:14:38Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Houthi missiles strike Yemen presidential palace, killing five",
-       "url": "https://www.theguardian.com/world/2026/oct/15/houthi-missiles-strike-aden-yemen",
-       "publishedAt": "2026-10-16T00:27:21Z"
       }
      ],
      "id": "guerras-3"
@@ -4474,51 +4616,6 @@
      "id": "guerras-5"
     },
     {
-     "headline": "Yemen: rebeldes hutíes atacan el Palacio Presidencial de Adén y matan a dos guardias",
-     "headlineLang": "es",
-     "headlineEs": "Yemen: rebeldes hutíes atacan el Palacio Presidencial de Adén y matan a dos guardias",
-     "headlineEn": null,
-     "summaryEs": "Los rebeldes hutíes lanzaron este jueves 15 de octubre un ataque con misiles y drones contra el complejo que aloja la sede del Gobierno yemení respaldado por Arabia Saudita y reconocido internacionalmente. La ofensiva tiene lugar en medio de una escalada del conflicto, con decenas de ataques contra aeropuertos, puertos e instalaciones petroleras sauditas.",
-     "summaryEsSource": "France 24 Español",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "France 24",
-      "Infobae",
-      "La Nación (Costa Rica)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T19:21:24Z",
-     "lastSeen": "2026-10-16T06:51:03Z",
-     "sources": [
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Ataque con misiles contra el palacio presidencial en Yemen deja muertos y heridos",
-       "url": "https://www.nacion.com/el-mundo/ataque-con-misiles-contra-el-palacio-presidencial/XQDW26HBIFGCPFOP4YWDXWXK3E/story/",
-       "publishedAt": "2026-10-15T19:21:24Z"
-      },
-      {
-       "source": "France 24 Español",
-       "lang": "es",
-       "title": "Yemen: rebeldes hutíes atacan el Palacio Presidencial de Adén y matan a dos guardias",
-       "url": "https://www.france24.com/es/medio-oriente/20261015-yemen-rebeldes-hut%C3%ADes-atacan-el-palacio-presidencial-de-ad%C3%A9n-y-matan-a-dos-guardias",
-       "publishedAt": "2026-10-15T20:51:35Z"
-      },
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Los hutíes lanzaron un ataque contra el Palacio Presidencial de Adén, en Yemen: al menos 5 muertos y 16 heridos",
-       "url": "https://www.infobae.com/america/mundo/2026/10/15/los-huties-lanzaron-un-ataque-contra-el-palacio-presidencial-de-aden-en-yemen/",
-       "publishedAt": "2026-10-16T06:51:03Z"
-      }
-     ],
-     "id": "guerras-6"
-    },
-    {
      "headline": "Tras suspensión de Starlink en Ucrania, Elon Musk insta a Zelenski a dejar el poder",
      "headlineLang": "es",
      "headlineEs": "Tras suspensión de Starlink en Ucrania, Elon Musk insta a Zelenski a dejar el poder",
@@ -4561,53 +4658,7 @@
        "publishedAt": "2026-10-15T15:13:13Z"
       }
      ],
-     "id": "guerras-7"
-    },
-    {
-     "headline": "Arabia Saudita: los hutíes de Yemen reivindican un ataque contra objetivos de petrolera Aramco",
-     "headlineLang": "es",
-     "headlineEs": "Arabia Saudita: los hutíes de Yemen reivindican un ataque contra objetivos de petrolera Aramco",
-     "headlineEn": "Houthi missile hits Aramco building after Saudi-led coalition strike on Yemen fuel depot",
-     "summaryEs": "Los rebeldes hutíes de Yemen, apoyados por Irán, reivindicaron ataques contra una sede de la petrolera Aramco en Dhahran, el aeropuerto de Riad y una refinería de la capital saudita. La ofensiva se produce en medio de una escalada de ataques diarios contra Arabia Saudita y suscita preocupación por sus posibles efectos sobre los mercados energéticos.",
-     "summaryEsSource": "RFI Español",
-     "summaryEn": "The Saudi energy ministry says the Houthi attack caused a \"limited fire\" at Aramco's headquarters complex in Dhahran.",
-     "summaryEnSource": "BBC",
-     "outlets": 3,
-     "outletNames": [
-      "BBC",
-      "France 24",
-      "RFI"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-14T12:26:13Z",
-     "lastSeen": "2026-10-14T16:21:53Z",
-     "sources": [
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Houthi missile hits Aramco building after Saudi-led coalition strike on Yemen fuel depot",
-       "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o",
-       "publishedAt": "2026-10-14T12:26:13Z"
-      },
-      {
-       "source": "RFI Español",
-       "lang": "es",
-       "title": "Arabia Saudita: los hutíes de Yemen reivindican un ataque contra objetivos de petrolera Aramco",
-       "url": "https://www.rfi.fr/es/oriente-medio/20261014-arabia-saudita-los-hut%C3%ADes-de-yemen-reivindican-un-ataque-contra-objetivos-de-petrolera-aramco",
-       "publishedAt": "2026-10-14T13:39:11Z"
-      },
-      {
-       "source": "France 24",
-       "lang": "en",
-       "title": "Houthis threaten escalation after strike on Saudi oil giant Aramco",
-       "url": "https://www.france24.com/en/middle-east/20261014-yemen-houthis-vow-continue-saudi-attacks-oil-giant-aramco-headquarters-hit",
-       "publishedAt": "2026-10-14T16:21:53Z"
-      }
-     ],
-     "id": "guerras-8"
+     "id": "guerras-6"
     },
     {
      "headline": "Zelensky rallies European allies as US support for Ukraine wanes",
@@ -4644,7 +4695,7 @@
        "publishedAt": "2026-10-16T05:41:47Z"
       }
      ],
-     "id": "guerras-9"
+     "id": "guerras-7"
     },
     {
      "headline": "Trump arremete contra Zelenski por nueva ofensiva de Ucrania contra refinerías rusas",
@@ -4681,7 +4732,7 @@
        "publishedAt": "2026-10-16T04:25:00Z"
       }
      ],
-     "id": "guerras-10"
+     "id": "guerras-8"
     }
    ]
   }
@@ -5107,7 +5158,7 @@
    "lang": "en",
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
    "itemsInFeed": 56,
-   "kept": 41,
+   "kept": 40,
    "newest": "2026-10-16T04:39:04Z"
   },
   {
@@ -5336,6 +5387,15 @@
    "newest": "2026-10-15T15:37:17Z"
   },
   {
+   "id": "euronews-en",
+   "source": "Euronews",
+   "lang": "en",
+   "url": "https://www.euronews.com/rss",
+   "itemsInFeed": 50,
+   "kept": 38,
+   "newest": "2026-10-16T07:18:59Z"
+  },
+  {
    "id": "euronews-es",
    "source": "Euronews Español",
    "lang": "es",
@@ -5377,7 +5437,7 @@
    "lang": "es",
    "url": "https://rss.elconfidencial.com/mundo/",
    "itemsInFeed": 15,
-   "kept": 14,
+   "kept": 13,
    "newest": "2026-10-16T06:21:00Z"
   },
   {
@@ -5530,12 +5590,6 @@
    "id": "newscientist",
    "source": "New Scientist",
    "url": "https://www.newscientist.com/feed/home/",
-   "error": "HTTPError: HTTP Error 406: Not Acceptable"
-  },
-  {
-   "id": "euronews-en",
-   "source": "Euronews",
-   "url": "https://www.euronews.com/rss",
    "error": "HTTPError: HTTP Error 406: Not Acceptable"
   },
   {

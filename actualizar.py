@@ -18,6 +18,7 @@ import math
 import re
 import ssl
 import sys
+import time
 import unicodedata
 import urllib.request
 from collections import Counter, defaultdict
@@ -195,12 +196,12 @@ def trim(txt: str, limit: int = SUMMARY_MAX) -> str:
     return cut.rstrip(" ,;:.-—") + "…"
 
 
-def fetch(url: str) -> bytes:
-    req = urllib.request.Request(url, headers={
-        "User-Agent": UA,
-        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
-        "Accept-Encoding": "gzip",
-    })
+def fetch(url: str, simple: bool = False) -> bytes:
+    headers = {"User-Agent": UA}
+    if not simple:
+        headers["Accept"] = "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
+        headers["Accept-Encoding"] = "gzip"
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=25, context=ssl.create_default_context()) as resp:
         data = resp.read(4_000_000)
     if data[:2] == b"\x1f\x8b":
@@ -238,10 +239,14 @@ def parse_items(xml_bytes: bytes):
 
 def fetch_feed(feed):
     fid, url = feed[0], feed[1]
-    try:
-        return feed, parse_items(fetch(url)), None
-    except Exception as exc:
-        return feed, None, f"{type(exc).__name__}: {str(exc)[:160]}"
+    err = None
+    for attempt in range(2):  # un reintento con cabeceras mínimas
+        try:
+            return feed, parse_items(fetch(url, simple=attempt > 0)), None
+        except Exception as exc:
+            err = f"{type(exc).__name__}: {str(exc)[:160]}"
+            time.sleep(2)
+    return feed, None, err
 
 
 # ---------------------------------------------------------------- clasificación
