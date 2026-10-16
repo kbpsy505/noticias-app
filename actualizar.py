@@ -586,6 +586,17 @@ def main():
         summary_counts[cid] = len(lst)
         out_cats.append({"id": cid, "label": label, "stories": lst})
 
+    # Pestaña "Buenas noticias": basta 1 fuente confiable (ver buenas.py).
+    good_report = None
+    try:
+        import buenas
+        good, good_report = buenas.build(now, pool, FEEDS)
+        out_cats.append({"id": "buenas", "label": "Buenas noticias", "minOutlets": 1, "stories": good})
+        summary_counts["buenas"] = len(good)
+        print("buenas", good_report["perSubtopic"], "leads", good_report["leads"]["confirmed"], "/", good_report["leads"]["total"])
+    except Exception as exc:  # nunca romper la actualización principal
+        print("buenas FAIL", type(exc).__name__, exc)
+
     payload = {
         "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "nextRefreshAt": next_cron(now).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -601,13 +612,14 @@ def main():
             "feedsFailed": len([f for f in failed]),
             "itemsGathered": len(pool),
             "clusters": len(groups),
-            "consensusStories": sum(summary_counts.values()),
+            "consensusStories": sum(v for k, v in summary_counts.items() if k != "buenas"),
             "perCategory": summary_counts,
         },
         "sourcesUsed": sorted({f["source"] for f in ok_feeds if f["kept"] > 0}),
         "categories": out_cats,
         "feedsOk": ok_feeds,
         "feedsFailed": failed,
+        "goodNews": good_report,
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print("clusters", len(groups), "consensus", summary_counts)

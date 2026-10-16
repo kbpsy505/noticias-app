@@ -56,3 +56,12 @@ Agregar un resumen escrito por IA para cada historia de consenso, que explique e
 - `feeds.py`: lista de feeds y medios.
 - `vocab.py`: diccionario español–inglés y palabras vacías.
 - `.github/workflows/actualizar.yml`: la tarea automática cada 3 horas.
+
+## Pestaña "Buenas noticias"
+
+`buenas.py` arma una pestaña aparte con progreso humano y buenas acciones (salud, ciencia y tecnología, medio ambiente, progreso social, buenas acciones, comunidad):
+
+- Aquí basta **una** fuente confiable (secciones de soluciones y buenas noticias, ciencia, ONU, más las notas positivas de los feeds generales).
+- Filtro solo con código: palabras de progreso (ES/EN) y de impacto medible; se descartan las notas negativas, amarillistas, de relleno (famosos, marcas, momentos virales sin impacto), de opinión y las listas.
+- Reddit (r/UpliftingNews, r/science, etc.) y 9gag solo sirven como pistas: una pista entra únicamente si enlaza a un medio confiable, y lo que se muestra es ese medio.
+- Máximo 40 notas, 5 por medio y 10 por subtema (12 en medio ambiente). El informe completo (feeds, pistas confirmadas y descartadas) queda en `noticias.json` → `goodNews`.

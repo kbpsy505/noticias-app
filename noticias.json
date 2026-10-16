@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T07:25:47Z",
+ "updatedAt": "2026-10-16T07:59:36Z",
  "nextRefreshAt": "2026-10-16T09:00:00Z",
  "refreshHours": 3,
  "method": {
@@ -9,18 +9,19 @@
   "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 2+ medios distintos."
  },
  "stats": {
-  "feedsOk": 95,
-  "feedsFailed": 9,
-  "itemsGathered": 1838,
-  "clusters": 1534,
+  "feedsOk": 94,
+  "feedsFailed": 10,
+  "itemsGathered": 1830,
+  "clusters": 1528,
   "consensusStories": 93,
   "perCategory": {
-   "sucesos": 15,
+   "sucesos": 14,
    "politica": 30,
    "finanzas": 19,
-   "mundo": 17,
-   "ciencias": 4,
-   "guerras": 8
+   "mundo": 19,
+   "ciencias": 3,
+   "guerras": 8,
+   "buenas": 36
   }
  },
  "sourcesUsed": [
@@ -58,7 +59,6 @@
   "Monumental",
   "NPR",
   "Nature",
-  "New Scientist",
   "Noticias ONU",
   "RFI",
   "RFI Español",
@@ -83,9 +83,8 @@
      "summaryEsSource": "El País",
      "summaryEn": "The police chief in Bend, Oregon, identified the shooter as a 16-year-old who was killed by a bystander at the school.",
      "summaryEnSource": "Al Jazeera",
-     "outlets": 19,
+     "outlets": 18,
      "outletNames": [
-      "20minutos",
       "ABC",
       "Al Jazeera",
       "BBC",
@@ -156,13 +155,6 @@
        "publishedAt": "2026-10-15T23:16:00Z"
       },
       {
-       "source": "20minutos",
-       "lang": "es",
-       "title": "Un joven de 16 años mata a tiros en un colegio a tres niños y una maestra antes de ser abatido por un vecino",
-       "url": "https://www.20minutos.es/internacional/un-tiroteo-una-escuela-primaria-oregon-deja-cuatro-muertos-entre-ellos-tres-menores_7049422_0.html",
-       "publishedAt": "2026-10-15T23:37:46Z"
-      },
-      {
        "source": "El Tiempo",
        "lang": "es",
        "title": "Reportan un tiroteo en una escuela de primaria en Oregón, Estados Unidos, que deja cuatro muertos este jueves 15 de octubre: autoridades investigan",
@@ -228,7 +220,7 @@
       {
        "source": "BBC",
        "lang": "en",
-       "title": "Three children and teacher killed in US primary school shooting",
+       "title": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
        "url": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo",
        "publishedAt": "2026-10-16T03:45:09Z"
       },
@@ -481,12 +473,12 @@
      "id": "sucesos-3"
     },
     {
-     "headline": "Se registra un terremoto de magnitud 4,2 en Benuza (León), en la zona de El Bierzo: el temblor se ha sentido en Galicia",
+     "headline": "Terremoto de magnitud 4,2 en León, con epicentro en Priaranza del Bierzo: se ha sentido en puntos de Galicia y Asturias",
      "headlineLang": "es",
-     "headlineEs": "Se registra un terremoto de magnitud 4,2 en Benuza (León), en la zona de El Bierzo: el temblor se ha sentido en Galicia",
+     "headlineEs": "Terremoto de magnitud 4,2 en León, con epicentro en Priaranza del Bierzo: se ha sentido en puntos de Galicia y Asturias",
      "headlineEn": null,
-     "summaryEs": "Según han señalado los servicios de emergencias de ambas comunidades, no se han registrado daños personales ni materiales",
-     "summaryEsSource": "Infobae",
+     "summaryEs": "El seísmo se produjo a 10 kilómetros de profundidad y se sintió especialmente en la comarca de El Bierzo, según el Instituto Geográfico Nacional de España (IGN).",
+     "summaryEsSource": "20minutos",
      "summaryEn": null,
      "summaryEnSource": null,
      "outlets": 4,
@@ -500,7 +492,7 @@
       "es"
      ],
      "firstSeen": "2026-10-15T21:44:02Z",
-     "lastSeen": "2026-10-16T06:59:05Z",
+     "lastSeen": "2026-10-16T07:33:29Z",
      "sources": [
       {
        "source": "20minutos",
@@ -529,6 +521,13 @@
        "title": "Se registra un terremoto de magnitud 4,2 en Benuza (León), en la zona de El Bierzo: el temblor se ha sentido en Galicia",
        "url": "https://www.infobae.com/espana/2026/10/16/se-registra-un-terremoto-de-magnitud-42-en-benuza-leon-en-la-zona-de-el-bierzo-el-temblor-se-ha-sentido-en-galicia/",
        "publishedAt": "2026-10-16T06:59:05Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Terremoto de magnitud 4,2 en León, con epicentro en Priaranza del Bierzo: se ha sentido en puntos de Galicia y Asturias",
+       "url": "https://www.20minutos.es/galicia/coruna/terremoto-magnitud-4-2-leon-con-epicentro-priaranza-bierzo-se-ha-sentido-puntos-galicia-asturias_7049494_0.html",
+       "publishedAt": "2026-10-16T07:33:29Z"
       }
      ],
      "id": "sucesos-4"
@@ -648,7 +647,7 @@
       {
        "source": "Clarín",
        "lang": "es",
-       "title": "Alerta: un terremoto de magnitud 6,9 sacudió el sur de Kamchatka, en Rusia",
+       "title": "Un terremoto de magnitud 6,9 sacudió el sur de Kamchatka, en Rusia",
        "url": "https://www.clarin.com/mundo/alerta-terremoto-magnitud-69-sacudio-sur-kamchatka-rusia_0_9zDf3ZV0EC.html",
        "publishedAt": "2026-10-16T05:38:56Z"
       },
@@ -811,43 +810,6 @@
      "id": "sucesos-11"
     },
     {
-     "headline": "Cambio de rumbo en el régimen de excepción de El Salvador: Nayib Bukele plantea liberar a la mitad de los presos",
-     "headlineLang": "es",
-     "headlineEs": "Cambio de rumbo en el régimen de excepción de El Salvador: Nayib Bukele plantea liberar a la mitad de los presos",
-     "headlineEn": null,
-     "summaryEs": "El presidente no detalla bajo qué criterios se seleccionarán a las personas que pueden ser excarceladas Leer",
-     "summaryEsSource": "El Mundo",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 2,
-     "outletNames": [
-      "El Mundo",
-      "El Tiempo"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-14T15:09:58Z",
-     "lastSeen": "2026-10-15T19:00:27Z",
-     "sources": [
-      {
-       "source": "El Mundo",
-       "lang": "es",
-       "title": "Cambio de rumbo en el régimen de excepción de El Salvador: Nayib Bukele plantea liberar a la mitad de los presos",
-       "url": "https://www.elmundo.es/internacional/2026/10/14/6acf87cdfdddffef578b4580.html",
-       "publishedAt": "2026-10-14T15:09:58Z"
-      },
-      {
-       "source": "El Tiempo",
-       "lang": "es",
-       "title": "¿Por qué Nayib Bukele evalúa liberar el 50 por ciento de los detenidos en El Salvador durante la guerra contra las pandillas? Esto se sabe",
-       "url": "https://www.eltiempo.com/mundo/latinoamerica/por-que-nayib-bukele-evalua-liberar-el-50-por-ciento-de-los-detenidos-en-el-salvador-durante-la-guerra-contra-las-pandillas-esto-se-sabe-3593757",
-       "publishedAt": "2026-10-15T19:00:27Z"
-      }
-     ],
-     "id": "sucesos-12"
-    },
-    {
      "headline": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
      "headlineLang": "es",
      "headlineEs": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
@@ -883,7 +845,7 @@
        "publishedAt": "2026-10-15T15:55:14Z"
       }
      ],
-     "id": "sucesos-13"
+     "id": "sucesos-12"
     },
     {
      "headline": "French anti-terror investigators probe True Crime Community link to school shooting",
@@ -920,7 +882,7 @@
        "publishedAt": "2026-10-15T10:14:57Z"
       }
      ],
-     "id": "sucesos-14"
+     "id": "sucesos-13"
     },
     {
      "headline": "Desperate to clear toxic haze, Indonesia douses its skies with dry ice",
@@ -957,7 +919,7 @@
        "publishedAt": "2026-10-15T04:25:03Z"
       }
      ],
-     "id": "sucesos-15"
+     "id": "sucesos-14"
     }
    ]
   },
@@ -969,11 +931,11 @@
      "headline": "Nicolás Maduro y su esposa se declaran no culpables de cargos de tortura en corte de Estados Unidos",
      "headlineLang": "es",
      "headlineEs": "Nicolás Maduro y su esposa se declaran no culpables de cargos de tortura en corte de Estados Unidos",
-     "headlineEn": "Venezuela's Nicolas Maduro and wife Cilia Flores deny US torture charges as 'false accusations'",
+     "headlineEn": "Nicolás Maduro tells New York court new torture allegations are ‘false’",
      "summaryEs": "Nicolás Maduro y Cilia Flores rechazaron en Nueva York nuevos cargos por tortura. Conozca las acusaciones y los detalles de su proceso judicial.",
      "summaryEsSource": "La Nación (Costa Rica)",
-     "summaryEn": "Ousted Venezuelan president Nicolas Maduro and his wife Cilia Flores pleaded not guilty on Thursday to new torture charges brought against them by US authorities, calling them “false allegations\". The couple has been held in a New York jail since their capture in early January and is facing a new indictment accusing them of conspiring to torture political opponents and US citizens.",
-     "summaryEnSource": "France 24",
+     "summaryEn": "Rewritten indictment accuses ex-Venezuela president and wife Cilia Flores of leading campaign of torture Nicolás Maduro insisted on Thursday during an appearance in a New York court that torture allegations in a rewritten drug trafficking indictment against the deposed Venezuelan president and his wife were “false accusations”. Maduro, shackled at the ankles, was brought to court to face the new…",
+     "summaryEnSource": "The Guardian",
      "outlets": 11,
      "outletNames": [
       "BBC",
@@ -1065,13 +1027,6 @@
        "title": "Nicolás Maduro y su esposa se declaran no culpables de cargos de tortura en corte de Estados Unidos",
        "url": "https://www.nacion.com/el-mundo/nicolas-maduro-y-su-esposa-se-declaran-no/CFPDXQV6A5EX3I44WCKR7XUFSA/story/",
        "publishedAt": "2026-10-15T17:46:27Z"
-      },
-      {
-       "source": "France 24",
-       "lang": "en",
-       "title": "Venezuela's Nicolas Maduro and wife Cilia Flores deny US torture charges as 'false accusations'",
-       "url": "https://www.france24.com/en/americas/20261015-venezuela-s-nicolas-maduro-and-wife-cilia-flores-deny-us-torture-charges-as-false-accusations",
-       "publishedAt": "2026-10-15T18:11:23Z"
       },
       {
        "source": "DW",
@@ -1330,67 +1285,6 @@
      "id": "politica-4"
     },
     {
-     "headline": "Trump administration sues California over noncitizens on voter rolls",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Trump administration sues California over noncitizens on voter rolls",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Lawsuit comes weeks before midterm elections and follows debunked claims of noncitizens voting in various states.",
-     "summaryEnSource": "Al Jazeera",
-     "outlets": 5,
-     "outletNames": [
-      "Al Jazeera",
-      "CBS News",
-      "CNBC",
-      "The Guardian",
-      "The New York Times"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T18:29:50Z",
-     "lastSeen": "2026-10-15T23:51:30Z",
-     "sources": [
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "US justice department sues California over alleged noncitizen voting",
-       "url": "https://www.theguardian.com/us-news/2026/oct/15/justice-department-sues-california-midterms",
-       "publishedAt": "2026-10-15T18:29:50Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Trump Administration Sues California Over Voter Rolls",
-       "url": "https://www.nytimes.com/2026/10/15/us/politics/trump-administration-california-voter-rolls.html",
-       "publishedAt": "2026-10-15T21:05:29Z"
-      },
-      {
-       "source": "CNBC",
-       "lang": "en",
-       "title": "U.S. sues California in fight over checking citizenship of mail voters",
-       "url": "https://www.cnbc.com/2026/10/15/california-mail-ballots-voting-lawsuit.html",
-       "publishedAt": "2026-10-15T21:24:57Z"
-      },
-      {
-       "source": "Al Jazeera",
-       "lang": "en",
-       "title": "Trump administration sues California over noncitizens on voter rolls",
-       "url": "https://www.aljazeera.com/news/2026/10/15/trump-administration-sues-california-over-noncitizens-on-voter-rolls?traffic_source=rss",
-       "publishedAt": "2026-10-15T21:44:59Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Justice Dept. sues California, claims noncitizens were sent ballots",
-       "url": "https://www.cbsnews.com/news/justice-department-california-lawsuit-mail-ballots-noncitizens/",
-       "publishedAt": "2026-10-15T23:51:30Z"
-      }
-     ],
-     "id": "politica-5"
-    },
-    {
      "headline": "FBI investigates letters with ‘unknown substance’ sent to US election officials",
      "headlineLang": "en",
      "headlineEs": null,
@@ -1441,7 +1335,7 @@
        "publishedAt": "2026-10-16T01:55:46Z"
       }
      ],
-     "id": "politica-6"
+     "id": "politica-5"
     },
     {
      "headline": "Brasil: el partido de Lula denunciará a Meta ante la OEA por presunta “interferencia” electoral",
@@ -1495,7 +1389,209 @@
        "publishedAt": "2026-10-16T00:09:54Z"
       }
      ],
+     "id": "politica-6"
+    },
+    {
+     "headline": "Justice Dept. sues California, claims noncitizens were sent ballots",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Justice Dept. sues California, claims noncitizens were sent ballots",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "The Justice Department sued California, alleging that the federal government has identified more than 20,000 noncitizens who are unlawfully registered to vote.",
+     "summaryEnSource": "CBS News",
+     "outlets": 4,
+     "outletNames": [
+      "CBS News",
+      "CNBC",
+      "The Guardian",
+      "The New York Times"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T18:29:50Z",
+     "lastSeen": "2026-10-15T23:51:30Z",
+     "sources": [
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "US justice department sues California over alleged noncitizen voting",
+       "url": "https://www.theguardian.com/us-news/2026/oct/15/justice-department-sues-california-midterms",
+       "publishedAt": "2026-10-15T18:29:50Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Trump Administration Sues California Over Voter Rolls",
+       "url": "https://www.nytimes.com/2026/10/15/us/politics/trump-administration-california-voter-rolls.html",
+       "publishedAt": "2026-10-15T21:05:29Z"
+      },
+      {
+       "source": "CNBC",
+       "lang": "en",
+       "title": "U.S. sues California in fight over checking citizenship of mail voters",
+       "url": "https://www.cnbc.com/2026/10/15/california-mail-ballots-voting-lawsuit.html",
+       "publishedAt": "2026-10-15T21:24:57Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Justice Dept. sues California, claims noncitizens were sent ballots",
+       "url": "https://www.cbsnews.com/news/justice-department-california-lawsuit-mail-ballots-noncitizens/",
+       "publishedAt": "2026-10-15T23:51:30Z"
+      }
+     ],
      "id": "politica-7"
+    },
+    {
+     "headline": "Puigdemont prepara su regreso y descarta ejercer como jefe de la oposición en el Parlament",
+     "headlineLang": "es",
+     "headlineEs": "Puigdemont prepara su regreso y descarta ejercer como jefe de la oposición en el Parlament",
+     "headlineEn": null,
+     "summaryEs": "El expresidente de la Generalitat y líder de Junts, Carles Puigdemont, ha asegurado que prepara su regreso y ha descartado la posibilidad de ejercer el puesto de jefe de la oposición en el Parlament.",
+     "summaryEsSource": "Europa Press",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "20minutos",
+      "Europa Press",
+      "La Vanguardia"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T21:00:00Z",
+     "lastSeen": "2026-10-16T07:47:00Z",
+     "sources": [
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Puigdemont confirma que no será jefe de la oposición en el Parlament cuando regrese a Catalunya",
+       "url": "https://www.lavanguardia.com/politica/20261015/11660068/puigdemont-confirma-sera-jefe-oposicion-parlament-regrese-catalunya.html",
+       "publishedAt": "2026-10-15T21:00:00Z"
+      },
+      {
+       "source": "Europa Press",
+       "lang": "es",
+       "title": "Puigdemont prepara su regreso y descarta ejercer como jefe de la oposición en el Parlament",
+       "url": "https://www.europapress.es/catalunya/noticia-puigdemont-asegura-prepara-regreso-no-quiso-escapar-esconderse-belgica-20261015235107.html",
+       "publishedAt": "2026-10-15T21:51:07Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Puigdemont descarta ejercer de jefe de la oposición en el Parlament y prepara su regreso: \"Deberán firmar la rendición\"",
+       "url": "https://www.20minutos.es/cataluna/puigdemont-descarta-ejercer-jefe-oposicion-parlament-prepara-su-regreso-deberan-firmar-rendicion_7049490_0.html",
+       "publishedAt": "2026-10-16T07:47:00Z"
+      }
+     ],
+     "id": "politica-8"
+    },
+    {
+     "headline": "Feijóo pide desplegar la Armada en Ceuta ante las \"invasiones marroquíes\" y llamar a consultas al embajador español en Rabat",
+     "headlineLang": "es",
+     "headlineEs": "Feijóo pide desplegar la Armada en Ceuta ante las \"invasiones marroquíes\" y llamar a consultas al embajador español en Rabat",
+     "headlineEn": null,
+     "summaryEs": "Fuentes de la Dirección General de la Guardia Civil han desmentido a EFE que una patrullera marroquí permaneciera durante horas este jueves en aguas españolas frente a Ceuta, el día después de la histórica visita de los Reyes.",
+     "summaryEsSource": "20minutos",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "20minutos",
+      "Europa Press",
+      "La Vanguardia"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T06:03:43Z",
+     "lastSeen": "2026-10-16T07:40:07Z",
+     "sources": [
+      {
+       "source": "Europa Press",
+       "lang": "es",
+       "title": "Feijóo pide a Sánchez el despliegue de la Armada en Ceuta y que explique a los españoles lo que ocurre con Marruecos",
+       "url": "https://www.europapress.es/nacional/noticia-feijoo-pide-sanchez-despliegue-armada-ceuta-explique-espanoles-ocurre-marruecos-20261016080343.html",
+       "publishedAt": "2026-10-16T06:03:43Z"
+      },
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Feijóo exige desplegar ya a la Armada en Ceuta ante “varias invasiones” marroquíes",
+       "url": "https://www.lavanguardia.com/politica/20261016/11660412/feijoo-exige-desplegar-armada-ceuta-invasiones-marroquies-aguas-espanolas.html",
+       "publishedAt": "2026-10-16T06:59:38Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Feijóo pide desplegar la Armada en Ceuta ante las \"invasiones marroquíes\" y llamar a consultas al embajador español en Rabat",
+       "url": "https://www.20minutos.es/nacional/feijoo-pide-desplegar-armada-ceuta-ante-las-invasiones-marroquies-llamar-consultas-embajador-marruecos_7049498_0.html",
+       "publishedAt": "2026-10-16T07:40:07Z"
+      }
+     ],
+     "id": "politica-9"
+    },
+    {
+     "headline": "Farage defends Reform's vetting after councillors filmed making racist comments",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Farage defends Reform's vetting after councillors filmed making racist comments",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "The Reform leader says \"you can't vet for future comments\", after undercover filming of party activists.",
+     "summaryEnSource": "BBC",
+     "outlets": 3,
+     "outletNames": [
+      "BBC",
+      "Financial Times",
+      "The Guardian"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T10:20:51Z",
+     "lastSeen": "2026-10-16T07:31:42Z",
+     "sources": [
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Reform faces criticism after councillors filmed making racist comments",
+       "url": "https://www.bbc.co.uk/news/articles/cw3dj458re1vo",
+       "publishedAt": "2026-10-15T10:20:51Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Farage defends Reform's vetting after councillors filmed making racist comments",
+       "url": "https://www.bbc.co.uk/news/articles/crlykvgx1wvxo",
+       "publishedAt": "2026-10-15T16:36:32Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Farage accused of ‘protecting’ Reform candidate over racist slurs against David Lammy",
+       "url": "https://www.theguardian.com/politics/2026/oct/15/farage-accused-protecting-reform-candidate-racist-slurs-david-lammy-itv-film",
+       "publishedAt": "2026-10-15T19:09:46Z"
+      },
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
+       "url": "https://www.ft.com/content/317796f3-af18-4acb-a482-ec0bdd0edf45",
+       "publishedAt": "2026-10-15T21:05:45Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Reform faces questions over candidate vetting after undercover filming",
+       "url": "https://www.bbc.co.uk/news/articles/cqm26yr42ezko",
+       "publishedAt": "2026-10-16T07:31:42Z"
+      }
+     ],
+     "id": "politica-10"
     },
     {
      "headline": "Elon Musk Spends Heavily to Back Ken Paxton’s Senate Bid in Texas",
@@ -1540,7 +1636,7 @@
        "publishedAt": "2026-10-16T04:51:17Z"
       }
      ],
-     "id": "politica-8"
+     "id": "politica-11"
     },
     {
      "headline": "Carney Rallies Remain Vote in Alberta as Crucial Referendum Nears",
@@ -1585,7 +1681,7 @@
        "publishedAt": "2026-10-16T04:24:00Z"
       }
      ],
-     "id": "politica-9"
+     "id": "politica-12"
     },
     {
      "headline": "Diputado denuncia a Laura Fernández y Rodrigo Chaves por presunto nombramiento ilegal del director de la DIS",
@@ -1630,7 +1726,7 @@
        "publishedAt": "2026-10-15T22:56:09Z"
       }
      ],
-     "id": "politica-10"
+     "id": "politica-13"
     },
     {
      "headline": "James Talarico Raises Quarterly Record of $64 Million in Texas Senate Race Against Ken Paxton",
@@ -1682,7 +1778,7 @@
        "publishedAt": "2026-10-15T22:11:08Z"
       }
      ],
-     "id": "politica-11"
+     "id": "politica-14"
     },
     {
      "headline": "Albania registra nuevos enfrentamientos en Tirana durante las protestas que exigen la dimisión de Rama",
@@ -1749,7 +1845,7 @@
        "publishedAt": "2026-10-15T19:23:34Z"
       }
      ],
-     "id": "politica-12"
+     "id": "politica-15"
     },
     {
      "headline": "Police raid the major pro-opposition Halk TV channel in Turkey",
@@ -1794,7 +1890,7 @@
        "publishedAt": "2026-10-15T16:48:00Z"
       }
      ],
-     "id": "politica-13"
+     "id": "politica-16"
     },
     {
      "headline": "Decenas de miles marchan en Colombia en la primera protesta contra el gobierno de De la Espriella",
@@ -1853,7 +1949,7 @@
        "publishedAt": "2026-10-15T16:00:03Z"
       }
      ],
-     "id": "politica-14"
+     "id": "politica-17"
     },
     {
      "headline": "Porn showing choking or incest to be banned from early November, government says",
@@ -1890,7 +1986,7 @@
        "publishedAt": "2026-10-16T07:09:49Z"
       }
      ],
-     "id": "politica-15"
+     "id": "politica-18"
     },
     {
      "headline": "Una nueva incursión de Marruecos en aguas españolas contradice el discurso de \"hecho puntual\" de Sánchez",
@@ -1909,7 +2005,7 @@
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-16T06:45:32Z",
+     "firstSeen": "2026-10-16T07:03:04Z",
      "lastSeen": "2026-10-16T07:05:40Z",
      "sources": [
       {
@@ -1917,7 +2013,7 @@
        "lang": "es",
        "title": "Una patrullera marroquí invade aguas españolas tras la visita de los Reyes a Ceuta",
        "url": "https://www.abc.es/espana/guardia-civil-detecta-entrada-patrullera-marroqui-aguas-20261015220839-nt.html",
-       "publishedAt": "2026-10-16T06:45:32Z"
+       "publishedAt": "2026-10-16T07:03:04Z"
       },
       {
        "source": "Euronews Español",
@@ -1927,7 +2023,7 @@
        "publishedAt": "2026-10-16T07:05:40Z"
       }
      ],
-     "id": "politica-16"
+     "id": "politica-19"
     },
     {
      "headline": "Més y Frente Amplio cierran un acuerdo al Congreso en Balears sin Podemos",
@@ -1964,7 +2060,7 @@
        "publishedAt": "2026-10-16T07:02:41Z"
       }
      ],
-     "id": "politica-17"
+     "id": "politica-20"
     },
     {
      "headline": "El PP de Ayuso apuesta por Cayetana Álvarez de Toledo como número dos por Madrid en las generales",
@@ -2001,7 +2097,7 @@
        "publishedAt": "2026-10-16T03:30:01Z"
       }
      ],
-     "id": "politica-18"
+     "id": "politica-21"
     },
     {
      "headline": "Kristi Noem deja de ser enviada especial para el Escudo de las Américas, pero sigue como asesora en el Departamento de Estado",
@@ -2039,7 +2135,7 @@
        "publishedAt": "2026-10-16T00:37:21Z"
       }
      ],
-     "id": "politica-19"
+     "id": "politica-22"
     },
     {
      "headline": "Detienen a policía del MSP encargado de vigilar a Diablo y Tan por ingresar con celular y cargadores a Máxima Seguridad",
@@ -2076,7 +2172,7 @@
        "publishedAt": "2026-10-15T23:23:26Z"
       }
      ],
-     "id": "politica-20"
+     "id": "politica-23"
     },
     {
      "headline": "PLN negocia con PPSO propuesta de consenso sobre armonización eléctrica",
@@ -2113,81 +2209,7 @@
        "publishedAt": "2026-10-15T22:40:20Z"
       }
      ],
-     "id": "politica-21"
-    },
-    {
-     "headline": "Puigdemont confirma que no será jefe de la oposición en el Parlament cuando regrese a Catalunya",
-     "headlineLang": "es",
-     "headlineEs": "Puigdemont confirma que no será jefe de la oposición en el Parlament cuando regrese a Catalunya",
-     "headlineEn": null,
-     "summaryEs": "El expresidente catalán apunta que aunque tiene todos los datos, no conoce la realidad catalana de primera mano: “La Catalunya de la que me fui no existe y hay una Catalunya que no conozco”",
-     "summaryEsSource": "La Vanguardia",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 2,
-     "outletNames": [
-      "Europa Press",
-      "La Vanguardia"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T21:00:00Z",
-     "lastSeen": "2026-10-15T21:51:07Z",
-     "sources": [
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "Puigdemont confirma que no será jefe de la oposición en el Parlament cuando regrese a Catalunya",
-       "url": "https://www.lavanguardia.com/politica/20261015/11660068/puigdemont-confirma-sera-jefe-oposicion-parlament-regrese-catalunya.html",
-       "publishedAt": "2026-10-15T21:00:00Z"
-      },
-      {
-       "source": "Europa Press",
-       "lang": "es",
-       "title": "Puigdemont prepara su regreso y descarta ejercer como jefe de la oposición en el Parlament",
-       "url": "https://www.europapress.es/catalunya/noticia-puigdemont-asegura-prepara-regreso-no-quiso-escapar-esconderse-belgica-20261015235107.html",
-       "publishedAt": "2026-10-15T21:51:07Z"
-      }
-     ],
-     "id": "politica-22"
-    },
-    {
-     "headline": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Senior aide to Reform UK leader pushed to have Chris Parry thrown out of the party, according to TV documentary",
-     "summaryEnSource": "Financial Times",
-     "outlets": 2,
-     "outletNames": [
-      "Financial Times",
-      "The Guardian"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T19:09:46Z",
-     "lastSeen": "2026-10-15T21:05:45Z",
-     "sources": [
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Farage accused of ‘protecting’ Reform candidate over racist slurs against David Lammy",
-       "url": "https://www.theguardian.com/politics/2026/oct/15/farage-accused-protecting-reform-candidate-racist-slurs-david-lammy-itv-film",
-       "publishedAt": "2026-10-15T19:09:46Z"
-      },
-      {
-       "source": "Financial Times",
-       "lang": "en",
-       "title": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
-       "url": "https://www.ft.com/content/317796f3-af18-4acb-a482-ec0bdd0edf45",
-       "publishedAt": "2026-10-15T21:05:45Z"
-      }
-     ],
-     "id": "politica-23"
+     "id": "politica-24"
     },
     {
      "headline": "Texas sued after glitch delays almost 600,000 voter registrations",
@@ -2222,43 +2244,6 @@
        "title": "Texas sued after glitch delays almost 600,000 voter registrations",
        "url": "https://www.theguardian.com/us-news/2026/oct/15/texas-glitch-delay-voter-registrations",
        "publishedAt": "2026-10-15T17:49:57Z"
-      }
-     ],
-     "id": "politica-24"
-    },
-    {
-     "headline": "El Supremo ordena reabrir una causa contra la etarra Natividad Jáuregui por un atentado en 1981",
-     "headlineLang": "es",
-     "headlineEs": "El Supremo ordena reabrir una causa contra la etarra Natividad Jáuregui por un atentado en 1981",
-     "headlineEn": null,
-     "summaryEs": "Los magistrados corrigen la decisión adoptada por la Audiencia Nacional en 2023 y anulan el archivo de la investigación",
-     "summaryEsSource": "El País",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 2,
-     "outletNames": [
-      "20minutos",
-      "El País"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T14:08:51Z",
-     "lastSeen": "2026-10-15T17:09:10Z",
-     "sources": [
-      {
-       "source": "El País",
-       "lang": "es",
-       "title": "El Supremo ordena reabrir una causa contra la etarra Natividad Jáuregui por un atentado en 1981",
-       "url": "https://elpais.com/espana/2026-10-15/el-supremo-ordena-reabrir-una-causa-contra-natividad-jauregui-por-un-atentado-de-eta-en-1981.html",
-       "publishedAt": "2026-10-15T14:08:51Z"
-      },
-      {
-       "source": "20minutos",
-       "lang": "es",
-       "title": "El Supremo anula el archivo de una causa contra Natividad Jáuregui por un atentado de ETA en 1981",
-       "url": "https://www.20minutos.es/nacional/supremo-anula-archivo-una-causa-contra-natividad-jauregui-por-un-atentado-eta-bilbao-1981_7049340_0.html",
-       "publishedAt": "2026-10-15T17:09:10Z"
       }
      ],
      "id": "politica-25"
@@ -2673,14 +2658,14 @@
      "id": "finanzas-5"
     },
     {
-     "headline": "Bets on Fed rate hold in October strengthen after Warsh comments",
+     "headline": "Warsh Boosts Market Expectations of Fed Rate Hold in October",
      "headlineLang": "en",
      "headlineEs": null,
-     "headlineEn": "Bets on Fed rate hold in October strengthen after Warsh comments",
+     "headlineEn": "Warsh Boosts Market Expectations of Fed Rate Hold in October",
      "summaryEs": null,
      "summaryEsSource": null,
-     "summaryEn": "US central bank chair says economy has ‘broadly conformed with our expectations’ since rate increase in September",
-     "summaryEnSource": "Financial Times",
+     "summaryEn": "Federal Reserve Chairman Kevin Warsh did nothing to dispel market expectations that the US central bank will hold interest rates steady when it meets at the end of the month.",
+     "summaryEnSource": "Bloomberg",
      "outlets": 2,
      "outletNames": [
       "Bloomberg",
@@ -2689,16 +2674,9 @@
      "languages": [
       "en"
      ],
-     "firstSeen": "2026-10-15T22:04:06Z",
+     "firstSeen": "2026-10-15T23:51:46Z",
      "lastSeen": "2026-10-16T06:37:09Z",
      "sources": [
-      {
-       "source": "Bloomberg",
-       "lang": "en",
-       "title": "Stocks, Futures Rise as Fed Bets Ease After Warsh: Markets Wrap",
-       "url": "https://www.bloomberg.com/news/articles/2026-10-15/stock-market-today-dow-s-p-live-updates",
-       "publishedAt": "2026-10-15T22:04:06Z"
-      },
       {
        "source": "Bloomberg",
        "lang": "en",
@@ -3220,6 +3198,152 @@
    "label": "Mundo",
    "stories": [
     {
+     "headline": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
+     "headlineLang": "es",
+     "headlineEs": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
+     "headlineEn": null,
+     "summaryEs": "La escritora chilena Isabel Allende ha ganado este jueves por la noche el 75 Premio Planeta de Novela, dotado con 1 millón de euros, con 'La hora antes del alba', una continuación cronológica de 'La casa de los espíritus'.",
+     "summaryEsSource": "Europa Press",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 6,
+     "outletNames": [
+      "20minutos",
+      "DW",
+      "Euronews",
+      "Europa Press",
+      "Expansión",
+      "La Nación (Costa Rica)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T20:54:06Z",
+     "lastSeen": "2026-10-16T07:57:45Z",
+     "sources": [
+      {
+       "source": "Europa Press",
+       "lang": "es",
+       "title": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
+       "url": "https://www.europapress.es/catalunya/noticia-isabel-allende-gana-75-premio-planeta-hora-antes-alba-20261015225406.html",
+       "publishedAt": "2026-10-15T20:54:06Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Bombazo en el 75º premio Planeta: Isabel Allende gana con 'La hora antes del Alba', una secuela de 'La casa de los espíritus'",
+       "url": "https://www.20minutos.es/libros/bombazo-75o-premio-planeta-isabel-allende-gana-con-hora-antes-alba-una-secuela-casa-los-espiritus_7049023_0.html",
+       "publishedAt": "2026-10-15T20:54:12Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "La escritora chilena Isabel Allende gana el Premio Planeta de novela 2026",
+       "url": "https://www.nacion.com/ancora/la-escritora-chilena-isabel-allende-gana-el-premio/NDOEOL25ANHWZGAEJHU2PWDVAY/story/",
+       "publishedAt": "2026-10-15T21:15:25Z"
+      },
+      {
+       "source": "DW Español",
+       "lang": "es",
+       "title": "Isabel Allende gana el Premio Planeta de novela 2026",
+       "url": "https://www.dw.com/es/isabel-allende-gana-el-premio-planeta-de-novela-2026/a-79674853?maca=spa-rss-sp-all-1122-xml-mrss",
+       "publishedAt": "2026-10-15T21:55:00Z"
+      },
+      {
+       "source": "Expansión",
+       "lang": "es",
+       "title": "Isabel Allende gana el Planeta dando \"cierre\" al universo de 'La casa de los espíritus'",
+       "url": "https://www.expansion.com/sociedad/2026/10/16/isabel-allende-gana-planeta-dando-cierre-universo-casa-espiritus.html",
+       "publishedAt": "2026-10-15T22:36:30Z"
+      },
+      {
+       "source": "Euronews Español",
+       "lang": "es",
+       "title": "Isabel Allende gana el Premio Planeta 2026 con una novela que retoma el universo de 'La casa de los espíritus'",
+       "url": "https://es.euronews.com/2026/10/16/isabel-allende-gana-premio-planeta-2026-con-una-novela-que-retoma-universo-casa-espiritus",
+       "publishedAt": "2026-10-16T07:57:45Z"
+      }
+     ],
+     "id": "mundo-1"
+    },
+    {
+     "headline": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
+     "headlineLang": "es",
+     "headlineEs": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
+     "headlineEn": "Venezuela’s Opposition Leader Calls Trump’s New Oil Partner Corrupt",
+     "summaryEs": "La líder opositora venezolana y premio Nobel de la Paz María Corina Machado denunció que Estados Unidos la dejó fuera de las negociaciones que celebran esta semana en Caracas el Gobierno de la presidenta encargada, Delcy Rodríguez , y un sector de la oposición, en una entrevista publicada este jueves por The New York Times.Machado, que permanece fuera de Venezuela, aseguró durante la entrevista…",
+     "summaryEsSource": "ABC",
+     "summaryEn": "As ties with the Trump administration fray, María Corina Machado said her return to Venezuela would come “sooner than you would expect.”",
+     "summaryEnSource": "The New York Times",
+     "outlets": 6,
+     "outletNames": [
+      "ABC",
+      "El Comercio (Perú)",
+      "El Mundo",
+      "El País",
+      "El Tiempo",
+      "The New York Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-14T15:50:55Z",
+     "lastSeen": "2026-10-16T07:31:50Z",
+     "sources": [
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "EEUU retira las sanciones al hermano de Delcy Rodríguez en vísperas de la tercera ronda de negociaciones en Caracas",
+       "url": "https://www.elmundo.es/internacional/2026/10/14/6acfa3bb21efa0907d8b45a5.html",
+       "publishedAt": "2026-10-14T15:50:55Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Turno para María Corina Machado tras el perdón al hermano de Delcy Rodríguez",
+       "url": "https://www.elmundo.es/internacional/2026/10/16/6ad112d3e85ecea61e8b45b4.html",
+       "publishedAt": "2026-10-15T22:01:53Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Venezuela’s Opposition Leader Calls Trump’s New Oil Partner Corrupt",
+       "url": "https://www.nytimes.com/2026/10/15/world/americas/venezuela-machado-trump-oil-deal.html",
+       "publishedAt": "2026-10-15T23:24:50Z"
+      },
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "María Corina Machado califica de “corrupto” a Alejandro Betancourt, socio petrolero de Trump",
+       "url": "https://elpais.com/america/2026-10-16/maria-corina-machado-califica-de-corrupto-a-alejandro-betancourt-socio-petrolero-de-trump.html",
+       "publishedAt": "2026-10-16T01:39:34Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Machado denuncia que Estados Unidos la ha excluido de las negociaciones sobre Venezuela",
+       "url": "https://elcomercio.pe/mundo/venezuela/venezuela-maria-corina-machado-denuncia-que-estados-unidos-la-ha-excluido-de-las-negociaciones-sobre-caracas-delcy-rodriguez-ultimas-noticia/",
+       "publishedAt": "2026-10-16T03:01:00Z"
+      },
+      {
+       "source": "ABC",
+       "lang": "es",
+       "title": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
+       "url": "https://www.abc.es/internacional/maria-corina-machado-denuncia-eeuu-excluido-negociaciones-20261016064325-nt.html",
+       "publishedAt": "2026-10-16T04:43:25Z"
+      },
+      {
+       "source": "El Tiempo",
+       "lang": "es",
+       "title": "María Corina Machado denuncia que Estados Unidos la ha excluido de las negociaciones sobre Venezuela: 'La gente exige justicia'",
+       "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/maria-corina-machado-denuncia-que-estados-unidos-la-ha-excluido-de-las-negociaciones-sobre-venezuela-la-gente-exige-justicia-3593950",
+       "publishedAt": "2026-10-16T07:31:50Z"
+      }
+     ],
+     "id": "mundo-2"
+    },
+    {
      "headline": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
      "headlineLang": "es",
      "headlineEs": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
@@ -3228,32 +3352,22 @@
      "summaryEsSource": "BBC Mundo",
      "summaryEn": "Pope Leo XIV is recovering \"as expected\" and has begun respiratory physiotherapy after tests confirmed a lung cancer diagnosis following surgery, the Vatican says.",
      "summaryEnSource": "CBS News",
-     "outlets": 8,
+     "outlets": 5,
      "outletNames": [
       "BBC",
       "BBC Mundo",
       "CBS News",
-      "El Confidencial",
       "El Mundo",
-      "El País",
       "NPR",
-      "RFI",
       "The New York Times"
      ],
      "languages": [
       "en",
       "es"
      ],
-     "firstSeen": "2026-10-14T09:08:30Z",
+     "firstSeen": "2026-10-14T10:18:57Z",
      "lastSeen": "2026-10-15T20:02:55Z",
      "sources": [
-      {
-       "source": "RFI Español",
-       "lang": "es",
-       "title": "El papa León XIV pasó una noche \"tranquila\" tras ser operado de un cáncer de pulmón",
-       "url": "https://www.rfi.fr/es/sociedad/20261014-el-papa-le%C3%B3n-xiv-pas%C3%B3-una-noche-tranquila-tras-ser-operado-de-un-c%C3%A1ncer-de-pulm%C3%B3n",
-       "publishedAt": "2026-10-14T09:08:30Z"
-      },
       {
        "source": "The New York Times",
        "lang": "en",
@@ -3311,25 +3425,11 @@
        "publishedAt": "2026-10-15T00:34:04Z"
       },
       {
-       "source": "El Confidencial",
-       "lang": "es",
-       "title": "El papa León XIV continúa su recuperación tras la operación: pasó buena noche y desayunó",
-       "url": "https://www.elconfidencial.com/mundo/2026-10-15/papa-leon-xiv-cancer-pulmon-1tps_4445330/",
-       "publishedAt": "2026-10-15T08:11:00Z"
-      },
-      {
        "source": "The New York Times",
        "lang": "en",
        "title": "While Pope Leo Recovers From Lung Surgery, the Vatican Runs on Autopilot",
        "url": "https://www.nytimes.com/2026/10/15/world/europe/pope-leo-cancer-surgery-vatican.html",
        "publishedAt": "2026-10-15T13:01:07Z"
-      },
-      {
-       "source": "El País",
-       "lang": "es",
-       "title": "El Papa evoluciona “con normalidad” y realiza fisioterapia dos días después de su operación",
-       "url": "https://elpais.com/internacional/2026-10-15/el-papa-evoluciona-con-normalidad-y-realiza-fisioterapia-dos-dias-despues-de-su-operacion.html",
-       "publishedAt": "2026-10-15T14:41:34Z"
       },
       {
        "source": "CBS News",
@@ -3351,136 +3451,6 @@
        "title": "Pope Leo Is Recovering After Cancer Surgery, Vatican Says: What to Know",
        "url": "https://www.nytimes.com/2026/10/14/world/europe/pope-leo-xiv-cancer-diagnosis.html",
        "publishedAt": "2026-10-15T20:02:55Z"
-      }
-     ],
-     "id": "mundo-1"
-    },
-    {
-     "headline": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
-     "headlineLang": "es",
-     "headlineEs": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
-     "headlineEn": "Venezuela’s Opposition Leader Calls Trump’s New Oil Partner Corrupt",
-     "summaryEs": "La líder opositora venezolana y premio Nobel de la Paz María Corina Machado denunció que Estados Unidos la dejó fuera de las negociaciones que celebran esta semana en Caracas el Gobierno de la presidenta encargada, Delcy Rodríguez , y un sector de la oposición, en una entrevista publicada este jueves por The New York Times.Machado, que permanece fuera de Venezuela, aseguró durante la entrevista…",
-     "summaryEsSource": "ABC",
-     "summaryEn": "As ties with the Trump administration fray, María Corina Machado said her return to Venezuela would come “sooner than you would expect.”",
-     "summaryEnSource": "The New York Times",
-     "outlets": 5,
-     "outletNames": [
-      "ABC",
-      "El Comercio (Perú)",
-      "El Mundo",
-      "El País",
-      "The New York Times"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-14T15:50:55Z",
-     "lastSeen": "2026-10-16T04:43:25Z",
-     "sources": [
-      {
-       "source": "El Mundo",
-       "lang": "es",
-       "title": "EEUU retira las sanciones al hermano de Delcy Rodríguez en vísperas de la tercera ronda de negociaciones en Caracas",
-       "url": "https://www.elmundo.es/internacional/2026/10/14/6acfa3bb21efa0907d8b45a5.html",
-       "publishedAt": "2026-10-14T15:50:55Z"
-      },
-      {
-       "source": "El Mundo",
-       "lang": "es",
-       "title": "Turno para María Corina Machado tras el perdón al hermano de Delcy Rodríguez",
-       "url": "https://www.elmundo.es/internacional/2026/10/16/6ad112d3e85ecea61e8b45b4.html",
-       "publishedAt": "2026-10-15T22:01:53Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Venezuela’s Opposition Leader Calls Trump’s New Oil Partner Corrupt",
-       "url": "https://www.nytimes.com/2026/10/15/world/americas/venezuela-machado-trump-oil-deal.html",
-       "publishedAt": "2026-10-15T23:24:50Z"
-      },
-      {
-       "source": "El País",
-       "lang": "es",
-       "title": "María Corina Machado califica de “corrupto” a Alejandro Betancourt, socio petrolero de Trump",
-       "url": "https://elpais.com/america/2026-10-16/maria-corina-machado-califica-de-corrupto-a-alejandro-betancourt-socio-petrolero-de-trump.html",
-       "publishedAt": "2026-10-16T01:39:34Z"
-      },
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Machado denuncia que Estados Unidos la ha excluido de las negociaciones sobre Venezuela",
-       "url": "https://elcomercio.pe/mundo/venezuela/venezuela-maria-corina-machado-denuncia-que-estados-unidos-la-ha-excluido-de-las-negociaciones-sobre-caracas-delcy-rodriguez-ultimas-noticia/",
-       "publishedAt": "2026-10-16T03:01:00Z"
-      },
-      {
-       "source": "ABC",
-       "lang": "es",
-       "title": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
-       "url": "https://www.abc.es/internacional/maria-corina-machado-denuncia-eeuu-excluido-negociaciones-20261016064325-nt.html",
-       "publishedAt": "2026-10-16T04:43:25Z"
-      }
-     ],
-     "id": "mundo-2"
-    },
-    {
-     "headline": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
-     "headlineLang": "es",
-     "headlineEs": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
-     "headlineEn": null,
-     "summaryEs": "La escritora chilena Isabel Allende ha ganado este jueves por la noche el 75 Premio Planeta de Novela, dotado con 1 millón de euros, con 'La hora antes del alba', una continuación cronológica de 'La casa de los espíritus'.",
-     "summaryEsSource": "Europa Press",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 5,
-     "outletNames": [
-      "20minutos",
-      "DW",
-      "Europa Press",
-      "Expansión",
-      "La Nación (Costa Rica)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T20:54:06Z",
-     "lastSeen": "2026-10-15T22:36:30Z",
-     "sources": [
-      {
-       "source": "Europa Press",
-       "lang": "es",
-       "title": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
-       "url": "https://www.europapress.es/catalunya/noticia-isabel-allende-gana-75-premio-planeta-hora-antes-alba-20261015225406.html",
-       "publishedAt": "2026-10-15T20:54:06Z"
-      },
-      {
-       "source": "20minutos",
-       "lang": "es",
-       "title": "Bombazo en el 75º premio Planeta: Isabel Allende gana con 'La hora antes del Alba', una secuela de 'La casa de los espíritus'",
-       "url": "https://www.20minutos.es/libros/bombazo-75o-premio-planeta-isabel-allende-gana-con-hora-antes-alba-una-secuela-casa-los-espiritus_7049023_0.html",
-       "publishedAt": "2026-10-15T20:54:12Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "La escritora chilena Isabel Allende gana el Premio Planeta de novela 2026",
-       "url": "https://www.nacion.com/ancora/la-escritora-chilena-isabel-allende-gana-el-premio/NDOEOL25ANHWZGAEJHU2PWDVAY/story/",
-       "publishedAt": "2026-10-15T21:15:25Z"
-      },
-      {
-       "source": "DW Español",
-       "lang": "es",
-       "title": "Isabel Allende gana el Premio Planeta de novela 2026",
-       "url": "https://www.dw.com/es/isabel-allende-gana-el-premio-planeta-de-novela-2026/a-79674853?maca=spa-rss-sp-all-1122-xml-mrss",
-       "publishedAt": "2026-10-15T21:55:00Z"
-      },
-      {
-       "source": "Expansión",
-       "lang": "es",
-       "title": "Isabel Allende gana el Planeta dando \"cierre\" al universo de 'La casa de los espíritus'",
-       "url": "https://www.expansion.com/sociedad/2026/10/16/isabel-allende-gana-planeta-dando-cierre-universo-casa-espiritus.html",
-       "publishedAt": "2026-10-15T22:36:30Z"
       }
      ],
      "id": "mundo-3"
@@ -3676,9 +3646,9 @@
      "id": "mundo-6"
     },
     {
-     "headline": "Adiós al spam telefónico: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
+     "headline": "Adiós al spam telefónico en España: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
      "headlineLang": "es",
-     "headlineEs": "Adiós al spam telefónico: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
+     "headlineEs": "Adiós al spam telefónico en España: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
      "headlineEn": null,
      "summaryEs": "A partir del 17 de octubre, las empresas obligadas por la Ley de Servicios de Atención a la Clientela solo podrán hacer llamadas comerciales desde números que empiecen por 400, y los operadores tendrán que bloquear las que no cumplan.",
      "summaryEsSource": "Euronews Español",
@@ -3713,7 +3683,7 @@
       {
        "source": "Euronews Español",
        "lang": "es",
-       "title": "Adiós al spam telefónico: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
+       "title": "Adiós al spam telefónico en España: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
        "url": "https://es.euronews.com/2026/10/16/adios-spam-telefonico-las-llamadas-comerciales-tendran-que-identificarse-con-prefijo-400",
        "publishedAt": "2026-10-16T07:07:33Z"
       }
@@ -3863,6 +3833,64 @@
      "id": "mundo-10"
     },
     {
+     "headline": "Pico y placa en Pereira para el viernes 16 de octubre de 2026: estos son los carros y motos que tendrán restricción",
+     "headlineLang": "es",
+     "headlineEs": "Pico y placa en Pereira para el viernes 16 de octubre de 2026: estos son los carros y motos que tendrán restricción",
+     "headlineEn": null,
+     "summaryEs": "La medida estará vigente durante 14 horas para vehículos particulares y motocicletas. Consulte los números restringidos y los horarios.",
+     "summaryEsSource": "El Tiempo",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "El Tiempo",
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T06:15:59Z",
+     "lastSeen": "2026-10-16T07:30:00Z",
+     "sources": [
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Pico y Placa Bogotá: evita multas este viernes",
+       "url": "https://www.infobae.com/colombia/2026/10/16/pico-y-placa-bogota-evita-multas-este-viernes/",
+       "publishedAt": "2026-10-16T06:15:59Z"
+      },
+      {
+       "source": "El Tiempo",
+       "lang": "es",
+       "title": "Pico y placa en Medellín para el lunes 19 de octubre de 2026: estos son los carros, motos y taxis que deben cumplir la medida",
+       "url": "https://www.eltiempo.com/colombia/medellin/pico-y-placa-en-medellin-para-el-lunes-19-de-octubre-de-2026-estos-son-los-carros-motos-y-taxis-que-deben-cumplir-la-medida-3593901",
+       "publishedAt": "2026-10-16T07:30:00Z"
+      },
+      {
+       "source": "El Tiempo",
+       "lang": "es",
+       "title": "Pico y placa en Medellín para el viernes 16 de octubre de 2026: estos son los carros, motos y taxis con restricción",
+       "url": "https://www.eltiempo.com/colombia/medellin/pico-y-placa-en-medellin-para-el-viernes-16-de-octubre-de-2026-estos-son-los-carros-motos-y-taxis-con-restriccion-3593762",
+       "publishedAt": "2026-10-16T07:30:00Z"
+      },
+      {
+       "source": "El Tiempo",
+       "lang": "es",
+       "title": "Pico y placa en Pereira para el viernes 16 de octubre de 2026: estos son los carros y motos que tendrán restricción",
+       "url": "https://www.eltiempo.com/colombia/otras-ciudades/pico-y-placa-en-pereira-para-el-viernes-16-de-octubre-de-2026-estos-son-los-carros-y-motos-que-tendran-restriccion-3593808",
+       "publishedAt": "2026-10-16T07:30:00Z"
+      },
+      {
+       "source": "El Tiempo",
+       "lang": "es",
+       "title": "¡Evite multas! Pico y placa en Cali para el viernes 16 de octubre de 2026: estas placas tendrán restricción",
+       "url": "https://www.eltiempo.com/colombia/cali/evite-multas-pico-y-placa-en-cali-para-el-viernes-16-de-octubre-de-2026-estas-placas-tendran-restriccion-3593789",
+       "publishedAt": "2026-10-16T07:30:00Z"
+      }
+     ],
+     "id": "mundo-11"
+    },
+    {
      "headline": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
      "headlineLang": "es",
      "headlineEs": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
@@ -3905,7 +3933,7 @@
        "publishedAt": "2026-10-16T06:48:25Z"
       }
      ],
-     "id": "mundo-11"
+     "id": "mundo-12"
     },
     {
      "headline": "Fiscalía pide prisión preventiva contra futbolista de la Selección de Costa Rica investigado por extorsión y lavado de dinero",
@@ -3942,7 +3970,7 @@
        "publishedAt": "2026-10-16T04:10:35Z"
       }
      ],
-     "id": "mundo-12"
+     "id": "mundo-13"
     },
     {
      "headline": "Costa Rica extraditará a Estados Unidos a tres mexicanos vinculados con el Cártel de Sinaloa por presunta conspiración para introducir cocaína a ese país",
@@ -3979,7 +4007,7 @@
        "publishedAt": "2026-10-16T03:00:43Z"
       }
      ],
-     "id": "mundo-13"
+     "id": "mundo-14"
     },
     {
      "headline": "US police identify remains of man found in barrel in shrinking reservoir",
@@ -4016,7 +4044,7 @@
        "publishedAt": "2026-10-16T01:35:40Z"
       }
      ],
-     "id": "mundo-14"
+     "id": "mundo-15"
     },
     {
      "headline": "Más de la mitad de los aspirantes a médicos en Costa Rica reprobaron examen obligatorio: estas fueron las universidades con mejores resultados",
@@ -4053,7 +4081,7 @@
        "publishedAt": "2026-10-16T00:33:05Z"
       }
      ],
-     "id": "mundo-15"
+     "id": "mundo-16"
     },
     {
      "headline": "Diego Poncelet, el español que viaja con un monje budista, récord Guinness a más de 150 km/h sobre un monopatín: “Quería sentir algo que nadie hubiera sentido”",
@@ -4090,7 +4118,7 @@
        "publishedAt": "2026-10-15T16:47:02Z"
       }
      ],
-     "id": "mundo-16"
+     "id": "mundo-17"
     },
     {
      "headline": "Rusia: arrestan al redactor jefe de Nóvaya Gazeta, medio independiente en la mira del Kremlin",
@@ -4128,7 +4156,44 @@
        "publishedAt": "2026-10-15T13:35:35Z"
       }
      ],
-     "id": "mundo-17"
+     "id": "mundo-18"
+    },
+    {
+     "headline": "El papa León XIV pasó una noche \"tranquila\" tras ser operado de un cáncer de pulmón",
+     "headlineLang": "es",
+     "headlineEs": "El papa León XIV pasó una noche \"tranquila\" tras ser operado de un cáncer de pulmón",
+     "headlineEn": null,
+     "summaryEs": "León XIV pasó una noche tranquila en el hospital Gemelli de Roma, donde permanece hospitalizado este miércoles, al día siguiente de someterse a una operación en la que se le extirpó un tumor canceroso del pulmón derecho.",
+     "summaryEsSource": "RFI Español",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "El Confidencial",
+      "RFI"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-14T09:08:30Z",
+     "lastSeen": "2026-10-15T08:11:00Z",
+     "sources": [
+      {
+       "source": "RFI Español",
+       "lang": "es",
+       "title": "El papa León XIV pasó una noche \"tranquila\" tras ser operado de un cáncer de pulmón",
+       "url": "https://www.rfi.fr/es/sociedad/20261014-el-papa-le%C3%B3n-xiv-pas%C3%B3-una-noche-tranquila-tras-ser-operado-de-un-c%C3%A1ncer-de-pulm%C3%B3n",
+       "publishedAt": "2026-10-14T09:08:30Z"
+      },
+      {
+       "source": "El Confidencial",
+       "lang": "es",
+       "title": "El papa León XIV continúa su recuperación tras la operación: pasó buena noche y desayunó",
+       "url": "https://www.elconfidencial.com/mundo/2026-10-15/papa-leon-xiv-cancer-pulmon-1tps_4445330/",
+       "publishedAt": "2026-10-15T08:11:00Z"
+      }
+     ],
+     "id": "mundo-19"
     }
    ]
   },
@@ -4136,43 +4201,6 @@
    "id": "ciencias",
    "label": "Ciencias",
    "stories": [
-    {
-     "headline": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Computer models suggest that unrealistically cold oceans would be insufficient to stop Thwaites glacier retreating, although a neighbouring glacier might begin to grow",
-     "summaryEnSource": "New Scientist",
-     "outlets": 2,
-     "outletNames": [
-      "Euronews",
-      "New Scientist"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T20:00:00Z",
-     "lastSeen": "2026-10-16T06:02:15Z",
-     "sources": [
-      {
-       "source": "New Scientist",
-       "lang": "en",
-       "title": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
-       "url": "https://www.newscientist.com/article/2594246-antarcticas-doomsday-glacier-will-keep-melting-even-if-oceans-cool/",
-       "publishedAt": "2026-10-15T20:00:00Z"
-      },
-      {
-       "source": "Euronews",
-       "lang": "en",
-       "title": "Doomsday Glacier will keep melting even if oceans cool. Here’s why cutting emissions still matters",
-       "url": "https://www.euronews.com/2026/10/16/doomsday-glacier-will-keep-melting-even-if-oceans-cool-heres-why-cutting-emissions-still-m",
-       "publishedAt": "2026-10-16T06:02:15Z"
-      }
-     ],
-     "id": "ciencias-1"
-    },
     {
      "headline": "El neandertal que murió atravesado por una lanza hace 75.000 años y que muestra cómo cuidaban de sus heridos y sus muertos",
      "headlineLang": "es",
@@ -4208,7 +4236,7 @@
        "publishedAt": "2026-10-15T16:31:48Z"
       }
      ],
-     "id": "ciencias-2"
+     "id": "ciencias-1"
     },
     {
      "headline": "El Seprona y el fotógrafo Pedro Armestre, galardonados con los Premios Biodiversidad",
@@ -4245,7 +4273,7 @@
        "publishedAt": "2026-10-15T16:06:09Z"
       }
      ],
-     "id": "ciencias-3"
+     "id": "ciencias-2"
     },
     {
      "headline": "Virus del Nilo Occidental: Europa vive su peor temporada mientras los casos se extienden al norte",
@@ -4282,7 +4310,7 @@
        "publishedAt": "2026-10-15T15:40:40Z"
       }
      ],
-     "id": "ciencias-4"
+     "id": "ciencias-3"
     }
    ]
   },
@@ -4398,76 +4426,6 @@
      "id": "guerras-1"
     },
     {
-     "headline": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
-     "headlineLang": "es",
-     "headlineEs": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
-     "headlineEn": "Ukraine resumes attacks on Russian refineries as Zelenskyy says 'we're done'",
-     "summaryEs": "Zelenski da por terminada la tregua energética anunciada por Trump, mientras Lavrov rechaza el último plan de paz impulsado por Washington y advierte de que el conflicto se decidirá en el campo de batalla.",
-     "summaryEsSource": "20minutos",
-     "summaryEn": "Volodymyr Zelenskyy has said Ukraine will again attack Russian energy sites, as Moscow has ignored a claim by US President Trump that an \"energy ceasefire\" had been agreed. Russia reported two attacks on refineries.",
-     "summaryEnSource": "DW",
-     "outlets": 6,
-     "outletNames": [
-      "20minutos",
-      "BBC",
-      "DW",
-      "NPR",
-      "The Guardian",
-      "The New York Times"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-15T10:05:58Z",
-     "lastSeen": "2026-10-16T02:48:41Z",
-     "sources": [
-      {
-       "source": "NPR",
-       "lang": "en",
-       "title": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
-       "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war",
-       "publishedAt": "2026-10-15T10:05:58Z"
-      },
-      {
-       "source": "20minutos",
-       "lang": "es",
-       "title": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
-       "url": "https://www.20minutos.es/internacional/kiev-golpea-una-refineria-200-kilometros-moscu-los-ataques-cruzados-alejan-una-posible-tregua-hemos-tenido-suficiente_7049236_0.html",
-       "publishedAt": "2026-10-15T13:49:23Z"
-      },
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "Ukraine resumes attacks on Russian refineries as Zelenskyy says 'we're done'",
-       "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-we-re-done/a-79667757?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-15T14:51:00Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
-       "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o",
-       "publishedAt": "2026-10-15T16:50:18Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Russia and Ukraine trade strikes as Trump ‘energy ceasefire’ collapses",
-       "url": "https://www.theguardian.com/world/2026/oct/15/us-effort-to-get-russia-ukraine-energy-ceasefire-collapses",
-       "publishedAt": "2026-10-15T23:57:20Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
-       "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html",
-       "publishedAt": "2026-10-16T02:48:41Z"
-      }
-     ],
-     "id": "guerras-2"
-    },
-    {
      "headline": "What is Starshield, SpaceX's military version of Starlink?",
      "headlineLang": "en",
      "headlineEs": null,
@@ -4531,6 +4489,68 @@
        "title": "What to know about Starshield, SpaceX's military-focused Starlink service",
        "url": "https://www.cnbc.com/2026/10/15/what-is-starshield-spacex-starlink-military.html",
        "publishedAt": "2026-10-16T06:25:31Z"
+      }
+     ],
+     "id": "guerras-2"
+    },
+    {
+     "headline": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
+     "headlineLang": "es",
+     "headlineEs": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
+     "headlineEn": "Ukraine resumes attacks on Russian refineries as Zelenskyy says 'we're done'",
+     "summaryEs": "Zelenski da por terminada la tregua energética anunciada por Trump, mientras Lavrov rechaza el último plan de paz impulsado por Washington y advierte de que el conflicto se decidirá en el campo de batalla.",
+     "summaryEsSource": "20minutos",
+     "summaryEn": "Volodymyr Zelenskyy has said Ukraine will again attack Russian energy sites, as Moscow has ignored a claim by US President Trump that an \"energy ceasefire\" had been agreed. Russia reported two attacks on refineries.",
+     "summaryEnSource": "DW",
+     "outlets": 5,
+     "outletNames": [
+      "20minutos",
+      "BBC",
+      "DW",
+      "NPR",
+      "The New York Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T10:05:58Z",
+     "lastSeen": "2026-10-16T02:48:41Z",
+     "sources": [
+      {
+       "source": "NPR",
+       "lang": "en",
+       "title": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
+       "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war",
+       "publishedAt": "2026-10-15T10:05:58Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Ucrania reanuda los ataques a refinerías rusas tras acusar a Moscú de incumplir la tregua",
+       "url": "https://www.20minutos.es/internacional/kiev-golpea-una-refineria-200-kilometros-moscu-los-ataques-cruzados-alejan-una-posible-tregua-hemos-tenido-suficiente_7049236_0.html",
+       "publishedAt": "2026-10-15T13:49:23Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "Ukraine resumes attacks on Russian refineries as Zelenskyy says 'we're done'",
+       "url": "https://www.dw.com/en/ukraine-resumes-attacks-on-russian-refineries-as-zelenskyy-says-we-re-done/a-79667757?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-15T14:51:00Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
+       "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o",
+       "publishedAt": "2026-10-15T16:50:18Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Zelensky Says Ukraine Will Resume Russian Refinery Strikes, Defying Trump",
+       "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html",
+       "publishedAt": "2026-10-16T02:48:41Z"
       }
      ],
      "id": "guerras-3"
@@ -4789,6 +4809,1205 @@
      "id": "guerras-8"
     }
    ]
+  },
+  {
+   "id": "buenas",
+   "label": "Buenas noticias",
+   "minOutlets": 1,
+   "stories": [
+    {
+     "headline": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "A phase 1 trial shows that treatment of patients with high-grade serous ovarian cancer with personalized neoantigen vaccines combined with PD-1 blockade was feasible and led to tumor-specific immune responses in many patients and putative mechanisms of resistance related to antigen presentation were identified via cell-free DNA analysis.",
+     "summaryEnSource": "Nature",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Nature"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T00:34:46Z",
+     "lastSeen": "2026-10-16T00:34:46Z",
+     "sources": [
+      {
+       "source": "Nature",
+       "lang": "en",
+       "title": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
+       "url": "https://www.nature.com/articles/s41591-026-04717-8",
+       "publishedAt": "2026-10-16T00:34:46Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "science",
+       "url": "https://www.reddit.com/r/science/comments/1x72apz/new_phase_1_trial_results_published_in_nature/"
+      }
+     ],
+     "id": "buenas-1"
+    },
+    {
+     "headline": "Vecinos de Moravia podrán acceder a vacunación y chequeos médicos gratuitos este viernes",
+     "headlineLang": "es",
+     "headlineEs": "Vecinos de Moravia podrán acceder a vacunación y chequeos médicos gratuitos este viernes",
+     "headlineEn": null,
+     "summaryEs": "Actividad incluirá controles de presión arterial",
+     "summaryEsSource": "Monumental",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Monumental"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T00:30:03Z",
+     "lastSeen": "2026-10-16T00:30:03Z",
+     "sources": [
+      {
+       "source": "Monumental",
+       "lang": "es",
+       "title": "Vecinos de Moravia podrán acceder a vacunación y chequeos médicos gratuitos este viernes",
+       "url": "https://www.monumental.co.cr/2026/10/15/vecinos-de-moravia-podran-acceder-a-vacunacion-y-chequeos-medicos-gratuitos-este-viernes/",
+       "publishedAt": "2026-10-16T00:30:03Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-2"
+    },
+    {
+     "headline": "Complex surgery successfully separates Fijian conjoined twins",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Complex surgery successfully separates Fijian conjoined twins",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "In what was described as an \"exceptionally rare\" case, doctors in Saudi Arabia say a complex operation to separate 13-month-old Fijian conjoined twins has been successful.",
+     "summaryEnSource": "ABC News (Australia)",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "ABC News (Australia)"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T22:28:16Z",
+     "lastSeen": "2026-10-15T22:28:16Z",
+     "sources": [
+      {
+       "source": "ABC News (Australia)",
+       "lang": "en",
+       "title": "Complex surgery successfully separates Fijian conjoined twins",
+       "url": "https://www.abc.net.au/news/2026-10-16/surgery-separates-fijian-conjoined-twins-in-saudi-arabia/107271702",
+       "publishedAt": "2026-10-15T22:28:16Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x72agg/complex_surgery_successfully_separates_fijian/"
+      }
+     ],
+     "id": "buenas-3"
+    },
+    {
+     "headline": "Parada cardiaca: las ventilaciones también salvan vidas",
+     "headlineLang": "es",
+     "headlineEs": "Parada cardiaca: las ventilaciones también salvan vidas",
+     "headlineEn": null,
+     "summaryEs": "Prácticas de ventilación en reanimación cardiopulmonar. ALPA PROD/Shutterstock Imagine que una persona se desploma delante de usted. No responde cuando le habla ni respira con normalidad. ¿Sabría qué hacer hasta que llegue la ambulancia? En una parada cardiaca, cada minuto sin reanimación reduce las posibilidades de supervivencia en un 10 %. La actuación de quienes presencian la emergencia puede…",
+     "summaryEsSource": "The Conversation España",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "The Conversation España"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T20:22:34Z",
+     "lastSeen": "2026-10-15T20:22:34Z",
+     "sources": [
+      {
+       "source": "The Conversation España",
+       "lang": "es",
+       "title": "Parada cardiaca: las ventilaciones también salvan vidas",
+       "url": "https://theconversation.com/parada-cardiaca-las-ventilaciones-tambien-salvan-vidas-294416",
+       "publishedAt": "2026-10-15T20:22:34Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-4"
+    },
+    {
+     "headline": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "In the last two year, local watermen of Maryland and Virginia have drudged up roughly 24,000 abandoned fishing traps.",
+     "summaryEnSource": "Good Good Good",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Good Good Good"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T19:41:00Z",
+     "lastSeen": "2026-10-15T19:41:00Z",
+     "sources": [
+      {
+       "source": "Good Good Good",
+       "lang": "en",
+       "title": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
+       "url": "https://www.goodgoodgood.co/articles/chesapeake-bay-ghost-traps-wildlife-rescue",
+       "publishedAt": "2026-10-15T19:41:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-5"
+    },
+    {
+     "headline": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "From the International Space Station’s unique position 250 miles above Earth, the Sun is a vital source of energy. Solar power supports the station’s life support systems, daily activities, and hundreds of research investigations that improve life on Earth and prepare humans for deep space exploration. Over the past five years, NASA augmented the station’s",
+     "summaryEnSource": "NASA",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "NASA"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T17:30:00Z",
+     "lastSeen": "2026-10-15T17:30:00Z",
+     "sources": [
+      {
+       "source": "NASA",
+       "lang": "en",
+       "title": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
+       "url": "https://www.nasa.gov/missions/station/iss-research/power-up-roll-out-solar-arrays-boost-space-station-power-supply/",
+       "publishedAt": "2026-10-15T17:30:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-6"
+    },
+    {
+     "headline": "Rigorous Analysis Confirms NASA’s Artemis II Heat Shield Performance",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Rigorous Analysis Confirms NASA’s Artemis II Heat Shield Performance",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "NASA’s Artemis II mission sent four astronauts around the Moon and brought them safely back to Earth, laying a foundation for crewed flights to the Moon’s surface. Additional engineering data analysis of the Orion spacecraft’s heat shield confirmed initial data showing the heat shield performed as expected. In particular, NASA measured whether the thermal protection",
+     "summaryEnSource": "NASA",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "NASA"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T14:57:21Z",
+     "lastSeen": "2026-10-15T14:57:21Z",
+     "sources": [
+      {
+       "source": "NASA",
+       "lang": "en",
+       "title": "Rigorous Analysis Confirms NASA’s Artemis II Heat Shield Performance",
+       "url": "https://www.nasa.gov/missions/artemis/artemis-2/rigorous-analysis-confirms-nasas-artemis-ii-heat-shield-performance/",
+       "publishedAt": "2026-10-15T14:57:21Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-7"
+    },
+    {
+     "headline": "China reduced extreme poverty fast, but Indonesia hasn’t been far behind",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "China reduced extreme poverty fast, but Indonesia hasn’t been far behind",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "China is often the poster child for rapid reductions in poverty, and for good reason. In the early 1980s, over 90% of its population lived in extreme poverty, but by the early 2020s, that number had dropped to nearly zero.",
+     "summaryEnSource": "Our World in Data",
+     "subtopic": "social",
+     "subtopicLabel": "Progreso social",
+     "outlets": 1,
+     "outletNames": [
+      "Our World in Data"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T11:53:56Z",
+     "lastSeen": "2026-10-15T11:53:56Z",
+     "sources": [
+      {
+       "source": "Our World in Data",
+       "lang": "en",
+       "title": "China reduced extreme poverty fast, but Indonesia hasn’t been far behind",
+       "url": "https://ourworldindata.org/data-insights/china-reduced-extreme-poverty-fast-but-indonesia-hasnt-been-far-behind?amp%3Butm_medium=email",
+       "publishedAt": "2026-10-15T11:53:56Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6jm7a/china_reduced_extreme_poverty_fast_but_indonesia/"
+      }
+     ],
+     "id": "buenas-8"
+    },
+    {
+     "headline": "UK astronomers help reveal host galaxy of most distant fast radio burst",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "UK astronomers help reveal host galaxy of most distant fast radio burst",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "UK astronomers helped trace the most distant fast radio burst ever found to a small young galaxy billions of light-years away.The discovery gives scientists new clues about what may cause these brief but powerful flashes from deep space.The findings suggest fast radio bursts can happen soon after stars are born, helping researchers understand ho...",
+     "summaryEnSource": "University of Manchester",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "University of Manchester"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T10:22:37Z",
+     "lastSeen": "2026-10-15T10:22:37Z",
+     "sources": [
+      {
+       "source": "University of Manchester",
+       "lang": "en",
+       "title": "UK astronomers help reveal host galaxy of most distant fast radio burst",
+       "url": "https://www.manchester.ac.uk/about/news/uk-astronomers-help-reveal-host-galaxy-of-most-distant-fast-radio-burst/",
+       "publishedAt": "2026-10-15T10:22:37Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "science",
+       "url": "https://www.reddit.com/r/science/comments/1x6i011/uk_astronomers_help_reveal_host_galaxy_of_most/"
+      }
+     ],
+     "id": "buenas-9"
+    },
+    {
+     "headline": "Critically endangered frogs bred for first time at London Zoo",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Critically endangered frogs bred for first time at London Zoo",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "The Afia Birago’s puddle frogs are a recently identified species from a single Ghanaian forest.",
+     "summaryEnSource": "BBC News",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "BBC News"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T09:27:03Z",
+     "lastSeen": "2026-10-15T09:27:03Z",
+     "sources": [
+      {
+       "source": "BBC News",
+       "lang": "en",
+       "title": "Critically endangered frogs bred for first time at London Zoo",
+       "url": "https://www.bbc.co.uk/news/articles/cr2keqxggx0wo",
+       "publishedAt": "2026-10-15T09:27:03Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6h347/london_zoo_hatches_15_tiny_frogs_from_a_species/"
+      }
+     ],
+     "id": "buenas-10"
+    },
+    {
+     "headline": "How a contested B.C. supportive housing project won over its neighbours",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "How a contested B.C. supportive housing project won over its neighbours",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "For years, acrimony dominated the conversation in this Fraser Valley community – but residents’ worst fears never materialized",
+     "summaryEnSource": "The Globe and Mail",
+     "subtopic": "comunidad",
+     "subtopicLabel": "Comunidad",
+     "outlets": 1,
+     "outletNames": [
+      "The Globe and Mail"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T09:00:00Z",
+     "lastSeen": "2026-10-15T09:00:00Z",
+     "sources": [
+      {
+       "source": "The Globe and Mail",
+       "lang": "en",
+       "title": "How a contested B.C. supportive housing project won over its neighbours",
+       "url": "https://www.theglobeandmail.com/canada/article-municipal-elections-bc-supportive-housing-project-won-over-neighbours/",
+       "publishedAt": "2026-10-15T09:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x71z1i/how_a_contested_bc_supportive_housing_project_won/"
+      }
+     ],
+     "id": "buenas-11"
+    },
+    {
+     "headline": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
+     "headlineLang": "es",
+     "headlineEs": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
+     "headlineEn": null,
+     "summaryEs": "En el parque nacional Virunga, al este de la República Democrática del Congo (RDC), la gorila de Grauer (Gorilla beringei graueri) Lulingu fue reintroducida en 2024. En mayo de 2026, la hembra dio a luz a una nueva cría, un acontecimiento que genera esperanza en el futuro de la especie y despierta un gran entusiasmo",
+     "summaryEsSource": "Mongabay Latam",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "acciones",
+     "subtopicLabel": "Buenas acciones",
+     "outlets": 1,
+     "outletNames": [
+      "Mongabay Latam"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-14T22:15:15Z",
+     "lastSeen": "2026-10-14T22:15:15Z",
+     "sources": [
+      {
+       "source": "Mongabay Latam",
+       "lang": "es",
+       "title": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
+       "url": "https://es.mongabay.com/short-article/2026/10/esperanzadora-historia-gorila-rescatada-dio-a-luz-despues-reintroduccion-vida-silvestre/",
+       "publishedAt": "2026-10-14T22:15:15Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-12"
+    },
+    {
+     "headline": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Continuing GNN’s coverage of youth nonprofit leaders, the Pedal Forward Foundation in Georgia has distributed hundreds of bicycles to low income families, and taught hundreds of children how to ride them. It’s founder, Jonathan Thai, was inspired to step up and serve his community after the local REI closed down a community bike-riding workshop. At […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "acciones",
+     "subtopicLabel": "Buenas acciones",
+     "outlets": 1,
+     "outletNames": [
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T18:30:16Z",
+     "lastSeen": "2026-10-14T18:30:16Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
+       "url": "https://www.goodnewsnetwork.org/teen-triathlete-raises-more-than-30000-to-donate-bikes-and-riding-lessons-to-low-income-families/",
+       "publishedAt": "2026-10-14T18:30:16Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-13"
+    },
+    {
+     "headline": "Stanford discovers way to save ghostly corals from the brink",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Stanford discovers way to save ghostly corals from the brink",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "El Niño poses a renewed threat.",
+     "summaryEnSource": "SFGATE",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "SFGATE"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T18:00:00Z",
+     "lastSeen": "2026-10-14T18:00:00Z",
+     "sources": [
+      {
+       "source": "SFGATE",
+       "lang": "en",
+       "title": "Stanford discovers way to save ghostly corals from the brink",
+       "url": "https://www.sfgate.com/bayarea/article/stanford-coral-study-22475321.php",
+       "publishedAt": "2026-10-14T18:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6um1d/stanford_discovers_way_to_save_ghostly_corals/"
+      }
+     ],
+     "id": "buenas-14"
+    },
+    {
+     "headline": "Superplantas en Ecuador: son alimento, reducen monocultivos y agroquímicos y podrían enfrentar la crisis climática",
+     "headlineLang": "es",
+     "headlineEs": "Superplantas en Ecuador: son alimento, reducen monocultivos y agroquímicos y podrían enfrentar la crisis climática",
+     "headlineEn": null,
+     "summaryEs": "La temida crisis de los 40 puede ser la semilla de algo importante en la vida de las personas. Por ejemplo, el inicio de una cruzada por la conservación y la lucha contra el cambio climático a través de la siembra de ‘superplantas’ que, aunque son comestibles, no están en recetas tradicionales, ni en la",
+     "summaryEsSource": "Mongabay Latam",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Mongabay Latam"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-14T14:00:10Z",
+     "lastSeen": "2026-10-14T14:00:10Z",
+     "sources": [
+      {
+       "source": "Mongabay Latam",
+       "lang": "es",
+       "title": "Superplantas en Ecuador: son alimento, reducen monocultivos y agroquímicos y podrían enfrentar la crisis climática",
+       "url": "https://es.mongabay.com/2026/10/superplantas-ecuador-alimento-reducen-monocultivos-agroquimicos-enfrentar-crisis-climatica/",
+       "publishedAt": "2026-10-14T14:00:10Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-15"
+    },
+    {
+     "headline": "Cornell scientists identify rare human genetic disorder in two unusually long-legged cats",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Cornell scientists identify rare human genetic disorder in two unusually long-legged cats",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Two unusually long-legged cats have helped scientists uncover the first genetically confirmed cases of Marfan syndrome in domestic felines. Researchers at Cornell University discovered that the brothers carried two altered copies of a gene linked to the rare connective tissue disorder, which can affect the eyes, heart, and blood vessels. Surprisingly, the cats survived into adulthood because…",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T11:56:22Z",
+     "lastSeen": "2026-10-14T11:56:22Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "Cornell scientists identify rare human genetic disorder in two unusually long-legged cats",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261013015801.htm",
+       "publishedAt": "2026-10-14T11:56:22Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-16"
+    },
+    {
+     "headline": "North America’s largest wildlife overpass is working. I-25 collisions near Castle Rock are down 91%.",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "North America’s largest wildlife overpass is working. I-25 collisions near Castle Rock are down 91%.",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "In the 10 months since the wildlife crossing between Larkspur and Monument opened, there’s been just 2 reported collisions",
+     "summaryEnSource": "The Colorado Sun",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "The Colorado Sun"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T10:02:00Z",
+     "lastSeen": "2026-10-14T10:02:00Z",
+     "sources": [
+      {
+       "source": "The Colorado Sun",
+       "lang": "en",
+       "title": "North America’s largest wildlife overpass is working. I-25 collisions near Castle Rock are down 91%.",
+       "url": "https://coloradosun.com/2026/10/14/i25-wildlife-overpass-collisions-drop/",
+       "publishedAt": "2026-10-14T10:02:00Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6nc21/north_americas_largest_wildlife_overpass_is/"
+      }
+     ],
+     "id": "buenas-17"
+    },
+    {
+     "headline": "Painted turbines can save millions of birds",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Painted turbines can save millions of birds",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "What do snakes, poisonous frogs, and wind turbines have in common? Scientists tested whether warning color patterns inspired by nature could help birds avoid deadly collisions with wind turbines. In video-game-style experiments, great tits, distinctive small birds, were shown different blade designs, including a new pattern based on the bold visual colors used by some",
+     "summaryEnSource": "Mongabay",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Mongabay"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T08:58:43Z",
+     "lastSeen": "2026-10-14T08:58:43Z",
+     "sources": [
+      {
+       "source": "Mongabay",
+       "lang": "en",
+       "title": "Painted turbines can save millions of birds",
+       "url": "https://news.mongabay.com/short-article/2026/10/painted-turbines-can-save-millions-of-birds/",
+       "publishedAt": "2026-10-14T08:58:43Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-18"
+    },
+    {
+     "headline": "How one Chicago program is diversifying the solar workforce",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "How one Chicago program is diversifying the solar workforce",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "CHICAGO — On a beautiful fall Saturday morning on the South Side of Chicago, the Life Center Church of God in Christ thrummed with excitement. The pews were packed with over a thousand people dressed in their best — including more than a hundred in black graduation caps and gowns. Before praying, Pastor Torrey L.…",
+     "summaryEnSource": "Canary Media",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Canary Media"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T07:00:00Z",
+     "lastSeen": "2026-10-14T07:00:00Z",
+     "sources": [
+      {
+       "source": "Canary Media",
+       "lang": "en",
+       "title": "How one Chicago program is diversifying the solar workforce",
+       "url": "https://www.canarymedia.com/articles/solar/how-one-chicago-program-is-diversifying-the-solar-workforce",
+       "publishedAt": "2026-10-14T07:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-19"
+    },
+    {
+     "headline": "A planet 320 light-years away confirms what scientists long suspected",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "A planet 320 light-years away confirms what scientists long suspected",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Astronomers have discovered that a scorching-hot planet 320 light-years away shares a striking chemical similarity with its host star, providing the first direct evidence for a fundamental assumption about planet formation. The breakthrough could help scientists predict what distant rocky planets are made of and identify worlds with conditions favorable for life.",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T00:24:40Z",
+     "lastSeen": "2026-10-14T00:24:40Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "A planet 320 light-years away confirms what scientists long suspected",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261012185015.htm",
+       "publishedAt": "2026-10-14T00:24:40Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-20"
+    },
+    {
+     "headline": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Farmers are “soiling their undies” — and it makes for better crops.",
+     "summaryEnSource": "Good Good Good",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Good Good Good"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-13T20:58:00Z",
+     "lastSeen": "2026-10-13T20:58:00Z",
+     "sources": [
+      {
+       "source": "Good Good Good",
+       "lang": "en",
+       "title": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
+       "url": "https://www.goodgoodgood.co/articles/new-study-bury-underwear-soil-health",
+       "publishedAt": "2026-10-13T20:58:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-21"
+    },
+    {
+     "headline": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "A European energy developer has switched on a major biomethane plant in southern Italy that will save some 9,000 tons of CO2 annually by producing a natural gas substitute with agricultural waste. Located in Grottole, in the ‘instep’ of the Italian Peninsula, the plant will ultimately produce 45 gigawatt-hours of renewable energy a year for […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-13T15:30:50Z",
+     "lastSeen": "2026-10-13T15:30:50Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
+       "url": "https://www.goodnewsnetwork.org/italian-biomethane-plant-comes-online-providing-renewable-gas-supply-to-over-3000-homes/",
+       "publishedAt": "2026-10-13T15:30:50Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-22"
+    },
+    {
+     "headline": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
+     "headlineLang": "es",
+     "headlineEs": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
+     "headlineEn": null,
+     "summaryEs": "El 90 % de la capacidad eléctrica nueva que se añade cada año en el mundo ya es renovable, y China superó por primera vez su capacidad solar a la del carbón en julio, pero ONU advierte de que la eficiencia energética se ha quedado corta y la brecha entre demanda y oferta para 2030 puede ser mayor de lo previsto. \"Redes, redes y más redes: interconexión, flexibilidad y equilibrio. Es el área donde…",
+     "summaryEsSource": "Noticias ONU",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Noticias ONU"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-13T12:00:00Z",
+     "lastSeen": "2026-10-13T12:00:00Z",
+     "sources": [
+      {
+       "source": "Noticias ONU",
+       "lang": "es",
+       "title": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
+       "url": "https://news.un.org/feed/view/es/story/2026/10/1542048",
+       "publishedAt": "2026-10-13T12:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-23"
+    },
+    {
+     "headline": "Scientists recreate a bizarre quantum effect that stops a particle cold",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Scientists recreate a bizarre quantum effect that stops a particle cold",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Oxford physicists have recreated a bizarre quantum effect in which a particle responds to a magnetic field without ever traveling through it. Using a hybrid quantum computer, they demonstrated how introducing a simulated magnetic flux could completely halt a particle's movement through quantum interference. The experiment brings a decades-old prediction into a new setting where matter and quantum…",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-13T09:47:22Z",
+     "lastSeen": "2026-10-13T09:47:22Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "Scientists recreate a bizarre quantum effect that stops a particle cold",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261011211554.htm",
+       "publishedAt": "2026-10-13T09:47:22Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-24"
+    },
+    {
+     "headline": "Qcells aims to build a giant factory for next-gen tandem solar",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Qcells aims to build a giant factory for next-gen tandem solar",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Qcells , one of the most prolific solar manufacturers operating in the U.S., is staking a claim on the next generation of solar power. Laboratory scientists have established that solar panels convert sunlight to electricity with much higher efficiency if traditional silicon cells are paired with layers of…",
+     "summaryEnSource": "Canary Media",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Canary Media"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-13T07:00:00Z",
+     "lastSeen": "2026-10-13T07:00:00Z",
+     "sources": [
+      {
+       "source": "Canary Media",
+       "lang": "en",
+       "title": "Qcells aims to build a giant factory for next-gen tandem solar",
+       "url": "https://www.canarymedia.com/articles/solar/qcells-aims-to-build-worlds-first-big-factory-for-next-gen-tandem-solar",
+       "publishedAt": "2026-10-13T07:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-25"
+    },
+    {
+     "headline": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
+     "headlineLang": "es",
+     "headlineEs": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
+     "headlineEn": null,
+     "summaryEs": "Un procedimiento experimental realizado en Reino Unido busca comprobar si células conservadas durante tres años pueden reactivar la producción de espermatozoides. Los médicos evaluarán los resultados dentro de ocho meses",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-12T18:04:38Z",
+     "lastSeen": "2026-10-12T18:04:38Z",
+     "sources": [
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
+       "url": "https://www.infobae.com/salud/ciencia/2026/10/12/avance-en-fertilidad-masculina-trasplantan-a-un-joven-tejido-testicular-preservado-antes-de-la-quimioterapia/",
+       "publishedAt": "2026-10-12T18:04:38Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-26"
+    },
+    {
+     "headline": "Nueva combinación de medicamentos restaura el control del VIH",
+     "headlineLang": "es",
+     "headlineEs": "Nueva combinación de medicamentos restaura el control del VIH",
+     "headlineEn": null,
+     "summaryEs": "VIERNES, 9 de octubre de 2026 (HealthDay News) -- Un nuevo combo de medicamentos de acción prolongada puede restaurar el control sobre el VIH para pacientes cuyo virus ha desarrollado resistencia a los medicamentos comúnmente utilizados, informan los investigadores. Los pacientes con VIH que tienen dificultades para tomar pastillas diarias pueden optar por inyecciones de cabotegravir y…",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-12T13:30:17Z",
+     "lastSeen": "2026-10-12T13:30:17Z",
+     "sources": [
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Nueva combinación de medicamentos restaura el control del VIH",
+       "url": "https://www.infobae.com/salud/2026/10/12/nueva-combinacion-de-medicamentos-restaura-el-control-del-vih/",
+       "publishedAt": "2026-10-12T13:30:17Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-27"
+    },
+    {
+     "headline": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "When summer’s heat becomes too much to bear, a glass of iced lemonade is a welcome relief, but what tens of thousands across Ohio have learned is that lemonade can provide a different sort of relief as well. For 8 years, children’s lemonade stands pop up all over the city in July as part of […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "acciones",
+     "subtopicLabel": "Buenas acciones",
+     "outlets": 1,
+     "outletNames": [
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-12T12:30:49Z",
+     "lastSeen": "2026-10-12T12:30:49Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
+       "url": "https://www.goodnewsnetwork.org/teens-wish-to-return-kindness-she-received-sees-her-lemonade-stand-become-5-million-charity-engine/",
+       "publishedAt": "2026-10-12T12:30:49Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-28"
+    },
+    {
+     "headline": "La FDA aprueba el primer antiviral oral contra el herpes resistente en casi 30 años",
+     "headlineLang": "es",
+     "headlineEs": "La FDA aprueba el primer antiviral oral contra el herpes resistente en casi 30 años",
+     "headlineEn": null,
+     "summaryEs": "El organismo regulador de Estados Unidos dio luz verde al pritelivir, un fármaco con un mecanismo de acción inédito dirigido a pacientes inmunocomprometidos que no responden a ningún tratamiento disponible",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-12T09:36:44Z",
+     "lastSeen": "2026-10-12T09:36:44Z",
+     "sources": [
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "La FDA aprueba el primer antiviral oral contra el herpes resistente en casi 30 años",
+       "url": "https://www.infobae.com/estados-unidos/2026/10/12/la-fda-aprueba-el-primer-antiviral-oral-contra-el-herpes-resistente-en-casi-30-anos/",
+       "publishedAt": "2026-10-12T09:36:44Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-29"
+    },
+    {
+     "headline": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "A landmark survey of the world’s largest free-roaming giant tortoise population has revealed the once-endangered species is now thriving. The latest count of tortoises on the Seychelles atoll of Aldabra revealed that there are approximately 180,000 living on the islands. This is the highest figure ever recorded for the species and far exceeds the human […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-11T16:11:41Z",
+     "lastSeen": "2026-10-11T16:11:41Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
+       "url": "https://www.goodnewsnetwork.org/giant-tortoise-population-is-thriving-survey-finds-180000-on-one-island-chain/",
+       "publishedAt": "2026-10-11T16:11:41Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-30"
+    },
+    {
+     "headline": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Could a drug intended to prevent painful rashes also protect our brains as we get older? The signs are promising – but not conclusive. Yet that’s enough to be driving a boom in shingles jabs When Jenny, a 50-year-old marketing and branding professional from Cambridge, went for her shingles vaccine last year, an entirely different disease was on her mind. Having witnessed three of her four…",
+     "summaryEnSource": "The Guardian",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "The Guardian"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-11T13:00:27Z",
+     "lastSeen": "2026-10-11T13:00:27Z",
+     "sources": [
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
+       "url": "https://www.theguardian.com/society/2026/oct/11/dementia-demand-for-shingles-vaccine-is-soaring",
+       "publishedAt": "2026-10-11T13:00:27Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-31"
+    },
+    {
+     "headline": "Scientists created a tiny device that can control your nerves to treat chronic pain",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Scientists created a tiny device that can control your nerves to treat chronic pain",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Scientists have developed a tiny, injectable device that can control nerve activity without surgery, batteries, or wires, potentially transforming treatment for chronic pain and movement disorders. Powered wirelessly from outside the body, the seed-sized technology has shown promising results in early testing.",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-11T00:23:19Z",
+     "lastSeen": "2026-10-11T00:23:19Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "Scientists created a tiny device that can control your nerves to treat chronic pain",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261008005253.htm",
+       "publishedAt": "2026-10-11T00:23:19Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-32"
+    },
+    {
+     "headline": "October Big Day en América Latina: de la emoción de descubrir un ave a la defensa de su hábitat",
+     "headlineLang": "es",
+     "headlineEs": "October Big Day en América Latina: de la emoción de descubrir un ave a la defensa de su hábitat",
+     "headlineEn": null,
+     "summaryEs": "Una parvada que cruza el cielo de una ciudad, un ave migratoria que hace una parada en un humedal o una especie que aparece en un bosque donde antes no había sido registrada. Cada observación puede aportar una pieza para entender cómo viven las aves, qué territorios necesitan y qué cambios enfrentan sus poblaciones. El",
+     "summaryEsSource": "Mongabay Latam",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "Mongabay Latam"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-10T15:07:47Z",
+     "lastSeen": "2026-10-10T15:07:47Z",
+     "sources": [
+      {
+       "source": "Mongabay Latam",
+       "lang": "es",
+       "title": "October Big Day en América Latina: de la emoción de descubrir un ave a la defensa de su hábitat",
+       "url": "https://es.mongabay.com/2026/10/october-big-day-en-america-latina-de-la-emocion-de-descubrir-un-ave-a-la-defensa-de-su-habitat/",
+       "publishedAt": "2026-10-10T15:07:47Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-33"
+    },
+    {
+     "headline": "Australia Announces 3 New National Parks to Protect Gliders, Owls, and Other Victoria Wildlife",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Australia Announces 3 New National Parks to Protect Gliders, Owls, and Other Victoria Wildlife",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "More than 250 square miles of forests at the center of Victoria state in Australia have become new national parks. Parliament passed the law to create the parks back in November 2025, and this week they take effect, creating Mount Buangor National Park, Pyrenees National Park, and the largest: Wombat-Lerderderg National Park. The Victoria National […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-09T15:30:11Z",
+     "lastSeen": "2026-10-09T15:30:11Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "Australia Announces 3 New National Parks to Protect Gliders, Owls, and Other Victoria Wildlife",
+       "url": "https://www.goodnewsnetwork.org/australia-announces-3-new-national-parks-to-protect-gliders-owls-and-other-victoria-wildlife/",
+       "publishedAt": "2026-10-09T15:30:11Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-34"
+    },
+    {
+     "headline": "Scientists find hidden materials that could improve batteries and solar fuels",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Scientists find hidden materials that could improve batteries and solar fuels",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Scientists have uncovered a hidden world of “in-between” materials that briefly form as chemical ingredients are heated, revealing structures that conventional methods can miss. Among the discoveries is a previously unknown form of bismuth vanadate, a material widely studied for using sunlight to help produce clean hydrogen. The new version has a different atomic structure and interacts with…",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-09T10:20:23Z",
+     "lastSeen": "2026-10-09T10:20:23Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "Scientists find hidden materials that could improve batteries and solar fuels",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261007042118.htm",
+       "publishedAt": "2026-10-09T10:20:23Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-35"
+    },
+    {
+     "headline": "Gen Z Is Rescuing Millions in Medical Supplies",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Gen Z Is Rescuing Millions in Medical Supplies",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "In early August, a freight truck pulled up to an OhioHealth facility in Columbus and took roughly 30,000 pounds of N95 masks and hot-and-cold packs, all boxed, sealed and stamped with expiration dates still a year or two out. Left alone, the estimated $250,000 worth of medical supplies would eventually...",
+     "summaryEnSource": "Reasons to be Cheerful",
+     "subtopic": "acciones",
+     "subtopicLabel": "Buenas acciones",
+     "outlets": 1,
+     "outletNames": [
+      "Reasons to be Cheerful"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-09T08:00:14Z",
+     "lastSeen": "2026-10-09T08:00:14Z",
+     "sources": [
+      {
+       "source": "Reasons to be Cheerful",
+       "lang": "en",
+       "title": "Gen Z Is Rescuing Millions in Medical Supplies",
+       "url": "https://reasonstobecheerful.world/gen-z-is-rescuing-millions-in-medical-supplies/",
+       "publishedAt": "2026-10-09T08:00:14Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-36"
+    }
+   ]
   }
  ],
  "feedsOk": [
@@ -4799,7 +6018,7 @@
    "url": "https://feeds.bbci.co.uk/news/rss.xml",
    "itemsInFeed": 34,
    "kept": 21,
-   "newest": "2026-10-16T07:13:42Z"
+   "newest": "2026-10-16T07:31:42Z"
   },
   {
    "id": "bbc-world",
@@ -4807,7 +6026,7 @@
    "lang": "en",
    "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
    "itemsInFeed": 34,
-   "kept": 22,
+   "kept": 23,
    "newest": "2026-10-15T23:38:46Z"
   },
   {
@@ -4816,7 +6035,7 @@
    "lang": "en",
    "url": "https://feeds.bbci.co.uk/news/politics/rss.xml",
    "itemsInFeed": 54,
-   "kept": 14,
+   "kept": 15,
    "newest": "2026-10-16T05:22:31Z"
   },
   {
@@ -4933,7 +6152,7 @@
    "lang": "es",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/economia/portada",
    "itemsInFeed": 38,
-   "kept": 18,
+   "kept": 17,
    "newest": "2026-10-16T03:45:00Z"
   },
   {
@@ -4970,7 +6189,7 @@
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
    "itemsInFeed": 26,
    "kept": 21,
-   "newest": "2026-10-16T07:02:21Z"
+   "newest": "2026-10-16T07:53:45Z"
   },
   {
    "id": "elmundo-int",
@@ -4978,7 +6197,7 @@
    "lang": "es",
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml",
    "itemsInFeed": 53,
-   "kept": 33,
+   "kept": 32,
    "newest": "2026-10-16T06:29:39Z"
   },
   {
@@ -4987,8 +6206,8 @@
    "lang": "es",
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml",
    "itemsInFeed": 48,
-   "kept": 33,
-   "newest": "2026-10-16T07:05:46Z"
+   "kept": 34,
+   "newest": "2026-10-16T07:40:16Z"
   },
   {
    "id": "elmundo-eco",
@@ -4997,7 +6216,7 @@
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/economia.xml",
    "itemsInFeed": 51,
    "kept": 40,
-   "newest": "2026-10-16T06:37:34Z"
+   "newest": "2026-10-16T07:56:56Z"
   },
   {
    "id": "elmundo-ciencia",
@@ -5014,8 +6233,8 @@
    "lang": "es",
    "url": "https://e00-expansion.uecdn.es/rss/portada.xml",
    "itemsInFeed": 75,
-   "kept": 58,
-   "newest": "2026-10-16T07:08:33Z"
+   "kept": 59,
+   "newest": "2026-10-16T07:43:59Z"
   },
   {
    "id": "econ-int",
@@ -5060,7 +6279,7 @@
    "url": "https://www.ft.com/rss/home",
    "itemsInFeed": 10,
    "kept": 10,
-   "newest": "2026-10-16T07:08:49Z"
+   "newest": "2026-10-16T07:36:24Z"
   },
   {
    "id": "ft-world",
@@ -5068,7 +6287,7 @@
    "lang": "en",
    "url": "https://www.ft.com/world?format=rss",
    "itemsInFeed": 25,
-   "kept": 16,
+   "kept": 17,
    "newest": "2026-10-16T05:30:07Z"
   },
   {
@@ -5086,8 +6305,8 @@
    "lang": "en",
    "url": "https://feeds.bloomberg.com/markets/news.rss",
    "itemsInFeed": 20,
-   "kept": 14,
-   "newest": "2026-10-16T07:07:08Z"
+   "kept": 15,
+   "newest": "2026-10-16T07:31:05Z"
   },
   {
    "id": "bbg-politics",
@@ -5095,7 +6314,7 @@
    "lang": "en",
    "url": "https://feeds.bloomberg.com/politics/news.rss",
    "itemsInFeed": 20,
-   "kept": 16,
+   "kept": 17,
    "newest": "2026-10-16T06:57:40Z"
   },
   {
@@ -5105,7 +6324,7 @@
    "url": "https://feeds.bloomberg.com/economics/news.rss",
    "itemsInFeed": 20,
    "kept": 16,
-   "newest": "2026-10-16T04:57:45Z"
+   "newest": "2026-10-16T07:17:26Z"
   },
   {
    "id": "nature",
@@ -5126,22 +6345,13 @@
    "newest": "2026-10-14T10:35:00Z"
   },
   {
-   "id": "newscientist",
-   "source": "New Scientist",
-   "lang": "en",
-   "url": "https://www.newscientist.com/feed/home/",
-   "itemsInFeed": 10,
-   "kept": 7,
-   "newest": "2026-10-16T06:00:00Z"
-  },
-  {
    "id": "guardian-world",
    "source": "The Guardian",
    "lang": "en",
    "url": "https://www.theguardian.com/world/rss",
    "itemsInFeed": 45,
    "kept": 33,
-   "newest": "2026-10-16T07:09:49Z"
+   "newest": "2026-10-16T07:38:58Z"
   },
   {
    "id": "guardian-us",
@@ -5213,7 +6423,7 @@
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
    "itemsInFeed": 21,
    "kept": 18,
-   "newest": "2026-10-16T06:11:17Z"
+   "newest": "2026-10-16T07:41:36Z"
   },
   {
    "id": "nyt-world",
@@ -5229,9 +6439,9 @@
    "source": "The New York Times",
    "lang": "en",
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
-   "itemsInFeed": 24,
-   "kept": 16,
-   "newest": "2026-10-16T02:22:17Z"
+   "itemsInFeed": 25,
+   "kept": 17,
+   "newest": "2026-10-16T07:28:02Z"
   },
   {
    "id": "nyt-business",
@@ -5302,7 +6512,7 @@
    "lang": "en",
    "url": "https://www.aljazeera.com/xml/rss/all.xml",
    "itemsInFeed": 25,
-   "kept": 15,
+   "kept": 14,
    "newest": "2026-10-16T06:41:15Z"
   },
   {
@@ -5339,7 +6549,7 @@
    "url": "https://feeds.skynews.com/feeds/rss/home.xml",
    "itemsInFeed": 6,
    "kept": 3,
-   "newest": "2026-10-16T01:25:00Z"
+   "newest": "2026-10-16T07:30:00Z"
   },
   {
    "id": "cnbc-top",
@@ -5384,7 +6594,7 @@
    "url": "https://www.france24.com/en/rss",
    "itemsInFeed": 24,
    "kept": 19,
-   "newest": "2026-10-16T06:39:48Z"
+   "newest": "2026-10-16T07:41:39Z"
   },
   {
    "id": "f24-en-europe",
@@ -5455,8 +6665,8 @@
    "lang": "en",
    "url": "https://www.euronews.com/rss",
    "itemsInFeed": 50,
-   "kept": 38,
-   "newest": "2026-10-16T07:18:59Z"
+   "kept": 37,
+   "newest": "2026-10-16T07:44:01Z"
   },
   {
    "id": "euronews-es",
@@ -5465,7 +6675,7 @@
    "url": "https://es.euronews.com/rss",
    "itemsInFeed": 50,
    "kept": 41,
-   "newest": "2026-10-16T07:09:52Z"
+   "newest": "2026-10-16T07:57:45Z"
   },
   {
    "id": "un-en",
@@ -5510,7 +6720,7 @@
    "url": "https://www.abc.es/rss/2.0/portada/",
    "itemsInFeed": 25,
    "kept": 15,
-   "newest": "2026-10-16T06:58:35Z"
+   "newest": "2026-10-16T07:22:46Z"
   },
   {
    "id": "lavanguardia",
@@ -5528,16 +6738,16 @@
    "url": "https://www.europapress.es/rss/rss.aspx",
    "itemsInFeed": 10,
    "kept": 9,
-   "newest": "2026-10-16T07:02:41Z"
+   "newest": "2026-10-16T07:36:34Z"
   },
   {
    "id": "20minutos",
    "source": "20minutos",
    "lang": "es",
    "url": "https://www.20minutos.es/rss/",
-   "itemsInFeed": 186,
-   "kept": 106,
-   "newest": "2026-10-16T06:53:51Z"
+   "itemsInFeed": 191,
+   "kept": 109,
+   "newest": "2026-10-16T07:47:00Z"
   },
   {
    "id": "infobae",
@@ -5545,8 +6755,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "itemsInFeed": 100,
-   "kept": 43,
-   "newest": "2026-10-16T07:20:16Z"
+   "kept": 34,
+   "newest": "2026-10-16T07:54:00Z"
   },
   {
    "id": "infobae-america",
@@ -5554,8 +6764,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/america/",
    "itemsInFeed": 100,
-   "kept": 90,
-   "newest": "2026-10-16T07:21:03Z"
+   "kept": 89,
+   "newest": "2026-10-16T04:53:05Z"
   },
   {
    "id": "infobae-eco",
@@ -5580,9 +6790,9 @@
    "source": "La Nación (Argentina)",
    "lang": "es",
    "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
-   "itemsInFeed": 93,
-   "kept": 44,
-   "newest": "2026-10-16T06:54:00Z"
+   "itemsInFeed": 94,
+   "kept": 46,
+   "newest": "2026-10-16T07:41:00Z"
   },
   {
    "id": "eltiempo-mundo",
@@ -5591,7 +6801,7 @@
    "url": "https://www.eltiempo.com/rss/mundo.xml",
    "itemsInFeed": 10,
    "kept": 10,
-   "newest": "2026-10-16T05:01:00Z"
+   "newest": "2026-10-16T07:31:50Z"
   },
   {
    "id": "eltiempo-col",
@@ -5600,7 +6810,7 @@
    "url": "https://www.eltiempo.com/rss/colombia.xml",
    "itemsInFeed": 10,
    "kept": 10,
-   "newest": "2026-10-16T04:05:47Z"
+   "newest": "2026-10-16T07:30:00Z"
   },
   {
    "id": "elcomercio-pe",
@@ -5649,6 +6859,12 @@
   }
  ],
  "feedsFailed": [
+  {
+   "id": "newscientist",
+   "source": "New Scientist",
+   "url": "https://www.newscientist.com/feed/home/",
+   "error": "HTTPError: HTTP Error 406: Not Acceptable"
+  },
   {
    "id": "reuters",
    "source": "reuters",
@@ -5703,5 +6919,1422 @@
    "url": "https://www.teletica.com/rss",
    "error": "Teletica: XML inválido"
   }
- ]
+ ],
+ "goodNews": {
+  "feedsOk": [
+   {
+    "id": "pos-positivenews",
+    "source": "Positive News",
+    "url": "https://www.positive.news/feed/",
+    "kind": "good",
+    "itemsInFeed": 10,
+    "kept": 0
+   },
+   {
+    "id": "pos-rtbc",
+    "source": "Reasons to be Cheerful",
+    "url": "https://reasonstobecheerful.world/feed/",
+    "kind": "good",
+    "itemsInFeed": 10,
+    "kept": 1
+   },
+   {
+    "id": "pos-gnn",
+    "source": "Good News Network",
+    "url": "https://www.goodnewsnetwork.org/feed/",
+    "kind": "good",
+    "itemsInFeed": 50,
+    "kept": 8
+   },
+   {
+    "id": "pos-goodgoodgood",
+    "source": "Good Good Good",
+    "url": "https://www.goodgoodgood.co/articles/rss.xml",
+    "kind": "good",
+    "itemsInFeed": 100,
+    "kept": 3
+   },
+   {
+    "id": "pos-anthropocene",
+    "source": "Anthropocene Magazine",
+    "url": "https://www.anthropocenemagazine.org/feed/",
+    "kind": "good",
+    "itemsInFeed": 30,
+    "kept": 0
+   },
+   {
+    "id": "pos-owid",
+    "source": "Our World in Data",
+    "url": "https://ourworldindata.org/atom.xml",
+    "kind": "topic",
+    "itemsInFeed": 10,
+    "kept": 0
+   },
+   {
+    "id": "pos-guardian-dev",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/global-development/rss",
+    "kind": "topic",
+    "itemsInFeed": 45,
+    "kept": 0
+   },
+   {
+    "id": "pos-guardian-wildlife",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/environment/wildlife/rss",
+    "kind": "topic",
+    "itemsInFeed": 20,
+    "kept": 0
+   },
+   {
+    "id": "pos-guardian-conserv",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/environment/conservation/rss",
+    "kind": "topic",
+    "itemsInFeed": 20,
+    "kept": 1
+   },
+   {
+    "id": "pos-guardian-medres",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/science/medical-research/rss",
+    "kind": "topic",
+    "itemsInFeed": 20,
+    "kept": 1
+   },
+   {
+    "id": "pos-guardian-renew",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/environment/renewableenergy/rss",
+    "kind": "topic",
+    "itemsInFeed": 20,
+    "kept": 0
+   },
+   {
+    "id": "pos-bbc-health",
+    "source": "BBC",
+    "url": "https://feeds.bbci.co.uk/news/health/rss.xml",
+    "kind": "topic",
+    "itemsInFeed": 56,
+    "kept": 0
+   },
+   {
+    "id": "pos-bbc-tech",
+    "source": "BBC",
+    "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+    "kind": "topic",
+    "itemsInFeed": 21,
+    "kept": 0
+   },
+   {
+    "id": "pos-nasa",
+    "source": "NASA",
+    "url": "https://www.nasa.gov/news-release/feed/",
+    "kind": "topic",
+    "itemsInFeed": 10,
+    "kept": 2
+   },
+   {
+    "id": "pos-esa",
+    "source": "ESA",
+    "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+    "kind": "topic",
+    "itemsInFeed": 15,
+    "kept": 0
+   },
+   {
+    "id": "pos-nih",
+    "source": "NIH",
+    "url": "https://www.nih.gov/news-releases/feed.xml",
+    "kind": "topic",
+    "itemsInFeed": 10,
+    "kept": 0
+   },
+   {
+    "id": "pos-un-health",
+    "source": "UN News",
+    "url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml",
+    "kind": "topic",
+    "itemsInFeed": 30,
+    "kept": 0
+   },
+   {
+    "id": "pos-un-climate",
+    "source": "UN News",
+    "url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml",
+    "kind": "topic",
+    "itemsInFeed": 30,
+    "kept": 0
+   },
+   {
+    "id": "pos-un-sdg",
+    "source": "UN News",
+    "url": "https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml",
+    "kind": "topic",
+    "itemsInFeed": 30,
+    "kept": 0
+   },
+   {
+    "id": "pos-onu-salud",
+    "source": "Noticias ONU",
+    "url": "https://news.un.org/feed/subscribe/es/news/topic/health/feed/rss.xml",
+    "kind": "topic",
+    "itemsInFeed": 30,
+    "kept": 0
+   },
+   {
+    "id": "pos-onu-clima",
+    "source": "Noticias ONU",
+    "url": "https://news.un.org/feed/subscribe/es/news/topic/climate-change/feed/rss.xml",
+    "kind": "topic",
+    "itemsInFeed": 30,
+    "kept": 1
+   },
+   {
+    "id": "pos-sciencedaily",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/rss/top/science.xml",
+    "kind": "topic",
+    "itemsInFeed": 60,
+    "kept": 5
+   },
+   {
+    "id": "pos-sciencedaily-health",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/rss/top/health.xml",
+    "kind": "topic",
+    "itemsInFeed": 60,
+    "kept": 0
+   },
+   {
+    "id": "pos-sciencedaily-env",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/rss/top/environment.xml",
+    "kind": "topic",
+    "itemsInFeed": 60,
+    "kept": 0
+   },
+   {
+    "id": "pos-sciencedaily-tech",
+    "source": "ScienceDaily",
+    "url": "https://www.sciencedaily.com/rss/top/technology.xml",
+    "kind": "topic",
+    "itemsInFeed": 60,
+    "kept": 1
+   },
+   {
+    "id": "pos-mongabay",
+    "source": "Mongabay",
+    "url": "https://news.mongabay.com/feed/",
+    "kind": "topic",
+    "itemsInFeed": 32,
+    "kept": 1
+   },
+   {
+    "id": "pos-mongabay-es",
+    "source": "Mongabay Latam",
+    "url": "https://es.mongabay.com/feed/",
+    "kind": "topic",
+    "itemsInFeed": 30,
+    "kept": 4
+   },
+   {
+    "id": "pos-e360",
+    "source": "Yale Environment 360",
+    "url": "https://e360.yale.edu/feed.xml",
+    "kind": "topic",
+    "itemsInFeed": 100,
+    "kept": 2
+   },
+   {
+    "id": "pos-canary",
+    "source": "Canary Media",
+    "url": "https://www.canarymedia.com/rss.rss",
+    "kind": "topic",
+    "itemsInFeed": 100,
+    "kept": 2
+   },
+   {
+    "id": "pos-smithsonian",
+    "source": "Smithsonian",
+    "url": "https://www.smithsonianmag.com/rss/innovation/",
+    "kind": "topic",
+    "itemsInFeed": 9,
+    "kept": 0
+   },
+   {
+    "id": "pos-conversation-en",
+    "source": "The Conversation",
+    "url": "https://theconversation.com/global/articles.atom",
+    "kind": "topic",
+    "itemsInFeed": 50,
+    "kept": 0
+   },
+   {
+    "id": "pos-conversation-es",
+    "source": "The Conversation España",
+    "url": "https://theconversation.com/es/articles.atom",
+    "kind": "topic",
+    "itemsInFeed": 50,
+    "kept": 1
+   },
+   {
+    "id": "pos-planetafuturo",
+    "source": "El País",
+    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/planeta-futuro/portada",
+    "kind": "topic",
+    "itemsInFeed": 67,
+    "kept": 0
+   },
+   {
+    "id": "pos-elpais-clima",
+    "source": "El País",
+    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/clima-y-medio-ambiente/portada",
+    "kind": "topic",
+    "itemsInFeed": 20,
+    "kept": 0
+   },
+   {
+    "id": "pos-elpais-tec",
+    "source": "El País",
+    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/tecnologia/portada",
+    "kind": "topic",
+    "itemsInFeed": 21,
+    "kept": 0
+   },
+   {
+    "id": "pos-infobae-salud",
+    "source": "Infobae",
+    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/salud/",
+    "kind": "topic",
+    "itemsInFeed": 100,
+    "kept": 3
+   }
+  ],
+  "feedsFailed": [],
+  "knownFails": [
+   {
+    "id": "guardian-the-upside",
+    "url": "https://www.theguardian.com/world/series/the-upside/rss",
+    "error": "Serie 'The upside' sin publicaciones desde 2024"
+   },
+   {
+    "id": "fixthenews",
+    "url": "https://fixthenews.substack.com/feed",
+    "error": "Fix the News solo publica boletines-resumen semanales (sin notas individuales)"
+   },
+   {
+    "id": "futurecrunch",
+    "url": "https://futurecrunch.com/feed/",
+    "error": "404 (ahora es Fix the News)"
+   },
+   {
+    "id": "who",
+    "url": "https://www.who.int/rss-feeds/news-english.xml",
+    "error": "Feed de la OMS congelado (última nota feb. 2026)"
+   },
+   {
+    "id": "npr-goodnews",
+    "url": "https://feeds.npr.org/1095/rss.xml",
+    "error": "Sin publicaciones desde 2024"
+   },
+   {
+    "id": "cbs-goodnews",
+    "url": "https://www.cbsnews.com/latest/rss/goodnews",
+    "error": "Feed vacío"
+   },
+   {
+    "id": "bbc-mundo-ciencia",
+    "url": "https://www.bbc.com/mundo/temas/ciencia/index.xml",
+    "error": "Congelado en 2014"
+   },
+   {
+    "id": "dw-sci",
+    "url": "https://rss.dw.com/rdf/rss-en-sci",
+    "error": "XML inválido"
+   },
+   {
+    "id": "dw-es-ciencia",
+    "url": "https://rss.dw.com/xml/rss-sp-cien",
+    "error": "XML inválido"
+   },
+   {
+    "id": "nature-news",
+    "url": "https://www.nature.com/nature/articles?type=news&format=rss",
+    "error": "XML inválido"
+   },
+   {
+    "id": "elpais-salud",
+    "url": "https://feeds.elpais.com/.../sociedad/salud/portada",
+    "error": "404"
+   },
+   {
+    "id": "unicef / unep / gavi",
+    "url": "-",
+    "error": "Sin RSS público (404)"
+   },
+   {
+    "id": "yes-magazine",
+    "url": "https://www.yesmagazine.org/feed",
+    "error": "Funciona pero sin notas recientes (sep. 2026)"
+   }
+  ],
+  "leadLog": [
+   [
+    "descartada",
+    "UpliftingNews",
+    "A simple change could make wind power safer for wildlife. At South Africa’s Hopefield wind farm, painting two red stripe",
+    "https://www.ecoticias.com/en/a-wind-farm-in-hopefield-south-africa-painted-two-red-stripes-on-one-blade-of-four-turbines-and-a-preprint-not-yet-peer-reviewed-estimates-bird-deaths-at-those-turbines-fell-a-median-83-percent/52043/"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Mozambique officially protects the 9,341-hectare Mount Mabu “butterfly forest,” home to more than 200 butterfly species ",
+    "https://travelbinger.com/mozambique-designates-mount-mabu-as-a-new-community-conservation-area"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Recent High School Grad Seen on Camera Offering Elderly Man the Shoes Off His Own Feet",
+    "https://people.com/arizona-teen-goes-viral-for-giving-person-the-shoes-off-his-feet-12165965"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Once thought extinct, black-footed ferrets get a boost in Arizona",
+    "https://goodnewsdigest.app/stories/once-thought-extinct-black-footed-ferrets-get-a-boost-in-arizona-b18cc6e9"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "15 month old Nora Trejo was found unresponsive after a drowning accident at home, but her mother began CPR and emergency",
+    "https://www.ems1.com/pediatric-care/family-reunites-with-ky-first-responders-who-saved-toddler-after-near-drowning"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Malawi is launching a three year programme to provide free orthopaedic care, including surgery and mobility aids, to 900",
+    "https://www.maravipost.com/900-malawian-children-to-get-free-orthopaedic-surgeries/"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Flamingo recovers with custom brace from orthopedist",
+    "https://www.actionnews5.com/2026/10/16/flamingo-recovers-with-custom-brace-orthopedist/"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Prince Charles Cinema secures 25-year lease after closure threat",
+    "https://goodnewsdigest.app/stories/prince-charles-cinema-secures-25-year-lease-after-closure-threat-e07c51d7"
+   ],
+   [
+    "descartada",
+    "HumansBeingBros",
+    "This would be the best guy to sit on a plane with",
+    "https://v.redd.it/n0i5q1z9iqvh1"
+   ],
+   [
+    "descartada",
+    "science",
+    "Nine in ten research papers disputing definition of ultraprocessed foods have industry ties.",
+    "https://www.theexamination.org/articles/nova-ultraprocessed-foods-industry-ties-study"
+   ],
+   [
+    "descartada",
+    "science",
+    "A common stomach bug (H pylori) that causes stomach ulcers may be linked to about 1 in 5 colon cancer cases worldwide, s",
+    "https://www.med.hku.hk/en/news/press/20260928-hkumed-led-international-study-finds-helicobacter-pylori-exposure-may-be-associated"
+   ],
+   [
+    "descartada",
+    "science",
+    "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own gene",
+    "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
+   ],
+   [
+    "descartada",
+    "science",
+    "Overcoming Detection Lag in a Cryptic Panzootic: Chytrid Invasion Linked to Historically Enigmatic Amphibian Declines in",
+    "https://onlinelibrary.wiley.com/doi/10.1111/mec.70573"
+   ],
+   [
+    "descartada",
+    "science",
+    "Control theory of aging and longevity for gerotherapeutic drug discovery: state space, vector fields, modalities, safety",
+    "https://doi.org/10.18632/aging.206422"
+   ],
+   [
+    "descartada",
+    "science",
+    "Research investigates the “mean-regression trap”. Authors proposed a two-step advancement in model architecture. The GCN",
+    "https://doi.org/10.18653/v1/2026.semeval-1.53"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Zelenskyy Says Ukraine Is Done Holding Back on Russian Oil Refineries",
+    "https://united24media.com/war-in-ukraine/zelenskyy-says-ukraine-is-done-holding-back-on-russian-oil-refineries-23454"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Europe shuts US out of Russian assets conversation",
+    "https://kyivindependent.com/europe-shuts-us-out-of-russian-assets-conversation/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "'Time for Zelensky to go': Elon Musk calls for Ukrainian president to step down amid Starlink dispute",
+    "https://www.thenews.com.pk/amp/1420019-time-for-zelensky-to-go-elon-musk-calls-for-ukrainian-president-to-step-down-amid-starlink-dispute"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "“This is a Serious Mistake”: Zelenskyy Slams Starlink Restrictions",
+    "https://united24media.com/world/this-is-a-serious-mistake-zelenskyy-slams-starlink-restrictions-23491"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "White House Denies Restricting Starlink in Ukraine, Says SpaceX Is Beyond Its Control",
+    "https://united24media.com/world/trump-white-house-denies-restricting-starlink-in-ukraine-says-spacex-is-beyond-its-control-23459"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Zelensky Pushes Back at Trump’s Call for New Leader, Says Any Successor Would Defend Ukraine",
+    "https://www.kyivpost.com/post/87150"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Russian soldier who killed five Ukrainian troops ‘while dressed as civilian’ arrested",
+    "https://tvpworld.com/95939269/ukraine-arrests-russian-suspected-of-killing-five-troops"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "EU leaders are preparing to urge Zelenskyy to rein in criticism of Trump",
+    "https://unn.ua/en/news/eu-leaders-are-set-to-urge-zelenskyy-to-tone-down-criticism-of-trump-ft"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Military Starlink Service Restored in Ukraine, Defense Sources Say",
+    "https://www.kyivpost.com/post/87154"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Ukrаinian drоnes reportedly strike Yаndeх dаta center, wаrehouses in overnight attаck on Russiа",
+    "https://kyivindependent.com/ukrainian-drones-reportedly-strike-yandex-data-center-warehouses-in-overnight-attack-on-russia/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "US president Donald Trump calls Ukraine’s resumption of strikes on Russian oil refineries a ‘disgrace’",
+    "https://www.theguardian.com/world/2026/oct/16/trump-calls-ukraines-resumption-of-strikes-on-russian-oil-refineries-a-disgrace"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Ukraine Seeks 450 Kph Starlink Limit to Counter Jet Drones",
+    "https://www.kyivpost.com/post/87169"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Online ads weaponised to deliver ‘zero-click’ spyware, researchers say",
+    "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "U.S.-Mexico tariff deal stalls over Lutnick objections, WSJ reports",
+    "https://ca.investing.com/news/stock-market-news/usmexico-tariff-deal-stalls-over-lutnick-objections-wsj-reports-93CH-4884219"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "‘Partnership is not an alliance,’ says Jaishankar on India US ties; talks about Russia, China, Europe policy objectives ",
+    "https://www.businesstoday.in/latest/economy/story/partnership-is-not-an-alliance-says-jaishankar-on-india-us-ties-talks-about-russia-china-europe-policy-objectives-561406-2026-10-14"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Netanyahu adviser says Israel ‘very close’ to creating conditions for Iran regime change",
+    "https://www.iranintl.com/en/202610159370"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "UK to provide $22 mln for Ukraine's Chornobyl plant repairs. A Russian drone strike last year damaged the protective she",
+    "https://tvpworld.com/95937502/uk-to-provide-2245-mln-for-ukraines-chornobyl-plant-repairs"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Russia and Ukraine resume energy strikes despite Trump warnings",
+    "https://www.theguardian.com/world/2026/oct/15/us-effort-to-get-russia-ukraine-energy-ceasefire-collapses"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "EU, UK, Canada 'deeply regret' Abbas decision to postpone PA legislative elections",
+    "https://www.jpost.com/middle-east/article-911703"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Russian Business Investment Stalls in Third Quarter as Profits Fall, Uncertainty Persists",
+    "https://www.themoscowtimes.com/2026/10/15/russian-business-investment-stalls-in-third-quarter-as-profits-fall-uncertainty-persists-a93987"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1696, Part 1 (Thread #1843)",
+    "https://www.reddit.com/live/1hnbhsgiy1dhh"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Netanyahu reveals direct call with Syrian President Sharaa, claims he stopped Druze massacres",
+    "https://www.jpost.com/israel-news/article-911842"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Pezeshkian: Iran is Facing its Most Intense Blockade since 1979",
+    "https://english.aawsat.com/world/5329964-pezeshkian-iran-facing-its-most-intense-blockade-1979"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Iran Reportedly Sells Oil to Russia at 35%–42% Discount as New Caspian Route Emerges",
+    "https://irannewswire.org/iran-oil-russia-caspian-sanctions-evasion/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "19 injured after Channel Tunnel collision between bus and train on French side",
+    "https://news.sky.com/story/19-injured-after-channel-tunnel-collision-between-bus-and-train-on-french-side-13599710"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "EU leaders push for historic Single Market overhaul by 2027",
+    "https://www.brusselstimes.com/eu-affairs/2362802/eu-leaders-push-for-historic-single-market-overhaul-by-2027"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "France and Germany agree to ease EU car emissions rules in new deal",
+    "https://www.france24.com/en/europe/20261015-france-and-germany-agree-to-ease-eu-car-emissions-rules-in-new-deal"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Kellogg backs Ukraine’s strikes on Russian oil refineries, calling them military targets",
+    "https://mezha.net/eng/news/mezha-79d00c71867c1da44cb32827_kellogg_backs_ukraine-s/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Albania protests turn violent as protestors demand PM Rama's resignation",
+    "https://www.france24.com/en/europe/20261014-albania-protests-protestors-demand-pm-rama-resignation"
+   ],
+   [
+    "descartada",
+    "Futurology",
+    "First-Ever Public Confirmation of 'Zero-Click' Spyware Delivered Via Targeted Ads. A firm called Discover-Tech has ads o",
+    "https://www.reddit.com/r/Futurology/comments/1x6zi5u/firstever_public_confirmation_of_zeroclick/"
+   ],
+   [
+    "descartada",
+    "Futurology",
+    "German police arrest two people accused of using a €10,000 Unitree robot to sexually assault a teen girl.",
+    "https://www.reddit.com/r/Futurology/comments/1x6p7xl/german_police_arrest_two_people_accused_of_using/"
+   ],
+   [
+    "descartada",
+    "Futurology",
+    "In the future we will have online virtual workspaces or think-tanks or brainstorm places where people will combine and g",
+    "https://www.reddit.com/r/Futurology/comments/1x6i41d/in_the_future_we_will_have_online_virtual/"
+   ],
+   [
+    "descartada",
+    "Futurology",
+    "Elon Musk really brought a flying car. Tesla Roadster just pulled off an inverted ramp climb and mid-air flip.",
+    "https://www.ibtimes.co.uk/tesla-roadster-mid-air-flip-long-awaited-demo-1825958"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "\"You don't have to talk, I'll talk enough for the both of us\"",
+    "https://v.redd.it/jgfvr7e41ovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "oh, the beauty of a child’s heart ❤️",
+    "https://v.redd.it/bvk3di5vdmvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Kermit and a 4 year old (1972)",
+    "https://v.redd.it/1cdglrm5xqvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Terry Crews bringing pure energy to SoFi Stadium",
+    "https://v.redd.it/ln25hd8i3pvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A woman grew out her hair to donate to her mother 🎀",
+    "https://v.redd.it/p2kcu1u4gnvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "The ultimate side quest",
+    "https://v.redd.it/chahywkb3qvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Can you imagine?",
+    "https://i.redd.it/03rresfzvhuh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Mother worked abroad as housekeeper for decades to fund sons education, now he is pilot of her flight",
+    "https://v.redd.it/njqpqjpmfqvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Watching her little mind figure this out",
+    "https://v.redd.it/d1v4yv4y8ovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "I’m not sure what this kid has but he is special.",
+    "https://v.redd.it/4cob4vayuqvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Memories from the 80s.",
+    "https://v.redd.it/c71ggc9mqpvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "[OC] I left work early today to Volunteer at my kids book fair. My company gave me $100 to help kids who cannot afford o",
+    "https://i.redd.it/z9qq4et5zovh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A splash of water and laughter that says everything.",
+    "https://v.redd.it/9atfie44sfvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Blind man wins 10 second challenge at barber shop for free haircuts",
+    "https://v.redd.it/wyenoegkzovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Cows love music & it is the wildest thing to watch",
+    "https://v.redd.it/sjhbtex8qlvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Young foxes playing",
+    "https://v.redd.it/ax9snv4fcpvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A baby owl",
+    "https://v.redd.it/094l5jo7xnvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Teen speaks out after viral video showed him giving elderly man the shoes off his feet (OC)",
+    "https://www.unilad.com/news/us-news/jordan-hope-arizona-kindness-shoes-video-903685-20261015"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Paparazzi for Halloween 🎃",
+    "https://v.redd.it/aizuhzht3qvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Just a kid living his best life (by@__ha.do)",
+    "https://v.redd.it/a1jephcyonvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "How many plates of beans did you eat?",
+    "https://v.redd.it/a4cqfvufpnvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "I need her to teach me",
+    "https://v.redd.it/knlii153hlvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Tiger cubs",
+    "https://v.redd.it/l5al9uljxrvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Beavers Destroy Sign Warning People About....Beavers",
+    "https://notesfrompoland.com/2026/10/08/beavers-destroy-sign-warning-about-beavers/"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Every year since my daughter turned 1 I add a charm to this necklace which marks something in the year. Tomorrow she is ",
+    "https://i.redd.it/mcv5446opovh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Bears kept stealing a man's honey, so he enlisted them as taste tasters.",
+    "https://v.redd.it/2897duoi7qvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Aston Villa fans “appreciating” Mason Greenwood",
+    "https://v.redd.it/1539mju6givh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "🎵 🎶 Soup for my grandma 🎵 🎶",
+    "https://v.redd.it/84uxmdqdcovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Bibbity, Bibbity, BOO! 🦇",
+    "https://v.redd.it/5iocmghb6nvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Doggo delivering goods",
+    "https://i.redd.it/gf10g7ceymvh1.png"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Dog saves a tiny stray kitten by bringing it home",
+    "https://v.redd.it/80o0ho0yscvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Years of hard work paying off - Nene Royal's Zombie",
+    "https://v.redd.it/78ttx6znzmvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "These squeaky bunny noises",
+    "https://v.redd.it/6b42tucl1uuh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A country meadow living the dream",
+    "https://i.redd.it/64zu7aidzqvh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Our new lab loves playing hide and seek..",
+    "https://www.reddit.com/gallery/1x6wegz"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "The athlete with Down syndrome, noticing the sadness of his defeated opponent, immediately ran up to him and raised his ",
+    "https://v.redd.it/ura6k4m3kgvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Carmel brothers help to save grandmother, 2 toddlers from retention pond",
+    "https://fox59.com/news/carmel-brothers-help-to-save-grandmother-2-toddlers-from-retention-pond/"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "To prank her",
+    "https://v.redd.it/ptjaqpletovh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Thanks, Goodwill",
+    "https://i.redd.it/oiav7umaknvh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Tomorrow is my 400th consecutive day on Reddit",
+    "https://i.redd.it/snac67nacovh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Man tells a wild bear to wait while he prepares it a sandwich, and it listens",
+    "https://v.redd.it/9y06seynqlvh1"
+   ],
+   [
+    "descartada",
+    "9gag",
+    "Trump says weapon sales to E.U. & Ukraine cut off for now. Russia has occupied the Whitehouse",
+    ""
+   ],
+   [
+    "descartada",
+    "9gag",
+    "USA",
+    ""
+   ],
+   [
+    "descartada",
+    "9gag",
+    "If you don't know what you are doing neither does the enemy",
+    ""
+   ],
+   [
+    "descartada",
+    "9gag",
+    "As I type 700 little and big birds are flying into !",
+    ""
+   ],
+   [
+    "descartada",
+    "9gag",
+    "Mashallah",
+    ""
+   ],
+   [
+    "descartada",
+    "9gag",
+    "Elon flying car",
+    ""
+   ],
+   [
+    "descartada",
+    "9gag",
+    "Business as usual for the big guys",
+    ""
+   ],
+   [
+    "descartada",
+    "9gag",
+    "Opposite day ?",
+    ""
+   ],
+   [
+    "descartada",
+    "9gag",
+    "Rachel borshnan",
+    ""
+   ],
+   [
+    "descartada",
+    "9gag",
+    "A Q for the Dumbfukistani's here .",
+    ""
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Nashville voter turnout 15 times higher than last midterm so far",
+    "https://wpln.org/post/nashville-voter-turnout-15-times-higher-than-last-midterm-so-far/"
+   ],
+   [
+    "confirmada",
+    "UpliftingNews",
+    "North America’s largest wildlife overpass is working. I-25 collisions near Castle Rock are down 91%.",
+    "https://coloradosun.com/2026/10/14/i25-wildlife-overpass-collisions-drop/"
+   ],
+   [
+    "confirmada",
+    "UpliftingNews",
+    "Stanford discovers way to save ghostly corals from the brink",
+    "https://www.sfgate.com/bayarea/article/stanford-coral-study-22475321.php"
+   ],
+   [
+    "confirmada",
+    "UpliftingNews",
+    "London Zoo hatches 15 tiny frogs from a species threatened by mining in Ghana.",
+    "https://www.bbc.co.uk/news/articles/cr2keqxggx0wo"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Luna, a small dog missing for over a month in Yellowstone, is reunited with her owners",
+    "https://apnews.com/article/yellowstone-lost-dog-national-parks-24a0c2c74d7455ae5b07ba6de133ff52"
+   ],
+   [
+    "confirmada",
+    "UpliftingNews",
+    "China reduced extreme poverty fast, but Indonesia hasn’t been far behind",
+    "https://ourworldindata.org/data-insights/china-reduced-extreme-poverty-fast-but-indonesia-hasnt-been-far-behind?amp%3Butm_medium=email"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Bulgaria passes law protecting journalists from abusive lawsuits",
+    "https://www.euronews.com/2026/09/30/bulgarias-parliament-passes-law-protecting-journalists-from-abusive-slapp-lawsuits?amp%3Butm_medium=email"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "In 2011, Taylor Swift donated 6,000 books worth $68,000 to a Pennsylvania library that was struggling to stay open; 15 y",
+    "https://timesofindia.indiatimes.com/world/us/in-2011-taylor-swift-donated-6000-books-worth-68000-to-a-pennsylvania-library-that-was-struggling-to-stay-open-15-years-later-it-circulated-182228-items-and-drew-27452-program-participants-in-2025/amp_articleshow/134976044.cms"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "india added 50.6 gw of solar module manufacturing capacity and 9.7 gw of solar cell manufacturing capacity in the first ",
+    "https://www.pv-magazine.com/2026/09/25/india-added-50-6-gw-of-solar-module-and-9-7-gw-of-cell-manufacturing-capacity-in-1h-2026-says-mercom/"
+   ],
+   [
+    "confirmada",
+    "UpliftingNews",
+    "Complex surgery successfully separates Fijian conjoined twins",
+    "https://www.abc.net.au/news/2026-10-16/surgery-separates-fijian-conjoined-twins-in-saudi-arabia/107271702"
+   ],
+   [
+    "confirmada",
+    "UpliftingNews",
+    "How a contested B.C. supportive housing project won over its neighbours",
+    "https://www.theglobeandmail.com/canada/article-municipal-elections-bc-supportive-housing-project-won-over-neighbours/"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Lotto Max hits $90M, biggest lottery prize in Canadian history",
+    "https://globalnews.ca/news/12101951/record-lotto-max-jackpot-draw/"
+   ],
+   [
+    "descartada",
+    "science",
+    "Nearly half of people who started GLP-1 drugs like Ozempic or Wegovy say they now drink less alcohol, and among heavier ",
+    "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2854926?guestAccessKey=8c64289b-1f09-44b7-89a0-7c584fe2ea58"
+   ],
+   [
+    "descartada",
+    "science",
+    "Scientists trusted less than business leaders when discussing social issues, study finds",
+    "https://www.manchester.ac.uk/about/news/scientists-trusted-less-than-business-leaders/"
+   ],
+   [
+    "descartada",
+    "science",
+    "AI assistants can easily manipulate users into making disadvantageous decisions when the AI operates with a hidden agend",
+    "https://www.eurekalert.org/news-releases/1147838"
+   ],
+   [
+    "descartada",
+    "science",
+    "A new set of remains found in modern-day Iraq suggests that one Neandertal probably suffered a devastating blow to the f",
+    "https://www.sciencenews.org/article/hole-neandertal-bone-fatal-spear"
+   ],
+   [
+    "descartada",
+    "science",
+    "Green space is linked with fewer gun-related homicides, but not everywhere: the association is strongest in wealthier ne",
+    "https://news.osu.edu/green-space-is-linked-with-fewer-gun-related-homicides--but-not-everywhere/"
+   ],
+   [
+    "descartada",
+    "science",
+    "National Data Show High Rates of Anxiety in U.S Adolescents. Only half of adolescents with moderate or severe anxiety sy",
+    "https://today.uconn.edu/2026/10/national-data-show-high-rates-of-anxiety-in-adolescents/"
+   ],
+   [
+    "descartada",
+    "science",
+    "Survey of 102 cities reveals more than 40,000 new viruses. A study involving Brazilian researchers analyzed samples from",
+    "https://www.eurekalert.org/news-releases/1147767"
+   ],
+   [
+    "descartada",
+    "science",
+    "An aging-sensitive secreted phospholipase confers neuroprotection and cognitive resilience | Nature Neuroscience",
+    "https://www.nature.com/articles/s41593-026-02465-z"
+   ],
+   [
+    "descartada",
+    "science",
+    "Reversing age by reprogramming gene expression networks. Aging-specific screening platform identifies gene with multifac",
+    "https://www.eurekalert.org/news-releases/1147754"
+   ],
+   [
+    "descartada",
+    "science",
+    "Reprogrammed NK immune cells target cancer and autoimmune disorders",
+    "https://news.mit.edu/2026/reprogrammed-nk-immune-cells-target-cancer-and-autoimmune-disorders-1013"
+   ],
+   [
+    "descartada",
+    "science",
+    "What makes us human. A first atlas of functional DNA changes offers new clues. Researchers identify evolutionary DNA cha",
+    "https://www.eurekalert.org/news-releases/1147810"
+   ],
+   [
+    "confirmada",
+    "science",
+    "UK astronomers help reveal host galaxy of most distant fast radio burst. The findings suggest fast radio bursts can happ",
+    "https://www.manchester.ac.uk/about/news/uk-astronomers-help-reveal-host-galaxy-of-most-distant-fast-radio-burst/"
+   ],
+   [
+    "confirmada",
+    "science",
+    "New phase 1 trial results published in Nature Medicine show that combining a personalized neoantigen-targeting cancer va",
+    "https://www.nature.com/articles/s41591-026-04717-8"
+   ],
+   [
+    "descartada",
+    "science",
+    "Google’s quantum Willow chip may be able to grow ‘magic states'—helping improve quantum computers’ accuracy in complex c",
+    "https://www.scientificamerican.com/article/googles-quantum-willow-chip-may-be-able-to-grow-magic-states/"
+   ],
+   [
+    "descartada",
+    "science",
+    "About 1 in 4 men in the Army may have low testosterone, study finds",
+    "https://www.washingtonpost.com/national-security/2026/10/15/about-1-4-men-army-may-have-low-testosterone-study-finds/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Order to limit Starshield for Ukraine came from inside White House, sources say",
+    "https://www.reuters.com/world/europe/order-limit-starshield-ukraine-came-inside-white-house-sources-say-2026-10-15/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "UK Sends Ukraine More Storm Shadow Missiles to Hit Russian Sites",
+    "https://www.bloomberg.com/news/articles/2026-10-15/uk-sends-ukraine-more-storm-shadow-missiles-to-hit-russian-sites"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "It is crucial to give Ukraine all the means it needs ​to defend and protect ​its civilian population and its ⁠infrastruc",
+    "https://www.reuters.com/business/aerospace-defense/crucial-give-ukraine-all-means-needed-defend-population-infrastructure-frances-2026-10-15/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Prime Minister Mark Carney says US is trying to break Canada as Alberta votes on separation path",
+    "https://apnews.com/article/canada-alberta-carney-separation-vote-referendum-4e39eb0f5bda2438b3c2fedbf6088d09"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "As Americans play ‘power game,’ draft document shows Canada-EU response",
+    "https://www.ctvnews.ca/politics/article/as-americans-play-power-game-draft-document-shows-canada-eu-response/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Ukraine runs out of Patriot interceptor missiles as Zelensky and Trump clash over war",
+    "https://edition.cnn.com/2026/10/15/europe/ukraine-us-patriot-interceptor-missiles-run-out-intl"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "AP gets exclusive look at 'StarGate,' Ukraine's first aerial drone to evacuate wounded soldiers",
+    "https://apnews.com/article/ukraine-medevac-drone-russia-war-stargate-c93f86db16cc34fcc75deb5efc8af5fe?amp%3Butm_medium=iOS_share&amp%3Butm_campaign=more_copy_link"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Pentagon plans to hold report on Iran school strike past November midterms",
+    "https://www.straitstimes.com/world/united-states/pentagon-plans-to-hold-report-on-iran-school-strike-past-november-midterms"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Nord Stream may have been lawful target, argue lawyers for Ukrainian accused of bombing",
+    "https://www.reuters.com/world/ukrainian-ex-officer-stands-trial-germany-over-nord-stream-bombing-2026-10-14/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "UK asks Interpol to reject Argentina’s ‘politically motivated’ requests for Falklands oil arrests",
+    "https://www.theguardian.com/uk-news/2026/oct/13/britain-interpol-reject-argentina-falkland-islands-arrests?CMP=share_btn_url"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "South Korea to relocate about 10,000 government jobs to Sejong from Seoul by 2031",
+    "https://www.reuters.com/world/asia-pacific/south-korea-relocate-about-10000-government-jobs-sejong-seoul-by-2031-2026-10-13/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "India says first phase of US trade deal nearly done, insists on edge over rivals",
+    "https://www.reuters.com/world/india/india-says-first-phase-us-trade-deal-finalised-2026-10-15/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Russia arrests Japanese journalist on allegations of spying",
+    "https://www.theguardian.com/world/2026/oct/14/russia-detains-japanese-journalist-suspicion-spying"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Pakistan school roof collapse kills at least 28 children and one teacher",
+    "https://www.cnn.com/2026/10/15/asia/pakistan-school-roof-collapse-deaths-intl-hnk"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Maduro Says New US Torture Allegations Are ‘False Accusations’",
+    "https://www.bloomberg.com/news/articles/2026-10-15/maduro-says-new-us-torture-allegations-are-false-accusations"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "IMF warns global food security worsening amid El Nino",
+    "https://asia.nikkei.com/spotlight/environment/climate-change/imf-warns-global-food-security-worsening-amid-el-nino"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Seven crew missing after drone attack leaves tanker ablaze off Romania's coast",
+    "https://www.bbc.com/news/articles/c60qkgpp592yo"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Suzlon Sees India’s Annual Wind Deployment Doubling by 2030",
+    "https://www.bloomberg.com/news/articles/2026-10-15/suzlon-sees-india-s-annual-wind-deployment-doubling-by-2030?amp%3Butm_medium=share&amp%3Butm_campaign=copy"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Portugal: 37 protesters reportedly injured during overnight police intervention at housing-rights protest in Porto",
+    "https://pt.euronews.com/2026/10/15/manifestantes-pelo-direito-a-habitacao-denunciam-carga-policial-com-dezenas-de-feridos-no-"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "UK economy unexpectedly grows in August despite fall in consumer spending",
+    "https://www.theguardian.com/business/2026/oct/15/uk-economy-unexpectedly-grows-01-in-august-despite-fuel-hit-to-household-budgets"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "The 'leap second' could disappear. How a minor time adjustment became a major problem",
+    "https://www.cbc.ca/news/world/leap-second-decision-9.7381049"
+   ],
+   [
+    "descartada",
+    "Futurology",
+    "Has China really lost 130 million people?",
+    "https://www.thetimes.com/world/asia/article/china-falling-population-130-million-nh6jbcftf?amp%3Butm_source=Reddit&amp%3Butm_content=branded"
+   ],
+   [
+    "descartada",
+    "Futurology",
+    "Could ASI be the Great Filter? If creating superintelligence is just the next evolutionary step for biological life, cou",
+    "https://www.astronomy.com/science/the-great-filter-a-possible-solution-to-the-fermi-paradox/"
+   ]
+  ],
+  "fluffDropped": [
+   "In Ukraine, the repair movement is heading underground",
+   "The ‘in awe’ artist painting a wilder Britain",
+   "Young Adults Are Building Safe Spaces for Unhoused Peers",
+   "ESA’s New Sentinel 3C Satellite Makes its Debut with Sumptuous Images of Italy and the Arctic",
+   "Sloth Bear Named By Julia Roberts is Flourishing After Rescue From Dancing Trade in India",
+   "Daughter Gets to Join Dad as Co-Pilot, With Mom Serving on Flight’s Cabin Crew: A Surprise Full Circle Moment",
+   "NPR-Inspired Homework Leads Teen to Find Hidden Message a Decade After a Stranger’s Kindness",
+   "Cards Against Humanity has donated 5,000-plus games to public libraries to help 'fend off AI and brainrot'",
+   "Meet the first bear to ever receive a prosthetic paw: 'We do whatever it takes to help'",
+   "Scientists built a soundtrack to lure baby corals to their cyborg reef",
+   "Scientists make stunning discovery that could help explain why life exists",
+   "NASA captures a stunning transformation in Australia's red outback",
+   "Scientists make stunning discovery that could help explain why life exists",
+   "El arte no siempre es accesible: una exposición en Asturias explica cómo salvar las barreras",
+   "Healey says surprise UK growth is 'sign of resilience' ahead of Budget",
+   "Faisal Islam: What surprise praise for UK economy tells us about the Budget",
+   "Las potentes y conmovedoras imágenes ganadoras del concurso Fotógrafo de Vida Silvestre del Año 2026",
+   "El impresionante hallazgo frente a las costas de Turquía del naufragio más antiguo del mundo",
+   "Amper y el fondo de Pablo Casado negocian la compra del fabricante de radares ART",
+   "El porqué de la apuesta de Sánchez por la \"insoportable\" Margarita Robles: \"Siempre ha estado ahí en los momentos difíciles\"",
+   "The perfect artist’s studio? An attic in Paris",
+   "Investors dump data centre bonds as AI borrowers face ‘Darwin moment’",
+   "Netflix Replaces Bela Bajaria as Chief Content Officer",
+   "Netflix Chief Content Officer Bela Bajaria is leaving, will be replaced by Peter Rice",
+   "AI-assisted dying? Doris Dörrie's new film addresses prospect of care robots",
+   "Anunció su retiro en 2002, pero una negociación de último momento lo cambió todo: así sumó Ferguson una década extra en Manchester United"
+  ],
+  "candidates": 45,
+  "fromGeneralFeeds": 1,
+  "rejected": {
+   "formato": 93,
+   "relleno (sin impacto medible)": 4,
+   "relleno": 10,
+   "poco positivo": 294,
+   "negativo": 141,
+   "negativo-resumen": 2
+  },
+  "reddit": {
+   "UpliftingNews": {
+    "ok": true,
+    "items": 20,
+    "error": null
+   },
+   "HumansBeingBros": {
+    "ok": true,
+    "items": 1,
+    "error": null
+   },
+   "science": {
+    "ok": true,
+    "items": 21,
+    "error": null
+   },
+   "worldnews": {
+    "ok": true,
+    "items": 50,
+    "error": null
+   },
+   "Futurology": {
+    "ok": true,
+    "items": 6,
+    "error": null
+   },
+   "MadeMeSmile": {
+    "ok": true,
+    "items": 41,
+    "error": null
+   }
+  },
+  "ninegag": {
+   "ok": true,
+   "items": 10,
+   "error": null
+  },
+  "leads": {
+   "total": 149,
+   "confirmed": 8,
+   "dropped": 141,
+   "confirmedVia": {
+    "enlace a medio confiable (leído de su página)": 8
+   },
+   "droppedReasons": {
+    "enlace a sitio no verificado": 83,
+    "medio confiable pero nota no positiva": 28,
+    "9gag sin fuente": 10,
+    "medio confiable pero no se pudo leer la página": 19,
+    "nota antigua": 1
+   },
+   "droppedExamples": [
+    {
+     "sub": "UpliftingNews",
+     "title": "A simple change could make wind power safer for wildlife. At South Africa’s Hopefield wind farm, painting two red stripes on one blade of fo",
+     "link": "https://www.ecoticias.com/en/a-wind-farm-in-hopefield-south-africa-painted-two-red-stripes-on-one-blade-of-four-turbines-and-a-preprint-not-yet-peer-reviewed-estimates-bird-deaths-at-those-turbines-fell-a-median-83-percent/52043/"
+    },
+    {
+     "sub": "UpliftingNews",
+     "title": "Mozambique officially protects the 9,341-hectare Mount Mabu “butterfly forest,” home to more than 200 butterfly species and over 30 species ",
+     "link": "https://travelbinger.com/mozambique-designates-mount-mabu-as-a-new-community-conservation-area"
+    },
+    {
+     "sub": "UpliftingNews",
+     "title": "Recent High School Grad Seen on Camera Offering Elderly Man the Shoes Off His Own Feet",
+     "link": "https://people.com/arizona-teen-goes-viral-for-giving-person-the-shoes-off-his-feet-12165965"
+    },
+    {
+     "sub": "UpliftingNews",
+     "title": "Once thought extinct, black-footed ferrets get a boost in Arizona",
+     "link": "https://goodnewsdigest.app/stories/once-thought-extinct-black-footed-ferrets-get-a-boost-in-arizona-b18cc6e9"
+    },
+    {
+     "sub": "UpliftingNews",
+     "title": "15 month old Nora Trejo was found unresponsive after a drowning accident at home, but her mother began CPR and emergency crews helped save h",
+     "link": "https://www.ems1.com/pediatric-care/family-reunites-with-ky-first-responders-who-saved-toddler-after-near-drowning"
+    },
+    {
+     "sub": "UpliftingNews",
+     "title": "Malawi is launching a three year programme to provide free orthopaedic care, including surgery and mobility aids, to 900 children with disab",
+     "link": "https://www.maravipost.com/900-malawian-children-to-get-free-orthopaedic-surgeries/"
+    },
+    {
+     "sub": "UpliftingNews",
+     "title": "Flamingo recovers with custom brace from orthopedist",
+     "link": "https://www.actionnews5.com/2026/10/16/flamingo-recovers-with-custom-brace-orthopedist/"
+    },
+    {
+     "sub": "UpliftingNews",
+     "title": "Prince Charles Cinema secures 25-year lease after closure threat",
+     "link": "https://goodnewsdigest.app/stories/prince-charles-cinema-secures-25-year-lease-after-closure-threat-e07c51d7"
+    },
+    {
+     "sub": "HumansBeingBros",
+     "title": "This would be the best guy to sit on a plane with",
+     "link": "https://v.redd.it/n0i5q1z9iqvh1"
+    },
+    {
+     "sub": "science",
+     "title": "Nine in ten research papers disputing definition of ultraprocessed foods have industry ties.",
+     "link": "https://www.theexamination.org/articles/nova-ultraprocessed-foods-industry-ties-study"
+    },
+    {
+     "sub": "science",
+     "title": "A common stomach bug (H pylori) that causes stomach ulcers may be linked to about 1 in 5 colon cancer cases worldwide, says a review of 43 s",
+     "link": "https://www.med.hku.hk/en/news/press/20260928-hkumed-led-international-study-finds-helicobacter-pylori-exposure-may-be-associated"
+    },
+    {
+     "sub": "science",
+     "title": "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own genes, not from how thei",
+     "link": "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
+    }
+   ]
+  },
+  "perSubtopic": {
+   "salud": 9,
+   "ciencia": 9,
+   "ambiente": 12,
+   "social": 1,
+   "acciones": 4,
+   "comunidad": 1
+  },
+  "allStoriesBeforeCap": 45
+ }
 }

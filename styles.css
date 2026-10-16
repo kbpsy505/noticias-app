@@ -62,3 +62,14 @@ h1 { margin: 0; font-family: Georgia, "Iowan Old Style", Palatino, serif; font-s
 .foot p { margin: 0 0 8px; }
 .foot .small { font-size: 11.5px; }
 @media (min-width: 720px) { .list, .top, .langs { max-width: 720px; margin-left: auto; margin-right: auto; } }
+/* Buenas noticias */
+.subtopic { font-size: .72rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: #e7f6ec; color: #17663a; }
+.st-salud { background: #e8f1fd; color: #1d4f91; }
+.st-ciencia { background: #f1ebfb; color: #5b2f99; }
+.st-ambiente { background: #e7f6ec; color: #17663a; }
+.st-social { background: #fff3e0; color: #8a4b00; }
+.st-acciones { background: #fde8ef; color: #9b1f4c; }
+.st-comunidad { background: #e6f6f7; color: #11646b; }
+.outlets.one { background: transparent; color: inherit; opacity: .75; }
+.note { font-size: .85rem; opacity: .8; margin: 0 0 12px; }
+.reddit { font-size: .78rem; opacity: .75; margin: 8px 0 0; }
