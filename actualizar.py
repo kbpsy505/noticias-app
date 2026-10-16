@@ -5,7 +5,7 @@
 2. Normaliza títulos y resúmenes en español e inglés a un vocabulario común.
 3. Agrupa notas sobre el mismo hecho (TF-IDF + coincidencia de términos
    distintivos + ventana de tiempo), aunque estén en idiomas distintos.
-4. Conserva solo los grupos que publican 2 o más medios distintos.
+4. Conserva solo los grupos que publican 5 o más medios distintos (MIN_OUTLETS).
 5. Escribe noticias.json para la página.
 
 No inventa nada: cada texto mostrado sale tal cual de un feed.
@@ -45,6 +45,7 @@ SCIENCE_HOURS = 24 * 7   # ciencia publica más lento
 PAIR_WINDOW_H = 36       # dos notas solo se unen si se publicaron con <= 36 h de diferencia
 SUMMARY_MAX = 400
 MAX_STORIES = 30         # por categoría
+MIN_OUTLETS = 5          # medios distintos necesarios para que una historia aparezca
 
 CATEGORIES = [
     ("sucesos", "Sucesos"),
@@ -581,8 +582,10 @@ def main():
         cat = max(votes, key=lambda c: (votes[c], prio[c]))
         if votes.get("guerras", 0) * 3 >= len(members) and cat != "guerras":
             cat = "guerras"
-        stories_by_cat[cat].append(story)
         debug_rows.append((cat, len(orgs), members))
+        if len(orgs) < MIN_OUTLETS:
+            continue
+        stories_by_cat[cat].append(story)
 
     crypto_report = None
     out_cats = []
@@ -595,7 +598,7 @@ def main():
             s.pop("_last", None)
             s["id"] = f"{cid}-{i + 1}"
         summary_counts[cid] = len(lst)
-        out_cats.append({"id": cid, "label": label, "stories": lst})
+        out_cats.append({"id": cid, "label": label, "minOutlets": MIN_OUTLETS, "stories": lst})
         if cid == "finanzas":
             # Pestaña "Criptomonedas": solo historias con 5+ medios distintos (ver cripto.py).
             try:
@@ -631,10 +634,10 @@ def main():
         "nextRefreshAt": next_cron(now).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "refreshHours": REFRESH_HOURS,
         "method": {
-            "minOutlets": 2,
+            "minOutlets": MIN_OUTLETS,
             "pairWindowHours": PAIR_WINDOW_H,
             "newsMaxAgeHours": NEWS_HOURS,
-            "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 2+ medios distintos.",
+            "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 5+ medios distintos.",
         },
         "stats": {
             "feedsOk": len(ok_feeds),

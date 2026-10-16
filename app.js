@@ -132,7 +132,7 @@ function renderList() {
   list.innerHTML = "";
   const cat = state.data.categories.find((c) => c.id === state.cat);
   if (!cat || !cat.stories.length) {
-    let msg = "Ahora mismo no hay historias en esta categoría que publiquen 2 o más medios.";
+    let msg = "En esta actualización ninguna historia de esta categoría fue publicada por 5 o más medios distintos. Vuelve a revisar en la próxima actualización.";
     if (state.cat === "buenas") msg = "Ahora mismo no hay buenas noticias confirmadas por un medio confiable.";
     if (state.cat === "cripto") msg = "En esta actualización ninguna noticia de criptomonedas fue publicada por 5 o más medios distintos, así que no hay nada verificado que mostrar. Vuelve a revisar en la próxima actualización.";
     list.append(el("p", "empty", msg));
@@ -153,7 +153,7 @@ function renderFoot(data) {
   f.innerHTML = "";
   f.append(
     el("p", null, "Cómo funciona: cada 3 horas se leen " + (st.feedsOk || "?") + " canales RSS públicos (" +
-      (st.itemsGathered || "?") + " notas en esta tanda). Se agrupan las notas que hablan del mismo hecho, en español o inglés, y solo se muestran los grupos que publican al menos 2 medios distintos. Más medios = más consenso. En Criptomonedas se exigen al menos 5 medios distintos. Excepción: en Buenas noticias basta un medio confiable, y lo que sale de Reddit o 9gag solo se usa como pista."),
+      (st.itemsGathered || "?") + " notas en esta tanda). Se agrupan las notas que hablan del mismo hecho, en español o inglés, y solo se muestran los grupos que publican al menos 5 medios distintos. Más medios = más consenso. Excepción: en Buenas noticias basta un medio confiable, y lo que sale de Reddit o 9gag solo se usa como pista."),
     el("p", null, "Los titulares y resúmenes son los de cada medio, sin cambios. No hay IA ni se inventa nada; toca una fuente para leer el original."),
     el("p", "small", "Medios: " + (data.sourcesUsed || []).join(", ") + ".")
   );

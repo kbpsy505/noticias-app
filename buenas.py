@@ -143,6 +143,7 @@ NEG_TITLE = re.compile(
     r"\bbrote|abuso|violaci[oó]n|v[ií]ctima|reh[eé]n|fracas|mortal|tragedia|herid|alarmante|preocupa|"
     r"pol[eé]mica|acusad|condena|p[eé]rdida|destru|contamina|hambruna|conflicto|violencia|odio|racism|"
     r"protesta|disturbio|sanci[oó]n|arancel|estafa|narco|\barma|peligr|riesgo|amenazad|extinci[oó]n de|"
+    r"(jobs|employment|investment|funding|sales|growth|aid|support|empleos?|inversi[oó]n|ventas|ayuda)\s+(fell|fall|falls|drop|drops|dropped|declin|shrank|shrink|ca[eí]|cayeron|caen|bajan?|bajaron)|"
     r"midterm|voter turnout|wake-up call|llamada de atenci[oó]n|rise in poverty|controvers|\bdenies\b|\bniega|backfire|sickness|harmful|zombie|super pac|lobby|\bspends?\b|\bdanger\b|worr(y|ied)|concern|el ni[nñ]o|la ni[nñ]a|s[uú]per ni[nñ]o|f[uú]tbol|futbolista|selecci[oó]n nacional|fichaj|tiktok|influencer|youtuber|barbie|\bkfc\b|coca-cola|mcdonald|starbucks|black friday|iphone|\bipo\b|stocks?\b|earnings|\bpapa\b|\bpope\b|desaparec|incendio|inundaci|sequ[ií]a|drought|wildfire|flood|heatwave|ola de calor)",
     re.I,
 )
