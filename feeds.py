@@ -130,6 +130,4 @@ KNOWN_FAILS = [
     ("efe", "https://efe.com/feed/", "EFE: el feed responde 500 o XML inválido"),
     ("independent", "https://www.independent.co.uk/news/world/rss", "XML inválido"),
     ("wsj-world", "https://feeds.a.dj.com/rss/RSSWorldNews.xml", "Congelado en enero de 2025; no es un feed vivo"),
-    ("crhoy", "https://www.crhoy.com/feed/", "CRHoy: sin RSS (404)"),
-    ("teletica", "https://www.teletica.com/rss", "Teletica: XML inválido"),
 ]

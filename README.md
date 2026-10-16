@@ -70,8 +70,9 @@ Agregar un resumen escrito por IA para cada historia de consenso, que explique e
 
 `regiones.py` agrega Costa Rica, Centroamérica, Latinoamérica (México, Caribe y temas latinoamericanos generales), Sudamérica, Europa, Asia (incluye Medio Oriente), África y Australia y Oceanía.
 
-- Suma medios locales de cada región (p. ej. en Costa Rica: La Nación/El Financiero/La Teja, El Observador, Delfino, Semanario Universidad, El Mundo CR, Monumental, AM Prensa, Q Costa Rica) a todas las notas de las pestañas de tema, y agrupa igual que el resto.
+- Suma medios locales de cada región (p. ej. en Costa Rica: La Nación/El Financiero/La Teja, CRHoy, Teletica/Telenoticias, Repretel, Diario Extra, Trivisión, El Observador, Delfino, Semanario Universidad, El Mundo CR, Monumental, AM Prensa, Q Costa Rica) a todas las notas de las pestañas de tema, y agrupa igual que el resto.
 - Misma regla: **5 o más medios distintos** por historia.
+- Medios ticos sin RSS: CRHoy y Trivisión se leen de su sitemap de noticias. Si el feed propio falla o no trae notas de las últimas 48 h (Teletica, Repretel), se usa Google Noticias limitado a su sitio (`site:`), con el nombre del medio original. La Gaceta (Imprenta Nacional) no tiene RSS ni sitemap de publicaciones, así que no se incluye.
 - La región sale de los lugares, países y personajes que nombran los titulares y resúmenes. Para asignarla, al menos 2 medios distintos deben nombrar un lugar de esa región, y entre esos y los medios locales de la región deben sumar la mitad del grupo. Las historias que son sobre todo de EE. UU. no van a ninguna región. Una historia puede salir también en su pestaña de tema.
 - Informe en `noticias.json` → `regions` (feeds que fallaron, medios locales activos por región, grupos de 3–4 medios que no llegaron a 5).
 

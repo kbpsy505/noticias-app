@@ -12,7 +12,7 @@ from __future__ import annotations
 import re
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
-from datetime import timedelta
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 
 import actualizar as A
@@ -39,6 +39,11 @@ REGION_FEEDS = [
     ("cr-delfino", "https://delfino.cr/feed", "Delfino", "delfino", "es", "costarica"),
     ("cr-semanario", "https://semanariouniversidad.com/feed/", "Semanario Universidad", "semanario-universidad", "es", "costarica"),
     ("cr-amprensa", "https://www.amprensa.com/feed/", "AM Prensa", "amprensa", "es", "costarica"),
+    ("cr-crhoy", "https://crhoy.com/sitemaps/sitemap-news.xml", "CRHoy", "crhoy", "es", "costarica"),
+    ("cr-teletica", "https://www.teletica.com/sitemaps/news/last-news", "Teletica (Telenoticias)", "teletica", "es", "costarica"),
+    ("cr-repretel", "https://www.repretel.com/feed/", "Repretel (Noticias Repretel)", "repretel", "es", "costarica"),
+    ("cr-extra", "https://www.diarioextra.com/feed", "Diario Extra", "diarioextra", "es", "costarica"),
+    ("cr-trivision", "https://trivisioncr.com/news-sitemap.xml", "Trivisión", "trivision", "es", "costarica"),
     ("cr-qcostarica", "https://qcostarica.com/feed/", "Q Costa Rica", "qcostarica", "en", "costarica"),
     # (La Nación portada, El Financiero, El Mundo CR y Monumental ya están en feeds.py)
     # --- Centroamérica ---
@@ -138,13 +143,13 @@ REGION_FEEDS = [
 ]
 
 REGION_KNOWN_FAILS = [
-    ("crhoy", "https://www.crhoy.com/feed/", "404 (sin RSS)"),
-    ("teletica", "https://www.teletica.com/rss", "Devuelve HTML, no RSS"),
+    ("la gaceta (imprentanacional.go.cr)", "https://www.imprentanacional.go.cr/gaceta/",
+     "Sin RSS ni sitemap de publicaciones (solo visor web); no se incluye"),
     ("ticotimes", "https://ticotimes.net/feed", "Respuesta comprimida ilegible (brotli)"),
     ("ameliarueda", "https://www.ameliarueda.com/feed/", "404"),
     ("crc891 / elobservador.cr / trece.cr / elpais.cr", "-", "Error de conexión TLS"),
-    ("diarioextra / laprensalibre.cr", "-", "403"),
-    ("repretel / elguardian.cr / ncr", "-", "Sin notas recientes"),
+    ("laprensalibre.cr", "-", "403"),
+    ("elguardian.cr / ncr", "-", "Sin notas recientes"),
     ("la prensa gráfica / elsalvador.com / laprensa.com.ni", "-", "403"),
     ("el faro / soy502", "-", "Devuelve HTML o XML inválido"),
     ("el heraldo hn / la prensa hn / tvn panamá / la estrella panamá", "-", "404"),
@@ -307,10 +312,41 @@ def pick_region(members, loose=False):
     return best, votes
 
 
+# Respaldo para medios ticos sin RSS o que bloquean a GitHub: Google Noticias limitado al sitio.
+GNEWS = "https://news.google.com/rss/search?q=site:{}+when:2d&hl=es-419&gl=CR&ceid=CR:es-419"
+FALLBACK = {
+    "cr-crhoy": ("crhoy.com", "CR Hoy"),
+    "cr-teletica": ("teletica.com", "Teletica"),
+    "cr-repretel": ("repretel.com", "Repretel"),
+    "cr-extra": ("diarioextra.com", "Diario Extra"),
+    "cr-trivision": ("trivisioncr.com", "Trivisión"),
+}
+# Sufijos de nombre del medio que Google Noticias o los sitemaps agregan al titular.
+TITLE_SUFFIX = re.compile(r"\s+[|\-–]\s*(CR ?Hoy|crhoy\.com|Teletica|Telenoticias|Repretel|Noticias Repretel|"
+                          r"Diario Extra|Trivisi[oó]n( Costa Rica)?)\s*$", re.I)
+
+
+def fetch_with_fallback(feed):
+    """Prueba el feed propio del medio; si falla o no trae notas recientes, usa Google Noticias."""
+    feed_, rows, err = A.fetch_feed(feed)
+    fid = feed[0]
+    if fid not in FALLBACK:
+        return feed_, rows, err, "directo"
+    recent = [r for r in rows or [] if (d := A.parse_date(r[2])) and d > datetime.now(timezone.utc) - timedelta(hours=48)]
+    if recent:
+        return feed_, rows, err, "directo"
+    site, _ = FALLBACK[fid]
+    _, grows, gerr = A.fetch_feed((fid, GNEWS.format(site)))
+    if grows:
+        # El enlace es la redirección de Google Noticias al artículo; el resumen es solo el titular.
+        return feed_, [(t, l, d, "") for t, l, d, _ in grows], None, "google-news"
+    return feed_, None, err or gerr, "directo"
+
+
 def build(now, general_pool, main_feed_urls):
     feeds = [f for f in REGION_FEEDS if f[1] not in main_feed_urls]
     with ThreadPoolExecutor(max_workers=24) as ex:
-        results = list(ex.map(A.fetch_feed, feeds))
+        results = list(ex.map(fetch_with_fallback, feeds))
 
     pool, seen = [], set()
 
@@ -326,13 +362,14 @@ def build(now, general_pool, main_feed_urls):
                     | {"region": MAIN_FEED_REGION.get(it.get("feed"))})
 
     feeds_ok, feeds_failed = [], []
-    for feed, rows, err in results:
+    for feed, rows, err, method in results:
         fid, url, source, org, lang, region = feed
         if err or not rows:
             feeds_failed.append({"id": fid, "source": source, "url": url, "error": err or "sin ítems"})
             continue
         kept = 0
         for title, link, date_s, desc in rows:
+            title = TITLE_SUFFIX.sub("", title).strip()
             if len(title) < 18 or A.SKIP_TITLE.search(title) or A.SECTION_TITLE.search(title):
                 continue
             u = A.clean_url(link)
@@ -350,7 +387,7 @@ def build(now, general_pool, main_feed_urls):
                          "summary": A.trim(summary), "publishedAt": pub.strftime("%Y-%m-%dT%H:%M:%SZ"),
                          "_ts": pub.timestamp(), "region": region})
             kept += 1
-        feeds_ok.append({"id": fid, "source": source, "org": org, "region": region, "url": url,
+        feeds_ok.append({"id": fid, "source": source, "org": org, "region": region, "url": url, "method": method,
                          "itemsInFeed": len(rows), "kept": kept})
 
     idf, df = A.build_vectors(pool)

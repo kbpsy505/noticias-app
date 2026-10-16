@@ -235,6 +235,23 @@ def parse_items(xml_bytes: bytes):
                         desc = clean_text("".join(g.itertext()))
         if title and link:
             found.append((title, link, date_s, desc))
+    if not found:
+        # Sitemap de noticias de Google (<url><loc> + <news:title>, <news:publication_date>),
+        # para medios sin RSS (p. ej. CRHoy, Trivisión).
+        for u in root.iter():
+            if local(u.tag) != "url":
+                continue
+            title = link = date_s = ""
+            for ch in u.iter():
+                ln = local(ch.tag)
+                if ln == "loc" and not link:
+                    link = (ch.text or "").strip()
+                elif ln == "title" and not title:
+                    title = clean_text("".join(ch.itertext()))
+                elif ln == "publication_date" and not date_s:
+                    date_s = (ch.text or "").strip()
+            if title and link:
+                found.append((title, link, date_s, ""))
     return found
 
 
