@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T21:34:49Z",
+ "updatedAt": "2026-10-16T21:38:10Z",
  "nextRefreshAt": "2026-10-17T00:00:00Z",
  "refreshHours": 3,
  "method": {
@@ -12,7 +12,7 @@
   "feedsOk": 95,
   "feedsFailed": 7,
   "itemsGathered": 1895,
-  "clusters": 1541,
+  "clusters": 1540,
   "consensusStories": 21,
   "perCategory": {
    "sucesos": 4,
@@ -31,7 +31,7 @@
    "africa": 3,
    "oceania": 0,
    "posibles": 60,
-   "buenas": 34
+   "buenas": 31
   }
  },
  "sourcesUsed": [
@@ -183,43 +183,6 @@
      "id": "buenas-3"
     },
     {
-     "headline": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Nature"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T16:36:49Z",
-     "lastSeen": "2026-10-16T16:36:49Z",
-     "sources": [
-      {
-       "source": "Nature",
-       "lang": "en",
-       "title": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
-       "url": "https://www.nature.com/articles/s41536-026-00507-5",
-       "publishedAt": "2026-10-16T16:36:49Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x7l2q2/tregulatory_cell_protection_of_progenitor_cells/"
-      }
-     ],
-     "id": "buenas-4"
-    },
-    {
      "headline": "North Texas man finds more than $128,000 on top of a bank",
      "headlineLang": "en",
      "headlineEs": null,
@@ -254,7 +217,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7ju4i/north_texas_man_finds_128514_on_top_of_a_banks/"
       }
      ],
-     "id": "buenas-5"
+     "id": "buenas-4"
     },
     {
      "headline": "Covid vaccine compensation scheme set for overhaul after Inquiry criticism",
@@ -286,7 +249,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-6"
+     "id": "buenas-5"
     },
     {
      "headline": "US EV sales are rising again. Here’s why the recovery is set to last.",
@@ -318,7 +281,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-7"
+     "id": "buenas-6"
     },
     {
      "headline": "USC scientists discover how to create a never-ending supply of cancer-fighting cells",
@@ -350,7 +313,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-8"
+     "id": "buenas-7"
     },
     {
      "headline": "Rare barn owls with",
@@ -387,7 +350,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7il72/a_family_of_barn_owls_has_become_manhattans/"
       }
      ],
-     "id": "buenas-9"
+     "id": "buenas-8"
     },
     {
      "headline": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
@@ -419,7 +382,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-10"
+     "id": "buenas-9"
     },
     {
      "headline": "Yale scientists discover how stress changes the brain to make memories stronger",
@@ -451,44 +414,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-11"
-    },
-    {
-     "headline": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Image by hoshinosuu/ShutterstockResearchers at University of Tsukuba and Ritsumeikan University compared pupil sizes whi",
-     "summaryEnSource": "University of Tsukuba",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "University of Tsukuba"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T11:45:18Z",
-     "lastSeen": "2026-10-16T11:45:18Z",
-     "sources": [
-      {
-       "source": "University of Tsukuba",
-       "lang": "en",
-       "title": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
-       "url": "https://www.tsukuba.ac.jp/en/research-news/20261015141500.html",
-       "publishedAt": "2026-10-16T11:45:18Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x7e07e/pupil_size_reveals_differences_between_speaking/"
-      }
-     ],
-     "id": "buenas-12"
+     "id": "buenas-10"
     },
     {
      "headline": "Astronomers discover a strange universal rule behind black hole eruptions",
@@ -520,7 +446,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-13"
+     "id": "buenas-11"
     },
     {
      "headline": "Scientists discover how exercise reverses muscle aging",
@@ -552,44 +478,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-14"
-    },
-    {
-     "headline": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "A phase 1 trial shows that treatment of patients with high-grade serous ovarian cancer with personalized neoantigen vaccines combined with PD-1 blockade was feasible and led to tumor-specific immune responses in many patients and putative mechanisms of resistance related to antigen presentation were identified via cell-free DNA analysis.",
-     "summaryEnSource": "Nature",
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Nature"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T00:34:46Z",
-     "lastSeen": "2026-10-16T00:34:46Z",
-     "sources": [
-      {
-       "source": "Nature",
-       "lang": "en",
-       "title": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-       "url": "https://www.nature.com/articles/s41591-026-04717-8",
-       "publishedAt": "2026-10-16T00:34:46Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x72apz/new_phase_1_trial_results_published_in_nature/"
-      }
-     ],
-     "id": "buenas-15"
+     "id": "buenas-12"
     },
     {
      "headline": "Complex surgery successfully separates Fijian conjoined twins",
@@ -626,7 +515,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x72agg/complex_surgery_successfully_separates_fijian/"
       }
      ],
-     "id": "buenas-16"
+     "id": "buenas-13"
     },
     {
      "headline": "Parada cardiaca: las ventilaciones también salvan vidas",
@@ -658,7 +547,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-17"
+     "id": "buenas-14"
     },
     {
      "headline": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
@@ -690,7 +579,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-18"
+     "id": "buenas-15"
     },
     {
      "headline": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
@@ -722,7 +611,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-19"
+     "id": "buenas-16"
     },
     {
      "headline": "How a contested B.C. supportive housing project won over its neighbours",
@@ -759,7 +648,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x71z1i/how_a_contested_bc_supportive_housing_project_won/"
       }
      ],
-     "id": "buenas-20"
+     "id": "buenas-17"
     },
     {
      "headline": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
@@ -791,7 +680,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-21"
+     "id": "buenas-18"
     },
     {
      "headline": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
@@ -823,7 +712,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-22"
+     "id": "buenas-19"
     },
     {
      "headline": "Mangroves gain ground globally, marking turnaround after decades of loss",
@@ -860,7 +749,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7pf91/mangroves_gain_ground_globally_marking_turnaround/"
       }
      ],
-     "id": "buenas-23"
+     "id": "buenas-20"
     },
     {
      "headline": "How one Chicago program is diversifying the solar workforce",
@@ -892,7 +781,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-24"
+     "id": "buenas-21"
     },
     {
      "headline": "A planet 320 light-years away confirms what scientists long suspected",
@@ -924,7 +813,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-25"
+     "id": "buenas-22"
     },
     {
      "headline": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
@@ -956,7 +845,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-26"
+     "id": "buenas-23"
     },
     {
      "headline": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
@@ -988,7 +877,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-27"
+     "id": "buenas-24"
     },
     {
      "headline": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
@@ -1020,7 +909,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-28"
+     "id": "buenas-25"
     },
     {
      "headline": "Qcells aims to build a giant factory for next-gen tandem solar",
@@ -1052,7 +941,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-29"
+     "id": "buenas-26"
     },
     {
      "headline": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
@@ -1084,7 +973,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-30"
+     "id": "buenas-27"
     },
     {
      "headline": "Nueva combinación de medicamentos restaura el control del VIH",
@@ -1116,7 +1005,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-31"
+     "id": "buenas-28"
     },
     {
      "headline": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
@@ -1148,7 +1037,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-32"
+     "id": "buenas-29"
     },
     {
      "headline": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
@@ -1180,7 +1069,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-33"
+     "id": "buenas-30"
     },
     {
      "headline": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
@@ -1212,7 +1101,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-34"
+     "id": "buenas-31"
     }
    ]
   },
@@ -1239,6 +1128,7 @@
       "El Mundo CR",
       "El Observador",
       "La Nación (Costa Rica)",
+      "La Teja",
       "Monumental"
      ],
      "languages": [
@@ -1339,6 +1229,13 @@
        "publishedAt": "2026-10-16T21:22:17Z"
       },
       {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Diputados del PLN ponen condiciones para apoyar proyecto de armonización eléctrica y legisladores del PPSO explotan",
+       "url": "https://www.lateja.cr/nacional/politica/diputados-del-pln-ponen-condiciones-para-apoyar/SAQHNGXNVZH3FAVFKUXIMOLJHU/story/",
+       "publishedAt": "2026-10-16T21:34:54Z"
+      },
+      {
        "source": "Delfino",
        "lang": "es",
        "title": "PLN condiciona conversaciones para abrir el mercado eléctrico a devolución de fondos universitarios",
@@ -1401,13 +1298,6 @@
        "title": "Fiscalía pedirá prisión preventiva contra Carlos Barahona",
        "url": "https://crhoy.com/nacionales/fiscalia-pedira-prision-preventiva-contra-carlos-barahona/",
        "publishedAt": "2026-10-15T10:16:55Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Fiscalía pide prisión preventiva contra futbolista del Cartaginés",
-       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQjRDQS1PV2YzNXR0RER6WlRfbGZUclJYTV9Hcjk5aVJBeDk2YVBFdldhSi12Rkw5QVJrQ0w1cG9KNTM1RzNjSmFGSjQta1RDX3VzRlk5WXVwRTk1ckVHTkRfZGliM2dxQXB2X2k3TU1sNlBXMnA2al9OYUR1WWVOMF8yWlhnMC1uNTRfVTBpcHZmZVZ1R1kteTdfajhnQU5YSmNEczZ2WGZadw?oc=5",
-       "publishedAt": "2026-10-15T16:19:59Z"
       },
       {
        "source": "AM Prensa",
@@ -2269,7 +2159,7 @@
       "es"
      ],
      "firstSeen": "2026-10-15T23:02:49Z",
-     "lastSeen": "2026-10-16T21:33:25Z",
+     "lastSeen": "2026-10-16T21:37:05Z",
      "sources": [
       {
        "source": "La Vanguardia",
@@ -2358,16 +2248,23 @@
       {
        "source": "CBS News",
        "lang": "en",
-       "title": "Oregon school shooter ID'd, used shotgun bought by mother, sources say",
-       "url": "https://www.cbsnews.com/news/oregon-school-shooter-identified-silver-rail-elementary/",
-       "publishedAt": "2026-10-16T21:27:19Z"
+       "title": "Teacher and 5-year-old student killed in Oregon school shooting identified",
+       "url": "https://www.cbsnews.com/news/bend-oregon-elementary-school-shooting-victims/",
+       "publishedAt": "2026-10-16T21:33:25Z"
       },
       {
        "source": "CBS News",
        "lang": "en",
-       "title": "Teacher and 5-year-old student killed in Oregon school shooting identified",
-       "url": "https://www.cbsnews.com/news/bend-oregon-elementary-school-shooting-victims/",
-       "publishedAt": "2026-10-16T21:33:25Z"
+       "title": "Hero bystander, teacher praised for saving lives in school shooting",
+       "url": "https://www.cbsnews.com/news/oregon-school-shooter-bystander-identified-silver-rail-elementary/",
+       "publishedAt": "2026-10-16T21:35:20Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Oregon school shooter ID'd, used shotgun bought by mother, sources say",
+       "url": "https://www.cbsnews.com/news/oregon-school-shooter-identified-silver-rail-elementary/",
+       "publishedAt": "2026-10-16T21:37:05Z"
       }
      ],
      "id": "sucesos-1"
@@ -2613,7 +2510,7 @@
      "summaryEsSource": "Euronews Español",
      "summaryEn": "Vatican Media has released the first images of Pope Leo XIV since his hospitalisation, showing him celebrating Mass at Rome’s Gemelli Hospital as he recovers from lung cancer surgery.",
      "summaryEnSource": "Euronews",
-     "outlets": 15,
+     "outlets": 16,
      "outletNames": [
       "20minutos",
       "Al Jazeera",
@@ -2622,6 +2519,7 @@
       "Clarín",
       "DW",
       "El Confidencial",
+      "El Mundo CR",
       "El País",
       "Euronews",
       "France 24",
@@ -2636,7 +2534,7 @@
       "es"
      ],
      "firstSeen": "2026-10-15T00:34:04Z",
-     "lastSeen": "2026-10-16T20:43:09Z",
+     "lastSeen": "2026-10-16T21:35:16Z",
      "sources": [
       {
        "source": "CBS News",
@@ -2665,6 +2563,13 @@
        "title": "What the Pope said to Putin in call days after lung cancer surgery",
        "url": "https://news.sky.com/story/pope-leo-pictured-for-first-time-since-cancer-surgery-as-he-holds-mass-from-hospital-13599944",
        "publishedAt": "2026-10-16T12:22:00Z"
+      },
+      {
+       "source": "El Confidencial",
+       "lang": "es",
+       "title": "El Papa muestra \"una mejoría constante\" y recupera autonomía tras su operación de pulmón",
+       "url": "https://www.elconfidencial.com/mundo/2026-10-16/papa-leon-recuperacion-pulmon-1tps_4446622/",
+       "publishedAt": "2026-10-16T12:42:00Z"
       },
       {
        "source": "La Vanguardia",
@@ -2812,6 +2717,13 @@
        "title": "Salud del Papa León XIV: cómo sigue su recuperación y qué se sabe de la visita a la Argentina",
        "url": "https://www.lanacion.com.ar/el-mundo/salud-del-papa-leon-xiv-como-sigue-su-recuperacion-y-que-se-sabe-de-la-visita-a-la-argentina-nid15102026/",
        "publishedAt": "2026-10-16T20:43:09Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "El papa León XIV reaparece y muestra una “mejoría constante” tras su operación de pulmón",
+       "url": "https://elmundo.cr/mundo/el-papa-leon-xiv-reaparece-y-muestra-una-mejoria-constante-tras-su-operacion-de-pulmon/",
+       "publishedAt": "2026-10-16T21:35:16Z"
       }
      ],
      "id": "mundo-1"
@@ -3558,9 +3470,16 @@
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-16T01:21:40Z",
+     "firstSeen": "2026-10-15T21:13:02Z",
      "lastSeen": "2026-10-16T20:36:41Z",
      "sources": [
+      {
+       "source": "El Financiero (México)",
+       "lang": "es",
+       "title": "¿Hay ‘chance’ de que tormenta ‘Simón’ y huracán ‘Trudy’ se fusionen frente a México? Esto dijo el SMN",
+       "url": "https://www.elfinanciero.com.mx/nacional/2026/10/15/hay-chance-de-que-simon-y-trudy-se-fusionen-frente-a-mexico-esto-dijo-el-smn/",
+       "publishedAt": "2026-10-15T21:13:02Z"
+      },
       {
        "source": "El Financiero (México)",
        "lang": "es",
@@ -3659,7 +3578,7 @@
       "es"
      ],
      "firstSeen": "2026-10-15T15:51:09Z",
-     "lastSeen": "2026-10-16T16:34:41Z",
+     "lastSeen": "2026-10-16T19:17:28Z",
      "sources": [
       {
        "source": "CRHoy",
@@ -3723,6 +3642,13 @@
        "title": "Costa Rica extradita a tres mexicanos requeridos por narcotráfico en Estados Unidos",
        "url": "https://www.monumental.co.cr/2026/10/16/costa-rica-extradita-a-tres-mexicanos-requeridos-por-narcotrafico-en-estados-unidos/",
        "publishedAt": "2026-10-16T16:34:41Z"
+      },
+      {
+       "source": "Repretel (Noticias Repretel)",
+       "lang": "es",
+       "title": "Tres mexicanos vinculados al Cártel de Sinaloa fueron extraditados",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMnozZzhtb1RycmQ4d1Vpd1lHeld5VFJKdjFFTDdyZzJ4Tk5mMTZESFlNZ1htQ3AySEMxckRHalo4ejJrQ3RLR0NSeHFoazdmVTVvTDktTFJBa1QxbXhSaWZpSmExcEJzbDlwVnNpdktDQUVtNXI0Y1pqenF5Z0paV184T3dITEpBQ05XN1o2Vng1ZDFxNVI4c1RMR09WNnlrUWc?oc=5",
+       "publishedAt": "2026-10-16T19:17:28Z"
       }
      ],
      "region": "latam",
@@ -3745,7 +3671,7 @@
      "summaryEsSource": "Prensa Libre",
      "summaryEn": "Rewritten indictment accuses ex-Venezuela president and wife Cilia Flores of leading campaign of torture Nicolás Maduro insisted on Thursday during an appearance in a New York court that torture allegations in a rewritten drug trafficking indictment against the deposed Venezuelan president and his wife were “false accusations”. Maduro, shackled at the ankles, was brought to court to face the new…",
      "summaryEnSource": "The Guardian",
-     "outlets": 13,
+     "outlets": 12,
      "outletNames": [
       "14ymedio (Cuba)",
       "BBC",
@@ -3758,7 +3684,6 @@
       "La Jornada",
       "La Prensa (Panamá)",
       "Prensa Libre",
-      "RTÉ",
       "Sky News",
       "The Guardian"
      ],
@@ -3817,13 +3742,6 @@
        "title": "Aplazan para el 14 de junio de 2027 el juicio contra Nicolás Maduro y Cilia Flores",
        "url": "https://www.elnacional.com/2026/10/aplazan-para-el-14-de-junio-de-2027-el-juicio-contra-nicolas-maduro-y-cilia-flores/",
        "publishedAt": "2026-10-15T17:24:53Z"
-      },
-      {
-       "source": "RTÉ",
-       "lang": "en",
-       "title": "Maduro and wife plead not guilty to US torture charges",
-       "url": "https://www.rte.ie/news/world/2026/1015/1595562-maduro-torture-charges/",
-       "publishedAt": "2026-10-15T17:27:17Z"
       },
       {
        "source": "El Nacional (Venezuela)",
@@ -4004,15 +3922,14 @@
      "summaryEsSource": "Expansión",
      "summaryEn": null,
      "summaryEnSource": null,
-     "outlets": 7,
+     "outlets": 6,
      "outletNames": [
       "20minutos",
       "BBC Mundo",
       "DW",
       "El Nacional (Venezuela)",
       "Euronews",
-      "Expansión",
-      "Proceso Digital (Honduras)"
+      "Expansión"
      ],
      "languages": [
       "es"
@@ -4026,13 +3943,6 @@
        "title": "Isabel Allende, la escritora que convirtió su vida y memoria en literatura universal",
        "url": "https://www.20minutos.es/libros/isabel-allende-escritora-que-convirtio-su-vida-memoria-literatura-universal_7049301_0.html",
        "publishedAt": "2026-10-15T21:01:18Z"
-      },
-      {
-       "source": "Proceso Digital (Honduras)",
-       "lang": "es",
-       "title": "Isabel Allende gana el Planeta dando «cierre» al universo de ‘La casa de los espíritus’",
-       "url": "https://proceso.hn/isabel-allende-gana-el-planeta-dando-cierre-al-universo-de-la-casa-de-los-espiritus/",
-       "publishedAt": "2026-10-15T21:40:40Z"
       },
       {
        "source": "DW Español",
@@ -4054,6 +3964,13 @@
        "title": "Isabel Allende gana el Planeta dando \"cierre\" al universo de 'La casa de los espíritus'",
        "url": "https://www.expansion.com/sociedad/2026/10/16/isabel-allende-gana-planeta-dando-cierre-universo-casa-espiritus.html",
        "publishedAt": "2026-10-15T22:36:30Z"
+      },
+      {
+       "source": "El Nacional (Venezuela)",
+       "lang": "es",
+       "title": "Isabel Allende: “Los tiempos son cíclicos y las dictaduras vienen y van”",
+       "url": "https://www.elnacional.com/2026/10/isabel-allende-los-tiempos-son-ciclicos-y-las-dictaduras-vienen-y-van/",
+       "publishedAt": "2026-10-16T05:05:00Z"
       },
       {
        "source": "Euronews Español",
@@ -4284,7 +4201,7 @@
      "summaryEsSource": "Euronews Español",
      "summaryEn": "The Pope spoke to Russian President Vladimir Putin on Friday and urged a truce with Ukraine as he continued his recovery from lung cancer surgery, the Vatican said.",
      "summaryEnSource": "Sky News",
-     "outlets": 33,
+     "outlets": 34,
      "outletNames": [
       "20minutos",
       "ANSA",
@@ -4298,6 +4215,7 @@
       "El Comercio (Ecuador)",
       "El Confidencial",
       "El Mundo",
+      "El Mundo CR",
       "El País",
       "El Universal (México)",
       "Euronews",
@@ -4326,7 +4244,7 @@
       "es"
      ],
      "firstSeen": "2026-10-15T00:34:04Z",
-     "lastSeen": "2026-10-16T20:43:09Z",
+     "lastSeen": "2026-10-16T21:35:16Z",
      "sources": [
       {
        "source": "CBS News",
@@ -4691,6 +4609,13 @@
        "title": "Salud del Papa León XIV: cómo sigue su recuperación y qué se sabe de la visita a la Argentina",
        "url": "https://www.lanacion.com.ar/el-mundo/salud-del-papa-leon-xiv-como-sigue-su-recuperacion-y-que-se-sabe-de-la-visita-a-la-argentina-nid15102026/",
        "publishedAt": "2026-10-16T20:43:09Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "El papa León XIV reaparece y muestra una “mejoría constante” tras su operación de pulmón",
+       "url": "https://elmundo.cr/mundo/el-papa-leon-xiv-reaparece-y-muestra-una-mejoria-constante-tras-su-operacion-de-pulmon/",
+       "publishedAt": "2026-10-16T21:35:16Z"
       }
      ],
      "region": "europa",
@@ -6533,7 +6458,7 @@
       "es"
      ],
      "firstSeen": "2026-10-15T07:10:09Z",
-     "lastSeen": "2026-10-16T20:40:12Z",
+     "lastSeen": "2026-10-16T19:08:35Z",
      "sources": [
       {
        "source": "ABC Color (Paraguay)",
@@ -6597,13 +6522,6 @@
        "title": "Colonos israelíes dan brutal paliza a una periodista de “The Washington Post” en Cisjordania ocupada",
        "url": "https://www.elfinancierocr.com/internacionales/colonos-israelies-dan-brutal-paliza-a-una/NBETIZ2HYNCKPJPEQBALPDHU2A/story/",
        "publishedAt": "2026-10-16T19:08:35Z"
-      },
-      {
-       "source": "Clarín",
-       "lang": "es",
-       "title": "Colonos israelíes agreden a fotógrafa de EEUU que cubría la violencia en Cisjordania",
-       "url": "https://www.clarin.com/estados-unidos/colonos-israelies-agreden-a-fotografa-de-eeuu-que-cubria-la-violencia-en-cisjordania_0_wUciDtogiJ.html",
-       "publishedAt": "2026-10-16T20:40:12Z"
       }
      ],
      "region": "asia",
@@ -7206,66 +7124,6 @@
      "id": "posibles-1"
     },
     {
-     "headline": "China busca limitar la exportación de tecnologías de IA en medio de la disputa con EU",
-     "headlineLang": "es",
-     "headlineEs": "China busca limitar la exportación de tecnologías de IA en medio de la disputa con EU",
-     "headlineEn": "China considers new export curbs on solar, AI, biotech",
-     "summaryEs": "El gobierno chino propone prohibir la venta al extranjero de 14 tecnologías y restringir otras 26 en sectores como inteligencia artificial, biotecnología y energía solar.",
-     "summaryEsSource": "Expansión México",
-     "summaryEn": "The draft plan, “Announcement No. 48”, proposes a complete export ban on 14 technologies and restrictions on 26 more, including next-generation solar technologies that could affect countries such as India seeking to reduce dependence on China",
-     "summaryEnSource": "The Hindu",
-     "outlets": 4,
-     "outletNames": [
-      "Breaking Belize News",
-      "El Universal (México)",
-      "Expansión México",
-      "The Hindu"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-16T12:54:33Z",
-     "lastSeen": "2026-10-16T21:00:47Z",
-     "sources": [
-      {
-       "source": "The Hindu",
-       "lang": "en",
-       "title": "China considers new export curbs on solar, AI, biotech",
-       "url": "https://www.thehindu.com/news/international/china-considers-new-export-curbs-on-solar-ai-biotech/article71591880.ece",
-       "publishedAt": "2026-10-16T12:54:33Z"
-      },
-      {
-       "source": "El Universal (México)",
-       "lang": "es",
-       "title": "China restringirá exportaciones tecnológicas, incluida la IA; el gigante asiático alega motivos de seguridad nacional",
-       "url": "https://www.eluniversal.com.mx/mundo/china-restringira-exportaciones-tecnologicas-incluida-la-ia-el-gigante-asiatico-alega-motivos-de-seguridad-nacional/",
-       "publishedAt": "2026-10-16T16:22:26Z"
-      },
-      {
-       "source": "Breaking Belize News",
-       "lang": "en",
-       "title": "International News: China proposes export restrictions on AI, Chip and Solar technologies",
-       "url": "https://www.breakingbelizenews.com/2026/10/16/international-news-china-proposes-export-restrictions-on-ai-chip-and-solar-technologies/",
-       "publishedAt": "2026-10-16T19:36:22Z"
-      },
-      {
-       "source": "Expansión México",
-       "lang": "es",
-       "title": "China busca limitar la exportación de tecnologías de IA en medio de la disputa con EU",
-       "url": "https://expansion.mx/tecnologia/2026/10/16/china-limita-exportacion-tecnologias-ia",
-       "publishedAt": "2026-10-16T21:00:47Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "asia",
-       "label": "Asia"
-      }
-     ],
-     "id": "posibles-2"
-    },
-    {
      "headline": "Colombia retira obras sobre diversidad sexual y paz de su Museo Nacional",
      "headlineLang": "es",
      "headlineEs": "Colombia retira obras sobre diversidad sexual y paz de su Museo Nacional",
@@ -7326,7 +7184,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-3"
+     "id": "posibles-2"
     },
     {
      "headline": "MEP deja sin efecto licencia sindical del SEC para el 20 de octubre",
@@ -7385,7 +7243,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-4"
+     "id": "posibles-3"
     },
     {
      "headline": "Kast llega a La Paz para abrir una nueva etapa en relación bilateral entre Bolivia y Chile",
@@ -7462,7 +7320,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-5"
+     "id": "posibles-4"
     },
     {
      "headline": "Los Mossos investigan la muerte a tiros de un hombre en el interior de un local de tatuajes en Badalona",
@@ -7521,7 +7379,7 @@
        "label": "Sucesos"
       }
      ],
-     "id": "posibles-6"
+     "id": "posibles-5"
     },
     {
      "headline": "Encuentran cuerpo de hombre que cayó a río en Cartago",
@@ -7587,7 +7445,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-7"
+     "id": "posibles-6"
     },
     {
      "headline": "Perú: Keiko Fujimori advierte que Perú enfrentará un fenómeno El Niño \"realmente dramático\"",
@@ -7646,7 +7504,7 @@
        "label": "Sudamérica"
       }
      ],
-     "id": "posibles-8"
+     "id": "posibles-7"
     },
     {
      "headline": "Los maquinistas convocan una huelga en Renfe de 24 horas el 29 de octubre",
@@ -7713,7 +7571,7 @@
        "label": "Mundo de finanzas"
       }
      ],
-     "id": "posibles-9"
+     "id": "posibles-8"
     },
     {
      "headline": "TEAM TRAGEDY: Lions lock Hyron Andrews has died from suspected cardiac arrest — condolences pour in",
@@ -7772,7 +7630,7 @@
        "label": "África"
       }
      ],
-     "id": "posibles-10"
+     "id": "posibles-9"
     },
     {
      "headline": "Trump despide a la portavoz de la Casa Blanca cinco días después de nombrarla",
@@ -7831,7 +7689,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-11"
+     "id": "posibles-10"
     },
     {
      "headline": "Estos son los acuerdos territoriales que ya están cerrados en la izquierda alternativa para las elecciones del 29-N",
@@ -7901,7 +7759,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-12"
+     "id": "posibles-11"
     },
     {
      "headline": "Ramaphosa lifts suspension of Saps top cop Fannie Masemola",
@@ -7967,7 +7825,7 @@
        "label": "África"
       }
      ],
-     "id": "posibles-13"
+     "id": "posibles-12"
     },
     {
      "headline": "Lluvias afectan comunidades de la Zona Norte",
@@ -8033,7 +7891,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-14"
+     "id": "posibles-13"
     },
     {
      "headline": "(VIDEO) Sospechosa de asesinar a estadounidense en Playas del Coco fue detenida",
@@ -8149,7 +8007,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-15"
+     "id": "posibles-14"
     },
     {
      "headline": "Brasil aprueba reducir la semana laboral de seis a cinco días",
@@ -8213,6 +8071,65 @@
       {
        "id": "sudamerica",
        "label": "Sudamérica"
+      }
+     ],
+     "id": "posibles-15"
+    },
+    {
+     "headline": "Costa Rica inaugura megacárcel modelo Bukele",
+     "headlineLang": "es",
+     "headlineEs": "Costa Rica inaugura megacárcel modelo Bukele",
+     "headlineEn": null,
+     "summaryEs": "La presidenta de Costa Rica, Laura Fernández, inauguró el miércoles 14 de octubre de 2026 una megacárcel destinada a los presos de mayor peligrosidad e inspirada en el modelo penitenciario impulsado por su homólogo de El Salvador, Nayib Bukele, con la que busca convertir al país en un “referente mundial en seguridad penitenciaria”. El Centro […] La entrada Costa Rica inaugura megacárcel modelo…",
+     "summaryEsSource": "Confidencial (Nicaragua)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 4,
+     "outletNames": [
+      "Confidencial (Nicaragua)",
+      "Divergentes",
+      "El Comercio (Perú)",
+      "Teletica (Telenoticias)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-14T21:54:38Z",
+     "lastSeen": "2026-10-16T16:02:48Z",
+     "sources": [
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Costa Rica abre las puertas de su cárcel inspirada en el modelo de Nayib Bukele",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUlZvNTlJNFZQSzhXZmpIZ29rNS13bnJ0SnJOMjNUTGVwUEthT1BqbmNVZjZPUXNYSVBzREF1R1d4bkhXS0xscmlGalladWMzcGdndU1pYWdkNXRRajREak1JT0R0Mk9RMzIyZFQ0NXY5SDRSSmVfYmMtWTR4QUNMS1c2aXhvZmZEUlViTUo0VThBYjNJYnhsbWdIZWFUaVNMQXJHdHMyLU44Y3JDdzdPb1F5OUxyOVZRdkVBbg?oc=5",
+       "publishedAt": "2026-10-14T21:54:38Z"
+      },
+      {
+       "source": "Divergentes",
+       "lang": "es",
+       "title": "Creadores de contenido y muchas amenazas políticas en la inauguración de la megacárcel de Costa Rica inspirada en el modelo Bukele",
+       "url": "https://www.divergentes.com/megacarcel-cacco-costa-rica-laura-fernandez-modelo-bukele/",
+       "publishedAt": "2026-10-14T23:56:26Z"
+      },
+      {
+       "source": "Confidencial (Nicaragua)",
+       "lang": "es",
+       "title": "Costa Rica inaugura megacárcel modelo Bukele",
+       "url": "https://confidencial.digital/mundo/costa-rica-inaugura-megacarcel-modelo-bukele/",
+       "publishedAt": "2026-10-15T14:10:00Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Costa Rica presenta su megacárcel al estilo Bukele: cómo es el centro de detención inspirado en los de El Salvador",
+       "url": "https://elcomercio.pe/mundo/latinoamerica/costa-rica-presenta-su-megacarcel-al-estilo-bukele-como-es-el-centro-de-detencion-inspirado-en-los-de-el-salvador-noticia/",
+       "publishedAt": "2026-10-16T16:02:48Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
       }
      ],
      "id": "posibles-16"
@@ -8464,72 +8381,6 @@
      "id": "posibles-20"
     },
     {
-     "headline": "EU sanciona al Banco Internacional de Comercio de Cuba por colaborar con Irán",
-     "headlineLang": "es",
-     "headlineEs": "EU sanciona al Banco Internacional de Comercio de Cuba por colaborar con Irán",
-     "headlineEn": null,
-     "summaryEs": "Las sanciones de EU contra Cuba abarcan desde hace años medidas económicas, comerciales, financieras y migratorias.",
-     "summaryEsSource": "El Financiero (México)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "14ymedio (Cuba)",
-      "El Financiero (México)",
-      "El Nacional (Venezuela)",
-      "El País"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T20:28:55Z",
-     "lastSeen": "2026-10-16T10:31:32Z",
-     "sources": [
-      {
-       "source": "El Nacional (Venezuela)",
-       "lang": "es",
-       "title": "EE UU sancionó al Banco Internacional de Comercio de Cuba por colaborar con banco iraní",
-       "url": "https://www.elnacional.com/2026/10/ee-uu-sanciono-al-banco-internacional-de-comercio-de-cuba-por-colaborar-con-banco-irani/",
-       "publishedAt": "2026-10-15T20:28:55Z"
-      },
-      {
-       "source": "El Financiero (México)",
-       "lang": "es",
-       "title": "EU sanciona al Banco Internacional de Comercio de Cuba por colaborar con Irán",
-       "url": "https://www.elfinanciero.com.mx/mundo/2026/10/15/eu-sanciona-al-banco-internacional-de-comercio-de-cuba-por-colaborar-con-iran/",
-       "publishedAt": "2026-10-15T21:01:53Z"
-      },
-      {
-       "source": "14ymedio (Cuba)",
-       "lang": "es",
-       "title": "EE UU sanciona por sus vínculos con Irán al banco cubano que protagonizó el ‘deshielo’ con Obama",
-       "url": "https://www.14ymedio.com/cuba/ee-uu-sanciona-vinculos-iran_1_1132005.html",
-       "publishedAt": "2026-10-15T21:13:16Z"
-      },
-      {
-       "source": "El País",
-       "lang": "es",
-       "title": "Estados Unidos sanciona a un banco estatal cubano por sus vínculos con uno iraní",
-       "url": "https://elpais.com/us/2026-10-15/estados-unidos-sanciona-a-un-banco-estatal-cubano-por-sus-vinculos-con-uno-irani.html",
-       "publishedAt": "2026-10-15T21:13:25Z"
-      },
-      {
-       "source": "14ymedio (Cuba)",
-       "lang": "es",
-       "title": "El régimen cubano afirma que su Banco Internacional de Comercio es \"legítimo\" tras sanción de EE UU",
-       "url": "https://www.14ymedio.com/cuba/regimen-cubano-afirma-banco-internacional_1_1132007.html",
-       "publishedAt": "2026-10-16T10:31:32Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "latam",
-       "label": "Latinoamérica"
-      }
-     ],
-     "id": "posibles-21"
-    },
-    {
      "headline": "UK threatens Eritreans with total visa ban over migrant return policy",
      "headlineLang": "en",
      "headlineEs": null,
@@ -8586,7 +8437,7 @@
        "label": "África"
       }
      ],
-     "id": "posibles-22"
+     "id": "posibles-21"
     },
     {
      "headline": "OIJ busca en finca de Guácimo los cuerpos de 10 personas desaparecidas",
@@ -8673,7 +8524,109 @@
        "label": "Costa Rica"
       }
      ],
+     "id": "posibles-22"
+    },
+    {
+     "headline": "Japan mistakenly issues 9.9-magnitude quake alert after 6.9 tremor near Russia, retracts it within minutes",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Japan mistakenly issues 9.9-magnitude quake alert after 6.9 tremor near Russia, retracts it within minutes",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "The false warning was issued on Friday afternoon (local time), and had forecast strong shaking across northern, eastern and central Japan.",
+     "summaryEnSource": "Hindustan Times",
+     "outlets": 3,
+     "outletNames": [
+      "Hindustan Times",
+      "The New York Times",
+      "The Straits Times"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T05:06:23Z",
+     "lastSeen": "2026-10-16T21:35:30Z",
+     "sources": [
+      {
+       "source": "Hindustan Times",
+       "lang": "en",
+       "title": "Japan mistakenly issues 9.9-magnitude quake alert after 6.9 tremor near Russia, retracts it within minutes",
+       "url": "https://www.hindustantimes.com/world-news/japan-mistakenly-issues-9-9-magnitude-quake-alert-after-6-9-tremor-near-russia-later-withdraws-warning-101792125223053.html",
+       "publishedAt": "2026-10-16T05:06:23Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Japan Mistakenly Issues Warning for Strongest Ever Earthquake",
+       "url": "https://www.nytimes.com/2026/10/16/world/asia/japan-earthquake-warning-false-alarm.html",
+       "publishedAt": "2026-10-16T15:01:28Z"
+      },
+      {
+       "source": "The Straits Times",
+       "lang": "en",
+       "title": "Japan’s weather agency cancels mistakenly issued 9.9-magnitude quake alert, transit disrupted",
+       "url": "https://www.straitstimes.com/asia/east-asia/japans-weather-agency-cancels-mistakenly-issued-9-9-magnitude-quake-alert-transit-disrupted",
+       "publishedAt": "2026-10-16T21:35:30Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "asia",
+       "label": "Asia"
+      }
+     ],
      "id": "posibles-23"
+    },
+    {
+     "headline": "Gobierno de México anuncia la apertura de más vuelos hacia EEUU desde el AICM y AIFA",
+     "headlineLang": "es",
+     "headlineEs": "Gobierno de México anuncia la apertura de más vuelos hacia EEUU desde el AICM y AIFA",
+     "headlineEn": null,
+     "summaryEs": "Las autoridades mexicanas destacaron que sus homólogos estadounidenses reconocieron el cumplimiento de los compromisos",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "El Financiero (México)",
+      "El Universal (México)",
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T20:54:09Z",
+     "lastSeen": "2026-10-16T21:34:00Z",
+     "sources": [
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "EU revoca restricciones a aerolíneas mexicanas; abrirá nuevos vuelos desde AICM y AIFA",
+       "url": "https://www.eluniversal.com.mx/nacion/eu-revoca-restricciones-a-aerolineas-mexicanas-abrira-nuevos-vuelos-desde-aicm-y-aifa/",
+       "publishedAt": "2026-10-16T20:54:09Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Gobierno de México anuncia la apertura de más vuelos hacia EEUU desde el AICM y AIFA",
+       "url": "https://www.infobae.com/mexico/2026/10/16/gobierno-de-mexico-anuncia-la-apertura-de-mas-vuelos-hacia-eeuu-desde-el-aicm-y-aifa/",
+       "publishedAt": "2026-10-16T21:30:09Z"
+      },
+      {
+       "source": "El Financiero (México)",
+       "lang": "es",
+       "title": "Trump quita veto al AICM y AIFA: Podrán abrir nuevas rutas aéreas a Estados Unidos",
+       "url": "https://www.elfinanciero.com.mx/empresas/2026/10/16/trump-quita-veto-al-aicm-y-aifa-podran-abrir-nuevas-rutas-aereas-a-estados-unidos/",
+       "publishedAt": "2026-10-16T21:34:00Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "latam",
+       "label": "Latinoamérica"
+      }
+     ],
+     "id": "posibles-24"
     },
     {
      "headline": "Trump prohíbe drones en la frontera con México; derribarán cualquier unidad de los cárteles con láseres",
@@ -8731,7 +8684,58 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-24"
+     "id": "posibles-25"
+    },
+    {
+     "headline": "Wagner Moura señala a Flávio Bolsonaro y a «patriotas sumisos» que entregan Brasil a EEUU",
+     "headlineLang": "es",
+     "headlineEs": "Wagner Moura señala a Flávio Bolsonaro y a «patriotas sumisos» que entregan Brasil a EEUU",
+     "headlineEn": null,
+     "summaryEs": "El actor brasileño Wagner Moura, conocido por su papel en la serie 'Narcos', denunció en un video en redes al candidato opositor Flávio Bolsonaro y a los \"patriotas sumisos\" que entregan Brasil a los Estados Unidos del presidente Donald Trump. La entrada Wagner Moura señala a Flávio Bolsonaro y a «patriotas sumisos» que entregan Brasil a EEUU se publicó primero en Proceso Digital .",
+     "summaryEsSource": "Proceso Digital (Honduras)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "Clarín",
+      "Proceso Digital (Honduras)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T19:26:09Z",
+     "lastSeen": "2026-10-16T21:21:31Z",
+     "sources": [
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Wagner Moura señala a Flávio Bolsonaro y a \"patriotas sumisos\" que entregan Brasil a EEUU",
+       "url": "https://www.abc.com.py/internacionales/2026/10/16/wagner-moura-senala-a-flavio-bolsonaro-y-a-patriotas-sumisos-que-entregan-brasil-a-eeuu/",
+       "publishedAt": "2026-10-16T19:26:09Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Wagner Moura señala a Flávio Bolsonaro y a «patriotas sumisos» que entregan Brasil a EEUU",
+       "url": "https://proceso.hn/wagner-moura-senala-a-flavio-bolsonaro-y-a-patriotas-sumisos-que-entregan-brasil-a-eeuu/",
+       "publishedAt": "2026-10-16T20:16:49Z"
+      },
+      {
+       "source": "Clarín",
+       "lang": "es",
+       "title": "El actor nominado al Oscar Wagner Moura se mete en la campaña de Lula: acusa a Flávio Bolsonaro de entregarle Brasil a Donald Trump y critica a Milei",
+       "url": "https://www.clarin.com/mundo/actor-nominado-oscar-wagner-moura-mete-campana-lula-acusa-flavio-bolsonaro-entregarle-brasil-donald-trump-critica-milei_0_K1Ba7o014I.html",
+       "publishedAt": "2026-10-16T21:21:31Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "sudamerica",
+       "label": "Sudamérica"
+      }
+     ],
+     "id": "posibles-26"
     },
     {
      "headline": "Golpe a Los Chapitos: Detienen, con apoyo de EU, a 4 traficantes de armas del Cártel de Sinaloa",
@@ -8782,7 +8786,7 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-25"
+     "id": "posibles-27"
     },
     {
      "headline": "El brent roza los 110 dólares y el Texas supera los 101 ante la tensión en Oriente Medio",
@@ -8834,7 +8838,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-26"
+     "id": "posibles-28"
     },
     {
      "headline": "Elon Musk habría propuesto a Trump limitar conexión de Starlink para Ucrania, reporta diario británico",
@@ -8886,7 +8890,7 @@
        "label": "Europa"
       }
      ],
-     "id": "posibles-27"
+     "id": "posibles-29"
     },
     {
      "headline": "Nigeria: Aircraft Loses Door Mid-Air, Makes Emergency Landing in Abuja",
@@ -8944,7 +8948,7 @@
        "label": "África"
       }
      ],
-     "id": "posibles-28"
+     "id": "posibles-30"
     },
     {
      "headline": "'Finish what we started': After student protests, France braces for return of the Yellow Vests",
@@ -8999,7 +9003,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-29"
+     "id": "posibles-31"
     },
     {
      "headline": "Arabia Saudita: los ataques hutíes amenazan el liderazgo regional de Riad",
@@ -9058,7 +9062,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-30"
+     "id": "posibles-32"
     },
     {
      "headline": "US Coast Guard rescues 16 people and searches for more after May Day call off Mexico's Baja Coast",
@@ -9109,7 +9113,7 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-31"
+     "id": "posibles-33"
     },
     {
      "headline": "¿Quién quedó como presidente del Banguat tras la suspensión del nombramiento de Jonathan Menkos?",
@@ -9160,7 +9164,7 @@
        "label": "Centroamérica"
       }
      ],
-     "id": "posibles-32"
+     "id": "posibles-34"
     },
     {
      "headline": "Circle Says 59 Cents of Each Revenue Dollar Went to USDC Partners and Transaction Costs",
@@ -9211,7 +9215,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-33"
+     "id": "posibles-35"
     },
     {
      "headline": "Letters with 'suspicious substances' sent to US senators and election offices",
@@ -9262,7 +9266,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-34"
+     "id": "posibles-36"
     },
     {
      "headline": "Con USDC como token significativo la ley MiCA premia al dólar",
@@ -9314,7 +9318,59 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-35"
+     "id": "posibles-37"
+    },
+    {
+     "headline": "China restringirá exportaciones tecnológicas, incluida la IA; el gigante asiático alega motivos de seguridad nacional",
+     "headlineLang": "es",
+     "headlineEs": "China restringirá exportaciones tecnológicas, incluida la IA; el gigante asiático alega motivos de seguridad nacional",
+     "headlineEn": "International News: China proposes export restrictions on AI, Chip and Solar technologies",
+     "summaryEs": "China informó que planea restringir o prohibir las exportaciones de 40 tecnologías que incluyen la inteligencia artificial , los chips y la energía solar, a medida que se intensifica su carrera tecnológica con países como Estados Unidos. El Ministerio de Comercio y el Ministerio de Ciencia y Tecnología publicaron conjuntamente un borrador con las actualizaciones propuestas para el catálogo de…",
+     "summaryEsSource": "El Universal (México)",
+     "summaryEn": "By Zoila Palma: Today, China announced plans to restrict or ban exports of 40 technologies spanning artificial intelligence (AI), semiconductor chips, solar power and biomedicine, citing national security concerns as competition with countries including the United States intensifies. The country’s Ministry of Commerce and Ministry of Science and Technology jointly released a draft proposal…",
+     "summaryEnSource": "Breaking Belize News",
+     "outlets": 3,
+     "outletNames": [
+      "Breaking Belize News",
+      "El Universal (México)",
+      "The Hindu"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-16T12:54:33Z",
+     "lastSeen": "2026-10-16T19:36:22Z",
+     "sources": [
+      {
+       "source": "The Hindu",
+       "lang": "en",
+       "title": "China considers new export curbs on solar, AI, biotech",
+       "url": "https://www.thehindu.com/news/international/china-considers-new-export-curbs-on-solar-ai-biotech/article71591880.ece",
+       "publishedAt": "2026-10-16T12:54:33Z"
+      },
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "China restringirá exportaciones tecnológicas, incluida la IA; el gigante asiático alega motivos de seguridad nacional",
+       "url": "https://www.eluniversal.com.mx/mundo/china-restringira-exportaciones-tecnologicas-incluida-la-ia-el-gigante-asiatico-alega-motivos-de-seguridad-nacional/",
+       "publishedAt": "2026-10-16T16:22:26Z"
+      },
+      {
+       "source": "Breaking Belize News",
+       "lang": "en",
+       "title": "International News: China proposes export restrictions on AI, Chip and Solar technologies",
+       "url": "https://www.breakingbelizenews.com/2026/10/16/international-news-china-proposes-export-restrictions-on-ai-chip-and-solar-technologies/",
+       "publishedAt": "2026-10-16T19:36:22Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "asia",
+       "label": "Asia"
+      }
+     ],
+     "id": "posibles-38"
     },
     {
      "headline": "La opositora cubana Rosa María Payá, la activista iraní Masih Alinejad y Yulia Navalnaya, viuda de Navalny, Premio FAES de la Libertad",
@@ -9369,7 +9425,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-36"
+     "id": "posibles-39"
     },
     {
      "headline": "Presupuesto, Ucrania, inmigración: 5 claves de la cumbre de líderes de la UE",
@@ -9428,7 +9484,7 @@
        "label": "Europa"
       }
      ],
-     "id": "posibles-37"
+     "id": "posibles-40"
     },
     {
      "headline": "UK PM adviser’s wife expresses ‘support’ for Palestine Action",
@@ -9483,7 +9539,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-38"
+     "id": "posibles-41"
     },
     {
      "headline": "Detienen en Querétaro a \"Trébol\", acusado de traficar cocaína y metanfetamina a EU; es requerido por Tribunal Federal de Texas",
@@ -9534,65 +9590,7 @@
        "label": "Europa"
       }
      ],
-     "id": "posibles-39"
-    },
-    {
-     "headline": "Universidades públicas convocan a “gran marcha nacional” para el próximo martes",
-     "headlineLang": "es",
-     "headlineEs": "Universidades públicas convocan a “gran marcha nacional” para el próximo martes",
-     "headlineEn": null,
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "CRHoy",
-      "La Teja",
-      "Teletica (Telenoticias)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T10:24:22Z",
-     "lastSeen": "2026-10-16T18:16:20Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Organizaciones convocan a marcha contra el Acuerdo Transpacífico",
-       "url": "https://crhoy.com/nacionales/organizaciones-convocan-a-marcha-contra-el-acuerdo-transpacifico/",
-       "publishedAt": "2026-10-16T10:24:22Z"
-      },
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Universidades públicas convocan a marcha nacional contra recortes a la educación",
-       "url": "https://crhoy.com/nacionales/universidades-publicas-convocan-a-marcha-nacional-contra-recortes-a-la-educacion/",
-       "publishedAt": "2026-10-16T11:20:02Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Universidades públicas convocan a “gran marcha nacional” para el próximo martes",
-       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYVpOelBVYjZScUxfVnNoeWFsRy03RVhhWUZKSk5aWUtFSXZMZ2ItSDdzMTE0bEV6QUZ5T0o5NGRJdnNxeHVlT3VJQW9jVVlnWnBFeC1EOUxPN2F5LVhndlRpMV9wd2xzS1VnY0VadUxNcGNrdlNxMUdXSDNrdVRuaWJaTWZKcWQ1WmlTamZpbzRjY1Nic3J2U1E5TmRSampmQkUxcDRLUW5uZDRGc3RYTlhfc3d0TU5ra2VFaUI0bw?oc=5",
-       "publishedAt": "2026-10-16T17:40:01Z"
-      },
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "¡Marcha Nacional! Universidades convocan a una protesta por recortes en el presupuesto",
-       "url": "https://www.lateja.cr/nacional/marcha-nacional-universidades-convocan-a-una/RHBPOR5TK5HTDEQZQHC4SSVQE4/story/",
-       "publishedAt": "2026-10-16T18:16:20Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      }
-     ],
-     "id": "posibles-40"
+     "id": "posibles-42"
     },
     {
      "headline": "Bitcoin Treasury Giant Strategy Faces Index Removal Under Finalized MSCI Rules",
@@ -9643,7 +9641,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-41"
+     "id": "posibles-43"
     },
     {
      "headline": "Pakistan to chair IMF, World Bank boards next year for first time since 1953",
@@ -9701,7 +9699,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-42"
+     "id": "posibles-44"
     },
     {
      "headline": "Detenidos 2 jóvenes en Málaga y Murcia por falsas amenazas de bomba en aeropuertos españoles",
@@ -9750,115 +9748,6 @@
       {
        "id": "sucesos",
        "label": "Sucesos"
-      }
-     ],
-     "id": "posibles-43"
-    },
-    {
-     "headline": "El fascinante descubrimiento de un nenúfar gigante en Sudamérica que se ve desde el espacio",
-     "headlineLang": "es",
-     "headlineEs": "El fascinante descubrimiento de un nenúfar gigante en Sudamérica que se ve desde el espacio",
-     "headlineEn": null,
-     "summaryEs": "Una foto fortuita en Instagram desencadenó la búsqueda y el hallazgo de una de las plantas más cautivadoras que existen.",
-     "summaryEsSource": "La Prensa (Panamá)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "BBC Mundo",
-      "El Observador",
-      "La Prensa (Panamá)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T12:14:09Z",
-     "lastSeen": "2026-10-16T17:25:21Z",
-     "sources": [
-      {
-       "source": "BBC Mundo",
-       "lang": "es",
-       "title": "\"Victoria colombiana\": el fascinante descubrimiento de un nenúfar gigante en Sudamérica que se ve desde el espacio",
-       "url": "https://www.bbc.com/mundo/articles/c8zxlydqxy67o",
-       "publishedAt": "2026-10-16T12:14:09Z"
-      },
-      {
-       "source": "El Observador",
-       "lang": "es",
-       "title": "El fascinante descubrimiento de un nenúfar gigante en Suramérica que se ve desde el espacio",
-       "url": "https://observador.cr/el-fascinante-descubrimiento-de-un-nenufar-gigante-en-suramerica-que-se-ve-desde-el-espacio/",
-       "publishedAt": "2026-10-16T17:25:00Z"
-      },
-      {
-       "source": "La Prensa (Panamá)",
-       "lang": "es",
-       "title": "El fascinante descubrimiento de un nenúfar gigante en Sudamérica que se ve desde el espacio",
-       "url": "https://www.prensa.com/vivir/el-fascinante-descubrimiento-de-un-nenufar-gigante-en-sudamerica-que-se-ve-desde-el-espacio/",
-       "publishedAt": "2026-10-16T17:25:21Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "sudamerica",
-       "label": "Sudamérica"
-      }
-     ],
-     "id": "posibles-44"
-    },
-    {
-     "headline": "Mansión del ‘Negro’ Durazo será sede de la Universidad Rosario Castellanos: ¿Qué carreras habrá?",
-     "headlineLang": "es",
-     "headlineEs": "Mansión del ‘Negro’ Durazo será sede de la Universidad Rosario Castellanos: ¿Qué carreras habrá?",
-     "headlineEn": null,
-     "summaryEs": "La antigua mansión de ‘El Negro’ Durazo se convertirá en un plantel de la Universidad Rosario Castellanos en Tlalpan.",
-     "summaryEsSource": "El Financiero (México)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "El Financiero (México)",
-      "El Universal (México)",
-      "Infobae"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T14:18:41Z",
-     "lastSeen": "2026-10-16T17:24:28Z",
-     "sources": [
-      {
-       "source": "El Universal (México)",
-       "lang": "es",
-       "title": "Sheinbaum anuncia nueva Universidad Rosario Castellanos en antigua casa de \"El Negro\" Durazo; se ubicará en Tlalpan",
-       "url": "https://www.eluniversal.com.mx/nacion/sheinbaum-anuncia-nueva-universidad-rosario-castellanos-en-antigua-casa-de-el-negro-durazo-se-ubicara-en-tlalpan/",
-       "publishedAt": "2026-10-16T14:18:41Z"
-      },
-      {
-       "source": "El Universal (México)",
-       "lang": "es",
-       "title": "¿Qué licenciaturas impartirán en la nueva sede de la Rosario Castellanos?; prevén apertura para el 2027",
-       "url": "https://www.eluniversal.com.mx/nacion/que-licenciaturas-impartiran-en-la-nueva-sede-de-la-rosario-castellanos-preven-apertura-para-el-2027/",
-       "publishedAt": "2026-10-16T14:44:17Z"
-      },
-      {
-       "source": "El Financiero (México)",
-       "lang": "es",
-       "title": "Mansión del ‘Negro’ Durazo será sede de la Universidad Rosario Castellanos: ¿Qué carreras habrá?",
-       "url": "https://www.elfinanciero.com.mx/nacional/2026/10/16/mansion-del-negro-durazo-sera-sede-de-la-universidad-rosario-castellanos-que-carreras-habra/",
-       "publishedAt": "2026-10-16T16:17:35Z"
-      },
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "“De monumento a la corrupción a universidad”: Sheinbaum anuncia sede de la Rosario Castellanos en mansión del ‘Negro Durazo’ en CDMX",
-       "url": "https://www.infobae.com/mexico/2026/10/16/de-monumento-a-la-corrupcion-a-universidad-sheinbaum-anuncia-sede-de-la-rosario-castellanos-en-mansion-del-negro-durazo-en-cdmx/",
-       "publishedAt": "2026-10-16T17:24:28Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "latam",
-       "label": "Latinoamérica"
       }
      ],
      "id": "posibles-45"
@@ -10713,8 +10602,8 @@
    "source": "El País",
    "lang": "es",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
-   "itemsInFeed": 120,
-   "kept": 54,
+   "itemsInFeed": 119,
+   "kept": 55,
    "newest": "2026-10-16T20:29:18Z"
   },
   {
@@ -10741,7 +10630,7 @@
    "lang": "es",
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/sociedad/portada",
    "itemsInFeed": 37,
-   "kept": 14,
+   "kept": 13,
    "newest": "2026-10-16T18:20:48Z"
   },
   {
@@ -10895,7 +10784,7 @@
    "url": "https://feeds.bloomberg.com/politics/news.rss",
    "itemsInFeed": 20,
    "kept": 10,
-   "newest": "2026-10-16T19:59:55Z"
+   "newest": "2026-10-16T21:30:00Z"
   },
   {
    "id": "bbg-econ",
@@ -11101,8 +10990,8 @@
    "lang": "en",
    "url": "https://www.aljazeera.com/xml/rss/all.xml",
    "itemsInFeed": 25,
-   "kept": 12,
-   "newest": "2026-10-16T21:08:50Z"
+   "kept": 13,
+   "newest": "2026-10-16T20:07:25Z"
   },
   {
    "id": "cbs-world",
@@ -11120,7 +11009,7 @@
    "url": "https://www.cbsnews.com/latest/rss/main",
    "itemsInFeed": 30,
    "kept": 17,
-   "newest": "2026-10-16T21:33:25Z"
+   "newest": "2026-10-16T21:37:05Z"
   },
   {
    "id": "sky-world",
@@ -11281,7 +11170,7 @@
    "lang": "es",
    "url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
    "itemsInFeed": 30,
-   "kept": 10,
+   "kept": 9,
    "newest": "2026-10-16T12:00:00Z"
   },
   {
@@ -11435,7 +11324,7 @@
    "url": "https://www.elmundo.cr/feed/",
    "itemsInFeed": 10,
    "kept": 9,
-   "newest": "2026-10-16T21:33:00Z"
+   "newest": "2026-10-16T21:35:16Z"
   },
   {
    "id": "monumental",
@@ -11918,87 +11807,9 @@
    ],
    [
     "descartada",
-    "science",
-    "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own gene",
-    "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
-   ],
-   [
-    "descartada",
-    "science",
-    "Brain scans of 8,783 healthy Canadians aged 35-69 found people eating the most ultra-processed food (chips, soda, sugary",
-    "https://www.earth.com/lifestyle/ultra-processed-foods-may-affect-the-brain-long-before-symptoms-appear/"
-   ],
-   [
-    "descartada",
-    "science",
-    "A new long-term study has linked late-night eating with a significantly higher risk of developing cirrhosis and metaboli",
-    "https://www.sciencealert.com/one-common-eating-habit-is-linked-to-higher-risk-of-2-liver-diseases"
-   ],
-   [
-    "descartada",
-    "science",
-    "Analysis of Nazi Germany’s final reactor experiment finds it needed roughly twice the uranium and more than twice the he",
-    "https://academic.oup.com/pnasnexus/article/5/9/pgag282/8836799"
-   ],
-   [
-    "descartada",
-    "science",
-    "Caffeine Consumption and Adolescent Mental Health: Higher total caffeine intake was associated with lower total cortical",
-    "https://www.sciencedirect.com/science/article/pii/S245190222600282X?via%3Dihub="
-   ],
-   [
-    "descartada",
-    "science",
-    "Citations to retracted scientific papers on Wikipedia last on average 5.8 years before they are removed or marked as ret",
-    "https://dl.acm.org/doi/10.1145/3817014"
-   ],
-   [
-    "descartada",
-    "science",
-    "Large study finds no link between ultra-processed food and colorectal cancer",
-    "https://doi.org/10.1371/journal.pmed.1005251"
-   ],
-   [
-    "descartada",
-    "science",
-    "Body data and an app could provide a 24-hour warning for headaches: AI models analyzing heart rate, skin temperature and",
-    "https://norwegianscitechnews.com/2026/10/body-data-could-provide-a-24-hour-warning-for-headaches/"
-   ],
-   [
-    "descartada",
-    "science",
-    "The share of US adults reporting no chronic disease shrank by nearly 1% a year from 1997 to 2018, and death rates stalle",
-    "https://academic.oup.com/ije/article/55/5/dyag217/8907439"
-   ],
-   [
-    "descartada",
-    "science",
-    "A field study of 10 wheat cultivars found that elevated atmospheric CO₂ reduced grain protein content by 1.9–10.3% in ni",
-    "https://linkinghub.elsevier.com/retrieve/pii/S0308814626033212"
-   ],
-   [
-    "descartada",
-    "science",
-    "The 'healthier-looking' food is often the higher-calorie one, study finds, and people who trust that impression make the",
-    "https://www.sciencedirect.com/science/article/pii/S095032932600282X"
-   ],
-   [
-    "descartada",
-    "science",
-    "Overcoming Detection Lag in a Cryptic Panzootic: Chytrid Invasion Linked to Historically Enigmatic Amphibian Declines in",
-    "https://onlinelibrary.wiley.com/doi/10.1111/mec.70573"
-   ],
-   [
-    "descartada",
-    "science",
-    "Research investigates the “mean-regression trap”. Authors proposed a two-step advancement in model architecture. The GCN",
-    "https://doi.org/10.18653/v1/2026.semeval-1.53"
-   ],
-   [
-    "descartada",
-    "science",
-    "The 2026 state of the climate report: challenges and opportunities",
-    "https://academic.oup.com/bioscience/advance-article/doi/10.1093/biosci/biag125/8836482?ut="
+    "HumansBeingBros",
+    "Rescued loggerhead sea turtle returns to Pacific after 7 years of care",
+    "https://www.koreatimes.co.kr/amp/southkorea/environment-animals/20261014/rescued-loggerhead-sea-turtle-returns-to-pacific-after-7-years-of-care"
    ],
    [
     "descartada",
@@ -12068,84 +11879,6 @@
    ],
    [
     "descartada",
-    "science",
-    "Plastic isn't as inert as we'd thought: Scientists found that tiny everyday microplastics sitting in plain water spontan",
-    "https://www.nature.com/articles/s41586-026-11141-y"
-   ],
-   [
-    "descartada",
-    "science",
-    "Who gets Alzheimer’s drugs. U S research shows Black adults had 86% lower odds, and Hispanic adults had 79% lower odds o",
-    "https://www.eurekalert.org/news-releases/1147823"
-   ],
-   [
-    "confirmada",
-    "science",
-    "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech . Research shows inner speech is not merely a sil",
-    "https://www.tsukuba.ac.jp/en/research-news/20261015141500.html"
-   ],
-   [
-    "descartada",
-    "science",
-    "Hooked on tuna: People have been harvesting these ocean predators for 44,000 years",
-    "https://theconversation.com/hooked-on-tuna-people-have-been-harvesting-these-ocean-predators-for-44-000-years-292428"
-   ],
-   [
-    "descartada",
-    "science",
-    "Treating depression during pregnancy influences infant brain development and early emotional function, according to new ",
-    "https://news.cuanschutz.edu/news-stories/study-finds-treating-depression-during-pregnancy-may-benefit-babies-brain-development?amp%3Butm_source=reddit&amp%3Butm_medium=social"
-   ],
-   [
-    "descartada",
-    "science",
-    "What makes us human. A first atlas of functional DNA changes offers new clues. Researchers identify evolutionary DNA cha",
-    "https://www.eurekalert.org/news-releases/1147810"
-   ],
-   [
-    "descartada",
-    "science",
-    "Machine learning analysis of gene regulation reveals new dimension of biological variability",
-    "https://www.eurekalert.org/news-releases/1148013"
-   ],
-   [
-    "descartada",
-    "science",
-    "New study in Science Advances finds that increasing family visits reduces prison violence and misconduct. By using gas p",
-    "https://www.science.org/doi/10.1126/sciadv.aed8424?amp%3Butm_source=twitter&amp%3Butm_medium=ownedSocial"
-   ],
-   [
-    "descartada",
-    "science",
-    "Electrical engineering research unlocks DNA mystery. Texas A&M University engineers make groundbreaking discovery about ",
-    "https://www.eurekalert.org/news-releases/1148156"
-   ],
-   [
-    "descartada",
-    "science",
-    "Researchers improve weather forecasts looking two to six weeks out: « A new machine-learning approach broke records for ",
-    "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
-   ],
-   [
-    "confirmada",
-    "science",
-    "New phase 1 trial results published in Nature Medicine show that combining a personalized neoantigen-targeting cancer va",
-    "https://www.nature.com/articles/s41591-026-04717-8"
-   ],
-   [
-    "descartada",
-    "science",
-    "Mechanical stress helps determine where muscle precursor cells fuse, a study in cultured chicken cells finds",
-    "https://www.nature.com/articles/s41467-026-76967-6"
-   ],
-   [
-    "confirmada",
-    "science",
-    "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mous",
-    "https://www.nature.com/articles/s41536-026-00507-5"
-   ],
-   [
-    "descartada",
     "Futurology",
     "Sydney student creates first map of Martian soils",
     "https://www.eurekalert.org/news-releases/1148012"
@@ -12185,7 +11918,7 @@
    "'La bola negra' lo cambia todo: Netflix le dará un giro de 180 grados a sus estrenos a partir de la película de los Javis",
    "Victoria’s Secret Fashion Show 2026: horario, dónde ver y qué modelos y artistas participarán"
   ],
-  "candidates": 43,
+  "candidates": 40,
   "fromGeneralFeeds": 1,
   "rejected": {
    "formato": 95,
@@ -12202,14 +11935,14 @@
     "error": null
    },
    "HumansBeingBros": {
+    "ok": true,
+    "items": 1,
+    "error": null
+   },
+   "science": {
     "ok": false,
     "items": 0,
     "error": "HTTPError: HTTP Error 429: Too Many Requests"
-   },
-   "science": {
-    "ok": true,
-    "items": 27,
-    "error": null
    },
    "worldnews": {
     "ok": false,
@@ -12233,16 +11966,15 @@
    "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "leads": {
-   "total": 50,
-   "confirmed": 8,
-   "dropped": 42,
+   "total": 24,
+   "confirmed": 5,
+   "dropped": 19,
    "confirmedVia": {
-    "enlace a medio confiable (leído de su página)": 8
+    "enlace a medio confiable (leído de su página)": 5
    },
    "droppedReasons": {
-    "enlace a sitio no verificado": 31,
-    "medio confiable pero nota no positiva": 5,
-    "medio confiable pero no se pudo leer la página": 6
+    "enlace a sitio no verificado": 18,
+    "medio confiable pero no se pudo leer la página": 1
    },
    "droppedExamples": [
     {
@@ -12301,21 +12033,21 @@
      "link": "https://oceanographicmagazine.com/news/100-countries-in-high-seas-treaty-nears-universal-ratification/?amp%3Butm_medium=email"
     },
     {
-     "sub": "science",
-     "title": "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own genes, not from how thei",
-     "link": "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
+     "sub": "HumansBeingBros",
+     "title": "Rescued loggerhead sea turtle returns to Pacific after 7 years of care",
+     "link": "https://www.koreatimes.co.kr/amp/southkorea/environment-animals/20261014/rescued-loggerhead-sea-turtle-returns-to-pacific-after-7-years-of-care"
     }
    ]
   },
   "perSubtopic": {
-   "salud": 9,
-   "ciencia": 8,
+   "salud": 7,
+   "ciencia": 7,
    "ambiente": 12,
    "social": 1,
    "acciones": 3,
    "comunidad": 1
   },
-  "allStoriesBeforeCap": 43
+  "allStoriesBeforeCap": 40
  },
  "crypto": {
   "minOutlets": 5,
@@ -12338,7 +12070,7 @@
     "id": "cr-decrypt",
     "source": "Decrypt",
     "url": "https://decrypt.co/feed",
-    "itemsInFeed": 57,
+    "itemsInFeed": 37,
     "kept": 20
    },
    {
@@ -12600,7 +12332,7 @@
     "url": "https://www.lateja.cr/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 50
+    "kept": 51
    },
    {
     "id": "cr-observador",
@@ -12620,7 +12352,7 @@
     "url": "https://delfino.cr/feed",
     "method": "directo",
     "itemsInFeed": 21,
-    "kept": 14
+    "kept": 13
    },
    {
     "id": "cr-semanario",
@@ -12660,7 +12392,7 @@
     "url": "https://www.teletica.com/sitemaps/news/last-news",
     "method": "google-news",
     "itemsInFeed": 100,
-    "kept": 77
+    "kept": 78
    },
    {
     "id": "cr-repretel",
@@ -12670,7 +12402,7 @@
     "url": "https://www.repretel.com/feed/",
     "method": "google-news",
     "itemsInFeed": 31,
-    "kept": 26
+    "kept": 28
    },
    {
     "id": "cr-extra",
@@ -12879,7 +12611,7 @@
     "region": "latam",
     "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/mexico/portada",
     "method": "directo",
-    "itemsInFeed": 118,
+    "itemsInFeed": 117,
     "kept": 12
    },
    {
@@ -12940,7 +12672,7 @@
     "url": "https://www.clarin.com/rss/lo-ultimo/",
     "method": "directo",
     "itemsInFeed": 10,
-    "kept": 8
+    "kept": 9
    },
    {
     "id": "sa-infobae-ar",
@@ -13010,7 +12742,7 @@
     "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 82
+    "kept": 79
    },
    {
     "id": "sa-agenciabrasil",
@@ -13300,7 +13032,7 @@
     "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
     "method": "directo",
     "itemsInFeed": 33,
-    "kept": 30
+    "kept": 31
    },
    {
     "id": "af-premiumtimes",
@@ -13310,7 +13042,7 @@
     "url": "https://www.premiumtimesng.com/feed",
     "method": "directo",
     "itemsInFeed": 15,
-    "kept": 14
+    "kept": 15
    },
    {
     "id": "af-punch",
@@ -13450,7 +13182,7 @@
     "url": "https://www.smh.com.au/rss/feed.xml",
     "method": "directo",
     "itemsInFeed": 20,
-    "kept": 15
+    "kept": 14
    },
    {
     "id": "oc-theage",
@@ -13641,8 +13373,8 @@
     "error": "Funcionan pero no están en español ni inglés (no se pueden agrupar)"
    }
   ],
-  "itemsGathered": 4611,
-  "clusters": 3528,
+  "itemsGathered": 4613,
+  "clusters": 3527,
   "perRegion": {
    "costarica": 3,
    "centroamerica": 0,
@@ -13657,9 +13389,9 @@
    "costarica": 14,
    "centroamerica": 1,
    "latam": 9,
-   "sudamerica": 9,
+   "sudamerica": 10,
    "europa": 15,
-   "asia": 11,
+   "asia": 13,
    "africa": 6,
    "oceania": 0
   },
@@ -13675,17 +13407,16 @@
   }
  },
  "possible": {
-  "candidates": 297,
-  "afterDedupe": 250,
+  "candidates": 299,
+  "afterDedupe": 252,
   "shown": 60,
   "byOutlets": {
    "2": 12,
-   "3": 25,
-   "4": 23
+   "3": 26,
+   "4": 22
   },
   "byChip": {
    "costarica": 8,
-   "asia": 4,
    "sudamerica": 5,
    "politica": 8,
    "sucesos": 3,
@@ -13693,7 +13424,8 @@
    "africa": 4,
    "europa": 8,
    "mundo": 7,
-   "latam": 7,
+   "latam": 6,
+   "asia": 5,
    "centroamerica": 3,
    "cripto": 3,
    "oceania": 3,
