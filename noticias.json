@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T17:32:51Z",
+ "updatedAt": "2026-10-16T17:34:06Z",
  "nextRefreshAt": "2026-10-16T18:00:00Z",
  "refreshHours": 3,
  "method": {
@@ -9,10 +9,10 @@
   "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 5+ medios distintos."
  },
  "stats": {
-  "feedsOk": 94,
-  "feedsFailed": 10,
-  "itemsGathered": 1866,
-  "clusters": 1529,
+  "feedsOk": 95,
+  "feedsFailed": 9,
+  "itemsGathered": 1875,
+  "clusters": 1537,
   "consensusStories": 17,
   "perCategory": {
    "sucesos": 4,
@@ -30,7 +30,7 @@
    "asia": 10,
    "africa": 2,
    "oceania": 0,
-   "buenas": 38
+   "buenas": 34
   }
  },
  "sourcesUsed": [
@@ -68,6 +68,7 @@
   "Monumental",
   "NPR",
   "Nature",
+  "New Scientist",
   "Noticias ONU",
   "RFI",
   "RFI Español",
@@ -93,9 +94,10 @@
      "summaryEsSource": "BBC Mundo",
      "summaryEn": "Police said the suspect was a 16-year-old who was shot dead by an armed bystander.",
      "summaryEnSource": "Le Monde",
-     "outlets": 13,
+     "outlets": 14,
      "outletNames": [
       "20minutos",
+      "ABC",
       "BBC",
       "BBC Mundo",
       "CBS News",
@@ -228,6 +230,13 @@
        "title": "Qué se sabe del tiroteo mortal en una escuela primaria de Oregón",
        "url": "https://elpais.com/us/2026-10-16/que-se-sabe-del-tiroteo-mortal-en-una-escuela-primaria-de-oregon.html",
        "publishedAt": "2026-10-16T15:36:15Z"
+      },
+      {
+       "source": "ABC",
+       "lang": "es",
+       "title": "Masacre escolar en EE.UU.: un adolescente mata a tres niños y un docente en Oregón",
+       "url": "https://www.abc.es/internacional/cuatro-muertos-tiroteo-escuela-oregon-eeuu-20261016005748-nt.html",
+       "publishedAt": "2026-10-16T17:07:14Z"
       },
       {
        "source": "CBS News",
@@ -649,18 +658,18 @@
        "publishedAt": "2026-10-16T16:28:37Z"
       },
       {
-       "source": "ABC",
-       "lang": "es",
-       "title": "Dimite la portavoz del PSOE, Montse Mínguez, tras el escándalo de los pisos de su pareja",
-       "url": "https://www.abc.es/espana/dimite-portavoz-psoe-montse-minguez-tras-polemica-20261016181448-nt.html",
-       "publishedAt": "2026-10-16T16:49:22Z"
-      },
-      {
        "source": "Euronews Español",
        "lang": "es",
        "title": "Dimite la portavoz del PSOE debido a los negocios inmobiliarios de su pareja en plena crisis de la vivienda",
        "url": "https://es.euronews.com/2026/10/16/dimite-portavoz-psoe-debido-negocios-inmobiliarios-pareja-plena-crisis",
        "publishedAt": "2026-10-16T17:07:30Z"
+      },
+      {
+       "source": "ABC",
+       "lang": "es",
+       "title": "Dimite Montse Mínguez, portavoz del PSOE, tras el escándalo de los pisos de su pareja",
+       "url": "https://www.abc.es/espana/dimite-portavoz-psoe-montse-minguez-tras-polemica-20261016181448-nt.html",
+       "publishedAt": "2026-10-16T17:07:40Z"
       },
       {
        "source": "Infobae",
@@ -2137,10 +2146,9 @@
      "summaryEsSource": "Prensa Libre",
      "summaryEn": "Rewritten indictment accuses ex-Venezuela president and wife Cilia Flores of leading campaign of torture Nicolás Maduro insisted on Thursday during an appearance in a New York court that torture allegations in a rewritten drug trafficking indictment against the deposed Venezuelan president and his wife were “false accusations”. Maduro, shackled at the ankles, was brought to court to face the new…",
      "summaryEnSource": "The Guardian",
-     "outlets": 13,
+     "outlets": 12,
      "outletNames": [
       "14ymedio (Cuba)",
-      "Artículo 66",
       "BBC",
       "BBC Mundo",
       "El Confidencial",
@@ -2237,13 +2245,6 @@
        "title": "¿Más relajados? así llegaron Nicolás Maduro y su esposa en audiencia donde se declararon no culpables en EE. UU.",
        "url": "https://www.prensalibre.com/internacional/mas-relajados-asi-llegaron-nicolas-maduro-y-su-esposa-en-audiencia-donde-se-declararon-no-culpables-en-ee-uu/",
        "publishedAt": "2026-10-15T18:16:14Z"
-      },
-      {
-       "source": "Artículo 66",
-       "lang": "es",
-       "title": "Maduro y su esposa se declaran no culpables de cargos de tortura en corte de EE. UU.",
-       "url": "https://www.articulo66.com/2026/10/15/maduro-flores-se-declaran-no-culpables-tortura-tribunal-nueva-york/",
-       "publishedAt": "2026-10-15T18:36:37Z"
       },
       {
        "source": "Prensa Libre",
@@ -2792,13 +2793,12 @@
      "summaryEsSource": "El Comercio (Ecuador)",
      "summaryEn": "Pope Leo XIV was diagnosed with a common form of lung cancer. The Vatican said that he had celebrated Mass at the hospital three days after an operation to remove a cancerous nodule.",
      "summaryEnSource": "The New York Times",
-     "outlets": 32,
+     "outlets": 31,
      "outletNames": [
       "20minutos",
       "ABC Color (Paraguay)",
       "ANSA",
       "Africanews",
-      "Artículo 66",
       "BBC Mundo",
       "CBS News",
       "DW",
@@ -2904,6 +2904,13 @@
        "title": "Pope Leo resumes some papal duties after surgery, Vatican says",
        "url": "https://www.cbsnews.com/news/pope-leo-resumes-duties-lung-cancer-surgery/",
        "publishedAt": "2026-10-15T16:00:10Z"
+      },
+      {
+       "source": "El Nacional (Venezuela)",
+       "lang": "es",
+       "title": "El Papa retomó su actividad laboral desde el hospital Gemelli",
+       "url": "https://www.elnacional.com/2026/10/el-papa-retomo-su-actividad-laboral-desde-el-hospital-gemelli/",
+       "publishedAt": "2026-10-15T16:01:11Z"
       },
       {
        "source": "El Mundo",
@@ -3044,13 +3051,6 @@
        "title": "Primera foto del papa tras su operación por cáncer de pulmón: oficiando misa desde el hospital",
        "url": "https://www.elnuevodia.com/noticias/mundo/notas/primera-foto-del-papa-tras-su-operacion-por-cancer-de-pulmon-oficiando-misa-desde-el-hospital/",
        "publishedAt": "2026-10-16T13:21:46Z"
-      },
-      {
-       "source": "Artículo 66",
-       "lang": "es",
-       "title": "El Vaticano publica las primeras imágenes del papa desde su operación de cáncer",
-       "url": "https://www.articulo66.com/2026/10/16/vaticano-primeras-imagenes-papa-desde-operacion-cancer/",
-       "publishedAt": "2026-10-16T13:56:43Z"
       },
       {
        "source": "República (Guatemala)",
@@ -3576,18 +3576,18 @@
        "publishedAt": "2026-10-16T16:28:37Z"
       },
       {
-       "source": "ABC",
-       "lang": "es",
-       "title": "Dimite la portavoz del PSOE, Montse Mínguez, tras el escándalo de los pisos de su pareja",
-       "url": "https://www.abc.es/espana/dimite-portavoz-psoe-montse-minguez-tras-polemica-20261016181448-nt.html",
-       "publishedAt": "2026-10-16T16:49:22Z"
-      },
-      {
        "source": "Euronews Español",
        "lang": "es",
        "title": "Dimite la portavoz del PSOE debido a los negocios inmobiliarios de su pareja en plena crisis de la vivienda",
        "url": "https://es.euronews.com/2026/10/16/dimite-portavoz-psoe-debido-negocios-inmobiliarios-pareja-plena-crisis",
        "publishedAt": "2026-10-16T17:07:30Z"
+      },
+      {
+       "source": "ABC",
+       "lang": "es",
+       "title": "Dimite Montse Mínguez, portavoz del PSOE, tras el escándalo de los pisos de su pareja",
+       "url": "https://www.abc.es/espana/dimite-portavoz-psoe-montse-minguez-tras-polemica-20261016181448-nt.html",
+       "publishedAt": "2026-10-16T17:07:40Z"
       },
       {
        "source": "Infobae",
@@ -4668,131 +4668,6 @@
      "id": "asia-2"
     },
     {
-     "headline": "India detiene a los líderes del movimiento juvenil de las \"Cucarachas\" en nuevas protestas electorales",
-     "headlineLang": "es",
-     "headlineEs": "India detiene a los líderes del movimiento juvenil de las \"Cucarachas\" en nuevas protestas electorales",
-     "headlineEn": "Indian police detain 'cockroach' movement founder Dipke ahead of protest",
-     "summaryEs": "La Policía de Nueva Delhi detuvo a Abhijeet Dipke, fundador del movimiento juvenil Cockroach Janta Party, y a la activista estudiantil Neha Bora durante nuevas protestas que exigen la dimisión del jefe de la Comisión Electoral de India, Gyanesh Kumar. Las movilizaciones cuestionan una revisión del censo electoral que eliminó más de 130 millones de nombres de las listas de votantes y que, según…",
-     "summaryEsSource": "France 24 Español",
-     "summaryEn": "Police detained India’s ‘cockroach’ movement founder Abhijeet Dipke on Friday, live images from his group showed, ahead of a protest called by him in capital Delhi’s central business district, the latest rally to demand the resignation of India’s election chief. The youth-led Cockroach Janta Party (CJP), opposition groups, and student organisations have held almost daily protests this month…",
-     "summaryEnSource": "Dawn",
-     "outlets": 11,
-     "outletNames": [
-      "BBC",
-      "Bloomberg",
-      "CNA",
-      "DW",
-      "Dawn",
-      "Financial Times",
-      "France 24",
-      "South China Morning Post",
-      "The Guardian",
-      "The Indian Express",
-      "The Straits Times"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-16T01:00:00Z",
-     "lastSeen": "2026-10-16T16:22:32Z",
-     "sources": [
-      {
-       "source": "Bloomberg",
-       "lang": "en",
-       "title": "Indian Police Detain ‘Cockroach’ Leader as Protests Spread",
-       "url": "https://www.bloomberg.com/news/articles/2026-10-16/new-delhi-braces-for-fresh-crackdown-as-cockroaches-plan-march",
-       "publishedAt": "2026-10-16T01:00:00Z"
-      },
-      {
-       "source": "The Indian Express",
-       "lang": "en",
-       "title": "India News 16 October 2026: Abhijeet Dipke, Neha Bora detained, Delhi CJP protest ends with scuffles",
-       "url": "https://indianexpress.com/article/india/breaking-india-news-live-updates-16-october-2026-cjp-lehra-do-tiranga-march-today-delhi-police-connaught-place-rahul-gandhi-india-bloc-gyanesh-kumar-abhijeet-dipke-10923853/",
-       "publishedAt": "2026-10-16T02:33:06Z"
-      },
-      {
-       "source": "DW Español",
-       "lang": "es",
-       "title": "Las \"Cucarachas\" desafían el cerco policial con una nueva protesta electoral en la India",
-       "url": "https://www.dw.com/es/las-cucarachas-desafían-el-cerco-policial-con-una-nueva-protesta-electoral-en-la-india/a-79676042?maca=spa-rss-sp-all-1122-xml-mrss",
-       "publishedAt": "2026-10-16T05:39:00Z"
-      },
-      {
-       "source": "The Straits Times",
-       "lang": "en",
-       "title": "Indian police detain ‘cockroach’ founder, student leaders ahead of Delhi rally",
-       "url": "https://www.straitstimes.com/asia/south-asia/security-stepped-up-in-indias-capital-for-cockroach-movement-rally",
-       "publishedAt": "2026-10-16T05:45:21Z"
-      },
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "India: CJP's Dipke detained amid call for fresh Delhi demo",
-       "url": "https://www.dw.com/en/india-cjp-s-dipke-detained-amid-call-for-fresh-delhi-demo/live-79675849?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-16T06:04:00Z"
-      },
-      {
-       "source": "CNA",
-       "lang": "en",
-       "title": "Security stepped up in India's capital for 'cockroach' movement rally",
-       "url": "https://www.channelnewsasia.com/asia/india-delhi-cockroach-movement-rally-security-protest-6465161",
-       "publishedAt": "2026-10-16T06:06:00Z"
-      },
-      {
-       "source": "France 24",
-       "lang": "en",
-       "title": "Indian authorities detain 'cockroach' movement founder Dipke ahead of new protest",
-       "url": "https://www.france24.com/en/asia-pacific/20261016-indian-authorities-heighten-security-close-park-ahead-cockroach-movement-rally",
-       "publishedAt": "2026-10-16T06:39:48Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "India's 'cockroach' party founder detained ahead of protest",
-       "url": "https://www.bbc.co.uk/news/articles/cmx237n1y9lzo",
-       "publishedAt": "2026-10-16T11:44:31Z"
-      },
-      {
-       "source": "South China Morning Post",
-       "lang": "en",
-       "title": "Indian police detain ‘cockroach’ movement leader ahead of New Delhi protest",
-       "url": "https://www.scmp.com/news/asia/south-asia/article/3371196/indian-police-detain-cockroach-movement-leader-ahead-new-delhi-protest",
-       "publishedAt": "2026-10-16T12:06:11Z"
-      },
-      {
-       "source": "Dawn",
-       "lang": "en",
-       "title": "Indian police detain 'cockroach' movement founder Dipke ahead of protest",
-       "url": "https://www.dawn.com/news/2037555/indian-police-detain-cockroach-movement-founder-dipke-ahead-of-protest",
-       "publishedAt": "2026-10-16T12:22:04Z"
-      },
-      {
-       "source": "France 24 Español",
-       "lang": "es",
-       "title": "India detiene a los líderes del movimiento juvenil de las \"Cucarachas\" en nuevas protestas electorales",
-       "url": "https://www.france24.com/es/asia-pac%C3%ADfico/20261016-india-detiene-a-los-l%C3%ADderes-del-movimiento-juvenil-de-las-cucarachas-en-nuevas-protestas-electorales",
-       "publishedAt": "2026-10-16T14:23:16Z"
-      },
-      {
-       "source": "Financial Times",
-       "lang": "en",
-       "title": "India police detain ‘Cockroach’ leader again to head off new protests",
-       "url": "https://www.ft.com/content/15922d6d-421a-4b33-a329-45443491e1be",
-       "publishedAt": "2026-10-16T14:39:19Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "India’s Cockroach Janta party leader detained amid crackdown on protests",
-       "url": "https://www.theguardian.com/world/2026/oct/16/india-cockroach-janta-party-leader-detained-amid-crackdown-protests",
-       "publishedAt": "2026-10-16T16:22:32Z"
-      }
-     ],
-     "region": "asia",
-     "id": "asia-3"
-    },
-    {
      "headline": "EE. UU. evalúa utilizar la madre de todas las bombas contra Irán: Así funciona la GBU-43/B",
      "headlineLang": "es",
      "headlineEs": "EE. UU. evalúa utilizar la madre de todas las bombas contra Irán: Así funciona la GBU-43/B",
@@ -4926,6 +4801,123 @@
        "title": "Trump descarta uso de armas nucleares en Irán, pero deja abierta la opción de emplear la bomba MOAB",
        "url": "https://www.elnacional.com/2026/10/trump-descarta-uso-de-armas-nucleares-en-iran-pero-deja-abierta-la-opcion-de-emplear-la-bomba-moab/",
        "publishedAt": "2026-10-16T15:55:52Z"
+      }
+     ],
+     "region": "asia",
+     "id": "asia-3"
+    },
+    {
+     "headline": "India detiene a los líderes del movimiento juvenil de las \"Cucarachas\" en nuevas protestas electorales",
+     "headlineLang": "es",
+     "headlineEs": "India detiene a los líderes del movimiento juvenil de las \"Cucarachas\" en nuevas protestas electorales",
+     "headlineEn": "Indian police detain 'cockroach' movement founder Dipke ahead of protest",
+     "summaryEs": "La Policía de Nueva Delhi detuvo a Abhijeet Dipke, fundador del movimiento juvenil Cockroach Janta Party, y a la activista estudiantil Neha Bora durante nuevas protestas que exigen la dimisión del jefe de la Comisión Electoral de India, Gyanesh Kumar. Las movilizaciones cuestionan una revisión del censo electoral que eliminó más de 130 millones de nombres de las listas de votantes y que, según…",
+     "summaryEsSource": "France 24 Español",
+     "summaryEn": "Police detained India’s ‘cockroach’ movement founder Abhijeet Dipke on Friday, live images from his group showed, ahead of a protest called by him in capital Delhi’s central business district, the latest rally to demand the resignation of India’s election chief. The youth-led Cockroach Janta Party (CJP), opposition groups, and student organisations have held almost daily protests this month…",
+     "summaryEnSource": "Dawn",
+     "outlets": 10,
+     "outletNames": [
+      "BBC",
+      "Bloomberg",
+      "CNA",
+      "DW",
+      "Dawn",
+      "Financial Times",
+      "France 24",
+      "South China Morning Post",
+      "The Guardian",
+      "The Straits Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-16T01:00:00Z",
+     "lastSeen": "2026-10-16T16:22:32Z",
+     "sources": [
+      {
+       "source": "Bloomberg",
+       "lang": "en",
+       "title": "Indian Police Detain ‘Cockroach’ Leader as Protests Spread",
+       "url": "https://www.bloomberg.com/news/articles/2026-10-16/new-delhi-braces-for-fresh-crackdown-as-cockroaches-plan-march",
+       "publishedAt": "2026-10-16T01:00:00Z"
+      },
+      {
+       "source": "DW Español",
+       "lang": "es",
+       "title": "Las \"Cucarachas\" desafían el cerco policial con una nueva protesta electoral en la India",
+       "url": "https://www.dw.com/es/las-cucarachas-desafían-el-cerco-policial-con-una-nueva-protesta-electoral-en-la-india/a-79676042?maca=spa-rss-sp-all-1122-xml-mrss",
+       "publishedAt": "2026-10-16T05:39:00Z"
+      },
+      {
+       "source": "The Straits Times",
+       "lang": "en",
+       "title": "Indian police detain ‘cockroach’ founder, student leaders ahead of Delhi rally",
+       "url": "https://www.straitstimes.com/asia/south-asia/security-stepped-up-in-indias-capital-for-cockroach-movement-rally",
+       "publishedAt": "2026-10-16T05:45:21Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "India: CJP's Dipke detained amid call for fresh Delhi demo",
+       "url": "https://www.dw.com/en/india-cjp-s-dipke-detained-amid-call-for-fresh-delhi-demo/live-79675849?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-16T06:04:00Z"
+      },
+      {
+       "source": "CNA",
+       "lang": "en",
+       "title": "Security stepped up in India's capital for 'cockroach' movement rally",
+       "url": "https://www.channelnewsasia.com/asia/india-delhi-cockroach-movement-rally-security-protest-6465161",
+       "publishedAt": "2026-10-16T06:06:00Z"
+      },
+      {
+       "source": "France 24",
+       "lang": "en",
+       "title": "Indian authorities detain 'cockroach' movement founder Dipke ahead of new protest",
+       "url": "https://www.france24.com/en/asia-pacific/20261016-indian-authorities-heighten-security-close-park-ahead-cockroach-movement-rally",
+       "publishedAt": "2026-10-16T06:39:48Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "India's 'cockroach' party founder detained ahead of protest",
+       "url": "https://www.bbc.co.uk/news/articles/cmx237n1y9lzo",
+       "publishedAt": "2026-10-16T11:44:31Z"
+      },
+      {
+       "source": "South China Morning Post",
+       "lang": "en",
+       "title": "Indian police detain ‘cockroach’ movement leader ahead of New Delhi protest",
+       "url": "https://www.scmp.com/news/asia/south-asia/article/3371196/indian-police-detain-cockroach-movement-leader-ahead-new-delhi-protest",
+       "publishedAt": "2026-10-16T12:06:11Z"
+      },
+      {
+       "source": "Dawn",
+       "lang": "en",
+       "title": "Indian police detain 'cockroach' movement founder Dipke ahead of protest",
+       "url": "https://www.dawn.com/news/2037555/indian-police-detain-cockroach-movement-founder-dipke-ahead-of-protest",
+       "publishedAt": "2026-10-16T12:22:04Z"
+      },
+      {
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "India detiene a los líderes del movimiento juvenil de las \"Cucarachas\" en nuevas protestas electorales",
+       "url": "https://www.france24.com/es/asia-pac%C3%ADfico/20261016-india-detiene-a-los-l%C3%ADderes-del-movimiento-juvenil-de-las-cucarachas-en-nuevas-protestas-electorales",
+       "publishedAt": "2026-10-16T14:23:16Z"
+      },
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "India police detain ‘Cockroach’ leader again to head off new protests",
+       "url": "https://www.ft.com/content/15922d6d-421a-4b33-a329-45443491e1be",
+       "publishedAt": "2026-10-16T14:39:19Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "India’s Cockroach Janta party leader detained amid crackdown on protests",
+       "url": "https://www.theguardian.com/world/2026/oct/16/india-cockroach-janta-party-leader-detained-amid-crackdown-protests",
+       "publishedAt": "2026-10-16T16:22:32Z"
       }
      ],
      "region": "asia",
@@ -5602,43 +5594,6 @@
      "id": "buenas-1"
     },
     {
-     "headline": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Nature"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T16:36:49Z",
-     "lastSeen": "2026-10-16T16:36:49Z",
-     "sources": [
-      {
-       "source": "Nature",
-       "lang": "en",
-       "title": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
-       "url": "https://www.nature.com/articles/s41536-026-00507-5",
-       "publishedAt": "2026-10-16T16:36:49Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x7l2q2/tregulatory_cell_protection_of_progenitor_cells/"
-      }
-     ],
-     "id": "buenas-2"
-    },
-    {
      "headline": "North Texas man finds more than $128,000 on top of a bank",
      "headlineLang": "en",
      "headlineEs": null,
@@ -5673,44 +5628,39 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7ju4i/north_texas_man_finds_128514_on_top_of_a_banks/"
       }
      ],
-     "id": "buenas-3"
+     "id": "buenas-2"
     },
     {
-     "headline": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+     "headline": "Saving big cats: Storytelling duo Steve Winter & Sharon Guynup publish new book",
      "headlineLang": "en",
      "headlineEs": null,
-     "headlineEn": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+     "headlineEn": "Saving big cats: Storytelling duo Steve Winter & Sharon Guynup publish new book",
      "summaryEs": null,
      "summaryEsSource": null,
-     "summaryEn": "Ukrainian president says US limiting access was a ‘dangerous and unpleasant surprise’, amid reports the order came from inside White House Europe live – latest updates Volodymyr Zelenskyy has said the Ukrainian military’s access to the Starlink satellite internet service has not yet been fully restored, as media reports suggested the order to throttle the service had come from within the White…",
-     "summaryEnSource": "The Guardian",
-     "subtopic": "social",
-     "subtopicLabel": "Progreso social",
+     "summaryEn": "For more than two decades, National Geographic photographer Steve Winter and environmental journalist Sharon Guynup have followed big cats into some of Earth’s wildest, most dangerous places. Their work has taken them from the jungles of India and Brazil to the high Himalaya, from Southeast Asia’s forests to the African savanna and the urban wilds",
+     "summaryEnSource": "Mongabay",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
      "outlets": 1,
      "outletNames": [
-      "The Guardian"
+      "Mongabay"
      ],
      "languages": [
       "en"
      ],
-     "firstSeen": "2026-10-16T15:39:41Z",
-     "lastSeen": "2026-10-16T15:39:41Z",
+     "firstSeen": "2026-10-16T15:13:49Z",
+     "lastSeen": "2026-10-16T15:13:49Z",
      "sources": [
       {
-       "source": "The Guardian",
+       "source": "Mongabay",
        "lang": "en",
-       "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
-       "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
-       "publishedAt": "2026-10-16T15:39:41Z"
+       "title": "Saving big cats: Storytelling duo Steve Winter & Sharon Guynup publish new book",
+       "url": "https://news.mongabay.com/2026/10/saving-big-cats-storytelling-duo-steve-winter-sharon-guynup-publish-new-book/",
+       "publishedAt": "2026-10-16T15:13:49Z"
       }
      ],
-     "alsoOnReddit": [
-      {
-       "sub": "worldnews",
-       "url": "https://www.reddit.com/r/worldnews/comments/1x7kxyd/starlink_access_still_not_fully_restored_for/"
-      }
-     ],
-     "id": "buenas-4"
+     "alsoOnReddit": [],
+     "id": "buenas-3"
     },
     {
      "headline": "Covid vaccine compensation scheme set for overhaul after Inquiry criticism",
@@ -5742,7 +5692,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-5"
+     "id": "buenas-4"
     },
     {
      "headline": "US EV sales are rising again. Here’s why the recovery is set to last.",
@@ -5774,7 +5724,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-6"
+     "id": "buenas-5"
     },
     {
      "headline": "USC scientists discover how to create a never-ending supply of cancer-fighting cells",
@@ -5806,7 +5756,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-7"
+     "id": "buenas-6"
     },
     {
      "headline": "Rare barn owls with",
@@ -5843,39 +5793,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7il72/a_family_of_barn_owls_has_become_manhattans/"
       }
      ],
-     "id": "buenas-8"
-    },
-    {
-     "headline": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "See-through solar cells harvest some wavelengths of light to make electricity, while passing through the red and blue wavelengths that plants need. In a new agrivoltaics experiment, broccoli yields held steady.",
-     "summaryEnSource": "Anthropocene Magazine",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Anthropocene Magazine"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T12:00:00Z",
-     "lastSeen": "2026-10-16T12:00:00Z",
-     "sources": [
-      {
-       "source": "Anthropocene Magazine",
-       "lang": "en",
-       "title": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
-       "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
-       "publishedAt": "2026-10-16T12:00:00Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-9"
+     "id": "buenas-7"
     },
     {
      "headline": "Yale scientists discover how stress changes the brain to make memories stronger",
@@ -5907,44 +5825,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-10"
-    },
-    {
-     "headline": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Image by hoshinosuu/ShutterstockResearchers at University of Tsukuba and Ritsumeikan University compared pupil sizes whi",
-     "summaryEnSource": "University of Tsukuba",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "University of Tsukuba"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T11:45:18Z",
-     "lastSeen": "2026-10-16T11:45:18Z",
-     "sources": [
-      {
-       "source": "University of Tsukuba",
-       "lang": "en",
-       "title": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
-       "url": "https://www.tsukuba.ac.jp/en/research-news/20261015141500.html",
-       "publishedAt": "2026-10-16T11:45:18Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x7e07e/pupil_size_reveals_differences_between_speaking/"
-      }
-     ],
-     "id": "buenas-11"
+     "id": "buenas-8"
     },
     {
      "headline": "Astronomers discover a strange universal rule behind black hole eruptions",
@@ -5976,7 +5857,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-12"
+     "id": "buenas-9"
     },
     {
      "headline": "Scientists discover how exercise reverses muscle aging",
@@ -6008,44 +5889,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-13"
-    },
-    {
-     "headline": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "A phase 1 trial shows that treatment of patients with high-grade serous ovarian cancer with personalized neoantigen vaccines combined with PD-1 blockade was feasible and led to tumor-specific immune responses in many patients and putative mechanisms of resistance related to antigen presentation were identified via cell-free DNA analysis.",
-     "summaryEnSource": "Nature",
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Nature"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T00:34:46Z",
-     "lastSeen": "2026-10-16T00:34:46Z",
-     "sources": [
-      {
-       "source": "Nature",
-       "lang": "en",
-       "title": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-       "url": "https://www.nature.com/articles/s41591-026-04717-8",
-       "publishedAt": "2026-10-16T00:34:46Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x72apz/new_phase_1_trial_results_published_in_nature/"
-      }
-     ],
-     "id": "buenas-14"
+     "id": "buenas-10"
     },
     {
      "headline": "Complex surgery successfully separates Fijian conjoined twins",
@@ -6082,7 +5926,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x72agg/complex_surgery_successfully_separates_fijian/"
       }
      ],
-     "id": "buenas-15"
+     "id": "buenas-11"
     },
     {
      "headline": "Parada cardiaca: las ventilaciones también salvan vidas",
@@ -6114,7 +5958,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-16"
+     "id": "buenas-12"
     },
     {
      "headline": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
@@ -6146,7 +5990,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-17"
+     "id": "buenas-13"
     },
     {
      "headline": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
@@ -6178,7 +6022,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-18"
+     "id": "buenas-14"
     },
     {
      "headline": "How a contested B.C. supportive housing project won over its neighbours",
@@ -6215,7 +6059,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x71z1i/how_a_contested_bc_supportive_housing_project_won/"
       }
      ],
-     "id": "buenas-19"
+     "id": "buenas-15"
     },
     {
      "headline": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
@@ -6247,7 +6091,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-20"
+     "id": "buenas-16"
     },
     {
      "headline": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
@@ -6279,44 +6123,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-21"
-    },
-    {
-     "headline": "Stanford discovers way to save ghostly corals from the brink",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Stanford discovers way to save ghostly corals from the brink",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "El Niño poses a renewed threat.",
-     "summaryEnSource": "SFGATE",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "SFGATE"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-14T18:00:00Z",
-     "lastSeen": "2026-10-14T18:00:00Z",
-     "sources": [
-      {
-       "source": "SFGATE",
-       "lang": "en",
-       "title": "Stanford discovers way to save ghostly corals from the brink",
-       "url": "https://www.sfgate.com/bayarea/article/stanford-coral-study-22475321.php",
-       "publishedAt": "2026-10-14T18:00:00Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "UpliftingNews",
-       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6um1d/stanford_discovers_way_to_save_ghostly_corals/"
-      }
-     ],
-     "id": "buenas-22"
+     "id": "buenas-17"
     },
     {
      "headline": "Pittsburgh Water Launches Debt Forgiveness Program to Help Families with Rising Costs",
@@ -6348,7 +6155,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-23"
+     "id": "buenas-18"
     },
     {
      "headline": "Superplantas en Ecuador: son alimento, reducen monocultivos y agroquímicos y podrían enfrentar la crisis climática",
@@ -6380,7 +6187,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-24"
+     "id": "buenas-19"
     },
     {
      "headline": "Painted turbines can save millions of birds",
@@ -6412,7 +6219,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-25"
+     "id": "buenas-20"
     },
     {
      "headline": "How one Chicago program is diversifying the solar workforce",
@@ -6444,7 +6251,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-26"
+     "id": "buenas-21"
     },
     {
      "headline": "A planet 320 light-years away confirms what scientists long suspected",
@@ -6476,7 +6283,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-27"
+     "id": "buenas-22"
     },
     {
      "headline": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
@@ -6508,7 +6315,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-28"
+     "id": "buenas-23"
     },
     {
      "headline": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
@@ -6540,7 +6347,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-29"
+     "id": "buenas-24"
     },
     {
      "headline": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
@@ -6572,7 +6379,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-30"
+     "id": "buenas-25"
     },
     {
      "headline": "Qcells aims to build a giant factory for next-gen tandem solar",
@@ -6604,7 +6411,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-31"
+     "id": "buenas-26"
     },
     {
      "headline": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
@@ -6636,7 +6443,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-32"
+     "id": "buenas-27"
     },
     {
      "headline": "Nueva combinación de medicamentos restaura el control del VIH",
@@ -6668,7 +6475,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-33"
+     "id": "buenas-28"
     },
     {
      "headline": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
@@ -6700,7 +6507,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-34"
+     "id": "buenas-29"
     },
     {
      "headline": "La FDA aprueba el primer antiviral oral contra el herpes resistente en casi 30 años",
@@ -6732,7 +6539,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-35"
+     "id": "buenas-30"
     },
     {
      "headline": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
@@ -6764,7 +6571,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-36"
+     "id": "buenas-31"
     },
     {
      "headline": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
@@ -6796,7 +6603,39 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-37"
+     "id": "buenas-32"
+    },
+    {
+     "headline": "Still wielding a chainsaw at 85: the Australians restoring nature in retirement",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Still wielding a chainsaw at 85: the Australians restoring nature in retirement",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "For a growing band of older Australians, retirement has become an unlikely second act, spent rewilding mountains, counting sea slugs and coaxing damaged country back to life Get our weekend culture and lifestyle email When Susan Downes stepped into the hallway of an old farmhouse for sale in York, Western Australia, she felt an oddly certain sense of knowing. “Oh, this is my house,” the retired…",
+     "summaryEnSource": "The Guardian",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "The Guardian"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-10T19:00:07Z",
+     "lastSeen": "2026-10-10T19:00:07Z",
+     "sources": [
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Still wielding a chainsaw at 85: the Australians restoring nature in retirement",
+       "url": "https://www.theguardian.com/lifeandstyle/ng-interactive/2026/oct/11/australians-restoring-nature-in-retirement-bush-conservation",
+       "publishedAt": "2026-10-10T19:00:07Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-33"
     },
     {
      "headline": "October Big Day en América Latina: de la emoción de descubrir un ave a la defensa de su hábitat",
@@ -6828,7 +6667,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-38"
+     "id": "buenas-34"
     }
    ]
   }
@@ -6902,7 +6741,7 @@
    "source": "BBC",
    "lang": "en",
    "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
-   "itemsInFeed": 27,
+   "itemsInFeed": 26,
    "kept": 6,
    "newest": "2026-10-16T13:31:07Z"
   },
@@ -7166,6 +7005,15 @@
    "itemsInFeed": 10,
    "kept": 6,
    "newest": "2026-10-14T10:35:00Z"
+  },
+  {
+   "id": "newscientist",
+   "source": "New Scientist",
+   "lang": "en",
+   "url": "https://www.newscientist.com/feed/home/",
+   "itemsInFeed": 10,
+   "kept": 9,
+   "newest": "2026-10-16T17:00:00Z"
   },
   {
    "id": "guardian-world",
@@ -7506,7 +7354,7 @@
    "lang": "en",
    "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
    "itemsInFeed": 30,
-   "kept": 11,
+   "kept": 10,
    "newest": "2026-10-16T12:00:00Z"
   },
   {
@@ -7542,8 +7390,8 @@
    "lang": "es",
    "url": "https://www.abc.es/rss/2.0/portada/",
    "itemsInFeed": 25,
-   "kept": 18,
-   "newest": "2026-10-16T16:59:36Z"
+   "kept": 19,
+   "newest": "2026-10-16T17:16:26Z"
   },
   {
    "id": "lavanguardia",
@@ -7569,8 +7417,8 @@
    "lang": "es",
    "url": "https://www.20minutos.es/rss/",
    "itemsInFeed": 191,
-   "kept": 111,
-   "newest": "2026-10-16T17:10:14Z"
+   "kept": 112,
+   "newest": "2026-10-16T17:28:30Z"
   },
   {
    "id": "infobae",
@@ -7614,8 +7462,8 @@
    "lang": "es",
    "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
    "itemsInFeed": 85,
-   "kept": 62,
-   "newest": "2026-10-16T17:05:31Z"
+   "kept": 61,
+   "newest": "2026-10-16T17:32:20Z"
   },
   {
    "id": "eltiempo-mundo",
@@ -7682,12 +7530,6 @@
   }
  ],
  "feedsFailed": [
-  {
-   "id": "newscientist",
-   "source": "New Scientist",
-   "url": "https://www.newscientist.com/feed/home/",
-   "error": "HTTPError: HTTP Error 406: Not Acceptable"
-  },
   {
    "id": "reuters",
    "source": "reuters",
@@ -7778,14 +7620,6 @@
     "kept": 3
    },
    {
-    "id": "pos-anthropocene",
-    "source": "Anthropocene Magazine",
-    "url": "https://www.anthropocenemagazine.org/feed/",
-    "kind": "good",
-    "itemsInFeed": 30,
-    "kept": 1
-   },
-   {
     "id": "pos-owid",
     "source": "Our World in Data",
     "url": "https://ourworldindata.org/atom.xml",
@@ -7863,14 +7697,6 @@
     "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
     "kind": "topic",
     "itemsInFeed": 15,
-    "kept": 0
-   },
-   {
-    "id": "pos-nih",
-    "source": "NIH",
-    "url": "https://www.nih.gov/news-releases/feed.xml",
-    "kind": "topic",
-    "itemsInFeed": 10,
     "kept": 0
    },
    {
@@ -8034,7 +7860,20 @@
     "kept": 3
    }
   ],
-  "feedsFailed": [],
+  "feedsFailed": [
+   {
+    "id": "pos-anthropocene",
+    "source": "Anthropocene Magazine",
+    "url": "https://www.anthropocenemagazine.org/feed/",
+    "error": "ParseError: not well-formed (invalid token): line 1, column 119"
+   },
+   {
+    "id": "pos-nih",
+    "source": "NIH",
+    "url": "https://www.nih.gov/news-releases/feed.xml",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   }
+  ],
   "knownFails": [
    {
     "id": "guardian-the-upside",
@@ -8153,240 +7992,6 @@
    ],
    [
     "descartada",
-    "science",
-    "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own gene",
-    "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
-   ],
-   [
-    "descartada",
-    "science",
-    "A new long-term study has linked late-night eating with a significantly higher risk of developing cirrhosis and metaboli",
-    "https://www.sciencealert.com/one-common-eating-habit-is-linked-to-higher-risk-of-2-liver-diseases"
-   ],
-   [
-    "descartada",
-    "science",
-    "Analysis of Nazi Germany’s final reactor experiment finds it needed roughly twice the uranium and more than twice the he",
-    "https://academic.oup.com/pnasnexus/article/5/9/pgag282/8836799"
-   ],
-   [
-    "descartada",
-    "science",
-    "Caffeine Consumption and Adolescent Mental Health: Higher total caffeine intake was associated with lower total cortical",
-    "https://www.sciencedirect.com/science/article/pii/S245190222600282X?via%3Dihub="
-   ],
-   [
-    "descartada",
-    "science",
-    "The share of US adults reporting no chronic disease shrank by nearly 1% a year from 1997 to 2018, and death rates stalle",
-    "https://academic.oup.com/ije/article/55/5/dyag217/8907439"
-   ],
-   [
-    "descartada",
-    "science",
-    "Citations to retracted scientific papers on Wikipedia last on average 5.8 years before they are removed or marked as ret",
-    "https://dl.acm.org/doi/10.1145/3817014"
-   ],
-   [
-    "descartada",
-    "science",
-    "Body data and an app could provide a 24-hour warning for headaches: AI models analyzing heart rate, skin temperature and",
-    "https://norwegianscitechnews.com/2026/10/body-data-could-provide-a-24-hour-warning-for-headaches/"
-   ],
-   [
-    "descartada",
-    "science",
-    "A field study of 10 wheat cultivars found that elevated atmospheric CO₂ reduced grain protein content by 1.9–10.3% in ni",
-    "https://linkinghub.elsevier.com/retrieve/pii/S0308814626033212"
-   ],
-   [
-    "descartada",
-    "science",
-    "Overcoming Detection Lag in a Cryptic Panzootic: Chytrid Invasion Linked to Historically Enigmatic Amphibian Declines in",
-    "https://onlinelibrary.wiley.com/doi/10.1111/mec.70573"
-   ],
-   [
-    "descartada",
-    "science",
-    "Research investigates the “mean-regression trap”. Authors proposed a two-step advancement in model architecture. The GCN",
-    "https://doi.org/10.18653/v1/2026.semeval-1.53"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "‘We Pay for It’: Germany Demands Starlink Restrictions in Ukraine Be Lifted",
-    "https://www.kyivpost.com/post/87287"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "“This is a Serious Mistake”: Zelenskyy Slams Starlink Restrictions",
-    "https://united24media.com/world/this-is-a-serious-mistake-zelenskyy-slams-starlink-restrictions-23491"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "US president Donald Trump calls Ukraine’s resumption of strikes on Russian oil refineries a ‘disgrace’",
-    "https://www.theguardian.com/world/2026/oct/16/trump-calls-ukraines-resumption-of-strikes-on-russian-oil-refineries-a-disgrace"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Ukrainian drones force closure of all four Moscow airports overnight",
-    "https://www.euronews.com/2026/10/16/ukrainian-drones-force-closure-of-all-four-moscow-airports-overnight-cancelling-dozens-of-"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Zelensky thanks EU's 'real leaders' for their continued support as bloc confirms new sanctions package on the way",
-    "https://kyivindependent.com/zelensky-thanks-eus-real-leaders-for-their-continued-support-as-bloc-confirms-new-sanctions-package-on-the-way/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Putin Admits Moscow Failed to Anticipate Ukrainian Strikes on Major E-Commerce Hubs",
-    "https://united24media.com/war-in-ukraine/putin-admits-moscow-failed-to-anticipate-ukrainian-strikes-on-major-e-commerce-hubs-23493"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Russia returns to G20 table in Bangkok on U.S. invitation that angers Europe",
-    "https://www.cnbc.com/2026/10/16/g20-russia-ukraine-trump-diesel-europe-.html"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Poland provided aid to defend Kyiv, Zelensky says",
-    "https://kyivindependent.com/poland-provided-aid-to-defend-kyiv-zelensky-says/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Iran Reportedly Sells Oil to Russia at 35%–42% Discount as New Caspian Route Emerges",
-    "https://irannewswire.org/iran-oil-russia-caspian-sanctions-evasion/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Army chief says UK politicians to start 'frank conversation' with public to prepare for war",
-    "https://news.sky.com/story/army-chief-says-politicians-to-start-frank-conversation-with-public-to-prepare-for-war-13599891"
-   ],
-   [
-    "confirmada",
-    "worldnews",
-    "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
-    "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "U.S.-Mexico tariff deal stalls over Lutnick objections, WSJ reports",
-    "https://ca.investing.com/news/stock-market-news/usmexico-tariff-deal-stalls-over-lutnick-objections-wsj-reports-93CH-4884219"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Starlink access restored, says UK’s Streeting after Hegseth meeting",
-    "https://www.theguardian.com/world/2026/oct/16/ukraine-war-briefing-starlink-access-restored-says-uks-streeting-as-zelenskyy-rallies-support-in-brussels"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Chinese Cars in Norway Stored Military Exercise Footage and Access Codes",
-    "https://militarnyi.com/en/news/chinese-cars-in-norway-stored-military-exercise-footage-and-access-codes/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Netanyahu adviser says Israel ‘very close’ to creating conditions for Iran regime change",
-    "https://www.iranintl.com/en/202610159370"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1696, Part 1 (Thread #1843)",
-    "https://www.reddit.com/live/1hnbhsgiy1dhh"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Starlink Speeds Rise Again in Ukraine—but Key Frontline Missions Are Still Disrupted, Zelenskyy Says",
-    "https://united24media.com/war-in-ukraine/starlink-speeds-rise-again-in-ukraine-but-key-frontline-missions-are-still-disrupted-zelenskyy-says-23520"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Russia seizes four European firms’ assets over EU support for Ukraine. The Kremlin said the move responded to EU nations",
-    "https://tvpworld.com/95966773/retaliation-for-ukraine-aid-russia-seizes-assets-of-four-european-firms"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "U.S. Starlink curbs embolden Russia to intensify attacks on Ukraine, minister tells CNBC",
-    "https://www.cnbc.com/2026/10/16/zelenskyy-trump-eu-summit-russia-ukraine.html"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Netanyahu reveals direct call with Syrian President Sharaa, claims he stopped Druze massacres",
-    "https://www.jpost.com/israel-news/article-911842"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Europe Cannot Replace Starlink for Ukraine in Near Term, EU’s Kallas Says",
-    "https://www.kyivpost.com/post/87276"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "France and Germany agree to ease EU car emissions rules in new deal",
-    "https://www.france24.com/en/europe/20261015-france-and-germany-agree-to-ease-eu-car-emissions-rules-in-new-deal"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Israeli settlers attack olive farmers and Washington Post journalist in West Bank",
-    "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "EU leaders push for historic Single Market overhaul by 2027",
-    "https://www.brusselstimes.com/eu-affairs/2362802/eu-leaders-push-for-historic-single-market-overhaul-by-2027"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "I dont' want to talk about it: Belgian PM explains why EU summit did not move on frozen Russian assets",
-    "https://www.eurointegration.com.ua/eng/news/2026/10/16/7247864/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "19 injured after Channel Tunnel collision between bus and train on French side",
-    "https://news.sky.com/story/19-injured-after-channel-tunnel-collision-between-bus-and-train-on-french-side-13599710"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Clashes between Kurdish militants and Iran’s IRGC began on Thursday and have continued into Friday in western Iran’s Kur",
-    "https://www.rudaw.net/english/categories/iran/1079755"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Russia Seeks New Gas Buyers in Africa After Losing More Than Half of Gazprom’s Exports",
-    "https://united24media.com/world/russia-seeks-new-gas-buyers-in-africa-after-losing-more-than-half-of-gazproms-exports-23529"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Iranian businesses warn of inflation and shortages as dollar reaches 267,500 tomans",
-    "https://irannewswire.org/iran-inflation-import-pressure-dollar-267500-tomans/"
-   ],
-   [
-    "descartada",
     "Futurology",
     "First-Ever Public Confirmation of 'Zero-Click' Spyware Delivered Via Targeted Ads. A firm called Discover-Tech has ads o",
     "https://www.reddit.com/r/Futurology/comments/1x6zi5u/firstever_public_confirmation_of_zeroclick/"
@@ -8406,305 +8011,23 @@
    [
     "descartada",
     "Futurology",
+    "Meta's smart glasses were recording conversations without the wake phrase, company admits",
+    "https://www.techspot.com/news/114214-meta-smart-glasses-secretly-recording-conversations-without-wake.html"
+   ],
+   [
+    "descartada",
+    "Futurology",
+    "Hanwha tests 30 kW anti-drone laser weapon, develops vehicle-mounted 50 kW system",
+    "https://interestingengineering.com/military/hanwha-50kw-laser-vehicle-drone-defense"
+   ],
+   [
+    "descartada",
+    "Futurology",
     "Elon Musk really brought a flying car. Tesla Roadster just pulled off an inverted ramp climb and mid-air flip.",
     "https://www.ibtimes.co.uk/tesla-roadster-mid-air-flip-long-awaited-demo-1825958"
    ],
    [
     "descartada",
-    "MadeMeSmile",
-    "Kermit and a 4 year old (1972)",
-    "https://v.redd.it/1cdglrm5xqvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Terry Crews bringing pure energy to SoFi Stadium",
-    "https://v.redd.it/ln25hd8i3pvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Watching her little mind figure this out",
-    "https://v.redd.it/d1v4yv4y8ovh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Can you imagine?",
-    "https://i.redd.it/03rresfzvhuh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "The ultimate side quest",
-    "https://v.redd.it/chahywkb3qvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Mother worked abroad as housekeeper for decades to fund sons education, now he is pilot of her flight",
-    "https://v.redd.it/njqpqjpmfqvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "I’m not sure what this kid has but he is special.",
-    "https://v.redd.it/4cob4vayuqvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Yoga with pups",
-    "https://v.redd.it/xiamr0bp8uvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Tiger cubs",
-    "https://v.redd.it/l5al9uljxrvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Memories from the 80s.",
-    "https://v.redd.it/c71ggc9mqpvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "[OC] I left work early today to Volunteer at my kids book fair. My company gave me $100 to help kids who cannot afford o",
-    "https://i.redd.it/z9qq4et5zovh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Blind man wins 10 second challenge at barber shop for free haircuts",
-    "https://v.redd.it/wyenoegkzovh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Dog saves a tiny stray kitten by bringing it home",
-    "https://v.redd.it/80o0ho0yscvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A father turns his truck into a birthday party place for his daughter",
-    "https://v.redd.it/wff2z09j2lvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Young foxes playing",
-    "https://v.redd.it/ax9snv4fcpvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A young fox",
-    "https://v.redd.it/h6p4nagamsvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "🥹🥰🫠really made me smile",
-    "https://i.redd.it/i85lxa4zksvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Teen speaks out after viral video showed him giving elderly man the shoes off his feet (OC)",
-    "https://www.unilad.com/news/us-news/jordan-hope-arizona-kindness-shoes-video-903685-20261015"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "The world is one home",
-    "https://v.redd.it/w7hv0nnvxsvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Paparazzi for Halloween 🎃",
-    "https://v.redd.it/aizuhzht3qvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "5am wake up call for a surprise",
-    "https://v.redd.it/tq3tasxfmuvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Usual day badminton practice",
-    "https://v.redd.it/8lt6u0l2guvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Living the dream",
-    "https://v.redd.it/h1v780vuuuvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Every year since my daughter turned 1 I add a charm to this necklace which marks something in the year. Tomorrow she is ",
-    "https://i.redd.it/mcv5446opovh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Bears kept stealing a man's honey, so he enlisted them as taste tasters.",
-    "https://v.redd.it/2897duoi7qvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "[BBC Dorset] the team talk of Blandford United Royals u9s is interrupted when a steam train surprised the kids",
-    "https://v.redd.it/fp02mk8batvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Just a tiny tortoise walking toward the sunshine and making the world a little cuter along the way🌸(by@morty.the.tortie)",
-    "https://v.redd.it/7v41ht1icuvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "The athlete with Down syndrome, noticing the sadness of his defeated opponent, immediately ran up to him and raised his ",
-    "https://v.redd.it/ura6k4m3kgvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Made me smile seeing my rescue Pittie basking in the sun, knowing he had been brought to the shelter by a cop after some",
-    "https://i.redd.it/ikeqcc93wtvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "🎵 🎶 Soup for my grandma 🎵 🎶",
-    "https://v.redd.it/84uxmdqdcovh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Carmel brothers help to save grandmother, 2 toddlers from retention pond",
-    "https://fox59.com/news/carmel-brothers-help-to-save-grandmother-2-toddlers-from-retention-pond/"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "These squeaky bunny noises",
-    "https://v.redd.it/6b42tucl1uuh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A country meadow living the dream",
-    "https://i.redd.it/64zu7aidzqvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Our new lab loves playing hide and seek..",
-    "https://www.reddit.com/gallery/1x6wegz"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "To prank her",
-    "https://v.redd.it/ptjaqpletovh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "The quieter you become the more the forest tells you",
-    "https://i.redd.it/vh4wfhhyluvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Giving out side quests to strangers",
-    "https://v.redd.it/6ubv2v6e5uvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Trees are always a relief after people- David Mitchell",
-    "https://i.redd.it/6kcc9hskouvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "It's nice to see :)",
-    "https://v.redd.it/x0m7rfabjouh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Tomorrow is my 400th consecutive day on Reddit",
-    "https://i.redd.it/snac67nacovh1.jpeg"
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Swatting the bots on Yandex",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "I bet the orange one is absolutely raging.",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "-1...",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "The women were identified as Sanbracia Marianna Johnson, 28; Anecia Tashae Cammon, 26; Latavia Traviona Smith, 21; and T",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Zelensky Smiles as Reporter Asks if Trump Is Making Him a Scapegoat Before US Midterms",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "The russian army in 2026",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "F**k you Russia, and f**k you Trump",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Logic finally enters the chat",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "No comments...",
-    ""
-   ],
-   [
-    "confirmada",
     "UpliftingNews",
     "Stanford discovers way to save ghostly corals from the brink",
     "https://www.sfgate.com/bayarea/article/stanford-coral-study-22475321.php"
@@ -8741,222 +8064,6 @@
    ],
    [
     "descartada",
-    "science",
-    "Plastic isn't as inert as we'd thought: Scientists found that tiny everyday microplastics sitting in plain water spontan",
-    "https://www.nature.com/articles/s41586-026-11141-y"
-   ],
-   [
-    "descartada",
-    "science",
-    "Who gets Alzheimer’s drugs. U S research shows Black adults had 86% lower odds, and Hispanic adults had 79% lower odds o",
-    "https://www.eurekalert.org/news-releases/1147823"
-   ],
-   [
-    "descartada",
-    "science",
-    "National Data Show High Rates of Anxiety in U.S Adolescents. Only half of adolescents with moderate or severe anxiety sy",
-    "https://today.uconn.edu/2026/10/national-data-show-high-rates-of-anxiety-in-adolescents/"
-   ],
-   [
-    "confirmada",
-    "science",
-    "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech . Research shows inner speech is not merely a sil",
-    "https://www.tsukuba.ac.jp/en/research-news/20261015141500.html"
-   ],
-   [
-    "descartada",
-    "science",
-    "Treating depression during pregnancy influences infant brain development and early emotional function, according to new ",
-    "https://news.cuanschutz.edu/news-stories/study-finds-treating-depression-during-pregnancy-may-benefit-babies-brain-development?amp%3Butm_source=reddit&amp%3Butm_medium=social"
-   ],
-   [
-    "descartada",
-    "science",
-    "An aging-sensitive secreted phospholipase confers neuroprotection and cognitive resilience | Nature Neuroscience",
-    "https://www.nature.com/articles/s41593-026-02465-z"
-   ],
-   [
-    "descartada",
-    "science",
-    "Hooked on tuna: People have been harvesting these ocean predators for 44,000 years",
-    "https://theconversation.com/hooked-on-tuna-people-have-been-harvesting-these-ocean-predators-for-44-000-years-292428"
-   ],
-   [
-    "descartada",
-    "science",
-    "What makes us human. A first atlas of functional DNA changes offers new clues. Researchers identify evolutionary DNA cha",
-    "https://www.eurekalert.org/news-releases/1147810"
-   ],
-   [
-    "descartada",
-    "science",
-    "Machine learning analysis of gene regulation reveals new dimension of biological variability",
-    "https://www.eurekalert.org/news-releases/1148013"
-   ],
-   [
-    "descartada",
-    "science",
-    "New study in Science Advances finds that increasing family visits reduces prison violence and misconduct. By using gas p",
-    "https://www.science.org/doi/10.1126/sciadv.aed8424?amp%3Butm_source=twitter&amp%3Butm_medium=ownedSocial"
-   ],
-   [
-    "confirmada",
-    "science",
-    "New phase 1 trial results published in Nature Medicine show that combining a personalized neoantigen-targeting cancer va",
-    "https://www.nature.com/articles/s41591-026-04717-8"
-   ],
-   [
-    "descartada",
-    "science",
-    "Mechanical stress helps determine where muscle precursor cells fuse, a study in cultured chicken cells finds",
-    "https://www.nature.com/articles/s41467-026-76967-6"
-   ],
-   [
-    "descartada",
-    "science",
-    "Researchers improve weather forecasts looking two to six weeks out: « A new machine-learning approach broke records for ",
-    "https://news.mit.edu/2026/researchers-improve-weather-forecasts-looking-two-six-weeks-out-1014"
-   ],
-   [
-    "confirmada",
-    "science",
-    "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mous",
-    "https://www.nature.com/articles/s41536-026-00507-5"
-   ],
-   [
-    "descartada",
-    "science",
-    "Google’s quantum Willow chip may be able to grow ‘magic states'—helping improve quantum computers’ accuracy in complex c",
-    "https://www.scientificamerican.com/article/googles-quantum-willow-chip-may-be-able-to-grow-magic-states/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Order to limit Starshield for Ukraine came from inside White House, sources say",
-    "https://www.reuters.com/world/europe/order-limit-starshield-ukraine-came-inside-white-house-sources-say-2026-10-15/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Prime Minister Mark Carney says US is trying to break Canada as Alberta votes on separation path",
-    "https://apnews.com/article/canada-alberta-carney-separation-vote-referendum-4e39eb0f5bda2438b3c2fedbf6088d09"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "It is crucial to give Ukraine all the means it needs ​to defend and protect ​its civilian population and its ⁠infrastruc",
-    "https://www.reuters.com/business/aerospace-defense/crucial-give-ukraine-all-means-needed-defend-population-infrastructure-frances-2026-10-15/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "EU leaders rally around Zelenskiy as Trump calls Ukrainian strikes on Russia a 'disgrace'",
-    "https://www.reuters.com/world/europe/eu-leaders-rally-around-zelenskiy-trump-calls-ukrainian-strikes-russia-disgrace-2026-10-16/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "As Americans play ‘power game,’ draft document shows Canada-EU response",
-    "https://www.ctvnews.ca/politics/article/as-americans-play-power-game-draft-document-shows-canada-eu-response/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Zelensky rallies EU support as Trump says Ukraine leader 'more difficult to deal with than Putin'",
-    "https://www.bbc.com/news/articles/c58jz174w89ro"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "China tells Israel to stop 'forced establishment' of West Bank settlements",
-    "https://www.bbc.com/news/articles/cq1j3wdxy48ro"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "The risk that Russia could erode Western support for Ukraine through hybrid attacks on critical infrastructure and defen",
-    "https://www.reuters.com/business/aerospace-defense/estonia-fears-russia-will-erode-western-support-ukraine-minister-says-2026-10-15/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Brazil’s Lula wins electoral court challenge against Meta for alleged pro-Bolsonaro algorithm bias",
-    "https://www.nbcnews.com/world/south-america/brazil-lula-wins-electoral-court-challenge-meta-alleged-bolsonaro-bias-rcna603835"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Online ads weaponised to deliver ‘zero-click’ spyware, researchers say",
-    "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Pentagon plans to hold report on Iran school strike past November midterms",
-    "https://www.straitstimes.com/world/united-states/pentagon-plans-to-hold-report-on-iran-school-strike-past-november-midterms"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Ukraine critically low on Patriot interceptors as Russian strikes intensify",
-    "https://www.washingtonpost.com/national-security/2026/10/15/ukraine-critically-low-patriot-interceptors-russian-strikes-intensify/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "South Korea to relocate about 10,000 government jobs to Sejong from Seoul by 2031",
-    "https://www.reuters.com/world/asia-pacific/south-korea-relocate-about-10000-government-jobs-sejong-seoul-by-2031-2026-10-13/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Dmitriev says Russian wealth fund will work with US on payment for diesel deal",
-    "https://www.reuters.com/world/dmitriev-says-russian-wealth-fund-will-work-with-us-payment-diesel-deal-2026-10-16/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "UK could quickly re-enter EU with ‘Switzerland plus’ deal, senior MEP says | Brexit",
-    "https://www.theguardian.com/politics/2026/oct/16/uk-eu-europe-switzerland-plus-bernd-lange-brexit"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Norwegian teen sentenced to 20 years for U.K. murder plot tied to Iran-linked gang",
-    "https://www.nbcnews.com/world/iran/norwegian-teen-sentenced-20-years-uk-murder-plot-tied-iran-linked-grou-rcna603857"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Maduro Says New US Torture Allegations Are ‘False Accusations’",
-    "https://www.bloomberg.com/news/articles/2026-10-15/maduro-says-new-us-torture-allegations-are-false-accusations"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "IMF warns global food security worsening amid El Nino",
-    "https://asia.nikkei.com/spotlight/environment/climate-change/imf-warns-global-food-security-worsening-amid-el-nino"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Pakistan to chair IMF, World Bank boards next year for first time since 1953",
-    "https://www.thehindu.com/news/international/pakistan-to-chair-imf-world-bank-boards-next-year-for-first-time-since-1953/article71591760.ece"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Portugal: 37 protesters reportedly injured during overnight police intervention at housing-rights protest in Porto",
-    "https://pt.euronews.com/2026/10/15/manifestantes-pelo-direito-a-habitacao-denunciam-carga-policial-com-dezenas-de-feridos-no-"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Zelenskyy asks leaders for €70 billion in extra support",
-    "https://www.euronews.com/2026/10/16/eu-summit-leaders-to-rally-behind-zelenskyy-amid-bitter-row-with-trump"
-   ],
-   [
-    "descartada",
     "Futurology",
     "Could ASI be the Great Filter? If creating superintelligence is just the next evolutionary step for biological life, cou",
     "https://www.astronomy.com/science/the-great-filter-a-possible-solution-to-the-fermi-paradox/"
@@ -8973,7 +8080,6 @@
    "NPR-Inspired Homework Leads Teen to Find Hidden Message a Decade After a Stranger’s Kindness",
    "Cards Against Humanity has donated 5,000-plus games to public libraries to help 'fend off AI and brainrot'",
    "Meet the first bear to ever receive a prosthetic paw: 'We do whatever it takes to help'",
-   "Scientists built a soundtrack to lure baby corals to their cyborg reef",
    "Antarctica’s sea ice has undergone a stunning reversal",
    "Scientists make stunning discovery that could help explain why life exists",
    "Antarctica’s sea ice has undergone a stunning reversal",
@@ -9000,14 +8106,14 @@
    "La salida romántica de la China Suárez con Mauro Icardi en Miami luego del cruce viral con una seguidora",
    "Victoria’s Secret Fashion Show 2026: horario, dónde ver y qué modelos y artistas participarán"
   ],
-  "candidates": 47,
+  "candidates": 41,
   "fromGeneralFeeds": 1,
   "rejected": {
-   "formato": 95,
-   "relleno (sin impacto medible)": 5,
+   "formato": 93,
+   "relleno (sin impacto medible)": 4,
    "relleno": 12,
-   "poco positivo": 290,
-   "negativo": 145,
+   "poco positivo": 288,
+   "negativo": 144,
    "negativo-resumen": 1
   },
   "reddit": {
@@ -9022,44 +8128,42 @@
     "error": null
    },
    "science": {
-    "ok": true,
-    "items": 25,
-    "error": null
+    "ok": false,
+    "items": 0,
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
    },
    "worldnews": {
-    "ok": true,
-    "items": 50,
-    "error": null
+    "ok": false,
+    "items": 0,
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
    },
    "Futurology": {
     "ok": true,
-    "items": 5,
+    "items": 7,
     "error": null
    },
    "MadeMeSmile": {
-    "ok": true,
-    "items": 40,
-    "error": null
+    "ok": false,
+    "items": 0,
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
    }
   },
   "ninegag": {
-   "ok": true,
-   "items": 10,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "leads": {
-   "total": 144,
-   "confirmed": 9,
-   "dropped": 134,
+   "total": 21,
+   "confirmed": 4,
+   "dropped": 17,
    "confirmedVia": {
-    "mismo enlace en feed": 1,
-    "enlace a medio confiable (leído de su página)": 8
+    "enlace a medio confiable (leído de su página)": 4
    },
    "droppedReasons": {
-    "enlace a sitio no verificado": 81,
-    "medio confiable pero nota no positiva": 30,
-    "9gag sin fuente": 9,
-    "medio confiable pero no se pudo leer la página": 14
+    "enlace a sitio no verificado": 14,
+    "medio confiable pero no se pudo leer la página": 1,
+    "medio confiable pero nota no positiva": 2
    },
    "droppedExamples": [
     {
@@ -9103,36 +8207,36 @@
      "link": "https://people.com/new-jersey-6-year-old-honored-for-courage-selfless-service-after-helping-grandma-who-was-hit-by-car-12176498"
     },
     {
-     "sub": "science",
-     "title": "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own genes, not from how thei",
-     "link": "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
+     "sub": "Futurology",
+     "title": "First-Ever Public Confirmation of 'Zero-Click' Spyware Delivered Via Targeted Ads. A firm called Discover-Tech has ads on 200,000 websites t",
+     "link": "https://www.reddit.com/r/Futurology/comments/1x6zi5u/firstever_public_confirmation_of_zeroclick/"
     },
     {
-     "sub": "science",
-     "title": "A new long-term study has linked late-night eating with a significantly higher risk of developing cirrhosis and metabolic dysfunction-associ",
-     "link": "https://www.sciencealert.com/one-common-eating-habit-is-linked-to-higher-risk-of-2-liver-diseases"
+     "sub": "Futurology",
+     "title": "South Korea removes safety barriers to let humanoid robots work alongside humans in factories",
+     "link": "https://www.techspot.com/news/114215-south-korea-removes-safety-barriers-humanoid-robots-work.html"
     },
     {
-     "sub": "science",
-     "title": "Analysis of Nazi Germany’s final reactor experiment finds it needed roughly twice the uranium and more than twice the heavy water to sustain",
-     "link": "https://academic.oup.com/pnasnexus/article/5/9/pgag282/8836799"
+     "sub": "Futurology",
+     "title": "US company trying to resurrect the extinct dodo",
+     "link": "https://nwitimes.com/news/nation-world/science/article_624e79c8-1519-5c90-bf33-b3011c3c5139.html"
     },
     {
-     "sub": "science",
-     "title": "Caffeine Consumption and Adolescent Mental Health: Higher total caffeine intake was associated with lower total cortical surface area.",
-     "link": "https://www.sciencedirect.com/science/article/pii/S245190222600282X?via%3Dihub="
+     "sub": "Futurology",
+     "title": "Meta's smart glasses were recording conversations without the wake phrase, company admits",
+     "link": "https://www.techspot.com/news/114214-meta-smart-glasses-secretly-recording-conversations-without-wake.html"
     }
    ]
   },
   "perSubtopic": {
-   "salud": 10,
-   "ciencia": 9,
+   "salud": 8,
+   "ciencia": 8,
    "ambiente": 12,
-   "social": 2,
+   "social": 1,
    "acciones": 3,
    "comunidad": 2
   },
-  "allStoriesBeforeCap": 47
+  "allStoriesBeforeCap": 41
  },
  "crypto": {
   "minOutlets": 5,
@@ -9184,7 +8288,7 @@
     "source": "The Defiant",
     "url": "https://thedefiant.io/api/feed",
     "itemsInFeed": 100,
-    "kept": 37
+    "kept": 36
    },
    {
     "id": "cr-unchained",
@@ -9219,7 +8323,7 @@
     "source": "CriptoNoticias",
     "url": "https://www.criptonoticias.com/feed/",
     "itemsInFeed": 10,
-    "kept": 10
+    "kept": 9
    },
    {
     "id": "cr-diariobitcoin",
@@ -9381,15 +8485,15 @@
     "error": "Feed vacío"
    }
   ],
-  "itemsGathered": 185,
+  "itemsGathered": 183,
   "fromGeneralFeeds": 3,
   "rejected": {
    "predicción/promo/formato": 3,
-   "sección no noticiosa": 2
+   "sección no noticiosa": 3
   },
-  "clusters": 149,
+  "clusters": 147,
   "groupsByOutletCount": {
-   "1": 125,
+   "1": 123,
    "2": 17,
    "3": 6,
    "7": 1
@@ -9415,7 +8519,7 @@
     "region": "costarica",
     "url": "https://www.lateja.cr/arc/outboundfeeds/rss/?outputType=xml",
     "itemsInFeed": 100,
-    "kept": 50
+    "kept": 51
    },
    {
     "id": "cr-observador",
@@ -9452,15 +8556,6 @@
     "url": "https://www.amprensa.com/feed/",
     "itemsInFeed": 50,
     "kept": 50
-   },
-   {
-    "id": "cr-qcostarica",
-    "source": "Q Costa Rica",
-    "org": "qcostarica",
-    "region": "costarica",
-    "url": "https://qcostarica.com/feed/",
-    "itemsInFeed": 10,
-    "kept": 10
    },
    {
     "id": "ca-prensalibre",
@@ -9533,15 +8628,6 @@
     "url": "https://www.divergentes.com/feed/",
     "itemsInFeed": 10,
     "kept": 7
-   },
-   {
-    "id": "ca-articulo66",
-    "source": "Artículo 66",
-    "org": "articulo66",
-    "region": "centroamerica",
-    "url": "https://www.articulo66.com/feed/",
-    "itemsInFeed": 10,
-    "kept": 10
    },
    {
     "id": "ca-proceso-hn",
@@ -9739,7 +8825,7 @@
     "region": "sudamerica",
     "url": "https://www.elnacional.com/feed/",
     "itemsInFeed": 100,
-    "kept": 97
+    "kept": 98
    },
    {
     "id": "sa-elcomercio-ec",
@@ -9757,7 +8843,7 @@
     "region": "sudamerica",
     "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
     "itemsInFeed": 100,
-    "kept": 77
+    "kept": 78
    },
    {
     "id": "sa-agenciabrasil",
@@ -9958,15 +9044,6 @@
     "kept": 18
    },
    {
-    "id": "as-indianexpress",
-    "source": "The Indian Express",
-    "org": "indianexpress",
-    "region": "asia",
-    "url": "https://indianexpress.com/section/india/feed/",
-    "itemsInFeed": 200,
-    "kept": 52
-   },
-   {
     "id": "as-bangkokpost",
     "source": "Bangkok Post",
     "org": "bangkokpost",
@@ -10009,7 +9086,7 @@
     "region": "asia",
     "url": "https://thediplomat.com/feed/",
     "itemsInFeed": 96,
-    "kept": 23
+    "kept": 22
    },
    {
     "id": "af-guardian-africa",
@@ -10239,9 +9316,27 @@
   ],
   "feedsFailed": [
    {
+    "id": "cr-qcostarica",
+    "source": "Q Costa Rica",
+    "url": "https://qcostarica.com/feed/",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "ca-articulo66",
+    "source": "Artículo 66",
+    "url": "https://www.articulo66.com/feed/",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   },
+   {
     "id": "sa-efectococuyo",
     "source": "Efecto Cocuyo",
     "url": "https://efectococuyo.com/feed/",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "as-indianexpress",
+    "source": "The Indian Express",
+    "url": "https://indianexpress.com/section/india/feed/",
     "error": "HTTPError: HTTP Error 403: Forbidden"
    }
   ],
@@ -10332,8 +9427,8 @@
     "error": "Funcionan pero no están en español ni inglés (no se pueden agrupar)"
    }
   ],
-  "itemsGathered": 4400,
-  "clusters": 3465,
+  "itemsGathered": 4339,
+  "clusters": 3412,
   "perRegion": {
    "costarica": 1,
    "centroamerica": 0,
@@ -10345,22 +9440,22 @@
    "oceania": 0
   },
   "groupsWith3or4Outlets": {
-   "costarica": 1,
+   "costarica": 2,
    "centroamerica": 1,
    "latam": 4,
    "sudamerica": 5,
    "europa": 16,
-   "asia": 7,
+   "asia": 6,
    "africa": 8,
    "oceania": 0
   },
   "workingLocalOutletsPerRegion": {
-   "costarica": 8,
-   "centroamerica": 14,
+   "costarica": 7,
+   "centroamerica": 13,
    "latam": 9,
    "sudamerica": 13,
    "europa": 7,
-   "asia": 9,
+   "asia": 8,
    "africa": 9,
    "oceania": 8
   }
