@@ -1,0 +1,1537 @@
+{
+  "updatedAt": "2026-10-15T23:23:59Z",
+  "nextRefreshAt": "2026-10-16T02:23:59Z",
+  "refreshHours": 3,
+  "timezoneNote": "Las horas de la interfaz se muestran en America/Costa_Rica.",
+  "categories": [
+    {
+      "id": "sucesos",
+      "label": "Sucesos"
+    },
+    {
+      "id": "politica",
+      "label": "Política"
+    },
+    {
+      "id": "finanzas",
+      "label": "Mundo de finanzas"
+    },
+    {
+      "id": "mundo",
+      "label": "Mundo"
+    },
+    {
+      "id": "ciencias",
+      "label": "Ciencias"
+    },
+    {
+      "id": "guerras",
+      "label": "Guerras actuales"
+    }
+  ],
+  "counts": {
+    "sucesos": {
+      "es": 12,
+      "en": 8
+    },
+    "politica": {
+      "es": 12,
+      "en": 12
+    },
+    "finanzas": {
+      "es": 12,
+      "en": 12
+    },
+    "mundo": {
+      "es": 12,
+      "en": 12
+    },
+    "ciencias": {
+      "es": 12,
+      "en": 12
+    },
+    "guerras": {
+      "es": 12,
+      "en": 12
+    }
+  },
+  "sourcesUsed": [
+    "BBC",
+    "BBC Mundo",
+    "Bloomberg",
+    "El Mundo",
+    "El País",
+    "Financial Times",
+    "Nature",
+    "Science",
+    "The Economist"
+  ],
+  "feedsOk": [
+    {
+      "id": "bbc-world",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "itemsInFeed": 31,
+      "keptBeforeCap": 26,
+      "newest": "2026-10-15T22:46:49Z"
+    },
+    {
+      "id": "bbc-politics",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/politics/rss.xml",
+      "itemsInFeed": 54,
+      "keptBeforeCap": 35,
+      "newest": "2026-10-15T20:08:41Z"
+    },
+    {
+      "id": "bbc-business",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "itemsInFeed": 47,
+      "keptBeforeCap": 22,
+      "newest": "2026-10-15T23:18:21Z"
+    },
+    {
+      "id": "bbc-science",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "itemsInFeed": 42,
+      "keptBeforeCap": 14,
+      "newest": "2026-10-15T20:00:00Z"
+    },
+    {
+      "id": "bbc-me",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "itemsInFeed": 35,
+      "keptBeforeCap": 16,
+      "newest": "2026-10-14T23:20:57Z"
+    },
+    {
+      "id": "bbc-europe",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+      "itemsInFeed": 21,
+      "keptBeforeCap": 8,
+      "newest": "2026-10-15T15:21:32Z"
+    },
+    {
+      "id": "bbc-africa",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/world/africa/rss.xml",
+      "itemsInFeed": 32,
+      "keptBeforeCap": 9,
+      "newest": "2026-10-15T11:26:28Z"
+    },
+    {
+      "id": "bbc-asia",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+      "itemsInFeed": 17,
+      "keptBeforeCap": 6,
+      "newest": "2026-10-15T03:59:56Z"
+    },
+    {
+      "id": "bbc-uk",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/uk/rss.xml",
+      "itemsInFeed": 31,
+      "keptBeforeCap": 2,
+      "newest": "2026-10-15T16:35:05Z"
+    },
+    {
+      "id": "bbc-top",
+      "source": "BBC",
+      "lang": "en",
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "itemsInFeed": 32,
+      "keptBeforeCap": 2,
+      "newest": "2026-10-15T16:59:31Z"
+    },
+    {
+      "id": "bbc-mundo",
+      "source": "BBC Mundo",
+      "lang": "es",
+      "url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+      "itemsInFeed": 34,
+      "keptBeforeCap": 12,
+      "newest": "2026-10-15T23:21:50Z"
+    },
+    {
+      "id": "elpais-int",
+      "source": "El País",
+      "lang": "es",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada",
+      "itemsInFeed": 22,
+      "keptBeforeCap": 22,
+      "newest": "2026-10-15T19:26:51Z"
+    },
+    {
+      "id": "elpais-esp",
+      "source": "El País",
+      "lang": "es",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada",
+      "itemsInFeed": 19,
+      "keptBeforeCap": 15,
+      "newest": "2026-10-15T16:51:19Z"
+    },
+    {
+      "id": "elpais-eco",
+      "source": "El País",
+      "lang": "es",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/economia/portada",
+      "itemsInFeed": 39,
+      "keptBeforeCap": 22,
+      "newest": "2026-10-15T16:33:34Z"
+    },
+    {
+      "id": "elpais-soc",
+      "source": "El País",
+      "lang": "es",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/sociedad/portada",
+      "itemsInFeed": 37,
+      "keptBeforeCap": 21,
+      "newest": "2026-10-15T15:00:30Z"
+    },
+    {
+      "id": "elpais-ciencia",
+      "source": "El País",
+      "lang": "es",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/ciencia/portada",
+      "itemsInFeed": 40,
+      "keptBeforeCap": 15,
+      "newest": "2026-10-15T14:13:09Z"
+    },
+    {
+      "id": "elpais-en",
+      "source": "El País",
+      "lang": "en",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada",
+      "itemsInFeed": 59,
+      "keptBeforeCap": 9,
+      "newest": "2026-10-15T16:02:35Z"
+    },
+    {
+      "id": "elmundo-portada",
+      "source": "El Mundo",
+      "lang": "es",
+      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+      "itemsInFeed": 25,
+      "keptBeforeCap": 10,
+      "newest": "2026-10-15T22:13:38Z"
+    },
+    {
+      "id": "elmundo-int",
+      "source": "El Mundo",
+      "lang": "es",
+      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml",
+      "itemsInFeed": 53,
+      "keptBeforeCap": 50,
+      "newest": "2026-10-15T22:01:54Z"
+    },
+    {
+      "id": "elmundo-esp",
+      "source": "El Mundo",
+      "lang": "es",
+      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml",
+      "itemsInFeed": 47,
+      "keptBeforeCap": 43,
+      "newest": "2026-10-15T22:00:12Z"
+    },
+    {
+      "id": "elmundo-eco",
+      "source": "El Mundo",
+      "lang": "es",
+      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/economia.xml",
+      "itemsInFeed": 49,
+      "keptBeforeCap": 49,
+      "newest": "2026-10-15T22:00:50Z"
+    },
+    {
+      "id": "elmundo-ciencia",
+      "source": "El Mundo",
+      "lang": "es",
+      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/ciencia.xml",
+      "itemsInFeed": 47,
+      "keptBeforeCap": 47,
+      "newest": "2026-10-15T16:31:48Z"
+    },
+    {
+      "id": "econ-int",
+      "source": "The Economist",
+      "lang": "en",
+      "url": "https://www.economist.com/international/rss.xml",
+      "itemsInFeed": 300,
+      "keptBeforeCap": 3,
+      "newest": "2026-10-15T10:52:13Z"
+    },
+    {
+      "id": "econ-fin",
+      "source": "The Economist",
+      "lang": "en",
+      "url": "https://www.economist.com/finance-and-economics/rss.xml",
+      "itemsInFeed": 300,
+      "keptBeforeCap": 12,
+      "newest": "2026-10-15T09:34:30Z"
+    },
+    {
+      "id": "econ-biz",
+      "source": "The Economist",
+      "lang": "en",
+      "url": "https://www.economist.com/business/rss.xml",
+      "itemsInFeed": 300,
+      "keptBeforeCap": 13,
+      "newest": "2026-10-15T12:50:21Z"
+    },
+    {
+      "id": "econ-us",
+      "source": "The Economist",
+      "lang": "en",
+      "url": "https://www.economist.com/united-states/rss.xml",
+      "itemsInFeed": 300,
+      "keptBeforeCap": 13,
+      "newest": "2026-10-15T12:50:21Z"
+    },
+    {
+      "id": "ft-home",
+      "source": "Financial Times",
+      "lang": "en",
+      "url": "https://www.ft.com/rss/home",
+      "itemsInFeed": 11,
+      "keptBeforeCap": 11,
+      "newest": "2026-10-15T23:18:40Z"
+    },
+    {
+      "id": "ft-world",
+      "source": "Financial Times",
+      "lang": "en",
+      "url": "https://www.ft.com/world?format=rss",
+      "itemsInFeed": 25,
+      "keptBeforeCap": 21,
+      "newest": "2026-10-15T21:05:45Z"
+    },
+    {
+      "id": "ft-markets",
+      "source": "Financial Times",
+      "lang": "en",
+      "url": "https://www.ft.com/markets?format=rss",
+      "itemsInFeed": 25,
+      "keptBeforeCap": 14,
+      "newest": "2026-10-15T20:00:00Z"
+    },
+    {
+      "id": "bbg-markets",
+      "source": "Bloomberg",
+      "lang": "en",
+      "url": "https://feeds.bloomberg.com/markets/news.rss",
+      "itemsInFeed": 20,
+      "keptBeforeCap": 11,
+      "newest": "2026-10-15T23:00:00Z"
+    },
+    {
+      "id": "bbg-politics",
+      "source": "Bloomberg",
+      "lang": "en",
+      "url": "https://feeds.bloomberg.com/politics/news.rss",
+      "itemsInFeed": 20,
+      "keptBeforeCap": 11,
+      "newest": "2026-10-15T22:51:34Z"
+    },
+    {
+      "id": "bbg-econ",
+      "source": "Bloomberg",
+      "lang": "en",
+      "url": "https://feeds.bloomberg.com/economics/news.rss",
+      "itemsInFeed": 20,
+      "keptBeforeCap": 19,
+      "newest": "2026-10-15T19:19:23Z"
+    },
+    {
+      "id": "nature",
+      "source": "Nature",
+      "lang": "en",
+      "url": "https://www.nature.com/nature.rss",
+      "itemsInFeed": 75,
+      "keptBeforeCap": 74,
+      "newest": "2026-10-15T00:00:00Z"
+    },
+    {
+      "id": "science",
+      "source": "Science",
+      "lang": "en",
+      "url": "https://www.science.org/rss/news_current.xml",
+      "itemsInFeed": 10,
+      "keptBeforeCap": 10,
+      "newest": "2026-10-15T02:00:00Z"
+    }
+  ],
+  "feedsFailed": [
+    {
+      "id": "reuters",
+      "source": "reuters",
+      "url": "https://www.reuters.com/arc/outboundfeeds/v3/all/?outputType=xml",
+      "error": "HTTP 404; Reuters no ofrece RSS público de titulares"
+    },
+    {
+      "id": "reuters-world",
+      "source": "reuters-world",
+      "url": "https://www.reuters.com/world/rss",
+      "error": "HTTP 401"
+    },
+    {
+      "id": "ap",
+      "source": "ap",
+      "url": "https://apnews.com/index.rss",
+      "error": "HTTP 403; AP no publica un RSS abierto utilizable"
+    },
+    {
+      "id": "elmundo-sucesos",
+      "source": "elmundo-sucesos",
+      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/sucesos.xml",
+      "error": "HTTP 404"
+    },
+    {
+      "id": "wsj-world",
+      "source": "wsj-world",
+      "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml",
+      "error": "Responde, pero los ítems están congelados en enero de 2025; no es un feed vivo"
+    },
+    {
+      "id": "afp",
+      "source": "afp",
+      "url": "https://www.afp.com/en/rss.xml",
+      "error": "No es un cable de noticias: solo notas institucionales antiguas (2012-2021)"
+    }
+  ],
+  "items": [
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "Al menos 3 niños y un adulto mueren en un tiroteo en una escuela primaria de Oregón, según medios en EE.UU.",
+      "source": "BBC Mundo",
+      "url": "https://www.bbc.com/mundo/articles/ckj0l9lrenq6o",
+      "publishedAt": "2026-10-15T23:21:50Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "Al menos dos heridos, uno de ellos menor de edad, en un tiroteo en una escuela de Oregón",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/16/6ad14ce921efa029108b45a6.html",
+      "publishedAt": "2026-10-15T22:13:38Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "Se registra un terremoto de magnitud 4 con epicentro en Priaranza del Bierzo (León)",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/espana/2026/10/15/6ad1489cfdddffe8448b456e.html",
+      "publishedAt": "2026-10-15T21:51:49Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "El Supremo reabre la investigación por asesinato contra 'la etarra de las mariscadas' al considerar que el atentado no está prescrito",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/espana/2026/10/15/6ad0d91ffdddff0a2e8b457c.html",
+      "publishedAt": "2026-10-15T20:08:24Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "Cargas policiales, altercados y un detenido en Pamplona durante una protesta contra Vito Quiles",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/espana/2026/10/15/6ad10a6be85ece28098b45a2.html",
+      "publishedAt": "2026-10-15T17:16:38Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "Detenido un hombre de Bizkaia por alquilar en Castro Urdiales una vivienda que no era suya",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/espana/2026/10/15/6ad0f2f2e85ece2f7d8b45b6.html",
+      "publishedAt": "2026-10-15T15:50:12Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "El neandertal que murió atravesado por una lanza hace 75.000 años y que muestra cómo cuidaban de sus heridos y sus muertos",
+      "source": "El País",
+      "url": "https://elpais.com/ciencia/2026-10-15/el-neandertal-que-murio-atravesado-por-una-lanza-hace-75000-anos-y-que-muestra-como-cuidaban-de-sus-heridos-y-sus-muertos.html",
+      "publishedAt": "2026-10-15T15:00:30Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "El Seprona y el fotógrafo Pedro Armestre, galardonados con los Premios Biodiversidad",
+      "source": "El País",
+      "url": "https://elpais.com/clima-y-medio-ambiente/2026-10-15/el-seprona-y-el-fotografo-pedro-armestre-galardonados-con-los-premios-biodiversidad.html",
+      "publishedAt": "2026-10-15T13:42:12Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "Las dos directivas de un colegio concertado de Madrid investigadas por maltrato a bebés dejan su cargo por “pérdida de confianza” de las familias",
+      "source": "El País",
+      "url": "https://elpais.com/educacion/2026-10-15/las-dos-directivas-de-un-colegio-concertado-de-madrid-investigadas-por-maltrato-a-bebes-dejan-su-cargo-por-perdida-de-confianza-de-las-familias.html",
+      "publishedAt": "2026-10-15T10:58:45Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "Mueren más de 30 niños y un maestro en Pakistán tras el derrumbe del techo de una escuela",
+      "source": "BBC Mundo",
+      "url": "https://www.bbc.com/mundo/articles/cm79perw314vo",
+      "publishedAt": "2026-10-15T10:23:52Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "La Fiscalía de Menores acusa de delitos a dos de las menores investigadas por acosar a Sandra Peña",
+      "source": "El País",
+      "url": "https://elpais.com/sociedad/2026-10-15/la-fiscalia-de-menores-acusa-de-delitos-a-dos-de-las-menores-investigadas-por-acosar-a-sandra-pena.html",
+      "publishedAt": "2026-10-15T09:39:57Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "es",
+      "title": "Al menos 27 niños mueren al derrumbarse el techo de una escuela en Pakistán",
+      "source": "El País",
+      "url": "https://elpais.com/internacional/2026-10-15/decenas-de-ninos-mueren-al-derrumbarse-el-techo-de-una-escuela-en-pakistan.html",
+      "publishedAt": "2026-10-15T09:14:21Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "en",
+      "title": "Trump calls off livestream of Fort Hood attacker's execution by firing squad",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/crx23qlnj27qo",
+      "publishedAt": "2026-10-15T17:47:22Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "en",
+      "title": "Trump cancels Hegseth’s plan to livestream execution after backlash",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/064f7a19-c495-4ba0-a5e5-a6c4bb764ddb",
+      "publishedAt": "2026-10-15T17:16:02Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "en",
+      "title": "Russell Brand accuser says he turned 'monster-like' before alleged rape",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cwy7ldzl7j4po",
+      "publishedAt": "2026-10-15T16:35:05Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "en",
+      "title": "Arrests made after couple and two children killed in arson attack in Waterford",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cmn0658znkxpo",
+      "publishedAt": "2026-10-15T14:33:32Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "en",
+      "title": "Trump Rejects Hegseth’s Bid to Stream Firing Squad Execution",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/trump-rejects-hegseth-s-bid-to-livestream-firing-squad-execution",
+      "publishedAt": "2026-10-15T14:13:32Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "en",
+      "title": "Indian woman and boyfriend get death sentence in 'blue drum' murder case",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy435gd311o",
+      "publishedAt": "2026-10-15T07:25:54Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "en",
+      "title": "Retired US generals call on Pentagon to cancel 'barbaric' execution livestream",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cmp3gnngv3e9o",
+      "publishedAt": "2026-10-15T02:26:07Z"
+    },
+    {
+      "category": "sucesos",
+      "lang": "en",
+      "title": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cqy43vrk8wv8o",
+      "publishedAt": "2026-10-11T21:12:44Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "Jugar al póquer con las pensiones y otros trucos sucios",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/espana/2026/10/16/6ad0d68b21efa0080f8b4599.html",
+      "publishedAt": "2026-10-15T22:00:12Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "Atasco de las izquierdas en el Senado: el pacto de PSOE y Frente Amplio se enfría casi sin tiempo",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/10/16/6ad114c9e85eceb9518b4598.html",
+      "publishedAt": "2026-10-15T22:00:11Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "El Gobierno se anota el mayor agujero patrimonial de la historia de la Seguridad Social tras dos reformas de las pensiones",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/espana/2026/10/15/6ad12428e9cf4a56628b4596.html",
+      "publishedAt": "2026-10-15T20:44:54Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "EH Bildu también prescinde de Jon Iñarritu, el diputado 'abertzale' con traje y corbata señalado por su cercanía a Israel",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/pais-vasco/2026/10/15/6ad0a298fc6c83bf178b458c.html",
+      "publishedAt": "2026-10-15T18:13:41Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "Cuenta atrás para Podemos y el Frente Amplio: la unidad \"muy difícil\" en Madrid torpedea el resto del mapa pero Canarias anuncia la primera candidatura única",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/10/15/6ad099b9e4d4d8275d8b4589.html",
+      "publishedAt": "2026-10-15T17:12:23Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "Podemos y los partidos del Frente Amplio ultiman acuerdos territoriales para el 29-N fuera de Madrid y Barcelona",
+      "source": "El País",
+      "url": "https://elpais.com/espana/elecciones-generales/2026-10-15/podemos-y-los-partidos-del-frente-amplio-avanzan-en-los-acuerdos-territoriales-para-el-29-n.html",
+      "publishedAt": "2026-10-15T16:51:19Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "Un juez abre diligencias por el gas pimienta exhibido por una diputada del PP en el Congreso",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/espana/2026/10/15/6ad0fbede85ece6f548b4577.html",
+      "publishedAt": "2026-10-15T16:27:48Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "Montse Mínguez: ¿incoherencia o hipocresía?",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/espana/2026/10/15/6ad0f2f921efa06e458b4576.html",
+      "publishedAt": "2026-10-15T16:14:53Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "Trump cancela la transmisión en vivo de la ejecución del primer militar que será fusilado en EE.UU. desde la II Guerra Mundial",
+      "source": "BBC Mundo",
+      "url": "https://www.bbc.com/mundo/articles/cq99z15e1271o",
+      "publishedAt": "2026-10-15T15:55:04Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "Españoles por la 'ley de nietos' recurren al Supremo para recuperar su derecho al voto en las generales",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/10/15/6ad0ecdae85ece1b478b45a6.html",
+      "publishedAt": "2026-10-15T15:17:52Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "Trump enmienda a su secretario de Defensa y cancela la retransmisión de la ejecución del soldado que mató a 13 compañeros",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0e4e7fdddff302f8b45ad.html",
+      "publishedAt": "2026-10-15T15:10:32Z"
+    },
+    {
+      "category": "politica",
+      "lang": "es",
+      "title": "El presidente de Albania culpa a la oposición de los disturbios en las protestas estudiantiles",
+      "source": "El País",
+      "url": "https://elpais.com/internacional/2026-10-15/el-presidente-de-albania-culpa-a-la-oposicion-de-los-disturbios-en-las-protestas-estudiantiles.html",
+      "publishedAt": "2026-10-15T15:01:02Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "Singapore’s Wong Says Probing Firms Behind Haze-Causing Fires",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/singapore-s-wong-says-probing-firms-behind-haze-causing-fires",
+      "publishedAt": "2026-10-15T22:51:34Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "Letters with 'suspicious substances' sent to US senators and election offices",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cmq8n513x523o",
+      "publishedAt": "2026-10-15T22:46:49Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "Musk Pours $158 Million Into GOP Super PAC for Texas Senate Race",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/musk-pours-158-million-into-gop-super-pac-for-texas-senate-race",
+      "publishedAt": "2026-10-15T22:16:45Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "Trump Says Cornyn, Rove to Blame If Paxton Loses Senate Race",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/trump-says-cornyn-rove-to-blame-if-paxton-loses-senate-race",
+      "publishedAt": "2026-10-15T22:11:08Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "Bolsonaro, Lula in Tight Race Ahead of Brazil Runoff, Poll Shows",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/bolsonaro-lula-in-tight-race-ahead-of-brazil-runoff-poll-shows",
+      "publishedAt": "2026-10-15T21:53:59Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "Europe Reckons With a World Where Trump Is Now Helping Putin",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/europe-reckons-with-a-world-where-trump-is-now-helping-putin",
+      "publishedAt": "2026-10-15T21:21:46Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "UK threatens to ban Eritreans over migrant return policy",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c30rl1q1j200o",
+      "publishedAt": "2026-10-15T20:08:41Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "US Ties With South Korea Hit Low Point Over Intelligence Row",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/south-korea-us-ties-hit-lowest-ebb-in-years-on-intelligence-row",
+      "publishedAt": "2026-10-15T18:01:05Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "Ex-CIA Director Brennan Rebuffed Over DOJ Probe Evidence",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/ex-cia-director-brennan-rebuffed-over-conspiracy-probe-evidence",
+      "publishedAt": "2026-10-15T17:33:17Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "Burnham asks for his Widdecombe remarks to be corrected",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cvglwed77p91o",
+      "publishedAt": "2026-10-15T17:17:31Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "Banks say Healey is planning Budget tax raid on their profits",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c32l4k2xdvrzo",
+      "publishedAt": "2026-10-15T17:14:36Z"
+    },
+    {
+      "category": "politica",
+      "lang": "en",
+      "title": "What we know about the criminal investigation into US congresswoman Ilhan Omar",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cq98zpk30pd5o",
+      "publishedAt": "2026-10-15T16:59:31Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "Los Ángeles, una crisis de vivienda entre alquileres por las nubes y el sinhogarismo",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/economia/vivienda/2026/10/16/6ad0bc2a21efa03e758b4592.html",
+      "publishedAt": "2026-10-15T22:00:50Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "La herencia económica del sanchismo",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/economia/macroeconomia/2026/10/16/6ad105a4e4d4d8960a8b4581.html",
+      "publishedAt": "2026-10-15T22:00:49Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "Crónica de una decepción anunciada: la primera reunión para negociar el presupuesto europeo acaba en fracaso",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/economia/2026/10/15/6ad129b1fc6c83fe588b4585.html",
+      "publishedAt": "2026-10-15T20:01:33Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "Tres de cada diez viviendas vendidas en España generan pérdidas para el propietario",
+      "source": "El País",
+      "url": "https://elpais.com/economia/vivienda/2026-10-15/tres-de-cada-diez-viviendas-vendidas-en-espana-generan-perdidas-para-el-propietario.html",
+      "publishedAt": "2026-10-15T16:33:34Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "La burbuja de Pikachu y el 'grading': así triplica su valor el cartón en perfecto estado",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/economia/dinero-inversion/2026/10/15/6ac62bd6fdddff5f6f8b4590.html",
+      "publishedAt": "2026-10-15T16:24:55Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "ING juega la 'carta' del ETF para captar clientes para su bróker tras superar los 328.000 este año",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/economia/dinero-inversion/2026/10/15/6ad0dd3de9cf4a877e8b4577.html",
+      "publishedAt": "2026-10-15T14:41:38Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "La gran distribución exige al próximo Gobierno cinco reformas para frenar la pérdida de poder adquisitivo",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/economia/empresas/2026/10/15/6ad0d2c621efa0004d8b45ba.html",
+      "publishedAt": "2026-10-15T13:27:28Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "Funcas ve señales de ralentización en la economía española por la persistencia de la inflación",
+      "source": "El País",
+      "url": "https://elpais.com/economia/2026-10-15/funcas-ve-senales-de-ralentizacion-en-la-economia-espanola-por-la-persistencia-de-la-inflacion.html",
+      "publishedAt": "2026-10-15T12:07:42Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "Santalucía y Zurich firman una alianza para la próxima década para seguros de auto, mascotas y decesos",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/economia/empresas/2026/10/15/6ad0bb07e9cf4a40268b45a8.html",
+      "publishedAt": "2026-10-15T11:43:28Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "Euríbor hoy, jueves 15 de octubre: nuevo repunte que consolida la tasa diaria al 3,2%",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/economia/vivienda/2026/10/15/6ad0b0cbe4d4d885408b4587.html",
+      "publishedAt": "2026-10-15T11:02:35Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "Euríbor hoy, miércoles 14 de octubre: la tasa diaria marca una nueva subida por encima del 3,2%",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/economia/2026/10/14/6ac4cdb4e85ece3f128b45a5.html",
+      "publishedAt": "2026-10-15T10:50:13Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "es",
+      "title": "Paola de la Cruz, maestra: “Cuidar y respetar a la persona que educa es también proteger los derechos de nuestros hijos”",
+      "source": "El País",
+      "url": "https://elpais.com/economia/formacion/2026-10-15/paola-de-la-cruz-maestra-y-asesora-educativa-cuidar-y-respetar-a-la-persona-que-educa-es-tambien-proteger-los-derechos-de-nuestros-hijos.html",
+      "publishedAt": "2026-10-15T09:45:38Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "Netflix replaces chief content officer in effort to arrest declining share price",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/9187726d-0f4c-4f05-b421-b5fc656522b9",
+      "publishedAt": "2026-10-15T23:18:40Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "Living with a stink? Technology might help",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cr6240q1w136o",
+      "publishedAt": "2026-10-15T23:18:21Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "I find it quite demoralising in store - why I do all my shopping online",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c36lk280kd1o",
+      "publishedAt": "2026-10-15T23:16:12Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "China’s Plan to Make Yuan a Global Currency Enters Faster Phase",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/china-s-plan-to-make-yuan-a-global-currency-enters-faster-phase",
+      "publishedAt": "2026-10-15T23:00:00Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "Hong Kong’s APEC Comeback Showcases a City Remade by Beijing",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/hong-kong-s-apec-comeback-showcases-a-city-remade-by-beijing",
+      "publishedAt": "2026-10-15T23:00:00Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "Asian Stocks Set for Gains as Tech Selloff Eases: Markets Wrap",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/stock-market-today-dow-s-p-live-updates",
+      "publishedAt": "2026-10-15T22:04:06Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "Latest Oil Market News and Analysis for Oct. 16",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/latest-oil-market-news-and-analysis-for-oct-16",
+      "publishedAt": "2026-10-15T22:03:58Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "Trump weighs easing restrictions on Russian and Iranian ‘shadow fleet’",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/6dfa9879-589a-4af3-9374-b546a945a219",
+      "publishedAt": "2026-10-15T21:10:51Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "MSCI Weighs Indonesia Downgrade, Removal From Global Indexes",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/indonesia-s-emerging-market-status-under-consultation-msci-says",
+      "publishedAt": "2026-10-15T20:59:19Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "Treasuries rally as investors seek shelter from AI turbulence",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/cf5f1209-da29-4ce1-b425-0e83818bf9ec",
+      "publishedAt": "2026-10-15T20:20:36Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "Harvard’s endowment returns surge on back of AI and SpaceX investments",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/50c694da-c485-4176-853b-daf643eabb5c",
+      "publishedAt": "2026-10-15T20:06:22Z"
+    },
+    {
+      "category": "finanzas",
+      "lang": "en",
+      "title": "The AI boom stumbles",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/dd74f024-4eeb-44e3-9f62-5338ba7a863c",
+      "publishedAt": "2026-10-15T20:00:00Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "Dos puentes (uno ruso y otro chino) para romper el aislamiento de Kim Jong-un",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/16/6ad0718fe9cf4aee0e8b459b.html",
+      "publishedAt": "2026-10-15T22:01:54Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "Turno para María Corina Machado tras el perdón al hermano de Delcy Rodríguez",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/16/6ad112d3e85ecea61e8b45b4.html",
+      "publishedAt": "2026-10-15T22:01:53Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "Al menos 19 heridos en un choque entre un minibús y un tren en el túnel del Canal de la Mancha",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad12739fc6c8381338b4580.html",
+      "publishedAt": "2026-10-15T19:58:05Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "La dura negociación sobre el presupuesto de la UE amenaza el acuerdo antes del superaño electoral en Europa",
+      "source": "El País",
+      "url": "https://elpais.com/internacional/2026-10-15/la-dura-negociacion-sobre-el-presupuesto-de-la-ue-amenaza-el-acuerdo-antes-del-superano-electoral-en-europa.html",
+      "publishedAt": "2026-10-15T19:26:51Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "Maduro y su mujer insisten en el tribunal de Nueva York en que las nuevas acusaciones por tortura son \"falsas\"",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad10066fdddff60468b457e.html",
+      "publishedAt": "2026-10-15T16:40:51Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "Buena recuperación del pulmón operado a León XIV, quien retoma el trabajo desde el Gemelli",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0f8a7fdddfff6248b45c4.html",
+      "publishedAt": "2026-10-15T16:12:52Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "¿Qué es Moab, la \"madre de todas las bombas\", y por qué podría ser la salida de Estados Unidos del conflicto en Irán?",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0f96efdddff3f1e8b45a4.html",
+      "publishedAt": "2026-10-15T16:04:02Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "La pugna entre Netanyahu y el ex jefe del 'Shabak' desvela claves del fracaso del 7-0: \"La verdad saldrá en los tribunales\"",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0cd55e9cf4a3e2a8b4581.html",
+      "publishedAt": "2026-10-15T15:54:53Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "El Papa evoluciona “con normalidad” y realiza fisioterapia dos días después de su operación",
+      "source": "El País",
+      "url": "https://elpais.com/internacional/2026-10-15/el-papa-evoluciona-con-normalidad-y-realiza-fisioterapia-dos-dias-despues-de-su-operacion.html",
+      "publishedAt": "2026-10-15T14:41:34Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0cbddfdddffb0398b45b6.html",
+      "publishedAt": "2026-10-15T12:57:17Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "Corea del Norte y China abren un nuevo puente tras 12 años de retrasos",
+      "source": "El País",
+      "url": "https://elpais.com/internacional/2026-10-15/corea-del-norte-y-china-abren-un-nuevo-puente-tras-12-anos-de-retrasos.html",
+      "publishedAt": "2026-10-15T10:18:22Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "es",
+      "title": "Al menos 32 niños y una profesora muertos tras el derrumbe del techo de una escuela en Pakistán",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad07858e9cf4a180a8b4595.html",
+      "publishedAt": "2026-10-15T06:59:32Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "Bus hits train stopped on French side of Channel Tunnel, with 19 injured",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c6wyrnmgzn01o",
+      "publishedAt": "2026-10-15T22:37:21Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "Farage accused of ‘protecting’ mayoral candidate who allegedly made racist comments",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/317796f3-af18-4acb-a482-ec0bdd0edf45",
+      "publishedAt": "2026-10-15T21:05:45Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "How India lost more than 100mn voters",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/a26ba5dd-e298-469f-8779-a40041addd47",
+      "publishedAt": "2026-10-15T21:00:04Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "777 Partners’ Josh Wander pleads guilty to fraud charges",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/0a436452-c1a1-492a-b5be-92848ed5e6e7",
+      "publishedAt": "2026-10-15T20:29:47Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "Anthropic grants non-profit METR ‘employee-like’ access to monitor AI risks",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/a3a389d2-7796-4f40-98d3-8986f26f6513",
+      "publishedAt": "2026-10-15T19:12:29Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "Healey signals tax raid on banks in UK Budget",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/09e07278-8479-49bb-a145-51e5d93828a2",
+      "publishedAt": "2026-10-15T17:53:10Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "Bankers and advisers set for £334mn easyJet payout",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/66c9bbf1-f25c-4e84-b8ae-c9272fbc49c2",
+      "publishedAt": "2026-10-15T17:41:06Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "Criminals stole $90mn of crypto by hiding password readers in USB-like devices",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/70f69253-6017-4259-95c9-48bf0e088b40",
+      "publishedAt": "2026-10-15T17:23:18Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "Maduro pleads not guilty to new torture-related charges in New York",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrn1l74zro",
+      "publishedAt": "2026-10-15T16:52:44Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "Europe cannot rely on trade barriers to counter China",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/8890bf3f-f243-4bd0-8e2f-f80c78e363f8",
+      "publishedAt": "2026-10-15T16:35:09Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "School headscarf ban sparks rare protests in Azerbaijan and row with Turkey",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cwly0g2r4k3po",
+      "publishedAt": "2026-10-15T16:15:06Z"
+    },
+    {
+      "category": "mundo",
+      "lang": "en",
+      "title": "Mercuria adds first copper to US Project Vault stockpile",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/37d24217-acd8-4f84-a298-4f1ccc359a27",
+      "publishedAt": "2026-10-15T15:43:26Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "El neandertal que sobrevivió a un traumatismo y murió tras ser herido con una lanza de madera",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/ciencia/2026/10/15/6ad0fdacfc6c83af588b45c2.html",
+      "publishedAt": "2026-10-15T16:31:48Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "El Seprona, el fotógrafo Pedro Armestre y el Grupo de Estudios del Mar Profundo de Argentina ganan los Premios Biodiversidad de la FBBVA",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/ciencia/2026/10/15/6ad0b8c0e9cf4a894e8b4576.html",
+      "publishedAt": "2026-10-15T16:06:09Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "Los relojes atómicos dejarán de añadir segundos para ajustarse a la rotación de la Tierra",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/ciencia/2026/10/15/6ad0f7e2e85ece9f628b45c3.html",
+      "publishedAt": "2026-10-15T16:00:59Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "Las autoridades del tiempo deciden que los relojes atómicos y los astronómicos vayan cada uno por su lado",
+      "source": "El País",
+      "url": "https://elpais.com/ciencia/2026-10-15/las-autoridades-del-tiempo-deciden-que-los-relojes-atomicos-y-los-astronomicos-vayan-cada-uno-por-su-lado.html",
+      "publishedAt": "2026-10-15T14:13:09Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "Una bacteria, posible causa del récord de muertes de crías de ballena en la Patagonia argentina",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/ciencia/2026/10/15/6ace0cd521efa0fe378b4595.html",
+      "publishedAt": "2026-10-14T23:27:19Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "Los microplásticos no son inertes: se activan en el agua y pueden dañar la salud",
+      "source": "El País",
+      "url": "https://elpais.com/salud-y-bienestar/2026-10-14/los-microplasticos-no-son-inertes-se-activan-en-el-agua-y-pueden-danar-la-salud.html",
+      "publishedAt": "2026-10-14T16:37:58Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "No todas las aves primitivas buscaban volar, algunas se quedaron en el suelo",
+      "source": "El País",
+      "url": "https://elpais.com/ciencia/2026-10-14/no-todas-las-aves-primitivas-buscaban-volar-algunas-se-quedaron-en-el-suelo.html",
+      "publishedAt": "2026-10-14T15:02:08Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "Las resistencias bacterianas disparan el impétigo infantil y dejan obsoletas las pomadas más usadas",
+      "source": "El País",
+      "url": "https://elpais.com/salud-y-bienestar/2026-10-14/las-resistencias-bacterianas-disparan-el-impetigo-infantil-y-dejan-obsoletas-las-pomadas-mas-usadas.html",
+      "publishedAt": "2026-10-14T03:30:01Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "Estas son las ciudades de todo el mundo que más rápido se están hundiendo",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/ciencia/2026/10/14/6ac9134d21efa0244c8b4587.html",
+      "publishedAt": "2026-10-13T23:51:39Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "\"No podemos seguir diciendo que no existe un sesgo de género en los premios Nobel, porque estadísticamente sí existe\"",
+      "source": "BBC Mundo",
+      "url": "https://www.bbc.com/mundo/articles/cr1exnelj2vxo",
+      "publishedAt": "2026-10-13T10:00:55Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "Así fue el interior de un tornado a su paso por un pueblo de Kansas",
+      "source": "El País",
+      "url": "https://elpais.com/ciencia/2026-10-12/asi-fue-el-interior-de-un-tornado-a-su-paso-por-un-pueblo-de-kansas.html",
+      "publishedAt": "2026-10-12T03:30:01Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "es",
+      "title": "Los Nobel de 2026 honran a los audaces que se enfrentaron a las preguntas esenciales de la ciencia",
+      "source": "El País",
+      "url": "https://elpais.com/ciencia/2026-10-10/los-nobel-de-2026-honran-a-los-audaces-que-se-enfrentaron-a-las-preguntas-esenciales-de-la-ciencia.html",
+      "publishedAt": "2026-10-10T03:30:01Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "BBC Inside Science",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct9789",
+      "publishedAt": "2026-10-15T20:00:00Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "Suspected fly tippers shamed with online photos",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cqgm0jepyl01o",
+      "publishedAt": "2026-10-15T18:05:56Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "Trans people should use hospital spaces according to biological sex, NHS England says",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cry83dyddv6no",
+      "publishedAt": "2026-10-15T16:07:26Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "Severe drought declared and hosepipe bans in force - is your area affected?",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/crk661074ejo",
+      "publishedAt": "2026-10-15T15:42:37Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "£15m for zero-emission testing at Belfast Harbour",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c6kgqr9n8082o",
+      "publishedAt": "2026-10-15T14:55:03Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "Sheep are disappearing from our hills - and our dinner plates",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cgrzd72wp5zo",
+      "publishedAt": "2026-10-15T14:10:13Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "Bonanza of new dates rewrites the history of the Inca",
+      "source": "Science",
+      "url": "https://www.science.org/content/article/bonanza-new-dates-rewrites-history-inca",
+      "publishedAt": "2026-10-15T02:00:00Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "Is AI eroding PhD students’ critical thinking and analysis skills?",
+      "source": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-03178-w",
+      "publishedAt": "2026-10-15T00:00:00Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "World’s timekeepers upend how they adjust time to avoid catastrophic ‘negative second’",
+      "source": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-03329-z",
+      "publishedAt": "2026-10-15T00:00:00Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "Orangutan mothers arrange play dates for their babies",
+      "source": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-03238-1",
+      "publishedAt": "2026-10-15T00:00:00Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "Nearly half of reef-building corals face elevated relative risk of extinction",
+      "source": "Nature",
+      "url": "https://www.nature.com/articles/s41586-026-11263-3",
+      "publishedAt": "2026-10-15T00:00:00Z"
+    },
+    {
+      "category": "ciencias",
+      "lang": "en",
+      "title": "Give me the good news: four science stories to brighten your day",
+      "source": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-03152-6",
+      "publishedAt": "2026-10-15T00:00:00Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "En la defensa aérea de Kiev: \"Sin Estados Unidos sólo vemos los drones rusos cuando están encima\"",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0fe9de9cf4adb5c8b4578.html",
+      "publishedAt": "2026-10-15T20:42:39Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "Le Pen advierte que retirará la ayuda a Ucrania en seis meses si es elegida presidenta",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0b2b4fc6c8366428b45b4.html",
+      "publishedAt": "2026-10-15T18:15:10Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "Ucrania ataca una refinería rusa a 200 kilómetros de Moscú",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad08812e4d4d877328b4587.html",
+      "publishedAt": "2026-10-15T18:11:29Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "\"Ahora Kyiv es el frente de batalla\": la nueva estrategia de Putin de hacer invivibles las ciudades de Ucrania",
+      "source": "BBC Mundo",
+      "url": "https://www.bbc.com/mundo/articles/c3lyl1ykqjv4o",
+      "publishedAt": "2026-10-15T17:02:31Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "Ucrania desafía a Trump al reanudar sus ataques contra refinerías rusas",
+      "source": "El País",
+      "url": "https://elpais.com/internacional/2026-10-15/ucrania-reanuda-los-ataques-a-las-refinerias-de-rusia-en-pleno-clima-de-crispacion-con-trump.html",
+      "publishedAt": "2026-10-15T16:07:14Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "Musk insta a Zelenski a dejar el poder en Ucrania: \"Es hora de que se vaya\"",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/15/6ad08f14e9cf4a52398b45a2.html",
+      "publishedAt": "2026-10-15T08:33:04Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "Ucrania afirma que SpaceX obstaculiza el uso de drones para el ataque y la defensa, mientras se deterioran las relaciones con EEUU",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/14/6acfd39bfdddff3c5f8b457c.html",
+      "publishedAt": "2026-10-14T19:58:33Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "El enfado de Ucrania con Starlink, la compañía de Elon Musk, por las restricciones a la velocidad de internet que afectan a su ejército en el campo de batalla",
+      "source": "BBC Mundo",
+      "url": "https://www.bbc.com/mundo/articles/cq62yn458211o",
+      "publishedAt": "2026-10-14T19:38:54Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "Al menos cuatro muertos en nuevos ataques rusos a la capital de Ucrania",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/14/6acf113be4d4d8046c8b4572.html",
+      "publishedAt": "2026-10-14T07:54:56Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "Rusia golpea el sector energético de Ucrania en medio de restricciones a la información de inteligencia que recibe Kiev",
+      "source": "El País",
+      "url": "https://elpais.com/internacional/2026-10-14/rusia-golpea-el-sector-energetico-de-ucrania-en-medio-de-restricciones-a-la-informacion-de-inteligencia-que-recibe-kiev.html",
+      "publishedAt": "2026-10-14T07:18:49Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "El gigante del Golfo no sabe frenar a los hutíes",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/14/6ace6171fc6c831f2e8b458a.html",
+      "publishedAt": "2026-10-14T07:03:54Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "es",
+      "title": "El 'Google ruso', botín de guerra para Ucrania",
+      "source": "El Mundo",
+      "url": "https://www.elmundo.es/internacional/2026/10/13/6ace7268e4d4d84f4e8b4592.html",
+      "publishedAt": "2026-10-13T23:54:29Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Ukraine Outage Revives Concerns Over Relying on Musk’s SpaceX",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-10-15/ukraine-outage-revives-concerns-over-relying-on-musk-s-spacex",
+      "publishedAt": "2026-10-15T20:55:59Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Trump Didn’t Order Limits on Kyiv’s SpaceX Access, US Says",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/trump-didn-t-order-limits-on-kyiv-s-spacex-access-us-says",
+      "publishedAt": "2026-10-15T20:19:41Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Musk Post Sows Confusion Over Ukraine Starshield Disruption",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/musk-comments-sow-confusion-over-ukraine-starshield-disruption",
+      "publishedAt": "2026-10-15T20:00:05Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Commercial goods blocked from entry into Gaza",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/f60aaf56-a712-43a4-971d-6f1c8815bafa",
+      "publishedAt": "2026-10-15T19:51:28Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo",
+      "publishedAt": "2026-10-15T17:18:49Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o",
+      "publishedAt": "2026-10-15T16:50:18Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Saudi events delayed after Houthi attacks",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/0be97035-3854-4b6c-8191-98f486862b02",
+      "publishedAt": "2026-10-15T15:04:46Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Seven crew missing after drone attack leaves tanker ablaze off Romania's coast",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c60qkgpp592yo",
+      "publishedAt": "2026-10-15T14:51:30Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Why is Starlink internet so important on the battlefield in Ukraine?",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cqkgk4zg54reo",
+      "publishedAt": "2026-10-15T11:25:19Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "How Ukraine’s biggest bank is run in a war zone",
+      "source": "The Economist",
+      "url": "https://www.economist.com/finance-and-economics/2026/10/15/how-ukraines-biggest-bank-is-run-in-a-war-zone",
+      "publishedAt": "2026-10-15T09:34:30Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "Musk says US government may be behind slowdown of Ukraine drone speeds",
+      "source": "BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo",
+      "publishedAt": "2026-10-15T04:30:08Z"
+    },
+    {
+      "category": "guerras",
+      "lang": "en",
+      "title": "How will Big Oil spend its $32bn Iran war windfall?",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/9d70cd3f-abd3-4e40-b644-156444cec446",
+      "publishedAt": "2026-10-15T04:00:29Z"
+    }
+  ]
+}
