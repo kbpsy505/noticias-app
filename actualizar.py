@@ -1,14 +1,27 @@
 #!/usr/bin/env python3
-"""Descarga titulares reales de RSS públicos y escribe noticias.json.
+"""Briefing de consenso, solo con código (sin IA ni claves).
 
-No inventa titulares. Si un feed falla o no trae actualidad, se omite.
+1. Descarga RSS públicos (feeds.py).
+2. Normaliza títulos y resúmenes en español e inglés a un vocabulario común.
+3. Agrupa notas sobre el mismo hecho (TF-IDF + coincidencia de términos
+   distintivos + ventana de tiempo), aunque estén en idiomas distintos.
+4. Conserva solo los grupos que publican 2 o más medios distintos.
+5. Escribe noticias.json para la página.
+
+No inventa nada: cada texto mostrado sale tal cual de un feed.
 """
 from __future__ import annotations
 
+import gzip
 import json
+import math
 import re
 import ssl
+import sys
+import unicodedata
 import urllib.request
+from collections import Counter, defaultdict
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
@@ -16,136 +29,112 @@ from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 from xml.etree import ElementTree as ET
 
+from feeds import FEEDS, KNOWN_FAILS
+from vocab import PHRASES, STOP, WORDS
+
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "noticias.json"
+DEBUG = "--debug" in sys.argv
 REFRESH_HOURS = 3
-UA = (
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-)
-MAX_PER = 12
-NEWS_DAYS = 12
-SCIENCE_DAYS = 45
+UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 
-# id, url, source, lang, default category (None = clasificar)
-FEEDS = [
-    ("bbc-world", "https://feeds.bbci.co.uk/news/world/rss.xml", "BBC", "en", "mundo"),
-    ("bbc-politics", "https://feeds.bbci.co.uk/news/politics/rss.xml", "BBC", "en", "politica"),
-    ("bbc-business", "https://feeds.bbci.co.uk/news/business/rss.xml", "BBC", "en", "finanzas"),
-    ("bbc-science", "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml", "BBC", "en", "ciencias"),
-    ("bbc-me", "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml", "BBC", "en", "mundo"),
-    ("bbc-europe", "https://feeds.bbci.co.uk/news/world/europe/rss.xml", "BBC", "en", "mundo"),
-    ("bbc-africa", "https://feeds.bbci.co.uk/news/world/africa/rss.xml", "BBC", "en", "mundo"),
-    ("bbc-asia", "https://feeds.bbci.co.uk/news/world/asia/rss.xml", "BBC", "en", "mundo"),
-    ("bbc-uk", "https://feeds.bbci.co.uk/news/uk/rss.xml", "BBC", "en", None),
-    ("bbc-top", "https://feeds.bbci.co.uk/news/rss.xml", "BBC", "en", None),
-    ("bbc-mundo", "https://feeds.bbci.co.uk/mundo/rss.xml", "BBC Mundo", "es", None),
-    ("elpais-int", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada", "El País", "es", "mundo"),
-    ("elpais-esp", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada", "El País", "es", "politica"),
-    ("elpais-eco", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/economia/portada", "El País", "es", "finanzas"),
-    ("elpais-soc", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/sociedad/portada", "El País", "es", "sucesos"),
-    ("elpais-ciencia", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/ciencia/portada", "El País", "es", "ciencias"),
-    ("elpais-en", "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada", "El País", "en", None),
-    ("elmundo-portada", "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml", "El Mundo", "es", None),
-    ("elmundo-int", "https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml", "El Mundo", "es", "mundo"),
-    ("elmundo-esp", "https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml", "El Mundo", "es", "politica"),
-    ("elmundo-eco", "https://e00-elmundo.uecdn.es/elmundo/rss/economia.xml", "El Mundo", "es", "finanzas"),
-    ("elmundo-ciencia", "https://e00-elmundo.uecdn.es/elmundo/rss/ciencia.xml", "El Mundo", "es", "ciencias"),
-    ("econ-int", "https://www.economist.com/international/rss.xml", "The Economist", "en", "mundo"),
-    ("econ-fin", "https://www.economist.com/finance-and-economics/rss.xml", "The Economist", "en", "finanzas"),
-    ("econ-biz", "https://www.economist.com/business/rss.xml", "The Economist", "en", "finanzas"),
-    ("econ-us", "https://www.economist.com/united-states/rss.xml", "The Economist", "en", "politica"),
-    ("ft-home", "https://www.ft.com/rss/home", "Financial Times", "en", "finanzas"),
-    ("ft-world", "https://www.ft.com/world?format=rss", "Financial Times", "en", "mundo"),
-    ("ft-markets", "https://www.ft.com/markets?format=rss", "Financial Times", "en", "finanzas"),
-    ("bbg-markets", "https://feeds.bloomberg.com/markets/news.rss", "Bloomberg", "en", "finanzas"),
-    ("bbg-politics", "https://feeds.bloomberg.com/politics/news.rss", "Bloomberg", "en", "politica"),
-    ("bbg-econ", "https://feeds.bloomberg.com/economics/news.rss", "Bloomberg", "en", "finanzas"),
-    ("nature", "https://www.nature.com/nature.rss", "Nature", "en", "ciencias"),
-    ("science", "https://www.science.org/rss/news_current.xml", "Science", "en", "ciencias"),
+NEWS_HOURS = 48          # antigüedad máxima de una nota (noticias)
+SCIENCE_HOURS = 24 * 7   # ciencia publica más lento
+PAIR_WINDOW_H = 36       # dos notas solo se unen si se publicaron con <= 36 h de diferencia
+SUMMARY_MAX = 400
+MAX_STORIES = 30         # por categoría
+
+CATEGORIES = [
+    ("sucesos", "Sucesos"),
+    ("politica", "Política"),
+    ("finanzas", "Mundo de finanzas"),
+    ("mundo", "Mundo"),
+    ("ciencias", "Ciencias"),
+    ("guerras", "Guerras actuales"),
 ]
 
-# Intentos que no aportan titulares de actualidad. Se registran, no se publican.
-EXTRA_FAILS = [
-    ("reuters", "https://www.reuters.com/arc/outboundfeeds/v3/all/?outputType=xml", "HTTP 404; Reuters no ofrece RSS público de titulares"),
-    ("reuters-world", "https://www.reuters.com/world/rss", "HTTP 401"),
-    ("ap", "https://apnews.com/index.rss", "HTTP 403; AP no publica un RSS abierto utilizable"),
-    ("elmundo-sucesos", "https://e00-elmundo.uecdn.es/elmundo/rss/sucesos.xml", "HTTP 404"),
-    ("wsj-world", "https://feeds.a.dj.com/rss/RSSWorldNews.xml", "Responde, pero los ítems están congelados en enero de 2025; no es un feed vivo"),
-    ("afp", "https://www.afp.com/en/rss.xml", "No es un cable de noticias: solo notas institucionales antiguas (2012-2021)"),
-]
-
-ALLOWED_HOSTS = {
-    "bbc.co.uk", "www.bbc.co.uk", "bbc.com", "www.bbc.com",
-    "elpais.com", "www.elpais.com", "english.elpais.com",
-    "elmundo.es", "www.elmundo.es",
-    "economist.com", "www.economist.com",
-    "ft.com", "www.ft.com",
-    "bloomberg.com", "www.bloomberg.com",
-    "nature.com", "www.nature.com",
-    "science.org", "www.science.org",
-}
-
-WAR = re.compile(
-    r"("
-    r"\b(ucrania|ukraine|kyiv|kiev|odesa|odessa|gaza|ham[aá]s|hamas|hezbol[aá]|hezbollah|"
-    r"hut[ií]es|houthis|houthi)\b|"
-    r"guerra en|iran war|the iran war|guerra de|bombardea|bombardeo|airstrike|"
-    r"drone attack|ataques? (rusos|israel[ií]es|con drones)|missile strike|"
-    r"alto el fuego|ceasefire|front-line|front line|"
-    r"strikes on kyiv|russian drone|russian missile|"
-    r"\b(rusia|russia|putin)\b.{0,48}\b(guerra|war|ucrania|ukraine|kyiv|kiev|bombar|drone|misil|missile|invasi)|"
-    r"\b(guerra|war|bombar|drone strike|misil|missile)\b.{0,48}\b(rusia|russia|putin|ucrania|ukraine|iran|ir[aá]n)|"
-    r"\b(sud[aá]n|sudan)\b.{0,40}\b(war|guerra|battle|batalla)|"
-    r"yemen.{0,30}(war|guerra|houthi|hut[ií])"
-    r")",
+# ---------------------------------------------------------------- filtros
+SKIP_PATH = re.compile(
+    r"/(opinion|opini%c3%b3n|opinión|commentisfree|editorial|editoriales|tribuna|columnas?|columnistas?|"
+    r"blogs?|video|videos|av|audio|podcasts?|programas|programs|sounds|newsletters?|live|en-vivo|"
+    r"live-updates|liveblog|deportes|sport|sports|football|futbol|cultura|culture|cine|film|"
+    r"television|tv-and-radio|music|musica|gente|estilo|lifestyle|fashion|moda|horoscopo|"
+    r"loterias|recetas|food|travel|viajes|games|juegos|crosswords|style|mag|television|"
+    r"celebrities|famosos|motor|tecnologia/moviles|gastronomia|agencias|obituaries|obituarios|"
+    r"viva|entretenimiento|espectaculos|farandula|tendencias|puro-deporte|deporte|tenis|ocio|planes|"
+    r"letters|cartas|reviews|criticas|books)(/|$)",
     re.I,
 )
-SUCESOS = re.compile(
-    r"(asesin|murder|homicid|apuñal|stab|hacha|\baxe\b|accidente a[eé]reo|plane crash|"
-    r"terremoto|earthquake|incendio|robo |detenid|arrested|"
-    r"violencia sexual|sexual harassment|acoso sexual|inundaci|\bflood|"
-    r"desaparecid|\bdesaparece\b|\bdesaparecen\b|violaci[oó]n|\brape\b|v[ií]ctima mortal|killed in|muertos por|\bmuere\b|\bmueren\b|"
-    r"tiroteo|execution|executed|copiloto|co-pilot|"
-    r"alerta roja|granizo|temporal de|lluvias intensas)",
-    re.I,
-)
-STRONG_SCIENCE = re.compile(
-    r"(nasa|cient[ií]fic|\bscience\b|dinosaur|f[ií]sica|physics|vacuna|vaccine|starship|"
-    r"\bluna\b|\bmoon\b|gen[eé]tic|astronom|biolog|nobel|sat[eé]lite|observator|"
-    r"cambio clim|clim[aá]tic|climate change|climate threat|estr[eé]s t[eé]rmico|"
-    r"species|especie|oceano|ocean|geol[oó]g|genoma|c[eé]lula|quantum|cu[aá]ntic)",
-    re.I,
-)
-SKIP_PATH = (
-    "/deportes/", "/sport/", "/ciclismo/", "/formula1/", "/cultura/", "/cine/",
-    "/television/", "/gente/", "/estilo/", "/opinion/", "/opinión/",
-    "/videos/", "/video/", "/podcast",
-)
-POLITICA = re.compile(
-    r"(eleccion|election|partido pol|gobierno|government|parlamento|parliament|"
-    r"congreso|congress|\bministro|\bminister\b|presidente|president\b|"
-    r"\bvoto\b|\bvote\b|campaña electoral|campaign|psoe|\bsánchez\b|"
-    r"\btrump\b|\blula\b|bolsonaro|macron|conservative|green party|"
-    r"white house|casa blanca|sanchez|parliament)",
-    re.I,
-)
-FINANZAS = re.compile(
-    r"(petr[oó]leo|\boil\b|mercado|market|bolsa|\bbanco\b|\bbank\b|inflaci|"
-    r"\bfed\b|\bbce\b|\becb\b|acciones|investor|inversor|econom[ií]a|\beconomy\b|"
-    r"arancel|tariff|\bempleo\b|bonos|\bbond\b|\blng\b|deuda|\bdebt\b|"
-    r"wall street|tipo de inter[eé]s|interest rate|acciones)",
-    re.I,
-)
-CIENCIA = STRONG_SCIENCE
 SKIP_TITLE = re.compile(
-    r"(newsletter|podcast|bloomberg this weekend|^watch:|^mira:)",
+    r"(^opinion\b|^opinión\b|^editorial\b|^tribuna\b|^an[aá]lisis:|^watch:|^mira:|^video:|^v[ií]deo:|"
+    r"^podcast|podcast\b|newsletter|^live\b|\blive:|\blive updates\b|as it happened|en vivo|en directo|"
+    r"\|\s*directo|minuto a minuto|última hora de|ultima hora de|latest news bulletin|"
+    r"bloomberg this weekend|^the latest:|crossword|horóscopo|horoscopo|^letters:|quiz\b|"
+    r"in pictures|en im[aá]genes|fotos:|photos:|^bbc news at|what we know so far|lo que sabemos|^the papers:|"
+    r"^firstft:|temblor hoy|[uú]ltimos sismos|sismos? hoy|fin de semana:|mejores planes|planes para|qu[eé] hacer este)",
     re.I,
 )
 SECTION_TITLE = re.compile(
-    r"^(guerra en ucrania|guerra ucrania\s*-?\s*rusia|internacional|portada|econom[ií]a)$",
+    r"^(guerra en ucrania|guerra ucrania\s*-?\s*rusia|internacional|portada|econom[ií]a|banca|"
+    r"mercados|empresas|bolsa|ahorro|vivienda|fiscal|energ[ií]a)$",
     re.I,
 )
+
+WAR = re.compile(
+    r"(\b(ucrania|ukraine|kyiv|kiev|odesa|odessa|gaza|ham[aá]s|hezbol[aá]|hezbollah|hut[ií]es|houthis?|"
+    r"donbas|donbás|zaporizhzhia|zaporiyia|jarkov|kharkiv|kherson|jers[oó]n|sud[aá]n|rsf|darfur|hormuz|ormuz)\b|"
+    r"guerra en|guerra de|war in|war on|iran war|guerra con ir[aá]n|bombardea|bombardeo|airstrike|air strike|"
+    r"drone attack|ataques? (rusos|israel[ií]es|con drones|a[eé]reos?)|missile|misil|"
+    r"alto el fuego|ceasefire|cease-fire|front-line|front line|frente de batalla|"
+    r"\b(rusia|russia|putin)\b.{0,48}\b(guerra|war|ucrania|ukraine|kyiv|kiev|bombar|drone|misil|missile|invasi|refiner)|"
+    r"\b(guerra|war|bombar|bombas?|bombs?|strikes?|misil|missile)\b.{0,48}\b(rusia|russia|putin|ucrania|ukraine|iran|ir[aá]n|israel|l[ií]bano|lebanon)|"
+    r"\b(israel|israeli|israel[ií]es?)\b.{0,48}\b(strike|attack|ataque|bombard|kill|mata|muert|troops|tropas|soldad|soldier)|"
+    r"yemen.{0,30}(war|guerra|houthi|hut[ií]))",
+    re.I,
+)
+SUCESOS = re.compile(
+    r"(asesin|murder|homicid|apuñal|stabb|accidente|crash|terremoto|sismo|earthquake|incendio|wildfire|"
+    r"\bfire\b|robo |robbery|detenid|arrested|arrest of|injur|herid|collid|colisi|choque|violencia sexual|sexual assault|abuso sexual|"
+    r"inundaci|\bflood|desaparecid|missing|violaci[oó]n|\brape\b|v[ií]ctimas?|victims?|killed|\bdead\b|"
+    r"muertos|muere\b|mueren\b|fallec|tiroteo|shooting|gunman|pistolero|balacera|secuestr|kidnap|"
+    r"explosi[oó]n|explosion|derrumbe|collapse|hurac[aá]n|hurricane|tormenta|storm|tornado|alerta roja|"
+    r"rescate|rescue|narco|c[aá]rcel|prison|sentenced|condenad)",
+    re.I,
+)
+SCIENCE = re.compile(
+    r"(nasa|esa\b|cient[ií]fic|scientist|\bscience\b|research|investigador|estudio|study|dinosaur|f[ií]sica|"
+    r"physics|vacuna|vaccine|starship|\bluna\b|\bmoon\b|\bmarte\b|\bmars\b|gen[eé]tic|genom|\bastronom|"
+    r"biolog|nobel|sat[eé]lite|observator|telescop|cambio clim|clim[aá]tic|climate|calentamiento|warming|"
+    r"species|especie|oc[eé]ano|ocean|geol[oó]g|c[eé]lula|cell\b|quantum|cu[aá]ntic|fossil|f[oó]sil|"
+    r"virus|pandemi|epidemi|\bbrain\b|cerebro|asteroid|\bplanets?\b|planetari|exoplanet|galax|arctic|[aá]rtico|antart|biodivers|"
+    r"emisiones|emissions|glaciar|glacier|leap second|segundo intercalar)",
+    re.I,
+)
+POLITICA = re.compile(
+    r"(eleccion|election|electoral|partido|party\b|gobierno|government|parlamento|parliament|congreso|"
+    r"congress|senado|senate|\bministr|minister|president|\bvoto\b|\bvote|campaña|campaign|primarias|"
+    r"primar(y|ies)|trump|lula|milei|petro\b|sheinbaum|maduro|bukele|macron|starmer|merz|s[aá]nchez|"
+    r"feij[oó]o|casa blanca|white house|ley\b|\blaw\b|bill\b|proyecto de ley|tribunal supremo|supreme court|"
+    r"impeachment|destituci|dimisi|resign|coalici|coalition|referend|diputad|lawmaker|alcald|mayor\b|"
+    r"gobernador|governor|oposici|opposition|kast\b|tories|labour|laborista|conservador|conservative|"
+    r"republican|dem[oó]crat|pp\b|psoe|vox\b)",
+    re.I,
+)
+FINANZAS = re.compile(
+    r"(petr[oó]leo|\boil\b|crudo|mercado|market|bolsa|stocks?\b|shares\b|\bbanc|\bbank|inflaci|inflation|"
+    r"\bfed\b|reserva federal|\bbce\b|\becb\b|acciones|investor|inversor|econom|arancel|tariff|\bempleo\b|"
+    r"jobs\b|unemploy|desempleo|bonos|\bbonds?\b|\blng\b|deuda|\bdebt\b|wall street|tipos? de inter[eé]s|"
+    r"interest rates?|tasas? de inter[eé]s|\bpib\b|\bgdp\b|recesi[oó]n|recession|d[oó]lar|dollar|"
+    r"\beuro\b|\boro\b|\bgold\b|bitcoin|cripto|crypto|empresa|company|earnings|beneficios|profit|"
+    r"fusi[oó]n|merger|adquisici|acquisition|imf|fmi|presupuesto|budget|impuesto|\btax|salario|wage|"
+    r"precios?|prices?|exporta|importa|comercio|trade\b|aerol[ií]nea|airline|inversi[oó]n|investment)",
+    re.I,
+)
+WORLD_PATH = re.compile(r"/(internacional|world|mundo|america|america-latina|am%c3%a9rica-latina|africa|asia|"
+                        r"europe|europa|middle[-_]east|oriente|asia-pacific|americas|us-news|eeuu)", re.I)
+
+# ---------------------------------------------------------------- utilidades
 
 
 def local(tag: str) -> str:
@@ -164,65 +153,59 @@ def parse_date(raw: str):
     except Exception:
         pass
     try:
-        if len(raw) == 10:
-            return datetime.fromisoformat(raw).replace(tzinfo=timezone.utc)
-        return datetime.fromisoformat(raw.replace("Z", "+00:00")).astimezone(timezone.utc)
+        dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
     except Exception:
         return None
 
 
 def clean_url(url: str) -> str:
     p = urlparse(url.strip())
-    drop = {"at_medium", "at_campaign", "mod"}
-    q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True) if k not in drop and not k.startswith("syn-")]
+    q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True)
+         if not (k.startswith("utm_") or k.startswith("at_") or k.startswith("syn-")
+                 or k in {"mod", "ref", "cmpid", "ns_mchannel", "ns_source", "ns_campaign", "partner", "emc"})]
     return urlunparse(p._replace(query=urlencode(q), fragment=""))
 
 
-def host_ok(url: str) -> bool:
-    host = urlparse(url).netloc.lower()
-    return host in ALLOWED_HOSTS
+TAG_RE = re.compile(r"<[^>]+>")
+TAIL_RE = re.compile(r"(continue reading\.*|the post .* appeared first on .*|leer m[aá]s\.*|"
+                     r"seguir leyendo\.*|read more\.*|\[…\]|\[\.\.\.\])\s*$", re.I)
 
 
-def classify(title: str, default: str | None, path: str) -> str | None:
-    if WAR.search(title):
-        return "guerras"
-    if SUCESOS.search(title) and default != "ciencias":
-        return "sucesos"
-    strong = bool(STRONG_SCIENCE.search(title)) or any(
-        bit in path for bit in ("/ciencia", "/science", "/nature/")
-    )
-    off_science = any(bit in path for bit in ("/internacional/", "/sociedad/", "/espana/", "/economia/", "/deportes/", "/cultura/"))
-    if default == "ciencias" and (strong or not off_science):
-        return "ciencias"
-    if default == "finanzas":
-        return "finanzas"
-    if default == "politica":
-        return "politica"
-    if default == "sucesos":
-        return "sucesos"
-    if strong:
-        return "ciencias"
-    if FINANZAS.search(title):
-        return "finanzas"
-    if POLITICA.search(title):
-        return "politica"
-    if any(bit in path for bit in ("/internacional/", "/world/", "/africa/", "/asia/", "/europe/", "/middle-east/", "/middle_east/")):
-        return "mundo"
-    if default == "ciencias":
-        return None
-    if default:
-        return default
-    return None
+def clean_text(raw: str) -> str:
+    if not raw:
+        return ""
+    txt = unescape(raw)
+    txt = TAG_RE.sub(" ", txt)
+    txt = unescape(txt)
+    txt = " ".join(txt.split())
+    txt = TAIL_RE.sub("", txt).strip()
+    return txt
+
+
+def trim(txt: str, limit: int = SUMMARY_MAX) -> str:
+    if len(txt) <= limit:
+        return txt
+    cut = txt[:limit]
+    sp = cut.rfind(" ")
+    if sp > limit * 0.6:
+        cut = cut[:sp]
+    return cut.rstrip(" ,;:.-—") + "…"
 
 
 def fetch(url: str) -> bytes:
-    req = urllib.request.Request(
-        url,
-        headers={"User-Agent": UA, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"},
-    )
-    ctx = ssl.create_default_context()
-    with urllib.request.urlopen(req, timeout=18, context=ctx) as resp:
-        return resp.read(400_000)
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA,
+        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+        "Accept-Encoding": "gzip",
+    })
+    with urllib.request.urlopen(req, timeout=25, context=ssl.create_default_context()) as resp:
+        data = resp.read(4_000_000)
+    if data[:2] == b"\x1f\x8b":
+        data = gzip.decompress(data)
+    return data.lstrip(b"\xef\xbb\xbf \t\r\n")
 
 
 def parse_items(xml_bytes: bytes):
@@ -231,145 +214,405 @@ def parse_items(xml_bytes: bytes):
     for it in root.iter():
         if local(it.tag) not in ("item", "entry"):
             continue
-        title = link = date_s = ""
+        title = link = date_s = desc = ""
         for ch in list(it):
             ln = local(ch.tag)
             if ln == "title" and not title:
-                title = unescape(" ".join("".join(ch.itertext()).split()))
-                title = re.sub(r"<[^>]+>", "", title)
-                title = " ".join(title.split())
+                title = clean_text("".join(ch.itertext()))
             elif ln == "link" and not link:
                 link = (ch.get("href") or "").strip() or unescape((ch.text or "").strip())
-            elif ln in ("pubDate", "date", "published", "updated") and not date_s:
+            elif ln in ("pubDate", "date", "published", "updated", "issued") and not date_s:
                 date_s = "".join(ch.itertext()).strip()
+            elif ln in ("description", "summary", "encoded", "content") and len(desc) < 40:
+                d = clean_text("".join(ch.itertext()))
+                if len(d) > len(desc):
+                    desc = d
+            elif ln == "group":  # media:group > media:description
+                for g in ch:
+                    if local(g.tag) == "description" and len(desc) < 40:
+                        desc = clean_text("".join(g.itertext()))
         if title and link:
-            found.append((title, link, date_s))
+            found.append((title, link, date_s, desc))
     return found
+
+
+def fetch_feed(feed):
+    fid, url = feed[0], feed[1]
+    try:
+        return feed, parse_items(fetch(url)), None
+    except Exception as exc:
+        return feed, None, f"{type(exc).__name__}: {str(exc)[:160]}"
+
+
+# ---------------------------------------------------------------- clasificación
+
+
+def classify(title: str, summary: str, hint: str | None, path: str) -> str | None:
+    t = title
+    if WAR.search(t):
+        return "guerras"
+    if hint == "guerras":
+        return "guerras"
+    sci_path = bool(re.search(r"/(science|ciencia|ciencias|environment|medio-ambiente|clima|salud|health)(/|-|$)", path))
+    if hint == "ciencias":
+        return "ciencias" if (SCIENCE.search(t) or SCIENCE.search(summary[:200]) or sci_path) else None
+    if sci_path and SCIENCE.search(t + " " + summary[:200]):
+        return "ciencias"
+    if SUCESOS.search(t):
+        return "sucesos"
+    pol, fin = bool(POLITICA.search(t)), bool(FINANZAS.search(t))
+    if hint == "finanzas":
+        return "politica" if (pol and not fin) else "finanzas"
+    if hint == "politica":
+        return "finanzas" if (fin and not pol) else "politica"
+    if SCIENCE.search(t) and ("/science" in path or "/ciencia" in path or "/environment" in path or "/clima" in path):
+        return "ciencias"
+    if FINANZAS.search(t) or re.search(r"/(econom|business|markets|finanzas|negocios|dinero|mercados)", path):
+        return "finanzas"
+    if POLITICA.search(t) or re.search(r"/(politica|politics|espana/|nacional)", path):
+        return "politica"
+    if hint == "mundo" or WORLD_PATH.search(path):
+        return "mundo"
+    if SCIENCE.search(t):
+        return "ciencias"
+    return "mundo" if hint is None else hint
+
+
+# ---------------------------------------------------------------- texto -> términos
+
+_PHRASE_RE = [(re.compile(r"\b" + re.escape(a) + r"(?=\W|$)"), " " + b + " ") for a, b in PHRASES]
+
+
+def fold(s: str) -> str:
+    s = unicodedata.normalize("NFKD", s)
+    return "".join(c for c in s if not unicodedata.combining(c))
+
+
+def terms(text: str) -> list[str]:
+    # Siglas sensibles a mayúsculas antes de pasar a minúsculas.
+    text = re.sub(r"\bU\.?S\.?A?\b(?!\w)", " usa ", text)
+    text = re.sub(r"\bUN\b", " unorg ", text)
+    text = re.sub(r"\bUK\b", " uk ", text)
+    text = re.sub(r"\b(EU|UE)\b", " eu ", text)
+    text = re.sub(r"\bONU\b", " unorg ", text)
+    t = fold(text).lower()
+    t = t.replace("’", "'").replace("‘", "'")
+    t = re.sub(r"'s\b", "", t)
+    for rx, rep in _PHRASE_RE:
+        t = rx.sub(rep, t)
+    out = []
+    for w in re.findall(r"[a-z0-9]+", t):
+        if w.isdigit():
+            if len(w) >= 2 and not (1990 <= int(w) <= 2035):
+                out.append("#" + w)
+            continue
+        w = WORDS.get(w, w)
+        if w in STOP or len(w) < 3:
+            continue
+        for part in w.split():
+            out.append(part[:6])
+    return out
+
+
+# ---------------------------------------------------------------- agrupación
+
+
+class DSU:
+    def __init__(self, n):
+        self.p = list(range(n))
+        self.members = {i: [i] for i in range(n)}
+
+    def find(self, x):
+        while self.p[x] != x:
+            self.p[x] = self.p[self.p[x]]
+            x = self.p[x]
+        return x
+
+    def union(self, a, b):
+        ra, rb = self.find(a), self.find(b)
+        if ra == rb:
+            return ra
+        if len(self.members[ra]) < len(self.members[rb]):
+            ra, rb = rb, ra
+        self.p[rb] = ra
+        self.members[ra].extend(self.members.pop(rb))
+        return ra
+
+
+def build_vectors(items):
+    docs = []
+    for it in items:
+        tt = terms(it["title"])
+        st = terms(it["summary"][:300]) if it["summary"] else []
+        it["_tt"] = set(tt)
+        it["_all"] = set(tt) | set(st)
+        tf = Counter()
+        for w in tt:
+            tf[w] += 2.0
+        for w in st:
+            tf[w] += 1.0
+        docs.append(tf)
+    n = len(docs)
+    df = Counter()
+    for it in items:
+        df.update(it["_all"])
+    idf = {w: math.log((n + 1) / (c + 0.5)) for w, c in df.items()}
+    for it, tf in zip(items, docs):
+        vec = {w: (1 + math.log(c)) * idf[w] for w, c in tf.items()}
+        norm = math.sqrt(sum(v * v for v in vec.values())) or 1.0
+        it["_vec"] = {w: v / norm for w, v in vec.items()}
+    return idf, df
+
+
+def cos(a, b):
+    if len(a) > len(b):
+        a, b = b, a
+    return sum(v * b.get(w, 0.0) for w, v in a.items())
+
+
+def cluster(items, idf, df):
+    n = len(items)
+    rare_cut = math.log((n + 1) / (max(4, n * 0.012) + 0.5))   # término "distintivo"
+    common_cut = n * 0.06
+    index = defaultdict(list)
+    for i, it in enumerate(items):
+        for w in it["_all"]:
+            if df[w] <= common_cut:
+                index[w].append(i)
+    cand = set()
+    for w, lst in index.items():
+        if len(lst) > 400:
+            continue
+        for a in range(len(lst)):
+            for b in range(a + 1, len(lst)):
+                cand.add((lst[a], lst[b]))
+
+    sims = {}
+    pairs = []
+    for i, j in cand:
+        a, b = items[i], items[j]
+        if abs(a["_ts"] - b["_ts"]) > PAIR_WINDOW_H * 3600:
+            continue
+        s = cos(a["_vec"], b["_vec"])
+        if s < 0.12:
+            continue
+        shared_title = a["_tt"] & b["_tt"]
+        shared = a["_all"] & b["_all"]
+        rare = [w for w in shared if idf.get(w, 0) >= rare_cut]
+        rare_title = [w for w in shared_title if idf.get(w, 0) >= rare_cut]
+        cross = a["lang"] != b["lang"]
+        # Reglas de enlace: similitud alta + al menos 2 términos distintivos en común,
+        # y que al menos uno de ellos esté en los dos titulares.
+        need = 0.30 if cross else 0.36
+        ok = (s >= need and len(rare) >= 2 and len(rare_title) >= 1) or \
+             (s >= 0.55 and len(rare) >= 1 and len(shared_title) >= 2)
+        sims[(i, j)] = s
+        if ok:
+            pairs.append((s, i, j))
+    pairs.sort(reverse=True)
+
+    def sim(i, j):
+        if i > j:
+            i, j = j, i
+        v = sims.get((i, j))
+        if v is None:
+            v = cos(items[i]["_vec"], items[j]["_vec"])
+            sims[(i, j)] = v
+        return v
+
+    dsu = DSU(n)
+    AVG_MIN = 0.20
+    for s, i, j in pairs:
+        ri, rj = dsu.find(i), dsu.find(j)
+        if ri == rj:
+            continue
+        A, B = dsu.members[ri], dsu.members[rj]
+        ts = [items[k]["_ts"] for k in A + B]
+        if max(ts) - min(ts) > 60 * 3600:
+            continue
+        tot = 0.0
+        for x in A:
+            for y in B:
+                tot += sim(x, y)
+        if tot / (len(A) * len(B)) < AVG_MIN:
+            continue
+        dsu.union(i, j)
+    groups = [m for m in dsu.members.values()]
+    return groups, sims
+
+
+# ---------------------------------------------------------------- principal
+
+
+def iso(ts: float) -> str:
+    return datetime.fromtimestamp(ts, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def next_cron(now: datetime) -> datetime:
+    base = now.replace(minute=0, second=0, microsecond=0)
+    h = (base.hour // REFRESH_HOURS + 1) * REFRESH_HOURS
+    return base.replace(hour=0) + timedelta(hours=h)
 
 
 def main():
     now = datetime.now(timezone.utc)
-    failures = []
-    successes = []
-    pool = []
-    seen = set()
+    ok_feeds, failed = [], []
+    pool, seen = [], set()
 
-    for feed_id, url, source, lang, default in FEEDS:
-        try:
-            raw = fetch(url)
-            rows = parse_items(raw)
-        except Exception as exc:
-            failures.append({"id": feed_id, "source": source, "url": url, "error": f"{type(exc).__name__}: {exc}"})
-            print(f"FAIL {feed_id}: {exc}")
-            continue
-        if not rows:
-            failures.append({"id": feed_id, "source": source, "url": url, "error": "sin ítems"})
-            print(f"FAIL {feed_id}: empty")
+    with ThreadPoolExecutor(max_workers=16) as ex:
+        results = list(ex.map(fetch_feed, FEEDS))
+
+    for feed, rows, err in results:
+        fid, url, source, org, lang, hint = feed
+        if err or not rows:
+            failed.append({"id": fid, "source": source, "url": url, "error": err or "sin ítems"})
+            print(f"FAIL {fid}: {err or 'empty'}")
             continue
         kept = 0
         newest = None
-        for title, link, date_s in rows:
-            if SKIP_TITLE.search(title) or SECTION_TITLE.search(title):
-                continue
-            if len(title) < 18:
+        for title, link, date_s, desc in rows:
+            if len(title) < 18 or SKIP_TITLE.search(title) or SECTION_TITLE.search(title):
                 continue
             url_c = clean_url(link)
-            if not url_c.startswith("http") or not host_ok(url_c):
+            if not url_c.startswith("http"):
                 continue
             path = urlparse(url_c).path.lower()
-            if any(bit in path for bit in SKIP_PATH):
+            if SKIP_PATH.search(path):
                 continue
             published = parse_date(date_s)
-            if published is None:
+            if published is None or published > now + timedelta(hours=3):
                 continue
-            window = SCIENCE_DAYS if default == "ciencias" else NEWS_DAYS
-            if published < now - timedelta(days=window):
+            hours = SCIENCE_HOURS if hint == "ciencias" else NEWS_HOURS
+            if published < now - timedelta(hours=hours):
                 continue
-            if published > now + timedelta(hours=6):
-                continue
-            cat = classify(title, default, path)
+            summary = desc
+            if summary and fold(summary.lower())[:60] == fold(title.lower())[:60]:
+                summary = ""  # el resumen solo repite el titular
+            cat = classify(title, summary, hint, path)
             if not cat:
                 continue
-            key = (urlparse(url_c).netloc + urlparse(url_c).path.rstrip("/")).lower()
-            title_key = re.sub(r"\W+", "", title.lower())[:80]
-            if key in seen or title_key in seen:
+            key = (urlparse(url_c).netloc.replace("www.", "") + urlparse(url_c).path.rstrip("/")).lower()
+            tkey = org + "|" + re.sub(r"\W+", "", fold(title.lower()))[:90]
+            if key in seen or tkey in seen:
                 continue
             seen.add(key)
-            seen.add(title_key)
+            seen.add(tkey)
             pool.append({
-                "category": cat,
-                "lang": lang,
-                "title": title,
-                "source": source,
-                "url": url_c,
-                "publishedAt": published.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "_ts": published.timestamp(),
-                "feed": feed_id,
+                "title": title, "url": url_c, "source": source, "org": org, "lang": lang,
+                "summary": trim(summary), "category": cat, "feed": fid,
+                "publishedAt": published.strftime("%Y-%m-%dT%H:%M:%SZ"), "_ts": published.timestamp(),
             })
             kept += 1
             newest = published if newest is None or published > newest else newest
-        successes.append({
-            "id": feed_id,
-            "source": source,
-            "lang": lang,
-            "url": url,
-            "itemsInFeed": len(rows),
-            "keptBeforeCap": kept,
-            "newest": newest.strftime("%Y-%m-%dT%H:%M:%SZ") if newest else None,
-        })
-        print(f"OK {feed_id} raw={len(rows)} kept={kept}")
+        ok_feeds.append({"id": fid, "source": source, "lang": lang, "url": url, "itemsInFeed": len(rows),
+                         "kept": kept, "newest": newest.strftime("%Y-%m-%dT%H:%M:%SZ") if newest else None})
+        print(f"OK   {fid:22s} raw={len(rows):3d} kept={kept}")
 
-    for feed_id, url, reason in EXTRA_FAILS:
-        failures.append({"id": feed_id, "source": feed_id, "url": url, "error": reason})
+    for fid, url, reason in KNOWN_FAILS:
+        failed.append({"id": fid, "source": fid, "url": url, "error": reason})
 
-    categories = ["sucesos", "politica", "finanzas", "mundo", "ciencias", "guerras"]
-    chosen = []
-    counts = {c: {"es": 0, "en": 0} for c in categories}
-    for cat in categories:
+    print(f"\nitems={len(pool)}")
+    idf, df = build_vectors(pool)
+    groups, sims = cluster(pool, idf, df)
+
+    stories_by_cat = defaultdict(list)
+    debug_rows = []
+    for g in groups:
+        members = [pool[i] for i in g]
+        orgs = {m["org"] for m in members}
+        if len(orgs) < 2:
+            continue
+        # Representante por idioma: el más central del grupo.
+        def centrality(i):
+            return sum(sims.get((min(i, j), max(i, j)), 0.0) for j in g if j != i)
+        by_lang = {}
         for lang in ("es", "en"):
-            group = [x for x in pool if x["category"] == cat and x["lang"] == lang]
-            group.sort(key=lambda x: x["_ts"], reverse=True)
-            if cat == "ciencias":
-                preferred = [x for x in group if x["source"] in ("Nature", "Science")]
-                others = [x for x in group if x["source"] not in ("Nature", "Science")]
-                take = (preferred[:6] + others)[:MAX_PER]
-                take.sort(key=lambda x: x["_ts"], reverse=True)
-            else:
-                take = group[:MAX_PER]
-            counts[cat][lang] = len(take)
-            for item in take:
-                item = dict(item)
-                item.pop("_ts", None)
-                item.pop("feed", None)
-                chosen.append(item)
+            cands = [i for i in g if pool[i]["lang"] == lang]
+            if cands:
+                cands.sort(key=lambda i: (centrality(i), len(pool[i]["summary"]) > 60), reverse=True)
+                by_lang[lang] = cands
+        def best_summary(lang):
+            for i in by_lang.get(lang, []):
+                if len(pool[i]["summary"]) >= 60:
+                    return pool[i]["summary"], pool[i]["source"]
+            return None, None
 
-    updated = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-    nxt = (now + timedelta(hours=REFRESH_HOURS)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        # Categoría por votos; "guerras" y "sucesos" ganan empates porque son más específicas.
+        votes = Counter(m["category"] for m in members)
+        prio = {"guerras": 6, "sucesos": 5, "ciencias": 4, "finanzas": 3, "politica": 2, "mundo": 1}
+        cat = max(votes, key=lambda c: (votes[c], prio[c]))
+        if votes.get("guerras", 0) * 3 >= len(members) and cat != "guerras":
+            cat = "guerras"
+        ts = [m["_ts"] for m in members]
+        es_sum, es_src = best_summary("es")
+        en_sum, en_src = best_summary("en")
+        head_es = pool[by_lang["es"][0]]["title"] if "es" in by_lang else None
+        head_en = pool[by_lang["en"][0]]["title"] if "en" in by_lang else None
+        sources = []
+        for m in sorted(members, key=lambda m: m["_ts"]):
+            sources.append({"source": m["source"], "lang": m["lang"], "title": m["title"],
+                            "url": m["url"], "publishedAt": m["publishedAt"]})
+        story = {
+            "headline": head_es or head_en,
+            "headlineLang": "es" if head_es else "en",
+            "headlineEs": head_es,
+            "headlineEn": head_en,
+            "summaryEs": es_sum, "summaryEsSource": es_src,
+            "summaryEn": en_sum, "summaryEnSource": en_src,
+            "outlets": len(orgs),
+            "outletNames": sorted({m["source"].replace(" Español", "").replace(" English", "") for m in members}),
+            "languages": sorted({m["lang"] for m in members}),
+            "firstSeen": iso(min(ts)), "lastSeen": iso(max(ts)),
+            "sources": sources,
+            "_last": max(ts),
+        }
+        stories_by_cat[cat].append(story)
+        debug_rows.append((cat, len(orgs), members))
+
+    out_cats = []
+    summary_counts = {}
+    for cid, label in CATEGORIES:
+        lst = stories_by_cat.get(cid, [])
+        lst.sort(key=lambda s: (s["outlets"], s["_last"]), reverse=True)
+        lst = lst[:MAX_STORIES]
+        for i, s in enumerate(lst):
+            s.pop("_last", None)
+            s["id"] = f"{cid}-{i + 1}"
+        summary_counts[cid] = len(lst)
+        out_cats.append({"id": cid, "label": label, "stories": lst})
+
     payload = {
-        "updatedAt": updated,
-        "nextRefreshAt": nxt,
+        "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "nextRefreshAt": next_cron(now).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "refreshHours": REFRESH_HOURS,
-        "timezoneNote": "Las horas de la interfaz se muestran en America/Costa_Rica.",
-        "categories": [
-            {"id": "sucesos", "label": "Sucesos"},
-            {"id": "politica", "label": "Política"},
-            {"id": "finanzas", "label": "Mundo de finanzas"},
-            {"id": "mundo", "label": "Mundo"},
-            {"id": "ciencias", "label": "Ciencias"},
-            {"id": "guerras", "label": "Guerras actuales"},
-        ],
-        "counts": counts,
-        "sourcesUsed": sorted({s["source"] for s in successes if s["keptBeforeCap"] > 0}),
-        "feedsOk": successes,
-        "feedsFailed": failures,
-        "items": chosen,
+        "method": {
+            "minOutlets": 2,
+            "pairWindowHours": PAIR_WINDOW_H,
+            "newsMaxAgeHours": NEWS_HOURS,
+            "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 2+ medios distintos.",
+        },
+        "stats": {
+            "feedsOk": len(ok_feeds),
+            "feedsFailed": len([f for f in failed]),
+            "itemsGathered": len(pool),
+            "clusters": len(groups),
+            "consensusStories": sum(summary_counts.values()),
+            "perCategory": summary_counts,
+        },
+        "sourcesUsed": sorted({f["source"] for f in ok_feeds if f["kept"] > 0}),
+        "categories": out_cats,
+        "feedsOk": ok_feeds,
+        "feedsFailed": failed,
     }
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("\nCOUNTS")
-    for cat in categories:
-        print(f"  {cat}: ES={counts[cat]['es']} EN={counts[cat]['en']}")
-    print("items", len(chosen))
-    print("wrote", OUT)
+    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    print("clusters", len(groups), "consensus", summary_counts)
+
+    if DEBUG:
+        with open(ROOT / "debug_clusters.txt", "w", encoding="utf-8") as fh:
+            for cat, k, members in sorted(debug_rows, key=lambda r: (-r[1], r[0])):
+                fh.write(f"\n=== [{cat}] {k} medios\n")
+                for m in sorted(members, key=lambda m: m["org"]):
+                    fh.write(f"  {m['lang']} {m['source'][:18]:18s} {m['title'][:110]}\n")
 
 
 if __name__ == "__main__":

@@ -1,51 +1,58 @@
-# Noticias (prototipo)
+# Noticias · briefing de consenso
 
-Pantalla móvil para leer titulares reales en seis categorías: Sucesos, Política, Mundo de finanzas, Mundo, Ciencias y Guerras actuales. Cada tarjeta muestra el titular, el medio, la etiqueta ES o EN, la hora y un enlace al artículo original. No hay cuenta ni tienda de aplicaciones.
+Página móvil (en español) que muestra **solo las noticias que publican varios medios a la vez**. La idea es quitar el ruido: si una historia aparece en un solo medio, no se muestra. Si la publican 2, 5 o 19 medios distintos, aparece, ordenada por cuántos medios la cubren.
 
-Los textos salen de RSS públicos. Si un feed falla o no trae actualidad, se omite. No se inventan titulares, citas ni enlaces.
+Categorías: Sucesos, Política, Mundo de finanzas, Mundo, Ciencias y Guerras actuales.
 
-## Cómo abrirlo en el teléfono
+**Abrir en el teléfono:** https://kbpsy505.github.io/noticias-app/ (en Chrome; no hace falta cuenta ni instalar nada).
 
-El navegador no puede leer el JSON si abres el archivo directo (`file://`). Hay que servir la carpeta.
+## Cómo funciona (solo código, sin IA)
 
-1. En un ordenador de la misma red Wi‑Fi que el Android:
+Cada 3 horas, GitHub Actions ejecuta `actualizar.py`:
 
-   ```bash
-   cd /workspace/noticias-app
-   python3 -m http.server 8080
-   ```
+1. **Recolectar.** Lee unos 90 canales RSS públicos en español e inglés (lista en `feeds.py`): BBC y BBC Mundo, El País, El Mundo, Expansión, The Economist, Financial Times, Bloomberg, Nature, Science, The Guardian, The New York Times, NPR, Al Jazeera, CBS News, Sky News, CNBC, DW, France 24, RFI, Euronews, Noticias ONU, Le Monde, El Confidencial, ABC, La Vanguardia, Europa Press, 20minutos, Infobae, Clarín, La Nación (Argentina), El Tiempo, El Comercio (Perú), La Nación y El Financiero (Costa Rica), El Mundo CR y Monumental. De cada nota guarda título, enlace, medio, idioma, hora y el resumen que trae el propio feed (sin HTML, máximo ~400 caracteres). Si un feed falla, se salta y queda anotado en `noticias.json`.
+2. **Filtrar.** Descarta opinión, podcasts, videos, blogs en vivo, deportes, cultura y notas de más de 48 horas (7 días en ciencia).
+3. **Normalizar.** Pasa títulos y resúmenes a un vocabulario común: quita tildes y palabras vacías, traduce términos frecuentes del español al inglés con un diccionario pequeño (`vocab.py`: países, gentilicios, “alto el fuego” → *ceasefire*, “aranceles” → *tariff*…) y recorta cada palabra a 6 letras para que “elecciones” y “elections” coincidan.
+4. **Agrupar.** Compara cada par de notas con TF‑IDF (similitud de coseno). Dos notas se unen solo si: se publicaron con 36 horas o menos de diferencia, su similitud es alta, comparten al menos 2 términos poco comunes (nombres, lugares, cifras) y al menos uno está en ambos titulares. Al unir grupos se exige que la similitud promedio entre todas sus notas siga siendo alta, para no encadenar historias distintas.
+5. **Consenso.** Se queda solo con los grupos que publican **2 o más medios distintos**. Ediciones del mismo grupo cuentan como un solo medio: BBC = BBC Mundo, El País = El País English, DW EN = DW ES, France 24 EN = ES, RFI EN = ES, Euronews EN = ES, El Mundo = Expansión, La Nación CR = El Financiero CR.
+6. **Ordenar y publicar.** Ordena por número de medios y luego por lo más reciente. Para cada historia guarda un titular en español (y en inglés si existe), el mejor resumen por idioma, el número de medios, la lista de fuentes con enlaces y la primera y última hora vista. Todo va a `noticias.json`, que la página lee.
 
-2. Averigua la IP del ordenador (`ip addr` o la configuración de la red) y, en Chrome del teléfono, abre `http://ESA-IP:8080`.
+Nada se inventa: los titulares y resúmenes son los que publica cada medio. La página enlaza siempre al original.
 
-3. La primera pantalla es `index.html`.
+## Actualización automática
 
-## Cada 3 horas
+`.github/workflows/actualizar.yml` corre cada 3 horas (`0 */3 * * *`, en UTC) y también a mano desde la pestaña *Actions* (“Run workflow”). Si `noticias.json` cambió, lo guarda en `main` y GitHub Pages vuelve a publicar la página. GitHub a veces retrasa los cron unos minutos.
 
-La página muestra la última descarga y la hora de la siguiente (hora de Costa Rica). Esos datos viven en `noticias.json`.
-
-Para bajar titulares otra vez:
+Para correrlo en tu computadora:
 
 ```bash
-python3 actualizar.py
+python3 actualizar.py           # escribe noticias.json
+python3 actualizar.py --debug   # además escribe debug_clusters.txt para revisar los grupos
+python3 -m http.server 8080     # y abre http://localhost:8080
 ```
 
-Puedes dejarlo en cron cada 3 horas. Si ya pasó la hora y nadie ejecutó el script, la pantalla lo dice y sigue mostrando la última tanda real. No rellena huecos con noticias inventadas.
+Solo usa la biblioteca estándar de Python (3.10 o más reciente).
 
-## Fuentes que sí respondieron
+## Fuentes que no se pudieron usar
 
-BBC, BBC Mundo, El País (incluida la edición en inglés), El Mundo, The Economist, Financial Times, Bloomberg, Nature y Science.
+Reuters y AP (sin RSS público), Washington Post (502), CNN en Español (404), EFE (500 o XML inválido), The Independent (XML inválido), WSJ (feed congelado en 2025), CRHoy y Teletica (sin RSS válido). New Scientist a veces responde 406 y se salta.
 
-## Fuentes que no se usaron
+## Limitaciones
 
-- Reuters: no hay RSS público de titulares (404 y 401).
-- Associated Press: la web responde 403; no hay un RSS abierto utilizable.
-- AFP: el RSS de afp.com no es un cable de noticias; solo notas viejas de la agencia (2012–2021).
-- Wall Street Journal: el RSS gratuito responde, pero los ítems siguen en enero de 2025. No es un feed vivo.
-- El Mundo sucesos: HTTP 404.
+- La agrupación es estadística: a veces deja separadas notas del mismo hecho (sobre todo entre idiomas) y, rara vez, une dos notas parecidas que no son el mismo hecho. `--debug` sirve para revisarlo.
+- La categoría sale de reglas simples (sección del feed y palabras clave) y no siempre acierta.
+- Muchos medios en español reproducen cables de agencias (EFE, Europa Press), así que dos medios pueden estar contando la misma fuente original.
+- FT, Bloomberg y The Economist tienen muro de pago: el resumen del feed es corto.
 
-## Qué hay en la carpeta
+## Próximo paso (todavía no)
 
-- `index.html` — entrada
-- `styles.css`, `app.js` — interfaz
-- `noticias.json` — titulares de la última descarga
-- `actualizar.py` — vuelve a pedir los RSS y reescribe el JSON
+Agregar un resumen escrito por IA para cada historia de consenso, que explique en qué coinciden los medios y en qué difieren. Se hará con una clave de xAI guardada como secreto de GitHub llamado `XAI_API_KEY`; la clave nunca irá en el código. Por ahora no se usa ninguna IA ni clave.
+
+## Archivos
+
+- `index.html`, `styles.css`, `app.js`: la página.
+- `noticias.json`: el resultado de la última actualización.
+- `actualizar.py`: descarga, agrupa y escribe el JSON.
+- `feeds.py`: lista de feeds y medios.
+- `vocab.py`: diccionario español–inglés y palabras vacías.
+- `.github/workflows/actualizar.yml`: la tarea automática cada 3 horas.
