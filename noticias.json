@@ -82,367 +82,1478 @@
  ],
  "categories": [
   {
-   "id": "sucesos",
-   "label": "Sucesos",
-   "minOutlets": 5,
+   "id": "buenas",
+   "label": "Buenas noticias",
+   "minOutlets": 1,
    "stories": [
     {
-     "headline": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
-     "headlineLang": "es",
-     "headlineEs": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
-     "headlineEn": "Teacher and 5-year-old student killed in Oregon school shooting identified",
-     "summaryEs": "El ataque ocurrió en la escuela Silver Rail de la localidad de Bend, en el noroeste de EE.UU. El sospechoso fue abatido por un transeúnte.",
-     "summaryEsSource": "BBC Mundo",
-     "summaryEn": "Two of the four victims killed in the shooting at an Oregon elementary school on Thursday have been identified as a 25-year-old teacher and a 5-year-old student.",
-     "summaryEnSource": "CBS News",
-     "outlets": 10,
+     "headline": "North America’s Largest Wildlife Overpass Is Working: Animal Collisions on I-25 Down 91%",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "North America’s Largest Wildlife Overpass Is Working: Animal Collisions on I-25 Down 91%",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "In March, GNN reported that North America’s largest wildlife overpass had opened in December over Interstate 25 near Larkspur, in Colorado. Now, 10 months on from its opening, data has demonstrated that the 6-lane lifeline for bears, elk, moose, and other animals is working, with 91% fewer collisions between wildlife and vehicles. Measuring 200 feet […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
      "outletNames": [
-      "20minutos",
-      "BBC",
-      "BBC Mundo",
-      "CBS News",
-      "El Confidencial",
-      "El Mundo",
-      "El País",
-      "La Nación (Argentina)",
-      "La Vanguardia",
-      "Sky News",
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T18:30:38Z",
+     "lastSeen": "2026-10-16T18:30:38Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "North America’s Largest Wildlife Overpass Is Working: Animal Collisions on I-25 Down 91%",
+       "url": "https://www.goodnewsnetwork.org/north-americas-largest-wildlife-overpass-is-working-animal-collisions-on-i-25-down-91/",
+       "publishedAt": "2026-10-16T18:30:38Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-1"
+    },
+    {
+     "headline": "Fundraising to protect oceans, forests and other key nature sites falling short ahead of UN summit",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Fundraising to protect oceans, forests and other key nature sites falling short ahead of UN summit",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Promises by nations to spend hundreds of billions of dollars to finance nature and increase protections for oceans around the globe are falling short ahead of a key U.N. biodiversity conference. The warnings from the head of the conference and environmental groups comes as the countries gather Monday in Yerevan, Armenia for the United Nations",
+     "summaryEnSource": "Mongabay",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Mongabay"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T17:54:17Z",
+     "lastSeen": "2026-10-16T17:54:17Z",
+     "sources": [
+      {
+       "source": "Mongabay",
+       "lang": "en",
+       "title": "Fundraising to protect oceans, forests and other key nature sites falling short ahead of UN summit",
+       "url": "https://news.mongabay.com/short-article/2026/10/fundraising-to-protect-oceans-forests-and-other-key-nature-sites-falling-short-ahead-of-un-summit/",
+       "publishedAt": "2026-10-16T17:54:17Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-2"
+    },
+    {
+     "headline": "El Aeropuerto del Pacífico en El Salvador ya supera el 60% de avance: $113 millones más en 2027 y una fecha de entrega que genera dudas",
+     "headlineLang": "es",
+     "headlineEs": "El Aeropuerto del Pacífico en El Salvador ya supera el 60% de avance: $113 millones más en 2027 y una fecha de entrega que genera dudas",
+     "headlineEn": null,
+     "summaryEs": "La CAF confirmó el avance general del proyecto en Conchagua tras una visita de su presidente ejecutivo. CEPA planifica una nueva inyección de fondos, aunque la fecha exacta de apertura sigue sin ser confirmada oficialmente.",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T17:20:43Z",
+     "lastSeen": "2026-10-16T17:20:43Z",
+     "sources": [
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "El Aeropuerto del Pacífico en El Salvador ya supera el 60% de avance: $113 millones más en 2027 y una fecha de entrega que genera dudas",
+       "url": "https://www.infobae.com/el-salvador/2026/10/16/el-aeropuerto-del-pacifico-en-el-salvador-ya-supera-el-60-de-avance-113-millones-mas-en-2027-y-una-fecha-de-entrega-que-genera-dudas/",
+       "publishedAt": "2026-10-16T17:20:43Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-3"
+    },
+    {
+     "headline": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Nature"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T16:36:49Z",
+     "lastSeen": "2026-10-16T16:36:49Z",
+     "sources": [
+      {
+       "source": "Nature",
+       "lang": "en",
+       "title": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
+       "url": "https://www.nature.com/articles/s41536-026-00507-5",
+       "publishedAt": "2026-10-16T16:36:49Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "science",
+       "url": "https://www.reddit.com/r/science/comments/1x7l2q2/tregulatory_cell_protection_of_progenitor_cells/"
+      }
+     ],
+     "id": "buenas-4"
+    },
+    {
+     "headline": "North Texas man finds more than $128,000 on top of a bank",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "North Texas man finds more than $128,000 on top of a bank",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "A routine trip to a Lewisville ATM could have changed one man",
+     "summaryEnSource": "CBS News",
+     "subtopic": "social",
+     "subtopicLabel": "Progreso social",
+     "outlets": 1,
+     "outletNames": [
+      "CBS News"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T15:50:58Z",
+     "lastSeen": "2026-10-16T15:50:58Z",
+     "sources": [
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "North Texas man finds more than $128,000 on top of a bank",
+       "url": "https://www.cbsnews.com/texas/news/texas-man-finds-120000-dollars-bank-atm-returns-every-dollar-092926/",
+       "publishedAt": "2026-10-16T15:50:58Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7ju4i/north_texas_man_finds_128514_on_top_of_a_banks/"
+      }
+     ],
+     "id": "buenas-5"
+    },
+    {
+     "headline": "Covid vaccine compensation scheme set for overhaul after Inquiry criticism",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Covid vaccine compensation scheme set for overhaul after Inquiry criticism",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Ministers promise to reform the scheme that provides financial support for those injured or bereaved by vaccines in the UK.",
+     "summaryEnSource": "BBC",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "BBC"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T15:02:46Z",
+     "lastSeen": "2026-10-16T15:02:46Z",
+     "sources": [
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Covid vaccine compensation scheme set for overhaul after Inquiry criticism",
+       "url": "https://www.bbc.co.uk/news/articles/c3pwgqd4gz9xo",
+       "publishedAt": "2026-10-16T15:02:46Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-6"
+    },
+    {
+     "headline": "US EV sales are rising again. Here’s why the recovery is set to last.",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "US EV sales are rising again. Here’s why the recovery is set to last.",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "This analysis and news roundup come from the Canary Media Weekly newsletter. Sign up to get it every Friday. It’s a great time to have an electric vehicle — and more Americans are getting the message. Despite President Donald Trump’s pledge to refrain from striking Iran before next month’s midterm elections, oil…",
+     "summaryEnSource": "Canary Media",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Canary Media"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T14:23:00Z",
+     "lastSeen": "2026-10-16T14:23:00Z",
+     "sources": [
+      {
+       "source": "Canary Media",
+       "lang": "en",
+       "title": "US EV sales are rising again. Here’s why the recovery is set to last.",
+       "url": "https://www.canarymedia.com/articles/electric-vehicles/us-ev-sales-rebound",
+       "publishedAt": "2026-10-16T14:23:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-7"
+    },
+    {
+     "headline": "USC scientists discover how to create a never-ending supply of cancer-fighting cells",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "USC scientists discover how to create a never-ending supply of cancer-fighting cells",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "USC scientists have discovered a way to create a potentially renewable supply of genetically engineered immune cells that can attack cancer and strengthen the body's natural defenses. By growing and modifying immature immune cells rather than mature ones, researchers developed a system that can continuously produce tumor-fighting cells inside the body.",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T12:46:50Z",
+     "lastSeen": "2026-10-16T12:46:50Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "USC scientists discover how to create a never-ending supply of cancer-fighting cells",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261015003803.htm",
+       "publishedAt": "2026-10-16T12:46:50Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-8"
+    },
+    {
+     "headline": "Rare barn owls with",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Rare barn owls with",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "A migration ecologist called the discovery of the barn owls’ nest ‘shocking’",
+     "summaryEnSource": "The Independent",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "The Independent"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T12:33:18Z",
+     "lastSeen": "2026-10-16T12:33:18Z",
+     "sources": [
+      {
+       "source": "The Independent",
+       "lang": "en",
+       "title": "Rare barn owls with",
+       "url": "https://www.independent.co.uk/news/world/americas/barn-owls-upper-west-side-nyc-central-park-b3068099.html",
+       "publishedAt": "2026-10-16T12:33:18Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7il72/a_family_of_barn_owls_has_become_manhattans/"
+      }
+     ],
+     "id": "buenas-9"
+    },
+    {
+     "headline": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "See-through solar cells harvest some wavelengths of light to make electricity, while passing through the red and blue wavelengths that plants need. In a new agrivoltaics experiment, broccoli yields held steady.",
+     "summaryEnSource": "Anthropocene Magazine",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Anthropocene Magazine"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T12:00:00Z",
+     "lastSeen": "2026-10-16T12:00:00Z",
+     "sources": [
+      {
+       "source": "Anthropocene Magazine",
+       "lang": "en",
+       "title": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
+       "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+       "publishedAt": "2026-10-16T12:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-10"
+    },
+    {
+     "headline": "Yale scientists discover how stress changes the brain to make memories stronger",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Yale scientists discover how stress changes the brain to make memories stronger",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Yale scientists have uncovered how the stress hormone cortisol helps the brain turn emotional experiences into stronger, longer-lasting memories. The discovery reveals that stress can reshape communication between brain networks involved in emotion and memory, potentially explaining why certain moments are so difficult to forget.",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T11:55:35Z",
+     "lastSeen": "2026-10-16T11:55:35Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "Yale scientists discover how stress changes the brain to make memories stronger",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261014015517.htm",
+       "publishedAt": "2026-10-16T11:55:35Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-11"
+    },
+    {
+     "headline": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Image by hoshinosuu/ShutterstockResearchers at University of Tsukuba and Ritsumeikan University compared pupil sizes whi",
+     "summaryEnSource": "University of Tsukuba",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "University of Tsukuba"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T11:45:18Z",
+     "lastSeen": "2026-10-16T11:45:18Z",
+     "sources": [
+      {
+       "source": "University of Tsukuba",
+       "lang": "en",
+       "title": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
+       "url": "https://www.tsukuba.ac.jp/en/research-news/20261015141500.html",
+       "publishedAt": "2026-10-16T11:45:18Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "science",
+       "url": "https://www.reddit.com/r/science/comments/1x7e07e/pupil_size_reveals_differences_between_speaking/"
+      }
+     ],
+     "id": "buenas-12"
+    },
+    {
+     "headline": "Astronomers discover a strange universal rule behind black hole eruptions",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Astronomers discover a strange universal rule behind black hole eruptions",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Scientists have discovered that black holes of vastly different sizes appear to launch powerful jets according to the same universal rule. The breakthrough could explain why some black holes suddenly erupt years after devouring a star and help astronomers predict when these spectacular outbursts will happen.",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T10:45:33Z",
+     "lastSeen": "2026-10-16T10:45:33Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "Astronomers discover a strange universal rule behind black hole eruptions",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261014015507.htm",
+       "publishedAt": "2026-10-16T10:45:33Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-13"
+    },
+    {
+     "headline": "Scientists discover how exercise reverses muscle aging",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Scientists discover how exercise reverses muscle aging",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Scientists have uncovered a hidden biological mechanism that helps explain how exercise can reverse some of the damage caused by muscle aging. The key is a gene called DEAF1, which becomes overactive with age and interferes with the muscles’ ability to clear damaged proteins and repair themselves. Exercise can help restore this balance, allowing older muscles to rebuild and regain strength…",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T00:41:45Z",
+     "lastSeen": "2026-10-16T00:41:45Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "Scientists discover how exercise reverses muscle aging",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261015003550.htm",
+       "publishedAt": "2026-10-16T00:41:45Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-14"
+    },
+    {
+     "headline": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "A phase 1 trial shows that treatment of patients with high-grade serous ovarian cancer with personalized neoantigen vaccines combined with PD-1 blockade was feasible and led to tumor-specific immune responses in many patients and putative mechanisms of resistance related to antigen presentation were identified via cell-free DNA analysis.",
+     "summaryEnSource": "Nature",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Nature"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T00:34:46Z",
+     "lastSeen": "2026-10-16T00:34:46Z",
+     "sources": [
+      {
+       "source": "Nature",
+       "lang": "en",
+       "title": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
+       "url": "https://www.nature.com/articles/s41591-026-04717-8",
+       "publishedAt": "2026-10-16T00:34:46Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "science",
+       "url": "https://www.reddit.com/r/science/comments/1x72apz/new_phase_1_trial_results_published_in_nature/"
+      }
+     ],
+     "id": "buenas-15"
+    },
+    {
+     "headline": "Complex surgery successfully separates Fijian conjoined twins",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Complex surgery successfully separates Fijian conjoined twins",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "In what was described as an \"exceptionally rare\" case, doctors in Saudi Arabia say a complex operation to separate 13-month-old Fijian conjoined twins has been successful.",
+     "summaryEnSource": "ABC News (Australia)",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "ABC News (Australia)"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T22:28:16Z",
+     "lastSeen": "2026-10-15T22:28:16Z",
+     "sources": [
+      {
+       "source": "ABC News (Australia)",
+       "lang": "en",
+       "title": "Complex surgery successfully separates Fijian conjoined twins",
+       "url": "https://www.abc.net.au/news/2026-10-16/surgery-separates-fijian-conjoined-twins-in-saudi-arabia/107271702",
+       "publishedAt": "2026-10-15T22:28:16Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x72agg/complex_surgery_successfully_separates_fijian/"
+      }
+     ],
+     "id": "buenas-16"
+    },
+    {
+     "headline": "Parada cardiaca: las ventilaciones también salvan vidas",
+     "headlineLang": "es",
+     "headlineEs": "Parada cardiaca: las ventilaciones también salvan vidas",
+     "headlineEn": null,
+     "summaryEs": "Prácticas de ventilación en reanimación cardiopulmonar. ALPA PROD/Shutterstock Imagine que una persona se desploma delante de usted. No responde cuando le habla ni respira con normalidad. ¿Sabría qué hacer hasta que llegue la ambulancia? En una parada cardiaca, cada minuto sin reanimación reduce las posibilidades de supervivencia en un 10 %. La actuación de quienes presencian la emergencia puede…",
+     "summaryEsSource": "The Conversation España",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "The Conversation España"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T20:22:34Z",
+     "lastSeen": "2026-10-15T20:22:34Z",
+     "sources": [
+      {
+       "source": "The Conversation España",
+       "lang": "es",
+       "title": "Parada cardiaca: las ventilaciones también salvan vidas",
+       "url": "https://theconversation.com/parada-cardiaca-las-ventilaciones-tambien-salvan-vidas-294416",
+       "publishedAt": "2026-10-15T20:22:34Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-17"
+    },
+    {
+     "headline": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "In the last two year, local watermen of Maryland and Virginia have drudged up roughly 24,000 abandoned fishing traps.",
+     "summaryEnSource": "Good Good Good",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Good Good Good"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T19:41:00Z",
+     "lastSeen": "2026-10-15T19:41:00Z",
+     "sources": [
+      {
+       "source": "Good Good Good",
+       "lang": "en",
+       "title": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
+       "url": "https://www.goodgoodgood.co/articles/chesapeake-bay-ghost-traps-wildlife-rescue",
+       "publishedAt": "2026-10-15T19:41:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-18"
+    },
+    {
+     "headline": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "From the International Space Station’s unique position 250 miles above Earth, the Sun is a vital source of energy. Solar power supports the station’s life support systems, daily activities, and hundreds of research investigations that improve life on Earth and prepare humans for deep space exploration. Over the past five years, NASA augmented the station’s",
+     "summaryEnSource": "NASA",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "NASA"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T17:30:00Z",
+     "lastSeen": "2026-10-15T17:30:00Z",
+     "sources": [
+      {
+       "source": "NASA",
+       "lang": "en",
+       "title": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
+       "url": "https://www.nasa.gov/missions/station/iss-research/power-up-roll-out-solar-arrays-boost-space-station-power-supply/",
+       "publishedAt": "2026-10-15T17:30:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-19"
+    },
+    {
+     "headline": "How a contested B.C. supportive housing project won over its neighbours",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "How a contested B.C. supportive housing project won over its neighbours",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "For years, acrimony dominated the conversation in this Fraser Valley community – but residents’ worst fears never materialized",
+     "summaryEnSource": "The Globe and Mail",
+     "subtopic": "comunidad",
+     "subtopicLabel": "Comunidad",
+     "outlets": 1,
+     "outletNames": [
+      "The Globe and Mail"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T09:00:00Z",
+     "lastSeen": "2026-10-15T09:00:00Z",
+     "sources": [
+      {
+       "source": "The Globe and Mail",
+       "lang": "en",
+       "title": "How a contested B.C. supportive housing project won over its neighbours",
+       "url": "https://www.theglobeandmail.com/canada/article-municipal-elections-bc-supportive-housing-project-won-over-neighbours/",
+       "publishedAt": "2026-10-15T09:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x71z1i/how_a_contested_bc_supportive_housing_project_won/"
+      }
+     ],
+     "id": "buenas-20"
+    },
+    {
+     "headline": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
+     "headlineLang": "es",
+     "headlineEs": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
+     "headlineEn": null,
+     "summaryEs": "En el parque nacional Virunga, al este de la República Democrática del Congo (RDC), la gorila de Grauer (Gorilla beringei graueri) Lulingu fue reintroducida en 2024. En mayo de 2026, la hembra dio a luz a una nueva cría, un acontecimiento que genera esperanza en el futuro de la especie y despierta un gran entusiasmo",
+     "summaryEsSource": "Mongabay Latam",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "acciones",
+     "subtopicLabel": "Buenas acciones",
+     "outlets": 1,
+     "outletNames": [
+      "Mongabay Latam"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-14T22:15:15Z",
+     "lastSeen": "2026-10-14T22:15:15Z",
+     "sources": [
+      {
+       "source": "Mongabay Latam",
+       "lang": "es",
+       "title": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
+       "url": "https://es.mongabay.com/short-article/2026/10/esperanzadora-historia-gorila-rescatada-dio-a-luz-despues-reintroduccion-vida-silvestre/",
+       "publishedAt": "2026-10-14T22:15:15Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-21"
+    },
+    {
+     "headline": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Continuing GNN’s coverage of youth nonprofit leaders, the Pedal Forward Foundation in Georgia has distributed hundreds of bicycles to low income families, and taught hundreds of children how to ride them. It’s founder, Jonathan Thai, was inspired to step up and serve his community after the local REI closed down a community bike-riding workshop. At […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "acciones",
+     "subtopicLabel": "Buenas acciones",
+     "outlets": 1,
+     "outletNames": [
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T18:30:16Z",
+     "lastSeen": "2026-10-14T18:30:16Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
+       "url": "https://www.goodnewsnetwork.org/teen-triathlete-raises-more-than-30000-to-donate-bikes-and-riding-lessons-to-low-income-families/",
+       "publishedAt": "2026-10-14T18:30:16Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-22"
+    },
+    {
+     "headline": "Mangroves gain ground globally, marking turnaround after decades of loss",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Mangroves gain ground globally, marking turnaround after decades of loss",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "After decades of losses, new data show the world’s mangrove forests are beginning to rebound. It marks a modest but significant turnaround for the salt-tolerant coastal trees and shrubs, which provide vital ecosystem services, including carbon storage, habitat for thousands of species and protection from storms and erosion. Global mangrove cover increased by 477 square",
+     "summaryEnSource": "Conservation news",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Conservation news"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T16:54:37Z",
+     "lastSeen": "2026-10-14T16:54:37Z",
+     "sources": [
+      {
+       "source": "Conservation news",
+       "lang": "en",
+       "title": "Mangroves gain ground globally, marking turnaround after decades of loss",
+       "url": "https://news.mongabay.com/2026/10/mangroves-gain-ground-globally-marking-turnaround-after-decades-of-loss/",
+       "publishedAt": "2026-10-14T16:54:37Z"
+      }
+     ],
+     "alsoOnReddit": [
+      {
+       "sub": "UpliftingNews",
+       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7pf91/mangroves_gain_ground_globally_marking_turnaround/"
+      }
+     ],
+     "id": "buenas-23"
+    },
+    {
+     "headline": "How one Chicago program is diversifying the solar workforce",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "How one Chicago program is diversifying the solar workforce",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "CHICAGO — On a beautiful fall Saturday morning on the South Side of Chicago, the Life Center Church of God in Christ thrummed with excitement. The pews were packed with over a thousand people dressed in their best — including more than a hundred in black graduation caps and gowns. Before praying, Pastor Torrey L.…",
+     "summaryEnSource": "Canary Media",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Canary Media"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T07:00:00Z",
+     "lastSeen": "2026-10-14T07:00:00Z",
+     "sources": [
+      {
+       "source": "Canary Media",
+       "lang": "en",
+       "title": "How one Chicago program is diversifying the solar workforce",
+       "url": "https://www.canarymedia.com/articles/solar/how-one-chicago-program-is-diversifying-the-solar-workforce",
+       "publishedAt": "2026-10-14T07:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-24"
+    },
+    {
+     "headline": "A planet 320 light-years away confirms what scientists long suspected",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "A planet 320 light-years away confirms what scientists long suspected",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Astronomers have discovered that a scorching-hot planet 320 light-years away shares a striking chemical similarity with its host star, providing the first direct evidence for a fundamental assumption about planet formation. The breakthrough could help scientists predict what distant rocky planets are made of and identify worlds with conditions favorable for life.",
+     "summaryEnSource": "ScienceDaily",
+     "subtopic": "ciencia",
+     "subtopicLabel": "Ciencia y tecnología",
+     "outlets": 1,
+     "outletNames": [
+      "ScienceDaily"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-14T00:24:40Z",
+     "lastSeen": "2026-10-14T00:24:40Z",
+     "sources": [
+      {
+       "source": "ScienceDaily",
+       "lang": "en",
+       "title": "A planet 320 light-years away confirms what scientists long suspected",
+       "url": "https://www.sciencedaily.com/releases/2026/10/261012185015.htm",
+       "publishedAt": "2026-10-14T00:24:40Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-25"
+    },
+    {
+     "headline": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Farmers are “soiling their undies” — and it makes for better crops.",
+     "summaryEnSource": "Good Good Good",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Good Good Good"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-13T20:58:00Z",
+     "lastSeen": "2026-10-13T20:58:00Z",
+     "sources": [
+      {
+       "source": "Good Good Good",
+       "lang": "en",
+       "title": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
+       "url": "https://www.goodgoodgood.co/articles/new-study-bury-underwear-soil-health",
+       "publishedAt": "2026-10-13T20:58:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-26"
+    },
+    {
+     "headline": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "A European energy developer has switched on a major biomethane plant in southern Italy that will save some 9,000 tons of CO2 annually by producing a natural gas substitute with agricultural waste. Located in Grottole, in the ‘instep’ of the Italian Peninsula, the plant will ultimately produce 45 gigawatt-hours of renewable energy a year for […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-13T15:30:50Z",
+     "lastSeen": "2026-10-13T15:30:50Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
+       "url": "https://www.goodnewsnetwork.org/italian-biomethane-plant-comes-online-providing-renewable-gas-supply-to-over-3000-homes/",
+       "publishedAt": "2026-10-13T15:30:50Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-27"
+    },
+    {
+     "headline": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
+     "headlineLang": "es",
+     "headlineEs": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
+     "headlineEn": null,
+     "summaryEs": "El 90 % de la capacidad eléctrica nueva que se añade cada año en el mundo ya es renovable, y China superó por primera vez su capacidad solar a la del carbón en julio, pero ONU advierte de que la eficiencia energética se ha quedado corta y la brecha entre demanda y oferta para 2030 puede ser mayor de lo previsto. \"Redes, redes y más redes: interconexión, flexibilidad y equilibrio. Es el área donde…",
+     "summaryEsSource": "Noticias ONU",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Noticias ONU"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-13T12:00:00Z",
+     "lastSeen": "2026-10-13T12:00:00Z",
+     "sources": [
+      {
+       "source": "Noticias ONU",
+       "lang": "es",
+       "title": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
+       "url": "https://news.un.org/feed/view/es/story/2026/10/1542048",
+       "publishedAt": "2026-10-13T12:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-28"
+    },
+    {
+     "headline": "Qcells aims to build a giant factory for next-gen tandem solar",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Qcells aims to build a giant factory for next-gen tandem solar",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Qcells , one of the most prolific solar manufacturers operating in the U.S., is staking a claim on the next generation of solar power. Laboratory scientists have established that solar panels convert sunlight to electricity with much higher efficiency if traditional silicon cells are paired with layers of…",
+     "summaryEnSource": "Canary Media",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Canary Media"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-13T07:00:00Z",
+     "lastSeen": "2026-10-13T07:00:00Z",
+     "sources": [
+      {
+       "source": "Canary Media",
+       "lang": "en",
+       "title": "Qcells aims to build a giant factory for next-gen tandem solar",
+       "url": "https://www.canarymedia.com/articles/solar/qcells-aims-to-build-worlds-first-big-factory-for-next-gen-tandem-solar",
+       "publishedAt": "2026-10-13T07:00:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-29"
+    },
+    {
+     "headline": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
+     "headlineLang": "es",
+     "headlineEs": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
+     "headlineEn": null,
+     "summaryEs": "Un procedimiento experimental realizado en Reino Unido busca comprobar si células conservadas durante tres años pueden reactivar la producción de espermatozoides. Los médicos evaluarán los resultados dentro de ocho meses",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-12T18:04:38Z",
+     "lastSeen": "2026-10-12T18:04:38Z",
+     "sources": [
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
+       "url": "https://www.infobae.com/salud/ciencia/2026/10/12/avance-en-fertilidad-masculina-trasplantan-a-un-joven-tejido-testicular-preservado-antes-de-la-quimioterapia/",
+       "publishedAt": "2026-10-12T18:04:38Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-30"
+    },
+    {
+     "headline": "Nueva combinación de medicamentos restaura el control del VIH",
+     "headlineLang": "es",
+     "headlineEs": "Nueva combinación de medicamentos restaura el control del VIH",
+     "headlineEn": null,
+     "summaryEs": "VIERNES, 9 de octubre de 2026 (HealthDay News) -- Un nuevo combo de medicamentos de acción prolongada puede restaurar el control sobre el VIH para pacientes cuyo virus ha desarrollado resistencia a los medicamentos comúnmente utilizados, informan los investigadores. Los pacientes con VIH que tienen dificultades para tomar pastillas diarias pueden optar por inyecciones de cabotegravir y…",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-12T13:30:17Z",
+     "lastSeen": "2026-10-12T13:30:17Z",
+     "sources": [
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Nueva combinación de medicamentos restaura el control del VIH",
+       "url": "https://www.infobae.com/salud/2026/10/12/nueva-combinacion-de-medicamentos-restaura-el-control-del-vih/",
+       "publishedAt": "2026-10-12T13:30:17Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-31"
+    },
+    {
+     "headline": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "When summer’s heat becomes too much to bear, a glass of iced lemonade is a welcome relief, but what tens of thousands across Ohio have learned is that lemonade can provide a different sort of relief as well. For 8 years, children’s lemonade stands pop up all over the city in July as part of […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "acciones",
+     "subtopicLabel": "Buenas acciones",
+     "outlets": 1,
+     "outletNames": [
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-12T12:30:49Z",
+     "lastSeen": "2026-10-12T12:30:49Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
+       "url": "https://www.goodnewsnetwork.org/teens-wish-to-return-kindness-she-received-sees-her-lemonade-stand-become-5-million-charity-engine/",
+       "publishedAt": "2026-10-12T12:30:49Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-32"
+    },
+    {
+     "headline": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "A landmark survey of the world’s largest free-roaming giant tortoise population has revealed the once-endangered species is now thriving. The latest count of tortoises on the Seychelles atoll of Aldabra revealed that there are approximately 180,000 living on the islands. This is the highest figure ever recorded for the species and far exceeds the human […]",
+     "summaryEnSource": "Good News Network",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Good News Network"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-11T16:11:41Z",
+     "lastSeen": "2026-10-11T16:11:41Z",
+     "sources": [
+      {
+       "source": "Good News Network",
+       "lang": "en",
+       "title": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
+       "url": "https://www.goodnewsnetwork.org/giant-tortoise-population-is-thriving-survey-finds-180000-on-one-island-chain/",
+       "publishedAt": "2026-10-11T16:11:41Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-33"
+    },
+    {
+     "headline": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Could a drug intended to prevent painful rashes also protect our brains as we get older? The signs are promising – but not conclusive. Yet that’s enough to be driving a boom in shingles jabs When Jenny, a 50-year-old marketing and branding professional from Cambridge, went for her shingles vaccine last year, an entirely different disease was on her mind. Having witnessed three of her four…",
+     "summaryEnSource": "The Guardian",
+     "subtopic": "salud",
+     "subtopicLabel": "Salud y medicina",
+     "outlets": 1,
+     "outletNames": [
       "The Guardian"
      ],
      "languages": [
-      "en",
-      "es"
+      "en"
      ],
-     "firstSeen": "2026-10-15T23:02:49Z",
-     "lastSeen": "2026-10-16T21:33:25Z",
+     "firstSeen": "2026-10-11T13:00:27Z",
+     "lastSeen": "2026-10-11T13:00:27Z",
      "sources": [
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "Un adolescente mata a tiros a tres niños y una maestra en una escuela de primaria en Oregón",
-       "url": "https://www.lavanguardia.com/internacional/20261016/11660337/cuatro-muertos-tres-ninos-tiroteo-escuela-primaria-oregon.html",
-       "publishedAt": "2026-10-15T23:02:49Z"
-      },
-      {
-       "source": "Sky News",
-       "lang": "en",
-       "title": "Children aged 5, 8 and 11 killed in US school shooting",
-       "url": "https://news.sky.com/story/multiple-fatalities-after-school-shooting-in-oregon-nbc-news-reports-13599795",
-       "publishedAt": "2026-10-15T23:09:00Z"
-      },
-      {
-       "source": "20minutos",
-       "lang": "es",
-       "title": "Un adolescente de 16 años entra armado en un colegio de Oregón y mata a tiros a tres niños y una maestra antes de ser abatido",
-       "url": "https://www.20minutos.es/internacional/un-tiroteo-una-escuela-primaria-oregon-deja-cuatro-muertos-entre-ellos-tres-menores_7049422_0.html",
-       "publishedAt": "2026-10-15T23:37:46Z"
-      },
-      {
-       "source": "El País",
-       "lang": "es",
-       "title": "Un tiroteo en una escuela primaria de Oregón deja tres niños y un profesor muertos",
-       "url": "https://elpais.com/us/2026-10-16/un-tiroteo-en-una-escuela-primaria-de-oregon-deja-tres-ninos-y-un-profesor-muertos.html",
-       "publishedAt": "2026-10-16T02:38:54Z"
-      },
-      {
-       "source": "El Mundo",
-       "lang": "es",
-       "title": "Un menor de 16 años mata a tres niños de 5, 8 y 11 y a una maestra en un tiroteo en una escuela de Oregón",
-       "url": "https://www.elmundo.es/internacional/2026/10/16/6ad14ce921efa029108b45a6.html",
-       "publishedAt": "2026-10-16T05:42:48Z"
-      },
-      {
-       "source": "El Confidencial",
-       "lang": "es",
-       "title": "Un tiroteo en una escuela de Oregón deja cinco muertos: tres niños, una maestra y el presunto asesino",
-       "url": "https://www.elconfidencial.com/mundo/2026-10-16/tiroteo-escuela-primaria-bend-oregon-1tps_4446110/",
-       "publishedAt": "2026-10-16T06:21:00Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
-       "url": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo",
-       "publishedAt": "2026-10-16T11:41:58Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Oregon mom says she ran to son's school when co-worker heard gunshots",
-       "url": "https://www.cbsnews.com/news/bend-oregon-school-shooting-mom/",
-       "publishedAt": "2026-10-16T15:03:00Z"
-      },
       {
        "source": "The Guardian",
        "lang": "en",
-       "title": "Police search for clues to deadly shooting at Oregon elementary school",
-       "url": "https://www.theguardian.com/us-news/2026/oct/16/oregon-school-shooting-latest",
-       "publishedAt": "2026-10-16T18:40:16Z"
-      },
-      {
-       "source": "BBC Mundo",
-       "lang": "es",
-       "title": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
-       "url": "https://www.bbc.com/mundo/articles/ckj0l9lrenq6o",
-       "publishedAt": "2026-10-16T18:58:33Z"
-      },
-      {
-       "source": "La Nación (Argentina)",
-       "lang": "es",
-       "title": "Cómo fue la masacre en una escuela de EE.UU. y qué se sabe del civil que abatió al tirador",
-       "url": "https://www.lanacion.com.ar/estados-unidos/como-fue-la-masacre-en-una-escuela-de-eeuu-y-que-se-sabe-del-civil-que-abatio-al-tirador-nid16102026/",
-       "publishedAt": "2026-10-16T19:48:48Z"
-      },
-      {
-       "source": "El País",
-       "lang": "es",
-       "title": "Qué se sabe del tiroteo mortal en una escuela primaria de Oregón",
-       "url": "https://elpais.com/us/2026-10-16/que-se-sabe-del-tiroteo-mortal-en-una-escuela-primaria-de-oregon.html",
-       "publishedAt": "2026-10-16T19:48:52Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Oregon school shooter ID'd, used shotgun bought by mother, sources say",
-       "url": "https://www.cbsnews.com/news/oregon-school-shooter-identified-silver-rail-elementary/",
-       "publishedAt": "2026-10-16T21:27:19Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Teacher and 5-year-old student killed in Oregon school shooting identified",
-       "url": "https://www.cbsnews.com/news/bend-oregon-elementary-school-shooting-victims/",
-       "publishedAt": "2026-10-16T21:33:25Z"
+       "title": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
+       "url": "https://www.theguardian.com/society/2026/oct/11/dementia-demand-for-shingles-vaccine-is-soaring",
+       "publishedAt": "2026-10-11T13:00:27Z"
       }
      ],
-     "id": "sucesos-1"
-    },
+     "alsoOnReddit": [],
+     "id": "buenas-34"
+    }
+   ]
+  },
+  {
+   "id": "costarica",
+   "label": "Costa Rica",
+   "group": "region",
+   "minOutlets": 5,
+   "stories": [
     {
-     "headline": "Mueren más de 30 niños y un maestro en Pakistán tras el derrumbe del techo de una escuela",
+     "headline": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
      "headlineLang": "es",
-     "headlineEs": "Mueren más de 30 niños y un maestro en Pakistán tras el derrumbe del techo de una escuela",
-     "headlineEn": "32 Children Killed After School Roof Collapses in Pakistan",
-     "summaryEs": "El derrumbe de un tejado en una escuela privada en Pakistán dejó más de 30 muertos, en su mayoría niños. El propietario de la institución ha sido detenido.",
-     "summaryEsSource": "BBC Mundo",
-     "summaryEn": "The collapse, in Peshawar, also killed a teacher and injured dozens of people. A local official said the building appeared to be dilapidated.",
-     "summaryEnSource": "The New York Times",
+     "headlineEs": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
+     "headlineEn": null,
+     "summaryEs": "Este viernes los verdiblancos dieron a conocer la postura de la fracción",
+     "summaryEsSource": "El Observador",
+     "summaryEn": null,
+     "summaryEnSource": null,
      "outlets": 7,
      "outletNames": [
-      "BBC",
-      "BBC Mundo",
-      "CBS News",
-      "El Mundo",
+      "CRHoy",
+      "Delfino",
+      "Diario Extra",
+      "El Mundo CR",
+      "El Observador",
       "La Nación (Costa Rica)",
-      "Sky News",
-      "The Guardian",
-      "The New York Times"
+      "Monumental"
      ],
      "languages": [
-      "en",
       "es"
      ],
-     "firstSeen": "2026-10-15T06:21:00Z",
-     "lastSeen": "2026-10-16T21:00:27Z",
+     "firstSeen": "2026-10-15T14:19:00Z",
+     "lastSeen": "2026-10-16T23:54:18Z",
      "sources": [
       {
-       "source": "Sky News",
-       "lang": "en",
-       "title": "School owner arrested after dozens of children killed in roof collapse",
-       "url": "https://news.sky.com/story/at-least-34-children-killed-in-pakistan-school-collapse-13599466",
-       "publishedAt": "2026-10-15T06:21:00Z"
-      },
-      {
-       "source": "El Mundo",
+       "source": "CRHoy",
        "lang": "es",
-       "title": "Al menos 32 niños y una profesora muertos tras el derrumbe del techo de una escuela en Pakistán",
-       "url": "https://www.elmundo.es/internacional/2026/10/15/6ad07858e9cf4a180a8b4595.html",
-       "publishedAt": "2026-10-15T06:59:32Z"
+       "title": "Gobierno y PLN acercan posturas sobre armonización eléctrica",
+       "url": "https://crhoy.com/nacionales/gobierno-y-pln-acercan-posturas-sobre-armonizacion-electrica/",
+       "publishedAt": "2026-10-15T14:19:00Z"
       },
       {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Pakistan school roof collapse kills at least 34 children and teacher",
-       "url": "https://www.theguardian.com/world/2026/oct/15/pakistan-peshawar-school-roof-collapse-leaves-students-dead",
-       "publishedAt": "2026-10-15T08:25:33Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Pakistan school collapse kills almost 30 students and a teacher",
-       "url": "https://www.cbsnews.com/news/pakistan-school-collapse-peshawar-student-teacher-deaths/",
-       "publishedAt": "2026-10-15T10:10:47Z"
-      },
-      {
-       "source": "BBC Mundo",
+       "source": "CRHoy",
        "lang": "es",
-       "title": "Mueren más de 30 niños y un maestro en Pakistán tras el derrumbe del techo de una escuela",
-       "url": "https://www.bbc.com/mundo/articles/cm79perw314vo",
-       "publishedAt": "2026-10-15T10:23:52Z"
+       "title": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
+       "url": "https://crhoy.com/nacionales/pln-condiciona-dialogo-sobre-armonizacion-electrica-al-retiro-de-recortes-a-universidades/",
+       "publishedAt": "2026-10-16T13:28:36Z"
       },
       {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "32 Children Killed After School Roof Collapses in Pakistan",
-       "url": "https://www.nytimes.com/2026/10/15/world/asia/pakistan-school-collapse.html",
-       "publishedAt": "2026-10-15T15:04:12Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
-       "url": "https://www.bbc.co.uk/news/articles/cked326llddgo",
-       "publishedAt": "2026-10-15T15:26:16Z"
+       "source": "Monumental",
+       "lang": "es",
+       "title": "PLN insiste en que diálogo sobre armonización eléctrica debe tomar en cuenta a todas las fracciones",
+       "url": "https://www.monumental.co.cr/2026/10/16/pln-insiste-en-que-dialogo-sobre-armonizacion-electrica-debe-tomar-en-cuenta-a-todas-las-fracciones/",
+       "publishedAt": "2026-10-16T15:36:59Z"
       },
       {
        "source": "La Nación (Costa Rica)",
        "lang": "es",
-       "title": "32 alumnos y una profesora mueren en Pakistán al derrumbarse el techo de un colegio",
-       "url": "https://www.nacion.com/el-mundo/32-alumnos-y-una-profesora-mueren-en-pakistan-al/A2XZDEKN45A5NKO5ZMSFA72ZTI/story/",
-       "publishedAt": "2026-10-16T15:19:15Z"
+       "title": "Nogui Acosta abandona diálogo con rectores de U públicas, molesto porque PLN condiciona freno a recortes para seguir negociación sobre armonización eléctrica",
+       "url": "https://www.nacion.com/politica/nogui-acosta-abandona-dialogo-con-rectores-de-u/OVB54WJPWJGFHDFQDRFBRLHQ6U/story/",
+       "publishedAt": "2026-10-16T18:45:58Z"
       },
       {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Deadly School Roof Collapse in Pakistan Raises Questions Over Regulation",
-       "url": "https://www.nytimes.com/2026/10/16/world/asia/pakistan-peshawar-school-roof-collapse.html",
-       "publishedAt": "2026-10-16T21:00:27Z"
+       "source": "El Observador",
+       "lang": "es",
+       "title": "PLN condiciona negociación sobre armonización eléctrica a que el Gobierno elimine recortes a universidades públicas",
+       "url": "https://observador.cr/liberacion-condiciona-negociacion-de-armonizacion-electrica-si-el-gobierno-elimina-recortes-a-universidades-publicas/",
+       "publishedAt": "2026-10-16T18:55:00Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "PLN pone nuevas condiciones a Armonización Eléctrica",
+       "url": "https://www.diarioextra.com/noticia/pln-pone-nuevas-condiciones-a-armonizacion-electrica/",
+       "publishedAt": "2026-10-16T19:26:12Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
+       "url": "https://elmundo.cr/costa-rica/pln-condiciona-dialogo-sobre-armonizacion-electrica-al-retiro-de-recortes-a-universidades/",
+       "publishedAt": "2026-10-16T20:02:47Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "PPSO revela acuerdo previo con siete diputados del PLN para torcerles el voto a favor de armonización eléctrica",
+       "url": "https://www.nacion.com/politica/ppso-revela-que-acuerdo-previo-con-siete-diputados/5OKJL74DBZCUNA45WXCUR67DSY/story/",
+       "publishedAt": "2026-10-16T20:14:30Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "PPSO rompe diálogo con PLN por condicionamientos a Armonización Eléctrica",
+       "url": "https://www.diarioextra.com/noticia/ppso-rompe-dialogo-con-pln-por-condicionamientos-a-armonizacion-electrica/",
+       "publishedAt": "2026-10-16T20:38:25Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "PPSO asegura que tenía conversaciones con 7 diputados del PLN sobre Armonización",
+       "url": "https://www.diarioextra.com/noticia/ppso-asegura-que-tenia-7-votos-del-pln-para-avanzar-con-armonizacion/",
+       "publishedAt": "2026-10-16T20:47:24Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Pueblo Soberano revela acuerdo con siete diputados del PLN sobre armonización eléctrica y critica que ahora lo están condicionando",
+       "url": "https://observador.cr/pueblo-soberano-revela-acuerdo-con-siete-diputados-del-pln-sobre-armonizacion-electrica-y-critica-que-ahora-lo-estan-condicionando/",
+       "publishedAt": "2026-10-16T20:52:01Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Estos eran los acuerdos del PLN y el PPSO sobre Armonización Eléctrica",
+       "url": "https://www.diarioextra.com/noticia/estos-eran-los-acuerdos-del-pln-y-el-ppso-sobre-armonizacion-electrica/",
+       "publishedAt": "2026-10-16T20:56:34Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "Cámara de Industrias rechaza condicionar Ley de Armonización Eléctrica al presupuesto universitario",
+       "url": "https://elmundo.cr/costa-rica/camara-de-industrias-rechaza-condicionar-ley-de-armonizacion-electrica-al-presupuesto-universitario/",
+       "publishedAt": "2026-10-16T21:22:17Z"
+      },
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "PLN condiciona conversaciones para abrir el mercado eléctrico a devolución de fondos universitarios",
+       "url": "https://delfino.cr/2026/10/pln-condiciona-conversaciones-para-abrir-el-mercado-electrico-a-devolucion-de-fondos-universitarios",
+       "publishedAt": "2026-10-16T23:54:18Z"
       }
      ],
-     "id": "sucesos-2"
+     "region": "costarica",
+     "id": "costarica-1"
     },
     {
-     "headline": "Al menos 19 heridos en un choque entre un minibús y un tren en el túnel del Canal de la Mancha",
+     "headline": "Fiscalía va por prisión preventiva para jugador Carlos Barahona por caso gota a gota",
      "headlineLang": "es",
-     "headlineEs": "Al menos 19 heridos en un choque entre un minibús y un tren en el túnel del Canal de la Mancha",
-     "headlineEn": "19 injured after Channel Tunnel collision between bus and train",
-     "summaryEs": "Transportaba a conductores de camiones que se disponían a embarcar en un servicio de enlace de LeShuttle. \"No hay que lamentar ninguna víctima mortal y ningún herido se encuentra en estado crítico\", según un comunicado de la prefectura Leer",
-     "summaryEsSource": "El Mundo",
-     "summaryEn": "Nineteen people have been injured after a collision between a bus and a train on the French side of the Channel Tunnel.",
-     "summaryEnSource": "Sky News",
+     "headlineEs": "Fiscalía va por prisión preventiva para jugador Carlos Barahona por caso gota a gota",
+     "headlineEn": null,
+     "summaryEs": "Fiscalía de Heredia pide prisión preventiva para Carlos Barahona y tres detenidos por extorsión 'gota a gota' y legitimación de capitales.",
+     "summaryEsSource": "La Teja",
+     "summaryEn": null,
+     "summaryEnSource": null,
      "outlets": 6,
      "outletNames": [
-      "BBC",
-      "El Confidencial",
-      "El Mundo",
-      "France 24",
-      "RFI",
-      "Sky News"
+      "AM Prensa",
+      "CRHoy",
+      "Infobae",
+      "La Nación (Costa Rica)",
+      "La Teja",
+      "Monumental",
+      "Teletica (Telenoticias)"
      ],
      "languages": [
-      "en",
       "es"
      ],
-     "firstSeen": "2026-10-15T17:19:00Z",
-     "lastSeen": "2026-10-16T06:56:10Z",
+     "firstSeen": "2026-10-14T21:39:38Z",
+     "lastSeen": "2026-10-16T21:18:50Z",
      "sources": [
       {
-       "source": "Sky News",
-       "lang": "en",
-       "title": "19 injured after Channel Tunnel collision between bus and train",
-       "url": "https://news.sky.com/story/19-injured-after-channel-tunnel-collision-between-bus-and-train-on-french-side-13599710",
-       "publishedAt": "2026-10-15T17:19:00Z"
-      },
-      {
-       "source": "El Confidencial",
+       "source": "Teletica (Telenoticias)",
        "lang": "es",
-       "title": "Al menos 19 heridos, dos graves, al colisionar un tren con un minibús a la entrada francesa del Eurotúnel",
-       "url": "https://www.elconfidencial.com/mundo/2026-10-15/al-menos-19-heridos-cinco-criticos-canal-de-la-mancha_4446048/",
-       "publishedAt": "2026-10-15T19:51:00Z"
+       "title": "Presidente de Cartaginés tras detención de Carlos Barahona: \"Cuenta con mi apoyo\"",
+       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdXRkcW9INHluVERzeW94SU1VZHJ6dkZlbVVIeUlrTEFaMlRaYWx4MXFTeWhmTWRGOEVwZnZnNGdkLWQtM282OHdCX3plZFJrU1pPZWNESnBleEJMWm8ySGFuRWFjV1NMV3B1SElzV1B2YnF1Nng0MHhjc2FOUThUWUJMLWFtYzRielU4UFN2bmkzYmtOZDE0MEk5NEdjczc0dzFBSlFWaU1lT2RjNHZ4ZWhNa3JiUXZnbEYzWm5RTWpSOGEybG5yNmJlMGg?oc=5",
+       "publishedAt": "2026-10-14T21:39:38Z"
       },
       {
-       "source": "El Mundo",
+       "source": "AM Prensa",
        "lang": "es",
-       "title": "Al menos 19 heridos en un choque entre un minibús y un tren en el túnel del Canal de la Mancha",
-       "url": "https://www.elmundo.es/internacional/2026/10/15/6ad12739fc6c8381338b4580.html",
-       "publishedAt": "2026-10-15T19:58:05Z"
+       "title": "OIJ revela rol y forma de operar de Carlos Barahona en banda de préstamos “gota a gota”",
+       "url": "https://www.amprensa.com/2026/10/oij-revela-rol-y-forma-de-operar-de-carlos-barahona-en-banda-de-prestamos-gota-a-gota",
+       "publishedAt": "2026-10-14T22:41:27Z"
       },
       {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Bus hits train stopped on French side of Channel Tunnel, with 19 injured",
-       "url": "https://www.bbc.co.uk/news/articles/c6wyrnmgzn01o",
-       "publishedAt": "2026-10-15T22:37:21Z"
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "OIJ revela papel de Carlos Barahona en presunta red de extorsiones \"gota a gota\"",
+       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNckxGLXhRWFZqalhyalVFdUVnX240YWFoaGl0dTZjLUNieGVqakpTR19meDRYTmpKUms1RnVuRVVkSnlYTE8tNVJQZmpVNjNTVVkyQUx0V0w5SkFUd0t6QjNqQjI4NWFnVGhTZlBKaURqUEhWaFZ1cS1PdGU1dlBQOEpaUXE2MGJKQVRuSlIxM0FXUFNianNLQ0pMOUhZc1pTc2k1Zmp5ZWNId0RZUURudkpVQ1o3aFhJWlE?oc=5",
+       "publishedAt": "2026-10-14T22:53:04Z"
       },
       {
-       "source": "France 24",
-       "lang": "en",
-       "title": "Minibus crashes into train at French Channel Tunnel entrance, injuring 19",
-       "url": "https://www.france24.com/en/europe/20261016-19-injured-as-minibus-crashes-into-train-at-channel-tunnel-entrance",
-       "publishedAt": "2026-10-16T00:53:16Z"
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Fiscalía pedirá prisión preventiva contra Carlos Barahona",
+       "url": "https://crhoy.com/nacionales/fiscalia-pedira-prision-preventiva-contra-carlos-barahona/",
+       "publishedAt": "2026-10-15T10:16:55Z"
       },
       {
-       "source": "RFI",
-       "lang": "en",
-       "title": "Nineteen injured as minibus crashes into Channel Tunnel shuttle train",
-       "url": "https://www.rfi.fr/en/france/20261016-19-injured-as-minibus-slams-into-channel-tunnel-shuttle-train",
-       "publishedAt": "2026-10-16T06:56:10Z"
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Fiscalía pide prisión preventiva contra futbolista del Cartaginés",
+       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQjRDQS1PV2YzNXR0RER6WlRfbGZUclJYTV9Hcjk5aVJBeDk2YVBFdldhSi12Rkw5QVJrQ0w1cG9KNTM1RzNjSmFGSjQta1RDX3VzRlk5WXVwRTk1ckVHTkRfZGliM2dxQXB2X2k3TU1sNlBXMnA2al9OYUR1WWVOMF8yWlhnMC1uNTRfVTBpcHZmZVZ1R1kteTdfajhnQU5YSmNEczZ2WGZadw?oc=5",
+       "publishedAt": "2026-10-15T16:19:59Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Caso Carlos Barahona: Fiscalía pedirá prisión preventiva y su futuro judicial quedará en manos de un Juez",
+       "url": "https://www.amprensa.com/2026/10/caso-carlos-barahona-fiscalia-pedira-prision-preventiva-y-su-futuro-judicial-quedara-en-ma",
+       "publishedAt": "2026-10-15T16:35:41Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Fiscalía va por prisión preventiva para jugador Carlos Barahona por caso gota a gota",
+       "url": "https://www.lateja.cr/sucesos/fiscalia-va-por-prision-preventiva-para-jugador/DUREUMLF4REOVCUFOOKMR3XUPU/story/",
+       "publishedAt": "2026-10-15T16:46:42Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Fiscalía pide prisión preventiva contra futbolista de la Selección de Costa Rica investigado por extorsión y lavado de dinero",
+       "url": "https://www.infobae.com/costa-rica/2026/10/16/fiscalia-pide-prision-preventiva-contra-futbolista-de-la-seleccion-de-costa-rica-investigado-por-extorsion-y-lavado-de-dinero/",
+       "publishedAt": "2026-10-16T04:10:35Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "¿Cómo puede sustituir el técnico de Cartaginés a Carlos Barahona?",
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPT0FCN2VwakVoWkFZQzVFb1pmV1dEOWRiTnFoLXJWUTduT2t5cGNVdHI3TTJNM1NKTm52eDJVS2VxRER6QnR1bXFTUXM4c0k5LWRVQUdsd191SWJNNzN5bnViLXRZTUtHMEU4SWtnSG1yNkhkejh0SE4yZTJuWHdZT3NCN2VFcGZXZzVfRUZRZG8tMEhwWkVCTlFwYU10QVBwTF9zbnJPcHRURVp1LWFVSHN2akMybHFrNnowbDJB?oc=5",
+       "publishedAt": "2026-10-16T15:49:50Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Carlos Barahona enfrenta una decisión clave tras tres días detenido por caso de gota a gota",
+       "url": "https://www.lateja.cr/sucesos/carlos-barahona-enfrenta-una-decision-clave-tras/NETWEEXNDNHK5H3VO3ETQANYKQ/story/",
+       "publishedAt": "2026-10-16T17:24:15Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Hombre que habría estafado a varios jugadores del Cartaginés fue uno de los que denunció a Carlos Barahona",
+       "url": "https://www.lateja.cr/sucesos/exjugador-que-habria-estafado-a-varios-companeros/GC7ZV2MDCRG3DGN57DMHPDGME4/story/",
+       "publishedAt": "2026-10-16T18:32:36Z"
+      },
+      {
+       "source": "Monumental",
+       "lang": "es",
+       "title": "Fiscalía solicita seis meses de prisión preventiva contra futbolista del Cartaginés y otros tres sospechosos",
+       "url": "https://www.monumental.co.cr/2026/10/16/fiscalia-solicita-seis-meses-de-prision-preventiva-contra-futbolista-del-cartagines-y-otros-tres-sospechosos/",
+       "publishedAt": "2026-10-16T18:42:43Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Abogado del jugador Carlos Barahona cuestiona denuncia asociada a préstamos gota a gota: ´No hay un elemento de extorsión cobratoria´",
+       "url": "https://www.nacion.com/sucesos/abogado-del-jugador-carlos-barahona-cuestiona/5DRI7OUV5ZBRPM4GL23V6FGVKI/story/",
+       "publishedAt": "2026-10-16T21:18:50Z"
       }
      ],
-     "id": "sucesos-3"
+     "region": "costarica",
+     "id": "costarica-2"
     },
     {
-     "headline": "La justicia británica condena a un adolescente noruego que trabajaba para una organización criminal a sueldo de Irán",
+     "headline": "Laura Fernández despidió a Pablo Heriberto Abarca, embajador de Costa Rica en México, esto dijo exdiputado",
      "headlineLang": "es",
-     "headlineEs": "La justicia británica condena a un adolescente noruego que trabajaba para una organización criminal a sueldo de Irán",
-     "headlineEn": "Norwegian teen 'hitman' jailed over UK murder plot",
-     "summaryEs": "Johannes Natland, de 19 años, viajó hace poco más de un año hasta el Reino Unido para asesinar a alguien cuya identidad se desconoce",
-     "summaryEsSource": "El País",
-     "summaryEn": "Johannes Natland, 19, travelled to West Yorkshire to carry out a \"hit\" in March last year.",
-     "summaryEnSource": "BBC",
+     "headlineEs": "Laura Fernández despidió a Pablo Heriberto Abarca, embajador de Costa Rica en México, esto dijo exdiputado",
+     "headlineEn": null,
+     "summaryEs": "Pablo Heriberto Abarca ya no será más el embajador de Costa Rica en México. Esto dijo el exdiputado al conocer su despido.",
+     "summaryEsSource": "La Teja",
+     "summaryEn": null,
+     "summaryEnSource": null,
      "outlets": 5,
      "outletNames": [
-      "BBC",
-      "El País",
-      "Euronews",
-      "Sky News",
-      "The Guardian"
+      "AM Prensa",
+      "CRHoy",
+      "El Financiero (Costa Rica)",
+      "El Observador",
+      "Infobae",
+      "La Nación (Costa Rica)",
+      "La Teja"
      ],
      "languages": [
-      "en",
       "es"
      ],
-     "firstSeen": "2026-10-15T11:16:00Z",
-     "lastSeen": "2026-10-16T14:50:16Z",
+     "firstSeen": "2026-10-16T11:34:45Z",
+     "lastSeen": "2026-10-16T20:57:49Z",
      "sources": [
       {
-       "source": "Sky News",
-       "lang": "en",
-       "title": "Norwegian teenage hitman who flew to UK to commit murder jailed",
-       "url": "https://news.sky.com/story/norwegian-teenage-hitman-who-flew-to-uk-to-commit-murder-jailed-13599551",
-       "publishedAt": "2026-10-15T11:16:00Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Norwegian teenage hitman hired for UK murder by Iran-backed crime gang jailed for 20 years",
-       "url": "https://www.theguardian.com/uk-news/2026/oct/16/norwegian-teenager-hired-hitman-iranian-gang-jailed-20-years",
-       "publishedAt": "2026-10-16T12:40:12Z"
-      },
-      {
-       "source": "Euronews",
-       "lang": "en",
-       "title": "Norwegian teenager sentenced to 20 years in prison over UK murder plot",
-       "url": "https://www.euronews.com/2026/10/16/norwegian-teenager-sentenced-to-20-years-in-prison-over-uk-murder-plot",
-       "publishedAt": "2026-10-16T13:38:32Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Norwegian teen 'hitman' jailed over UK murder plot",
-       "url": "https://www.bbc.co.uk/news/articles/cw8rzpl1ldkdo",
-       "publishedAt": "2026-10-16T13:43:21Z"
-      },
-      {
-       "source": "El País",
+       "source": "CRHoy",
        "lang": "es",
-       "title": "La justicia británica condena a un adolescente noruego que trabajaba para una organización criminal a sueldo de Irán",
-       "url": "https://elpais.com/internacional/2026-10-16/la-justicia-britanica-condena-a-un-adolescente-noruego-que-trabajaba-para-una-organizacion-criminal-a-sueldo-de-iran.html",
-       "publishedAt": "2026-10-16T14:50:16Z"
+       "title": "Gobierno despide a embajador en México Pablo Heriberto Abarca",
+       "url": "https://crhoy.com/nacionales/cesan-a-embajador-de-costa-rica-en-mexico-pablo-heriberto-abarca/",
+       "publishedAt": "2026-10-16T11:34:45Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Gobierno cesa a embajador en México, Pablo Heriberto Vargas",
+       "url": "https://observador.cr/gobierno-cesa-a-embajador-en-mexico-pablo-heriberto-vargas/",
+       "publishedAt": "2026-10-16T18:06:13Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Gobierno destituye a embajador de Costa Rica en México; funcionario afirma que se enteró por la prensa",
+       "url": "https://www.nacion.com/politica/gobierno-destituye-a-embajador-de-costa-rica-en/KC2B27VGJZCYRFSOS5JBPOYCT4/story/",
+       "publishedAt": "2026-10-16T18:07:02Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Laura Fernández despidió a Pablo Heriberto Abarca, embajador de Costa Rica en México, esto dijo exdiputado",
+       "url": "https://www.lateja.cr/nacional/politica/laura-fernandez-despidio-a-pablo-heriberto-abarca/WRYL7LY44NHYDEE4PW7ERK2KEY/story/",
+       "publishedAt": "2026-10-16T18:21:16Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Despiden a Pablo Heriberto Abarca como embajador de Costa Rica en México",
+       "url": "https://www.amprensa.com/2026/10/despiden-a-pablo-heriberto-abarca-como-embajador-de-costa-rica-en-mexico",
+       "publishedAt": "2026-10-16T18:23:12Z"
+      },
+      {
+       "source": "El Financiero (Costa Rica)",
+       "lang": "es",
+       "title": "Pablo Heriberto Abarca: el exdiputado del PUSC cercano a Rodrigo Chaves que se enteró por la prensa de su salida como embajador en México",
+       "url": "https://www.elfinancierocr.com/economia-y-politica/pablo-heriberto-abarca-el-exdiputado-del-pusc/JAXXATOO6NGWPIFRTOGLC4OI4Y/story/",
+       "publishedAt": "2026-10-16T19:41:06Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Gobierno de Costa Rica destituye a su embajador en México: el diplomático asegura que se enteró por la prensa",
+       "url": "https://www.infobae.com/costa-rica/2026/10/16/gobierno-de-costa-rica-destituye-a-su-embajador-en-mexico-el-diplomatico-asegura-que-se-entero-por-la-prensa/",
+       "publishedAt": "2026-10-16T20:57:49Z"
       }
      ],
-     "id": "sucesos-4"
+     "region": "costarica",
+     "id": "costarica-3"
     }
    ]
+  },
+  {
+   "id": "finanzas",
+   "label": "Mundo de finanzas",
+   "minOutlets": 5,
+   "stories": []
   },
   {
    "id": "politica",
@@ -1042,12 +2153,6 @@
    ]
   },
   {
-   "id": "finanzas",
-   "label": "Mundo de finanzas",
-   "minOutlets": 5,
-   "stories": []
-  },
-  {
    "id": "cripto",
    "label": "Criptomonedas",
    "minOutlets": 5,
@@ -1128,6 +2233,369 @@
       }
      ],
      "id": "cripto-1"
+    }
+   ]
+  },
+  {
+   "id": "sucesos",
+   "label": "Sucesos",
+   "minOutlets": 5,
+   "stories": [
+    {
+     "headline": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
+     "headlineLang": "es",
+     "headlineEs": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
+     "headlineEn": "Teacher and 5-year-old student killed in Oregon school shooting identified",
+     "summaryEs": "El ataque ocurrió en la escuela Silver Rail de la localidad de Bend, en el noroeste de EE.UU. El sospechoso fue abatido por un transeúnte.",
+     "summaryEsSource": "BBC Mundo",
+     "summaryEn": "Two of the four victims killed in the shooting at an Oregon elementary school on Thursday have been identified as a 25-year-old teacher and a 5-year-old student.",
+     "summaryEnSource": "CBS News",
+     "outlets": 10,
+     "outletNames": [
+      "20minutos",
+      "BBC",
+      "BBC Mundo",
+      "CBS News",
+      "El Confidencial",
+      "El Mundo",
+      "El País",
+      "La Nación (Argentina)",
+      "La Vanguardia",
+      "Sky News",
+      "The Guardian"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T23:02:49Z",
+     "lastSeen": "2026-10-16T21:33:25Z",
+     "sources": [
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Un adolescente mata a tiros a tres niños y una maestra en una escuela de primaria en Oregón",
+       "url": "https://www.lavanguardia.com/internacional/20261016/11660337/cuatro-muertos-tres-ninos-tiroteo-escuela-primaria-oregon.html",
+       "publishedAt": "2026-10-15T23:02:49Z"
+      },
+      {
+       "source": "Sky News",
+       "lang": "en",
+       "title": "Children aged 5, 8 and 11 killed in US school shooting",
+       "url": "https://news.sky.com/story/multiple-fatalities-after-school-shooting-in-oregon-nbc-news-reports-13599795",
+       "publishedAt": "2026-10-15T23:09:00Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Un adolescente de 16 años entra armado en un colegio de Oregón y mata a tiros a tres niños y una maestra antes de ser abatido",
+       "url": "https://www.20minutos.es/internacional/un-tiroteo-una-escuela-primaria-oregon-deja-cuatro-muertos-entre-ellos-tres-menores_7049422_0.html",
+       "publishedAt": "2026-10-15T23:37:46Z"
+      },
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "Un tiroteo en una escuela primaria de Oregón deja tres niños y un profesor muertos",
+       "url": "https://elpais.com/us/2026-10-16/un-tiroteo-en-una-escuela-primaria-de-oregon-deja-tres-ninos-y-un-profesor-muertos.html",
+       "publishedAt": "2026-10-16T02:38:54Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Un menor de 16 años mata a tres niños de 5, 8 y 11 y a una maestra en un tiroteo en una escuela de Oregón",
+       "url": "https://www.elmundo.es/internacional/2026/10/16/6ad14ce921efa029108b45a6.html",
+       "publishedAt": "2026-10-16T05:42:48Z"
+      },
+      {
+       "source": "El Confidencial",
+       "lang": "es",
+       "title": "Un tiroteo en una escuela de Oregón deja cinco muertos: tres niños, una maestra y el presunto asesino",
+       "url": "https://www.elconfidencial.com/mundo/2026-10-16/tiroteo-escuela-primaria-bend-oregon-1tps_4446110/",
+       "publishedAt": "2026-10-16T06:21:00Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
+       "url": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo",
+       "publishedAt": "2026-10-16T11:41:58Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Oregon mom says she ran to son's school when co-worker heard gunshots",
+       "url": "https://www.cbsnews.com/news/bend-oregon-school-shooting-mom/",
+       "publishedAt": "2026-10-16T15:03:00Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Police search for clues to deadly shooting at Oregon elementary school",
+       "url": "https://www.theguardian.com/us-news/2026/oct/16/oregon-school-shooting-latest",
+       "publishedAt": "2026-10-16T18:40:16Z"
+      },
+      {
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
+       "url": "https://www.bbc.com/mundo/articles/ckj0l9lrenq6o",
+       "publishedAt": "2026-10-16T18:58:33Z"
+      },
+      {
+       "source": "La Nación (Argentina)",
+       "lang": "es",
+       "title": "Cómo fue la masacre en una escuela de EE.UU. y qué se sabe del civil que abatió al tirador",
+       "url": "https://www.lanacion.com.ar/estados-unidos/como-fue-la-masacre-en-una-escuela-de-eeuu-y-que-se-sabe-del-civil-que-abatio-al-tirador-nid16102026/",
+       "publishedAt": "2026-10-16T19:48:48Z"
+      },
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "Qué se sabe del tiroteo mortal en una escuela primaria de Oregón",
+       "url": "https://elpais.com/us/2026-10-16/que-se-sabe-del-tiroteo-mortal-en-una-escuela-primaria-de-oregon.html",
+       "publishedAt": "2026-10-16T19:48:52Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Oregon school shooter ID'd, used shotgun bought by mother, sources say",
+       "url": "https://www.cbsnews.com/news/oregon-school-shooter-identified-silver-rail-elementary/",
+       "publishedAt": "2026-10-16T21:27:19Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Teacher and 5-year-old student killed in Oregon school shooting identified",
+       "url": "https://www.cbsnews.com/news/bend-oregon-elementary-school-shooting-victims/",
+       "publishedAt": "2026-10-16T21:33:25Z"
+      }
+     ],
+     "id": "sucesos-1"
+    },
+    {
+     "headline": "Mueren más de 30 niños y un maestro en Pakistán tras el derrumbe del techo de una escuela",
+     "headlineLang": "es",
+     "headlineEs": "Mueren más de 30 niños y un maestro en Pakistán tras el derrumbe del techo de una escuela",
+     "headlineEn": "32 Children Killed After School Roof Collapses in Pakistan",
+     "summaryEs": "El derrumbe de un tejado en una escuela privada en Pakistán dejó más de 30 muertos, en su mayoría niños. El propietario de la institución ha sido detenido.",
+     "summaryEsSource": "BBC Mundo",
+     "summaryEn": "The collapse, in Peshawar, also killed a teacher and injured dozens of people. A local official said the building appeared to be dilapidated.",
+     "summaryEnSource": "The New York Times",
+     "outlets": 7,
+     "outletNames": [
+      "BBC",
+      "BBC Mundo",
+      "CBS News",
+      "El Mundo",
+      "La Nación (Costa Rica)",
+      "Sky News",
+      "The Guardian",
+      "The New York Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T06:21:00Z",
+     "lastSeen": "2026-10-16T21:00:27Z",
+     "sources": [
+      {
+       "source": "Sky News",
+       "lang": "en",
+       "title": "School owner arrested after dozens of children killed in roof collapse",
+       "url": "https://news.sky.com/story/at-least-34-children-killed-in-pakistan-school-collapse-13599466",
+       "publishedAt": "2026-10-15T06:21:00Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Al menos 32 niños y una profesora muertos tras el derrumbe del techo de una escuela en Pakistán",
+       "url": "https://www.elmundo.es/internacional/2026/10/15/6ad07858e9cf4a180a8b4595.html",
+       "publishedAt": "2026-10-15T06:59:32Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Pakistan school roof collapse kills at least 34 children and teacher",
+       "url": "https://www.theguardian.com/world/2026/oct/15/pakistan-peshawar-school-roof-collapse-leaves-students-dead",
+       "publishedAt": "2026-10-15T08:25:33Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Pakistan school collapse kills almost 30 students and a teacher",
+       "url": "https://www.cbsnews.com/news/pakistan-school-collapse-peshawar-student-teacher-deaths/",
+       "publishedAt": "2026-10-15T10:10:47Z"
+      },
+      {
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "Mueren más de 30 niños y un maestro en Pakistán tras el derrumbe del techo de una escuela",
+       "url": "https://www.bbc.com/mundo/articles/cm79perw314vo",
+       "publishedAt": "2026-10-15T10:23:52Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "32 Children Killed After School Roof Collapses in Pakistan",
+       "url": "https://www.nytimes.com/2026/10/15/world/asia/pakistan-school-collapse.html",
+       "publishedAt": "2026-10-15T15:04:12Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
+       "url": "https://www.bbc.co.uk/news/articles/cked326llddgo",
+       "publishedAt": "2026-10-15T15:26:16Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "32 alumnos y una profesora mueren en Pakistán al derrumbarse el techo de un colegio",
+       "url": "https://www.nacion.com/el-mundo/32-alumnos-y-una-profesora-mueren-en-pakistan-al/A2XZDEKN45A5NKO5ZMSFA72ZTI/story/",
+       "publishedAt": "2026-10-16T15:19:15Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Deadly School Roof Collapse in Pakistan Raises Questions Over Regulation",
+       "url": "https://www.nytimes.com/2026/10/16/world/asia/pakistan-peshawar-school-roof-collapse.html",
+       "publishedAt": "2026-10-16T21:00:27Z"
+      }
+     ],
+     "id": "sucesos-2"
+    },
+    {
+     "headline": "Al menos 19 heridos en un choque entre un minibús y un tren en el túnel del Canal de la Mancha",
+     "headlineLang": "es",
+     "headlineEs": "Al menos 19 heridos en un choque entre un minibús y un tren en el túnel del Canal de la Mancha",
+     "headlineEn": "19 injured after Channel Tunnel collision between bus and train",
+     "summaryEs": "Transportaba a conductores de camiones que se disponían a embarcar en un servicio de enlace de LeShuttle. \"No hay que lamentar ninguna víctima mortal y ningún herido se encuentra en estado crítico\", según un comunicado de la prefectura Leer",
+     "summaryEsSource": "El Mundo",
+     "summaryEn": "Nineteen people have been injured after a collision between a bus and a train on the French side of the Channel Tunnel.",
+     "summaryEnSource": "Sky News",
+     "outlets": 6,
+     "outletNames": [
+      "BBC",
+      "El Confidencial",
+      "El Mundo",
+      "France 24",
+      "RFI",
+      "Sky News"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T17:19:00Z",
+     "lastSeen": "2026-10-16T06:56:10Z",
+     "sources": [
+      {
+       "source": "Sky News",
+       "lang": "en",
+       "title": "19 injured after Channel Tunnel collision between bus and train",
+       "url": "https://news.sky.com/story/19-injured-after-channel-tunnel-collision-between-bus-and-train-on-french-side-13599710",
+       "publishedAt": "2026-10-15T17:19:00Z"
+      },
+      {
+       "source": "El Confidencial",
+       "lang": "es",
+       "title": "Al menos 19 heridos, dos graves, al colisionar un tren con un minibús a la entrada francesa del Eurotúnel",
+       "url": "https://www.elconfidencial.com/mundo/2026-10-15/al-menos-19-heridos-cinco-criticos-canal-de-la-mancha_4446048/",
+       "publishedAt": "2026-10-15T19:51:00Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Al menos 19 heridos en un choque entre un minibús y un tren en el túnel del Canal de la Mancha",
+       "url": "https://www.elmundo.es/internacional/2026/10/15/6ad12739fc6c8381338b4580.html",
+       "publishedAt": "2026-10-15T19:58:05Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Bus hits train stopped on French side of Channel Tunnel, with 19 injured",
+       "url": "https://www.bbc.co.uk/news/articles/c6wyrnmgzn01o",
+       "publishedAt": "2026-10-15T22:37:21Z"
+      },
+      {
+       "source": "France 24",
+       "lang": "en",
+       "title": "Minibus crashes into train at French Channel Tunnel entrance, injuring 19",
+       "url": "https://www.france24.com/en/europe/20261016-19-injured-as-minibus-crashes-into-train-at-channel-tunnel-entrance",
+       "publishedAt": "2026-10-16T00:53:16Z"
+      },
+      {
+       "source": "RFI",
+       "lang": "en",
+       "title": "Nineteen injured as minibus crashes into Channel Tunnel shuttle train",
+       "url": "https://www.rfi.fr/en/france/20261016-19-injured-as-minibus-slams-into-channel-tunnel-shuttle-train",
+       "publishedAt": "2026-10-16T06:56:10Z"
+      }
+     ],
+     "id": "sucesos-3"
+    },
+    {
+     "headline": "La justicia británica condena a un adolescente noruego que trabajaba para una organización criminal a sueldo de Irán",
+     "headlineLang": "es",
+     "headlineEs": "La justicia británica condena a un adolescente noruego que trabajaba para una organización criminal a sueldo de Irán",
+     "headlineEn": "Norwegian teen 'hitman' jailed over UK murder plot",
+     "summaryEs": "Johannes Natland, de 19 años, viajó hace poco más de un año hasta el Reino Unido para asesinar a alguien cuya identidad se desconoce",
+     "summaryEsSource": "El País",
+     "summaryEn": "Johannes Natland, 19, travelled to West Yorkshire to carry out a \"hit\" in March last year.",
+     "summaryEnSource": "BBC",
+     "outlets": 5,
+     "outletNames": [
+      "BBC",
+      "El País",
+      "Euronews",
+      "Sky News",
+      "The Guardian"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T11:16:00Z",
+     "lastSeen": "2026-10-16T14:50:16Z",
+     "sources": [
+      {
+       "source": "Sky News",
+       "lang": "en",
+       "title": "Norwegian teenage hitman who flew to UK to commit murder jailed",
+       "url": "https://news.sky.com/story/norwegian-teenage-hitman-who-flew-to-uk-to-commit-murder-jailed-13599551",
+       "publishedAt": "2026-10-15T11:16:00Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Norwegian teenage hitman hired for UK murder by Iran-backed crime gang jailed for 20 years",
+       "url": "https://www.theguardian.com/uk-news/2026/oct/16/norwegian-teenager-hired-hitman-iranian-gang-jailed-20-years",
+       "publishedAt": "2026-10-16T12:40:12Z"
+      },
+      {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Norwegian teenager sentenced to 20 years in prison over UK murder plot",
+       "url": "https://www.euronews.com/2026/10/16/norwegian-teenager-sentenced-to-20-years-in-prison-over-uk-murder-plot",
+       "publishedAt": "2026-10-16T13:38:32Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Norwegian teen 'hitman' jailed over UK murder plot",
+       "url": "https://www.bbc.co.uk/news/articles/cw8rzpl1ldkdo",
+       "publishedAt": "2026-10-16T13:43:21Z"
+      },
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "La justicia británica condena a un adolescente noruego que trabajaba para una organización criminal a sueldo de Irán",
+       "url": "https://elpais.com/internacional/2026-10-16/la-justicia-britanica-condena-a-un-adolescente-noruego-que-trabajaba-para-una-organizacion-criminal-a-sueldo-de-iran.html",
+       "publishedAt": "2026-10-16T14:50:16Z"
+      }
+     ],
+     "id": "sucesos-4"
     }
    ]
   },
@@ -2052,339 +3520,6 @@
       }
      ],
      "id": "guerras-5"
-    }
-   ]
-  },
-  {
-   "id": "costarica",
-   "label": "Costa Rica",
-   "group": "region",
-   "minOutlets": 5,
-   "stories": [
-    {
-     "headline": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
-     "headlineLang": "es",
-     "headlineEs": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
-     "headlineEn": null,
-     "summaryEs": "Este viernes los verdiblancos dieron a conocer la postura de la fracción",
-     "summaryEsSource": "El Observador",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 7,
-     "outletNames": [
-      "CRHoy",
-      "Delfino",
-      "Diario Extra",
-      "El Mundo CR",
-      "El Observador",
-      "La Nación (Costa Rica)",
-      "Monumental"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T14:19:00Z",
-     "lastSeen": "2026-10-16T23:54:18Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Gobierno y PLN acercan posturas sobre armonización eléctrica",
-       "url": "https://crhoy.com/nacionales/gobierno-y-pln-acercan-posturas-sobre-armonizacion-electrica/",
-       "publishedAt": "2026-10-15T14:19:00Z"
-      },
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
-       "url": "https://crhoy.com/nacionales/pln-condiciona-dialogo-sobre-armonizacion-electrica-al-retiro-de-recortes-a-universidades/",
-       "publishedAt": "2026-10-16T13:28:36Z"
-      },
-      {
-       "source": "Monumental",
-       "lang": "es",
-       "title": "PLN insiste en que diálogo sobre armonización eléctrica debe tomar en cuenta a todas las fracciones",
-       "url": "https://www.monumental.co.cr/2026/10/16/pln-insiste-en-que-dialogo-sobre-armonizacion-electrica-debe-tomar-en-cuenta-a-todas-las-fracciones/",
-       "publishedAt": "2026-10-16T15:36:59Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Nogui Acosta abandona diálogo con rectores de U públicas, molesto porque PLN condiciona freno a recortes para seguir negociación sobre armonización eléctrica",
-       "url": "https://www.nacion.com/politica/nogui-acosta-abandona-dialogo-con-rectores-de-u/OVB54WJPWJGFHDFQDRFBRLHQ6U/story/",
-       "publishedAt": "2026-10-16T18:45:58Z"
-      },
-      {
-       "source": "El Observador",
-       "lang": "es",
-       "title": "PLN condiciona negociación sobre armonización eléctrica a que el Gobierno elimine recortes a universidades públicas",
-       "url": "https://observador.cr/liberacion-condiciona-negociacion-de-armonizacion-electrica-si-el-gobierno-elimina-recortes-a-universidades-publicas/",
-       "publishedAt": "2026-10-16T18:55:00Z"
-      },
-      {
-       "source": "Diario Extra",
-       "lang": "es",
-       "title": "PLN pone nuevas condiciones a Armonización Eléctrica",
-       "url": "https://www.diarioextra.com/noticia/pln-pone-nuevas-condiciones-a-armonizacion-electrica/",
-       "publishedAt": "2026-10-16T19:26:12Z"
-      },
-      {
-       "source": "El Mundo CR",
-       "lang": "es",
-       "title": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
-       "url": "https://elmundo.cr/costa-rica/pln-condiciona-dialogo-sobre-armonizacion-electrica-al-retiro-de-recortes-a-universidades/",
-       "publishedAt": "2026-10-16T20:02:47Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "PPSO revela acuerdo previo con siete diputados del PLN para torcerles el voto a favor de armonización eléctrica",
-       "url": "https://www.nacion.com/politica/ppso-revela-que-acuerdo-previo-con-siete-diputados/5OKJL74DBZCUNA45WXCUR67DSY/story/",
-       "publishedAt": "2026-10-16T20:14:30Z"
-      },
-      {
-       "source": "Diario Extra",
-       "lang": "es",
-       "title": "PPSO rompe diálogo con PLN por condicionamientos a Armonización Eléctrica",
-       "url": "https://www.diarioextra.com/noticia/ppso-rompe-dialogo-con-pln-por-condicionamientos-a-armonizacion-electrica/",
-       "publishedAt": "2026-10-16T20:38:25Z"
-      },
-      {
-       "source": "Diario Extra",
-       "lang": "es",
-       "title": "PPSO asegura que tenía conversaciones con 7 diputados del PLN sobre Armonización",
-       "url": "https://www.diarioextra.com/noticia/ppso-asegura-que-tenia-7-votos-del-pln-para-avanzar-con-armonizacion/",
-       "publishedAt": "2026-10-16T20:47:24Z"
-      },
-      {
-       "source": "El Observador",
-       "lang": "es",
-       "title": "Pueblo Soberano revela acuerdo con siete diputados del PLN sobre armonización eléctrica y critica que ahora lo están condicionando",
-       "url": "https://observador.cr/pueblo-soberano-revela-acuerdo-con-siete-diputados-del-pln-sobre-armonizacion-electrica-y-critica-que-ahora-lo-estan-condicionando/",
-       "publishedAt": "2026-10-16T20:52:01Z"
-      },
-      {
-       "source": "Diario Extra",
-       "lang": "es",
-       "title": "Estos eran los acuerdos del PLN y el PPSO sobre Armonización Eléctrica",
-       "url": "https://www.diarioextra.com/noticia/estos-eran-los-acuerdos-del-pln-y-el-ppso-sobre-armonizacion-electrica/",
-       "publishedAt": "2026-10-16T20:56:34Z"
-      },
-      {
-       "source": "El Mundo CR",
-       "lang": "es",
-       "title": "Cámara de Industrias rechaza condicionar Ley de Armonización Eléctrica al presupuesto universitario",
-       "url": "https://elmundo.cr/costa-rica/camara-de-industrias-rechaza-condicionar-ley-de-armonizacion-electrica-al-presupuesto-universitario/",
-       "publishedAt": "2026-10-16T21:22:17Z"
-      },
-      {
-       "source": "Delfino",
-       "lang": "es",
-       "title": "PLN condiciona conversaciones para abrir el mercado eléctrico a devolución de fondos universitarios",
-       "url": "https://delfino.cr/2026/10/pln-condiciona-conversaciones-para-abrir-el-mercado-electrico-a-devolucion-de-fondos-universitarios",
-       "publishedAt": "2026-10-16T23:54:18Z"
-      }
-     ],
-     "region": "costarica",
-     "id": "costarica-1"
-    },
-    {
-     "headline": "Fiscalía va por prisión preventiva para jugador Carlos Barahona por caso gota a gota",
-     "headlineLang": "es",
-     "headlineEs": "Fiscalía va por prisión preventiva para jugador Carlos Barahona por caso gota a gota",
-     "headlineEn": null,
-     "summaryEs": "Fiscalía de Heredia pide prisión preventiva para Carlos Barahona y tres detenidos por extorsión 'gota a gota' y legitimación de capitales.",
-     "summaryEsSource": "La Teja",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 6,
-     "outletNames": [
-      "AM Prensa",
-      "CRHoy",
-      "Infobae",
-      "La Nación (Costa Rica)",
-      "La Teja",
-      "Monumental",
-      "Teletica (Telenoticias)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-14T21:39:38Z",
-     "lastSeen": "2026-10-16T21:18:50Z",
-     "sources": [
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Presidente de Cartaginés tras detención de Carlos Barahona: \"Cuenta con mi apoyo\"",
-       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdXRkcW9INHluVERzeW94SU1VZHJ6dkZlbVVIeUlrTEFaMlRaYWx4MXFTeWhmTWRGOEVwZnZnNGdkLWQtM282OHdCX3plZFJrU1pPZWNESnBleEJMWm8ySGFuRWFjV1NMV3B1SElzV1B2YnF1Nng0MHhjc2FOUThUWUJMLWFtYzRielU4UFN2bmkzYmtOZDE0MEk5NEdjczc0dzFBSlFWaU1lT2RjNHZ4ZWhNa3JiUXZnbEYzWm5RTWpSOGEybG5yNmJlMGg?oc=5",
-       "publishedAt": "2026-10-14T21:39:38Z"
-      },
-      {
-       "source": "AM Prensa",
-       "lang": "es",
-       "title": "OIJ revela rol y forma de operar de Carlos Barahona en banda de préstamos “gota a gota”",
-       "url": "https://www.amprensa.com/2026/10/oij-revela-rol-y-forma-de-operar-de-carlos-barahona-en-banda-de-prestamos-gota-a-gota",
-       "publishedAt": "2026-10-14T22:41:27Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "OIJ revela papel de Carlos Barahona en presunta red de extorsiones \"gota a gota\"",
-       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNckxGLXhRWFZqalhyalVFdUVnX240YWFoaGl0dTZjLUNieGVqakpTR19meDRYTmpKUms1RnVuRVVkSnlYTE8tNVJQZmpVNjNTVVkyQUx0V0w5SkFUd0t6QjNqQjI4NWFnVGhTZlBKaURqUEhWaFZ1cS1PdGU1dlBQOEpaUXE2MGJKQVRuSlIxM0FXUFNianNLQ0pMOUhZc1pTc2k1Zmp5ZWNId0RZUURudkpVQ1o3aFhJWlE?oc=5",
-       "publishedAt": "2026-10-14T22:53:04Z"
-      },
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Fiscalía pedirá prisión preventiva contra Carlos Barahona",
-       "url": "https://crhoy.com/nacionales/fiscalia-pedira-prision-preventiva-contra-carlos-barahona/",
-       "publishedAt": "2026-10-15T10:16:55Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Fiscalía pide prisión preventiva contra futbolista del Cartaginés",
-       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQjRDQS1PV2YzNXR0RER6WlRfbGZUclJYTV9Hcjk5aVJBeDk2YVBFdldhSi12Rkw5QVJrQ0w1cG9KNTM1RzNjSmFGSjQta1RDX3VzRlk5WXVwRTk1ckVHTkRfZGliM2dxQXB2X2k3TU1sNlBXMnA2al9OYUR1WWVOMF8yWlhnMC1uNTRfVTBpcHZmZVZ1R1kteTdfajhnQU5YSmNEczZ2WGZadw?oc=5",
-       "publishedAt": "2026-10-15T16:19:59Z"
-      },
-      {
-       "source": "AM Prensa",
-       "lang": "es",
-       "title": "Caso Carlos Barahona: Fiscalía pedirá prisión preventiva y su futuro judicial quedará en manos de un Juez",
-       "url": "https://www.amprensa.com/2026/10/caso-carlos-barahona-fiscalia-pedira-prision-preventiva-y-su-futuro-judicial-quedara-en-ma",
-       "publishedAt": "2026-10-15T16:35:41Z"
-      },
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Fiscalía va por prisión preventiva para jugador Carlos Barahona por caso gota a gota",
-       "url": "https://www.lateja.cr/sucesos/fiscalia-va-por-prision-preventiva-para-jugador/DUREUMLF4REOVCUFOOKMR3XUPU/story/",
-       "publishedAt": "2026-10-15T16:46:42Z"
-      },
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Fiscalía pide prisión preventiva contra futbolista de la Selección de Costa Rica investigado por extorsión y lavado de dinero",
-       "url": "https://www.infobae.com/costa-rica/2026/10/16/fiscalia-pide-prision-preventiva-contra-futbolista-de-la-seleccion-de-costa-rica-investigado-por-extorsion-y-lavado-de-dinero/",
-       "publishedAt": "2026-10-16T04:10:35Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "¿Cómo puede sustituir el técnico de Cartaginés a Carlos Barahona?",
-       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPT0FCN2VwakVoWkFZQzVFb1pmV1dEOWRiTnFoLXJWUTduT2t5cGNVdHI3TTJNM1NKTm52eDJVS2VxRER6QnR1bXFTUXM4c0k5LWRVQUdsd191SWJNNzN5bnViLXRZTUtHMEU4SWtnSG1yNkhkejh0SE4yZTJuWHdZT3NCN2VFcGZXZzVfRUZRZG8tMEhwWkVCTlFwYU10QVBwTF9zbnJPcHRURVp1LWFVSHN2akMybHFrNnowbDJB?oc=5",
-       "publishedAt": "2026-10-16T15:49:50Z"
-      },
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Carlos Barahona enfrenta una decisión clave tras tres días detenido por caso de gota a gota",
-       "url": "https://www.lateja.cr/sucesos/carlos-barahona-enfrenta-una-decision-clave-tras/NETWEEXNDNHK5H3VO3ETQANYKQ/story/",
-       "publishedAt": "2026-10-16T17:24:15Z"
-      },
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Hombre que habría estafado a varios jugadores del Cartaginés fue uno de los que denunció a Carlos Barahona",
-       "url": "https://www.lateja.cr/sucesos/exjugador-que-habria-estafado-a-varios-companeros/GC7ZV2MDCRG3DGN57DMHPDGME4/story/",
-       "publishedAt": "2026-10-16T18:32:36Z"
-      },
-      {
-       "source": "Monumental",
-       "lang": "es",
-       "title": "Fiscalía solicita seis meses de prisión preventiva contra futbolista del Cartaginés y otros tres sospechosos",
-       "url": "https://www.monumental.co.cr/2026/10/16/fiscalia-solicita-seis-meses-de-prision-preventiva-contra-futbolista-del-cartagines-y-otros-tres-sospechosos/",
-       "publishedAt": "2026-10-16T18:42:43Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Abogado del jugador Carlos Barahona cuestiona denuncia asociada a préstamos gota a gota: ´No hay un elemento de extorsión cobratoria´",
-       "url": "https://www.nacion.com/sucesos/abogado-del-jugador-carlos-barahona-cuestiona/5DRI7OUV5ZBRPM4GL23V6FGVKI/story/",
-       "publishedAt": "2026-10-16T21:18:50Z"
-      }
-     ],
-     "region": "costarica",
-     "id": "costarica-2"
-    },
-    {
-     "headline": "Laura Fernández despidió a Pablo Heriberto Abarca, embajador de Costa Rica en México, esto dijo exdiputado",
-     "headlineLang": "es",
-     "headlineEs": "Laura Fernández despidió a Pablo Heriberto Abarca, embajador de Costa Rica en México, esto dijo exdiputado",
-     "headlineEn": null,
-     "summaryEs": "Pablo Heriberto Abarca ya no será más el embajador de Costa Rica en México. Esto dijo el exdiputado al conocer su despido.",
-     "summaryEsSource": "La Teja",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 5,
-     "outletNames": [
-      "AM Prensa",
-      "CRHoy",
-      "El Financiero (Costa Rica)",
-      "El Observador",
-      "Infobae",
-      "La Nación (Costa Rica)",
-      "La Teja"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T11:34:45Z",
-     "lastSeen": "2026-10-16T20:57:49Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Gobierno despide a embajador en México Pablo Heriberto Abarca",
-       "url": "https://crhoy.com/nacionales/cesan-a-embajador-de-costa-rica-en-mexico-pablo-heriberto-abarca/",
-       "publishedAt": "2026-10-16T11:34:45Z"
-      },
-      {
-       "source": "El Observador",
-       "lang": "es",
-       "title": "Gobierno cesa a embajador en México, Pablo Heriberto Vargas",
-       "url": "https://observador.cr/gobierno-cesa-a-embajador-en-mexico-pablo-heriberto-vargas/",
-       "publishedAt": "2026-10-16T18:06:13Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Gobierno destituye a embajador de Costa Rica en México; funcionario afirma que se enteró por la prensa",
-       "url": "https://www.nacion.com/politica/gobierno-destituye-a-embajador-de-costa-rica-en/KC2B27VGJZCYRFSOS5JBPOYCT4/story/",
-       "publishedAt": "2026-10-16T18:07:02Z"
-      },
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Laura Fernández despidió a Pablo Heriberto Abarca, embajador de Costa Rica en México, esto dijo exdiputado",
-       "url": "https://www.lateja.cr/nacional/politica/laura-fernandez-despidio-a-pablo-heriberto-abarca/WRYL7LY44NHYDEE4PW7ERK2KEY/story/",
-       "publishedAt": "2026-10-16T18:21:16Z"
-      },
-      {
-       "source": "AM Prensa",
-       "lang": "es",
-       "title": "Despiden a Pablo Heriberto Abarca como embajador de Costa Rica en México",
-       "url": "https://www.amprensa.com/2026/10/despiden-a-pablo-heriberto-abarca-como-embajador-de-costa-rica-en-mexico",
-       "publishedAt": "2026-10-16T18:23:12Z"
-      },
-      {
-       "source": "El Financiero (Costa Rica)",
-       "lang": "es",
-       "title": "Pablo Heriberto Abarca: el exdiputado del PUSC cercano a Rodrigo Chaves que se enteró por la prensa de su salida como embajador en México",
-       "url": "https://www.elfinancierocr.com/economia-y-politica/pablo-heriberto-abarca-el-exdiputado-del-pusc/JAXXATOO6NGWPIFRTOGLC4OI4Y/story/",
-       "publishedAt": "2026-10-16T19:41:06Z"
-      },
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Gobierno de Costa Rica destituye a su embajador en México: el diplomático asegura que se enteró por la prensa",
-       "url": "https://www.infobae.com/costa-rica/2026/10/16/gobierno-de-costa-rica-destituye-a-su-embajador-en-mexico-el-diplomatico-asegura-que-se-entero-por-la-prensa/",
-       "publishedAt": "2026-10-16T20:57:49Z"
-      }
-     ],
-     "region": "costarica",
-     "id": "costarica-3"
     }
    ]
   },
@@ -9451,1141 +10586,6 @@
       }
      ],
      "id": "posibles-60"
-    }
-   ]
-  },
-  {
-   "id": "buenas",
-   "label": "Buenas noticias",
-   "minOutlets": 1,
-   "stories": [
-    {
-     "headline": "North America’s Largest Wildlife Overpass Is Working: Animal Collisions on I-25 Down 91%",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "North America’s Largest Wildlife Overpass Is Working: Animal Collisions on I-25 Down 91%",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "In March, GNN reported that North America’s largest wildlife overpass had opened in December over Interstate 25 near Larkspur, in Colorado. Now, 10 months on from its opening, data has demonstrated that the 6-lane lifeline for bears, elk, moose, and other animals is working, with 91% fewer collisions between wildlife and vehicles. Measuring 200 feet […]",
-     "summaryEnSource": "Good News Network",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Good News Network"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T18:30:38Z",
-     "lastSeen": "2026-10-16T18:30:38Z",
-     "sources": [
-      {
-       "source": "Good News Network",
-       "lang": "en",
-       "title": "North America’s Largest Wildlife Overpass Is Working: Animal Collisions on I-25 Down 91%",
-       "url": "https://www.goodnewsnetwork.org/north-americas-largest-wildlife-overpass-is-working-animal-collisions-on-i-25-down-91/",
-       "publishedAt": "2026-10-16T18:30:38Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-1"
-    },
-    {
-     "headline": "Fundraising to protect oceans, forests and other key nature sites falling short ahead of UN summit",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Fundraising to protect oceans, forests and other key nature sites falling short ahead of UN summit",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Promises by nations to spend hundreds of billions of dollars to finance nature and increase protections for oceans around the globe are falling short ahead of a key U.N. biodiversity conference. The warnings from the head of the conference and environmental groups comes as the countries gather Monday in Yerevan, Armenia for the United Nations",
-     "summaryEnSource": "Mongabay",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Mongabay"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T17:54:17Z",
-     "lastSeen": "2026-10-16T17:54:17Z",
-     "sources": [
-      {
-       "source": "Mongabay",
-       "lang": "en",
-       "title": "Fundraising to protect oceans, forests and other key nature sites falling short ahead of UN summit",
-       "url": "https://news.mongabay.com/short-article/2026/10/fundraising-to-protect-oceans-forests-and-other-key-nature-sites-falling-short-ahead-of-un-summit/",
-       "publishedAt": "2026-10-16T17:54:17Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-2"
-    },
-    {
-     "headline": "El Aeropuerto del Pacífico en El Salvador ya supera el 60% de avance: $113 millones más en 2027 y una fecha de entrega que genera dudas",
-     "headlineLang": "es",
-     "headlineEs": "El Aeropuerto del Pacífico en El Salvador ya supera el 60% de avance: $113 millones más en 2027 y una fecha de entrega que genera dudas",
-     "headlineEn": null,
-     "summaryEs": "La CAF confirmó el avance general del proyecto en Conchagua tras una visita de su presidente ejecutivo. CEPA planifica una nueva inyección de fondos, aunque la fecha exacta de apertura sigue sin ser confirmada oficialmente.",
-     "summaryEsSource": "Infobae",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Infobae"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T17:20:43Z",
-     "lastSeen": "2026-10-16T17:20:43Z",
-     "sources": [
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "El Aeropuerto del Pacífico en El Salvador ya supera el 60% de avance: $113 millones más en 2027 y una fecha de entrega que genera dudas",
-       "url": "https://www.infobae.com/el-salvador/2026/10/16/el-aeropuerto-del-pacifico-en-el-salvador-ya-supera-el-60-de-avance-113-millones-mas-en-2027-y-una-fecha-de-entrega-que-genera-dudas/",
-       "publishedAt": "2026-10-16T17:20:43Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-3"
-    },
-    {
-     "headline": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Nature"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T16:36:49Z",
-     "lastSeen": "2026-10-16T16:36:49Z",
-     "sources": [
-      {
-       "source": "Nature",
-       "lang": "en",
-       "title": "T-regulatory cell protection of progenitor cells from CD4+ T-cell-mediated cytotoxicity is essential for endogenous mouse digit-tip regeneration - npj Regenerative Medicine",
-       "url": "https://www.nature.com/articles/s41536-026-00507-5",
-       "publishedAt": "2026-10-16T16:36:49Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x7l2q2/tregulatory_cell_protection_of_progenitor_cells/"
-      }
-     ],
-     "id": "buenas-4"
-    },
-    {
-     "headline": "North Texas man finds more than $128,000 on top of a bank",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "North Texas man finds more than $128,000 on top of a bank",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "A routine trip to a Lewisville ATM could have changed one man",
-     "summaryEnSource": "CBS News",
-     "subtopic": "social",
-     "subtopicLabel": "Progreso social",
-     "outlets": 1,
-     "outletNames": [
-      "CBS News"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T15:50:58Z",
-     "lastSeen": "2026-10-16T15:50:58Z",
-     "sources": [
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "North Texas man finds more than $128,000 on top of a bank",
-       "url": "https://www.cbsnews.com/texas/news/texas-man-finds-120000-dollars-bank-atm-returns-every-dollar-092926/",
-       "publishedAt": "2026-10-16T15:50:58Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "UpliftingNews",
-       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7ju4i/north_texas_man_finds_128514_on_top_of_a_banks/"
-      }
-     ],
-     "id": "buenas-5"
-    },
-    {
-     "headline": "Covid vaccine compensation scheme set for overhaul after Inquiry criticism",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Covid vaccine compensation scheme set for overhaul after Inquiry criticism",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Ministers promise to reform the scheme that provides financial support for those injured or bereaved by vaccines in the UK.",
-     "summaryEnSource": "BBC",
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "BBC"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T15:02:46Z",
-     "lastSeen": "2026-10-16T15:02:46Z",
-     "sources": [
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Covid vaccine compensation scheme set for overhaul after Inquiry criticism",
-       "url": "https://www.bbc.co.uk/news/articles/c3pwgqd4gz9xo",
-       "publishedAt": "2026-10-16T15:02:46Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-6"
-    },
-    {
-     "headline": "US EV sales are rising again. Here’s why the recovery is set to last.",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "US EV sales are rising again. Here’s why the recovery is set to last.",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "This analysis and news roundup come from the Canary Media Weekly newsletter. Sign up to get it every Friday. It’s a great time to have an electric vehicle — and more Americans are getting the message. Despite President Donald Trump’s pledge to refrain from striking Iran before next month’s midterm elections, oil…",
-     "summaryEnSource": "Canary Media",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Canary Media"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T14:23:00Z",
-     "lastSeen": "2026-10-16T14:23:00Z",
-     "sources": [
-      {
-       "source": "Canary Media",
-       "lang": "en",
-       "title": "US EV sales are rising again. Here’s why the recovery is set to last.",
-       "url": "https://www.canarymedia.com/articles/electric-vehicles/us-ev-sales-rebound",
-       "publishedAt": "2026-10-16T14:23:00Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-7"
-    },
-    {
-     "headline": "USC scientists discover how to create a never-ending supply of cancer-fighting cells",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "USC scientists discover how to create a never-ending supply of cancer-fighting cells",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "USC scientists have discovered a way to create a potentially renewable supply of genetically engineered immune cells that can attack cancer and strengthen the body's natural defenses. By growing and modifying immature immune cells rather than mature ones, researchers developed a system that can continuously produce tumor-fighting cells inside the body.",
-     "summaryEnSource": "ScienceDaily",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "ScienceDaily"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T12:46:50Z",
-     "lastSeen": "2026-10-16T12:46:50Z",
-     "sources": [
-      {
-       "source": "ScienceDaily",
-       "lang": "en",
-       "title": "USC scientists discover how to create a never-ending supply of cancer-fighting cells",
-       "url": "https://www.sciencedaily.com/releases/2026/10/261015003803.htm",
-       "publishedAt": "2026-10-16T12:46:50Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-8"
-    },
-    {
-     "headline": "Rare barn owls with",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Rare barn owls with",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "A migration ecologist called the discovery of the barn owls’ nest ‘shocking’",
-     "summaryEnSource": "The Independent",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "The Independent"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T12:33:18Z",
-     "lastSeen": "2026-10-16T12:33:18Z",
-     "sources": [
-      {
-       "source": "The Independent",
-       "lang": "en",
-       "title": "Rare barn owls with",
-       "url": "https://www.independent.co.uk/news/world/americas/barn-owls-upper-west-side-nyc-central-park-b3068099.html",
-       "publishedAt": "2026-10-16T12:33:18Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "UpliftingNews",
-       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7il72/a_family_of_barn_owls_has_become_manhattans/"
-      }
-     ],
-     "id": "buenas-9"
-    },
-    {
-     "headline": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "See-through solar cells harvest some wavelengths of light to make electricity, while passing through the red and blue wavelengths that plants need. In a new agrivoltaics experiment, broccoli yields held steady.",
-     "summaryEnSource": "Anthropocene Magazine",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Anthropocene Magazine"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T12:00:00Z",
-     "lastSeen": "2026-10-16T12:00:00Z",
-     "sources": [
-      {
-       "source": "Anthropocene Magazine",
-       "lang": "en",
-       "title": "Magenta solar panels may be agrivoltaics’ cleverest trick yet",
-       "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
-       "publishedAt": "2026-10-16T12:00:00Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-10"
-    },
-    {
-     "headline": "Yale scientists discover how stress changes the brain to make memories stronger",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Yale scientists discover how stress changes the brain to make memories stronger",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Yale scientists have uncovered how the stress hormone cortisol helps the brain turn emotional experiences into stronger, longer-lasting memories. The discovery reveals that stress can reshape communication between brain networks involved in emotion and memory, potentially explaining why certain moments are so difficult to forget.",
-     "summaryEnSource": "ScienceDaily",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "ScienceDaily"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T11:55:35Z",
-     "lastSeen": "2026-10-16T11:55:35Z",
-     "sources": [
-      {
-       "source": "ScienceDaily",
-       "lang": "en",
-       "title": "Yale scientists discover how stress changes the brain to make memories stronger",
-       "url": "https://www.sciencedaily.com/releases/2026/10/261014015517.htm",
-       "publishedAt": "2026-10-16T11:55:35Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-11"
-    },
-    {
-     "headline": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Image by hoshinosuu/ShutterstockResearchers at University of Tsukuba and Ritsumeikan University compared pupil sizes whi",
-     "summaryEnSource": "University of Tsukuba",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "University of Tsukuba"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T11:45:18Z",
-     "lastSeen": "2026-10-16T11:45:18Z",
-     "sources": [
-      {
-       "source": "University of Tsukuba",
-       "lang": "en",
-       "title": "Pupil Size Reveals Differences Between Speaking Aloud and Inner Speech | Research News - University of Tsukuba",
-       "url": "https://www.tsukuba.ac.jp/en/research-news/20261015141500.html",
-       "publishedAt": "2026-10-16T11:45:18Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x7e07e/pupil_size_reveals_differences_between_speaking/"
-      }
-     ],
-     "id": "buenas-12"
-    },
-    {
-     "headline": "Astronomers discover a strange universal rule behind black hole eruptions",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Astronomers discover a strange universal rule behind black hole eruptions",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Scientists have discovered that black holes of vastly different sizes appear to launch powerful jets according to the same universal rule. The breakthrough could explain why some black holes suddenly erupt years after devouring a star and help astronomers predict when these spectacular outbursts will happen.",
-     "summaryEnSource": "ScienceDaily",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "ScienceDaily"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T10:45:33Z",
-     "lastSeen": "2026-10-16T10:45:33Z",
-     "sources": [
-      {
-       "source": "ScienceDaily",
-       "lang": "en",
-       "title": "Astronomers discover a strange universal rule behind black hole eruptions",
-       "url": "https://www.sciencedaily.com/releases/2026/10/261014015507.htm",
-       "publishedAt": "2026-10-16T10:45:33Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-13"
-    },
-    {
-     "headline": "Scientists discover how exercise reverses muscle aging",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Scientists discover how exercise reverses muscle aging",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Scientists have uncovered a hidden biological mechanism that helps explain how exercise can reverse some of the damage caused by muscle aging. The key is a gene called DEAF1, which becomes overactive with age and interferes with the muscles’ ability to clear damaged proteins and repair themselves. Exercise can help restore this balance, allowing older muscles to rebuild and regain strength…",
-     "summaryEnSource": "ScienceDaily",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "ScienceDaily"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T00:41:45Z",
-     "lastSeen": "2026-10-16T00:41:45Z",
-     "sources": [
-      {
-       "source": "ScienceDaily",
-       "lang": "en",
-       "title": "Scientists discover how exercise reverses muscle aging",
-       "url": "https://www.sciencedaily.com/releases/2026/10/261015003550.htm",
-       "publishedAt": "2026-10-16T00:41:45Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-14"
-    },
-    {
-     "headline": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "A phase 1 trial shows that treatment of patients with high-grade serous ovarian cancer with personalized neoantigen vaccines combined with PD-1 blockade was feasible and led to tumor-specific immune responses in many patients and putative mechanisms of resistance related to antigen presentation were identified via cell-free DNA analysis.",
-     "summaryEnSource": "Nature",
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Nature"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T00:34:46Z",
-     "lastSeen": "2026-10-16T00:34:46Z",
-     "sources": [
-      {
-       "source": "Nature",
-       "lang": "en",
-       "title": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-       "url": "https://www.nature.com/articles/s41591-026-04717-8",
-       "publishedAt": "2026-10-16T00:34:46Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x72apz/new_phase_1_trial_results_published_in_nature/"
-      }
-     ],
-     "id": "buenas-15"
-    },
-    {
-     "headline": "Complex surgery successfully separates Fijian conjoined twins",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Complex surgery successfully separates Fijian conjoined twins",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "In what was described as an \"exceptionally rare\" case, doctors in Saudi Arabia say a complex operation to separate 13-month-old Fijian conjoined twins has been successful.",
-     "summaryEnSource": "ABC News (Australia)",
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "ABC News (Australia)"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T22:28:16Z",
-     "lastSeen": "2026-10-15T22:28:16Z",
-     "sources": [
-      {
-       "source": "ABC News (Australia)",
-       "lang": "en",
-       "title": "Complex surgery successfully separates Fijian conjoined twins",
-       "url": "https://www.abc.net.au/news/2026-10-16/surgery-separates-fijian-conjoined-twins-in-saudi-arabia/107271702",
-       "publishedAt": "2026-10-15T22:28:16Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "UpliftingNews",
-       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x72agg/complex_surgery_successfully_separates_fijian/"
-      }
-     ],
-     "id": "buenas-16"
-    },
-    {
-     "headline": "Parada cardiaca: las ventilaciones también salvan vidas",
-     "headlineLang": "es",
-     "headlineEs": "Parada cardiaca: las ventilaciones también salvan vidas",
-     "headlineEn": null,
-     "summaryEs": "Prácticas de ventilación en reanimación cardiopulmonar. ALPA PROD/Shutterstock Imagine que una persona se desploma delante de usted. No responde cuando le habla ni respira con normalidad. ¿Sabría qué hacer hasta que llegue la ambulancia? En una parada cardiaca, cada minuto sin reanimación reduce las posibilidades de supervivencia en un 10 %. La actuación de quienes presencian la emergencia puede…",
-     "summaryEsSource": "The Conversation España",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "The Conversation España"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T20:22:34Z",
-     "lastSeen": "2026-10-15T20:22:34Z",
-     "sources": [
-      {
-       "source": "The Conversation España",
-       "lang": "es",
-       "title": "Parada cardiaca: las ventilaciones también salvan vidas",
-       "url": "https://theconversation.com/parada-cardiaca-las-ventilaciones-tambien-salvan-vidas-294416",
-       "publishedAt": "2026-10-15T20:22:34Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-17"
-    },
-    {
-     "headline": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "In the last two year, local watermen of Maryland and Virginia have drudged up roughly 24,000 abandoned fishing traps.",
-     "summaryEnSource": "Good Good Good",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Good Good Good"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T19:41:00Z",
-     "lastSeen": "2026-10-15T19:41:00Z",
-     "sources": [
-      {
-       "source": "Good Good Good",
-       "lang": "en",
-       "title": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
-       "url": "https://www.goodgoodgood.co/articles/chesapeake-bay-ghost-traps-wildlife-rescue",
-       "publishedAt": "2026-10-15T19:41:00Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-18"
-    },
-    {
-     "headline": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "From the International Space Station’s unique position 250 miles above Earth, the Sun is a vital source of energy. Solar power supports the station’s life support systems, daily activities, and hundreds of research investigations that improve life on Earth and prepare humans for deep space exploration. Over the past five years, NASA augmented the station’s",
-     "summaryEnSource": "NASA",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "NASA"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T17:30:00Z",
-     "lastSeen": "2026-10-15T17:30:00Z",
-     "sources": [
-      {
-       "source": "NASA",
-       "lang": "en",
-       "title": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
-       "url": "https://www.nasa.gov/missions/station/iss-research/power-up-roll-out-solar-arrays-boost-space-station-power-supply/",
-       "publishedAt": "2026-10-15T17:30:00Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-19"
-    },
-    {
-     "headline": "How a contested B.C. supportive housing project won over its neighbours",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "How a contested B.C. supportive housing project won over its neighbours",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "For years, acrimony dominated the conversation in this Fraser Valley community – but residents’ worst fears never materialized",
-     "summaryEnSource": "The Globe and Mail",
-     "subtopic": "comunidad",
-     "subtopicLabel": "Comunidad",
-     "outlets": 1,
-     "outletNames": [
-      "The Globe and Mail"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T09:00:00Z",
-     "lastSeen": "2026-10-15T09:00:00Z",
-     "sources": [
-      {
-       "source": "The Globe and Mail",
-       "lang": "en",
-       "title": "How a contested B.C. supportive housing project won over its neighbours",
-       "url": "https://www.theglobeandmail.com/canada/article-municipal-elections-bc-supportive-housing-project-won-over-neighbours/",
-       "publishedAt": "2026-10-15T09:00:00Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "UpliftingNews",
-       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x71z1i/how_a_contested_bc_supportive_housing_project_won/"
-      }
-     ],
-     "id": "buenas-20"
-    },
-    {
-     "headline": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
-     "headlineLang": "es",
-     "headlineEs": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
-     "headlineEn": null,
-     "summaryEs": "En el parque nacional Virunga, al este de la República Democrática del Congo (RDC), la gorila de Grauer (Gorilla beringei graueri) Lulingu fue reintroducida en 2024. En mayo de 2026, la hembra dio a luz a una nueva cría, un acontecimiento que genera esperanza en el futuro de la especie y despierta un gran entusiasmo",
-     "summaryEsSource": "Mongabay Latam",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "acciones",
-     "subtopicLabel": "Buenas acciones",
-     "outlets": 1,
-     "outletNames": [
-      "Mongabay Latam"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-14T22:15:15Z",
-     "lastSeen": "2026-10-14T22:15:15Z",
-     "sources": [
-      {
-       "source": "Mongabay Latam",
-       "lang": "es",
-       "title": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
-       "url": "https://es.mongabay.com/short-article/2026/10/esperanzadora-historia-gorila-rescatada-dio-a-luz-despues-reintroduccion-vida-silvestre/",
-       "publishedAt": "2026-10-14T22:15:15Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-21"
-    },
-    {
-     "headline": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Continuing GNN’s coverage of youth nonprofit leaders, the Pedal Forward Foundation in Georgia has distributed hundreds of bicycles to low income families, and taught hundreds of children how to ride them. It’s founder, Jonathan Thai, was inspired to step up and serve his community after the local REI closed down a community bike-riding workshop. At […]",
-     "summaryEnSource": "Good News Network",
-     "subtopic": "acciones",
-     "subtopicLabel": "Buenas acciones",
-     "outlets": 1,
-     "outletNames": [
-      "Good News Network"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-14T18:30:16Z",
-     "lastSeen": "2026-10-14T18:30:16Z",
-     "sources": [
-      {
-       "source": "Good News Network",
-       "lang": "en",
-       "title": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
-       "url": "https://www.goodnewsnetwork.org/teen-triathlete-raises-more-than-30000-to-donate-bikes-and-riding-lessons-to-low-income-families/",
-       "publishedAt": "2026-10-14T18:30:16Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-22"
-    },
-    {
-     "headline": "Mangroves gain ground globally, marking turnaround after decades of loss",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Mangroves gain ground globally, marking turnaround after decades of loss",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "After decades of losses, new data show the world’s mangrove forests are beginning to rebound. It marks a modest but significant turnaround for the salt-tolerant coastal trees and shrubs, which provide vital ecosystem services, including carbon storage, habitat for thousands of species and protection from storms and erosion. Global mangrove cover increased by 477 square",
-     "summaryEnSource": "Conservation news",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Conservation news"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-14T16:54:37Z",
-     "lastSeen": "2026-10-14T16:54:37Z",
-     "sources": [
-      {
-       "source": "Conservation news",
-       "lang": "en",
-       "title": "Mangroves gain ground globally, marking turnaround after decades of loss",
-       "url": "https://news.mongabay.com/2026/10/mangroves-gain-ground-globally-marking-turnaround-after-decades-of-loss/",
-       "publishedAt": "2026-10-14T16:54:37Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "UpliftingNews",
-       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x7pf91/mangroves_gain_ground_globally_marking_turnaround/"
-      }
-     ],
-     "id": "buenas-23"
-    },
-    {
-     "headline": "How one Chicago program is diversifying the solar workforce",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "How one Chicago program is diversifying the solar workforce",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "CHICAGO — On a beautiful fall Saturday morning on the South Side of Chicago, the Life Center Church of God in Christ thrummed with excitement. The pews were packed with over a thousand people dressed in their best — including more than a hundred in black graduation caps and gowns. Before praying, Pastor Torrey L.…",
-     "summaryEnSource": "Canary Media",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Canary Media"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-14T07:00:00Z",
-     "lastSeen": "2026-10-14T07:00:00Z",
-     "sources": [
-      {
-       "source": "Canary Media",
-       "lang": "en",
-       "title": "How one Chicago program is diversifying the solar workforce",
-       "url": "https://www.canarymedia.com/articles/solar/how-one-chicago-program-is-diversifying-the-solar-workforce",
-       "publishedAt": "2026-10-14T07:00:00Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-24"
-    },
-    {
-     "headline": "A planet 320 light-years away confirms what scientists long suspected",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "A planet 320 light-years away confirms what scientists long suspected",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Astronomers have discovered that a scorching-hot planet 320 light-years away shares a striking chemical similarity with its host star, providing the first direct evidence for a fundamental assumption about planet formation. The breakthrough could help scientists predict what distant rocky planets are made of and identify worlds with conditions favorable for life.",
-     "summaryEnSource": "ScienceDaily",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "ScienceDaily"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-14T00:24:40Z",
-     "lastSeen": "2026-10-14T00:24:40Z",
-     "sources": [
-      {
-       "source": "ScienceDaily",
-       "lang": "en",
-       "title": "A planet 320 light-years away confirms what scientists long suspected",
-       "url": "https://www.sciencedaily.com/releases/2026/10/261012185015.htm",
-       "publishedAt": "2026-10-14T00:24:40Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-25"
-    },
-    {
-     "headline": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Farmers are “soiling their undies” — and it makes for better crops.",
-     "summaryEnSource": "Good Good Good",
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Good Good Good"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-13T20:58:00Z",
-     "lastSeen": "2026-10-13T20:58:00Z",
-     "sources": [
-      {
-       "source": "Good Good Good",
-       "lang": "en",
-       "title": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
-       "url": "https://www.goodgoodgood.co/articles/new-study-bury-underwear-soil-health",
-       "publishedAt": "2026-10-13T20:58:00Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-26"
-    },
-    {
-     "headline": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "A European energy developer has switched on a major biomethane plant in southern Italy that will save some 9,000 tons of CO2 annually by producing a natural gas substitute with agricultural waste. Located in Grottole, in the ‘instep’ of the Italian Peninsula, the plant will ultimately produce 45 gigawatt-hours of renewable energy a year for […]",
-     "summaryEnSource": "Good News Network",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Good News Network"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-13T15:30:50Z",
-     "lastSeen": "2026-10-13T15:30:50Z",
-     "sources": [
-      {
-       "source": "Good News Network",
-       "lang": "en",
-       "title": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
-       "url": "https://www.goodnewsnetwork.org/italian-biomethane-plant-comes-online-providing-renewable-gas-supply-to-over-3000-homes/",
-       "publishedAt": "2026-10-13T15:30:50Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-27"
-    },
-    {
-     "headline": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
-     "headlineLang": "es",
-     "headlineEs": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
-     "headlineEn": null,
-     "summaryEs": "El 90 % de la capacidad eléctrica nueva que se añade cada año en el mundo ya es renovable, y China superó por primera vez su capacidad solar a la del carbón en julio, pero ONU advierte de que la eficiencia energética se ha quedado corta y la brecha entre demanda y oferta para 2030 puede ser mayor de lo previsto. \"Redes, redes y más redes: interconexión, flexibilidad y equilibrio. Es el área donde…",
-     "summaryEsSource": "Noticias ONU",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Noticias ONU"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-13T12:00:00Z",
-     "lastSeen": "2026-10-13T12:00:00Z",
-     "sources": [
-      {
-       "source": "Noticias ONU",
-       "lang": "es",
-       "title": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
-       "url": "https://news.un.org/feed/view/es/story/2026/10/1542048",
-       "publishedAt": "2026-10-13T12:00:00Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-28"
-    },
-    {
-     "headline": "Qcells aims to build a giant factory for next-gen tandem solar",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Qcells aims to build a giant factory for next-gen tandem solar",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Qcells , one of the most prolific solar manufacturers operating in the U.S., is staking a claim on the next generation of solar power. Laboratory scientists have established that solar panels convert sunlight to electricity with much higher efficiency if traditional silicon cells are paired with layers of…",
-     "summaryEnSource": "Canary Media",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Canary Media"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-13T07:00:00Z",
-     "lastSeen": "2026-10-13T07:00:00Z",
-     "sources": [
-      {
-       "source": "Canary Media",
-       "lang": "en",
-       "title": "Qcells aims to build a giant factory for next-gen tandem solar",
-       "url": "https://www.canarymedia.com/articles/solar/qcells-aims-to-build-worlds-first-big-factory-for-next-gen-tandem-solar",
-       "publishedAt": "2026-10-13T07:00:00Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-29"
-    },
-    {
-     "headline": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
-     "headlineLang": "es",
-     "headlineEs": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
-     "headlineEn": null,
-     "summaryEs": "Un procedimiento experimental realizado en Reino Unido busca comprobar si células conservadas durante tres años pueden reactivar la producción de espermatozoides. Los médicos evaluarán los resultados dentro de ocho meses",
-     "summaryEsSource": "Infobae",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Infobae"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-12T18:04:38Z",
-     "lastSeen": "2026-10-12T18:04:38Z",
-     "sources": [
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
-       "url": "https://www.infobae.com/salud/ciencia/2026/10/12/avance-en-fertilidad-masculina-trasplantan-a-un-joven-tejido-testicular-preservado-antes-de-la-quimioterapia/",
-       "publishedAt": "2026-10-12T18:04:38Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-30"
-    },
-    {
-     "headline": "Nueva combinación de medicamentos restaura el control del VIH",
-     "headlineLang": "es",
-     "headlineEs": "Nueva combinación de medicamentos restaura el control del VIH",
-     "headlineEn": null,
-     "summaryEs": "VIERNES, 9 de octubre de 2026 (HealthDay News) -- Un nuevo combo de medicamentos de acción prolongada puede restaurar el control sobre el VIH para pacientes cuyo virus ha desarrollado resistencia a los medicamentos comúnmente utilizados, informan los investigadores. Los pacientes con VIH que tienen dificultades para tomar pastillas diarias pueden optar por inyecciones de cabotegravir y…",
-     "summaryEsSource": "Infobae",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Infobae"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-12T13:30:17Z",
-     "lastSeen": "2026-10-12T13:30:17Z",
-     "sources": [
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Nueva combinación de medicamentos restaura el control del VIH",
-       "url": "https://www.infobae.com/salud/2026/10/12/nueva-combinacion-de-medicamentos-restaura-el-control-del-vih/",
-       "publishedAt": "2026-10-12T13:30:17Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-31"
-    },
-    {
-     "headline": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "When summer’s heat becomes too much to bear, a glass of iced lemonade is a welcome relief, but what tens of thousands across Ohio have learned is that lemonade can provide a different sort of relief as well. For 8 years, children’s lemonade stands pop up all over the city in July as part of […]",
-     "summaryEnSource": "Good News Network",
-     "subtopic": "acciones",
-     "subtopicLabel": "Buenas acciones",
-     "outlets": 1,
-     "outletNames": [
-      "Good News Network"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-12T12:30:49Z",
-     "lastSeen": "2026-10-12T12:30:49Z",
-     "sources": [
-      {
-       "source": "Good News Network",
-       "lang": "en",
-       "title": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
-       "url": "https://www.goodnewsnetwork.org/teens-wish-to-return-kindness-she-received-sees-her-lemonade-stand-become-5-million-charity-engine/",
-       "publishedAt": "2026-10-12T12:30:49Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-32"
-    },
-    {
-     "headline": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "A landmark survey of the world’s largest free-roaming giant tortoise population has revealed the once-endangered species is now thriving. The latest count of tortoises on the Seychelles atoll of Aldabra revealed that there are approximately 180,000 living on the islands. This is the highest figure ever recorded for the species and far exceeds the human […]",
-     "summaryEnSource": "Good News Network",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "Good News Network"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-11T16:11:41Z",
-     "lastSeen": "2026-10-11T16:11:41Z",
-     "sources": [
-      {
-       "source": "Good News Network",
-       "lang": "en",
-       "title": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
-       "url": "https://www.goodnewsnetwork.org/giant-tortoise-population-is-thriving-survey-finds-180000-on-one-island-chain/",
-       "publishedAt": "2026-10-11T16:11:41Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-33"
-    },
-    {
-     "headline": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Could a drug intended to prevent painful rashes also protect our brains as we get older? The signs are promising – but not conclusive. Yet that’s enough to be driving a boom in shingles jabs When Jenny, a 50-year-old marketing and branding professional from Cambridge, went for her shingles vaccine last year, an entirely different disease was on her mind. Having witnessed three of her four…",
-     "summaryEnSource": "The Guardian",
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "The Guardian"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-11T13:00:27Z",
-     "lastSeen": "2026-10-11T13:00:27Z",
-     "sources": [
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
-       "url": "https://www.theguardian.com/society/2026/oct/11/dementia-demand-for-shingles-vaccine-is-soaring",
-       "publishedAt": "2026-10-11T13:00:27Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-34"
     }
    ]
   }

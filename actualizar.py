@@ -588,6 +588,16 @@ def build_posibles(candidates, out_cats, region_labels):
     return out, report
 
 
+# Orden de pestañas pedido: Buenas, Costa Rica, Finanzas, Política, Cripto, Sucesos y luego el resto
+# (Mundo, Ciencias, Guerras, regiones, Posibles) en su orden actual.
+TAB_FIRST = ["buenas", "costarica", "finanzas", "politica", "cripto", "sucesos"]
+
+
+def order_tabs(cats):
+    first = [c for t in TAB_FIRST for c in cats if c["id"] == t]
+    return first + [c for c in cats if c["id"] not in TAB_FIRST]
+
+
 def main():
     now = datetime.now(timezone.utc)
     ok_feeds, failed = [], []
@@ -768,7 +778,7 @@ def main():
             "perCategory": summary_counts,
         },
         "sourcesUsed": sorted({f["source"] for f in ok_feeds if f["kept"] > 0}),
-        "categories": out_cats,
+        "categories": order_tabs(out_cats),
         "feedsOk": ok_feeds,
         "feedsFailed": failed,
         "goodNews": good_report,

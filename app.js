@@ -2,7 +2,7 @@ const TZ = "America/Costa_Rica";
 const when = new Intl.DateTimeFormat("es-CR", {
   timeZone: TZ, weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit",
 });
-const state = { data: null, cat: "sucesos", lang: "all" };
+const state = { data: null, cat: "buenas", lang: "all" };
 
 function fmt(iso) {
   const d = new Date(iso);
