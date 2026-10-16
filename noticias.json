@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-16T07:59:36Z",
+ "updatedAt": "2026-10-16T08:00:40Z",
  "nextRefreshAt": "2026-10-16T09:00:00Z",
  "refreshHours": 3,
  "method": {
@@ -9,19 +9,19 @@
   "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 2+ medios distintos."
  },
  "stats": {
-  "feedsOk": 94,
-  "feedsFailed": 10,
-  "itemsGathered": 1830,
-  "clusters": 1528,
+  "feedsOk": 95,
+  "feedsFailed": 9,
+  "itemsGathered": 1837,
+  "clusters": 1533,
   "consensusStories": 93,
   "perCategory": {
    "sucesos": 14,
    "politica": 30,
    "finanzas": 19,
-   "mundo": 19,
-   "ciencias": 3,
+   "mundo": 18,
+   "ciencias": 4,
    "guerras": 8,
-   "buenas": 36
+   "buenas": 33
   }
  },
  "sourcesUsed": [
@@ -59,6 +59,7 @@
   "Monumental",
   "NPR",
   "Nature",
+  "New Scientist",
   "Noticias ONU",
   "RFI",
   "RFI Español",
@@ -736,6 +737,51 @@
      "id": "sucesos-9"
     },
     {
+     "headline": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
+     "headlineLang": "es",
+     "headlineEs": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
+     "headlineEn": "Donaldson jail term poses 'complex challenge' for prison staff'",
+     "summaryEs": "El ex dirigente del Partido Democrático Unionista ya fue condenado en junio por otros delitos, incluida violación Leer",
+     "summaryEsSource": "El Mundo",
+     "summaryEn": "Jeffrey Donaldson was sentenced to 15 years for committing sex abuse, including one of rape, against two women when they were children.",
+     "summaryEnSource": "BBC",
+     "outlets": 2,
+     "outletNames": [
+      "BBC",
+      "El Mundo"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T12:57:17Z",
+     "lastSeen": "2026-10-15T23:01:50Z",
+     "sources": [
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
+       "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0cbddfdddffb0398b45b6.html",
+       "publishedAt": "2026-10-15T12:57:17Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Former DUP leader Donaldson sentenced to 15 years in prison for child sex abuse",
+       "url": "https://www.bbc.co.uk/news/articles/cwdr8grnykrlo",
+       "publishedAt": "2026-10-15T15:55:14Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Donaldson jail term poses 'complex challenge' for prison staff'",
+       "url": "https://www.bbc.co.uk/news/articles/cwm243x4my4zo",
+       "publishedAt": "2026-10-15T23:01:50Z"
+      }
+     ],
+     "id": "sucesos-10"
+    },
+    {
      "headline": "Mother of Henry Nowak killer could be deported",
      "headlineLang": "en",
      "headlineEs": null,
@@ -770,7 +816,7 @@
        "publishedAt": "2026-10-15T19:43:07Z"
       }
      ],
-     "id": "sucesos-10"
+     "id": "sucesos-11"
     },
     {
      "headline": "Cargas policiales, altercados y un detenido en Pamplona durante una protesta contra Vito Quiles",
@@ -805,44 +851,6 @@
        "title": "Un acto de la gira del agitador Vito Quiles provoca altercados en el norte de España",
        "url": "https://es.euronews.com/2026/10/15/un-acto-del-agitador-de-ultraderecha-vito-quiles-provoca-altercados",
        "publishedAt": "2026-10-15T19:01:46Z"
-      }
-     ],
-     "id": "sucesos-11"
-    },
-    {
-     "headline": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
-     "headlineLang": "es",
-     "headlineEs": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
-     "headlineEn": "Former DUP leader Donaldson sentenced to 15 years in prison for child sex abuse",
-     "summaryEs": "El ex dirigente del Partido Democrático Unionista ya fue condenado en junio por otros delitos, incluida violación Leer",
-     "summaryEsSource": "El Mundo",
-     "summaryEn": "Jeffrey Donaldson was convicted of 18 counts of sex abuse, including one of rape, which he committed against two women when they were children.",
-     "summaryEnSource": "BBC",
-     "outlets": 2,
-     "outletNames": [
-      "BBC",
-      "El Mundo"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-15T12:57:17Z",
-     "lastSeen": "2026-10-15T15:55:14Z",
-     "sources": [
-      {
-       "source": "El Mundo",
-       "lang": "es",
-       "title": "El ex diputado Jeffrey Donaldson, condenado a 15 años de prisión por pederastia",
-       "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0cbddfdddffb0398b45b6.html",
-       "publishedAt": "2026-10-15T12:57:17Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Former DUP leader Donaldson sentenced to 15 years in prison for child sex abuse",
-       "url": "https://www.bbc.co.uk/news/articles/cwdr8grnykrlo",
-       "publishedAt": "2026-10-15T15:55:14Z"
       }
      ],
      "id": "sucesos-12"
@@ -2819,7 +2827,7 @@
      "headlineEn": "France and Germany agree to ease EU car emissions rules in new deal",
      "summaryEs": null,
      "summaryEsSource": null,
-     "summaryEn": "France and Germany have backed looser EU emissions rules for carmakers and agreed to include Britain in a “made in Europe” scheme, in a provisional deal reached Thursday that could reshape the bloc’s automotive and climate policies.",
+     "summaryEn": "France and Germany have backed looser EU emissions rules for carmakers and agreed to include Britain in a “made in Europe” scheme. The provisional deal reached Thursday could reshape the bloc’s automotive and climate policies.",
      "summaryEnSource": "France 24",
      "outlets": 2,
      "outletNames": [
@@ -3198,6 +3206,142 @@
    "label": "Mundo",
    "stories": [
     {
+     "headline": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
+     "headlineLang": "es",
+     "headlineEs": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
+     "headlineEn": "Pope recovering \"as expected\" after surgery, lung cancer diagnosis",
+     "summaryEs": "Al pontífice le diagnosticaron un adenocarcinoma tras una operación para extirparle un nódulo en un pulmón.",
+     "summaryEsSource": "BBC Mundo",
+     "summaryEn": "Pope Leo XIV is recovering \"as expected\" and has begun respiratory physiotherapy after tests confirmed a lung cancer diagnosis following surgery, the Vatican says.",
+     "summaryEnSource": "CBS News",
+     "outlets": 8,
+     "outletNames": [
+      "BBC",
+      "BBC Mundo",
+      "CBS News",
+      "El Confidencial",
+      "El Mundo",
+      "El País",
+      "NPR",
+      "RFI",
+      "The New York Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-14T09:08:30Z",
+     "lastSeen": "2026-10-15T20:02:55Z",
+     "sources": [
+      {
+       "source": "RFI Español",
+       "lang": "es",
+       "title": "El papa León XIV pasó una noche \"tranquila\" tras ser operado de un cáncer de pulmón",
+       "url": "https://www.rfi.fr/es/sociedad/20261014-el-papa-le%C3%B3n-xiv-pas%C3%B3-una-noche-tranquila-tras-ser-operado-de-un-c%C3%A1ncer-de-pulm%C3%B3n",
+       "publishedAt": "2026-10-14T09:08:30Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Leo XIV’s Lung Cancer Diagnosis Tests a Papacy Still Taking Shape",
+       "url": "https://www.nytimes.com/2026/10/13/world/europe/pope-leo-health-cancer.html",
+       "publishedAt": "2026-10-14T10:18:57Z"
+      },
+      {
+       "source": "NPR",
+       "lang": "en",
+       "title": "Zelenskyy sits down with NPR. And, Pope Leo diagnosed with lung cancer",
+       "url": "https://www.npr.org/2026/10/14/g-s1-148040/up-first-newsletter-volodymyr-zelenskyy-pope-leo-kimberly-guilfoyle-media-free-speech",
+       "publishedAt": "2026-10-14T11:38:51Z"
+      },
+      {
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "Quién queda a cargo del Vaticano y cómo funciona la Iglesia católica mientras el papa León XIV se recupera de una cirugía pulmonar",
+       "url": "https://www.bbc.com/mundo/articles/cqev3dvnmmjmo",
+       "publishedAt": "2026-10-14T12:50:23Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Pope recovering \"as expected\" after surgery, lung cancer diagnosis",
+       "url": "https://www.cbsnews.com/news/pope-leo-diagnosed-lung-cancer-surgery/",
+       "publishedAt": "2026-10-14T14:10:00Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Pope walking and recovering 'as expected' after surgery, doctors say",
+       "url": "https://www.bbc.co.uk/news/articles/cwx28r0zvm6lo",
+       "publishedAt": "2026-10-14T15:12:46Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "As Pope Leo Recovers From Surgery, Messages of Support Abound at Rome Hospital",
+       "url": "https://www.nytimes.com/2026/10/14/world/europe/pope-leo-surgery-cancer-hospital-rome.html",
+       "publishedAt": "2026-10-14T15:42:26Z"
+      },
+      {
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
+       "url": "https://www.bbc.com/mundo/articles/cmvgxvdpwk30o",
+       "publishedAt": "2026-10-14T21:43:54Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Pope's cancer prognosis may depend on these factors, doctors say",
+       "url": "https://www.cbsnews.com/news/pope-leo-lung-cancer-prognosis-doctors/",
+       "publishedAt": "2026-10-15T00:34:04Z"
+      },
+      {
+       "source": "El Confidencial",
+       "lang": "es",
+       "title": "El papa León XIV continúa su recuperación tras la operación: pasó buena noche y desayunó",
+       "url": "https://www.elconfidencial.com/mundo/2026-10-15/papa-leon-xiv-cancer-pulmon-1tps_4445330/",
+       "publishedAt": "2026-10-15T08:11:00Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "While Pope Leo Recovers From Lung Surgery, the Vatican Runs on Autopilot",
+       "url": "https://www.nytimes.com/2026/10/15/world/europe/pope-leo-cancer-surgery-vatican.html",
+       "publishedAt": "2026-10-15T13:01:07Z"
+      },
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "El Papa evoluciona “con normalidad” y realiza fisioterapia dos días después de su operación",
+       "url": "https://elpais.com/internacional/2026-10-15/el-papa-evoluciona-con-normalidad-y-realiza-fisioterapia-dos-dias-despues-de-su-operacion.html",
+       "publishedAt": "2026-10-15T14:41:34Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Pope Leo resumes some papal duties after surgery, Vatican says",
+       "url": "https://www.cbsnews.com/news/pope-leo-resumes-duties-lung-cancer-surgery/",
+       "publishedAt": "2026-10-15T16:00:10Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Buena recuperación del pulmón operado a León XIV, quien retoma el trabajo desde el Gemelli",
+       "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0f8a7fdddfff6248b45c4.html",
+       "publishedAt": "2026-10-15T16:12:52Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Pope Leo Is Recovering After Cancer Surgery, Vatican Says: What to Know",
+       "url": "https://www.nytimes.com/2026/10/14/world/europe/pope-leo-xiv-cancer-diagnosis.html",
+       "publishedAt": "2026-10-15T20:02:55Z"
+      }
+     ],
+     "id": "mundo-1"
+    },
+    {
      "headline": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
      "headlineLang": "es",
      "headlineEs": "Isabel Allende gana el 75 Premio Planeta con 'La hora antes del alba'",
@@ -3264,7 +3408,7 @@
        "publishedAt": "2026-10-16T07:57:45Z"
       }
      ],
-     "id": "mundo-1"
+     "id": "mundo-2"
     },
     {
      "headline": "María Corina Machado denuncia que EE.UU. la ha excluido de las negociaciones sobre Venezuela",
@@ -3341,118 +3485,6 @@
        "publishedAt": "2026-10-16T07:31:50Z"
       }
      ],
-     "id": "mundo-2"
-    },
-    {
-     "headline": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
-     "headlineLang": "es",
-     "headlineEs": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
-     "headlineEn": "Pope recovering \"as expected\" after surgery, lung cancer diagnosis",
-     "summaryEs": "Al pontífice le diagnosticaron un adenocarcinoma tras una operación para extirparle un nódulo en un pulmón.",
-     "summaryEsSource": "BBC Mundo",
-     "summaryEn": "Pope Leo XIV is recovering \"as expected\" and has begun respiratory physiotherapy after tests confirmed a lung cancer diagnosis following surgery, the Vatican says.",
-     "summaryEnSource": "CBS News",
-     "outlets": 5,
-     "outletNames": [
-      "BBC",
-      "BBC Mundo",
-      "CBS News",
-      "El Mundo",
-      "NPR",
-      "The New York Times"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-14T10:18:57Z",
-     "lastSeen": "2026-10-15T20:02:55Z",
-     "sources": [
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Leo XIV’s Lung Cancer Diagnosis Tests a Papacy Still Taking Shape",
-       "url": "https://www.nytimes.com/2026/10/13/world/europe/pope-leo-health-cancer.html",
-       "publishedAt": "2026-10-14T10:18:57Z"
-      },
-      {
-       "source": "NPR",
-       "lang": "en",
-       "title": "Zelenskyy sits down with NPR. And, Pope Leo diagnosed with lung cancer",
-       "url": "https://www.npr.org/2026/10/14/g-s1-148040/up-first-newsletter-volodymyr-zelenskyy-pope-leo-kimberly-guilfoyle-media-free-speech",
-       "publishedAt": "2026-10-14T11:38:51Z"
-      },
-      {
-       "source": "BBC Mundo",
-       "lang": "es",
-       "title": "Quién queda a cargo del Vaticano y cómo funciona la Iglesia católica mientras el papa León XIV se recupera de una cirugía pulmonar",
-       "url": "https://www.bbc.com/mundo/articles/cqev3dvnmmjmo",
-       "publishedAt": "2026-10-14T12:50:23Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Pope recovering \"as expected\" after surgery, lung cancer diagnosis",
-       "url": "https://www.cbsnews.com/news/pope-leo-diagnosed-lung-cancer-surgery/",
-       "publishedAt": "2026-10-14T14:10:00Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Pope walking and recovering 'as expected' after surgery, doctors say",
-       "url": "https://www.bbc.co.uk/news/articles/cwx28r0zvm6lo",
-       "publishedAt": "2026-10-14T15:12:46Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "As Pope Leo Recovers From Surgery, Messages of Support Abound at Rome Hospital",
-       "url": "https://www.nytimes.com/2026/10/14/world/europe/pope-leo-surgery-cancer-hospital-rome.html",
-       "publishedAt": "2026-10-14T15:42:26Z"
-      },
-      {
-       "source": "BBC Mundo",
-       "lang": "es",
-       "title": "Los médicos del Papa informan que camina y se recupera \"según lo previsto\" tras su cirugía por un cáncer de pulmón",
-       "url": "https://www.bbc.com/mundo/articles/cmvgxvdpwk30o",
-       "publishedAt": "2026-10-14T21:43:54Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Pope's cancer prognosis may depend on these factors, doctors say",
-       "url": "https://www.cbsnews.com/news/pope-leo-lung-cancer-prognosis-doctors/",
-       "publishedAt": "2026-10-15T00:34:04Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "While Pope Leo Recovers From Lung Surgery, the Vatican Runs on Autopilot",
-       "url": "https://www.nytimes.com/2026/10/15/world/europe/pope-leo-cancer-surgery-vatican.html",
-       "publishedAt": "2026-10-15T13:01:07Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Pope Leo resumes some papal duties after surgery, Vatican says",
-       "url": "https://www.cbsnews.com/news/pope-leo-resumes-duties-lung-cancer-surgery/",
-       "publishedAt": "2026-10-15T16:00:10Z"
-      },
-      {
-       "source": "El Mundo",
-       "lang": "es",
-       "title": "Buena recuperación del pulmón operado a León XIV, quien retoma el trabajo desde el Gemelli",
-       "url": "https://www.elmundo.es/internacional/2026/10/15/6ad0f8a7fdddfff6248b45c4.html",
-       "publishedAt": "2026-10-15T16:12:52Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Pope Leo Is Recovering After Cancer Surgery, Vatican Says: What to Know",
-       "url": "https://www.nytimes.com/2026/10/14/world/europe/pope-leo-xiv-cancer-diagnosis.html",
-       "publishedAt": "2026-10-15T20:02:55Z"
-      }
-     ],
      "id": "mundo-3"
     },
     {
@@ -3524,67 +3556,6 @@
      "id": "mundo-4"
     },
     {
-     "headline": "Las \"Cucarachas\" desafían el cerco policial con una nueva protesta electoral en la India",
-     "headlineLang": "es",
-     "headlineEs": "Las \"Cucarachas\" desafían el cerco policial con una nueva protesta electoral en la India",
-     "headlineEn": "Delhi Police Tighten Security Ahead of ‘Cockroach’ Rally",
-     "summaryEs": "La convocatoria llega después de varios días de arrestos y restricciones a las manifestaciones en Nueva Delhi.",
-     "summaryEsSource": "DW Español",
-     "summaryEn": "Authorities in New Delhi are bracing for another confrontation over India’s contentious voter-roll revision, with police set to restrict a planned demonstration by the youth-led Cockroach Janta Party.",
-     "summaryEnSource": "Bloomberg",
-     "outlets": 4,
-     "outletNames": [
-      "BBC",
-      "Bloomberg",
-      "DW",
-      "France 24"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-15T23:30:29Z",
-     "lastSeen": "2026-10-16T06:39:48Z",
-     "sources": [
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "India's 'cockroach' protesters set to return despite police crackdown",
-       "url": "https://www.bbc.co.uk/news/articles/cmx237n1y9lzo",
-       "publishedAt": "2026-10-15T23:30:29Z"
-      },
-      {
-       "source": "Bloomberg",
-       "lang": "en",
-       "title": "Delhi Police Tighten Security Ahead of ‘Cockroach’ Rally",
-       "url": "https://www.bloomberg.com/news/articles/2026-10-16/new-delhi-braces-for-fresh-crackdown-as-cockroaches-plan-march",
-       "publishedAt": "2026-10-16T01:00:00Z"
-      },
-      {
-       "source": "DW Español",
-       "lang": "es",
-       "title": "Las \"Cucarachas\" desafían el cerco policial con una nueva protesta electoral en la India",
-       "url": "https://www.dw.com/es/las-cucarachas-desafían-el-cerco-policial-con-una-nueva-protesta-electoral-en-la-india/a-79676042?maca=spa-rss-sp-all-1122-xml-mrss",
-       "publishedAt": "2026-10-16T05:39:00Z"
-      },
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "India's 'Cockroaches' to march again after protest crackdown",
-       "url": "https://www.dw.com/en/india-s-cockroaches-to-march-again-after-protest-crackdown/live-79675849?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-16T06:04:00Z"
-      },
-      {
-       "source": "France 24",
-       "lang": "en",
-       "title": "Indian authorities heighten security, close park ahead of 'cockroach' movement rally",
-       "url": "https://www.france24.com/en/asia-pacific/20261016-indian-authorities-heighten-security-close-park-ahead-cockroach-movement-rally",
-       "publishedAt": "2026-10-16T06:39:48Z"
-      }
-     ],
-     "id": "mundo-5"
-    },
-    {
      "headline": "Kenya confirma su segundo caso de ébola mientras el brote en Congo crece",
      "headlineLang": "es",
      "headlineEs": "Kenya confirma su segundo caso de ébola mientras el brote en Congo crece",
@@ -3643,7 +3614,7 @@
        "publishedAt": "2026-10-15T17:38:52Z"
       }
      ],
-     "id": "mundo-6"
+     "id": "mundo-5"
     },
     {
      "headline": "Adiós al spam telefónico en España: Las llamadas comerciales tendrán que identificarse con el prefijo 400",
@@ -3688,7 +3659,7 @@
        "publishedAt": "2026-10-16T07:07:33Z"
       }
      ],
-     "id": "mundo-7"
+     "id": "mundo-6"
     },
     {
      "headline": "Sally Rooney books off U.K. shelves over Palestine Action support",
@@ -3740,7 +3711,7 @@
        "publishedAt": "2026-10-16T06:15:10Z"
       }
      ],
-     "id": "mundo-8"
+     "id": "mundo-7"
     },
     {
      "headline": "Los relojes atómicos dejarán de añadir segundos para ajustarse a la rotación de la Tierra y evitar un caos global",
@@ -3785,7 +3756,7 @@
        "publishedAt": "2026-10-15T16:00:59Z"
       }
      ],
-     "id": "mundo-9"
+     "id": "mundo-8"
     },
     {
      "headline": "North Korea and China Open Their Biggest Border Bridge",
@@ -3830,7 +3801,7 @@
        "publishedAt": "2026-10-15T12:20:08Z"
       }
      ],
-     "id": "mundo-10"
+     "id": "mundo-9"
     },
     {
      "headline": "Pico y placa en Pereira para el viernes 16 de octubre de 2026: estos son los carros y motos que tendrán restricción",
@@ -3888,7 +3859,7 @@
        "publishedAt": "2026-10-16T07:30:00Z"
       }
      ],
-     "id": "mundo-11"
+     "id": "mundo-10"
     },
     {
      "headline": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
@@ -3931,6 +3902,51 @@
        "title": "\"Bueno, ha funcionado\": Elon Musk presenta el nuevo Tesla Roadster que puede volar",
        "url": "https://es.euronews.com/2026/10/16/bueno-ha-funcionado-elon-musk-presenta-el-nuevo-tesla-roadster-que-puede-volar",
        "publishedAt": "2026-10-16T06:48:25Z"
+      }
+     ],
+     "id": "mundo-11"
+    },
+    {
+     "headline": "Las \"Cucarachas\" desafían el cerco policial con una nueva protesta electoral en la India",
+     "headlineLang": "es",
+     "headlineEs": "Las \"Cucarachas\" desafían el cerco policial con una nueva protesta electoral en la India",
+     "headlineEn": "India's 'Cockroaches' to march again after protest crackdown",
+     "summaryEs": "La convocatoria llega después de varios días de arrestos y restricciones a las manifestaciones en Nueva Delhi.",
+     "summaryEsSource": "DW Español",
+     "summaryEn": "The Cockroach Janta Party has called on people to gather at New Delhi's central business district to wave the Indian national flag as it asserts a right to protest. DW has more.",
+     "summaryEnSource": "DW",
+     "outlets": 2,
+     "outletNames": [
+      "BBC",
+      "DW"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-15T23:30:29Z",
+     "lastSeen": "2026-10-16T06:04:00Z",
+     "sources": [
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "India's 'cockroach' protesters set to return despite police crackdown",
+       "url": "https://www.bbc.co.uk/news/articles/cmx237n1y9lzo",
+       "publishedAt": "2026-10-15T23:30:29Z"
+      },
+      {
+       "source": "DW Español",
+       "lang": "es",
+       "title": "Las \"Cucarachas\" desafían el cerco policial con una nueva protesta electoral en la India",
+       "url": "https://www.dw.com/es/las-cucarachas-desafían-el-cerco-policial-con-una-nueva-protesta-electoral-en-la-india/a-79676042?maca=spa-rss-sp-all-1122-xml-mrss",
+       "publishedAt": "2026-10-16T05:39:00Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "India's 'Cockroaches' to march again after protest crackdown",
+       "url": "https://www.dw.com/en/india-s-cockroaches-to-march-again-after-protest-crackdown/live-79675849?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-16T06:04:00Z"
       }
      ],
      "id": "mundo-12"
@@ -4157,43 +4173,6 @@
       }
      ],
      "id": "mundo-18"
-    },
-    {
-     "headline": "El papa León XIV pasó una noche \"tranquila\" tras ser operado de un cáncer de pulmón",
-     "headlineLang": "es",
-     "headlineEs": "El papa León XIV pasó una noche \"tranquila\" tras ser operado de un cáncer de pulmón",
-     "headlineEn": null,
-     "summaryEs": "León XIV pasó una noche tranquila en el hospital Gemelli de Roma, donde permanece hospitalizado este miércoles, al día siguiente de someterse a una operación en la que se le extirpó un tumor canceroso del pulmón derecho.",
-     "summaryEsSource": "RFI Español",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 2,
-     "outletNames": [
-      "El Confidencial",
-      "RFI"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-14T09:08:30Z",
-     "lastSeen": "2026-10-15T08:11:00Z",
-     "sources": [
-      {
-       "source": "RFI Español",
-       "lang": "es",
-       "title": "El papa León XIV pasó una noche \"tranquila\" tras ser operado de un cáncer de pulmón",
-       "url": "https://www.rfi.fr/es/sociedad/20261014-el-papa-le%C3%B3n-xiv-pas%C3%B3-una-noche-tranquila-tras-ser-operado-de-un-c%C3%A1ncer-de-pulm%C3%B3n",
-       "publishedAt": "2026-10-14T09:08:30Z"
-      },
-      {
-       "source": "El Confidencial",
-       "lang": "es",
-       "title": "El papa León XIV continúa su recuperación tras la operación: pasó buena noche y desayunó",
-       "url": "https://www.elconfidencial.com/mundo/2026-10-15/papa-leon-xiv-cancer-pulmon-1tps_4445330/",
-       "publishedAt": "2026-10-15T08:11:00Z"
-      }
-     ],
-     "id": "mundo-19"
     }
    ]
   },
@@ -4201,6 +4180,43 @@
    "id": "ciencias",
    "label": "Ciencias",
    "stories": [
+    {
+     "headline": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Computer models suggest that unrealistically cold oceans would be insufficient to stop Thwaites glacier retreating, although a neighbouring glacier might begin to grow",
+     "summaryEnSource": "New Scientist",
+     "outlets": 2,
+     "outletNames": [
+      "Euronews",
+      "New Scientist"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-15T20:00:00Z",
+     "lastSeen": "2026-10-16T06:02:15Z",
+     "sources": [
+      {
+       "source": "New Scientist",
+       "lang": "en",
+       "title": "Antarctica’s ‘doomsday’ glacier will keep melting even if oceans cool",
+       "url": "https://www.newscientist.com/article/2594246-antarcticas-doomsday-glacier-will-keep-melting-even-if-oceans-cool/",
+       "publishedAt": "2026-10-15T20:00:00Z"
+      },
+      {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Doomsday Glacier will keep melting even if oceans cool. Here’s why cutting emissions still matters",
+       "url": "https://www.euronews.com/2026/10/16/doomsday-glacier-will-keep-melting-even-if-oceans-cool-heres-why-cutting-emissions-still-m",
+       "publishedAt": "2026-10-16T06:02:15Z"
+      }
+     ],
+     "id": "ciencias-1"
+    },
     {
      "headline": "El neandertal que murió atravesado por una lanza hace 75.000 años y que muestra cómo cuidaban de sus heridos y sus muertos",
      "headlineLang": "es",
@@ -4236,7 +4252,7 @@
        "publishedAt": "2026-10-15T16:31:48Z"
       }
      ],
-     "id": "ciencias-1"
+     "id": "ciencias-2"
     },
     {
      "headline": "El Seprona y el fotógrafo Pedro Armestre, galardonados con los Premios Biodiversidad",
@@ -4273,7 +4289,7 @@
        "publishedAt": "2026-10-15T16:06:09Z"
       }
      ],
-     "id": "ciencias-2"
+     "id": "ciencias-3"
     },
     {
      "headline": "Virus del Nilo Occidental: Europa vive su peor temporada mientras los casos se extienden al norte",
@@ -4310,7 +4326,7 @@
        "publishedAt": "2026-10-15T15:40:40Z"
       }
      ],
-     "id": "ciencias-3"
+     "id": "ciencias-4"
     }
    ]
   },
@@ -4816,43 +4832,6 @@
    "minOutlets": 1,
    "stories": [
     {
-     "headline": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "A phase 1 trial shows that treatment of patients with high-grade serous ovarian cancer with personalized neoantigen vaccines combined with PD-1 blockade was feasible and led to tumor-specific immune responses in many patients and putative mechanisms of resistance related to antigen presentation were identified via cell-free DNA analysis.",
-     "summaryEnSource": "Nature",
-     "subtopic": "salud",
-     "subtopicLabel": "Salud y medicina",
-     "outlets": 1,
-     "outletNames": [
-      "Nature"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T00:34:46Z",
-     "lastSeen": "2026-10-16T00:34:46Z",
-     "sources": [
-      {
-       "source": "Nature",
-       "lang": "en",
-       "title": "Personalized neoantigen-targeting cancer vaccines in ovarian cancer: a phase 1 trial - Nature Medicine",
-       "url": "https://www.nature.com/articles/s41591-026-04717-8",
-       "publishedAt": "2026-10-16T00:34:46Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x72apz/new_phase_1_trial_results_published_in_nature/"
-      }
-     ],
-     "id": "buenas-1"
-    },
-    {
      "headline": "Vecinos de Moravia podrán acceder a vacunación y chequeos médicos gratuitos este viernes",
      "headlineLang": "es",
      "headlineEs": "Vecinos de Moravia podrán acceder a vacunación y chequeos médicos gratuitos este viernes",
@@ -4882,7 +4861,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-2"
+     "id": "buenas-1"
     },
     {
      "headline": "Complex surgery successfully separates Fijian conjoined twins",
@@ -4919,7 +4898,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x72agg/complex_surgery_successfully_separates_fijian/"
       }
      ],
-     "id": "buenas-3"
+     "id": "buenas-2"
     },
     {
      "headline": "Parada cardiaca: las ventilaciones también salvan vidas",
@@ -4951,7 +4930,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-4"
+     "id": "buenas-3"
     },
     {
      "headline": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
@@ -4983,7 +4962,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-5"
+     "id": "buenas-4"
     },
     {
      "headline": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
@@ -5015,7 +4994,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-6"
+     "id": "buenas-5"
     },
     {
      "headline": "Rigorous Analysis Confirms NASA’s Artemis II Heat Shield Performance",
@@ -5047,7 +5026,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-7"
+     "id": "buenas-6"
     },
     {
      "headline": "China reduced extreme poverty fast, but Indonesia hasn’t been far behind",
@@ -5084,44 +5063,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6jm7a/china_reduced_extreme_poverty_fast_but_indonesia/"
       }
      ],
-     "id": "buenas-8"
-    },
-    {
-     "headline": "UK astronomers help reveal host galaxy of most distant fast radio burst",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "UK astronomers help reveal host galaxy of most distant fast radio burst",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "UK astronomers helped trace the most distant fast radio burst ever found to a small young galaxy billions of light-years away.The discovery gives scientists new clues about what may cause these brief but powerful flashes from deep space.The findings suggest fast radio bursts can happen soon after stars are born, helping researchers understand ho...",
-     "summaryEnSource": "University of Manchester",
-     "subtopic": "ciencia",
-     "subtopicLabel": "Ciencia y tecnología",
-     "outlets": 1,
-     "outletNames": [
-      "University of Manchester"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T10:22:37Z",
-     "lastSeen": "2026-10-15T10:22:37Z",
-     "sources": [
-      {
-       "source": "University of Manchester",
-       "lang": "en",
-       "title": "UK astronomers help reveal host galaxy of most distant fast radio burst",
-       "url": "https://www.manchester.ac.uk/about/news/uk-astronomers-help-reveal-host-galaxy-of-most-distant-fast-radio-burst/",
-       "publishedAt": "2026-10-15T10:22:37Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "science",
-       "url": "https://www.reddit.com/r/science/comments/1x6i011/uk_astronomers_help_reveal_host_galaxy_of_most/"
-      }
-     ],
-     "id": "buenas-9"
+     "id": "buenas-7"
     },
     {
      "headline": "Critically endangered frogs bred for first time at London Zoo",
@@ -5158,7 +5100,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6h347/london_zoo_hatches_15_tiny_frogs_from_a_species/"
       }
      ],
-     "id": "buenas-10"
+     "id": "buenas-8"
     },
     {
      "headline": "How a contested B.C. supportive housing project won over its neighbours",
@@ -5195,7 +5137,7 @@
        "url": "https://www.reddit.com/r/UpliftingNews/comments/1x71z1i/how_a_contested_bc_supportive_housing_project_won/"
       }
      ],
-     "id": "buenas-11"
+     "id": "buenas-9"
     },
     {
      "headline": "La esperanzadora historia de la gorila rescatada que dio a luz un año después de su reintroducción a la vida silvestre",
@@ -5227,7 +5169,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-12"
+     "id": "buenas-10"
     },
     {
      "headline": "Teen Triathlete Raises More Than $30,000 to Donate Bikes and Riding Lessons to Low-Income Families",
@@ -5259,44 +5201,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-13"
-    },
-    {
-     "headline": "Stanford discovers way to save ghostly corals from the brink",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Stanford discovers way to save ghostly corals from the brink",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "El Niño poses a renewed threat.",
-     "summaryEnSource": "SFGATE",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "SFGATE"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-14T18:00:00Z",
-     "lastSeen": "2026-10-14T18:00:00Z",
-     "sources": [
-      {
-       "source": "SFGATE",
-       "lang": "en",
-       "title": "Stanford discovers way to save ghostly corals from the brink",
-       "url": "https://www.sfgate.com/bayarea/article/stanford-coral-study-22475321.php",
-       "publishedAt": "2026-10-14T18:00:00Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "UpliftingNews",
-       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6um1d/stanford_discovers_way_to_save_ghostly_corals/"
-      }
-     ],
-     "id": "buenas-14"
+     "id": "buenas-11"
     },
     {
      "headline": "Superplantas en Ecuador: son alimento, reducen monocultivos y agroquímicos y podrían enfrentar la crisis climática",
@@ -5328,7 +5233,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-15"
+     "id": "buenas-12"
     },
     {
      "headline": "Cornell scientists identify rare human genetic disorder in two unusually long-legged cats",
@@ -5360,44 +5265,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-16"
-    },
-    {
-     "headline": "North America’s largest wildlife overpass is working. I-25 collisions near Castle Rock are down 91%.",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "North America’s largest wildlife overpass is working. I-25 collisions near Castle Rock are down 91%.",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "In the 10 months since the wildlife crossing between Larkspur and Monument opened, there’s been just 2 reported collisions",
-     "summaryEnSource": "The Colorado Sun",
-     "subtopic": "ambiente",
-     "subtopicLabel": "Medio ambiente",
-     "outlets": 1,
-     "outletNames": [
-      "The Colorado Sun"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-14T10:02:00Z",
-     "lastSeen": "2026-10-14T10:02:00Z",
-     "sources": [
-      {
-       "source": "The Colorado Sun",
-       "lang": "en",
-       "title": "North America’s largest wildlife overpass is working. I-25 collisions near Castle Rock are down 91%.",
-       "url": "https://coloradosun.com/2026/10/14/i25-wildlife-overpass-collisions-drop/",
-       "publishedAt": "2026-10-14T10:02:00Z"
-      }
-     ],
-     "alsoOnReddit": [
-      {
-       "sub": "UpliftingNews",
-       "url": "https://www.reddit.com/r/UpliftingNews/comments/1x6nc21/north_americas_largest_wildlife_overpass_is/"
-      }
-     ],
-     "id": "buenas-17"
+     "id": "buenas-13"
     },
     {
      "headline": "Painted turbines can save millions of birds",
@@ -5429,7 +5297,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-18"
+     "id": "buenas-14"
     },
     {
      "headline": "How one Chicago program is diversifying the solar workforce",
@@ -5461,7 +5329,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-19"
+     "id": "buenas-15"
     },
     {
      "headline": "A planet 320 light-years away confirms what scientists long suspected",
@@ -5493,7 +5361,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-20"
+     "id": "buenas-16"
     },
     {
      "headline": "1,000 people buried their underwear across Switzerland. The unusual study helped researchers gauge soil health",
@@ -5525,7 +5393,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-21"
+     "id": "buenas-17"
     },
     {
      "headline": "Italian Bio-methane Plant Comes Online, Providing Renewable Gas to Over 3,000 Homes",
@@ -5557,7 +5425,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-22"
+     "id": "buenas-18"
     },
     {
      "headline": "Del petróleo al electrón: cómo las renovables están redefiniendo la seguridad energética",
@@ -5589,7 +5457,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-23"
+     "id": "buenas-19"
     },
     {
      "headline": "Scientists recreate a bizarre quantum effect that stops a particle cold",
@@ -5621,7 +5489,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-24"
+     "id": "buenas-20"
     },
     {
      "headline": "Qcells aims to build a giant factory for next-gen tandem solar",
@@ -5653,7 +5521,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-25"
+     "id": "buenas-21"
     },
     {
      "headline": "Avance en fertilidad masculina: trasplantan a un joven tejido testicular preservado antes de la quimioterapia",
@@ -5685,7 +5553,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-26"
+     "id": "buenas-22"
     },
     {
      "headline": "Nueva combinación de medicamentos restaura el control del VIH",
@@ -5717,7 +5585,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-27"
+     "id": "buenas-23"
     },
     {
      "headline": "Teen’s Wish to Return Kindness She Received Sees Her Lemonade Stand Become $5 Million Charity Engine",
@@ -5749,7 +5617,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-28"
+     "id": "buenas-24"
     },
     {
      "headline": "La FDA aprueba el primer antiviral oral contra el herpes resistente en casi 30 años",
@@ -5781,7 +5649,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-29"
+     "id": "buenas-25"
     },
     {
      "headline": "Giant Tortoise Population is Thriving–Survey Finds 180,000 on One Island Chain",
@@ -5813,7 +5681,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-30"
+     "id": "buenas-26"
     },
     {
      "headline": "‘I want to do everything I can to head off dementia’: why demand for the shingles vaccine is soaring",
@@ -5845,7 +5713,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-31"
+     "id": "buenas-27"
     },
     {
      "headline": "Scientists created a tiny device that can control your nerves to treat chronic pain",
@@ -5877,7 +5745,39 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-32"
+     "id": "buenas-28"
+    },
+    {
+     "headline": "Still wielding a chainsaw at 85: the Australians restoring nature in retirement",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Still wielding a chainsaw at 85: the Australians restoring nature in retirement",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "For a growing band of older Australians, retirement has become an unlikely second act, spent rewilding mountains, counting sea slugs and coaxing damaged country back to life Get our weekend culture and lifestyle email When Susan Downes stepped into the hallway of an old farmhouse for sale in York, Western Australia, she felt an oddly certain sense of knowing. “Oh, this is my house,” the retired…",
+     "summaryEnSource": "The Guardian",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "The Guardian"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-10T19:00:07Z",
+     "lastSeen": "2026-10-10T19:00:07Z",
+     "sources": [
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Still wielding a chainsaw at 85: the Australians restoring nature in retirement",
+       "url": "https://www.theguardian.com/lifeandstyle/ng-interactive/2026/oct/11/australians-restoring-nature-in-retirement-bush-conservation",
+       "publishedAt": "2026-10-10T19:00:07Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-29"
     },
     {
      "headline": "October Big Day en América Latina: de la emoción de descubrir un ave a la defensa de su hábitat",
@@ -5909,7 +5809,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-33"
+     "id": "buenas-30"
     },
     {
      "headline": "Australia Announces 3 New National Parks to Protect Gliders, Owls, and Other Victoria Wildlife",
@@ -5941,7 +5841,39 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-34"
+     "id": "buenas-31"
+    },
+    {
+     "headline": "Instagram Photo Reveals New Species of Giant Waterlily",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Instagram Photo Reveals New Species of Giant Waterlily",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Researchers have recorded a new species of giant waterlily after first spotting the plant in an Instagram photo. Read more on E360 →",
+     "summaryEnSource": "Yale Environment 360",
+     "subtopic": "ambiente",
+     "subtopicLabel": "Medio ambiente",
+     "outlets": 1,
+     "outletNames": [
+      "Yale Environment 360"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-09T14:09:00Z",
+     "lastSeen": "2026-10-09T14:09:00Z",
+     "sources": [
+      {
+       "source": "Yale Environment 360",
+       "lang": "en",
+       "title": "Instagram Photo Reveals New Species of Giant Waterlily",
+       "url": "https://e360.yale.edu/digest/new-giant-waterlily-instagram",
+       "publishedAt": "2026-10-09T14:09:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "id": "buenas-32"
     },
     {
      "headline": "Scientists find hidden materials that could improve batteries and solar fuels",
@@ -5973,39 +5905,7 @@
       }
      ],
      "alsoOnReddit": [],
-     "id": "buenas-35"
-    },
-    {
-     "headline": "Gen Z Is Rescuing Millions in Medical Supplies",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Gen Z Is Rescuing Millions in Medical Supplies",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "In early August, a freight truck pulled up to an OhioHealth facility in Columbus and took roughly 30,000 pounds of N95 masks and hot-and-cold packs, all boxed, sealed and stamped with expiration dates still a year or two out. Left alone, the estimated $250,000 worth of medical supplies would eventually...",
-     "summaryEnSource": "Reasons to be Cheerful",
-     "subtopic": "acciones",
-     "subtopicLabel": "Buenas acciones",
-     "outlets": 1,
-     "outletNames": [
-      "Reasons to be Cheerful"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-09T08:00:14Z",
-     "lastSeen": "2026-10-09T08:00:14Z",
-     "sources": [
-      {
-       "source": "Reasons to be Cheerful",
-       "lang": "en",
-       "title": "Gen Z Is Rescuing Millions in Medical Supplies",
-       "url": "https://reasonstobecheerful.world/gen-z-is-rescuing-millions-in-medical-supplies/",
-       "publishedAt": "2026-10-09T08:00:14Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "id": "buenas-36"
+     "id": "buenas-33"
     }
    ]
   }
@@ -6035,8 +5935,8 @@
    "lang": "en",
    "url": "https://feeds.bbci.co.uk/news/politics/rss.xml",
    "itemsInFeed": 54,
-   "kept": 15,
-   "newest": "2026-10-16T05:22:31Z"
+   "kept": 16,
+   "newest": "2026-10-16T07:59:47Z"
   },
   {
    "id": "bbc-business",
@@ -6305,7 +6205,7 @@
    "lang": "en",
    "url": "https://feeds.bloomberg.com/markets/news.rss",
    "itemsInFeed": 20,
-   "kept": 15,
+   "kept": 14,
    "newest": "2026-10-16T07:31:05Z"
   },
   {
@@ -6343,6 +6243,15 @@
    "itemsInFeed": 10,
    "kept": 6,
    "newest": "2026-10-14T10:35:00Z"
+  },
+  {
+   "id": "newscientist",
+   "source": "New Scientist",
+   "lang": "en",
+   "url": "https://www.newscientist.com/feed/home/",
+   "itemsInFeed": 10,
+   "kept": 7,
+   "newest": "2026-10-16T06:00:00Z"
   },
   {
    "id": "guardian-world",
@@ -6860,12 +6769,6 @@
  ],
  "feedsFailed": [
   {
-   "id": "newscientist",
-   "source": "New Scientist",
-   "url": "https://www.newscientist.com/feed/home/",
-   "error": "HTTPError: HTTP Error 406: Not Acceptable"
-  },
-  {
    "id": "reuters",
    "source": "reuters",
    "url": "https://www.reuters.com/world/rss",
@@ -6936,7 +6839,7 @@
     "url": "https://reasonstobecheerful.world/feed/",
     "kind": "good",
     "itemsInFeed": 10,
-    "kept": 1
+    "kept": 0
    },
    {
     "id": "pos-gnn",
@@ -7040,14 +6943,6 @@
     "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
     "kind": "topic",
     "itemsInFeed": 15,
-    "kept": 0
-   },
-   {
-    "id": "pos-nih",
-    "source": "NIH",
-    "url": "https://www.nih.gov/news-releases/feed.xml",
-    "kind": "topic",
-    "itemsInFeed": 10,
     "kept": 0
    },
    {
@@ -7211,7 +7106,14 @@
     "kept": 3
    }
   ],
-  "feedsFailed": [],
+  "feedsFailed": [
+   {
+    "id": "pos-nih",
+    "source": "NIH",
+    "url": "https://www.nih.gov/news-releases/feed.xml",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   }
+  ],
   "knownFails": [
    {
     "id": "guardian-the-upside",
@@ -7336,216 +7238,6 @@
    ],
    [
     "descartada",
-    "science",
-    "Nine in ten research papers disputing definition of ultraprocessed foods have industry ties.",
-    "https://www.theexamination.org/articles/nova-ultraprocessed-foods-industry-ties-study"
-   ],
-   [
-    "descartada",
-    "science",
-    "A common stomach bug (H pylori) that causes stomach ulcers may be linked to about 1 in 5 colon cancer cases worldwide, s",
-    "https://www.med.hku.hk/en/news/press/20260928-hkumed-led-international-study-finds-helicobacter-pylori-exposure-may-be-associated"
-   ],
-   [
-    "descartada",
-    "science",
-    "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own gene",
-    "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
-   ],
-   [
-    "descartada",
-    "science",
-    "Overcoming Detection Lag in a Cryptic Panzootic: Chytrid Invasion Linked to Historically Enigmatic Amphibian Declines in",
-    "https://onlinelibrary.wiley.com/doi/10.1111/mec.70573"
-   ],
-   [
-    "descartada",
-    "science",
-    "Control theory of aging and longevity for gerotherapeutic drug discovery: state space, vector fields, modalities, safety",
-    "https://doi.org/10.18632/aging.206422"
-   ],
-   [
-    "descartada",
-    "science",
-    "Research investigates the “mean-regression trap”. Authors proposed a two-step advancement in model architecture. The GCN",
-    "https://doi.org/10.18653/v1/2026.semeval-1.53"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Zelenskyy Says Ukraine Is Done Holding Back on Russian Oil Refineries",
-    "https://united24media.com/war-in-ukraine/zelenskyy-says-ukraine-is-done-holding-back-on-russian-oil-refineries-23454"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Europe shuts US out of Russian assets conversation",
-    "https://kyivindependent.com/europe-shuts-us-out-of-russian-assets-conversation/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "'Time for Zelensky to go': Elon Musk calls for Ukrainian president to step down amid Starlink dispute",
-    "https://www.thenews.com.pk/amp/1420019-time-for-zelensky-to-go-elon-musk-calls-for-ukrainian-president-to-step-down-amid-starlink-dispute"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "“This is a Serious Mistake”: Zelenskyy Slams Starlink Restrictions",
-    "https://united24media.com/world/this-is-a-serious-mistake-zelenskyy-slams-starlink-restrictions-23491"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "White House Denies Restricting Starlink in Ukraine, Says SpaceX Is Beyond Its Control",
-    "https://united24media.com/world/trump-white-house-denies-restricting-starlink-in-ukraine-says-spacex-is-beyond-its-control-23459"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Zelensky Pushes Back at Trump’s Call for New Leader, Says Any Successor Would Defend Ukraine",
-    "https://www.kyivpost.com/post/87150"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Russian soldier who killed five Ukrainian troops ‘while dressed as civilian’ arrested",
-    "https://tvpworld.com/95939269/ukraine-arrests-russian-suspected-of-killing-five-troops"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "EU leaders are preparing to urge Zelenskyy to rein in criticism of Trump",
-    "https://unn.ua/en/news/eu-leaders-are-set-to-urge-zelenskyy-to-tone-down-criticism-of-trump-ft"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Military Starlink Service Restored in Ukraine, Defense Sources Say",
-    "https://www.kyivpost.com/post/87154"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Ukrаinian drоnes reportedly strike Yаndeх dаta center, wаrehouses in overnight attаck on Russiа",
-    "https://kyivindependent.com/ukrainian-drones-reportedly-strike-yandex-data-center-warehouses-in-overnight-attack-on-russia/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "US president Donald Trump calls Ukraine’s resumption of strikes on Russian oil refineries a ‘disgrace’",
-    "https://www.theguardian.com/world/2026/oct/16/trump-calls-ukraines-resumption-of-strikes-on-russian-oil-refineries-a-disgrace"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Ukraine Seeks 450 Kph Starlink Limit to Counter Jet Drones",
-    "https://www.kyivpost.com/post/87169"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Online ads weaponised to deliver ‘zero-click’ spyware, researchers say",
-    "https://www.theguardian.com/technology/2026/oct/15/israeli-firm-digital-ads-enabling-installation-of-zero-click-spyware-researchers-say"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "U.S.-Mexico tariff deal stalls over Lutnick objections, WSJ reports",
-    "https://ca.investing.com/news/stock-market-news/usmexico-tariff-deal-stalls-over-lutnick-objections-wsj-reports-93CH-4884219"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "‘Partnership is not an alliance,’ says Jaishankar on India US ties; talks about Russia, China, Europe policy objectives ",
-    "https://www.businesstoday.in/latest/economy/story/partnership-is-not-an-alliance-says-jaishankar-on-india-us-ties-talks-about-russia-china-europe-policy-objectives-561406-2026-10-14"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Netanyahu adviser says Israel ‘very close’ to creating conditions for Iran regime change",
-    "https://www.iranintl.com/en/202610159370"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "UK to provide $22 mln for Ukraine's Chornobyl plant repairs. A Russian drone strike last year damaged the protective she",
-    "https://tvpworld.com/95937502/uk-to-provide-2245-mln-for-ukraines-chornobyl-plant-repairs"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Russia and Ukraine resume energy strikes despite Trump warnings",
-    "https://www.theguardian.com/world/2026/oct/15/us-effort-to-get-russia-ukraine-energy-ceasefire-collapses"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "EU, UK, Canada 'deeply regret' Abbas decision to postpone PA legislative elections",
-    "https://www.jpost.com/middle-east/article-911703"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Russian Business Investment Stalls in Third Quarter as Profits Fall, Uncertainty Persists",
-    "https://www.themoscowtimes.com/2026/10/15/russian-business-investment-stalls-in-third-quarter-as-profits-fall-uncertainty-persists-a93987"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1696, Part 1 (Thread #1843)",
-    "https://www.reddit.com/live/1hnbhsgiy1dhh"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Netanyahu reveals direct call with Syrian President Sharaa, claims he stopped Druze massacres",
-    "https://www.jpost.com/israel-news/article-911842"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Pezeshkian: Iran is Facing its Most Intense Blockade since 1979",
-    "https://english.aawsat.com/world/5329964-pezeshkian-iran-facing-its-most-intense-blockade-1979"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Iran Reportedly Sells Oil to Russia at 35%–42% Discount as New Caspian Route Emerges",
-    "https://irannewswire.org/iran-oil-russia-caspian-sanctions-evasion/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "19 injured after Channel Tunnel collision between bus and train on French side",
-    "https://news.sky.com/story/19-injured-after-channel-tunnel-collision-between-bus-and-train-on-french-side-13599710"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "EU leaders push for historic Single Market overhaul by 2027",
-    "https://www.brusselstimes.com/eu-affairs/2362802/eu-leaders-push-for-historic-single-market-overhaul-by-2027"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "France and Germany agree to ease EU car emissions rules in new deal",
-    "https://www.france24.com/en/europe/20261015-france-and-germany-agree-to-ease-eu-car-emissions-rules-in-new-deal"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Kellogg backs Ukraine’s strikes on Russian oil refineries, calling them military targets",
-    "https://mezha.net/eng/news/mezha-79d00c71867c1da44cb32827_kellogg_backs_ukraine-s/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Albania protests turn violent as protestors demand PM Rama's resignation",
-    "https://www.france24.com/en/europe/20261014-albania-protests-protestors-demand-pm-rama-resignation"
-   ],
-   [
-    "descartada",
     "Futurology",
     "First-Ever Public Confirmation of 'Zero-Click' Spyware Delivered Via Targeted Ads. A firm called Discover-Tech has ads o",
     "https://www.reddit.com/r/Futurology/comments/1x6zi5u/firstever_public_confirmation_of_zeroclick/"
@@ -7570,324 +7262,18 @@
    ],
    [
     "descartada",
-    "MadeMeSmile",
-    "\"You don't have to talk, I'll talk enough for the both of us\"",
-    "https://v.redd.it/jgfvr7e41ovh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "oh, the beauty of a child’s heart ❤️",
-    "https://v.redd.it/bvk3di5vdmvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Kermit and a 4 year old (1972)",
-    "https://v.redd.it/1cdglrm5xqvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Terry Crews bringing pure energy to SoFi Stadium",
-    "https://v.redd.it/ln25hd8i3pvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A woman grew out her hair to donate to her mother 🎀",
-    "https://v.redd.it/p2kcu1u4gnvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "The ultimate side quest",
-    "https://v.redd.it/chahywkb3qvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Can you imagine?",
-    "https://i.redd.it/03rresfzvhuh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Mother worked abroad as housekeeper for decades to fund sons education, now he is pilot of her flight",
-    "https://v.redd.it/njqpqjpmfqvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Watching her little mind figure this out",
-    "https://v.redd.it/d1v4yv4y8ovh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "I’m not sure what this kid has but he is special.",
-    "https://v.redd.it/4cob4vayuqvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Memories from the 80s.",
-    "https://v.redd.it/c71ggc9mqpvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "[OC] I left work early today to Volunteer at my kids book fair. My company gave me $100 to help kids who cannot afford o",
-    "https://i.redd.it/z9qq4et5zovh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A splash of water and laughter that says everything.",
-    "https://v.redd.it/9atfie44sfvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Blind man wins 10 second challenge at barber shop for free haircuts",
-    "https://v.redd.it/wyenoegkzovh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Cows love music & it is the wildest thing to watch",
-    "https://v.redd.it/sjhbtex8qlvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Young foxes playing",
-    "https://v.redd.it/ax9snv4fcpvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A baby owl",
-    "https://v.redd.it/094l5jo7xnvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Teen speaks out after viral video showed him giving elderly man the shoes off his feet (OC)",
-    "https://www.unilad.com/news/us-news/jordan-hope-arizona-kindness-shoes-video-903685-20261015"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Paparazzi for Halloween 🎃",
-    "https://v.redd.it/aizuhzht3qvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Just a kid living his best life (by@__ha.do)",
-    "https://v.redd.it/a1jephcyonvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "How many plates of beans did you eat?",
-    "https://v.redd.it/a4cqfvufpnvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "I need her to teach me",
-    "https://v.redd.it/knlii153hlvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Tiger cubs",
-    "https://v.redd.it/l5al9uljxrvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Beavers Destroy Sign Warning People About....Beavers",
-    "https://notesfrompoland.com/2026/10/08/beavers-destroy-sign-warning-about-beavers/"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Every year since my daughter turned 1 I add a charm to this necklace which marks something in the year. Tomorrow she is ",
-    "https://i.redd.it/mcv5446opovh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Bears kept stealing a man's honey, so he enlisted them as taste tasters.",
-    "https://v.redd.it/2897duoi7qvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Aston Villa fans “appreciating” Mason Greenwood",
-    "https://v.redd.it/1539mju6givh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "🎵 🎶 Soup for my grandma 🎵 🎶",
-    "https://v.redd.it/84uxmdqdcovh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Bibbity, Bibbity, BOO! 🦇",
-    "https://v.redd.it/5iocmghb6nvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Doggo delivering goods",
-    "https://i.redd.it/gf10g7ceymvh1.png"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Dog saves a tiny stray kitten by bringing it home",
-    "https://v.redd.it/80o0ho0yscvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Years of hard work paying off - Nene Royal's Zombie",
-    "https://v.redd.it/78ttx6znzmvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "These squeaky bunny noises",
-    "https://v.redd.it/6b42tucl1uuh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A country meadow living the dream",
-    "https://i.redd.it/64zu7aidzqvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Our new lab loves playing hide and seek..",
-    "https://www.reddit.com/gallery/1x6wegz"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "The athlete with Down syndrome, noticing the sadness of his defeated opponent, immediately ran up to him and raised his ",
-    "https://v.redd.it/ura6k4m3kgvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Carmel brothers help to save grandmother, 2 toddlers from retention pond",
-    "https://fox59.com/news/carmel-brothers-help-to-save-grandmother-2-toddlers-from-retention-pond/"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "To prank her",
-    "https://v.redd.it/ptjaqpletovh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Thanks, Goodwill",
-    "https://i.redd.it/oiav7umaknvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Tomorrow is my 400th consecutive day on Reddit",
-    "https://i.redd.it/snac67nacovh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Man tells a wild bear to wait while he prepares it a sandwich, and it listens",
-    "https://v.redd.it/9y06seynqlvh1"
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Trump says weapon sales to E.U. & Ukraine cut off for now. Russia has occupied the Whitehouse",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "USA",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "If you don't know what you are doing neither does the enemy",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "As I type 700 little and big birds are flying into !",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Mashallah",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Elon flying car",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Business as usual for the big guys",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Opposite day ?",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Rachel borshnan",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "A Q for the Dumbfukistani's here .",
-    ""
-   ],
-   [
-    "descartada",
     "UpliftingNews",
     "Nashville voter turnout 15 times higher than last midterm so far",
     "https://wpln.org/post/nashville-voter-turnout-15-times-higher-than-last-midterm-so-far/"
    ],
    [
-    "confirmada",
+    "descartada",
     "UpliftingNews",
     "North America’s largest wildlife overpass is working. I-25 collisions near Castle Rock are down 91%.",
     "https://coloradosun.com/2026/10/14/i25-wildlife-overpass-collisions-drop/"
    ],
    [
-    "confirmada",
+    "descartada",
     "UpliftingNews",
     "Stanford discovers way to save ghostly corals from the brink",
     "https://www.sfgate.com/bayarea/article/stanford-coral-study-22475321.php"
@@ -7948,222 +7334,6 @@
    ],
    [
     "descartada",
-    "science",
-    "Nearly half of people who started GLP-1 drugs like Ozempic or Wegovy say they now drink less alcohol, and among heavier ",
-    "https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2854926?guestAccessKey=8c64289b-1f09-44b7-89a0-7c584fe2ea58"
-   ],
-   [
-    "descartada",
-    "science",
-    "Scientists trusted less than business leaders when discussing social issues, study finds",
-    "https://www.manchester.ac.uk/about/news/scientists-trusted-less-than-business-leaders/"
-   ],
-   [
-    "descartada",
-    "science",
-    "AI assistants can easily manipulate users into making disadvantageous decisions when the AI operates with a hidden agend",
-    "https://www.eurekalert.org/news-releases/1147838"
-   ],
-   [
-    "descartada",
-    "science",
-    "A new set of remains found in modern-day Iraq suggests that one Neandertal probably suffered a devastating blow to the f",
-    "https://www.sciencenews.org/article/hole-neandertal-bone-fatal-spear"
-   ],
-   [
-    "descartada",
-    "science",
-    "Green space is linked with fewer gun-related homicides, but not everywhere: the association is strongest in wealthier ne",
-    "https://news.osu.edu/green-space-is-linked-with-fewer-gun-related-homicides--but-not-everywhere/"
-   ],
-   [
-    "descartada",
-    "science",
-    "National Data Show High Rates of Anxiety in U.S Adolescents. Only half of adolescents with moderate or severe anxiety sy",
-    "https://today.uconn.edu/2026/10/national-data-show-high-rates-of-anxiety-in-adolescents/"
-   ],
-   [
-    "descartada",
-    "science",
-    "Survey of 102 cities reveals more than 40,000 new viruses. A study involving Brazilian researchers analyzed samples from",
-    "https://www.eurekalert.org/news-releases/1147767"
-   ],
-   [
-    "descartada",
-    "science",
-    "An aging-sensitive secreted phospholipase confers neuroprotection and cognitive resilience | Nature Neuroscience",
-    "https://www.nature.com/articles/s41593-026-02465-z"
-   ],
-   [
-    "descartada",
-    "science",
-    "Reversing age by reprogramming gene expression networks. Aging-specific screening platform identifies gene with multifac",
-    "https://www.eurekalert.org/news-releases/1147754"
-   ],
-   [
-    "descartada",
-    "science",
-    "Reprogrammed NK immune cells target cancer and autoimmune disorders",
-    "https://news.mit.edu/2026/reprogrammed-nk-immune-cells-target-cancer-and-autoimmune-disorders-1013"
-   ],
-   [
-    "descartada",
-    "science",
-    "What makes us human. A first atlas of functional DNA changes offers new clues. Researchers identify evolutionary DNA cha",
-    "https://www.eurekalert.org/news-releases/1147810"
-   ],
-   [
-    "confirmada",
-    "science",
-    "UK astronomers help reveal host galaxy of most distant fast radio burst. The findings suggest fast radio bursts can happ",
-    "https://www.manchester.ac.uk/about/news/uk-astronomers-help-reveal-host-galaxy-of-most-distant-fast-radio-burst/"
-   ],
-   [
-    "confirmada",
-    "science",
-    "New phase 1 trial results published in Nature Medicine show that combining a personalized neoantigen-targeting cancer va",
-    "https://www.nature.com/articles/s41591-026-04717-8"
-   ],
-   [
-    "descartada",
-    "science",
-    "Google’s quantum Willow chip may be able to grow ‘magic states'—helping improve quantum computers’ accuracy in complex c",
-    "https://www.scientificamerican.com/article/googles-quantum-willow-chip-may-be-able-to-grow-magic-states/"
-   ],
-   [
-    "descartada",
-    "science",
-    "About 1 in 4 men in the Army may have low testosterone, study finds",
-    "https://www.washingtonpost.com/national-security/2026/10/15/about-1-4-men-army-may-have-low-testosterone-study-finds/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Order to limit Starshield for Ukraine came from inside White House, sources say",
-    "https://www.reuters.com/world/europe/order-limit-starshield-ukraine-came-inside-white-house-sources-say-2026-10-15/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "UK Sends Ukraine More Storm Shadow Missiles to Hit Russian Sites",
-    "https://www.bloomberg.com/news/articles/2026-10-15/uk-sends-ukraine-more-storm-shadow-missiles-to-hit-russian-sites"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "It is crucial to give Ukraine all the means it needs ​to defend and protect ​its civilian population and its ⁠infrastruc",
-    "https://www.reuters.com/business/aerospace-defense/crucial-give-ukraine-all-means-needed-defend-population-infrastructure-frances-2026-10-15/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Prime Minister Mark Carney says US is trying to break Canada as Alberta votes on separation path",
-    "https://apnews.com/article/canada-alberta-carney-separation-vote-referendum-4e39eb0f5bda2438b3c2fedbf6088d09"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "As Americans play ‘power game,’ draft document shows Canada-EU response",
-    "https://www.ctvnews.ca/politics/article/as-americans-play-power-game-draft-document-shows-canada-eu-response/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Ukraine runs out of Patriot interceptor missiles as Zelensky and Trump clash over war",
-    "https://edition.cnn.com/2026/10/15/europe/ukraine-us-patriot-interceptor-missiles-run-out-intl"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "AP gets exclusive look at 'StarGate,' Ukraine's first aerial drone to evacuate wounded soldiers",
-    "https://apnews.com/article/ukraine-medevac-drone-russia-war-stargate-c93f86db16cc34fcc75deb5efc8af5fe?amp%3Butm_medium=iOS_share&amp%3Butm_campaign=more_copy_link"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Pentagon plans to hold report on Iran school strike past November midterms",
-    "https://www.straitstimes.com/world/united-states/pentagon-plans-to-hold-report-on-iran-school-strike-past-november-midterms"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Nord Stream may have been lawful target, argue lawyers for Ukrainian accused of bombing",
-    "https://www.reuters.com/world/ukrainian-ex-officer-stands-trial-germany-over-nord-stream-bombing-2026-10-14/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "UK asks Interpol to reject Argentina’s ‘politically motivated’ requests for Falklands oil arrests",
-    "https://www.theguardian.com/uk-news/2026/oct/13/britain-interpol-reject-argentina-falkland-islands-arrests?CMP=share_btn_url"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "South Korea to relocate about 10,000 government jobs to Sejong from Seoul by 2031",
-    "https://www.reuters.com/world/asia-pacific/south-korea-relocate-about-10000-government-jobs-sejong-seoul-by-2031-2026-10-13/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "India says first phase of US trade deal nearly done, insists on edge over rivals",
-    "https://www.reuters.com/world/india/india-says-first-phase-us-trade-deal-finalised-2026-10-15/"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Russia arrests Japanese journalist on allegations of spying",
-    "https://www.theguardian.com/world/2026/oct/14/russia-detains-japanese-journalist-suspicion-spying"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Pakistan school roof collapse kills at least 28 children and one teacher",
-    "https://www.cnn.com/2026/10/15/asia/pakistan-school-roof-collapse-deaths-intl-hnk"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Maduro Says New US Torture Allegations Are ‘False Accusations’",
-    "https://www.bloomberg.com/news/articles/2026-10-15/maduro-says-new-us-torture-allegations-are-false-accusations"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "IMF warns global food security worsening amid El Nino",
-    "https://asia.nikkei.com/spotlight/environment/climate-change/imf-warns-global-food-security-worsening-amid-el-nino"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Seven crew missing after drone attack leaves tanker ablaze off Romania's coast",
-    "https://www.bbc.com/news/articles/c60qkgpp592yo"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Suzlon Sees India’s Annual Wind Deployment Doubling by 2030",
-    "https://www.bloomberg.com/news/articles/2026-10-15/suzlon-sees-india-s-annual-wind-deployment-doubling-by-2030?amp%3Butm_medium=share&amp%3Butm_campaign=copy"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "Portugal: 37 protesters reportedly injured during overnight police intervention at housing-rights protest in Porto",
-    "https://pt.euronews.com/2026/10/15/manifestantes-pelo-direito-a-habitacao-denunciam-carga-policial-com-dezenas-de-feridos-no-"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "UK economy unexpectedly grows in August despite fall in consumer spending",
-    "https://www.theguardian.com/business/2026/oct/15/uk-economy-unexpectedly-grows-01-in-august-despite-fuel-hit-to-household-budgets"
-   ],
-   [
-    "descartada",
-    "worldnews",
-    "The 'leap second' could disappear. How a minor time adjustment became a major problem",
-    "https://www.cbc.ca/news/world/leap-second-decision-9.7381049"
-   ],
-   [
-    "descartada",
     "Futurology",
     "Has China really lost 130 million people?",
     "https://www.thetimes.com/world/asia/article/china-falling-population-130-million-nh6jbcftf?amp%3Butm_source=Reddit&amp%3Butm_content=branded"
@@ -8203,13 +7373,13 @@
    "AI-assisted dying? Doris Dörrie's new film addresses prospect of care robots",
    "Anunció su retiro en 2002, pero una negociación de último momento lo cambió todo: así sumó Ferguson una década extra en Manchester United"
   ],
-  "candidates": 45,
+  "candidates": 40,
   "fromGeneralFeeds": 1,
   "rejected": {
    "formato": 93,
    "relleno (sin impacto medible)": 4,
    "relleno": 10,
-   "poco positivo": 294,
+   "poco positivo": 292,
    "negativo": 141,
    "negativo-resumen": 2
   },
@@ -8225,14 +7395,14 @@
     "error": null
    },
    "science": {
-    "ok": true,
-    "items": 21,
-    "error": null
+    "ok": false,
+    "items": 0,
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
    },
    "worldnews": {
-    "ok": true,
-    "items": 50,
-    "error": null
+    "ok": false,
+    "items": 0,
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
    },
    "Futurology": {
     "ok": true,
@@ -8240,29 +7410,28 @@
     "error": null
    },
    "MadeMeSmile": {
-    "ok": true,
-    "items": 41,
-    "error": null
+    "ok": false,
+    "items": 0,
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
    }
   },
   "ninegag": {
-   "ok": true,
-   "items": 10,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "leads": {
-   "total": 149,
-   "confirmed": 8,
-   "dropped": 141,
+   "total": 27,
+   "confirmed": 4,
+   "dropped": 23,
    "confirmedVia": {
-    "enlace a medio confiable (leído de su página)": 8
+    "enlace a medio confiable (leído de su página)": 4
    },
    "droppedReasons": {
-    "enlace a sitio no verificado": 83,
-    "medio confiable pero nota no positiva": 28,
-    "9gag sin fuente": 10,
-    "medio confiable pero no se pudo leer la página": 19,
-    "nota antigua": 1
+    "enlace a sitio no verificado": 13,
+    "medio confiable pero nota no positiva": 4,
+    "medio confiable pero no se pudo leer la página": 4,
+    "nota antigua": 2
    },
    "droppedExamples": [
     {
@@ -8311,30 +7480,30 @@
      "link": "https://v.redd.it/n0i5q1z9iqvh1"
     },
     {
-     "sub": "science",
-     "title": "Nine in ten research papers disputing definition of ultraprocessed foods have industry ties.",
-     "link": "https://www.theexamination.org/articles/nova-ultraprocessed-foods-industry-ties-study"
+     "sub": "Futurology",
+     "title": "First-Ever Public Confirmation of 'Zero-Click' Spyware Delivered Via Targeted Ads. A firm called Discover-Tech has ads on 200,000 websites t",
+     "link": "https://www.reddit.com/r/Futurology/comments/1x6zi5u/firstever_public_confirmation_of_zeroclick/"
     },
     {
-     "sub": "science",
-     "title": "A common stomach bug (H pylori) that causes stomach ulcers may be linked to about 1 in 5 colon cancer cases worldwide, says a review of 43 s",
-     "link": "https://www.med.hku.hk/en/news/press/20260928-hkumed-led-international-study-finds-helicobacter-pylori-exposure-may-be-associated"
+     "sub": "Futurology",
+     "title": "German police arrest two people accused of using a €10,000 Unitree robot to sexually assault a teen girl.",
+     "link": "https://www.reddit.com/r/Futurology/comments/1x6p7xl/german_police_arrest_two_people_accused_of_using/"
     },
     {
-     "sub": "science",
-     "title": "A study of over 12,000 Norwegian families found that by age eight, a child’s ADHD traits come mainly from their own genes, not from how thei",
-     "link": "https://www.psypost.org/child-s-own-genetics-drive-adhd-traits-more-than-family-environment-large-study/"
+     "sub": "Futurology",
+     "title": "In the future we will have online virtual workspaces or think-tanks or brainstorm places where people will combine and gather and join much ",
+     "link": "https://www.reddit.com/r/Futurology/comments/1x6i41d/in_the_future_we_will_have_online_virtual/"
     }
    ]
   },
   "perSubtopic": {
-   "salud": 9,
-   "ciencia": 9,
+   "salud": 8,
+   "ciencia": 8,
    "ambiente": 12,
    "social": 1,
-   "acciones": 4,
+   "acciones": 3,
    "comunidad": 1
   },
-  "allStoriesBeforeCap": 45
+  "allStoriesBeforeCap": 40
  }
 }
