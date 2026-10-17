@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-17T19:30:24Z",
+ "updatedAt": "2026-10-17T19:38:21Z",
  "exchange": {
   "pair": "USD/CRC",
   "dolar": {
@@ -251,7 +251,7 @@
    "fuente": "Ministerio de Hacienda",
    "fuenteUrl": "https://api.hacienda.go.cr/indicadores/tc/euro"
   },
-  "consultado": "2026-10-17T19:30:24Z"
+  "consultado": "2026-10-17T19:38:21Z"
  },
  "exchangeReport": {
   "tipocambiocr": "ok",
@@ -270,22 +270,22 @@
  "stats": {
   "feedsOk": 95,
   "feedsFailed": 7,
-  "itemsGathered": 1666,
-  "clusters": 1401,
-  "consensusStories": 9,
+  "itemsGathered": 1664,
+  "clusters": 1394,
+  "consensusStories": 10,
   "perCategory": {
-   "sucesos": 2,
+   "sucesos": 3,
    "politica": 4,
    "finanzas": 0,
    "cripto": 5,
    "mundo": 1,
    "ciencias": 0,
    "guerras": 2,
-   "costarica": 5,
-   "centroamerica": 3,
+   "costarica": 6,
+   "centroamerica": 2,
    "latam": 3,
    "sudamerica": 2,
-   "europa": 16,
+   "europa": 19,
    "asia": 3,
    "africa": 3,
    "oceania": 1,
@@ -2180,7 +2180,6 @@
      "outletNames": [
       "CRHoy",
       "El Mundo CR",
-      "La Nación (Costa Rica)",
       "La Teja",
       "Monumental",
       "Teletica (Telenoticias)",
@@ -2207,20 +2206,6 @@
        "publishedAt": "2026-10-16T16:17:13Z"
       },
       {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Liberación Nacional y Pueblo Soberano negocian acuerdo sobre armonización eléctrica",
-       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWUhSNWVDSHJxWnhCcE80UnVIbkhYbTFPUk5ZVGpGN201MjlRcUdoU3BlVlhQcXBNZ0hpY3l3M0ViRWlGVG14bzFybTd3aURFUERpeGE2UElNdEo0M1JvVGhNaFFjUDhvUWgxd2t1WWRQcG81bnJCQUFtR01XR0FHdFRuN1k4Q19Jb1QzUFhkSzJCdTJuODB6dmdSaHFCUThPUGdjcWRYLWY2MVFPdUZ6Skh6ZFVYaFhuamhmR3ZzQnN4UUJ0OVE?oc=5",
-       "publishedAt": "2026-10-16T20:13:49Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "PPSO revela acuerdo previo con siete diputados del PLN para torcerles el voto a favor de armonización eléctrica",
-       "url": "https://www.nacion.com/politica/ppso-revela-que-acuerdo-previo-con-siete-diputados/5OKJL74DBZCUNA45WXCUR67DSY/story/",
-       "publishedAt": "2026-10-16T20:14:30Z"
-      },
-      {
        "source": "La Teja",
        "lang": "es",
        "title": "Diputados del PLN ponen condiciones para apoyar proyecto de armonización eléctrica y legisladores del PPSO explotan",
@@ -2231,8 +2216,8 @@
        "source": "Teletica (Telenoticias)",
        "lang": "es",
        "title": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
-       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa19hamFGdHA1c28tTW1ZTEo4QWdLczF5WWNvWHRnOEE5RnotWWdYY01MR21obmlPX0pzd0p6WGx6am12VF9WaDBBNkRrWkNPSTEzTGtmR2VZV2FFVzBJemhKeGVzQU96MF9uV1NNY0ltOElNYmFGVHVjc2FqTTJxTkxnUlczbnRTbkI3eXZsNTRweWdXeG5IZFc2cXI1Z3l6QWkwTjU5Ny04YnF4SDN1QkxreVp1dENwMWoweF9pWWI?oc=5",
-       "publishedAt": "2026-10-16T22:23:44Z"
+       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQLTZocEdFTHcyQ2ZLWkdmYkNNUllNakxmRl9tYUJVVDFVNjA4NW9SS1FKWDJWSWp0M0xvekVFOEdDXzVGSW5JVXhvamMtdjViMGs4azRGYWM2ellmaF9OZ0E4LWtGM2hpakNtSFF1NnktVE16SEJuLVUxZTduWnc3ckxaWFlSRFJqSklkRHpnTVpOVEhqaHUwUzdqdzNON1pjdS1adXdZZElJcXJOd3dIQVZCaFRBVlFuNXhZ?oc=5",
+       "publishedAt": "2026-10-16T22:24:34Z"
       },
       {
        "source": "Monumental",
@@ -2281,15 +2266,22 @@
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-16T15:49:50Z",
+     "firstSeen": "2026-10-16T03:21:24Z",
      "lastSeen": "2026-10-17T08:18:25Z",
      "sources": [
       {
        "source": "Teletica (Telenoticias)",
        "lang": "es",
+       "title": "Audiencia contra futbolista Carlos Barahona por préstamos “gota a gota” continuará el viernes",
+       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOai0zckliZEVwOHBhVHFxa084eFRGTnBoZWplemZ4X2NmczF5eUtvbFdKaWM4SHRjVzV6ejhHX2ZBcXh5eXZTbVpweHp4YnA2Tm90eHkyNldCZWFlMG50eXpOMWx5UmFtNEpUSWV6cFNIRHBBc3lzUDl2NkZNUHRTd19zTE5pckVrekxORHE3YWkyTGt5UzhjZkxLLTdpdkVYUUdVY0NaRFZVdW5VZzZEVzFHTFZQdlduSkxRU3ZlZXZhS2hQTXRxLTJ3UQ?oc=5",
+       "publishedAt": "2026-10-16T03:21:24Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
        "title": "¿Cómo puede sustituir el técnico de Cartaginés a Carlos Barahona?",
-       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPT0FCN2VwakVoWkFZQzVFb1pmV1dEOWRiTnFoLXJWUTduT2t5cGNVdHI3TTJNM1NKTm52eDJVS2VxRER6QnR1bXFTUXM4c0k5LWRVQUdsd191SWJNNzN5bnViLXRZTUtHMEU4SWtnSG1yNkhkejh0SE4yZTJuWHdZT3NCN2VFcGZXZzVfRUZRZG8tMEhwWkVCTlFwYU10QVBwTF9zbnJPcHRURVp1LWFVSHN2akMybHFrNnowbDJB?oc=5",
-       "publishedAt": "2026-10-16T15:49:50Z"
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOV0Z3dzZsam5YdXRyU01LVHU1WFU3R2VJNWlpMFlNQ0JGaEEzTXdSYXNPaDZrREVKenVmM2g0Q2Z0TGlROW1Hd3dSbHNGVDltOXV2eEpLd1hyLXNfSXhBWTZPV2dSNDNBcTlqaDFwUGdZcVdGSDFUand4dFlZVzEzdWd2akY1c1J5YUFFZ29tMkxXMFQ5OXhVZl91cXktVnRvU19sbkhpSkRJcFNKdnBxRGo3UTNvaUV5?oc=5",
+       "publishedAt": "2026-10-16T15:53:11Z"
       },
       {
        "source": "CRHoy",
@@ -2568,6 +2560,75 @@
      ],
      "region": "costarica",
      "id": "costarica-5"
+    },
+    {
+     "headline": "(Video) Rectora del TEC contradice al MEP sobre fondos para evitar cierre de sede en Limón",
+     "headlineLang": "es",
+     "headlineEs": "(Video) Rectora del TEC contradice al MEP sobre fondos para evitar cierre de sede en Limón",
+     "headlineEn": null,
+     "summaryEs": "Rectora del TEC aseguró que si se aprueban recortes de Hacienda la sede de Limón tendría un cierre técnico. Jerarca del MEP expuso que universidad tiene un superávit que podría usarse, lo que ella afirma no es posible",
+     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 5,
+     "outletNames": [
+      "CRHoy",
+      "El Mundo CR",
+      "La Nación (Costa Rica)",
+      "Semanario Universidad",
+      "Teletica (Telenoticias)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T19:51:14Z",
+     "lastSeen": "2026-10-17T16:43:43Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Estudiantes del TEC en Limón piden frenar recorte que amenaza con cerrar su sede",
+       "url": "https://crhoy.com/nacionales/estudiantes-del-tec-en-limon-piden-frenar-recorte-que-amenaza-con-cerrar-su-sede/",
+       "publishedAt": "2026-10-15T19:51:14Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "TEC advierte que recorte de ₡492 millones obligaría a cierre inmediato de su sede de Limón",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQd0NXenl3eEdpYk8tbTV4ODh2LW91b3dBckRzVFFqMzhpTW5DRUpnT1lVazJGYkNhQ2xrbmNTTWpaandQemIwQ093dzhEdTFSN0xPeFhJdFJ2M0N5NnkyRlZsWEJaUWE5a2VMd1B0OU5yblhPWkdqTGZON21ZOVBUX1hBbFBJR0pHVm9qVjYxcDQ5LUhKVVZCdmJuOTdFVXF6YTVxcUpZN25NclVYSjd5U2NfdXVIdUZxQ195UG94M0xFY18yY2Uwa19B?oc=5",
+       "publishedAt": "2026-10-16T02:10:57Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "(Video) Rectora del TEC contradice al MEP sobre fondos para evitar cierre de sede en Limón",
+       "url": "https://crhoy.com/nacionales/video-rectora-del-tec-contradice-al-mep-sobre-fondos-para-evitar-cierre-de-sede-en-limon/",
+       "publishedAt": "2026-10-16T13:30:48Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Rectora del TEC afirma que superávit no se puede destinar a sede de Limón luego de que ministro del MEP la acusara de ‘extorsión política’",
+       "url": "https://www.nacion.com/el-pais/rectora-del-tec-afirma-que-superavit-no-se-puede/HKQPP75WRBH4XEHZSIPJ6IO4T4/story/",
+       "publishedAt": "2026-10-16T16:40:34Z"
+      },
+      {
+       "source": "Semanario Universidad",
+       "lang": "es",
+       "title": "Rectora del TEC desmiente a ministro de Educación: fondos de capital o excedentes no pueden usarse para financiar sede en Limón",
+       "url": "https://semanariouniversidad.com/universitarias/rectora-del-tec-desmiente-a-ministro-de-educacion-fondos-de-capital-o-excedentes-no-pueden-usarse-para-financiar-sede-en-limon/",
+       "publishedAt": "2026-10-16T22:30:15Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "Alcaldesa de Limón denuncia “chantaje y extorsión política” ante amenaza de cierre de sede del TEC en el Caribe",
+       "url": "https://elmundo.cr/costa-rica/alcaldesa-de-limon-denuncia-chantaje-y-extorsion-politica-ante-amenaza-de-cierre-de-sede-del-tec-en-el-caribe/",
+       "publishedAt": "2026-10-17T16:43:43Z"
+      }
+     ],
+     "region": "costarica",
+     "id": "costarica-6"
     }
    ]
   },
@@ -3830,7 +3891,6 @@
      "summaryEnSource": "DW",
      "outlets": 26,
      "outletNames": [
-      "Al Jazeera",
       "BBC",
       "CBS News",
       "Clarín",
@@ -3854,6 +3914,7 @@
       "Sky News",
       "South China Morning Post",
       "The Guardian",
+      "The Hindu",
       "The Irish Times",
       "The New York Times"
      ],
@@ -3862,7 +3923,7 @@
       "es"
      ],
      "firstSeen": "2026-10-16T10:34:44Z",
-     "lastSeen": "2026-10-17T19:04:02Z",
+     "lastSeen": "2026-10-17T19:30:27Z",
      "sources": [
       {
        "source": "RTÉ",
@@ -3954,13 +4015,6 @@
        "title": "Golpean colonos israelíes a periodista de EU que cubría ataques a palestinos",
        "url": "https://www.jornada.com.mx/2026/10/17/mundo/017n1mun",
        "publishedAt": "2026-10-17T08:02:24Z"
-      },
-      {
-       "source": "Al Jazeera",
-       "lang": "en",
-       "title": "Israeli settlers attack European diplomats during West Bank olive harvest",
-       "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom?traffic_source=rss",
-       "publishedAt": "2026-10-17T12:48:03Z"
       },
       {
        "source": "France 24",
@@ -4101,6 +4155,20 @@
        "title": "Israeli Settlers Attack Palestinians and Diplomats in West Bank",
        "url": "https://www.nytimes.com/2026/10/17/world/middleeast/israeli-settlers-attack-palestinians-diplomats-west-bank.html",
        "publishedAt": "2026-10-17T19:04:02Z"
+      },
+      {
+       "source": "The Hindu",
+       "lang": "en",
+       "title": "Masked settlers attack European diplomats in occupied West Bank",
+       "url": "https://www.thehindu.com/news/international/masked-settlers-attack-european-diplomats-in-occupied-west-bank/article71597806.ece",
+       "publishedAt": "2026-10-17T19:09:27Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "EU diplomats say they were attacked by settlers in West Bank",
+       "url": "https://www.cbsnews.com/news/european-diplomats-attacked-west-bank/",
+       "publishedAt": "2026-10-17T19:30:27Z"
       }
      ],
      "id": "mundo-2",
@@ -4116,15 +4184,214 @@
      ]
     },
     {
-     "headline": "Irán apoya \"un proceso político\" para resolver conflicto entre hutíes de Yemen y Arabia Saudita; es \"la única vía realista\", dice",
+     "headline": "Guatemala: asesinan a exfiscal anticorrupción en un campo de fútbol",
      "headlineLang": "es",
-     "headlineEs": "Irán apoya \"un proceso político\" para resolver conflicto entre hutíes de Yemen y Arabia Saudita; es \"la única vía realista\", dice",
+     "headlineEs": "Guatemala: asesinan a exfiscal anticorrupción en un campo de fútbol",
+     "headlineEn": null,
+     "summaryEs": "El exfiscal anticorrupción guatemalteco Juan Francisco Solórzano Foppa fue asesinado a tiros en un complejo deportivo de Ciudad de Guatemala, generando conmoción y reacciones internacionales.",
+     "summaryEsSource": "RPP (Perú)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 14,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "Clarín",
+      "Crónica (Guatemala)",
+      "Diario Extra",
+      "El Nacional (Venezuela)",
+      "El Nuevo Día (Puerto Rico)",
+      "El Universal (México)",
+      "Infobae",
+      "La Hora (Guatemala)",
+      "La Vanguardia",
+      "Prensa Libre",
+      "Proceso Digital (Honduras)",
+      "RPP (Perú)",
+      "República (Guatemala)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T16:25:01Z",
+     "lastSeen": "2026-10-17T19:33:24Z",
+     "sources": [
+      {
+       "source": "La Hora (Guatemala)",
+       "lang": "es",
+       "title": "Muere en incidente armado en canchas del Campo Marte el abogado Solórzano Foppa",
+       "url": "https://lahora.gt/nacionales/jcortega/2026/10/17/muere-en-incidente-armado-en-canchas-del-campo-marte-el-abogado-solorzano-foppa-now/",
+       "publishedAt": "2026-10-17T16:25:01Z"
+      },
+      {
+       "source": "Prensa Libre",
+       "lang": "es",
+       "title": "Reportan muerte de Juan Francisco Solórzano Foppa, exjefe de SAT y exfiscal del MP",
+       "url": "https://www.prensalibre.com/guatemala/sucesos/reportan-muerte-de-juan-francisco-solorzano-foppa-exdirector-de-la-sat-breaking/",
+       "publishedAt": "2026-10-17T16:25:53Z"
+      },
+      {
+       "source": "Prensa Libre",
+       "lang": "es",
+       "title": "Juan Francisco Solórzano Foppa: de investigar el caso La Línea y dirigir la SAT a su último análisis sobre la matanza en Huité",
+       "url": "https://www.prensalibre.com/guatemala/justicia/juan-francisco-solorzano-foppa-de-investigar-el-caso-la-linea-y-dirigir-la-sat-a-su-ultimo-analisis-sobre-la-matanza-en-huite-breaking/",
+       "publishedAt": "2026-10-17T16:30:45Z"
+      },
+      {
+       "source": "República (Guatemala)",
+       "lang": "es",
+       "title": "Asesinan a Juan Francisco Solórzano Foppa en ataque armado en Campo Marte",
+       "url": "https://republica.com/actualidad/asesinan-a-juan-francisco-solorzano-foppa-en-ataque-armado-en-campo-marte-2026101710330",
+       "publishedAt": "2026-10-17T16:33:00Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
+       "url": "https://proceso.hn/asesinan-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
+       "publishedAt": "2026-10-17T17:22:35Z"
+      },
+      {
+       "source": "La Hora (Guatemala)",
+       "lang": "es",
+       "title": "PNC reporta la captura de dos de los presuntos responsables del asesinato de Juan Francisco Solórzano Foppa",
+       "url": "https://lahora.gt/nacionales/jcortega/2026/10/17/pnc-reporta-la-captura-de-dos-de-los-presuntos-responsables-del-asesinato-de-juan-francisco-solorzano-foppa-now/",
+       "publishedAt": "2026-10-17T17:26:40Z"
+      },
+      {
+       "source": "República (Guatemala)",
+       "lang": "es",
+       "title": "Arévalo condena el asesinato de Juan Francisco Solórzano Foppa",
+       "url": "https://republica.com/politica/arevalo-condena-el-asesinato-de-juan-francisco-solorzano-foppa-2026101711270",
+       "publishedAt": "2026-10-17T17:27:00Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "El exjefe de la Superintendencia de Administración Tributaria de Guatemala, Juan Francisco Solórzano, es asesinado en el Campo Marte",
+       "url": "https://www.infobae.com/america/2026/10/17/el-exjefe-de-la-superintendencia-de-administracion-tributaria-de-guatemala-juan-francisco-solorzano-es-asesinado-en-el-campo-marte/",
+       "publishedAt": "2026-10-17T17:34:11Z"
+      },
+      {
+       "source": "La Hora (Guatemala)",
+       "lang": "es",
+       "title": "¿Quién era Juan Francisco Solórzano Foppa, el exjefe de la SAT que murió en un ataque armado en el Campo Marte este sábado?",
+       "url": "https://lahora.gt/nacionales/kgutierrez/2026/10/17/quien-era-juan-francisco-solorzano-foppa-el-exjefe-de-la-sat-asesinado-en-el-campo-marte-este-sabado/",
+       "publishedAt": "2026-10-17T17:37:15Z"
+      },
+      {
+       "source": "Crónica (Guatemala)",
+       "lang": "es",
+       "title": "Asesinan a Juan Francisco Solórzano Foppa, crítico del poder político y judicial",
+       "url": "https://cronica.com.gt/asesinan-a-juan-francisco-solorzano-foppa-critico-del-poder-politico-y-judicial/",
+       "publishedAt": "2026-10-17T17:38:59Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/asesinan-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
+       "publishedAt": "2026-10-17T17:45:10Z"
+      },
+      {
+       "source": "Clarín",
+       "lang": "es",
+       "title": "Asesinan a un exfiscal anticorrupción en una cancha de fútbol: había denunciado nexos entre políticos y pandillas en Guatemala",
+       "url": "https://www.clarin.com/mundo/asesinan-exfiscal-anticorrupcion-cancha-futbol-denunciado-nexos-politicos-pandillas-guatemala_0_dFuJTHUo5R.html",
+       "publishedAt": "2026-10-17T18:00:48Z"
+      },
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "Asesinan en Guatemala a exfiscal que denunció nexos de políticos con pandilleros; fue atacado en cancha de futbol",
+       "url": "https://www.eluniversal.com.mx/mundo/asesinan-en-guatemala-a-exfiscal-que-denuncio-nexos-de-politicos-con-pandilleros-fue-atacado-en-cancha-de-futbol/",
+       "publishedAt": "2026-10-17T18:09:49Z"
+      },
+      {
+       "source": "El Nacional (Venezuela)",
+       "lang": "es",
+       "title": "Asesinaron al exfiscal anticorrupción de Guatemala en un campo de fútbol",
+       "url": "https://www.elnacional.com/2026/10/asesinaron-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
+       "publishedAt": "2026-10-17T18:24:37Z"
+      },
+      {
+       "source": "La Hora (Guatemala)",
+       "lang": "es",
+       "title": "Bernardo Arévalo urge dar con autores materiales e intelectuales del asesinato de Juan Francisco Solórzano Foppa",
+       "url": "https://lahora.gt/nacionales/kgutierrez/2026/10/17/bernardo-arevalo-urge-dar-con-autores-materiales-e-intelectuales-del-asesinato-de-juan-francisco-solorzano-foppa-now/",
+       "publishedAt": "2026-10-17T18:34:29Z"
+      },
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Asesinan a tiros al exfiscal que investigó el caso que hizo caer al presidente de Guatemala",
+       "url": "https://www.lavanguardia.com/internacional/20261017/11661579/asesinan-tiros-exfiscal-investigo-caso-hizo-caer-presidente-guatemala.html",
+       "publishedAt": "2026-10-17T18:44:35Z"
+      },
+      {
+       "source": "El Nuevo Día (Puerto Rico)",
+       "lang": "es",
+       "title": "Matan a exfiscal anticorrupción de Guatemala en una cancha de fútbol",
+       "url": "https://www.elnuevodia.com/noticias/mundo/notas/matan-a-exfiscal-anticorrupcion-de-guatemala-en-una-cancha-de-futbol/",
+       "publishedAt": "2026-10-17T18:48:01Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "El presidente de Guatemala condena el asesinato de un exfiscal anticorrupción",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/el-presidente-de-guatemala-condena-el-asesinato-de-un-exfiscal-anticorrupcion/",
+       "publishedAt": "2026-10-17T18:55:55Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "El presidente de Guatemala condena el asesinato de un exfiscal anticorrupción",
+       "url": "https://proceso.hn/el-presidente-de-guatemala-condena-el-asesinato-de-un-exfiscal-anticorrupcion/",
+       "publishedAt": "2026-10-17T19:00:13Z"
+      },
+      {
+       "source": "RPP (Perú)",
+       "lang": "es",
+       "title": "Guatemala: asesinan a exfiscal anticorrupción en un campo de fútbol",
+       "url": "https://rpp.pe/mundo/latinoamerica/asesinan-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol-noticia-1713156",
+       "publishedAt": "2026-10-17T19:15:33Z"
+      },
+      {
+       "source": "La Hora (Guatemala)",
+       "lang": "es",
+       "title": "Distintos sectores condenan el asesinato de Solórzano Foppa y piden que no quede impune",
+       "url": "https://lahora.gt/nacionales/kjordan/2026/10/17/distintos-sectores-condenan-el-asesinato-de-solorzano-foppa-y-piden-que-no-quede-impune/",
+       "publishedAt": "2026-10-17T19:25:22Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Asesinan en Guatemala a exfiscal que denunció nexos de políticos con pandillas",
+       "url": "https://www.diarioextra.com/noticia/asesinan-en-guatemala-a-exfiscal-que-denuncio-nexos-de-politicos-con-pandillas/",
+       "publishedAt": "2026-10-17T19:33:24Z"
+      }
+     ],
+     "id": "mundo-3",
+     "mundoGeneral": false,
+     "mundoRegions": [
+      "centroamerica"
+     ],
+     "chips": [
+      {
+       "id": "centroamerica",
+       "label": "Centroamérica"
+      }
+     ]
+    },
+    {
+     "headline": "Irán apoya solución política al conflicto entre hutíes de Yemen y Arabia Saudita en medio de nuevos ataques",
+     "headlineLang": "es",
+     "headlineEs": "Irán apoya solución política al conflicto entre hutíes de Yemen y Arabia Saudita en medio de nuevos ataques",
      "headlineEn": "Houthi missiles strike Yemen presidential palace, killing five",
-     "summaryEs": "El ministro de Relaciones Exteriores de Irán , Abás Araqchi, declaró que su país apoya un \" proceso político \" como solución al conflicto que enfrenta a los hutíes de Yemen , aliados de Teherán, con Arabia Saudita . Los combatientes hutíes han atacado reiteradamente en las últimas semanas objetivos sauditas, entre ellos instalaciones energéticas y el aeropuerto internacional de Riad , donde 13…",
-     "summaryEsSource": "El Universal (México)",
+     "summaryEs": "Irán respaldó un proceso político para resolver el conflicto entre los hutíes de Yemen y Arabia Saudita. La propuesta surge tras nuevos ataques con drones, bombardeos y una posible intervención de Egipto.",
+     "summaryEsSource": "La Nación (Costa Rica)",
      "summaryEn": "Attack was the first on Aden’s Al-Maashiq palace ⁠in the latest fighting between ​the Iran-aligned Houthis and Saudi Arabia Yemen’s Houthis fired missiles at the presidential palace complex in the southern city of Aden on Thursday, killing five people, the government said, as the Saudi-led coalition listed dozens of Houthi attacks on Saudi infrastructure in ⁠recent weeks. The attack was the first…",
      "summaryEnSource": "The Guardian",
-     "outlets": 12,
+     "outlets": 14,
      "outletNames": [
       "Africanews",
       "BBC",
@@ -4133,8 +4400,10 @@
       "El Universal (México)",
       "Financial Times",
       "France 24",
+      "La Nación (Costa Rica)",
       "NDTV",
       "RTÉ",
+      "Sky News",
       "The Guardian",
       "The Hindu",
       "The New York Times"
@@ -4144,7 +4413,7 @@
       "es"
      ],
      "firstSeen": "2026-10-15T19:57:48Z",
-     "lastSeen": "2026-10-17T17:31:33Z",
+     "lastSeen": "2026-10-17T19:26:28Z",
      "sources": [
       {
        "source": "France 24",
@@ -4210,11 +4479,18 @@
        "publishedAt": "2026-10-17T08:51:59Z"
       },
       {
-       "source": "The Hindu",
+       "source": "Sky News",
        "lang": "en",
-       "title": "Turkiye, Pakistan, Egypt, Saudi Arabia condemn Houthi attacks on Riyadh airport",
-       "url": "https://www.thehindu.com/news/international/turkiye-pakistan-egypt-saudi-arabia-condemn-houthi-attacks-on-riyadh-airport/article71574172.ece",
-       "publishedAt": "2026-10-17T12:51:14Z"
+       "title": "UK advises against all but essential travel to Saudi Arabia",
+       "url": "https://news.sky.com/story/uk-advises-against-all-but-essential-travel-to-saudi-arabia-amid-houthi-strikes-as-missiles-hit-yemen-airport-13600096",
+       "publishedAt": "2026-10-17T10:21:00Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "UAE agrees with Saudi Arabia to re-enter Yemen conflict amid Houthi gains",
+       "url": "https://www.theguardian.com/world/2026/oct/17/uae-yemen-conflict-agreement-saudi-arabia-houthi-gains",
+       "publishedAt": "2026-10-17T11:57:15Z"
       },
       {
        "source": "The Hindu",
@@ -4245,6 +4521,13 @@
        "publishedAt": "2026-10-17T14:51:22Z"
       },
       {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Yemen Fighting Rages as Civilian Toll From Houthi-Saudi Conflict Worsens",
+       "url": "https://www.nytimes.com/2026/10/17/world/middleeast/houthi-saudi-clashes-in-yemen.html",
+       "publishedAt": "2026-10-17T16:46:15Z"
+      },
+      {
        "source": "The Hindu",
        "lang": "en",
        "title": "Saudi coalition strikes Yemen oil sites after Houthi attacks",
@@ -4257,9 +4540,16 @@
        "title": "Saudi Arabia Intercepts Four Drones Over Riyadh Amid Houthi Attacks",
        "url": "https://www.ndtv.com/world-news/saudi-arabia-intercepted-four-drones-over-riyadh-amid-houthi-attacks-12200439",
        "publishedAt": "2026-10-17T17:31:33Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Irán apoya solución política al conflicto entre hutíes de Yemen y Arabia Saudita en medio de nuevos ataques",
+       "url": "https://www.nacion.com/el-mundo/iran-apoya-solucion-politica-al-conflicto-entre/NGN5XEABQ5ALHBYKQ3GA5TRX64/story/",
+       "publishedAt": "2026-10-17T19:26:28Z"
       }
      ],
-     "id": "mundo-3",
+     "id": "mundo-4",
      "mundoGeneral": false,
      "mundoRegions": [
       "asia"
@@ -4379,7 +4669,7 @@
        "publishedAt": "2026-10-17T18:29:01Z"
       }
      ],
-     "id": "mundo-4",
+     "id": "mundo-5",
      "mundoGeneral": false,
      "mundoRegions": [
       "oceania"
@@ -4525,7 +4815,7 @@
        "publishedAt": "2026-10-17T17:48:50Z"
       }
      ],
-     "id": "mundo-5",
+     "id": "mundo-6",
      "mundoGeneral": false,
      "mundoRegions": [
       "asia"
@@ -4534,116 +4824,6 @@
       {
        "id": "asia",
        "label": "Asia"
-      }
-     ]
-    },
-    {
-     "headline": "Guatemala: asesinan a exfiscal anticorrupción en un campo de fútbol",
-     "headlineLang": "es",
-     "headlineEs": "Guatemala: asesinan a exfiscal anticorrupción en un campo de fútbol",
-     "headlineEn": null,
-     "summaryEs": "El exfiscal anticorrupción guatemalteco Juan Francisco Solórzano Foppa fue asesinado a tiros en un complejo deportivo de Ciudad de Guatemala, generando conmoción y reacciones internacionales.",
-     "summaryEsSource": "RPP (Perú)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 9,
-     "outletNames": [
-      "ABC Color (Paraguay)",
-      "Clarín",
-      "El Nacional (Venezuela)",
-      "El Nuevo Día (Puerto Rico)",
-      "El Universal (México)",
-      "La Vanguardia",
-      "Proceso Digital (Honduras)",
-      "RPP (Perú)",
-      "Teletica (Telenoticias)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T17:22:35Z",
-     "lastSeen": "2026-10-17T19:15:33Z",
-     "sources": [
-      {
-       "source": "Proceso Digital (Honduras)",
-       "lang": "es",
-       "title": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
-       "url": "https://proceso.hn/asesinan-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
-       "publishedAt": "2026-10-17T17:22:35Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/asesinan-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
-       "publishedAt": "2026-10-17T17:45:10Z"
-      },
-      {
-       "source": "Clarín",
-       "lang": "es",
-       "title": "Asesinan a un exfiscal anticorrupción en una cancha de fútbol: había denunciado nexos entre políticos y pandillas en Guatemala",
-       "url": "https://www.clarin.com/mundo/asesinan-exfiscal-anticorrupcion-cancha-futbol-denunciado-nexos-politicos-pandillas-guatemala_0_dFuJTHUo5R.html",
-       "publishedAt": "2026-10-17T18:00:48Z"
-      },
-      {
-       "source": "El Universal (México)",
-       "lang": "es",
-       "title": "Asesinan en Guatemala a exfiscal que denunció nexos de políticos con pandilleros; fue atacado en cancha de futbol",
-       "url": "https://www.eluniversal.com.mx/mundo/asesinan-en-guatemala-a-exfiscal-que-denuncio-nexos-de-politicos-con-pandilleros-fue-atacado-en-cancha-de-futbol/",
-       "publishedAt": "2026-10-17T18:09:49Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
-       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYXVMWm55a2NiMlI1RTU2RUNIbVZyTUJjVHhKYURxaldCbmRNc1VWTXdaT0Ixb3JXWmZRcFlRbmFHazBMZHA5ZTczQmZndFdvdVI3Qmg1UVBPc3lLQXlUb1pkR1RONGp3eFQ0a0Ewd2ZMUU1NcjFyZ1N0bWV3ODJLdk9nWDJ6cW9mNzl2TnBVbUw5eEJpOVc2ZzFMcnJnbHd3MDRaZS1uUWFFcTNBa0Mta2I1Vm1NbTg?oc=5",
-       "publishedAt": "2026-10-17T18:12:35Z"
-      },
-      {
-       "source": "El Nacional (Venezuela)",
-       "lang": "es",
-       "title": "Asesinaron al exfiscal anticorrupción de Guatemala en un campo de fútbol",
-       "url": "https://www.elnacional.com/2026/10/asesinaron-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
-       "publishedAt": "2026-10-17T18:24:37Z"
-      },
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "Asesinan a tiros al exfiscal que investigó el caso que hizo caer al presidente de Guatemala",
-       "url": "https://www.lavanguardia.com/internacional/20261017/11661579/asesinan-tiros-exfiscal-investigo-caso-hizo-caer-presidente-guatemala.html",
-       "publishedAt": "2026-10-17T18:44:35Z"
-      },
-      {
-       "source": "El Nuevo Día (Puerto Rico)",
-       "lang": "es",
-       "title": "Matan a exfiscal anticorrupción de Guatemala en una cancha de fútbol",
-       "url": "https://www.elnuevodia.com/noticias/mundo/notas/matan-a-exfiscal-anticorrupcion-de-guatemala-en-una-cancha-de-futbol/",
-       "publishedAt": "2026-10-17T18:48:01Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "El presidente de Guatemala condena el asesinato de un exfiscal anticorrupción",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/el-presidente-de-guatemala-condena-el-asesinato-de-un-exfiscal-anticorrupcion/",
-       "publishedAt": "2026-10-17T18:55:55Z"
-      },
-      {
-       "source": "RPP (Perú)",
-       "lang": "es",
-       "title": "Guatemala: asesinan a exfiscal anticorrupción en un campo de fútbol",
-       "url": "https://rpp.pe/mundo/latinoamerica/asesinan-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol-noticia-1713156",
-       "publishedAt": "2026-10-17T19:15:33Z"
-      }
-     ],
-     "id": "mundo-6",
-     "mundoGeneral": false,
-     "mundoRegions": [
-      "centroamerica"
-     ],
-     "chips": [
-      {
-       "id": "centroamerica",
-       "label": "Centroamérica"
       }
      ]
     },
@@ -5124,6 +5304,108 @@
      ]
     },
     {
+     "headline": "Ethiopia appoints interim Tigray government",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Ethiopia appoints interim Tigray government",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Ethiopian Prime Minister announced Friday the establishment of an interim administration in the northern Tigray region after recent clashes.",
+     "summaryEnSource": "The Citizen (Sudáfrica)",
+     "outlets": 8,
+     "outletNames": [
+      "Africanews",
+      "AllAfrica",
+      "DW",
+      "Daily Maverick",
+      "France 24",
+      "Nation (Kenia)",
+      "The Citizen (Sudáfrica)",
+      "The Irish Times"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T11:30:30Z",
+     "lastSeen": "2026-10-17T07:36:36Z",
+     "sources": [
+      {
+       "source": "AllAfrica",
+       "lang": "en",
+       "title": "Ethiopia: Ethiopia Establishes Six-Month Caretaker Administration in Tigray",
+       "url": "https://allafrica.com/stories/202610160282.html",
+       "publishedAt": "2026-10-16T11:30:30Z"
+      },
+      {
+       "source": "The Citizen (Sudáfrica)",
+       "lang": "en",
+       "title": "Ethiopia appoints interim Tigray government",
+       "url": "https://www.citizen.co.za/news/news-world/news-africa/ethiopia-appoints-interim-tigray-government/",
+       "publishedAt": "2026-10-16T12:41:46Z"
+      },
+      {
+       "source": "The Irish Times",
+       "lang": "en",
+       "title": "Ethiopia’s Abiy names interim Tigray government and calls for election in six months",
+       "url": "https://www.irishtimes.com/world/africa/2026/10/16/ethiopias-abiy-names-interim-tigray-government-and-calls-for-election-in-six-months/",
+       "publishedAt": "2026-10-16T12:50:01Z"
+      },
+      {
+       "source": "Daily Maverick",
+       "lang": "en",
+       "title": "Ethiopia’s Abiy names new Tigray government, wants polls in six months",
+       "url": "https://www.dailymaverick.co.za/article/2026-10-16-ethiopias-abiy-names-new-tigray-government-wants-polls-in-six-months/",
+       "publishedAt": "2026-10-16T13:04:05Z"
+      },
+      {
+       "source": "France 24",
+       "lang": "en",
+       "title": "Ethiopia announces interim government in Tigray, aims for polls in six months",
+       "url": "https://www.france24.com/en/africa/20261016-ethiopia-announces-interim-government-tigray-calls-for-polls-six-months",
+       "publishedAt": "2026-10-16T13:05:23Z"
+      },
+      {
+       "source": "Africanews",
+       "lang": "en",
+       "title": "Ethiopia appoints interim Tigray government after TPLF ouster",
+       "url": "http://www.africanews.com/2026/10/16/ethiopia-appoints-interim-tigray-government-after-tplf-ouster/",
+       "publishedAt": "2026-10-16T14:02:09Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "Ethiopia's Abiy Ahmed appoints interim Tigray government",
+       "url": "https://www.dw.com/en/ethiopia-s-abiy-ahmed-appoints-interim-tigray-government/a-79683519?maca=en-rss-en-africa-8291-rdf",
+       "publishedAt": "2026-10-16T16:19:00Z"
+      },
+      {
+       "source": "Nation (Kenia)",
+       "lang": "en",
+       "title": "Ethiopia installs caretaker government in Tigray",
+       "url": "https://nation.africa/kenya/news/africa/ethiopia-installs-caretaker-government-in-tigray-5635362",
+       "publishedAt": "2026-10-17T06:00:00Z"
+      },
+      {
+       "source": "Africanews",
+       "lang": "en",
+       "title": "Ex-fighters in Ethiopia's Tigray region register for reintegration programme",
+       "url": "http://www.africanews.com/2026/10/17/ex-fighters-in-ethiopias-tigray-region-register-for-reintegration-programme/",
+       "publishedAt": "2026-10-17T07:36:36Z"
+      }
+     ],
+     "id": "mundo-11",
+     "mundoGeneral": false,
+     "mundoRegions": [
+      "africa"
+     ],
+     "chips": [
+      {
+       "id": "africa",
+       "label": "África"
+      }
+     ]
+    },
+    {
      "headline": "León XIV habla desde el hospital con Putin para reclamarle una tregua y ofrecerle diálogo",
      "headlineLang": "es",
      "headlineEs": "León XIV habla desde el hospital con Putin para reclamarle una tregua y ofrecerle diálogo",
@@ -5207,7 +5489,102 @@
        "publishedAt": "2026-10-17T06:39:38Z"
       }
      ],
-     "id": "mundo-11",
+     "id": "mundo-12",
+     "mundoGeneral": false,
+     "mundoRegions": [
+      "europa"
+     ],
+     "chips": [
+      {
+       "id": "europa",
+       "label": "Europa"
+      }
+     ]
+    },
+    {
+     "headline": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
+     "headlineLang": "es",
+     "headlineEs": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
+     "headlineEn": "Albanian police fire rubber bullets as protests against Rama escalate",
+     "summaryEs": "Los jóvenes denuncian el deterioro de la universidad, el coste de los estudios y la falta de oportunidades y reclaman la dimisión del primer ministro Edi Rama",
+     "summaryEsSource": "La Vanguardia",
+     "summaryEn": "Five days of clashes rock Tirana as students join a wider movement demanding Prime Minister Edi Rama's resignation.",
+     "summaryEnSource": "Al Jazeera",
+     "outlets": 7,
+     "outletNames": [
+      "Al Jazeera",
+      "Balkan Insight",
+      "DW",
+      "Euronews",
+      "La Vanguardia",
+      "South China Morning Post",
+      "The Irish Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-16T09:12:04Z",
+     "lastSeen": "2026-10-17T19:26:13Z",
+     "sources": [
+      {
+       "source": "Balkan Insight",
+       "lang": "en",
+       "title": "Albania PM Defiant as Protests Spread to Provincial Cities",
+       "url": "https://balkaninsight.com/2026/10/16/albania-pm-defiant-as-protests-spread-to-provincial-cities/bi/",
+       "publishedAt": "2026-10-16T09:12:04Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "Albania: Students demand political change and resignation of Prime Minister Edi Rama",
+       "url": "https://www.dw.com/en/albania-students-demand-political-change-and-resignation-of-prime-minister-edi-rama/a-79682217?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-16T14:23:00Z"
+      },
+      {
+       "source": "The Irish Times",
+       "lang": "en",
+       "title": "Thousands march in Albanian capital as anti-government protests spread",
+       "url": "https://www.irishtimes.com/world/europe/2026/10/16/thousands-march-in-albanian-capital-as-anti-government-protests-spread/",
+       "publishedAt": "2026-10-16T17:59:06Z"
+      },
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
+       "url": "https://www.lavanguardia.com/internacional/20261017/11661466/protestas-estudiantiles-albania-entran-quinto-dia-nuevos-choques-tirana.html",
+       "publishedAt": "2026-10-17T13:51:56Z"
+      },
+      {
+       "source": "Euronews Español",
+       "lang": "es",
+       "title": "Quinto día de caos en Albania con fuertes choques entre manifestantes y Policía",
+       "url": "https://es.euronews.com/2026/10/17/quinto-dia-de-caos-en-albania-con-fuertes-choques-entre-manifestantes-y-policia",
+       "publishedAt": "2026-10-17T14:17:13Z"
+      },
+      {
+       "source": "South China Morning Post",
+       "lang": "en",
+       "title": "Albanian police fire rubber bullets as student protesters call for PM to quit",
+       "url": "https://www.scmp.com/news/world/europe/article/3371273/albanian-police-fire-rubber-bullets-student-protesters-call-pm-quit",
+       "publishedAt": "2026-10-17T16:05:10Z"
+      },
+      {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Albanian police fire rubber bullets and arrest hundreds as anti-government protests enter fifth day",
+       "url": "https://www.euronews.com/2026/10/17/albanian-police-fire-rubber-bullets-and-arrest-hundreds-as-anti-government-protests-enter-",
+       "publishedAt": "2026-10-17T18:11:08Z"
+      },
+      {
+       "source": "Al Jazeera",
+       "lang": "en",
+       "title": "Albanian police fire rubber bullets as protests against Rama escalate",
+       "url": "https://www.aljazeera.com/news/2026/10/17/albanian-police-fire-rubber-bullets-as-protests-against-rama-escalate?traffic_source=rss",
+       "publishedAt": "2026-10-17T19:26:13Z"
+      }
+     ],
+     "id": "mundo-13",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -5294,7 +5671,7 @@
        "publishedAt": "2026-10-17T19:03:38Z"
       }
      ],
-     "id": "mundo-12",
+     "id": "mundo-14",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -5307,88 +5684,82 @@
      ]
     },
     {
-     "headline": "Ethiopia appoints interim Tigray government",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Ethiopia appoints interim Tigray government",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Ethiopian Prime Minister announced Friday the establishment of an interim administration in the northern Tigray region after recent clashes.",
-     "summaryEnSource": "The Citizen (Sudáfrica)",
+     "headline": "Kenia confirma cuatro nuevos casos de ébola y eleva a siete el total de contagios",
+     "headlineLang": "es",
+     "headlineEs": "Kenia confirma cuatro nuevos casos de ébola y eleva a siete el total de contagios",
+     "headlineEn": "Kenya confirms third Ebola case",
+     "summaryEs": "El Ministerio de Salud de Kenia confirmó este sábado cuatro nuevos casos de ébola tras dar positivo tres trabajadores sanitarios y un familiar del paciente cero detectado en el país, quien había contraído la enfermedad en la República Democrática del Congo (RDC), lo que eleva a siete el número total de contagios, incluido un primer fallecido. La entrada Kenia confirma cuatro nuevos casos de ébola…",
+     "summaryEsSource": "Proceso Digital (Honduras)",
+     "summaryEn": "Kenya confirms third Ebola case, a close relative of the first two patients, Health Ministry says patient has been in quarantine for 10 days; three of 130 contacts remain untraced.",
+     "summaryEnSource": "The Standard (Kenia)",
      "outlets": 7,
      "outletNames": [
+      "ABC Color (Paraguay)",
       "Africanews",
-      "AllAfrica",
-      "DW",
-      "Daily Maverick",
+      "Al Jazeera",
       "France 24",
-      "The Citizen (Sudáfrica)",
-      "The Irish Times"
+      "Proceso Digital (Honduras)",
+      "Stuff",
+      "The Standard (Kenia)"
      ],
      "languages": [
-      "en"
+      "en",
+      "es"
      ],
-     "firstSeen": "2026-10-16T11:30:30Z",
-     "lastSeen": "2026-10-17T07:36:36Z",
+     "firstSeen": "2026-10-16T15:29:48Z",
+     "lastSeen": "2026-10-17T17:28:08Z",
      "sources": [
       {
-       "source": "AllAfrica",
+       "source": "The Standard (Kenia)",
        "lang": "en",
-       "title": "Ethiopia: Ethiopia Establishes Six-Month Caretaker Administration in Tigray",
-       "url": "https://allafrica.com/stories/202610160282.html",
-       "publishedAt": "2026-10-16T11:30:30Z"
+       "title": "Kenya confirms third Ebola case",
+       "url": "https://www.standardmedia.co.ke/article/2001560284/kenya-confirms-third-ebola-case",
+       "publishedAt": "2026-10-16T15:29:48Z"
       },
       {
-       "source": "The Citizen (Sudáfrica)",
+       "source": "Africanews",
        "lang": "en",
-       "title": "Ethiopia appoints interim Tigray government",
-       "url": "https://www.citizen.co.za/news/news-world/news-africa/ethiopia-appoints-interim-tigray-government/",
-       "publishedAt": "2026-10-16T12:41:46Z"
-      },
-      {
-       "source": "The Irish Times",
-       "lang": "en",
-       "title": "Ethiopia’s Abiy names interim Tigray government and calls for election in six months",
-       "url": "https://www.irishtimes.com/world/africa/2026/10/16/ethiopias-abiy-names-interim-tigray-government-and-calls-for-election-in-six-months/",
-       "publishedAt": "2026-10-16T12:50:01Z"
-      },
-      {
-       "source": "Daily Maverick",
-       "lang": "en",
-       "title": "Ethiopia’s Abiy names new Tigray government, wants polls in six months",
-       "url": "https://www.dailymaverick.co.za/article/2026-10-16-ethiopias-abiy-names-new-tigray-government-wants-polls-in-six-months/",
-       "publishedAt": "2026-10-16T13:04:05Z"
+       "title": "Kenya confirms third Ebola case as health officials race to contain outbreak",
+       "url": "http://www.africanews.com/2026/10/16/kenya-confirms-third-ebola-case-as-health-officials-race-to-contain-outbreak/",
+       "publishedAt": "2026-10-16T19:01:28Z"
       },
       {
        "source": "France 24",
        "lang": "en",
-       "title": "Ethiopia announces interim government in Tigray, aims for polls in six months",
-       "url": "https://www.france24.com/en/africa/20261016-ethiopia-announces-interim-government-tigray-calls-for-polls-six-months",
-       "publishedAt": "2026-10-16T13:05:23Z"
+       "title": "KENYA CONFIRMS THIRD EBOLA CASE",
+       "url": "https://www.france24.com/en/kenya-confirms-third-ebola-case",
+       "publishedAt": "2026-10-16T20:25:16Z"
       },
       {
-       "source": "Africanews",
-       "lang": "en",
-       "title": "Ethiopia appoints interim Tigray government after TPLF ouster",
-       "url": "http://www.africanews.com/2026/10/16/ethiopia-appoints-interim-tigray-government-after-tplf-ouster/",
-       "publishedAt": "2026-10-16T14:02:09Z"
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Kenia confirma cuatro nuevos casos de ébola y eleva a siete el total de contagios",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/kenia-confirma-cuatro-nuevos-casos-de-ebola-y-eleva-a-siete-el-total-de-contagios/",
+       "publishedAt": "2026-10-17T16:25:55Z"
       },
       {
-       "source": "DW",
-       "lang": "en",
-       "title": "Ethiopia's Abiy Ahmed appoints interim Tigray government",
-       "url": "https://www.dw.com/en/ethiopia-s-abiy-ahmed-appoints-interim-tigray-government/a-79683519?maca=en-rss-en-africa-8291-rdf",
-       "publishedAt": "2026-10-16T16:19:00Z"
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Kenia confirma cuatro nuevos casos de ébola y eleva a siete el total de contagios",
+       "url": "https://proceso.hn/kenia-confirma-cuatro-nuevos-casos-de-ebola-y-eleva-a-siete-el-total-de-contagios/",
+       "publishedAt": "2026-10-17T16:36:32Z"
       },
       {
-       "source": "Africanews",
+       "source": "Al Jazeera",
        "lang": "en",
-       "title": "Ex-fighters in Ethiopia's Tigray region register for reintegration programme",
-       "url": "http://www.africanews.com/2026/10/17/ex-fighters-in-ethiopias-tigray-region-register-for-reintegration-programme/",
-       "publishedAt": "2026-10-17T07:36:36Z"
+       "title": "Kenya confirms four more Ebola cases, bringing total to seven",
+       "url": "https://www.aljazeera.com/news/2026/10/17/kenya-confirms-four-more-ebola-cases-bringing-total-to-seven?traffic_source=rss",
+       "publishedAt": "2026-10-17T16:48:46Z"
+      },
+      {
+       "source": "Stuff",
+       "lang": "en",
+       "title": "Kenya’s Ebola cases rise to 7, including health workers who cared for the first patient",
+       "url": "https://www.stuff.co.nz/world-news/361047869/kenyas-ebola-cases-rise-7-including-health-workers-who-ca",
+       "publishedAt": "2026-10-17T17:28:08Z"
       }
      ],
-     "id": "mundo-13",
+     "id": "mundo-15",
      "mundoGeneral": false,
      "mundoRegions": [
       "africa"
@@ -5397,6 +5768,85 @@
       {
        "id": "africa",
        "label": "África"
+      }
+     ]
+    },
+    {
+     "headline": "Colombia retira obras sobre diversidad sexual y paz de su Museo Nacional",
+     "headlineLang": "es",
+     "headlineEs": "Colombia retira obras sobre diversidad sexual y paz de su Museo Nacional",
+     "headlineEn": null,
+     "summaryEs": "Decenas de obras con alusión al feminismo, colectivos LGTB y víctimas del conflicto fueron retiradas del Museo Nacional.",
+     "summaryEsSource": "BBC Mundo",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 6,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "BBC Mundo",
+      "CRHoy",
+      "El País",
+      "France 24",
+      "Proceso Digital (Honduras)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T13:22:05Z",
+     "lastSeen": "2026-10-17T19:32:00Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Colombia retira obras sobre diversidad sexual y paz de su Museo Nacional",
+       "url": "https://crhoy.com/mundo/colombia-retira-obras-sobre-diversidad-sexual-y-paz-de-su-museo-nacional/",
+       "publishedAt": "2026-10-16T13:22:05Z"
+      },
+      {
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "La polémica por la retirada de decenas de obras del Museo Nacional de Colombia (y qué dice de la \"batalla cultural\" de De la Espriella)",
+       "url": "https://www.bbc.com/mundo/articles/cw98zj48e4r4o",
+       "publishedAt": "2026-10-16T20:59:10Z"
+      },
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "El Gobierno ordena el retiro de 30 piezas del Museo Nacional: “Es un museo mutilado”",
+       "url": "https://elpais.com/america-colombia/2026-10-17/el-gobierno-ordena-el-retiro-de-30-piezas-del-museo-nacional-es-un-museo-mutilado.html",
+       "publishedAt": "2026-10-17T01:24:28Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "La ministra de Cultura de Colombia justifica el retiro de obras del Museo Nacional por «adoctrinamiento político»",
+       "url": "https://proceso.hn/la-ministra-de-cultura-de-colombia-justifica-el-retiro-de-obras-del-museo-nacional-por-adoctrinamiento-politico/",
+       "publishedAt": "2026-10-17T12:40:51Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "El retiro de más de 30 piezas de museo colombiano, el nuevo campo de la \"batalla cultural\"",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/el-retiro-de-mas-de-30-piezas-de-museo-colombiano-el-nuevo-campo-de-la-batalla-cultural/",
+       "publishedAt": "2026-10-17T18:40:57Z"
+      },
+      {
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "\"Es una afrenta\": la \"contrarrevolución cultural\" de De la Espriella causa preocupación en Colombia",
+       "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261017-es-una-afrenta-la-contrarrevoluci%C3%B3n-cultural-de-de-la-espriella-causa-preocupaci%C3%B3n-en-colombia",
+       "publishedAt": "2026-10-17T19:32:00Z"
+      }
+     ],
+     "id": "mundo-16",
+     "mundoGeneral": false,
+     "mundoRegions": [
+      "sudamerica"
+     ],
+     "chips": [
+      {
+       "id": "sudamerica",
+       "label": "Sudamérica"
       }
      ]
     },
@@ -5467,86 +5917,7 @@
        "publishedAt": "2026-10-17T19:19:19Z"
       }
      ],
-     "id": "mundo-14",
-     "mundoGeneral": false,
-     "mundoRegions": [
-      "europa"
-     ],
-     "chips": [
-      {
-       "id": "europa",
-       "label": "Europa"
-      }
-     ]
-    },
-    {
-     "headline": "French police clash with protesters as thousands rally over cost of living",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "French police clash with protesters as thousands rally over cost of living",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Clashes ⁠broke out between police and protesters in cities across France on Saturday as tens of thousands of people took to the streets in some of the country’s most violent protests in years over rising costs and declining public services. Some 272 people had been arrested by mid-afternoon after violent incidents involving hooded individuals, including in Paris, Marseille in the south, Rennes in…",
-     "summaryEnSource": "South China Morning Post",
-     "outlets": 6,
-     "outletNames": [
-      "Breaking Belize News",
-      "DW",
-      "Financial Times",
-      "Le Monde",
-      "South China Morning Post",
-      "The Guardian"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-17T08:02:00Z",
-     "lastSeen": "2026-10-17T19:19:15Z",
-     "sources": [
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "France: Protesters clash with police in nationwide protests, amid rising social polarization",
-       "url": "https://www.dw.com/en/france-protesters-clash-with-police-in-nationwide-protests-amid-rising-social-polarization/a-79685584?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-17T08:02:00Z"
-      },
-      {
-       "source": "South China Morning Post",
-       "lang": "en",
-       "title": "French police clash with protesters as thousands rally over cost of living",
-       "url": "https://www.scmp.com/news/world/europe/article/3371255/french-protesters-take-streets-over-rising-prices-social-strain",
-       "publishedAt": "2026-10-17T10:12:29Z"
-      },
-      {
-       "source": "Le Monde",
-       "lang": "en",
-       "title": "Clashes erupt in France as protesters vow to make government 'tremble'",
-       "url": "https://www.lemonde.fr/en/france/article/2026/10/17/france-faces-day-of-combined-protests_6758706_7.html",
-       "publishedAt": "2026-10-17T10:40:49Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Police clash with protesters as tens of thousands take to streets across France",
-       "url": "https://www.theguardian.com/world/2026/oct/17/protests-france-high-prices-social-security-gilets-jaunes",
-       "publishedAt": "2026-10-17T19:08:46Z"
-      },
-      {
-       "source": "Financial Times",
-       "lang": "en",
-       "title": "Protesters clash with police as demonstrations erupt across France",
-       "url": "https://www.ft.com/content/bcb6c27a-f082-4867-ade4-ae6eb757b780",
-       "publishedAt": "2026-10-17T19:15:19Z"
-      },
-      {
-       "source": "Breaking Belize News",
-       "lang": "en",
-       "title": "International News: Police and protesters clash across France in major unrest over cost of living",
-       "url": "https://www.breakingbelizenews.com/2026/10/17/international-news-police-and-protesters-clash-across-france-in-major-unrest-over-cost-of-living/",
-       "publishedAt": "2026-10-17T19:19:15Z"
-      }
-     ],
-     "id": "mundo-15",
+     "id": "mundo-17",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -5625,7 +5996,7 @@
        "publishedAt": "2026-10-17T18:06:53Z"
       }
      ],
-     "id": "mundo-16",
+     "id": "mundo-18",
      "mundoGeneral": false,
      "mundoRegions": [
       "africa"
@@ -5704,7 +6075,7 @@
        "publishedAt": "2026-10-17T17:34:21Z"
       }
      ],
-     "id": "mundo-17",
+     "id": "mundo-19",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -5811,7 +6182,7 @@
        "publishedAt": "2026-10-17T14:40:07Z"
       }
      ],
-     "id": "mundo-18",
+     "id": "mundo-20",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -5897,7 +6268,7 @@
        "publishedAt": "2026-10-17T01:57:27Z"
       }
      ],
-     "id": "mundo-19",
+     "id": "mundo-21",
      "mundoGeneral": false,
      "mundoRegions": [
       "latam"
@@ -5910,122 +6281,152 @@
      ]
     },
     {
-     "headline": "¿Quién era Juan Francisco Solórzano Foppa, el exjefe de la SAT que murió en un ataque armado en el Campo Marte este sábado?",
+     "headline": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
      "headlineLang": "es",
-     "headlineEs": "¿Quién era Juan Francisco Solórzano Foppa, el exjefe de la SAT que murió en un ataque armado en el Campo Marte este sábado?",
+     "headlineEs": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
      "headlineEn": null,
-     "summaryEs": "Un ataque armado registrado la mañana de este sábado 17 de octubre en cercanías del Campo Marte, en la zona 5 capitalina, cobró la vida del abogado, exfiscal del Ministerio Público (MP) y exjefe de la Superintendencia de Administración Tributaria (SAT), Juan Francisco Solórzano Foppa. De acuerdo con información preliminar, se trató de un ataque […]",
-     "summaryEsSource": "La Hora (Guatemala)",
+     "summaryEs": "Los aparatos fueron interceptados tras entrar en el espacio aéreo rumano, en plena escalada de ataques contra buques mercantes en el mar Negro.",
+     "summaryEsSource": "20minutos",
      "summaryEn": null,
      "summaryEnSource": null,
      "outlets": 5,
      "outletNames": [
-      "Crónica (Guatemala)",
-      "Infobae",
-      "La Hora (Guatemala)",
-      "Prensa Libre",
-      "República (Guatemala)"
+      "20minutos",
+      "ABC Color (Paraguay)",
+      "DW",
+      "El Universal (México)",
+      "La Vanguardia"
      ],
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-17T16:25:01Z",
-     "lastSeen": "2026-10-17T19:25:22Z",
+     "firstSeen": "2026-10-17T16:35:06Z",
+     "lastSeen": "2026-10-17T19:34:00Z",
      "sources": [
       {
-       "source": "La Hora (Guatemala)",
+       "source": "ABC Color (Paraguay)",
        "lang": "es",
-       "title": "Muere en incidente armado en canchas del Campo Marte el abogado Solórzano Foppa",
-       "url": "https://lahora.gt/nacionales/jcortega/2026/10/17/muere-en-incidente-armado-en-canchas-del-campo-marte-el-abogado-solorzano-foppa-now/",
-       "publishedAt": "2026-10-17T16:25:01Z"
+       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/dos-cazas-rumanos-derriban-dos-drones-sobre-sus-aguas-territoriales-en-el-mar-negro/",
+       "publishedAt": "2026-10-17T16:35:06Z"
       },
       {
-       "source": "Prensa Libre",
+       "source": "La Vanguardia",
        "lang": "es",
-       "title": "Reportan muerte de Juan Francisco Solórzano Foppa, exjefe de SAT y exfiscal del MP",
-       "url": "https://www.prensalibre.com/guatemala/sucesos/reportan-muerte-de-juan-francisco-solorzano-foppa-exdirector-de-la-sat-breaking/",
-       "publishedAt": "2026-10-17T16:25:53Z"
+       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+       "url": "https://www.lavanguardia.com/internacional/20261017/11661529/dos-cazas-rumanos-derriban-dos-drones-sobre-aguas-territoriales-mar-negro.html",
+       "publishedAt": "2026-10-17T16:36:09Z"
       },
       {
-       "source": "Prensa Libre",
+       "source": "20minutos",
        "lang": "es",
-       "title": "Juan Francisco Solórzano Foppa: de investigar el caso La Línea y dirigir la SAT a su último análisis sobre la matanza en Huité",
-       "url": "https://www.prensalibre.com/guatemala/justicia/juan-francisco-solorzano-foppa-de-investigar-el-caso-la-linea-y-dirigir-la-sat-a-su-ultimo-analisis-sobre-la-matanza-en-huite-breaking/",
-       "publishedAt": "2026-10-17T16:30:45Z"
+       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+       "url": "https://www.20minutos.es/internacional/dos-cazas-rumanos-derriban-dos-drones-sobre-sus-aguas-territoriales-mar-negro_7050044_0.html",
+       "publishedAt": "2026-10-17T17:04:01Z"
       },
       {
-       "source": "República (Guatemala)",
+       "source": "El Universal (México)",
        "lang": "es",
-       "title": "Asesinan a Juan Francisco Solórzano Foppa en ataque armado en Campo Marte",
-       "url": "https://republica.com/actualidad/asesinan-a-juan-francisco-solorzano-foppa-en-ataque-armado-en-campo-marte-2026101710330",
-       "publishedAt": "2026-10-17T16:33:00Z"
+       "title": "Rumania derriba drones en su espacio aéreo sobre el mar Negro; dice que es un modelo usado por Rusia en la guerra con Ucrania",
+       "url": "https://www.eluniversal.com.mx/mundo/rumania-derriba-drones-en-su-espacio-aereo-sobre-el-mar-negro-otan-abordara-el-tema-en-reunion-del-consejo-del-atlantico-norte/",
+       "publishedAt": "2026-10-17T17:50:16Z"
       },
       {
-       "source": "La Hora (Guatemala)",
+       "source": "ABC Color (Paraguay)",
        "lang": "es",
-       "title": "PNC reporta la captura de dos de los presuntos responsables del asesinato de Juan Francisco Solórzano Foppa",
-       "url": "https://lahora.gt/nacionales/jcortega/2026/10/17/pnc-reporta-la-captura-de-dos-de-los-presuntos-responsables-del-asesinato-de-juan-francisco-solorzano-foppa-now/",
-       "publishedAt": "2026-10-17T17:26:40Z"
+       "title": "Rumanía identifica los dos drones derribados como Geran, un modelo usado por Rusia",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/rumania-identifica-los-dos-drones-derribados-como-geran-un-modelo-usado-por-rusia/",
+       "publishedAt": "2026-10-17T18:26:04Z"
       },
       {
-       "source": "República (Guatemala)",
+       "source": "DW Español",
        "lang": "es",
-       "title": "Arévalo condena el asesinato de Juan Francisco Solórzano Foppa",
-       "url": "https://republica.com/politica/arevalo-condena-el-asesinato-de-juan-francisco-solorzano-foppa-2026101711270",
-       "publishedAt": "2026-10-17T17:27:00Z"
-      },
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "El exjefe de la Superintendencia de Administración Tributaria de Guatemala, Juan Francisco Solórzano, es asesinado en el Campo Marte",
-       "url": "https://www.infobae.com/america/2026/10/17/el-exjefe-de-la-superintendencia-de-administracion-tributaria-de-guatemala-juan-francisco-solorzano-es-asesinado-en-el-campo-marte/",
-       "publishedAt": "2026-10-17T17:34:11Z"
-      },
-      {
-       "source": "La Hora (Guatemala)",
-       "lang": "es",
-       "title": "¿Quién era Juan Francisco Solórzano Foppa, el exjefe de la SAT que murió en un ataque armado en el Campo Marte este sábado?",
-       "url": "https://lahora.gt/nacionales/kgutierrez/2026/10/17/quien-era-juan-francisco-solorzano-foppa-el-exjefe-de-la-sat-asesinado-en-el-campo-marte-este-sabado/",
-       "publishedAt": "2026-10-17T17:37:15Z"
-      },
-      {
-       "source": "Crónica (Guatemala)",
-       "lang": "es",
-       "title": "Asesinan a Juan Francisco Solórzano Foppa, crítico del poder político y judicial",
-       "url": "https://cronica.com.gt/asesinan-a-juan-francisco-solorzano-foppa-critico-del-poder-politico-y-judicial/",
-       "publishedAt": "2026-10-17T17:38:59Z"
-      },
-      {
-       "source": "República (Guatemala)",
-       "lang": "es",
-       "title": "PNC captura a dos sospechosos por ataque donde murió Solórzano Foppa",
-       "url": "https://republica.com/actualidad/pnc-captura-a-dos-sospechosos-por-ataque-donde-murio-solorzano-foppa-2026101711450",
-       "publishedAt": "2026-10-17T17:45:00Z"
-      },
-      {
-       "source": "La Hora (Guatemala)",
-       "lang": "es",
-       "title": "Bernardo Arévalo urge dar con autores materiales e intelectuales del asesinato de Juan Francisco Solórzano Foppa",
-       "url": "https://lahora.gt/nacionales/kgutierrez/2026/10/17/bernardo-arevalo-urge-dar-con-autores-materiales-e-intelectuales-del-asesinato-de-juan-francisco-solorzano-foppa-now/",
-       "publishedAt": "2026-10-17T18:34:29Z"
-      },
-      {
-       "source": "La Hora (Guatemala)",
-       "lang": "es",
-       "title": "Distintos sectores condenan el asesinato de Solórzano Foppa y piden que no quede impune",
-       "url": "https://lahora.gt/nacionales/kjordan/2026/10/17/distintos-sectores-condenan-el-asesinato-de-solorzano-foppa-y-piden-que-no-quede-impune/",
-       "publishedAt": "2026-10-17T19:25:22Z"
+       "title": "Cazas F-16 rumanos derriban dos drones sobre aguas territoriales rumanas",
+       "url": "https://www.dw.com/es/cazas-f-16-rumanos-derriban-dos-drones-sobre-aguas-territoriales-rumanas/a-79689734?maca=spa-rss-sp-all-1122-xml-mrss",
+       "publishedAt": "2026-10-17T19:34:00Z"
       }
      ],
-     "id": "mundo-20",
+     "id": "mundo-22",
      "mundoGeneral": false,
      "mundoRegions": [
-      "centroamerica"
+      "europa"
      ],
      "chips": [
       {
-       "id": "centroamerica",
-       "label": "Centroamérica"
+       "id": "europa",
+       "label": "Europa"
+      }
+     ]
+    },
+    {
+     "headline": "Macron promete castigos para saqueadores y pide frente unido contra «sembradores de caos»",
+     "headlineLang": "es",
+     "headlineEs": "Macron promete castigos para saqueadores y pide frente unido contra «sembradores de caos»",
+     "headlineEn": "Macron vows to 'punish' those who carried out vandalism",
+     "summaryEs": "El presidente francés, Emmanuel Macron, afirmó este sábado que no hay \"ningún lugar para la violencia\" en Francia, prometió castigos para los autores de destrozos y saqueos en esta jornada de protestas por el encarecimiento de la vida, y pidió un \"frente unido\" contra \"los que siembran el caos\". La entrada Macron promete castigos para saqueadores y pide frente unido contra «sembradores de caos»…",
+     "summaryEsSource": "Proceso Digital (Honduras)",
+     "summaryEn": "France's President Emmanuel Macron vowed to punish those who wrecked public property or raided shops during the protests.",
+     "summaryEnSource": "RTÉ",
+     "outlets": 5,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "La Nación (Costa Rica)",
+      "Proceso Digital (Honduras)",
+      "RPP (Perú)",
+      "RTÉ"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-17T11:00:58Z",
+     "lastSeen": "2026-10-17T19:25:26Z",
+     "sources": [
+      {
+       "source": "RTÉ",
+       "lang": "en",
+       "title": "Macron vows to 'punish' those who carried out vandalism",
+       "url": "https://www.rte.ie/news/2026/1017/1595755-france-protests/",
+       "publishedAt": "2026-10-17T11:00:58Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Macron asegura que castigará saqueos y vandalismo tras protestas en Francia que dejaron 400 detenidos",
+       "url": "https://www.nacion.com/el-mundo/macron-asegura-que-castigara-saqueos-y-vandalismo/QQ7GPMLTCJHQNAKX4QUQW4Y3ME/story/",
+       "publishedAt": "2026-10-17T18:46:09Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Macron promete castigos para saqueadores y pide frente unido contra \"sembradores de caos\"",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/macron-promete-castigos-para-saqueadores-y-pide-frente-unido-contra-sembradores-de-caos/",
+       "publishedAt": "2026-10-17T18:50:10Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Macron promete castigos para saqueadores y pide frente unido contra «sembradores de caos»",
+       "url": "https://proceso.hn/macron-promete-castigos-para-saqueadores-y-pide-frente-unido-contra-sembradores-de-caos/",
+       "publishedAt": "2026-10-17T18:57:00Z"
+      },
+      {
+       "source": "RPP (Perú)",
+       "lang": "es",
+       "title": "Emmanuel Macron responde ante las protestas en calles de Francia: \"Serán perseguidos y castigados\"",
+       "url": "https://rpp.pe/mundo/europa/macron-promete-castigos-para-saqueadores-y-pide-frente-unido-contra-sembradores-de-caos-noticia-1713158",
+       "publishedAt": "2026-10-17T19:25:26Z"
+      }
+     ],
+     "id": "mundo-23",
+     "mundoGeneral": false,
+     "mundoRegions": [
+      "europa"
+     ],
+     "chips": [
+      {
+       "id": "europa",
+       "label": "Europa"
       }
      ]
     },
@@ -6088,7 +6489,7 @@
        "publishedAt": "2026-10-17T19:20:14Z"
       }
      ],
-     "id": "mundo-21",
+     "id": "mundo-24",
      "mundoGeneral": false,
      "mundoRegions": [
       "latam"
@@ -6097,6 +6498,77 @@
       {
        "id": "latam",
        "label": "Latinoamérica"
+      }
+     ]
+    },
+    {
+     "headline": "International News: Police and protesters clash across France in major unrest over cost of living",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "International News: Police and protesters clash across France in major unrest over cost of living",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "By Zoila Palma: Violent clashes erupted between police and protesters across France today as hundreds of thousands of people reportedly took to the streets to demonstrate against rising living costs, inequality and declining public services. The unrest, described as some of the country’s most destructive in years, resulted in at least 272 arrests, according to […]",
+     "summaryEnSource": "Breaking Belize News",
+     "outlets": 5,
+     "outletNames": [
+      "Breaking Belize News",
+      "DW",
+      "Financial Times",
+      "Le Monde",
+      "South China Morning Post"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-17T08:02:00Z",
+     "lastSeen": "2026-10-17T19:19:15Z",
+     "sources": [
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "France: Protesters clash with police in nationwide protests, amid rising social polarization",
+       "url": "https://www.dw.com/en/france-protesters-clash-with-police-in-nationwide-protests-amid-rising-social-polarization/a-79685584?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-17T08:02:00Z"
+      },
+      {
+       "source": "South China Morning Post",
+       "lang": "en",
+       "title": "French police clash with protesters as thousands rally over cost of living",
+       "url": "https://www.scmp.com/news/world/europe/article/3371255/french-protesters-take-streets-over-rising-prices-social-strain",
+       "publishedAt": "2026-10-17T10:12:29Z"
+      },
+      {
+       "source": "Le Monde",
+       "lang": "en",
+       "title": "Clashes erupt in France as protesters vow to make government 'tremble'",
+       "url": "https://www.lemonde.fr/en/france/article/2026/10/17/france-faces-day-of-combined-protests_6758706_7.html",
+       "publishedAt": "2026-10-17T10:40:49Z"
+      },
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Protesters clash with police as demonstrations erupt across France",
+       "url": "https://www.ft.com/content/bcb6c27a-f082-4867-ade4-ae6eb757b780",
+       "publishedAt": "2026-10-17T19:15:19Z"
+      },
+      {
+       "source": "Breaking Belize News",
+       "lang": "en",
+       "title": "International News: Police and protesters clash across France in major unrest over cost of living",
+       "url": "https://www.breakingbelizenews.com/2026/10/17/international-news-police-and-protesters-clash-across-france-in-major-unrest-over-cost-of-living/",
+       "publishedAt": "2026-10-17T19:19:15Z"
+      }
+     ],
+     "id": "mundo-25",
+     "mundoGeneral": false,
+     "mundoRegions": [
+      "europa"
+     ],
+     "chips": [
+      {
+       "id": "europa",
+       "label": "Europa"
       }
      ]
     },
@@ -6159,7 +6631,7 @@
        "publishedAt": "2026-10-17T18:55:45Z"
       }
      ],
-     "id": "mundo-22",
+     "id": "mundo-26",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -6168,77 +6640,6 @@
       {
        "id": "europa",
        "label": "Europa"
-      }
-     ]
-    },
-    {
-     "headline": "El retiro de más de 30 piezas de museo colombiano, el nuevo campo de la \"batalla cultural\"",
-     "headlineLang": "es",
-     "headlineEs": "El retiro de más de 30 piezas de museo colombiano, el nuevo campo de la \"batalla cultural\"",
-     "headlineEn": null,
-     "summaryEs": "En total fueron retirados al menos 30 afiches, fotografías y objetos de tres salas del Museo Nacional, relacionados con la historia de los movimientos feministas y LGBTI, las víctimas de la violencia política y el acuerdo de paz firmado en 2016 entre el Estado y las Fuerzas Armadas Revolucionarias de Colombia (FARC). Entre las piezas estaban una bandera del orgullo perteneciente a la activista…",
-     "summaryEsSource": "ABC Color (Paraguay)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 5,
-     "outletNames": [
-      "ABC Color (Paraguay)",
-      "BBC Mundo",
-      "CRHoy",
-      "El País",
-      "Proceso Digital (Honduras)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T13:22:05Z",
-     "lastSeen": "2026-10-17T18:40:57Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Colombia retira obras sobre diversidad sexual y paz de su Museo Nacional",
-       "url": "https://crhoy.com/mundo/colombia-retira-obras-sobre-diversidad-sexual-y-paz-de-su-museo-nacional/",
-       "publishedAt": "2026-10-16T13:22:05Z"
-      },
-      {
-       "source": "BBC Mundo",
-       "lang": "es",
-       "title": "La polémica por la retirada de decenas de obras del Museo Nacional de Colombia (y qué dice de la \"batalla cultural\" de De la Espriella)",
-       "url": "https://www.bbc.com/mundo/articles/cw98zj48e4r4o",
-       "publishedAt": "2026-10-16T20:59:10Z"
-      },
-      {
-       "source": "El País",
-       "lang": "es",
-       "title": "El Gobierno ordena el retiro de 30 piezas del Museo Nacional: “Es un museo mutilado”",
-       "url": "https://elpais.com/america-colombia/2026-10-17/el-gobierno-ordena-el-retiro-de-30-piezas-del-museo-nacional-es-un-museo-mutilado.html",
-       "publishedAt": "2026-10-17T01:24:28Z"
-      },
-      {
-       "source": "Proceso Digital (Honduras)",
-       "lang": "es",
-       "title": "La ministra de Cultura de Colombia justifica el retiro de obras del Museo Nacional por «adoctrinamiento político»",
-       "url": "https://proceso.hn/la-ministra-de-cultura-de-colombia-justifica-el-retiro-de-obras-del-museo-nacional-por-adoctrinamiento-politico/",
-       "publishedAt": "2026-10-17T12:40:51Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "El retiro de más de 30 piezas de museo colombiano, el nuevo campo de la \"batalla cultural\"",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/el-retiro-de-mas-de-30-piezas-de-museo-colombiano-el-nuevo-campo-de-la-batalla-cultural/",
-       "publishedAt": "2026-10-17T18:40:57Z"
-      }
-     ],
-     "id": "mundo-23",
-     "mundoGeneral": false,
-     "mundoRegions": [
-      "sudamerica"
-     ],
-     "chips": [
-      {
-       "id": "sudamerica",
-       "label": "Sudamérica"
       }
      ]
     },
@@ -6301,7 +6702,7 @@
        "publishedAt": "2026-10-17T18:40:21Z"
       }
      ],
-     "id": "mundo-24",
+     "id": "mundo-27",
      "mundoGeneral": false,
      "mundoRegions": [
       "centroamerica"
@@ -6372,7 +6773,7 @@
        "publishedAt": "2026-10-17T17:54:12Z"
       }
      ],
-     "id": "mundo-25",
+     "id": "mundo-28",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -6385,73 +6786,73 @@
      ]
     },
     {
-     "headline": "Kenya confirms third Ebola case",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Kenya confirms third Ebola case",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Kenya confirms third Ebola case, a close relative of the first two patients, Health Ministry says patient has been in quarantine for 10 days; three of 130 contacts remain untraced.",
-     "summaryEnSource": "The Standard (Kenia)",
+     "headline": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
+     "headlineLang": "es",
+     "headlineEs": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
+     "headlineEn": null,
+     "summaryEs": "París.- Las protestas contra el encarecimiento de la vida celebradas este sábado en Francia estuvieron acompañadas de enfrentamientos entre grupos violentos y fuerzas del orden, incendios y daños o asaltos en edificios públicos y comercios en ciudades como París , Marsella (sur), Lyon (sureste) o Lille (noroeste), entre otras. La movilización reunió a decenas de miles de personas en todo el país…",
+     "summaryEsSource": "El Universal (México)",
+     "summaryEn": null,
+     "summaryEnSource": null,
      "outlets": 5,
      "outletNames": [
-      "Africanews",
-      "Al Jazeera",
-      "France 24",
-      "Stuff",
-      "The Standard (Kenia)"
+      "ABC Color (Paraguay)",
+      "CRHoy",
+      "El Nacional (Venezuela)",
+      "El Universal (México)",
+      "Proceso Digital (Honduras)"
      ],
      "languages": [
-      "en"
+      "es"
      ],
-     "firstSeen": "2026-10-16T15:29:48Z",
-     "lastSeen": "2026-10-17T17:28:08Z",
+     "firstSeen": "2026-10-17T13:31:03Z",
+     "lastSeen": "2026-10-17T17:02:46Z",
      "sources": [
       {
-       "source": "The Standard (Kenia)",
-       "lang": "en",
-       "title": "Kenya confirms third Ebola case",
-       "url": "https://www.standardmedia.co.ke/article/2001560284/kenya-confirms-third-ebola-case",
-       "publishedAt": "2026-10-16T15:29:48Z"
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Disturbios en Francia: Granada le amputa una mano a manifestante",
+       "url": "https://crhoy.com/mundo/disturbios-en-francia-granada-le-amputa-una-mano-a-manifestante/",
+       "publishedAt": "2026-10-17T13:31:03Z"
       },
       {
-       "source": "Africanews",
-       "lang": "en",
-       "title": "Kenya confirms third Ebola case as health officials race to contain outbreak",
-       "url": "http://www.africanews.com/2026/10/16/kenya-confirms-third-ebola-case-as-health-officials-race-to-contain-outbreak/",
-       "publishedAt": "2026-10-16T19:01:28Z"
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Francia registra disturbios en París, Lyon o Marsella durante protestas por alto costo de vida",
+       "url": "https://proceso.hn/francia-registra-disturbios-en-paris-lyon-o-marsella-durante-protestas-por-alto-costo-de-vida/",
+       "publishedAt": "2026-10-17T16:01:08Z"
       },
       {
-       "source": "France 24",
-       "lang": "en",
-       "title": "KENYA CONFIRMS THIRD EBOLA CASE",
-       "url": "https://www.france24.com/en/kenya-confirms-third-ebola-case",
-       "publishedAt": "2026-10-16T20:25:16Z"
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
+       "publishedAt": "2026-10-17T16:11:03Z"
       },
       {
-       "source": "Al Jazeera",
-       "lang": "en",
-       "title": "Kenya confirms four more Ebola cases, bringing total to seven",
-       "url": "https://www.aljazeera.com/news/2026/10/17/kenya-confirms-four-more-ebola-cases-bringing-total-to-seven?traffic_source=rss",
-       "publishedAt": "2026-10-17T16:48:46Z"
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
+       "url": "https://www.eluniversal.com.mx/mundo/video-disturbios-en-francia-durante-protestas-por-encarecimiento-de-la-vida-joven-pierde-una-mano-al-explotarle-granada-policial/",
+       "publishedAt": "2026-10-17T17:02:23Z"
       },
       {
-       "source": "Stuff",
-       "lang": "en",
-       "title": "Kenya’s Ebola cases rise to 7, including health workers who cared for the first patient",
-       "url": "https://www.stuff.co.nz/world-news/361047869/kenyas-ebola-cases-rise-7-including-health-workers-who-ca",
-       "publishedAt": "2026-10-17T17:28:08Z"
+       "source": "El Nacional (Venezuela)",
+       "lang": "es",
+       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
+       "url": "https://www.elnacional.com/2026/10/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
+       "publishedAt": "2026-10-17T17:02:46Z"
       }
      ],
-     "id": "mundo-26",
+     "id": "mundo-29",
      "mundoGeneral": false,
      "mundoRegions": [
-      "africa"
+      "europa"
      ],
      "chips": [
       {
-       "id": "africa",
-       "label": "África"
+       "id": "europa",
+       "label": "Europa"
       }
      ]
     },
@@ -6514,79 +6915,7 @@
        "publishedAt": "2026-10-17T15:38:17Z"
       }
      ],
-     "id": "mundo-27",
-     "mundoGeneral": false,
-     "mundoRegions": [
-      "europa"
-     ],
-     "chips": [
-      {
-       "id": "europa",
-       "label": "Europa"
-      }
-     ]
-    },
-    {
-     "headline": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
-     "headlineLang": "es",
-     "headlineEs": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
-     "headlineEn": "Thousands march in Albanian capital as anti-government protests spread",
-     "summaryEs": "Los jóvenes denuncian el deterioro de la universidad, el coste de los estudios y la falta de oportunidades y reclaman la dimisión del primer ministro Edi Rama",
-     "summaryEsSource": "La Vanguardia",
-     "summaryEn": "Empty lecture halls, burning buildings and demands for change: Albanian students are spearheading a protest movement that has become the biggest challenge to Prime Minister Edi Rama in years.",
-     "summaryEnSource": "DW",
-     "outlets": 5,
-     "outletNames": [
-      "Balkan Insight",
-      "DW",
-      "Euronews",
-      "La Vanguardia",
-      "The Irish Times"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-16T09:12:04Z",
-     "lastSeen": "2026-10-17T14:17:13Z",
-     "sources": [
-      {
-       "source": "Balkan Insight",
-       "lang": "en",
-       "title": "Albania PM Defiant as Protests Spread to Provincial Cities",
-       "url": "https://balkaninsight.com/2026/10/16/albania-pm-defiant-as-protests-spread-to-provincial-cities/bi/",
-       "publishedAt": "2026-10-16T09:12:04Z"
-      },
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "Albania: Students demand political change and resignation of Prime Minister Edi Rama",
-       "url": "https://www.dw.com/en/albania-students-demand-political-change-and-resignation-of-prime-minister-edi-rama/a-79682217?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-16T14:23:00Z"
-      },
-      {
-       "source": "The Irish Times",
-       "lang": "en",
-       "title": "Thousands march in Albanian capital as anti-government protests spread",
-       "url": "https://www.irishtimes.com/world/europe/2026/10/16/thousands-march-in-albanian-capital-as-anti-government-protests-spread/",
-       "publishedAt": "2026-10-16T17:59:06Z"
-      },
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
-       "url": "https://www.lavanguardia.com/internacional/20261017/11661466/protestas-estudiantiles-albania-entran-quinto-dia-nuevos-choques-tirana.html",
-       "publishedAt": "2026-10-17T13:51:56Z"
-      },
-      {
-       "source": "Euronews Español",
-       "lang": "es",
-       "title": "Quinto día de caos en Albania con fuertes choques entre manifestantes y Policía",
-       "url": "https://es.euronews.com/2026/10/17/quinto-dia-de-caos-en-albania-con-fuertes-choques-entre-manifestantes-y-policia",
-       "publishedAt": "2026-10-17T14:17:13Z"
-      }
-     ],
-     "id": "mundo-28",
+     "id": "mundo-30",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -6657,7 +6986,7 @@
        "publishedAt": "2026-10-17T08:27:20Z"
       }
      ],
-     "id": "mundo-29",
+     "id": "mundo-31",
      "mundoGeneral": false,
      "mundoRegions": [
       "sudamerica"
@@ -6728,7 +7057,7 @@
        "publishedAt": "2026-10-17T00:04:02Z"
       }
      ],
-     "id": "mundo-30",
+     "id": "mundo-32",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -6800,7 +7129,7 @@
        "publishedAt": "2026-10-16T06:56:10Z"
       }
      ],
-     "id": "mundo-31",
+     "id": "mundo-33",
      "mundoGeneral": false,
      "mundoRegions": [
       "europa"
@@ -6822,7 +7151,7 @@
     {
      "id": "centroamerica",
      "label": "Centroamérica",
-     "count": 3
+     "count": 2
     },
     {
      "id": "latam",
@@ -6837,7 +7166,7 @@
     {
      "id": "europa",
      "label": "Europa",
-     "count": 16
+     "count": 19
     },
     {
      "id": "asia",
@@ -6971,6 +7300,82 @@
      "id": "sucesos-1"
     },
     {
+     "headline": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
+     "headlineLang": "es",
+     "headlineEs": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
+     "headlineEn": "Albanian police fire rubber bullets as protests against Rama escalate",
+     "summaryEs": "Los jóvenes denuncian el deterioro de la universidad, el coste de los estudios y la falta de oportunidades y reclaman la dimisión del primer ministro Edi Rama",
+     "summaryEsSource": "La Vanguardia",
+     "summaryEn": "Five days of clashes rock Tirana as students join a wider movement demanding Prime Minister Edi Rama's resignation.",
+     "summaryEnSource": "Al Jazeera",
+     "outlets": 5,
+     "outletNames": [
+      "Al Jazeera",
+      "DW",
+      "Euronews",
+      "France 24",
+      "La Vanguardia"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-16T14:23:00Z",
+     "lastSeen": "2026-10-17T19:26:13Z",
+     "sources": [
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "Albania: Students demand political change and resignation of Prime Minister Edi Rama",
+       "url": "https://www.dw.com/en/albania-students-demand-political-change-and-resignation-of-prime-minister-edi-rama/a-79682217?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-16T14:23:00Z"
+      },
+      {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Albanian PM blames 'foreign hands' for escalating anti-government unrest",
+       "url": "https://www.euronews.com/2026/10/16/albanian-pm-blames-foreign-hands-for-escalating-anti-government-unrest",
+       "publishedAt": "2026-10-16T17:25:11Z"
+      },
+      {
+       "source": "France 24",
+       "lang": "en",
+       "title": "Clashes grip Tirana as Albanian PM blames 'foreign hands' for mounting unrest",
+       "url": "https://www.france24.com/en/europe/20261016-clashes-grip-tirana-as-albanian-pm-blames-foreign-hands",
+       "publishedAt": "2026-10-16T19:59:23Z"
+      },
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
+       "url": "https://www.lavanguardia.com/internacional/20261017/11661466/protestas-estudiantiles-albania-entran-quinto-dia-nuevos-choques-tirana.html",
+       "publishedAt": "2026-10-17T13:51:56Z"
+      },
+      {
+       "source": "Euronews Español",
+       "lang": "es",
+       "title": "Quinto día de caos en Albania con fuertes choques entre manifestantes y Policía",
+       "url": "https://es.euronews.com/2026/10/17/quinto-dia-de-caos-en-albania-con-fuertes-choques-entre-manifestantes-y-policia",
+       "publishedAt": "2026-10-17T14:17:13Z"
+      },
+      {
+       "source": "Euronews",
+       "lang": "en",
+       "title": "Albanian police fire rubber bullets and arrest hundreds as anti-government protests enter fifth day",
+       "url": "https://www.euronews.com/2026/10/17/albanian-police-fire-rubber-bullets-and-arrest-hundreds-as-anti-government-protests-enter-",
+       "publishedAt": "2026-10-17T18:11:08Z"
+      },
+      {
+       "source": "Al Jazeera",
+       "lang": "en",
+       "title": "Albanian police fire rubber bullets as protests against Rama escalate",
+       "url": "https://www.aljazeera.com/news/2026/10/17/albanian-police-fire-rubber-bullets-as-protests-against-rama-escalate?traffic_source=rss",
+       "publishedAt": "2026-10-17T19:26:13Z"
+      }
+     ],
+     "id": "sucesos-2"
+    },
+    {
      "headline": "Condenan a 158 años de cárcel a tres hombres por el asesinato de dos hermanos surfistas australianos y su amigo estadounidense en México",
      "headlineLang": "es",
      "headlineEs": "Condenan a 158 años de cárcel a tres hombres por el asesinato de dos hermanos surfistas australianos y su amigo estadounidense en México",
@@ -7038,7 +7443,7 @@
        "publishedAt": "2026-10-17T12:08:49Z"
       }
      ],
-     "id": "sucesos-2"
+     "id": "sucesos-3"
     }
    ]
   },
@@ -7056,19 +7461,21 @@
      "summaryEsSource": "El Comercio (Perú)",
      "summaryEn": "A group of Israeli settlers attacked vehicles carrying European diplomats in the West Bank. Belgium has condemned the attack.",
      "summaryEnSource": "DW",
-     "outlets": 16,
+     "outlets": 18,
      "outletNames": [
-      "Al Jazeera",
       "BBC",
       "CBS News",
       "Clarín",
       "DW",
       "El Comercio (Perú)",
       "El Confidencial",
+      "El Financiero (Costa Rica)",
+      "El Mundo",
       "El País",
       "Euronews",
       "Financial Times",
       "France 24",
+      "La Vanguardia",
       "Le Monde",
       "NPR",
       "Sky News",
@@ -7118,6 +7525,13 @@
        "publishedAt": "2026-10-16T16:34:58Z"
       },
       {
+       "source": "El Financiero (Costa Rica)",
+       "lang": "es",
+       "title": "Colonos israelíes dan brutal paliza a una periodista de “The Washington Post” en Cisjordania ocupada",
+       "url": "https://www.elfinancierocr.com/internacionales/colonos-israelies-dan-brutal-paliza-a-una/NBETIZ2HYNCKPJPEQBALPDHU2A/story/",
+       "publishedAt": "2026-10-16T19:08:35Z"
+      },
+      {
        "source": "The New York Times",
        "lang": "en",
        "title": "Israeli Settlers Attack Palestinians and Washington Post Journalist in West Bank",
@@ -7132,11 +7546,11 @@
        "publishedAt": "2026-10-16T19:32:00Z"
       },
       {
-       "source": "Al Jazeera",
-       "lang": "en",
-       "title": "Israeli settlers attack European diplomats during West Bank olive harvest",
-       "url": "https://www.aljazeera.com/news/2026/10/17/several-palestinians-injured-detained-in-ongoing-west-bank-pogrom?traffic_source=rss",
-       "publishedAt": "2026-10-17T12:48:03Z"
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "La veterana fotógrafa del Washington Post, Heidi Levine, es brutalmente agredida por colonos israelíes en Abu Falah (Cisjordania)",
+       "url": "https://www.elmundo.es/internacional/2026/10/17/6ad327aee4d4d84e498b456e.html",
+       "publishedAt": "2026-10-17T07:53:32Z"
       },
       {
        "source": "France 24",
@@ -7144,6 +7558,13 @@
        "title": "🔴 Israeli settlers beat French mayor, attack European diplomatic cars in West Bank",
        "url": "https://www.france24.com/en/middle-east/20261017-israeli-settlers-attack-european-delegation-convoy-in-west-bank-beat-french-mayor",
        "publishedAt": "2026-10-17T14:58:54Z"
+      },
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Colonos israelíes atacan a diplomáticos europeos durante la cosecha de la aceituna",
+       "url": "https://www.lavanguardia.com/internacional/20261017/11661502/colonos-israelies-atacan-diplomaticos-europeos-cosecha-aceituna.html",
+       "publishedAt": "2026-10-17T15:00:53Z"
       },
       {
        "source": "El Confidencial",
@@ -7240,27 +7661,30 @@
      "id": "guerras-1"
     },
     {
-     "headline": "Houthi missiles strike Yemen presidential palace, killing five",
-     "headlineLang": "en",
-     "headlineEs": null,
+     "headline": "Irán apoya solución política al conflicto entre hutíes de Yemen y Arabia Saudita en medio de nuevos ataques",
+     "headlineLang": "es",
+     "headlineEs": "Irán apoya solución política al conflicto entre hutíes de Yemen y Arabia Saudita en medio de nuevos ataques",
      "headlineEn": "Houthi missiles strike Yemen presidential palace, killing five",
-     "summaryEs": null,
-     "summaryEsSource": null,
+     "summaryEs": "Irán respaldó un proceso político para resolver el conflicto entre los hutíes de Yemen y Arabia Saudita. La propuesta surge tras nuevos ataques con drones, bombardeos y una posible intervención de Egipto.",
+     "summaryEsSource": "La Nación (Costa Rica)",
      "summaryEn": "Attack was the first on Aden’s Al-Maashiq palace ⁠in the latest fighting between ​the Iran-aligned Houthis and Saudi Arabia Yemen’s Houthis fired missiles at the presidential palace complex in the southern city of Aden on Thursday, killing five people, the government said, as the Saudi-led coalition listed dozens of Houthi attacks on Saudi infrastructure in ⁠recent weeks. The attack was the first…",
      "summaryEnSource": "The Guardian",
-     "outlets": 5,
+     "outlets": 7,
      "outletNames": [
       "BBC",
       "Bloomberg",
+      "Financial Times",
       "France 24",
+      "La Nación (Costa Rica)",
       "The Guardian",
       "The New York Times"
      ],
      "languages": [
-      "en"
+      "en",
+      "es"
      ],
      "firstSeen": "2026-10-15T19:57:48Z",
-     "lastSeen": "2026-10-17T08:36:20Z",
+     "lastSeen": "2026-10-17T19:26:28Z",
      "sources": [
       {
        "source": "France 24",
@@ -7291,6 +7715,13 @@
        "publishedAt": "2026-10-16T00:27:21Z"
       },
       {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Houthis encircle new target in conflict with Saudi-backed forces",
+       "url": "https://www.ft.com/content/73329157-1277-42f5-802e-fc339415b5ce",
+       "publishedAt": "2026-10-17T04:00:30Z"
+      },
+      {
        "source": "France 24",
        "lang": "en",
        "title": "Yemen's Houthis claim responsibility for fresh missile strike on Aden airport",
@@ -7303,6 +7734,27 @@
        "title": "Houthis Hit Yemen Airport as Saudi Arabia Intercepts Attacks",
        "url": "https://www.bloomberg.com/news/articles/2026-10-17/houthis-hit-yemen-airport-as-saudi-arabia-intercepts-attacks",
        "publishedAt": "2026-10-17T08:36:20Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "UAE agrees with Saudi Arabia to re-enter Yemen conflict amid Houthi gains",
+       "url": "https://www.theguardian.com/world/2026/oct/17/uae-yemen-conflict-agreement-saudi-arabia-houthi-gains",
+       "publishedAt": "2026-10-17T11:57:15Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Yemen Fighting Rages as Civilian Toll From Houthi-Saudi Conflict Worsens",
+       "url": "https://www.nytimes.com/2026/10/17/world/middleeast/houthi-saudi-clashes-in-yemen.html",
+       "publishedAt": "2026-10-17T16:46:15Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Irán apoya solución política al conflicto entre hutíes de Yemen y Arabia Saudita en medio de nuevos ataques",
+       "url": "https://www.nacion.com/el-mundo/iran-apoya-solucion-politica-al-conflicto-entre/NGN5XEABQ5ALHBYKQ3GA5TRX64/story/",
+       "publishedAt": "2026-10-17T19:26:28Z"
       }
      ],
      "id": "guerras-2"
@@ -7336,7 +7788,7 @@
       "es"
      ],
      "firstSeen": "2026-10-17T17:54:46Z",
-     "lastSeen": "2026-10-17T18:56:36Z",
+     "lastSeen": "2026-10-17T19:00:08Z",
      "sources": [
       {
        "source": "El Nacional (Venezuela)",
@@ -7344,13 +7796,6 @@
        "title": "La Embajada de Estados Unidos anunció la reactivación de su Destacamento de Seguridad de los Marines en Caracas",
        "url": "https://www.elnacional.com/2026/10/la-embajada-de-estados-unidos-anuncio-la-reactivacion-de-su-destacamento-de-seguridad-de-los-marines-en-caracas/",
        "publishedAt": "2026-10-17T17:54:46Z"
-      },
-      {
-       "source": "Clarín",
-       "lang": "es",
-       "title": "EEUU reactiva Cuerpo de Marines en su embajada en Venezuela",
-       "url": "https://www.clarin.com/estados-unidos/eeuu-reactiva-cuerpo-de-marines-en-su-embajada-en-venezuela_0_iOEo7ABeH7.html",
-       "publishedAt": "2026-10-17T18:00:12Z"
       },
       {
        "source": "ABC Color (Paraguay)",
@@ -7365,6 +7810,13 @@
        "title": "Estados Unidos reactivó el destacamento de seguridad de los Marines en su embajada de Venezuela",
        "url": "https://www.infobae.com/estados-unidos/2026/10/17/estados-unidos-reactivo-el-destacamento-de-seguridad-de-los-marines-en-su-embajada-de-venezuela/",
        "publishedAt": "2026-10-17T18:56:36Z"
+      },
+      {
+       "source": "Clarín",
+       "lang": "es",
+       "title": "El comandante del Cuerpo de Marines visitó Caracas para reactivar destacamento de EE.UU.",
+       "url": "https://www.clarin.com/estados-unidos/el-comandante-del-cuerpo-de-marines-visito-caracas-para-reactivar-destacamento-de-ee-uu_0_q6B7szP67p.html",
+       "publishedAt": "2026-10-17T19:00:08Z"
       }
      ],
      "chips": [
@@ -7498,76 +7950,6 @@
      "id": "posibles-3"
     },
     {
-     "headline": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
-     "headlineLang": "es",
-     "headlineEs": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
-     "headlineEn": null,
-     "summaryEs": "Los aparatos fueron interceptados tras entrar en el espacio aéreo rumano, en plena escalada de ataques contra buques mercantes en el mar Negro.",
-     "summaryEsSource": "20minutos",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "20minutos",
-      "ABC Color (Paraguay)",
-      "El Universal (México)",
-      "La Vanguardia"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T16:35:06Z",
-     "lastSeen": "2026-10-17T18:26:04Z",
-     "sources": [
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/dos-cazas-rumanos-derriban-dos-drones-sobre-sus-aguas-territoriales-en-el-mar-negro/",
-       "publishedAt": "2026-10-17T16:35:06Z"
-      },
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
-       "url": "https://www.lavanguardia.com/internacional/20261017/11661529/dos-cazas-rumanos-derriban-dos-drones-sobre-aguas-territoriales-mar-negro.html",
-       "publishedAt": "2026-10-17T16:36:09Z"
-      },
-      {
-       "source": "20minutos",
-       "lang": "es",
-       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
-       "url": "https://www.20minutos.es/internacional/dos-cazas-rumanos-derriban-dos-drones-sobre-sus-aguas-territoriales-mar-negro_7050044_0.html",
-       "publishedAt": "2026-10-17T17:04:01Z"
-      },
-      {
-       "source": "El Universal (México)",
-       "lang": "es",
-       "title": "Rumania derriba drones en su espacio aéreo sobre el mar Negro; dice que es un modelo usado por Rusia en la guerra con Ucrania",
-       "url": "https://www.eluniversal.com.mx/mundo/rumania-derriba-drones-en-su-espacio-aereo-sobre-el-mar-negro-otan-abordara-el-tema-en-reunion-del-consejo-del-atlantico-norte/",
-       "publishedAt": "2026-10-17T17:50:16Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Rumanía identifica los dos drones derribados como Geran, un modelo usado por Rusia",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/rumania-identifica-los-dos-drones-derribados-como-geran-un-modelo-usado-por-rusia/",
-       "publishedAt": "2026-10-17T18:26:04Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "europa",
-       "label": "Europa"
-      },
-      {
-       "id": "mundo",
-       "label": "Mundo"
-      }
-     ],
-     "id": "posibles-4"
-    },
-    {
      "headline": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
      "headlineLang": "es",
      "headlineEs": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
@@ -7624,7 +8006,7 @@
        "label": "Europa"
       }
      ],
-     "id": "posibles-5"
+     "id": "posibles-4"
     },
     {
      "headline": "Expresidente senegalés Macky Sall retira su candidatura para dirigir la ONU",
@@ -7684,7 +8066,7 @@
        "label": "África"
       }
      ],
-     "id": "posibles-6"
+     "id": "posibles-5"
     },
     {
      "headline": "US judge dismisses child sex abuse charges against actor Timothy Busfield",
@@ -7747,132 +8129,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-7"
-    },
-    {
-     "headline": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
-     "headlineLang": "es",
-     "headlineEs": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
-     "headlineEn": null,
-     "summaryEs": "París.- Las protestas contra el encarecimiento de la vida celebradas este sábado en Francia estuvieron acompañadas de enfrentamientos entre grupos violentos y fuerzas del orden, incendios y daños o asaltos en edificios públicos y comercios en ciudades como París , Marsella (sur), Lyon (sureste) o Lille (noroeste), entre otras. La movilización reunió a decenas de miles de personas en todo el país…",
-     "summaryEsSource": "El Universal (México)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "ABC Color (Paraguay)",
-      "El Nacional (Venezuela)",
-      "El Universal (México)",
-      "Proceso Digital (Honduras)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T14:13:49Z",
-     "lastSeen": "2026-10-17T17:02:46Z",
-     "sources": [
-      {
-       "source": "Proceso Digital (Honduras)",
-       "lang": "es",
-       "title": "Manifestaciones en París y Lyon registran múltiples incidentes con grupos violentos",
-       "url": "https://proceso.hn/manifestaciones-en-paris-y-lyon-registran-multiples-incidentes-con-grupos-violentos/",
-       "publishedAt": "2026-10-17T14:13:49Z"
-      },
-      {
-       "source": "Proceso Digital (Honduras)",
-       "lang": "es",
-       "title": "Francia registra disturbios en París, Lyon o Marsella durante protestas por alto costo de vida",
-       "url": "https://proceso.hn/francia-registra-disturbios-en-paris-lyon-o-marsella-durante-protestas-por-alto-costo-de-vida/",
-       "publishedAt": "2026-10-17T16:01:08Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
-       "publishedAt": "2026-10-17T16:11:03Z"
-      },
-      {
-       "source": "El Universal (México)",
-       "lang": "es",
-       "title": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
-       "url": "https://www.eluniversal.com.mx/mundo/video-disturbios-en-francia-durante-protestas-por-encarecimiento-de-la-vida-joven-pierde-una-mano-al-explotarle-granada-policial/",
-       "publishedAt": "2026-10-17T17:02:23Z"
-      },
-      {
-       "source": "El Nacional (Venezuela)",
-       "lang": "es",
-       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
-       "url": "https://www.elnacional.com/2026/10/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
-       "publishedAt": "2026-10-17T17:02:46Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "europa",
-       "label": "Europa"
-      }
-     ],
-     "id": "posibles-8"
-    },
-    {
-     "headline": "Rectora del TEC afirma que superávit no se puede destinar a sede de Limón luego de que ministro del MEP la acusara de ‘extorsión política’",
-     "headlineLang": "es",
-     "headlineEs": "Rectora del TEC afirma que superávit no se puede destinar a sede de Limón luego de que ministro del MEP la acusara de ‘extorsión política’",
-     "headlineEn": null,
-     "summaryEs": "Rectora del TEC aseguró que si se aprueban recortes de Hacienda la sede de Limón tendría un cierre técnico. Jerarca del MEP expuso que universidad tiene un superávit que podría usarse, lo que ella afirma no es posible",
-     "summaryEsSource": "La Nación (Costa Rica)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "CRHoy",
-      "El Mundo CR",
-      "La Nación (Costa Rica)",
-      "Semanario Universidad"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T13:30:48Z",
-     "lastSeen": "2026-10-17T16:43:43Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "(Video) Rectora del TEC contradice al MEP sobre fondos para evitar cierre de sede en Limón",
-       "url": "https://crhoy.com/nacionales/video-rectora-del-tec-contradice-al-mep-sobre-fondos-para-evitar-cierre-de-sede-en-limon/",
-       "publishedAt": "2026-10-16T13:30:48Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Rectora del TEC afirma que superávit no se puede destinar a sede de Limón luego de que ministro del MEP la acusara de ‘extorsión política’",
-       "url": "https://www.nacion.com/el-pais/rectora-del-tec-afirma-que-superavit-no-se-puede/HKQPP75WRBH4XEHZSIPJ6IO4T4/story/",
-       "publishedAt": "2026-10-16T16:40:34Z"
-      },
-      {
-       "source": "Semanario Universidad",
-       "lang": "es",
-       "title": "Rectora del TEC desmiente a ministro de Educación: fondos de capital o excedentes no pueden usarse para financiar sede en Limón",
-       "url": "https://semanariouniversidad.com/universitarias/rectora-del-tec-desmiente-a-ministro-de-educacion-fondos-de-capital-o-excedentes-no-pueden-usarse-para-financiar-sede-en-limon/",
-       "publishedAt": "2026-10-16T22:30:15Z"
-      },
-      {
-       "source": "El Mundo CR",
-       "lang": "es",
-       "title": "Alcaldesa de Limón denuncia “chantaje y extorsión política” ante amenaza de cierre de sede del TEC en el Caribe",
-       "url": "https://elmundo.cr/costa-rica/alcaldesa-de-limon-denuncia-chantaje-y-extorsion-politica-ante-amenaza-de-cierre-de-sede-del-tec-en-el-caribe/",
-       "publishedAt": "2026-10-17T16:43:43Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      }
-     ],
-     "id": "posibles-9"
+     "id": "posibles-6"
     },
     {
      "headline": "Líder independentista escocés dice que la campaña por un nuevo referéndum ya ha comenzado",
@@ -7936,7 +8193,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-10"
+     "id": "posibles-7"
     },
     {
      "headline": "Detenidos dos menores por la muerte de una mujer inmovilizada y amordazada en un robo",
@@ -7995,7 +8252,7 @@
        "label": "Sucesos"
       }
      ],
-     "id": "posibles-11"
+     "id": "posibles-8"
     },
     {
      "headline": "Detenido El Ingeniero, constructor de túneles para el tráfico de drogas del CJNG a Estados Unidos",
@@ -8054,7 +8311,78 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-12"
+     "id": "posibles-9"
+    },
+    {
+     "headline": "Bolivia y Chile firmaron un histórico paquete de acuerdos tras más de siete décadas de tensas relaciones",
+     "headlineLang": "es",
+     "headlineEs": "Bolivia y Chile firmaron un histórico paquete de acuerdos tras más de siete décadas de tensas relaciones",
+     "headlineEn": "Kast and Paz open the way in La Paz to normalising Chile-Bolivia relations",
+     "summaryEs": "La visita de José Antonio Kast a Rodrigo Paz en La Paz abre una nueva etapa de cooperación bilateral. Ambos mandatarios suscribieron acuerdos y una declaración conjunta",
+     "summaryEsSource": "Infobae",
+     "summaryEn": "Chilean President José Antonio Kast and his Bolivian counterpart Rodrigo Paz pledged on Friday in La Paz to move towards normalising diplomatic relations “at the highest level”, broken off since 1978, during a visit the Chilean government described as historic as the first official bilateral visit by a Chilean president to Bolivia in more than seven decades. The two governments signed economic…",
+     "summaryEnSource": "MercoPress",
+     "outlets": 4,
+     "outletNames": [
+      "Clarín",
+      "Infobae",
+      "La Jornada",
+      "MercoPress"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-16T21:50:00Z",
+     "lastSeen": "2026-10-17T14:39:53Z",
+     "sources": [
+      {
+       "source": "MercoPress",
+       "lang": "en",
+       "title": "Kast and Paz open the way in La Paz to normalising Chile-Bolivia relations",
+       "url": "https://en.mercopress.com/2026/10/16/kast-and-paz-open-the-way-in-la-paz-to-normalising-chile-bolivia-relations",
+       "publishedAt": "2026-10-16T21:50:00Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Bolivia y Chile abren nueva era en sus relaciones tras décadas de distanciamiento",
+       "url": "https://www.infobae.com/america/mundo/2026/10/16/bolivia-y-chile-abren-nueva-era-en-sus-relaciones-tras-decadas-de-distanciamiento/",
+       "publishedAt": "2026-10-16T22:20:12Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Bolivia y Chile firmaron un histórico paquete de acuerdos tras más de siete décadas de tensas relaciones",
+       "url": "https://www.infobae.com/america/america-latina/2026/10/17/bolivia-y-chile-firmaron-un-historico-paquete-de-acuerdos-tras-mas-de-siete-decadas-de-tensas-relaciones/",
+       "publishedAt": "2026-10-17T07:00:00Z"
+      },
+      {
+       "source": "La Jornada",
+       "lang": "es",
+       "title": "Bolivia y Chile, rencuentro histórico",
+       "url": "https://www.jornada.com.mx/2026/10/17/mundo/020n4mun",
+       "publishedAt": "2026-10-17T08:02:24Z"
+      },
+      {
+       "source": "Clarín",
+       "lang": "es",
+       "title": "Histórico acercamiento entre Chile y Bolivia tras 71 años: Kast y Paz firmaron acuerdos, aunque persiste el reclamo marítimo",
+       "url": "https://www.clarin.com/mundo/historico-acercamiento-chile-bolivia-71-anos-kast-paz-firmaron-acuerdos-persiste-reclamo-maritimo_0_P2Kf2HyVTA.html",
+       "publishedAt": "2026-10-17T14:39:53Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "sudamerica",
+       "label": "Sudamérica"
+      },
+      {
+       "id": "mundo",
+       "label": "Mundo"
+      }
+     ],
+     "id": "posibles-10"
     },
     {
      "headline": "Sánchez hace de su mitin un acto de amor a Begoña Gómez, a la espera de juicio: \"Nos han intentado quebrar, que nos escuchen alto y claro, te quiero\"",
@@ -8117,7 +8445,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-13"
+     "id": "posibles-11"
     },
     {
      "headline": "Feijóo llama \"coalición de desesperados\" al pacto del PSOE y Frente Amplio para el Senado, \"una hipocresía más\"",
@@ -8188,7 +8516,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-14"
+     "id": "posibles-12"
     },
     {
      "headline": "Un superpetrolero arde tras chocar con mina en el estrecho de Ormuz, según la Guardia Revolucionaria iraní",
@@ -8251,7 +8579,7 @@
        "label": "Guerras y conflictos"
       }
      ],
-     "id": "posibles-15"
+     "id": "posibles-13"
     },
     {
      "headline": "Corea del Norte afirma haber probado un nuevo sistema de torpedos con IA",
@@ -8318,67 +8646,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-16"
-    },
-    {
-     "headline": "Washington prohíbe vuelos de drones en frontera con México",
-     "headlineLang": "es",
-     "headlineEs": "Washington prohíbe vuelos de drones en frontera con México",
-     "headlineEn": "Trump Administration Restricts Drone Activity Along U.S.-Mexico Border",
-     "summaryEs": "Estados Unidos impuso restricciones temporales a los vuelos de drones en la frontera con México con el objetivo de reforzar la seguridad del espacio aéreo, informó ayer el Departamento de Guerra.",
-     "summaryEsSource": "La Jornada",
-     "summaryEn": "The new restrictions ban unauthorized drone flights within a nautical mile of the southern border, up to 400 feet in the air.",
-     "summaryEnSource": "The New York Times",
-     "outlets": 4,
-     "outletNames": [
-      "El Financiero (México)",
-      "Hindustan Times",
-      "La Jornada",
-      "The New York Times"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-16T18:52:46Z",
-     "lastSeen": "2026-10-17T08:02:24Z",
-     "sources": [
-      {
-       "source": "Hindustan Times",
-       "lang": "en",
-       "title": "FAA bars unauthorized drones along US-Mexico border, citing security concerns",
-       "url": "https://www.hindustantimes.com/world-news/us-news/faa-bars-unauthorized-drones-along-us-mexico-border-citing-security-concerns-101792176766483.html",
-       "publishedAt": "2026-10-16T18:52:46Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Trump Administration Restricts Drone Activity Along U.S.-Mexico Border",
-       "url": "https://www.nytimes.com/2026/10/16/us/politics/drones-border-restrictions.html",
-       "publishedAt": "2026-10-16T22:43:09Z"
-      },
-      {
-       "source": "El Financiero (México)",
-       "lang": "es",
-       "title": "Con ‘dedicatoria’ a los cárteles: Trump prohíbe vuelo de drones no autorizados en frontera con México",
-       "url": "https://www.elfinanciero.com.mx/mundo/2026/10/16/trump-prohibe-vuelo-de-drones-no-autorizados-en-frontera-con-mexico/",
-       "publishedAt": "2026-10-17T00:20:00Z"
-      },
-      {
-       "source": "La Jornada",
-       "lang": "es",
-       "title": "Washington prohíbe vuelos de drones en frontera con México",
-       "url": "https://www.jornada.com.mx/2026/10/17/politica/004n2pol",
-       "publishedAt": "2026-10-17T08:02:24Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "latam",
-       "label": "Latinoamérica"
-      }
-     ],
-     "id": "posibles-17"
+     "id": "posibles-14"
     },
     {
      "headline": "Analizan EU y Argentina más inversiones y seguridad",
@@ -8437,7 +8705,7 @@
        "label": "Sudamérica"
       }
      ],
-     "id": "posibles-18"
+     "id": "posibles-15"
     },
     {
      "headline": "Japan mistakenly issues 9.9-magnitude quake alert after 6.9 tremor near Russia, retracts it within minutes",
@@ -8496,7 +8764,145 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-19"
+     "id": "posibles-16"
+    },
+    {
+     "headline": "Brasil aprueba reducir la semana laboral de seis a cinco días",
+     "headlineLang": "es",
+     "headlineEs": "Brasil aprueba reducir la semana laboral de seis a cinco días",
+     "headlineEn": null,
+     "summaryEs": "El Senado de Brasil aprobó por 75 votos a favor y uno en contra una reforma constitucional para reducir la jornada laboral de 44 a 40 horas semanales y establecer una semana laboral de cinco días. El texto aprobado es el mismo que recibió el visto bueno de la Cámara de Diputados en mayo de […] La entrada Brasil aprueba reducir la semana laboral de seis a cinco días se publicó primero en…",
+     "summaryEsSource": "Confidencial (Nicaragua)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 4,
+     "outletNames": [
+      "Confidencial (Nicaragua)",
+      "France 24",
+      "La Nación (Costa Rica)",
+      "Teletica (Telenoticias)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T22:21:23Z",
+     "lastSeen": "2026-10-16T23:16:08Z",
+     "sources": [
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Brasil aprueba reducir su semana laboral de seis a cinco días",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMUZJZUcxaXNSVlpEMzZURm9DR3ZlSjktMzJKdXlHRWpFYlMtdkhPTDdGLUc3dDB0eW9LZmx4eVVKdDJVWHFXaTVyWkRqMmR3MzI3WkE5WG1nWHJXRlNBT0JjVzRGSV9ZODFRa1ptNkctdENQRWc1R0d6bk9ySVNscFgzdC1uUlVFTmVfZ25KMl9ET1JYajRyTkVFSnFvc1J1QWx5N2dCLUtPREpSdjJCTmFR?oc=5",
+       "publishedAt": "2026-10-15T22:21:23Z"
+      },
+      {
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
+       "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261016-rebaja-de-la-jornada-laboral-y-transporte-gratuito-lula-apunta-a-la-econom%C3%ADa-en-v%C3%ADsperas-del-balotaje",
+       "publishedAt": "2026-10-16T02:10:45Z"
+      },
+      {
+       "source": "Confidencial (Nicaragua)",
+       "lang": "es",
+       "title": "Brasil aprueba reducir la semana laboral de seis a cinco días",
+       "url": "https://confidencial.digital/mundo/brasil-aprueba-reducir-la-semana-laboral-de-seis-a-cinco-dias/",
+       "publishedAt": "2026-10-16T14:30:00Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Senado de Brasil reduce la jornada laboral de 44 a 40 horas semanales",
+       "url": "https://www.nacion.com/el-mundo/senado-de-brasil-reduce-la-jornada-laboral-de-44-a/B43X547XR5FOHJUZWVGOVTRCOY/story/",
+       "publishedAt": "2026-10-16T23:16:08Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "sudamerica",
+       "label": "Sudamérica"
+      },
+      {
+       "id": "finanzas",
+       "label": "Mundo de finanzas"
+      }
+     ],
+     "id": "posibles-17"
+    },
+    {
+     "headline": "Juzgado ordena separar por un año a 10 personas de la directiva, fiscalización y gerencia de la Asociación Solidarista de Servidores Judiciales",
+     "headlineLang": "es",
+     "headlineEs": "Juzgado ordena separar por un año a 10 personas de la directiva, fiscalización y gerencia de la Asociación Solidarista de Servidores Judiciales",
+     "headlineEn": null,
+     "summaryEs": "Juzgado ordena separar por un año a 10 personas de sus cargos en Asosejud, investigadas por presunta administración fraudulenta contra la organización.",
+     "summaryEsSource": "El Financiero (Costa Rica)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 4,
+     "outletNames": [
+      "CRHoy",
+      "El Financiero (Costa Rica)",
+      "La Nación (Costa Rica)",
+      "La Teja",
+      "Semanario Universidad",
+      "Trivisión"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T14:54:21Z",
+     "lastSeen": "2026-10-16T22:52:22Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Juzgado ordena separar por un año a 10 investigados de Asosejud",
+       "url": "https://crhoy.com/nacionales/juzgado-ordena-separar-por-un-ano-a-10-investigados-de-asosejud/",
+       "publishedAt": "2026-10-16T14:54:21Z"
+      },
+      {
+       "source": "El Financiero (Costa Rica)",
+       "lang": "es",
+       "title": "Juzgado ordena separar por un año a 10 personas de la directiva, fiscalización y gerencia de la Asociación Solidarista de Servidores Judiciales",
+       "url": "https://www.elfinancierocr.com/economia-y-politica/juzgado-ordena-separar-por-un-ano-a-10-personas-de/WU72IRCBV5HHNMOZHRJU6W4FIY/story/",
+       "publishedAt": "2026-10-16T21:20:02Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Juzgado separa por un año a 10 jerarcas de la Asociación Solidarista de Servidores Judiciales por presunta administración fraudulenta",
+       "url": "https://www.nacion.com/sucesos/juzgado-separa-por-un-ano-a-10-jerarcas-de-la/JXWH3I5XNRGHLPDALOTMT5EZQ4/story/",
+       "publishedAt": "2026-10-16T21:22:04Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Separan por un año a la junta directiva y la gerencia de la Asociación Solidarista de Servidores Judiciales",
+       "url": "https://www.lateja.cr/sucesos/separan-por-un-ano-a-la-junta-directiva-y-la/5UXPFFKCARDPJFM24UHBR5MCFI/story/",
+       "publishedAt": "2026-10-16T22:03:57Z"
+      },
+      {
+       "source": "Trivisión",
+       "lang": "es",
+       "title": "Separan por un año a 10 directivos de ASOSEJUD por presunto fraude",
+       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQN2hkN3BJRzFnalc1M01Zdmhuamx3U1hIXzBTSkpHbmxadE1raXVCMVh0RHFqa1E4Z1pfSkR6ZVhOS0swREM5R2lEeEoxUExEZ3NRbGJ3NVRrLUpfTzVVZ2JtYm5ZaVh3TGhBTEJleklvNlYwUjFRcXdHSzZnVFFQUUVQRE0xUmo5R1VwcE5DNUNEZkRkdXNHOVJFTHc4THJuMWRtd0hnV2JjeHZoU3Y2Vw?oc=5",
+       "publishedAt": "2026-10-16T22:41:54Z"
+      },
+      {
+       "source": "Semanario Universidad",
+       "lang": "es",
+       "title": "Juzgado separa por un año a altos cargos de Asosejud por supuesta administración fraudulenta",
+       "url": "https://semanariouniversidad.com/pais/juzgado-separa-por-un-ano-a-altos-cargos-de-asosejud-por-supuesta-administracion-fraudulenta/",
+       "publishedAt": "2026-10-16T22:52:22Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      }
+     ],
+     "id": "posibles-18"
     },
     {
      "headline": "Gobierno despide a embajador en México Pablo Heriberto Abarca",
@@ -8567,7 +8973,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-20"
+     "id": "posibles-19"
     },
     {
      "headline": "Scammer Lost $4.8M in Bitcoin to Tampered Ledger Wallets: Chainalysis",
@@ -8627,7 +9033,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-21"
+     "id": "posibles-20"
     },
     {
      "headline": "Katie Zacharia deja el cargo de secretaria de prensa de la Casa Blanca apenas días después de asumirlo",
@@ -8693,6 +9099,120 @@
        "label": "Política"
       }
      ],
+     "id": "posibles-21"
+    },
+    {
+     "headline": "Temblor en Perú: epicentro y magnitud del último sismo del sábado 17 de octubre",
+     "headlineLang": "es",
+     "headlineEs": "Temblor en Perú: epicentro y magnitud del último sismo del sábado 17 de octubre",
+     "headlineEn": null,
+     "summaryEs": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
+     "summaryEsSource": "El Comercio (Perú)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "El Comercio (Perú)",
+      "Prensa Libre",
+      "RPP (Perú)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T22:09:45Z",
+     "lastSeen": "2026-10-17T19:29:48Z",
+     "sources": [
+      {
+       "source": "RPP (Perú)",
+       "lang": "es",
+       "title": "Temblor en Chile hoy 17 de octubre: Epicentro del sismo según CSN",
+       "url": "https://rpp.pe/mundo/chile/temblor-en-chile-hoy-15-de-octubre-epicentro-del-sismo-segun-csn-live-3662",
+       "publishedAt": "2026-10-15T22:09:45Z"
+      },
+      {
+       "source": "Prensa Libre",
+       "lang": "es",
+       "title": "Temblor de magnitud 5.1 y otros dos sismos registra el Insivumeh en las últimas horas",
+       "url": "https://www.prensalibre.com/guatemala/comunitario/temblor-de-magnitud-5-1-y-otros-dos-sismos-registra-el-insivumeh-en-las-ultimas-horas-breaking/",
+       "publishedAt": "2026-10-16T14:46:55Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Sismos registrados en el Perú este miércoles 14 de octubre",
+       "url": "https://elcomercio.pe/peru/temblor-hoy-en-peru-consulta-donde-ocurrio-el-ultimo-sismo-magnitud-y-reporte-segun-el-igp-tdpe-noticia/",
+       "publishedAt": "2026-10-16T21:49:18Z"
+      },
+      {
+       "source": "RPP (Perú)",
+       "lang": "es",
+       "title": "Temblor en Perú, hoy 17 de octubre: magnitud y epicentro del sismo según IGP",
+       "url": "https://rpp.pe/lima/desastres-naturales/temblor-en-peru-hoy-16-de-octubre-magnitud-y-epicentro-del-sismo-segun-igp-live-3663",
+       "publishedAt": "2026-10-17T01:18:58Z"
+      },
+      {
+       "source": "RPP (Perú)",
+       "lang": "es",
+       "title": "Cúal fue el último temblor en México hoy 17 de octubre según SSN",
+       "url": "https://rpp.pe/mundo/mexico/cual-fue-el-ultimo-temblor-en-mexico-hoy-17-de-octubre-segun-ssn-live-3664",
+       "publishedAt": "2026-10-17T05:42:35Z"
+      },
+      {
+       "source": "RPP (Perú)",
+       "lang": "es",
+       "title": "Un sismo de magnitud 3.5 se sintió esta mañana en la región Pasco",
+       "url": "https://rpp.pe/peru/pasco/pasco-sismo-de-magnitud-35-se-sintio-esta-manana-en-la-region-noticia-1713120",
+       "publishedAt": "2026-10-17T15:40:35Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Último temblor en Perú hoy, 17 de octubre: epicentro y magnitud del sismo",
+       "url": "https://elcomercio.pe/peru/ultimo-temblor-en-peru-hoy-epicentro-del-sismo-y-magnitud-ultima-hora-censis-tdpe-noticia/",
+       "publishedAt": "2026-10-17T17:57:49Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Temblor en Chile: epicentro y magnitud reportados del sábado 17 de octubre",
+       "url": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-hoy-en-vivo-y-ultimos-sismos-segun-el-csn-del-17-y-18-de-octubre-de-2026-centro-sismologico-nacional-santiago-socaire-atacama-lbposting-noticia/",
+       "publishedAt": "2026-10-17T18:37:51Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Temblor en Perú: epicentro y magnitud del último sismo del sábado 17 de octubre",
+       "url": "https://elcomercio.pe/respuestas/temblor-en-peru-hoy-en-vivo-y-reportes-via-el-igp-ultimos-sismos-del-17-y-18-de-octubre-de-2026-instituto-geofisico-del-peru-lima-callao-ica-lbposting-noticia/",
+       "publishedAt": "2026-10-17T19:09:27Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Temblor en México: hora, lugar y magnitud reportados hoy, sábado 17 de octubre",
+       "url": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-hoy-en-vivo-ultimo-sismo-17-y-18-de-octubre-2026-registrado-por-el-ssn-cual-fue-la-magnitud-epicentro-y-hora-servicio-sismologico-nacional-mexico-cdmx-mx-lbposting-noticia/",
+       "publishedAt": "2026-10-17T19:29:21Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Temblor en Colombia HOY, sábado 17 de octubre: epicentro y magnitud de último sismo según reporte SGC",
+       "url": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-ultimo-sismos-17-y-18-de-octubre-2026-reporte-de-magnitud-epicentro-y-hora-segun-sgc-servicio-geologico-colombiano-tolima-bogota-co-lbposting-noticia/",
+       "publishedAt": "2026-10-17T19:29:36Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Temblor en Venezuela: magnitud, hora y lugar del último sismo de hoy, sábado 17 de octubre",
+       "url": "https://elcomercio.pe/respuestas/venezuela/temblor-en-venezuela-en-vivo-magnitud-epicentro-e-intensidad-del-ultimo-sismo-reportado-este-17-y-18-de-octubre-de-2026-segun-el-funvisis-proteccion-civil-caracas-la-guaira-lbposting-noticia/",
+       "publishedAt": "2026-10-17T19:29:48Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "sudamerica",
+       "label": "Sudamérica"
+      }
+     ],
      "id": "posibles-22"
     },
     {
@@ -8747,47 +9267,46 @@
      "id": "posibles-23"
     },
     {
-     "headline": "Macron asegura que castigará saqueos y vandalismo tras protestas en Francia que dejaron 400 detenidos",
+     "headline": "Arrestan en República Dominicana a un español que a iba a viajar a Alemania con cocaína",
      "headlineLang": "es",
-     "headlineEs": "Macron asegura que castigará saqueos y vandalismo tras protestas en Francia que dejaron 400 detenidos",
-     "headlineEn": "Macron vows to 'punish' those who carried out vandalism",
-     "summaryEs": "Emmanuel Macron anunció castigos por los saqueos y actos de vandalismo durante las protestas en Francia contra el aumento del costo de vida, que dejaron 400 detenidos y miles de manifestantes en las calles.",
-     "summaryEsSource": "La Nación (Costa Rica)",
-     "summaryEn": "France's President Emmanuel Macron vowed to punish those who wrecked public property or raided shops during the protests.",
-     "summaryEnSource": "RTÉ",
+     "headlineEs": "Arrestan en República Dominicana a un español que a iba a viajar a Alemania con cocaína",
+     "headlineEn": null,
+     "summaryEs": "La Dirección Nacional de Control de Drogas (DNCD) dio a conocer en comunicado que el español iba a viajar a Frankfurt, Alemania, desde el Aeropuerto Internacional de Punta Cana, enclave turístico situado al este del país. Las unidades actuantes y fiscales, tras recibir informes de inteligencia, intervinieron el equipaje del extranjero de 24 años, cuyo nombre no fue suministrado por la DNCD…",
+     "summaryEsSource": "ABC Color (Paraguay)",
+     "summaryEn": null,
+     "summaryEnSource": null,
      "outlets": 3,
      "outletNames": [
-      "La Nación (Costa Rica)",
-      "RPP (Perú)",
-      "RTÉ"
+      "ABC Color (Paraguay)",
+      "Diario Libre (R. Dominicana)",
+      "El Mundo"
      ],
      "languages": [
-      "en",
       "es"
      ],
-     "firstSeen": "2026-10-17T11:00:58Z",
-     "lastSeen": "2026-10-17T19:25:26Z",
+     "firstSeen": "2026-10-17T12:47:00Z",
+     "lastSeen": "2026-10-17T19:22:52Z",
      "sources": [
       {
-       "source": "RTÉ",
-       "lang": "en",
-       "title": "Macron vows to 'punish' those who carried out vandalism",
-       "url": "https://www.rte.ie/news/2026/1017/1595755-france-protests/",
-       "publishedAt": "2026-10-17T11:00:58Z"
+       "source": "Diario Libre (R. Dominicana)",
+       "lang": "es",
+       "title": "Arrestan español con 20 paquetes de cocaína en aeropuerto",
+       "url": "https://www.diariolibre.com/actualidad/sucesos/2026/10/17/arrestan-espanol-con-20-paquetes-de-cocaina-en-aeropuerto/3692032",
+       "publishedAt": "2026-10-17T12:47:00Z"
       },
       {
-       "source": "La Nación (Costa Rica)",
+       "source": "ABC Color (Paraguay)",
        "lang": "es",
-       "title": "Macron asegura que castigará saqueos y vandalismo tras protestas en Francia que dejaron 400 detenidos",
-       "url": "https://www.nacion.com/el-mundo/macron-asegura-que-castigara-saqueos-y-vandalismo/QQ7GPMLTCJHQNAKX4QUQW4Y3ME/story/",
-       "publishedAt": "2026-10-17T18:46:09Z"
+       "title": "Arrestan en República Dominicana a un español que pretendía viajar a Alemania con cocaína",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/arrestan-en-republica-dominicana-a-un-espanol-que-pretendia-viajar-a-alemania-con-cocaina/",
+       "publishedAt": "2026-10-17T19:00:16Z"
       },
       {
-       "source": "RPP (Perú)",
+       "source": "El Mundo",
        "lang": "es",
-       "title": "Emmanuel Macron responde ante las protestas en calles de Francia: \"Serán perseguidos y castigados\"",
-       "url": "https://rpp.pe/mundo/europa/macron-promete-castigos-para-saqueadores-y-pide-frente-unido-contra-sembradores-de-caos-noticia-1713158",
-       "publishedAt": "2026-10-17T19:25:26Z"
+       "title": "Arrestan en República Dominicana a un español que a iba a viajar a Alemania con cocaína",
+       "url": "https://www.elmundo.es/espana/2026/10/17/6ad3cb05e9cf4ad66b8b4575.html",
+       "publishedAt": "2026-10-17T19:22:52Z"
       }
      ],
      "chips": [
@@ -8799,118 +9318,138 @@
      "id": "posibles-24"
     },
     {
-     "headline": "Temblor en Perú: epicentro y magnitud del último sismo del sábado 17 de octubre",
+     "headline": "La dana Adam deja decenas de incidentes en Almería, parte de la Comunidad Valenciana y Cataluña, en alerta roja por fuertes lluvias y tormentas",
      "headlineLang": "es",
-     "headlineEs": "Temblor en Perú: epicentro y magnitud del último sismo del sábado 17 de octubre",
+     "headlineEs": "La dana Adam deja decenas de incidentes en Almería, parte de la Comunidad Valenciana y Cataluña, en alerta roja por fuertes lluvias y tormentas",
      "headlineEn": null,
-     "summaryEs": "Temblor en Perú EN VIVO: cuál fue el epicentro y magnitud del último sismo reportado HOY por el Instituto Geofísico del Perú (IGP).",
+     "summaryEs": "El municipio de El Ejido, en Almería, es por ahora el más perjudicado, con más de 100 incidencias registradas por las intensas lluvias Leer",
+     "summaryEsSource": "El Mundo",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "20minutos",
+      "El Mundo",
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T14:32:37Z",
+     "lastSeen": "2026-10-17T19:11:08Z",
+     "sources": [
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Temporal en España: hay un desaparecido en Cataluña, en alerta junto a Murcia, Almería y C. Valenciana",
+       "url": "https://www.20minutos.es/nacional/temporal-lluvia-espana-hoy-directo-comunidad-valenciana-cataluna-murcia-almeria-alerta-las-proximas-horas_7050013_6.html",
+       "publishedAt": "2026-10-17T14:32:37Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Dana Adam: las lluvias y tormentas ponen en aviso a nueve regiones el domingo, con alerta roja en la Comunidad Valenciana",
+       "url": "https://www.elmundo.es/espana/2026/10/17/6ad38990e85ece23348b4575.html",
+       "publishedAt": "2026-10-17T14:45:04Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "La dana Adam deja decenas de incidentes en Almería, parte de la Comunidad Valenciana y Cataluña, en alerta roja por fuertes lluvias y tormentas",
+       "url": "https://www.elmundo.es/espana/2026/10/17/6ad3bc7be9cf4a77518b45a0.html",
+       "publishedAt": "2026-10-17T18:26:56Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "La DANA Adam deja más de 100 incidencias en El Ejido y pone en alerta roja a zonas de Almería, Valencia, Alicante y Barcelona",
+       "url": "https://www.infobae.com/espana/2026/10/17/el-temporal-de-la-dana-adam-deja-mas-de-100-incidencias-en-el-ejido-y-activa-alertas-en-varias-comunidades/",
+       "publishedAt": "2026-10-17T19:11:08Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "europa",
+       "label": "Europa"
+      },
+      {
+       "id": "sucesos",
+       "label": "Sucesos"
+      }
+     ],
+     "id": "posibles-25"
+    },
+    {
+     "headline": "¡Gol de Lamine Yamal! Barcelona derrota 1-0 a Real Betis por LaLiga en La Cartuja | VIDEO",
+     "headlineLang": "es",
+     "headlineEs": "¡Gol de Lamine Yamal! Barcelona derrota 1-0 a Real Betis por LaLiga en La Cartuja | VIDEO",
+     "headlineEn": null,
+     "summaryEs": "Lamine Yamal abrió el marcador a los 10 minutos a favor de Barcelona vs. Real Betis el sábado 17 de octubre por la fecha 9 de LaLiga en La Cartuja.",
      "summaryEsSource": "El Comercio (Perú)",
      "summaryEn": null,
      "summaryEnSource": null,
      "outlets": 3,
      "outletNames": [
+      "Diario Extra",
       "El Comercio (Perú)",
-      "Prensa Libre",
-      "RPP (Perú)"
+      "La Tercera (Chile)"
      ],
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-15T22:09:45Z",
-     "lastSeen": "2026-10-17T19:09:27Z",
+     "firstSeen": "2026-10-17T11:00:00Z",
+     "lastSeen": "2026-10-17T18:58:57Z",
      "sources": [
       {
-       "source": "RPP (Perú)",
+       "source": "La Tercera (Chile)",
        "lang": "es",
-       "title": "Temblor en Chile hoy 17 de octubre: Epicentro del sismo según CSN",
-       "url": "https://rpp.pe/mundo/chile/temblor-en-chile-hoy-15-de-octubre-epicentro-del-sismo-segun-csn-live-3662",
-       "publishedAt": "2026-10-15T22:09:45Z"
+       "title": "Dónde y a qué hora ver a Real Betis vs. Barcelona en TV y streaming",
+       "url": "https://www.latercera.com/servicios/noticia/donde-y-a-que-hora-ver-a-real-betis-vs-barcelona-en-tv-y-streaming-2/",
+       "publishedAt": "2026-10-17T11:00:00Z"
       },
       {
-       "source": "Prensa Libre",
+       "source": "La Tercera (Chile)",
        "lang": "es",
-       "title": "Temblor de magnitud 5.1 y otros dos sismos registra el Insivumeh en las últimas horas",
-       "url": "https://www.prensalibre.com/guatemala/comunitario/temblor-de-magnitud-5-1-y-otros-dos-sismos-registra-el-insivumeh-en-las-ultimas-horas-breaking/",
-       "publishedAt": "2026-10-16T14:46:55Z"
-      },
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Sismos registrados en el Perú este miércoles 14 de octubre",
-       "url": "https://elcomercio.pe/peru/temblor-hoy-en-peru-consulta-donde-ocurrio-el-ultimo-sismo-magnitud-y-reporte-segun-el-igp-tdpe-noticia/",
-       "publishedAt": "2026-10-16T21:49:18Z"
-      },
-      {
-       "source": "RPP (Perú)",
-       "lang": "es",
-       "title": "Temblor en Perú, hoy 17 de octubre: magnitud y epicentro del sismo según IGP",
-       "url": "https://rpp.pe/lima/desastres-naturales/temblor-en-peru-hoy-16-de-octubre-magnitud-y-epicentro-del-sismo-segun-igp-live-3663",
-       "publishedAt": "2026-10-17T01:18:58Z"
-      },
-      {
-       "source": "RPP (Perú)",
-       "lang": "es",
-       "title": "Cúal fue el último temblor en México hoy 17 de octubre según SSN",
-       "url": "https://rpp.pe/mundo/mexico/cual-fue-el-ultimo-temblor-en-mexico-hoy-17-de-octubre-segun-ssn-live-3664",
-       "publishedAt": "2026-10-17T05:42:35Z"
-      },
-      {
-       "source": "RPP (Perú)",
-       "lang": "es",
-       "title": "Un sismo de magnitud 3.5 se sintió esta mañana en la región Pasco",
-       "url": "https://rpp.pe/peru/pasco/pasco-sismo-de-magnitud-35-se-sintio-esta-manana-en-la-region-noticia-1713120",
-       "publishedAt": "2026-10-17T15:40:35Z"
+       "title": "Repasa la derrota del Betis de Manuel Pellegrini ante el Barcelona de Lamine Yamal por la liga española",
+       "url": "https://www.latercera.com/el-deportivo/noticia/en-vivo-el-betis-de-manuel-pellegrini-enfrenta-al-barcelona-de-lamine-yamal-por-la-liga-espanola/",
+       "publishedAt": "2026-10-17T16:31:07Z"
       },
       {
        "source": "El Comercio (Perú)",
        "lang": "es",
-       "title": "Último temblor en Perú hoy, 17 de octubre: epicentro y magnitud del sismo",
-       "url": "https://elcomercio.pe/peru/ultimo-temblor-en-peru-hoy-epicentro-del-sismo-y-magnitud-ultima-hora-censis-tdpe-noticia/",
-       "publishedAt": "2026-10-17T17:57:49Z"
+       "title": "¡Gol de Lamine Yamal! Barcelona derrota 1-0 a Real Betis por LaLiga en La Cartuja | VIDEO",
+       "url": "https://elcomercio.pe/deporte-total/futbol-mundial/video-gol-de-lamine-yamal-hoy-con-barcelona-vs-real-betis-por-laliga-goles-del-barca-noticia/",
+       "publishedAt": "2026-10-17T17:11:53Z"
       },
       {
        "source": "El Comercio (Perú)",
        "lang": "es",
-       "title": "Temblor en México: hora, lugar y magnitud reportados hoy, sábado 17 de octubre",
-       "url": "https://elcomercio.pe/respuestas/mexico/temblor-en-mexico-hoy-en-vivo-ultimo-sismo-17-y-18-de-octubre-2026-registrado-por-el-ssn-cual-fue-la-magnitud-epicentro-y-hora-servicio-sismologico-nacional-mexico-cdmx-mx-lbposting-noticia/",
-       "publishedAt": "2026-10-17T18:30:05Z"
+       "title": "Barcelona 5-2 Real Betis: ver resumen y goles ddel partido por LaLiga 2026",
+       "url": "https://elcomercio.pe/deporte-total/espana/donde-ver-barcelona-vs-real-betis-en-vivo-gratis-por-laliga-a-que-hora-juega-el-barca-hoy-y-en-que-canales-tv-en-directo-televisan-partido-online-noticia/",
+       "publishedAt": "2026-10-17T18:51:50Z"
       },
       {
        "source": "El Comercio (Perú)",
        "lang": "es",
-       "title": "Temblor en Colombia HOY, sábado 17 de octubre: epicentro y magnitud de último sismo según reporte SGC",
-       "url": "https://elcomercio.pe/respuestas/colombia/temblor-en-colombia-hoy-en-vivo-ultimo-sismos-17-y-18-de-octubre-2026-reporte-de-magnitud-epicentro-y-hora-segun-sgc-servicio-geologico-colombiano-tolima-bogota-co-lbposting-noticia/",
-       "publishedAt": "2026-10-17T18:30:17Z"
+       "title": "Canales TV que transmiten, Real Madrid vs. Sevilla: hora del partido por la jornada 9 de LaLiga 2026",
+       "url": "https://elcomercio.pe/deporte-total/espana/donde-ver-real-madrid-vs-sevilla-en-vivo-gratis-por-laliga-a-que-hora-juega-el-madrid-hoy-y-en-que-canales-tv-en-directo-televisan-partido-online-noticia/",
+       "publishedAt": "2026-10-17T18:55:07Z"
       },
       {
-       "source": "El Comercio (Perú)",
+       "source": "Diario Extra",
        "lang": "es",
-       "title": "Temblor en Venezuela: magnitud, hora y lugar del último sismo de hoy, sábado 17 de octubre",
-       "url": "https://elcomercio.pe/respuestas/venezuela/temblor-en-venezuela-en-vivo-magnitud-epicentro-e-intensidad-del-ultimo-sismo-reportado-este-17-y-18-de-octubre-de-2026-segun-el-funvisis-proteccion-civil-caracas-la-guaira-lbposting-noticia/",
-       "publishedAt": "2026-10-17T18:30:28Z"
-      },
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Temblor en Chile: epicentro y magnitud reportados del sábado 17 de octubre",
-       "url": "https://elcomercio.pe/respuestas/chile/temblor-en-chile-hoy-en-vivo-y-ultimos-sismos-segun-el-csn-del-17-y-18-de-octubre-de-2026-centro-sismologico-nacional-santiago-socaire-atacama-lbposting-noticia/",
-       "publishedAt": "2026-10-17T18:37:51Z"
-      },
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Temblor en Perú: epicentro y magnitud del último sismo del sábado 17 de octubre",
-       "url": "https://elcomercio.pe/respuestas/temblor-en-peru-hoy-en-vivo-y-reportes-via-el-igp-ultimos-sismos-del-17-y-18-de-octubre-de-2026-instituto-geofisico-del-peru-lima-callao-ica-lbposting-noticia/",
-       "publishedAt": "2026-10-17T19:09:27Z"
+       "title": "Barça arrolla al Betis de visita con Yamal encendido",
+       "url": "https://www.diarioextra.com/noticia/barca-arrolla-al-betis-de-visita-con-yamal-encendido/",
+       "publishedAt": "2026-10-17T18:58:57Z"
       }
      ],
      "chips": [
       {
-       "id": "sudamerica",
-       "label": "Sudamérica"
+       "id": "europa",
+       "label": "Europa"
       }
      ],
-     "id": "posibles-25"
+     "id": "posibles-26"
     },
     {
      "headline": "Biodiversidad, Día de la Alimentación, niños de Gaza, empresas tecnológicas… Las noticias del viernes",
@@ -8974,7 +9513,7 @@
        "label": "Guerras y conflictos"
       }
      ],
-     "id": "posibles-26"
+     "id": "posibles-27"
     },
     {
      "headline": "Extranjero sufrió violento asalto en San José con “candado chino”",
@@ -9025,7 +9564,66 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-27"
+     "id": "posibles-28"
+    },
+    {
+     "headline": "Mueren 32 alumnos y una profesora al derrumbarse el techo de un colegio en Pakistán",
+     "headlineLang": "es",
+     "headlineEs": "Mueren 32 alumnos y una profesora al derrumbarse el techo de un colegio en Pakistán",
+     "headlineEn": "Families of children killed in Pakistan school roof collapse demand justice",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Initial reports suggested the roof collapse was due to “weak infrastructure”.",
+     "summaryEnSource": "The Straits Times",
+     "outlets": 3,
+     "outletNames": [
+      "Teletica (Telenoticias)",
+      "The New York Times",
+      "The Straits Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-16T03:05:52Z",
+     "lastSeen": "2026-10-17T17:58:20Z",
+     "sources": [
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Mueren 32 alumnos y una profesora al derrumbarse el techo de un colegio en Pakistán",
+       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZS0wclhlTWlMZGJ0VTN0VU51b2U2bjI1Wk1BZi16TElKaDBlTEFOUHFFUTd1UXBteDJKcWl0TTJ3N1E2czM5X3pCX0pzTHZ1ekg5eW83N2loc0RUVHBobjZ1RkRSbXZsaVQyWlFTRjlqYjZrX09lTWozZlRVRVp5VXYxVjRBTVYzcGVoRm5Yb09ERUFNRWVOOWdINDJvZ05vSkZHeW1ESkQwbFptWC1YVDVLeEQ4TlRCdDZ4X3hSNmhrMk0zZFhudQ?oc=5",
+       "publishedAt": "2026-10-16T03:05:52Z"
+      },
+      {
+       "source": "The Straits Times",
+       "lang": "en",
+       "title": "Families of children killed in Pakistan school roof collapse demand justice",
+       "url": "https://www.straitstimes.com/asia/south-asia/families-of-children-killed-in-pakistan-school-roof-collapse-demand-justice",
+       "publishedAt": "2026-10-16T08:55:00Z"
+      },
+      {
+       "source": "The Straits Times",
+       "lang": "en",
+       "title": "Devastated families mourn children killed by Pakistan school roof collapse",
+       "url": "https://www.straitstimes.com/asia/devastated-families-mourn-children-killed-by-pakistan-school-roof-collapse",
+       "publishedAt": "2026-10-16T14:55:31Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Deadly School Roof Collapse in Pakistan Raises Questions Over Regulation",
+       "url": "https://www.nytimes.com/2026/10/16/world/asia/pakistan-peshawar-school-roof-collapse.html",
+       "publishedAt": "2026-10-17T17:58:20Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "asia",
+       "label": "Asia"
+      }
+     ],
+     "id": "posibles-29"
     },
     {
      "headline": "Supuesta dama de compañía que habría matado a estadounidense con vaso de licuadora sigue en fuga tras allanamientos",
@@ -9111,7 +9709,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-28"
+     "id": "posibles-30"
     },
     {
      "headline": "Sismo de 4.1 de magnitud se registra en Chiapas",
@@ -9183,7 +9781,7 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-29"
+     "id": "posibles-31"
     },
     {
      "headline": "Alligator kills 71-year-old man fishing in Florida",
@@ -9234,7 +9832,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-30"
+     "id": "posibles-32"
     },
     {
      "headline": "Nine crypto firms form Quantum Alliance to set post-quantum standards",
@@ -9286,7 +9884,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-31"
+     "id": "posibles-33"
     },
     {
      "headline": "MEP retira permiso con goce de salario previsto para elecciones del SEC",
@@ -9341,7 +9939,7 @@
        "label": "Mundo de finanzas"
       }
      ],
-     "id": "posibles-32"
+     "id": "posibles-34"
     },
     {
      "headline": "Aterradora balacera cerca de ebais deja 6 heridos: entre ellos dos mujeres y dos menores de edad",
@@ -9400,7 +9998,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-33"
+     "id": "posibles-35"
     },
     {
      "headline": "Vaguada dejará lluvias y tormentas eléctricas en varias regiones",
@@ -9451,69 +10049,7 @@
        "label": "Centroamérica"
       }
      ],
-     "id": "posibles-34"
-    },
-    {
-     "headline": "Bolivia y Chile firmaron un histórico paquete de acuerdos tras más de siete décadas de tensas relaciones",
-     "headlineLang": "es",
-     "headlineEs": "Bolivia y Chile firmaron un histórico paquete de acuerdos tras más de siete décadas de tensas relaciones",
-     "headlineEn": null,
-     "summaryEs": "La visita de José Antonio Kast a Rodrigo Paz en La Paz abre una nueva etapa de cooperación bilateral. Ambos mandatarios suscribieron acuerdos y una declaración conjunta",
-     "summaryEsSource": "Infobae",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "Clarín",
-      "Infobae",
-      "La Jornada"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T22:20:12Z",
-     "lastSeen": "2026-10-17T14:39:53Z",
-     "sources": [
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Bolivia y Chile abren nueva era en sus relaciones tras décadas de distanciamiento",
-       "url": "https://www.infobae.com/america/mundo/2026/10/16/bolivia-y-chile-abren-nueva-era-en-sus-relaciones-tras-decadas-de-distanciamiento/",
-       "publishedAt": "2026-10-16T22:20:12Z"
-      },
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Bolivia y Chile firmaron un histórico paquete de acuerdos tras más de siete décadas de tensas relaciones",
-       "url": "https://www.infobae.com/america/america-latina/2026/10/17/bolivia-y-chile-firmaron-un-historico-paquete-de-acuerdos-tras-mas-de-siete-decadas-de-tensas-relaciones/",
-       "publishedAt": "2026-10-17T07:00:00Z"
-      },
-      {
-       "source": "La Jornada",
-       "lang": "es",
-       "title": "Bolivia y Chile, rencuentro histórico",
-       "url": "https://www.jornada.com.mx/2026/10/17/mundo/020n4mun",
-       "publishedAt": "2026-10-17T08:02:24Z"
-      },
-      {
-       "source": "Clarín",
-       "lang": "es",
-       "title": "Histórico acercamiento entre Chile y Bolivia tras 71 años: Kast y Paz firmaron acuerdos, aunque persiste el reclamo marítimo",
-       "url": "https://www.clarin.com/mundo/historico-acercamiento-chile-bolivia-71-anos-kast-paz-firmaron-acuerdos-persiste-reclamo-maritimo_0_P2Kf2HyVTA.html",
-       "publishedAt": "2026-10-17T14:39:53Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "sudamerica",
-       "label": "Sudamérica"
-      },
-      {
-       "id": "mundo",
-       "label": "Mundo"
-      }
-     ],
-     "id": "posibles-35"
+     "id": "posibles-36"
     },
     {
      "headline": "Hernán Medford va por su revancha ante Cartaginés",
@@ -9533,15 +10069,15 @@
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-16T17:48:04Z",
+     "firstSeen": "2026-10-16T17:46:03Z",
      "lastSeen": "2026-10-17T14:26:00Z",
      "sources": [
       {
        "source": "Teletica (Telenoticias)",
        "lang": "es",
        "title": "Medford quiere la \"revancha\" ante Cartaginés",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVFVRWncweWx3b3R3S0s1Ykp0dDRhX0twb1JYNHBFal9fZXA5MjBPYmxSZkUzV1l2bHYtekVJUGhXMHFVVWxSdFJCR2lXdllrYUZYc1pXdTZ0R3AtdFhjUW4yTlNDZm40V01Qb05kWHQwcm5ndWJydy04aVI1R19hbnd2enE4TTNGRGtvZFZaM0FKMkVuYUZaS0ctWHlUZw?oc=5",
-       "publishedAt": "2026-10-16T17:48:04Z"
+       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa3ZtN1pKdTJWV01FM3R4aU5WUWlkX3FqOEt0MWlnWUo1aFdrY195M2FWc2FMbWg3MTVjUm5kTjNhY3BneGlpN0VRWnZEdFUxOHlIX2VmZk4tV1FyM2U0dFJfM191OTlWTHdnYi1MZjBCZHc1Um0xUG5nVWFHREFoaGlfT2tpeEJGS01xV24wbE1SSE9kaGx0bw?oc=5",
+       "publishedAt": "2026-10-16T17:46:03Z"
       },
       {
        "source": "Repretel (Noticias Repretel)",
@@ -9564,7 +10100,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-36"
+     "id": "posibles-37"
     },
     {
      "headline": "Brooklyn prosecutor Alona Katz takes on crypto scam networks behind $11 billion in losses",
@@ -9616,7 +10152,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-37"
+     "id": "posibles-38"
     },
     {
      "headline": "At least 10 killed in fire at Bangladesh beach resort",
@@ -9667,7 +10203,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-38"
+     "id": "posibles-39"
     },
     {
      "headline": "Aemet eleva a rojo el aviso por lluvias en el litoral sur de Valencia y norte de Alicante este domingo",
@@ -9718,7 +10254,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-39"
+     "id": "posibles-40"
     },
     {
      "headline": "Frente Amplio pasa página del pacto fallido con Podemos: “Se acabó el tiempo de unir a los partidos, hay que unir a la gente”",
@@ -9773,7 +10309,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-40"
+     "id": "posibles-41"
     },
     {
      "headline": "Canada PM warns 'stakes are high' as Alberta separation vote nears",
@@ -9831,7 +10367,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-41"
+     "id": "posibles-42"
     },
     {
      "headline": "Sonora suspende temporalmente exportación de ganado a EU por caso sospechoso de fiebre aftosa",
@@ -9889,7 +10425,7 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-42"
+     "id": "posibles-43"
     },
     {
      "headline": "TEAM TRAGEDY: Lions lock Hyron Andrews has died from suspected cardiac arrest — condolences pour in",
@@ -9947,57 +10483,6 @@
        "label": "África"
       }
      ],
-     "id": "posibles-43"
-    },
-    {
-     "headline": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
-     "headlineLang": "es",
-     "headlineEs": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
-     "headlineEn": null,
-     "summaryEs": "Las narrativas históricas y el pasado irlandés como colonia inglesa juegan un rol clave en las percepciones actuales.",
-     "summaryEsSource": "Prensa Libre",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "BBC Mundo",
-      "La Prensa (Panamá)",
-      "Prensa Libre"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T04:00:42Z",
-     "lastSeen": "2026-10-17T05:03:59Z",
-     "sources": [
-      {
-       "source": "BBC Mundo",
-       "lang": "es",
-       "title": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
-       "url": "https://www.bbc.com/mundo/articles/c8r4vy17rx62o",
-       "publishedAt": "2026-10-17T04:00:42Z"
-      },
-      {
-       "source": "Prensa Libre",
-       "lang": "es",
-       "title": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
-       "url": "https://www.prensalibre.com/internacional/bbc-news-mundo-internacional/por-que-irlanda-es-uno-de-los-paises-del-mundo-mas-criticos-con-israel-por-la-guerra-en-gaza/",
-       "publishedAt": "2026-10-17T05:00:48Z"
-      },
-      {
-       "source": "La Prensa (Panamá)",
-       "lang": "es",
-       "title": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
-       "url": "https://www.prensa.com/mundo/por-que-irlanda-es-uno-de-los-paises-del-mundo-mas-criticos-con-israel-por-la-guerra-en-gaza/",
-       "publishedAt": "2026-10-17T05:03:59Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "asia",
-       "label": "Asia"
-      }
-     ],
      "id": "posibles-44"
     },
     {
@@ -10052,6 +10537,49 @@
      "id": "posibles-45"
     },
     {
+     "headline": "13-year-old arrested in Narrabeen Lagoon 'sexual touching' probe",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "13-year-old arrested in Narrabeen Lagoon 'sexual touching' probe",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "NSW Police are investigating multiple incidents of alleged sexual offences against women while walking along Narrabeen Lagoon in Sydney's northern beaches.",
+     "summaryEnSource": "ABC News (Australia)",
+     "outlets": 2,
+     "outletNames": [
+      "ABC News (Australia)",
+      "The Sydney Morning Herald"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-17T07:40:43Z",
+     "lastSeen": "2026-10-17T19:30:54Z",
+     "sources": [
+      {
+       "source": "ABC News (Australia)",
+       "lang": "en",
+       "title": "13-year-old arrested in Narrabeen Lagoon 'sexual touching' probe",
+       "url": "https://www.abc.net.au/news/2026-10-17/women-report-sexual-offences-narrabeen-lagoon-walking-trails/107279134",
+       "publishedAt": "2026-10-17T07:40:43Z"
+      },
+      {
+       "source": "The Sydney Morning Herald",
+       "lang": "en",
+       "title": "Teen, 13, charged as police investigate alleged sex offences on walking trails",
+       "url": "https://www.smh.com.au/national/nsw/teen-13-arrested-as-police-investigate-alleged-sex-offences-on-walking-trails-20261017-p616bi.html",
+       "publishedAt": "2026-10-17T19:30:54Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "oceania",
+       "label": "Australia y Oceanía"
+      }
+     ],
+     "id": "posibles-46"
+    },
+    {
      "headline": "'Overuse of state power': Documents detail Gloriavale school's fight to stay open",
      "headlineLang": "en",
      "headlineEs": null,
@@ -10092,7 +10620,7 @@
        "label": "Australia y Oceanía"
       }
      ],
-     "id": "posibles-46"
+     "id": "posibles-47"
     },
     {
      "headline": "Estados Unidos, contra Ilhan Omar: así persigue Trump a su mayor enemiga en el Congreso",
@@ -10136,7 +10664,50 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-47"
+     "id": "posibles-48"
+    },
+    {
+     "headline": "Muere una niña al caer de forma accidental desde la ventana de su domicilio en Zaragoza",
+     "headlineLang": "es",
+     "headlineEs": "Muere una niña al caer de forma accidental desde la ventana de su domicilio en Zaragoza",
+     "headlineEn": null,
+     "summaryEs": "La pequeña, de dos años de edad, se habría precipitado al patio interior desde un 5º piso",
+     "summaryEsSource": "La Vanguardia",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "20minutos",
+      "La Vanguardia"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T18:41:42Z",
+     "lastSeen": "2026-10-17T19:15:38Z",
+     "sources": [
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Muere una niña al caer de forma accidental desde la ventana de su domicilio en Zaragoza",
+       "url": "https://www.lavanguardia.com/local/aragon/20261017/11661581/muere-nina-caer-forma-accidental-ventana-domicilio-zaragoza.html",
+       "publishedAt": "2026-10-17T18:41:42Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Muere una niña de dos años tras precipitarse por la ventana de un quinto piso de un edificio en Zaragoza",
+       "url": "https://www.20minutos.es/aragon/zaragoza/muere-nina-anos-precipitarse-ventana-edificio-zaragoza_7050071_0.html",
+       "publishedAt": "2026-10-17T19:15:38Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "sucesos",
+       "label": "Sucesos"
+      }
+     ],
+     "id": "posibles-49"
     },
     {
      "headline": "Fast-moving California wildfire burns homes as people are ordered to leave",
@@ -10179,121 +10750,52 @@
        "label": "Sucesos"
       }
      ],
-     "id": "posibles-48"
+     "id": "posibles-50"
     },
     {
-     "headline": "Tropical depression develops into a cyclone in Cook Islands waters",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Tropical depression develops into a cyclone in Cook Islands waters",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "A tropical depression that's been brewing in Cook Islands waters has developed into a tropical cyclone.",
-     "summaryEnSource": "RNZ",
-     "outlets": 2,
-     "outletNames": [
-      "NZ Herald",
-      "RNZ"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T01:24:56Z",
-     "lastSeen": "2026-10-17T18:47:47Z",
-     "sources": [
-      {
-       "source": "RNZ",
-       "lang": "en",
-       "title": "Cyclone alert in force for Cook Islands as tropical depression intensifies",
-       "url": "https://www.rnz.co.nz/news/pacific/1954087/cyclone-alert-in-force-for-cook-islands-as-tropical-depression-intensifies",
-       "publishedAt": "2026-10-16T01:24:56Z"
-      },
-      {
-       "source": "RNZ",
-       "lang": "en",
-       "title": "Cook Islanders urged to be prepared for potential cyclone",
-       "url": "https://www.rnz.co.nz/news/pacific/1958250/cook-islanders-urged-to-be-prepared-for-potential-cyclone",
-       "publishedAt": "2026-10-16T07:08:27Z"
-      },
-      {
-       "source": "RNZ",
-       "lang": "en",
-       "title": "Tropical depression develops into a cyclone in Cook Islands waters",
-       "url": "https://www.rnz.co.nz/news/pacific/1967513/tropical-depression-develops-into-a-cyclone-in-cook-islands-waters",
-       "publishedAt": "2026-10-16T21:31:00Z"
-      },
-      {
-       "source": "NZ Herald",
-       "lang": "en",
-       "title": "Cook Islands cyclone Wati forms as settled weather continues across New Zealand",
-       "url": "https://www.nzherald.co.nz/nz/cook-islands-cyclone-wati-forms-as-settled-weather-continues-across-new-zealand/OJO3ORL6BBGKXMKKEPCXCDRQJA/",
-       "publishedAt": "2026-10-17T16:00:00Z"
-      },
-      {
-       "source": "RNZ",
-       "lang": "en",
-       "title": "Aitutaki residents urged to heed updates as Wati approaches",
-       "url": "https://www.rnz.co.nz/news/pacific/1972158/aitutaki-residents-urged-to-heed-updates-as-wati-approaches",
-       "publishedAt": "2026-10-17T16:30:20Z"
-      },
-      {
-       "source": "RNZ",
-       "lang": "en",
-       "title": "TC Wati strengthens to Category 2",
-       "url": "https://www.rnz.co.nz/news/pacific/1974118/tc-wati-strengthens-to-category-2",
-       "publishedAt": "2026-10-17T18:47:47Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "oceania",
-       "label": "Australia y Oceanía"
-      }
-     ],
-     "id": "posibles-49"
-    },
-    {
-     "headline": "Dos detenidos en Irún investigados por terrorismo tras descubrirlos con información sobre fuerzas de seguridad, armas y explosivos",
+     "headline": "El euro digital llegará para complementar el efectivo, dice Lagarde",
      "headlineLang": "es",
-     "headlineEs": "Dos detenidos en Irún investigados por terrorismo tras descubrirlos con información sobre fuerzas de seguridad, armas y explosivos",
-     "headlineEn": null,
-     "summaryEs": "Los detenidos cuentan con \"antecedentes relevantes\", aunque la Ertzaintza no ha especificado de qué tipo Leer",
-     "summaryEsSource": "El Mundo",
-     "summaryEn": null,
-     "summaryEnSource": null,
+     "headlineEs": "El euro digital llegará para complementar el efectivo, dice Lagarde",
+     "headlineEn": "Lagarde says euro-area economy is resilient, digital euro imminent",
+     "summaryEs": "El euro digital ampliará las opciones de pago sin eliminar el efectivo, pero plantea dudas sobre la privacidad financiera. La nota El euro digital llegará para complementar el efectivo, dice Lagarde se publicó primero en CriptoNoticias - Noticias de Bitcoin, Ethereum y criptomonedas .",
+     "summaryEsSource": "CriptoNoticias",
+     "summaryEn": "“The digital euro will further stimulate innovation and competition in retail payments,” according to the ECB president.",
+     "summaryEnSource": "Cointelegraph",
      "outlets": 2,
      "outletNames": [
-      "El Mundo",
-      "La Vanguardia"
+      "Cointelegraph",
+      "CriptoNoticias"
      ],
      "languages": [
+      "en",
       "es"
      ],
-     "firstSeen": "2026-10-17T17:31:42Z",
-     "lastSeen": "2026-10-17T18:12:50Z",
+     "firstSeen": "2026-10-17T08:32:11Z",
+     "lastSeen": "2026-10-17T18:49:54Z",
      "sources": [
       {
-       "source": "El Mundo",
-       "lang": "es",
-       "title": "Dos detenidos en Irún investigados por terrorismo tras descubrirlos con información sobre fuerzas de seguridad, armas y explosivos",
-       "url": "https://www.elmundo.es/pais-vasco/2026/10/17/6ad3b0a521efa0ee6a8b4572.html",
-       "publishedAt": "2026-10-17T17:31:42Z"
+       "source": "Cointelegraph",
+       "lang": "en",
+       "title": "Lagarde says euro-area economy is resilient, digital euro imminent",
+       "url": "https://cointelegraph.com/news/lagarde-says-euro-area-economy-is-resilient-digital-euro-imminent",
+       "publishedAt": "2026-10-17T08:32:11Z"
       },
       {
-       "source": "La Vanguardia",
+       "source": "CriptoNoticias",
        "lang": "es",
-       "title": "Dos detenidos en Irun investigados por terrorismo",
-       "url": "https://www.lavanguardia.com/politica/20261017/11661566/dos-detenidos-irun-investigados-terrorismo.html",
-       "publishedAt": "2026-10-17T18:12:50Z"
+       "title": "El euro digital llegará para complementar el efectivo, dice Lagarde",
+       "url": "https://www.criptonoticias.com/comunidad/adopcion/euro-digital-llegara-complementar-efectivo-lagarde/",
+       "publishedAt": "2026-10-17T18:49:54Z"
       }
      ],
+     "extraOutlets": 0,
      "chips": [
       {
-       "id": "sucesos",
-       "label": "Sucesos"
+       "id": "cripto",
+       "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-50"
+     "id": "posibles-51"
     },
     {
      "headline": "Ethereum probará Glamsterdam en Hoodi el 26 de octubre",
@@ -10338,7 +10840,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-51"
+     "id": "posibles-52"
     },
     {
      "headline": "Private Jet Makes Emergency Landing After Door Detaches Mid-Air In Nigeria",
@@ -10381,7 +10883,7 @@
        "label": "África"
       }
      ],
-     "id": "posibles-52"
+     "id": "posibles-53"
     },
     {
      "headline": "Binance.US Seeks Up to $100 Million at $1 Billion Valuation, Bloomberg Reports",
@@ -10433,7 +10935,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-53"
+     "id": "posibles-54"
     },
     {
      "headline": "World Cup heartbreak for Kangaroos half as Tonga notches first win over England",
@@ -10476,7 +10978,7 @@
        "label": "Australia y Oceanía"
       }
      ],
-     "id": "posibles-54"
+     "id": "posibles-55"
     },
     {
      "headline": "Por la fuerte suba del petróleo, la inflación mayorista se aceleró a 3,2% en septiembre",
@@ -10517,50 +11019,6 @@
       {
        "id": "finanzas",
        "label": "Mundo de finanzas"
-      }
-     ],
-     "id": "posibles-55"
-    },
-    {
-     "headline": "Solana shows resilience, but some areas need continued observation, Fidelity says",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Solana shows resilience, but some areas need continued observation, Fidelity says",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Solana has had no reported mainnet outages in two years, but concentrations in stake, hosting and client software should be monitored, according to a report.",
-     "summaryEnSource": "Cointelegraph",
-     "outlets": 2,
-     "outletNames": [
-      "Cointelegraph",
-      "Crypto Briefing"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-17T12:58:03Z",
-     "lastSeen": "2026-10-17T13:10:16Z",
-     "sources": [
-      {
-       "source": "Cointelegraph",
-       "lang": "en",
-       "title": "Solana shows resilience, but some areas need continued observation, Fidelity says",
-       "url": "https://cointelegraph.com/news/solana-shows-resilience-but-some-areas-need-continued-observation-fidelity-says",
-       "publishedAt": "2026-10-17T12:58:03Z"
-      },
-      {
-       "source": "Crypto Briefing",
-       "lang": "en",
-       "title": "Fidelity report finds Solana resilient but flags concentration in stake, hosting and clients",
-       "url": "https://cryptobriefing.com/fidelity-report-solana-resilience-concentration-risks/",
-       "publishedAt": "2026-10-17T13:10:16Z"
-      }
-     ],
-     "extraOutlets": 0,
-     "chips": [
-      {
-       "id": "cripto",
-       "label": "Criptomonedas"
       }
      ],
      "id": "posibles-56"
@@ -11090,7 +11548,7 @@
    "url": "https://www.theguardian.com/world/rss",
    "itemsInFeed": 45,
    "kept": 33,
-   "newest": "2026-10-17T19:08:46Z"
+   "newest": "2026-10-17T19:15:03Z"
   },
   {
    "id": "guardian-us",
@@ -11162,7 +11620,7 @@
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
    "itemsInFeed": 14,
    "kept": 12,
-   "newest": "2026-10-17T19:19:08Z"
+   "newest": "2026-10-17T19:30:41Z"
   },
   {
    "id": "nyt-world",
@@ -11252,7 +11710,7 @@
    "url": "https://www.aljazeera.com/xml/rss/all.xml",
    "itemsInFeed": 25,
    "kept": 14,
-   "newest": "2026-10-17T18:26:59Z"
+   "newest": "2026-10-17T19:26:13Z"
   },
   {
    "id": "cbs-world",
@@ -11260,8 +11718,8 @@
    "lang": "en",
    "url": "https://www.cbsnews.com/latest/rss/world",
    "itemsInFeed": 30,
-   "kept": 9,
-   "newest": "2026-10-17T18:45:09Z"
+   "kept": 10,
+   "newest": "2026-10-17T19:30:27Z"
   },
   {
    "id": "cbs-main",
@@ -11269,7 +11727,7 @@
    "lang": "en",
    "url": "https://www.cbsnews.com/latest/rss/main",
    "itemsInFeed": 30,
-   "kept": 10,
+   "kept": 9,
    "newest": "2026-10-17T18:54:07Z"
   },
   {
@@ -11277,8 +11735,8 @@
    "source": "Sky News",
    "lang": "en",
    "url": "https://feeds.skynews.com/feeds/rss/world.xml",
-   "itemsInFeed": 7,
-   "kept": 7,
+   "itemsInFeed": 6,
+   "kept": 6,
    "newest": "2026-10-17T17:38:00Z"
   },
   {
@@ -11286,8 +11744,8 @@
    "source": "Sky News",
    "lang": "en",
    "url": "https://feeds.skynews.com/feeds/rss/home.xml",
-   "itemsInFeed": 7,
-   "kept": 4,
+   "itemsInFeed": 6,
+   "kept": 3,
    "newest": "2026-10-17T15:30:00Z"
   },
   {
@@ -11297,7 +11755,7 @@
    "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
    "itemsInFeed": 30,
    "kept": 28,
-   "newest": "2026-10-17T19:28:01Z"
+   "newest": "2026-10-17T19:35:18Z"
   },
   {
    "id": "dw-en",
@@ -11324,7 +11782,7 @@
    "url": "https://rss.dw.com/xml/rss-sp-all",
    "itemsInFeed": 23,
    "kept": 20,
-   "newest": "2026-10-17T17:39:00Z"
+   "newest": "2026-10-17T19:34:00Z"
   },
   {
    "id": "f24-en",
@@ -11368,8 +11826,8 @@
    "lang": "es",
    "url": "https://www.france24.com/es/rss",
    "itemsInFeed": 24,
-   "kept": 3,
-   "newest": "2026-10-17T15:30:30Z"
+   "kept": 4,
+   "newest": "2026-10-17T19:32:00Z"
   },
   {
    "id": "f24-es-latam",
@@ -11449,7 +11907,7 @@
    "lang": "es",
    "url": "https://rss.elconfidencial.com/mundo/",
    "itemsInFeed": 15,
-   "kept": 14,
+   "kept": 15,
    "newest": "2026-10-17T15:11:00Z"
   },
   {
@@ -11486,7 +11944,7 @@
    "url": "https://www.20minutos.es/rss/",
    "itemsInFeed": 191,
    "kept": 115,
-   "newest": "2026-10-17T19:06:48Z"
+   "newest": "2026-10-17T19:32:56Z"
   },
   {
    "id": "infobae",
@@ -11494,8 +11952,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "itemsInFeed": 100,
-   "kept": 43,
-   "newest": "2026-10-17T19:19:40Z"
+   "kept": 44,
+   "newest": "2026-10-17T19:36:36Z"
   },
   {
    "id": "infobae-america",
@@ -11503,8 +11961,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/america/",
    "itemsInFeed": 100,
-   "kept": 90,
-   "newest": "2026-10-17T19:29:00Z"
+   "kept": 87,
+   "newest": "2026-10-17T18:29:29Z"
   },
   {
    "id": "infobae-eco",
@@ -11530,8 +11988,8 @@
    "lang": "es",
    "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
    "itemsInFeed": 93,
-   "kept": 44,
-   "newest": "2026-10-17T19:20:00Z"
+   "kept": 43,
+   "newest": "2026-10-17T19:36:45Z"
   },
   {
    "id": "eltiempo-mundo",
@@ -11549,7 +12007,7 @@
    "url": "https://www.eltiempo.com/rss/colombia.xml",
    "itemsInFeed": 10,
    "kept": 9,
-   "newest": "2026-10-17T18:30:19Z"
+   "newest": "2026-10-17T19:15:53Z"
   },
   {
    "id": "elcomercio-pe",
@@ -11558,7 +12016,7 @@
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
    "itemsInFeed": 100,
    "kept": 62,
-   "newest": "2026-10-17T19:25:23Z"
+   "newest": "2026-10-17T19:30:34Z"
   },
   {
    "id": "nacion-cr",
@@ -11566,8 +12024,8 @@
    "lang": "es",
    "url": "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml",
    "itemsInFeed": 100,
-   "kept": 49,
-   "newest": "2026-10-17T19:16:18Z"
+   "kept": 50,
+   "newest": "2026-10-17T19:26:28Z"
   },
   {
    "id": "elfinanciero-cr",
@@ -12107,6 +12565,12 @@
    [
     "descartada",
     "UpliftingNews",
+    "A Startup Has a Plan to Make Water From Air Using Data Centers’ Waste Heat",
+    "https://archive.li/bvQ6A"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
     "After turning her health around following a diabetes diagnosis, San Antonio’s Anabel “Sirena” Ledezma now teaches 30 to ",
     "https://texasnewsroom2026.nextgenradio.org/sirena-found-healing-water-inspires-others-san-antonio-texas-public-radio/"
    ],
@@ -12115,12 +12579,6 @@
     "UpliftingNews",
     "Woman Celebrates 100th Birthday with 5 Generations of Family, Reveals Secret to Her Long Life (Exclusive)",
     "https://people.com/woman-celebrates-100th-birthday-reveals-secret-to-living-long-life-exclusive-12170568"
-   ],
-   [
-    "descartada",
-    "UpliftingNews",
-    "A Startup Has a Plan to Make Water From Air Using Data Centers’ Waste Heat",
-    "https://archive.li/bvQ6A"
    ],
    [
     "descartada",
@@ -12143,14 +12601,14 @@
    [
     "descartada",
     "Futurology",
-    "OpenAI discloses four more rogue incidents involving financial, medical, and government data",
-    "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data"
+    "A rogue OpenAI agent robbed a crypto wallet to obtain funds to carry out a task",
+    "https://fortune.com/2026/10/16/rogue-openai-agent-crypto-wallet-funds-task"
    ],
    [
     "descartada",
     "Futurology",
-    "A rogue OpenAI agent robbed a crypto wallet to obtain funds to carry out a task",
-    "https://fortune.com/2026/10/16/rogue-openai-agent-crypto-wallet-funds-task"
+    "OpenAI discloses four more rogue incidents involving financial, medical, and government data",
+    "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data"
    ],
    [
     "descartada",
@@ -12298,7 +12756,7 @@
    "Famoso filósofo británico sobre cómo vencer la procrastinación: “Cuando no hacemos lo que más queremos, a menudo es por una razón: el peso insoportable que tiene para nosotros esa gran prioridad vital”",
    "La vida de Raphael llega a Netflix: entre la gloria, los rumores y las cuentas pendientes"
   ],
-  "candidates": 79,
+  "candidates": 78,
   "fromGeneralFeeds": 0,
   "rejected": {
    "formato": 97,
@@ -12404,6 +12862,11 @@
     },
     {
      "sub": "UpliftingNews",
+     "title": "A Startup Has a Plan to Make Water From Air Using Data Centers’ Waste Heat",
+     "link": "https://archive.li/bvQ6A"
+    },
+    {
+     "sub": "UpliftingNews",
      "title": "After turning her health around following a diabetes diagnosis, San Antonio’s Anabel “Sirena” Ledezma now teaches 30 to 40 free aqua aerobic",
      "link": "https://texasnewsroom2026.nextgenradio.org/sirena-found-healing-water-inspires-others-san-antonio-texas-public-radio/"
     },
@@ -12411,11 +12874,6 @@
      "sub": "UpliftingNews",
      "title": "Woman Celebrates 100th Birthday with 5 Generations of Family, Reveals Secret to Her Long Life (Exclusive)",
      "link": "https://people.com/woman-celebrates-100th-birthday-reveals-secret-to-living-long-life-exclusive-12170568"
-    },
-    {
-     "sub": "UpliftingNews",
-     "title": "A Startup Has a Plan to Make Water From Air Using Data Centers’ Waste Heat",
-     "link": "https://archive.li/bvQ6A"
     },
     {
      "sub": "UpliftingNews",
@@ -12444,7 +12902,7 @@
   },
   "globalCount": 37,
   "crCount": 12,
-  "allStoriesBeforeCap": 72,
+  "allStoriesBeforeCap": 71,
   "cr": {
    "status": [
     [
@@ -12624,7 +13082,7 @@
     [
      "crq-amprensa-amprensa",
      true,
-     23,
+     24,
      null
     ],
     [
@@ -12636,7 +13094,7 @@
     [
      "crq-observador-observador",
      true,
-     89,
+     95,
      null
     ],
     [
@@ -12652,16 +13110,16 @@
      null
     ]
    ],
-   "kept": 30,
+   "kept": 29,
    "rejected": {
-    "sin ángulo tico": 913,
-    "negativo": 198,
+    "sin ángulo tico": 915,
+    "negativo": 197,
     "sin señal positiva": 211,
-    "deporte (no es triunfo)": 127,
+    "deporte (no es triunfo)": 126,
     "agenda/evento": 22
    }
   },
-  "crStoriesBeforeCap": 24
+  "crStoriesBeforeCap": 23
  },
  "crypto": {
   "minOutlets": 5,
@@ -12684,7 +13142,7 @@
     "id": "cr-decrypt",
     "source": "Decrypt",
     "url": "https://decrypt.co/feed",
-    "itemsInFeed": 57,
+    "itemsInFeed": 37,
     "kept": 14
    },
    {
@@ -12748,7 +13206,7 @@
     "source": "CriptoNoticias",
     "url": "https://www.criptonoticias.com/feed/",
     "itemsInFeed": 10,
-    "kept": 5
+    "kept": 7
    },
    {
     "id": "cr-diariobitcoin",
@@ -12894,7 +13352,7 @@
     "id": "crq-cnbc",
     "source": "CNBC",
     "url": "gn:site:cnbc.com (bitcoin OR crypto OR stablecoin OR ethereum)",
-    "itemsInFeed": 17,
+    "itemsInFeed": 15,
     "kept": 0
    },
    {
@@ -12902,7 +13360,7 @@
     "source": "The Wall Street Journal",
     "url": "gn:site:wsj.com (bitcoin OR crypto OR stablecoin OR ethereum)",
     "itemsInFeed": 100,
-    "kept": 5
+    "kept": 4
    },
    {
     "id": "crq-fortune",
@@ -12930,13 +13388,13 @@
     "source": "Yahoo Finanzas",
     "url": "gn:site:finance.yahoo.com (bitcoin OR crypto OR stablecoin OR ethereum)",
     "itemsInFeed": 100,
-    "kept": 62
+    "kept": 63
    },
    {
     "id": "crq-theblock",
     "source": "The Block",
     "url": "gn:site:theblock.co",
-    "itemsInFeed": 32,
+    "itemsInFeed": 33,
     "kept": 4
    },
    {
@@ -13063,17 +13521,17 @@
     "error": "Feed vacío"
    }
   ],
-  "itemsGathered": 269,
+  "itemsGathered": 271,
   "fromGeneralFeeds": 0,
   "rejected": {
    "predicción/promo/formato": 29,
    "sección no noticiosa": 8
   },
-  "clusters": 190,
+  "clusters": 192,
   "groupsByOutletCount": {
-   "0": 85,
-   "1": 89,
-   "2": 8,
+   "0": 87,
+   "1": 88,
+   "2": 9,
    "3": 2,
    "4": 1,
    "5": 2,
@@ -13153,8 +13611,8 @@
     "region": "costarica",
     "url": "https://crhoy.com/sitemaps/sitemap-news.xml",
     "method": "directo",
-    "itemsInFeed": 172,
-    "kept": 97
+    "itemsInFeed": 171,
+    "kept": 98
    },
    {
     "id": "cr-teletica",
@@ -13164,7 +13622,7 @@
     "url": "https://www.teletica.com/sitemaps/news/last-news",
     "method": "google-news",
     "itemsInFeed": 100,
-    "kept": 74
+    "kept": 84
    },
    {
     "id": "cr-repretel",
@@ -13173,7 +13631,7 @@
     "region": "costarica",
     "url": "https://www.repretel.com/feed/",
     "method": "google-news",
-    "itemsInFeed": 21,
+    "itemsInFeed": 22,
     "kept": 20
    },
    {
@@ -13193,8 +13651,8 @@
     "region": "costarica",
     "url": "https://trivisioncr.com/news-sitemap.xml",
     "method": "google-news",
-    "itemsInFeed": 6,
-    "kept": 6
+    "itemsInFeed": 5,
+    "kept": 5
    },
    {
     "id": "ca-prensalibre",
@@ -13244,7 +13702,7 @@
     "url": "https://www.prensa.com/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 63
+    "kept": 62
    },
    {
     "id": "ca-critica-pa",
@@ -13344,7 +13802,7 @@
     "url": "https://www.eluniversal.com.mx/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 66
+    "kept": 63
    },
    {
     "id": "la-jornada",
@@ -13373,7 +13831,7 @@
     "region": "latam",
     "url": "https://expansion.mx/rss",
     "method": "directo",
-    "itemsInFeed": 38,
+    "itemsInFeed": 37,
     "kept": 32
    },
    {
@@ -13394,7 +13852,7 @@
     "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/mexico/",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 72
+    "kept": 74
    },
    {
     "id": "la-diariolibre",
@@ -13454,7 +13912,7 @@
     "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/politica/",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 41
+    "kept": 42
    },
    {
     "id": "sa-semana",
@@ -13527,6 +13985,16 @@
     "kept": 4
    },
    {
+    "id": "sa-mercopress",
+    "source": "MercoPress",
+    "org": "mercopress",
+    "region": "sudamerica",
+    "url": "https://en.mercopress.com/rss",
+    "method": "directo",
+    "itemsInFeed": 10,
+    "kept": 10
+   },
+   {
     "id": "eu-guardian-europe",
     "source": "The Guardian",
     "org": "guardian",
@@ -13574,7 +14042,7 @@
     "url": "https://www.rte.ie/feeds/rss/?index=/news/",
     "method": "directo",
     "itemsInFeed": 60,
-    "kept": 56
+    "kept": 55
    },
    {
     "id": "eu-thelocal",
@@ -13774,7 +14242,7 @@
     "url": "https://thediplomat.com/feed/",
     "method": "directo",
     "itemsInFeed": 96,
-    "kept": 5
+    "kept": 4
    },
    {
     "id": "af-guardian-africa",
@@ -13794,7 +14262,7 @@
     "url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
     "method": "directo",
     "itemsInFeed": 33,
-    "kept": 27
+    "kept": 28
    },
    {
     "id": "af-premiumtimes",
@@ -13944,7 +14412,7 @@
     "url": "https://www.smh.com.au/rss/feed.xml",
     "method": "directo",
     "itemsInFeed": 20,
-    "kept": 8
+    "kept": 9
    },
    {
     "id": "oc-theage",
@@ -13954,7 +14422,7 @@
     "url": "https://www.theage.com.au/rss/feed.xml",
     "method": "directo",
     "itemsInFeed": 20,
-    "kept": 1
+    "kept": 0
    },
    {
     "id": "oc-crikey",
@@ -14023,7 +14491,7 @@
     "region": "oceania",
     "url": "https://www.stuff.co.nz/rss",
     "method": "directo",
-    "itemsInFeed": 84,
+    "itemsInFeed": 83,
     "kept": 30
    }
   ],
@@ -14045,12 +14513,6 @@
     "source": "Efecto Cocuyo",
     "url": "https://efectococuyo.com/feed/",
     "error": "HTTPError: HTTP Error 403: Forbidden"
-   },
-   {
-    "id": "sa-mercopress",
-    "source": "MercoPress",
-    "url": "https://en.mercopress.com/rss",
-    "error": "ParseError: syntax error: line 1, column 0"
    },
    {
     "id": "as-indianexpress",
@@ -14141,25 +14603,25 @@
     "error": "Funcionan pero no están en español ni inglés (no se pueden agrupar)"
    }
   ],
-  "itemsGathered": 4150,
-  "clusters": 3245,
+  "itemsGathered": 4166,
+  "clusters": 3242,
   "perRegion": {
-   "costarica": 5,
-   "centroamerica": 3,
+   "costarica": 6,
+   "centroamerica": 2,
    "latam": 3,
    "sudamerica": 2,
-   "europa": 16,
+   "europa": 19,
    "asia": 3,
    "africa": 3,
    "oceania": 1
   },
   "groupsWith3or4Outlets": {
-   "costarica": 15,
+   "costarica": 14,
    "centroamerica": 3,
-   "latam": 5,
+   "latam": 4,
    "sudamerica": 5,
-   "europa": 20,
-   "asia": 7,
+   "europa": 17,
+   "asia": 8,
    "africa": 2,
    "oceania": 0
   },
@@ -14167,7 +14629,7 @@
    "costarica": 12,
    "centroamerica": 12,
    "latam": 9,
-   "sudamerica": 12,
+   "sudamerica": 13,
    "europa": 7,
    "asia": 8,
    "africa": 9,
@@ -14175,28 +14637,28 @@
   }
  },
  "possible": {
-  "candidates": 273,
-  "afterDedupe": 222,
+  "candidates": 263,
+  "afterDedupe": 215,
   "shown": 60,
   "byOutlets": {
    "2": 15,
-   "3": 23,
-   "4": 22
+   "3": 24,
+   "4": 21
   },
   "byChip": {
-   "sudamerica": 4,
-   "mundo": 7,
+   "sudamerica": 5,
+   "mundo": 6,
    "europa": 8,
    "africa": 3,
-   "latam": 5,
-   "costarica": 8,
+   "latam": 4,
    "politica": 8,
-   "sucesos": 3,
+   "sucesos": 4,
    "asia": 6,
    "guerras": 2,
+   "finanzas": 5,
+   "costarica": 8,
    "cripto": 6,
    "centroamerica": 3,
-   "finanzas": 4,
    "oceania": 3,
    "ciencias": 2
   }
