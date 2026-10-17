@@ -33,7 +33,7 @@
     {
       target: "#schedule",
       title: "Siempre al día",
-      text: "Aquí ves la hora de la última actualización y de la próxima (cada 3 horas, hora de Costa Rica). Para ver este tour otra vez, toca el botón «?» de arriba.",
+      text: "Aquí ves la hora de la última actualización y de la próxima (cada 3 horas, hora de Costa Rica). Justo abajo está el tipo de cambio del dólar y el euro. Para ver este tour otra vez, toca el botón «?» de arriba.",
       extra: "#tourBtn",
     },
   ];

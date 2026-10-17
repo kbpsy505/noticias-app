@@ -104,6 +104,15 @@ Historias **sin confirmar** que publican **2 a 4 medios distintos** (no llegaron
 - La agrupación usa el mismo código que las demás pestañas; la rareza de los términos se mide contra todo el corpus del día.
 - Si ninguna noticia llega a 5 medios, la pestaña lo dice en vez de mostrar algo sin verificar. Informe en `noticias.json` → `crypto`.
 
+## Tipo de cambio
+
+`tipocambio.py` agrega al encabezado (visible en todas las pestañas) el tipo de cambio de referencia del BCCR, en cada actualización de 3 horas, y lo guarda en `noticias.json` → `exchange`.
+
+- **Dólar y ventanilla:** [TipoCambioCR](https://www.tipocambiocr.net/) (API pública sin llave: `/today/full.json` y `/api/snapshots` para el cambio contra el día anterior). Muestra compra/venta, el cambio vs. el día anterior, la referencia de mañana cuando BCCR ya la publicó (`bccrPreview`, después de ~5:30 p. m.), la mejor compra/venta y una tabla plegable de bancos, cooperativas, mutuales, financieras, casas de cambio y puestos de bolsa. Se ocultan tasas a más de 10 % de la referencia.
+- **Euro:** API del Ministerio de Hacienda (`api.hacienda.go.cr/indicadores/tc`), que también sirve de respaldo para el dólar si TipoCambioCR no responde.
+- Crédito: «Datos: TipoCambioCR» bajo las cifras y el botón «Ver más en TipoCambioCR ↗».
+- Si las dos fuentes fallan, el bloque no aparece y el resto de la actualización sigue igual.
+
 ## Tour de bienvenida
 
 `tour.js` (sin librerías) muestra un tour corto de 6 pasos la primera vez que alguien abre la página: bienvenida, pestañas, etiqueta de medios, tarjeta, Posibles noticias y hora de actualización. Resalta cada parte real de la página y arranca cuando ya cargó `noticias.json`. Se marca como visto en `localStorage` (`noticias_tour_v1`) y se repite con el botón «?» del encabezado. Si falta un elemento (p. ej. una pestaña vacía), el mensaje se muestra centrado.

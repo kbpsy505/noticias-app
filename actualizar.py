@@ -760,8 +760,18 @@ def main():
     except Exception as exc:  # nunca romper la actualización principal
         print("buenas FAIL", type(exc).__name__, exc)
 
+    exchange, exchange_report = None, None
+    try:  # tipo de cambio para el encabezado; nunca rompe la actualización
+        import tipocambio
+        exchange, exchange_report = tipocambio.build(now)
+        print("tipo de cambio", exchange_report)
+    except Exception as exc:
+        print("tipo de cambio FAIL", type(exc).__name__, exc)
+
     payload = {
         "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "exchange": exchange,
+        "exchangeReport": exchange_report,
         "nextRefreshAt": next_cron(now).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "refreshHours": REFRESH_HOURS,
         "method": {

@@ -40,6 +40,80 @@ function renderSchedule(data) {
   }
 }
 
+const crc = (v) => "₡" + Number(v).toLocaleString("es-CR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const day = new Intl.DateTimeFormat("es-CR", { timeZone: "UTC", weekday: "short", day: "numeric", month: "short" });
+const fday = (d) => day.format(new Date(d + "T12:00:00Z"));
+
+function renderFx(data) {
+  const fx = data.exchange;
+  const box = document.getElementById("fx");
+  if (!fx || !fx.dolar) return;
+  box.hidden = false;
+  box.innerHTML = "";
+  const d = fx.dolar;
+  const grid = el("div", "fx-grid");
+  function cell(label, value, delta, note) {
+    const c = el("div", "fx-cell");
+    c.append(el("span", "fx-label", label), el("span", "fx-val", value));
+    if (delta != null && delta !== 0) {
+      c.append(el("span", "fx-delta " + (delta > 0 ? "up" : "down"), (delta > 0 ? "▲ " : "▼ ") + crc(Math.abs(delta)).replace("₡", "₡")));
+    } else if (delta === 0) {
+      c.append(el("span", "fx-delta", "= sin cambio"));
+    }
+    if (note) c.append(el("span", "fx-note", note));
+    return c;
+  }
+  grid.append(cell("Dólar compra", crc(d.compra), d.cambioCompra),
+              cell("Dólar venta", crc(d.venta), d.cambioVenta));
+  if (fx.euro) grid.append(cell("Euro", crc(fx.euro.colones), null,
+    "US$" + fx.euro.dolares.toFixed(4) + (fx.euro.fecha !== d.fecha ? " · " + fday(fx.euro.fecha) : "")));
+  box.append(el("p", "fx-title", "Tipo de cambio de referencia BCCR · " + fday(d.fecha)), grid);
+  const link = (text, href, cls) => {
+    const a = el("a", cls || null, text);
+    a.href = href; a.target = "_blank"; a.rel = "noopener";
+    return a;
+  };
+  const credit = el("p", "fx-credit");
+  credit.append("Datos: ", link("TipoCambioCR", "https://www.tipocambiocr.net/"));
+  if (fx.euro) credit.append(" · Euro: Hacienda");
+  box.append(credit);
+  if (fx.manana && fx.manana.venta) {
+    const m = el("p", "fx-tomorrow");
+    m.append(el("strong", null, "Mañana (" + fday(fx.manana.fecha) + "): "),
+      (fx.manana.compra ? "compra " + crc(fx.manana.compra) + " · " : "") + "venta " + crc(fx.manana.venta));
+    box.append(m);
+  }
+  const meta = el("p", "fx-meta");
+  let txt = d.anterior ? "Cambio vs " + fday(d.anterior.fecha) + ". " : "";
+  if (fx.mejorVenta) txt += "Mejor venta en ventanilla: " + fx.mejorVenta.entidad + " " + crc(fx.mejorVenta.venta) + ". ";
+  if (fx.mejorCompra) txt += "Mejor compra: " + fx.mejorCompra.entidad + " " + crc(fx.mejorCompra.compra) + ".";
+  meta.textContent = txt;
+  box.append(meta);
+  if (fx.ventanilla && fx.ventanilla.length) {
+    const det = el("details", "fx-banks");
+    const n = fx.ventanilla.reduce((a, g) => a + g.rows.length, 0);
+    det.append(el("summary", null, "Ver bancos y casas de cambio (" + n + ")"));
+    fx.ventanilla.forEach((g) => {
+      det.append(el("p", "fx-group", g.label));
+      const t = el("table", "fx-table");
+      const hr = el("tr");
+      ["Entidad", "Compra", "Venta"].forEach((h) => hr.append(el("th", null, h)));
+      t.append(hr);
+      g.rows.forEach((r) => {
+        const tr = el("tr");
+        tr.append(el("td", null, r.entidad), el("td", null, crc(r.compra)), el("td", null, crc(r.venta)));
+        t.append(tr);
+      });
+      det.append(t);
+    });
+    box.append(det);
+  }
+  box.append(link("Ver más en TipoCambioCR ↗", "https://www.tipocambiocr.net/", "fx-more"));
+  const src = el("p", "fx-src");
+  src.append("Referencia oficial del Banco Central de Costa Rica. Consultado " + fmt(fx.consultado) + ".");
+  box.append(src);
+}
+
 function renderTabs() {
   const nav = document.getElementById("tabs");
   nav.innerHTML = "";
@@ -204,6 +278,7 @@ fetch("noticias.json?t=" + Date.now(), { cache: "no-store" })
     state.data = data;
     if (!data.categories.some((c) => c.id === state.cat)) state.cat = data.categories[0].id;
     renderSchedule(data);
+    renderFx(data);
     renderTabs();
     renderList();
     renderFoot(data);
