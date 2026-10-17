@@ -93,3 +93,7 @@ Historias **sin confirmar** que publican **2 a 4 medios distintos** (no llegaron
 - Se descartan comunicados de prensa (PR Newswire, GlobeNewswire, Business Wire…), contenido patrocinado, predicciones de precio, listas de "monedas para comprar" y airdrops.
 - La agrupación usa el mismo código que las demás pestañas; la rareza de los términos se mide contra todo el corpus del día.
 - Si ninguna noticia llega a 5 medios, la pestaña lo dice en vez de mostrar algo sin verificar. Informe en `noticias.json` → `crypto`.
+
+## Tour de bienvenida
+
+`tour.js` (sin librerías) muestra un tour corto de 6 pasos la primera vez que alguien abre la página: bienvenida, pestañas, etiqueta de medios, tarjeta, Posibles noticias y hora de actualización. Resalta cada parte real de la página y arranca cuando ya cargó `noticias.json`. Se marca como visto en `localStorage` (`noticias_tour_v1`) y se repite con el botón «?» del encabezado. Si falta un elemento (p. ej. una pestaña vacía), el mensaje se muestra centrado.

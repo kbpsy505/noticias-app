@@ -46,6 +46,7 @@ function renderTabs() {
   state.data.categories.forEach((c) => {
     const b = el("button", "tab" + (c.id === state.cat ? " on" : ""));
     b.type = "button";
+    b.dataset.cat = c.id;
     b.append(c.label, el("span", "count", String(c.stories.length)));
     b.addEventListener("click", () => {
       state.cat = c.id;
@@ -185,6 +186,7 @@ fetch("noticias.json?t=" + Date.now(), { cache: "no-store" })
     renderTabs();
     renderList();
     renderFoot(data);
+    if (window.NoticiasTour) window.NoticiasTour.maybeStart();
   })
   .catch(() => {
     document.getElementById("schedule").textContent = "No se pudo leer noticias.json.";
