@@ -98,7 +98,8 @@ function card(s) {
 
   const det = el("details", "sources");
   const sum = el("summary", null, s.outlets > 1
-    ? "Ver fuentes (" + s.sources.length + " notas en " + s.outlets + " medios)"
+    ? "Ver fuentes (" + s.sources.length + " notas en " + s.outlets + " medios" +
+      (s.extraOutlets ? " + " + s.extraOutlets + (s.extraOutlets === 1 ? " fuente extra que no cuenta" : " fuentes extra que no cuentan") : "") + ")"
     : "Ver fuente" + (s.sources.length > 1 ? "s (" + s.sources.length + " notas)" : ""));
   det.append(sum);
   const ul = el("ul");

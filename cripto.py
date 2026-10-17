@@ -13,7 +13,7 @@ import re
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 import actualizar as A
 
@@ -47,7 +47,59 @@ CRYPTO_FEEDS = [
     ("cr-axios", "https://api.axios.com/feed/", "Axios", "axios", "en", False),
     ("cr-nyt-tech", "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml", "The New York Times", "nyt", "en", False),
     ("cr-bbc-tech", "https://feeds.bbci.co.uk/news/technology/rss.xml", "BBC", "bbc", "en", False),
+    # ---- nuevos directos
+    ("cr-btcmag", "https://bitcoinmagazine.com/feed", "Bitcoin Magazine", "btcmag", "en", True),
+    ("cr-beincrypto", "https://beincrypto.com/feed/", "BeInCrypto", "beincrypto", "en", True),
+    ("cr-cryptonews", "https://cryptonews.com/news/feed/", "Cryptonews", "cryptonews", "en", True),
+    ("cr-utoday", "https://u.today/rss", "U.Today", "utoday", "en", True),
+    ("cr-coingape", "https://coingape.com/feed/", "CoinGape", "coingape", "en", True),
+    ("cr-newsbtc", "https://www.newsbtc.com/feed/", "NewsBTC", "newsbtc", "en", True),
+    # ---- Google Noticias por sitio (medios sin RSS de cripto o bloqueados); "when:2d" va primero
+    ("crq-reuters", "gn:site:reuters.com (bitcoin OR crypto OR stablecoin OR ethereum OR blockchain)", "Reuters", "reuters", "en", False),
+    ("crq-bloomberg", "gn:site:bloomberg.com (bitcoin OR crypto OR stablecoin OR ethereum)", "Bloomberg", "bloomberg", "en", False),
+    ("crq-cnbc", "gn:site:cnbc.com (bitcoin OR crypto OR stablecoin OR ethereum)", "CNBC", "cnbc", "en", False),
+    ("crq-wsj", "gn:site:wsj.com (bitcoin OR crypto OR stablecoin OR ethereum)", "The Wall Street Journal", "dowjones", "en", False),
+    ("crq-fortune", "gn:site:fortune.com (bitcoin OR crypto OR stablecoin OR ethereum)", "Fortune", "fortune", "en", False),
+    ("crq-axios", "gn:site:axios.com (bitcoin OR crypto OR stablecoin OR ethereum)", "Axios", "axios", "en", False),
+    ("crq-forbes", "gn:site:forbes.com (bitcoin OR crypto OR stablecoin OR ethereum)", "Forbes", "forbes", "en", False),
+    ("crq-yahoo", "gn:site:finance.yahoo.com (bitcoin OR crypto OR stablecoin OR ethereum)", "Yahoo Finanzas", "yahoo", "en", False),
+    ("crq-theblock", "gn:site:theblock.co", "The Block", "theblock", "en", True),
+    ("crq-btcmag", "gn:site:bitcoinmagazine.com", "Bitcoin Magazine", "btcmag", "en", True),
+    ("crq-infobae", "gn:site:infobae.com (bitcoin OR cripto OR criptomonedas OR stablecoin)", "Infobae", "infobae", "es", False),
+    ("crq-eleconomista", "gn:site:eleconomista.com.mx (bitcoin OR cripto OR criptomonedas OR stablecoin)", "El Economista", "eleconomista", "es", False),
+    ("crq-expansion", "gn:site:expansion.com (bitcoin OR cripto OR criptomonedas OR stablecoin)", "Expansión", "unidad-editorial", "es", False),
 ]
+
+# Medios que se muestran como fuentes extra pero NO cuentan para los 5 medios:
+# mucho contenido patrocinado, de precio o reescrito de otros medios.
+LOW_TIER = {"beincrypto", "cryptonews", "utoday", "coingape", "newsbtc", "bitcoinist", "investing", "yahoo", "forbes"}
+# Agregadores que republican notas de otros medios (Yahoo copia a Bloomberg o Decrypt tal cual): nunca cuentan.
+AGGREGATORS = {"yahoo", "investing"}
+MIN_REPUTABLE = 3   # los medios de LOW_TIER (salvo agregadores) solo suman si ya hay 3+ confiables
+TIER_MODE = "hybrid"  # "strict": solo confiables; "hybrid": regla de arriba; "all": todos cuentan igual
+
+
+def counted(orgs):
+    good = orgs - LOW_TIER
+    if TIER_MODE == "all":
+        return set(orgs), good
+    if TIER_MODE == "hybrid" and len(good) >= MIN_REPUTABLE:
+        return orgs - AGGREGATORS, good
+    return good, good
+
+GNEWS = {"en": "https://news.google.com/rss/search?q={}&hl=en-US&gl=US&ceid=US:en",
+         "es": "https://news.google.com/rss/search?q={}&hl=es-419&gl=US&ceid=US:es-419"}
+GN_SUFFIX = re.compile(r"\s+[-|–]\s+[^-|–]{2,45}$")
+
+
+def fetch(feed):
+    fid, url, source, org, lang, dedicated = feed
+    if not url.startswith("gn:"):
+        return A.fetch_feed(feed)
+    real = GNEWS[lang].format(quote("when:2d " + url[3:]))
+    _, rows, err = A.fetch_feed((fid, real) + feed[2:])
+    # Titular sin " - Medio"; el resumen de Google es solo el enlace, así que se descarta.
+    return feed, [(GN_SUFFIX.sub("", t), l, d, "") for t, l, d, _ in rows or []] or None, err
 
 CRYPTO_KNOWN_FAILS = [
     ("cointelegraph-es", "https://es.cointelegraph.com/rss", "410 Gone"),
@@ -61,8 +113,11 @@ CRYPTO_KNOWN_FAILS = [
     ("dlnews", "https://www.dlnews.com/arc/outboundfeeds/rss/", "Congelado (mayo 2026)"),
     ("forbes/fortune/wired/thestreet crypto", "-", "Sin RSS de cripto (404)"),
     ("eleconomista-cripto / benzinga-crypto", "-", "403"),
-    ("cryptonews / dailyhodl / coinjournal / newsbtc / bitcoinist / bitcoin.com",
-     "-", "Excluidos a propósito: mucho contenido patrocinado o de baja fiabilidad"),
+    ("dailyhodl / coinjournal / bitcoin.com", "-", "Excluidos a propósito: mucho contenido patrocinado"),
+    ("bitcoinist", "https://bitcoinist.com/feed/", "Feed casi parado (última nota hace días)"),
+    ("messari", "https://messari.io/rss", "404; en Google Noticias solo sale la portada"),
+    ("blockworks / dlnews (Google Noticias)", "-", "Sin resultados por sitio"),
+    ("fortune/axios/forbes cripto directo", "-", "404 / 403 (se usan por Google Noticias)"),
     ("the-verge-crypto", "https://www.theverge.com/rss/crypto/index.xml", "Feed vacío"),
 ]
 
@@ -83,7 +138,18 @@ CRYPTO_SKIP = re.compile(
     r"(could|may|will|to) (hit|reach|soar|explode|surge to|rally to) \$|price (could|may|will)|"
     r"\d+x (gains|potential)|100x|1000x|next (bitcoin|100x)|giveaway|sorteo|promo code|bonus code|"
     r"crypto (casino|gambling)|^daily (debrief|recap)|newsletter|podcast|^watch|^video|^opinion|"
-    r"^opini[oó]n|^el (resumen|bolet[ií]n))",
+    r"^opini[oó]n|^el (resumen|bolet[ií]n)|"
+    r"price (outlook|forecast|target)s?\b(?! hike)|price could|(eyes|targets|eyeing) (\$|new high)|"
+    r"(support|resistance) (level|zone)|\b(soporte|resistencia)\b|breakout|bull flag|bear flag|death cross|golden cross|"
+    r"rally pattern|could (surge|soar|rally|pump|explode|crash|plunge|dump|drop|fall|rise) \d|"
+    r"(a|para) observar|to watch (this|next)|(altcoins?|coins?|tokens?) to watch|\bshould you buy\b|"
+    r"(google )?searches (drop|surge|spike)|\bwhales? (are )?(buy|sell|accumulat)|"
+    r"(analyst|trader|expert)s? (says?|predicts?|warns?)|millionaire|\bmoon(ing|s)?\b|"
+    r"\bprice today\b|current price of|precio (de hoy|hoy)|how high (will|can)|quote & history|forum & discussion|"
+    r"what comes next|could reach|has (bitcoin|btc|ether\w*|eth|xrp) bottomed|we asked (claude|chatgpt|grok|gemini|ai)|"
+    r"bull run|bullish (message|signal|setup)|crypto weekly|is an? (rebound|rally|breakout|recovery) .*likely|"
+    r"can (bitcoin|btc|ether\w*|eth|xrp|solana)( price)? (defend|hold|reclaim|break|recover)|\bin focus\b|"
+    r"valor de las principales (divisas|criptomonedas)|cotizaci[oó]n (de|del) (hoy|bitcoin))",
     re.I,
 )
 BLOCKED_DOMAINS = ("prnewswire.com", "globenewswire.com", "businesswire.com", "accesswire.com",
@@ -98,10 +164,76 @@ def is_crypto(title: str, summary: str, dedicated: bool) -> bool:
     return dedicated and bool(CRYPTO.search(summary[:200]))
 
 
+MERGE_COS = 0.42          # similitud mínima entre los "centros" de dos grupos
+MERGE_COS_MANY = 0.35
+MERGE_HOURS = 48
+
+
+def merge_split(groups, pool, idf, n_ref):
+    """Segunda pasada: une grupos que cuentan el mismo hecho con palabras distintas
+    (p. ej. «OpenAI agent goes rogue» y «OpenAI model used testnet wallet»). Exige centros
+    parecidos y 2+ términos poco comunes que aparezcan en titulares de los dos grupos."""
+    import math
+    rare_cut = math.log((n_ref + 1) / (max(4, n_ref * 0.012) + 0.5))
+
+    def centre(g):
+        c = Counter()
+        for i in g:
+            for w, v in pool[i]["_vec"].items():
+                c[w] += v
+        n = math.sqrt(sum(v * v for v in c.values())) or 1.0
+        return {w: v / n for w, v in c.items()}
+
+    def title_rare(g):
+        return {w for i in g for w in pool[i]["_tt"] if idf.get(w, 0) >= rare_cut}
+
+    changed = True
+    while changed:
+        changed = False
+        info = [(centre(g), title_rare(g), min(pool[i]["_ts"] for i in g), max(pool[i]["_ts"] for i in g)) for g in groups]
+        best = None
+        for a in range(len(groups)):
+            for b in range(a + 1, len(groups)):
+                if len(groups[a]) + len(groups[b]) < 3:
+                    continue          # dos notas sueltas ya las juzgó el agrupador normal
+                if max(info[a][3], info[b][3]) - min(info[a][2], info[b][2]) > MERGE_HOURS * 3600:
+                    continue
+                shared = len(info[a][1] & info[b][1])
+                if shared < 2:
+                    continue
+                c = A.cos(info[a][0], info[b][0])
+                # Con 4+ términos raros en común en los titulares basta un centro algo menos parecido.
+                need = MERGE_COS if shared < 4 else MERGE_COS_MANY
+                if c >= need and (best is None or c > best[0]):
+                    best = (c, a, b)
+        if best:
+            _, a, b = best
+            groups[a] = groups[a] + groups[b]
+            del groups[b]
+            changed = True
+    return groups
+
+
+def prefer_reputable(st, members):
+    """Titular y resumen de un medio que cuenta para el consenso, no de uno de los extra."""
+    low_src = {m["source"] for m in members if m["org"] in LOW_TIER}
+    good = [m for m in sorted(members, key=lambda m: m["_ts"]) if m["org"] not in LOW_TIER]
+    for lang, hk in (("es", "headlineEs"), ("en", "headlineEn")):
+        cur = next((m for m in members if m["title"] == st.get(hk)), None)
+        if cur and cur["org"] in LOW_TIER:
+            alt = next((m for m in good if m["lang"] == lang), None)
+            st[hk] = alt["title"] if alt else st[hk]
+        sk, ss = "summary" + lang.capitalize(), "summary" + lang.capitalize() + "Source"
+        if st.get(ss) in low_src:
+            alt = next((m for m in good if m["lang"] == lang and len(m["summary"]) >= 60), None)
+            st[sk], st[ss] = (alt["summary"], alt["source"]) if alt else (st[sk], st[ss])
+    st["headline"] = st["headlineEs"] or st["headlineEn"]
+
+
 def build(now, general_pool):
     """Devuelve (historias, informe). general_pool = notas ya limpiadas por actualizar.py."""
     with ThreadPoolExecutor(max_workers=12) as ex:
-        results = list(ex.map(A.fetch_feed, CRYPTO_FEEDS))
+        results = list(ex.map(fetch, CRYPTO_FEEDS))
 
     pool, seen = [], set()
     candidates = []  # grupos de 2-4 medios para "Posibles noticias"
@@ -179,23 +311,30 @@ def build(now, general_pool):
                       for it in general_pool if it["url"] not in crypto_urls]
         idf, df = A.build_vectors(pool + background)
         groups, sims = A.cluster(pool, idf, df, n_ref=len(pool) + len(background))
+        groups = merge_split(groups, pool, idf, len(pool) + len(background))
         for g in groups:
             members = [pool[i] for i in g]
             orgs = {m["org"] for m in members}
+            cnt, good = counted(orgs)         # medios que cuentan para el consenso
             if len(orgs) >= 2:
-                debug.append((len(orgs), members))
-            if len(orgs) < MIN_OUTLETS:
-                if len(orgs) >= 2:
-                    candidates.append(A.make_story(g, pool, sims))
+                debug.append((len(cnt), members))
+            if len(good) < 2:
                 continue
-            stories.append(A.make_story(g, pool, sims))
+            st = A.make_story(g, pool, sims)
+            prefer_reputable(st, members)
+            st["outlets"] = len(cnt)
+            st["extraOutlets"] = len(orgs) - len(cnt)
+            if len(cnt) < MIN_OUTLETS:
+                candidates.append(st)
+                continue
+            stories.append(st)
     stories.sort(key=lambda s: (s["outlets"], s["_last"]), reverse=True)
     stories = stories[:MAX_STORIES]
     for i, s in enumerate(stories):
         s.pop("_last", None)
         s["id"] = f"cripto-{i + 1}"
 
-    org_counts = Counter(len({pool[i]["org"] for i in g}) for g in groups)
+    org_counts = Counter(len(counted({pool[i]["org"] for i in g})[0]) for g in groups)
     report = {
         "_candidates": candidates,
         "minOutlets": MIN_OUTLETS,

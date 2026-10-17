@@ -89,7 +89,7 @@ Agregar un resumen escrito por IA para cada historia de consenso, que explique e
 Historias **sin confirmar** que publican **2 a 4 medios distintos** (no llegaron a los 5 de consenso). Salen de los mismos agrupamientos de las pestañas de tema, de región y de cripto. Cada tarjeta lleva etiquetas de categoría/región, el número de medios y las fuentes.
 
 - Nada se repite con las pestañas de consenso: se descarta cualquier grupo que comparta una nota con una historia de 5+ medios. Los grupos repetidos entre corpus se fusionan.
-- Orden: más medios primero y luego lo más reciente. Hay tope de 60 en total y 8 por categoría/región, y se reservan hasta 3 por cada una para que Costa Rica o Centroamérica no queden tapadas (`POSIBLES_*` en `actualizar.py`).
+- Orden: más medios primero y luego lo más reciente. Hay tope de 60 en total y 8 por categoría/región, y se reservan hasta 3 por cada una (6 para Criptomonedas) para que Costa Rica, Centroamérica o cripto no queden tapadas (`POSIBLES_*` en `actualizar.py`).
 - Si todos los medios de un grupo son de la misma región, o la mitad lo son y la región se nombra, la historia va a esa región aunque el titular no diga el lugar.
 - Informe en `noticias.json` → `possible`.
 
@@ -97,8 +97,10 @@ Historias **sin confirmar** que publican **2 a 4 medios distintos** (no llegaron
 
 `cripto.py` arma una pestaña con consenso estricto: una noticia de criptomonedas solo aparece si la publican **5 o más medios distintos** (misma regla de organizaciones que el resto).
 
-- Fuentes: los feeds generales y financieros de la app más medios cripto y de negocios con RSS público (CoinDesk, The Block, Decrypt, Cointelegraph, The Defiant, Unchained, Protos, CryptoSlate, Crypto Briefing, CriptoNoticias, DiarioBitcoin, BeInCrypto, Bloomberg, FT, Expansión, Investing.com…).
-- Se descartan comunicados de prensa (PR Newswire, GlobeNewswire, Business Wire…), contenido patrocinado, predicciones de precio, listas de "monedas para comprar" y airdrops.
+- Fuentes: los feeds generales y financieros de la app más medios cripto y de negocios (CoinDesk, The Block, Decrypt, Cointelegraph, Bitcoin Magazine, The Defiant, Unchained, Protos, CryptoSlate, Crypto Briefing, CriptoNoticias, DiarioBitcoin, Bloomberg, FT, Expansión…). Reuters, Bloomberg, CNBC, WSJ, Fortune, Axios, Forbes, Yahoo Finanzas, Infobae, El Economista y Expansión entran también por búsquedas de Google Noticias por sitio (`when:2d` al inicio).
+- **Medios que cuentan:** los de baja fiabilidad o mucho contenido de precio (U.Today, CoinGape, Cryptonews, BeInCrypto, NewsBTC, Forbes) solo suman cuando ya hay **3+ medios confiables** en la historia. Yahoo Finanzas e Investing.com **nunca** cuentan porque republican notas de otros medios. Todos se muestran como fuentes («+N fuentes extra que no cuentan»), y el titular y el resumen se toman de un medio que cuenta (`LOW_TIER`, `AGGREGATORS`, `TIER_MODE` en `cripto.py`).
+- Una segunda pasada une grupos que cuentan el mismo hecho con palabras distintas (centros parecidos y 2+ términos poco comunes en los titulares de ambos, dentro de 48 h).
+- Se descartan comunicados de prensa (PR Newswire, GlobeNewswire, Business Wire…), contenido patrocinado, predicciones de precio, análisis técnico (soportes, resistencias, «could surge», «altcoins a observar»), páginas de cotización, listas de "monedas para comprar" y airdrops.
 - La agrupación usa el mismo código que las demás pestañas; la rareza de los términos se mide contra todo el corpus del día.
 - Si ninguna noticia llega a 5 medios, la pestaña lo dice en vez de mostrar algo sin verificar. Informe en `noticias.json` → `crypto`.
 

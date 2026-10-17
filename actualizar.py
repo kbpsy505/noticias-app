@@ -527,6 +527,7 @@ def make_story(g, pool, sims):
 POSIBLES_MAX = 60          # tope total de la pestaña "Posibles noticias"
 POSIBLES_PER_CHIP = 8      # tope por categoría/región
 POSIBLES_MIN_PER_CHIP = 3  # se reservan hasta 3 por categoría/región para que no las tapen otras
+POSIBLES_MIN_CHIP = {"cripto": 6}  # Criptomonedas tiene 6 lugares asegurados
 
 
 def build_posibles(candidates, out_cats, region_labels):
@@ -564,7 +565,7 @@ def build_posibles(candidates, out_cats, region_labels):
     order = sorted(kept, key=lambda s: (s["outlets"], s["_last"]), reverse=True)
     chosen, per = [], Counter()
     for c in order:                      # 1) reserva mínima por categoría/región
-        if per[main_chip(c)] < POSIBLES_MIN_PER_CHIP:
+        if per[main_chip(c)] < POSIBLES_MIN_CHIP.get(main_chip(c), POSIBLES_MIN_PER_CHIP):
             chosen.append(c)
             per[main_chip(c)] += 1
     for c in order:                      # 2) relleno por medios y recencia, con tope por etiqueta
