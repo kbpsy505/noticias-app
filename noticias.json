@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-17T18:44:13Z",
+ "updatedAt": "2026-10-17T18:45:26Z",
  "exchange": {
   "pair": "USD/CRC",
   "dolar": {
@@ -251,7 +251,7 @@
    "fuente": "Ministerio de Hacienda",
    "fuenteUrl": "https://api.hacienda.go.cr/indicadores/tc/euro"
   },
-  "consultado": "2026-10-17T18:44:13Z"
+  "consultado": "2026-10-17T18:45:26Z"
  },
  "exchangeReport": {
   "tipocambiocr": "ok",
@@ -270,7 +270,7 @@
  "stats": {
   "feedsOk": 94,
   "feedsFailed": 8,
-  "itemsGathered": 1663,
+  "itemsGathered": 1662,
   "clusters": 1381,
   "consensusStories": 10,
   "perCategory": {
@@ -281,8 +281,8 @@
    "mundo": 1,
    "ciencias": 0,
    "guerras": 2,
-   "costarica": 7,
-   "centroamerica": 2,
+   "costarica": 6,
+   "centroamerica": 3,
    "latam": 2,
    "sudamerica": 2,
    "europa": 17,
@@ -309,7 +309,6 @@
   "El Confidencial",
   "El Financiero (Costa Rica)",
   "El Mundo",
-  "El Mundo CR",
   "El País",
   "El País English",
   "El Tiempo",
@@ -328,6 +327,7 @@
   "Monumental",
   "NPR",
   "Nature",
+  "New Scientist",
   "Noticias ONU",
   "RFI",
   "RFI Español",
@@ -1236,39 +1236,6 @@
      "id": "buenas-26"
     },
     {
-     "headline": "UCR abrirá tres nuevas carreras en 2027 fuera de San José",
-     "headlineLang": "es",
-     "headlineEs": "UCR abrirá tres nuevas carreras en 2027 fuera de San José",
-     "headlineEn": null,
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "subtopic": "comunidad",
-     "subtopicLabel": "Comunidad",
-     "outlets": 1,
-     "outletNames": [
-      "Trivisión"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T20:45:10Z",
-     "lastSeen": "2026-10-15T20:45:10Z",
-     "sources": [
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "UCR abrirá tres nuevas carreras en 2027 fuera de San José",
-       "url": "https://trivisioncr.com/noticias-de-educacion/ucr-abrira-tres-nuevas-carreras-en-2027-fuera-de-san-jose/",
-       "publishedAt": "2026-10-15T20:45:10Z"
-      }
-     ],
-     "alsoOnReddit": [],
-     "cr": true,
-     "id": "buenas-27"
-    },
-    {
      "headline": "Parada cardiaca: las ventilaciones también salvan vidas",
      "headlineLang": "es",
      "headlineEs": "Parada cardiaca: las ventilaciones también salvan vidas",
@@ -1299,7 +1266,7 @@
      ],
      "alsoOnReddit": [],
      "cr": false,
-     "id": "buenas-28"
+     "id": "buenas-27"
     },
     {
      "headline": "HEINEKEN Costa Rica identifica 60 nuevos registros de especies en el Corredor Biológico Interurbano Cubujuquí",
@@ -1332,7 +1299,7 @@
      ],
      "alsoOnReddit": [],
      "cr": true,
-     "id": "buenas-29"
+     "id": "buenas-28"
     },
     {
      "headline": "Fishermen are combing the Chesapeake Bay for abandoned 'ghost' traps to save trapped wildlife",
@@ -1365,7 +1332,7 @@
      ],
      "alsoOnReddit": [],
      "cr": false,
-     "id": "buenas-30"
+     "id": "buenas-29"
     },
     {
      "headline": "Satellite data reveal how Antarctica’s ice cliffs behave over time",
@@ -1398,7 +1365,7 @@
      ],
      "alsoOnReddit": [],
      "cr": false,
-     "id": "buenas-31"
+     "id": "buenas-30"
     },
     {
      "headline": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
@@ -1431,7 +1398,7 @@
      ],
      "alsoOnReddit": [],
      "cr": false,
-     "id": "buenas-32"
+     "id": "buenas-31"
     },
     {
      "headline": "Dog that hunts invasive ‘sea vomit’ creature named animal of the year",
@@ -1469,7 +1436,7 @@
       }
      ],
      "cr": false,
-     "id": "buenas-33"
+     "id": "buenas-32"
     },
     {
      "headline": "Certamen de artes visuales premia obras inspiradas en edificaciones icónicas de Costa Rica",
@@ -1502,7 +1469,7 @@
      ],
      "alsoOnReddit": [],
      "cr": true,
-     "id": "buenas-34"
+     "id": "buenas-33"
     },
     {
      "headline": "Bleached Coral Rebounded After Touching Healthy Coral, Study Finds",
@@ -1540,7 +1507,7 @@
       }
      ],
      "cr": false,
-     "id": "buenas-35"
+     "id": "buenas-34"
     },
     {
      "headline": "Gold for GB women in team pursuit",
@@ -1573,6 +1540,39 @@
      ],
      "alsoOnReddit": [],
      "cr": false,
+     "id": "buenas-35"
+    },
+    {
+     "headline": "Costarricense José Morales gana Premio Mario Monteforte Toledo 2026",
+     "headlineLang": "es",
+     "headlineEs": "Costarricense José Morales gana Premio Mario Monteforte Toledo 2026",
+     "headlineEn": null,
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "subtopic": "acciones",
+     "subtopicLabel": "Buenas acciones",
+     "outlets": 1,
+     "outletNames": [
+      "Delfino"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T12:26:16Z",
+     "lastSeen": "2026-10-15T12:26:16Z",
+     "sources": [
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Costarricense José Morales gana Premio Mario Monteforte Toledo 2026",
+       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZTh5SkptM2VnNEF2TGcxNC1LU0ZUd2R3OHRtVE1qMW1vc3ZyeU12TE5EVElfNlQ4MHFpQzVxUzNPU0lhYXNCR2FxcTh1dXBfc01Jb3Y4M3RMRjZGSFVfVzJvWU9IZnBMNmhsMXdna1V6U1d1Z2NGZVdwT01JRjZPZGM5RXBORzVSejVWZVNzUlo2V1Q0Z2pycjNR?oc=5",
+       "publishedAt": "2026-10-15T12:26:16Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "cr": true,
      "id": "buenas-36"
     },
     {
@@ -2306,190 +2306,6 @@
      "id": "costarica-2"
     },
     {
-     "headline": "TEC advierte posible cierre de su sede en Limón",
-     "headlineLang": "es",
-     "headlineEs": "TEC advierte posible cierre de su sede en Limón",
-     "headlineEn": null,
-     "summaryEs": "Rectora del TEC aseguró que si se aprueban recortes de Hacienda la sede de Limón tendría un cierre técnico. Jerarca del MEP expuso que universidad tiene un superávit que podría usarse, lo que ella afirma no es posible",
-     "summaryEsSource": "La Nación (Costa Rica)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 7,
-     "outletNames": [
-      "CRHoy",
-      "Delfino",
-      "El Mundo CR",
-      "La Nación (Costa Rica)",
-      "Semanario Universidad",
-      "Teletica (Telenoticias)",
-      "Trivisión"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T19:51:14Z",
-     "lastSeen": "2026-10-17T19:38:37Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Estudiantes del TEC en Limón piden frenar recorte que amenaza con cerrar su sede",
-       "url": "https://crhoy.com/nacionales/estudiantes-del-tec-en-limon-piden-frenar-recorte-que-amenaza-con-cerrar-su-sede/",
-       "publishedAt": "2026-10-15T19:51:14Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "TEC advierte posible cierre de su sede en Limón",
-       "url": "https://trivisioncr.com/noticias-nacionales/tec-advierte-posible-cierre-de-su-sede-en-limon/",
-       "publishedAt": "2026-10-15T21:03:58Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "TEC advierte que recorte de ₡492 millones obligaría a cierre inmediato de su sede de Limón",
-       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQd0NXenl3eEdpYk8tbTV4ODh2LW91b3dBckRzVFFqMzhpTW5DRUpnT1lVazJGYkNhQ2xrbmNTTWpaandQemIwQ093dzhEdTFSN0xPeFhJdFJ2M0N5NnkyRlZsWEJaUWE5a2VMd1B0OU5yblhPWkdqTGZON21ZOVBUX1hBbFBJR0pHVm9qVjYxcDQ5LUhKVVZCdmJuOTdFVXF6YTVxcUpZN25NclVYSjd5U2NfdXVIdUZxQ195UG94M0xFY18yY2Uwa19B?oc=5",
-       "publishedAt": "2026-10-16T02:10:57Z"
-      },
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "(Video) Rectora del TEC contradice al MEP sobre fondos para evitar cierre de sede en Limón",
-       "url": "https://crhoy.com/nacionales/video-rectora-del-tec-contradice-al-mep-sobre-fondos-para-evitar-cierre-de-sede-en-limon/",
-       "publishedAt": "2026-10-16T13:30:48Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "“Costarricenses, no coman cuento”: ministro de Educación sobre rectora del TEC",
-       "url": "https://trivisioncr.com/noticias-nacionales/costarricenses-no-coman-cuento-ministro-de-educacion-sobre-rectora-del-tec/",
-       "publishedAt": "2026-10-16T15:21:38Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Rectora del TEC afirma que superávit no se puede destinar a sede de Limón luego de que ministro del MEP la acusara de ‘extorsión política’",
-       "url": "https://www.nacion.com/el-pais/rectora-del-tec-afirma-que-superavit-no-se-puede/HKQPP75WRBH4XEHZSIPJ6IO4T4/story/",
-       "publishedAt": "2026-10-16T16:40:34Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "TEC responde al ministro de Educación por recortes en Limón",
-       "url": "https://trivisioncr.com/noticias-nacionales/tec-responde-al-ministro-de-educacion-por-recortes-en-limon/",
-       "publishedAt": "2026-10-16T20:40:16Z"
-      },
-      {
-       "source": "Semanario Universidad",
-       "lang": "es",
-       "title": "Rectora del TEC desmiente a ministro de Educación: fondos de capital o excedentes no pueden usarse para financiar sede en Limón",
-       "url": "https://semanariouniversidad.com/universitarias/rectora-del-tec-desmiente-a-ministro-de-educacion-fondos-de-capital-o-excedentes-no-pueden-usarse-para-financiar-sede-en-limon/",
-       "publishedAt": "2026-10-16T22:30:15Z"
-      },
-      {
-       "source": "El Mundo CR",
-       "lang": "es",
-       "title": "Alcaldesa de Limón denuncia “chantaje y extorsión política” ante amenaza de cierre de sede del TEC en el Caribe",
-       "url": "https://elmundo.cr/costa-rica/alcaldesa-de-limon-denuncia-chantaje-y-extorsion-politica-ante-amenaza-de-cierre-de-sede-del-tec-en-el-caribe/",
-       "publishedAt": "2026-10-17T16:43:43Z"
-      },
-      {
-       "source": "Delfino",
-       "lang": "es",
-       "title": "Otra vez Limón bajo castigo: un recorte que cierra el TEC",
-       "url": "https://delfino.cr/2026/10/otra-vez-limon-bajo-castigo-un-recorte-que-cierra-el-tec",
-       "publishedAt": "2026-10-17T19:38:37Z"
-      }
-     ],
-     "region": "costarica",
-     "id": "costarica-3"
-    },
-    {
-     "headline": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
-     "headlineLang": "es",
-     "headlineEs": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
-     "headlineEn": null,
-     "summaryEs": "Diputados liberacionistas ponen esta condición para votar a favor el proyecto prioritario del Gobierno y el oficialismo prefirió romper el diálogo antes de cumplir la condición",
-     "summaryEsSource": "La Teja",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 6,
-     "outletNames": [
-      "CRHoy",
-      "El Mundo CR",
-      "La Nación (Costa Rica)",
-      "La Teja",
-      "Monumental",
-      "Teletica (Telenoticias)",
-      "Trivisión"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T13:28:36Z",
-     "lastSeen": "2026-10-17T15:25:27Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
-       "url": "https://crhoy.com/nacionales/pln-condiciona-dialogo-sobre-armonizacion-electrica-al-retiro-de-recortes-a-universidades/",
-       "publishedAt": "2026-10-16T13:28:36Z"
-      },
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Siete diputados del PLN habrían acordado votar armonización eléctrica con el PPSO",
-       "url": "https://crhoy.com/nacionales/siete-diputados-del-pln-habrian-acordado-votar-armonizacion-electrica-con-el-ppso/",
-       "publishedAt": "2026-10-16T16:17:13Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "PPSO revela acuerdo previo con siete diputados del PLN para torcerles el voto a favor de armonización eléctrica",
-       "url": "https://www.nacion.com/politica/ppso-revela-que-acuerdo-previo-con-siete-diputados/5OKJL74DBZCUNA45WXCUR67DSY/story/",
-       "publishedAt": "2026-10-16T20:14:30Z"
-      },
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Diputados del PLN ponen condiciones para apoyar proyecto de armonización eléctrica y legisladores del PPSO explotan",
-       "url": "https://www.lateja.cr/nacional/politica/diputados-del-pln-ponen-condiciones-para-apoyar/SAQHNGXNVZH3FAVFKUXIMOLJHU/story/",
-       "publishedAt": "2026-10-16T21:34:54Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "Oficialismo cuestiona al PLN por condiciones para aprobar ley de armonización eléctrica",
-       "url": "https://trivisioncr.com/noticias-de-politica/oficialismo-cuestiona-al-pln-por-condiciones-para-aprobar-ley-de-armonizacion-electrica/",
-       "publishedAt": "2026-10-16T21:45:46Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
-       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQLTZocEdFTHcyQ2ZLWkdmYkNNUllNakxmRl9tYUJVVDFVNjA4NW9SS1FKWDJWSWp0M0xvekVFOEdDXzVGSW5JVXhvamMtdjViMGs4azRGYWM2ellmaF9OZ0E4LWtGM2hpakNtSFF1NnktVE16SEJuLVUxZTduWnc3ckxaWFlSRFJqSklkRHpnTVpOVEhqaHUwUzdqdzNON1pjdS1adXdZZElJcXJOd3dIQVZCaFRBVlFuNXhZ?oc=5",
-       "publishedAt": "2026-10-16T22:24:34Z"
-      },
-      {
-       "source": "Monumental",
-       "lang": "es",
-       "title": "Oficialismo se retira de negociación sobre armonización eléctrica tras condicionamiento del PLN",
-       "url": "https://www.monumental.co.cr/2026/10/16/oficialismo-se-retira-de-negociacion-sobre-armonizacion-electrica-tras-condicionamiento-del-pln/",
-       "publishedAt": "2026-10-16T23:04:03Z"
-      },
-      {
-       "source": "El Mundo CR",
-       "lang": "es",
-       "title": "PLN niega acuerdo con Pueblo Soberano sobre armonización eléctrica",
-       "url": "https://elmundo.cr/costa-rica/pln-niega-acuerdo-con-pueblo-soberano-sobre-armonizacion-electrica/",
-       "publishedAt": "2026-10-17T15:25:27Z"
-      }
-     ],
-     "region": "costarica",
-     "id": "costarica-4"
-    },
-    {
      "headline": "Futbolista Carlos Barahona quedó en libertad tras ser detenido por presunta extorsión vinculada a préstamos “gota a gota” en Costa Rica",
      "headlineLang": "es",
      "headlineEs": "Futbolista Carlos Barahona quedó en libertad tras ser detenido por presunta extorsión vinculada a préstamos “gota a gota” en Costa Rica",
@@ -2511,22 +2327,15 @@
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-16T03:21:24Z",
+     "firstSeen": "2026-10-16T15:49:50Z",
      "lastSeen": "2026-10-17T08:18:25Z",
      "sources": [
       {
        "source": "Teletica (Telenoticias)",
        "lang": "es",
-       "title": "Audiencia contra futbolista Carlos Barahona por préstamos “gota a gota” continuará el viernes",
-       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOai0zckliZEVwOHBhVHFxa084eFRGTnBoZWplemZ4X2NmczF5eUtvbFdKaWM4SHRjVzV6ejhHX2ZBcXh5eXZTbVpweHp4YnA2Tm90eHkyNldCZWFlMG50eXpOMWx5UmFtNEpUSWV6cFNIRHBBc3lzUDl2NkZNUHRTd19zTE5pckVrekxORHE3YWkyTGt5UzhjZkxLLTdpdkVYUUdVY0NaRFZVdW5VZzZEVzFHTFZQdlduSkxRU3ZlZXZhS2hQTXRxLTJ3UQ?oc=5",
-       "publishedAt": "2026-10-16T03:21:24Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
        "title": "¿Cómo puede sustituir el técnico de Cartaginés a Carlos Barahona?",
-       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOV0Z3dzZsam5YdXRyU01LVHU1WFU3R2VJNWlpMFlNQ0JGaEEzTXdSYXNPaDZrREVKenVmM2g0Q2Z0TGlROW1Hd3dSbHNGVDltOXV2eEpLd1hyLXNfSXhBWTZPV2dSNDNBcTlqaDFwUGdZcVdGSDFUand4dFlZVzEzdWd2akY1c1J5YUFFZ29tMkxXMFQ5OXhVZl91cXktVnRvU19sbkhpSkRJcFNKdnBxRGo3UTNvaUV5?oc=5",
-       "publishedAt": "2026-10-16T15:53:11Z"
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPT0FCN2VwakVoWkFZQzVFb1pmV1dEOWRiTnFoLXJWUTduT2t5cGNVdHI3TTJNM1NKTm52eDJVS2VxRER6QnR1bXFTUXM4c0k5LWRVQUdsd191SWJNNzN5bnViLXRZTUtHMEU4SWtnSG1yNkhkejh0SE4yZTJuWHdZT3NCN2VFcGZXZzVfRUZRZG8tMEhwWkVCTlFwYU10QVBwTF9zbnJPcHRURVp1LWFVSHN2akMybHFrNnowbDJB?oc=5",
+       "publishedAt": "2026-10-16T15:49:50Z"
       },
       {
        "source": "CRHoy",
@@ -2621,7 +2430,7 @@
       }
      ],
      "region": "costarica",
-     "id": "costarica-5"
+     "id": "costarica-3"
     },
     {
      "headline": "Oficial detenido por intentar ingresar celular y dispositivos ilegales a máxima seguridad de La Reforma queda libre",
@@ -2698,7 +2507,84 @@
       }
      ],
      "region": "costarica",
-     "id": "costarica-6"
+     "id": "costarica-4"
+    },
+    {
+     "headline": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
+     "headlineLang": "es",
+     "headlineEs": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
+     "headlineEn": null,
+     "summaryEs": "Diputados liberacionistas ponen esta condición para votar a favor el proyecto prioritario del Gobierno y el oficialismo prefirió romper el diálogo antes de cumplir la condición",
+     "summaryEsSource": "La Teja",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 5,
+     "outletNames": [
+      "CRHoy",
+      "La Nación (Costa Rica)",
+      "La Teja",
+      "Monumental",
+      "Teletica (Telenoticias)",
+      "Trivisión"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T13:28:36Z",
+     "lastSeen": "2026-10-17T00:05:07Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
+       "url": "https://crhoy.com/nacionales/pln-condiciona-dialogo-sobre-armonizacion-electrica-al-retiro-de-recortes-a-universidades/",
+       "publishedAt": "2026-10-16T13:28:36Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Siete diputados del PLN habrían acordado votar armonización eléctrica con el PPSO",
+       "url": "https://crhoy.com/nacionales/siete-diputados-del-pln-habrian-acordado-votar-armonizacion-electrica-con-el-ppso/",
+       "publishedAt": "2026-10-16T16:17:13Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "PPSO revela acuerdo previo con siete diputados del PLN para torcerles el voto a favor de armonización eléctrica",
+       "url": "https://www.nacion.com/politica/ppso-revela-que-acuerdo-previo-con-siete-diputados/5OKJL74DBZCUNA45WXCUR67DSY/story/",
+       "publishedAt": "2026-10-16T20:14:30Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Diputados del PLN ponen condiciones para apoyar proyecto de armonización eléctrica y legisladores del PPSO explotan",
+       "url": "https://www.lateja.cr/nacional/politica/diputados-del-pln-ponen-condiciones-para-apoyar/SAQHNGXNVZH3FAVFKUXIMOLJHU/story/",
+       "publishedAt": "2026-10-16T21:34:54Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
+       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa19hamFGdHA1c28tTW1ZTEo4QWdLczF5WWNvWHRnOEE5RnotWWdYY01MR21obmlPX0pzd0p6WGx6am12VF9WaDBBNkRrWkNPSTEzTGtmR2VZV2FFVzBJemhKeGVzQU96MF9uV1NNY0ltOElNYmFGVHVjc2FqTTJxTkxnUlczbnRTbkI3eXZsNTRweWdXeG5IZFc2cXI1Z3l6QWkwTjU5Ny04YnF4SDN1QkxreVp1dENwMWoweF9pWWI?oc=5",
+       "publishedAt": "2026-10-16T22:23:44Z"
+      },
+      {
+       "source": "Monumental",
+       "lang": "es",
+       "title": "Oficialismo se retira de negociación sobre armonización eléctrica tras condicionamiento del PLN",
+       "url": "https://www.monumental.co.cr/2026/10/16/oficialismo-se-retira-de-negociacion-sobre-armonizacion-electrica-tras-condicionamiento-del-pln/",
+       "publishedAt": "2026-10-16T23:04:03Z"
+      },
+      {
+       "source": "Trivisión",
+       "lang": "es",
+       "title": "Oficialismo cuestiona al PLN por condiciones para aprobar ley de armonización eléctrica",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWHZ4QVViYWdIVy1XYUN3YlFFb1F4cGUzWmg1ODM5YWxhOElwN3ptbndpSkhWUTlvU3VjVjFBVFZvRWp5cHNONzhuZkhvVmZHN0NKM2pIOWlJSjRYZ2x1czZMYWktZm83S0dOQ2Z1UVF0YnpKTkZ3bkFlZ0ZUaDAzMWswNzFDcmNxTktLZmFmQ0x1aTlwMERRTXhwbXgtY1ZHLVlrVjQwQk1HNTRSc0VSSHNXUHN2cVBwb3NWaldEeXZaR2I2Q3hrdHdDOG5mUQ?oc=5",
+       "publishedAt": "2026-10-17T00:05:07Z"
+      }
+     ],
+     "region": "costarica",
+     "id": "costarica-5"
     },
     {
      "headline": "Laura Fernández despidió a Pablo Heriberto Abarca, embajador de Costa Rica en México, esto dijo exdiputado",
@@ -2709,15 +2595,14 @@
      "summaryEsSource": "La Teja",
      "summaryEn": null,
      "summaryEnSource": null,
-     "outlets": 6,
+     "outlets": 5,
      "outletNames": [
       "AM Prensa",
       "CRHoy",
       "El Financiero (Costa Rica)",
       "Infobae",
       "La Teja",
-      "Monumental",
-      "Trivisión"
+      "Monumental"
      ],
      "languages": [
       "es"
@@ -2754,13 +2639,6 @@
        "publishedAt": "2026-10-16T19:41:06Z"
       },
       {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "Destituyen al embajador de Costa Rica en México",
-       "url": "https://trivisioncr.com/noticias-de-politica/destituyen-al-embajador-de-costa-rica-en-mexico/",
-       "publishedAt": "2026-10-16T19:57:21Z"
-      },
-      {
        "source": "Infobae",
        "lang": "es",
        "title": "Gobierno de Costa Rica destituye a su embajador en México: el diplomático asegura que se enteró por la prensa",
@@ -2776,7 +2654,7 @@
       }
      ],
      "region": "costarica",
-     "id": "costarica-7"
+     "id": "costarica-6"
     }
    ]
   },
@@ -4353,6 +4231,76 @@
      "id": "centroamerica-1"
     },
     {
+     "headline": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
+     "headlineLang": "es",
+     "headlineEs": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
+     "headlineEn": null,
+     "summaryEs": "El abogado y exfiscal anticorrupción guatemalteco Juan Francisco Solórzano Foppa fue asesinado a tiros este sábado por varios sicarios en un complejo deportivo de la capital de Guatemala, mientras jugaba al fútbol, informaron fuentes oficiales. La entrada Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol se publicó primero en Proceso Digital .",
+     "summaryEsSource": "Proceso Digital (Honduras)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 6,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "Clarín",
+      "El Nacional (Venezuela)",
+      "El Universal (México)",
+      "Proceso Digital (Honduras)",
+      "Teletica (Telenoticias)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T17:22:35Z",
+     "lastSeen": "2026-10-17T18:24:37Z",
+     "sources": [
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
+       "url": "https://proceso.hn/asesinan-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
+       "publishedAt": "2026-10-17T17:22:35Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/asesinan-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
+       "publishedAt": "2026-10-17T17:45:10Z"
+      },
+      {
+       "source": "Clarín",
+       "lang": "es",
+       "title": "Asesinan a un exfiscal anticorrupción en una cancha de fútbol: había denunciado nexos entre políticos y pandillas en Guatemala",
+       "url": "https://www.clarin.com/mundo/asesinan-exfiscal-anticorrupcion-cancha-futbol-denunciado-nexos-politicos-pandillas-guatemala_0_dFuJTHUo5R.html",
+       "publishedAt": "2026-10-17T18:00:48Z"
+      },
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "Asesinan en Guatemala a exfiscal que denunció nexos de políticos con pandilleros; fue atacado en cancha de futbol",
+       "url": "https://www.eluniversal.com.mx/mundo/asesinan-en-guatemala-a-exfiscal-que-denuncio-nexos-de-politicos-con-pandilleros-fue-atacado-en-cancha-de-futbol/",
+       "publishedAt": "2026-10-17T18:09:49Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYXVMWm55a2NiMlI1RTU2RUNIbVZyTUJjVHhKYURxaldCbmRNc1VWTXdaT0Ixb3JXWmZRcFlRbmFHazBMZHA5ZTczQmZndFdvdVI3Qmg1UVBPc3lLQXlUb1pkR1RONGp3eFQ0a0Ewd2ZMUU1NcjFyZ1N0bWV3ODJLdk9nWDJ6cW9mNzl2TnBVbUw5eEJpOVc2ZzFMcnJnbHd3MDRaZS1uUWFFcTNBa0Mta2I1Vm1NbTg?oc=5",
+       "publishedAt": "2026-10-17T18:12:35Z"
+      },
+      {
+       "source": "El Nacional (Venezuela)",
+       "lang": "es",
+       "title": "Asesinaron al exfiscal anticorrupción de Guatemala en un campo de fútbol",
+       "url": "https://www.elnacional.com/2026/10/asesinaron-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
+       "publishedAt": "2026-10-17T18:24:37Z"
+      }
+     ],
+     "region": "centroamerica",
+     "id": "centroamerica-2"
+    },
+    {
      "headline": "¿Quién era Juan Francisco Solórzano Foppa, el exjefe de la SAT que murió en un ataque armado en el Campo Marte este sábado?",
      "headlineLang": "es",
      "headlineEs": "¿Quién era Juan Francisco Solórzano Foppa, el exjefe de la SAT que murió en un ataque armado en el Campo Marte este sábado?",
@@ -4454,7 +4402,7 @@
       }
      ],
      "region": "centroamerica",
-     "id": "centroamerica-2"
+     "id": "centroamerica-3"
     }
    ]
   },
@@ -4581,29 +4529,21 @@
      "summaryEsSource": "AM Prensa",
      "summaryEn": null,
      "summaryEnSource": null,
-     "outlets": 7,
+     "outlets": 6,
      "outletNames": [
       "AM Prensa",
       "CRHoy",
       "La Teja",
       "Prensa Libre",
       "Repretel (Noticias Repretel)",
-      "Teletica (Telenoticias)",
-      "Trivisión"
+      "Teletica (Telenoticias)"
      ],
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-15T21:45:22Z",
+     "firstSeen": "2026-10-15T22:28:26Z",
      "lastSeen": "2026-10-17T01:57:27Z",
      "sources": [
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "Tres mexicanos vinculados al cártel de Sinaloa serán extraditados a Estados Unidos",
-       "url": "https://trivisioncr.com/sucesos/tres-mexicanos-vinculados-al-cartel-de-sinaloa-seran-extraditados-a-estados-unidos/",
-       "publishedAt": "2026-10-15T21:45:22Z"
-      },
       {
        "source": "AM Prensa",
        "lang": "es",
@@ -4823,14 +4763,13 @@
      "summaryEsSource": "El Comercio (Perú)",
      "summaryEn": "Pope Leo has left hospital, four days after his lung cancer surgery.",
      "summaryEnSource": "Sky News",
-     "outlets": 54,
+     "outlets": 50,
      "outletNames": [
       "20minutos",
       "ABC",
       "ABC News (Australia)",
       "Africanews",
       "Al Jazeera",
-      "Artículo 66",
       "BBC",
       "BBC Mundo",
       "CBS News",
@@ -4842,7 +4781,6 @@
       "Dawn",
       "Diario Extra",
       "Diario Libre (R. Dominicana)",
-      "Efecto Cocuyo",
       "El Comercio (Perú)",
       "El Confidencial",
       "El Financiero (México)",
@@ -4857,7 +4795,6 @@
       "Expansión",
       "Expansión México",
       "France 24",
-      "Hondudiario",
       "La Hora (Guatemala)",
       "La Jornada",
       "La Nación (Argentina)",
@@ -4880,8 +4817,7 @@
       "The Guardian",
       "The Hindu",
       "The Irish Times",
-      "The New York Times",
-      "Trivisión"
+      "The New York Times"
      ],
      "languages": [
       "en",
@@ -4940,25 +4876,11 @@
        "publishedAt": "2026-10-16T17:07:53Z"
       },
       {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "Papa León XIV continúa recuperándose tras operación pulmonar",
-       "url": "https://trivisioncr.com/noticias-internacionales/papa-leon-xiv-continua-recuperandose-tras-operacion-pulmonar/",
-       "publishedAt": "2026-10-16T17:52:18Z"
-      },
-      {
        "source": "Crónica (Guatemala)",
        "lang": "es",
        "title": "Papa León celebra misa, habla con Putin y le pide una tregua… mantiene su viaje a América",
        "url": "https://cronica.com.gt/papa-leon-celebra-misa-habla-con-putin-y-le-pide-una-tregua-mantiene-su-viaje-a-america/",
        "publishedAt": "2026-10-16T21:41:29Z"
-      },
-      {
-       "source": "Efecto Cocuyo",
-       "lang": "es",
-       "title": "El papa León XIV celebra Santa Misa en el hospital Gemelli y muestra mejoría constante",
-       "url": "https://efectococuyo.com/internacionales/el-papa-leon-xiv-celebra-santa-misa-en-el-hospital-gemelli-y-muestra-mejoria-constante/",
-       "publishedAt": "2026-10-16T22:49:00Z"
       },
       {
        "source": "BBC",
@@ -5213,13 +5135,6 @@
        "publishedAt": "2026-10-17T14:14:16Z"
       },
       {
-       "source": "Efecto Cocuyo",
-       "lang": "es",
-       "title": "León XIV regresa al Vaticano tras recibir el alta hospitalaria",
-       "url": "https://efectococuyo.com/internacionales/leon-xiv-regresa-vaticano-alta-hospitalaria/",
-       "publishedAt": "2026-10-17T14:14:49Z"
-      },
-      {
        "source": "El País",
        "lang": "es",
        "title": "El Papa sale del hospital cuatro días después de su operación de pulmón",
@@ -5318,13 +5233,6 @@
        "publishedAt": "2026-10-17T16:02:22Z"
       },
       {
-       "source": "Artículo 66",
-       "lang": "es",
-       "title": "Papa León XIV regresa al Vaticano tras ser operado de un cáncer de pulmón",
-       "url": "https://www.articulo66.com/2026/10/17/papa-leon-regresa-vaticano-operacion-cancer-pulmon/",
-       "publishedAt": "2026-10-17T16:02:34Z"
-      },
-      {
        "source": "ABC",
        "lang": "es",
        "title": "El Papa abandona el hospital tras ser operado de un cáncer de pulmón y regresa al Vaticano",
@@ -5358,13 +5266,6 @@
        "title": "Pope Leo Leaves Hospital, Days After Lung Cancer Surgery",
        "url": "https://www.nytimes.com/2026/10/17/world/europe/pope-leo-discharged-hospital.html",
        "publishedAt": "2026-10-17T16:17:00Z"
-      },
-      {
-       "source": "Hondudiario",
-       "lang": "es",
-       "title": "León XIV sale del Hospital para regresar al Vaticano tras recibir el alta hospitalaria",
-       "url": "https://www.hondudiario.com/2026/10/17/leon-xiv-sale-del-hospital-para-regresar-al-vaticano-tras-recibir-el-alta-hospitalaria/",
-       "publishedAt": "2026-10-17T16:21:00Z"
       },
       {
        "source": "Expansión México",
@@ -5740,16 +5641,9 @@
       "en",
       "es"
      ],
-     "firstSeen": "2026-10-16T15:32:34Z",
+     "firstSeen": "2026-10-16T15:32:45Z",
      "lastSeen": "2026-10-17T06:39:38Z",
      "sources": [
-      {
-       "source": "ANSA",
-       "lang": "en",
-       "title": "Phone call between pope and Putin",
-       "url": "https://www.ansa.it/english/news/2026/10/16/phone-call-between-pope-and-putin_2dbd6b88-3fb1-426c-a358-422355a58dfc.html",
-       "publishedAt": "2026-10-16T15:32:34Z"
-      },
       {
        "source": "The Irish Times",
        "lang": "en",
@@ -5889,6 +5783,84 @@
      "id": "europa-6"
     },
     {
+     "headline": "El cirujano que operó a León XIV dijo que “no hay motivos clínicos” para que el papa suspenda su gira por América Latina",
+     "headlineLang": "es",
+     "headlineEs": "El cirujano que operó a León XIV dijo que “no hay motivos clínicos” para que el papa suspenda su gira por América Latina",
+     "headlineEn": null,
+     "summaryEs": "Stefano Margaritora sostuvo que, desde el punto de vista médico, el pontífice puede afrontar el viaje que tiene previsto realizar por Uruguay, Argentina y Perú del 6 al 17 de noviembre",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 7,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "El Comercio (Perú)",
+      "El Universal (México)",
+      "Infobae",
+      "La Nación (Argentina)",
+      "Proceso Digital (Honduras)",
+      "RPP (Perú)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T16:10:54Z",
+     "lastSeen": "2026-10-17T17:34:21Z",
+     "sources": [
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Papa León XIV: cirujano que lo operó dice que “no existen motivos clínicos” que impidan su viaje al Perú",
+       "url": "https://elcomercio.pe/mundo/europa/papa-leon-xiv-cirujano-que-lo-opero-dice-que-no-existen-motivos-clinicos-que-impidan-su-viaje-al-peru-apuesplan-ultimas-noticia/",
+       "publishedAt": "2026-10-17T16:10:54Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "El cirujano que operó a León XIV dijo que “no hay motivos clínicos” para que el papa suspenda su gira por América Latina",
+       "url": "https://www.infobae.com/america/mundo/2026/10/17/el-cirujano-que-opero-a-leon-xiv-dijo-que-no-hay-motivos-clinicos-para-que-el-papa-suspenda-su-gira-por-america-latina/",
+       "publishedAt": "2026-10-17T16:22:14Z"
+      },
+      {
+       "source": "RPP (Perú)",
+       "lang": "es",
+       "title": "Cirujano del papa León XIV sobre viaje a Sudamérica: \"Diría que no hay motivos clínicos por los que no se pueda realizar\"",
+       "url": "https://rpp.pe/mundo/actualidad/cirujano-del-papa-leon-xiv-sobre-viaje-a-sudamerica-diria-que-no-hay-motivos-clinicos-por-los-que-no-se-pueda-realizar-noticia-1713124",
+       "publishedAt": "2026-10-17T16:30:14Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "León XIV puede afrontar el viaje a Latinoamérica, según el cirujano que le operó",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/leon-xiv-puede-afrontar-el-viaje-a-latinoamerica-segun-el-cirujano-que-le-opero/",
+       "publishedAt": "2026-10-17T16:40:54Z"
+      },
+      {
+       "source": "La Nación (Argentina)",
+       "lang": "es",
+       "title": "El cirujano del Papa habló sobre el viaje a la Argentina: “No hay motivos clínicos para no realizarlo”",
+       "url": "https://www.lanacion.com.ar/el-mundo/el-cirujano-del-papa-hablo-sobre-el-viaje-a-la-argentina-no-hay-motivos-clinicos-para-no-realizarlo-nid17102026/",
+       "publishedAt": "2026-10-17T16:43:30Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "León XIV puede afrontar el viaje a Latinoamérica, según el cirujano que le operó",
+       "url": "https://proceso.hn/leon-xiv-puede-afrontar-el-viaje-a-latinoamerica-segun-el-cirujano-que-le-opero/",
+       "publishedAt": "2026-10-17T16:54:29Z"
+      },
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "Papa León XIV puede afrontar viaje a Sudamérica, afirma cirujano que lo operó; estará \"plenamente recuperado\" en 10 días, prevé",
+       "url": "https://www.eluniversal.com.mx/mundo/papa-leon-xiv-puede-afrontar-viaje-a-latinoamerica-afirma-cirujano-que-lo-opero-estara-plenamente-recuperado-en-10-dias-preve/",
+       "publishedAt": "2026-10-17T17:34:21Z"
+      }
+     ],
+     "region": "europa",
+     "id": "europa-7"
+    },
+    {
      "headline": "Trump puts new Russia sanctions passed by Congress on hold amid deepening row with Ukraine",
      "headlineLang": "en",
      "headlineEs": null,
@@ -5964,7 +5936,77 @@
       }
      ],
      "region": "europa",
-     "id": "europa-7"
+     "id": "europa-8"
+    },
+    {
+     "headline": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
+     "headlineLang": "es",
+     "headlineEs": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
+     "headlineEn": null,
+     "summaryEs": "Estudiantes, funcionarios y transportistas se sumaron a la convocatoria en unos 500 puntos del país; el presidente Macron había pedido calma.",
+     "summaryEsSource": "El Tiempo",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 6,
+     "outletNames": [
+      "El Financiero (México)",
+      "El Nacional (Venezuela)",
+      "El Tiempo",
+      "La Nación (Costa Rica)",
+      "La Vanguardia",
+      "Semana (Colombia)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T08:14:03Z",
+     "lastSeen": "2026-10-17T16:58:09Z",
+     "sources": [
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Graves disturbios marcan el regreso de los 'chalecos amarillos' en Francia",
+       "url": "https://www.lavanguardia.com/internacional/20261017/11661342/primeros-bloqueos-ciudades-francesas-retorno-chalecos-amarillos.html",
+       "publishedAt": "2026-10-17T08:14:03Z"
+      },
+      {
+       "source": "El Nacional (Venezuela)",
+       "lang": "es",
+       "title": "\"Nos ahogamos\": las protestas por el costo de la vida sacuden Francia",
+       "url": "https://www.elnacional.com/2026/10/nos-ahogamos-las-protestas-por-el-costo-de-la-vida-sacuden-francia/",
+       "publishedAt": "2026-10-17T13:30:46Z"
+      },
+      {
+       "source": "El Financiero (México)",
+       "lang": "es",
+       "title": "Francia ‘arde’ por el costo de vida: Protestas dejan incendios, saqueos y 272 detenidos",
+       "url": "https://www.elfinanciero.com.mx/mundo/2026/10/17/francia-arde-por-el-costo-de-vida-protestas-dejan-incendios-saqueos-y-272-detenidos/",
+       "publishedAt": "2026-10-17T16:27:37Z"
+      },
+      {
+       "source": "Semana (Colombia)",
+       "lang": "es",
+       "title": "Protestas por el costo de vida sacuden Francia: escenas de caos en grandes ciudades dejan más de 272 personas detenidas",
+       "url": "https://www.semana.com/mundo/articulo/protestas-por-el-costo-de-vida-sacuden-francia-escenas-de-caos-en-grandes-ciudades-dejan-mas-de-272-personas-detenidas/202642/",
+       "publishedAt": "2026-10-17T16:27:42Z"
+      },
+      {
+       "source": "El Tiempo",
+       "lang": "es",
+       "title": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
+       "url": "https://www.eltiempo.com/mundo/europa/regresan-los-chalecos-amarillos-protestas-por-el-costo-de-vida-dejan-choques-272-detenidos-y-ayuntamientos-invadidos-en-francia-3594281",
+       "publishedAt": "2026-10-17T16:50:37Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Protestas en Francia reúnen a 500.000 personas y dejan enfrentamientos, detenidos y un manifestante herido",
+       "url": "https://www.nacion.com/el-mundo/protestas-en-francia-reunen-a-500000-personas-y/JZN2XCLM7NBO7GHGVCAFZTACXU/story/",
+       "publishedAt": "2026-10-17T16:58:09Z"
+      }
+     ],
+     "region": "europa",
+     "id": "europa-9"
     },
     {
      "headline": "Trump waiving sanctions 'rewards' Putin, says Zelensky",
@@ -5988,7 +6030,7 @@
       "en"
      ],
      "firstSeen": "2026-10-17T03:20:51Z",
-     "lastSeen": "2026-10-17T17:35:14Z",
+     "lastSeen": "2026-10-17T15:38:17Z",
      "sources": [
       {
        "source": "RTÉ",
@@ -6031,87 +6073,10 @@
        "title": "Trump’s pause on Russia sanctions is ‘reward’ for Putin, Zelenskyy says",
        "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine",
        "publishedAt": "2026-10-17T15:38:17Z"
-      },
-      {
-       "source": "Hindustan Times",
-       "lang": "en",
-       "title": "'Reward for Putin': Zelensky fears US sanctions relief to Russia, diesel deal not the end of it",
-       "url": "https://www.hindustantimes.com/world-news/reward-for-putin-zelensky-fears-us-sanctions-relief-to-russia-diesel-deal-not-the-end-of-it-101792252174760.html",
-       "publishedAt": "2026-10-17T17:35:14Z"
       }
      ],
      "region": "europa",
-     "id": "europa-8"
-    },
-    {
-     "headline": "El cirujano que operó a León XIV dijo que “no hay motivos clínicos” para que el papa suspenda su gira por América Latina",
-     "headlineLang": "es",
-     "headlineEs": "El cirujano que operó a León XIV dijo que “no hay motivos clínicos” para que el papa suspenda su gira por América Latina",
-     "headlineEn": null,
-     "summaryEs": "Stefano Margaritora sostuvo que, desde el punto de vista médico, el pontífice puede afrontar el viaje que tiene previsto realizar por Uruguay, Argentina y Perú del 6 al 17 de noviembre",
-     "summaryEsSource": "Infobae",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 6,
-     "outletNames": [
-      "ABC Color (Paraguay)",
-      "El Comercio (Perú)",
-      "El Universal (México)",
-      "Infobae",
-      "La Nación (Argentina)",
-      "RPP (Perú)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T16:10:54Z",
-     "lastSeen": "2026-10-17T17:34:21Z",
-     "sources": [
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Papa León XIV: cirujano que lo operó dice que “no existen motivos clínicos” que impidan su viaje al Perú",
-       "url": "https://elcomercio.pe/mundo/europa/papa-leon-xiv-cirujano-que-lo-opero-dice-que-no-existen-motivos-clinicos-que-impidan-su-viaje-al-peru-apuesplan-ultimas-noticia/",
-       "publishedAt": "2026-10-17T16:10:54Z"
-      },
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "El cirujano que operó a León XIV dijo que “no hay motivos clínicos” para que el papa suspenda su gira por América Latina",
-       "url": "https://www.infobae.com/america/mundo/2026/10/17/el-cirujano-que-opero-a-leon-xiv-dijo-que-no-hay-motivos-clinicos-para-que-el-papa-suspenda-su-gira-por-america-latina/",
-       "publishedAt": "2026-10-17T16:22:14Z"
-      },
-      {
-       "source": "RPP (Perú)",
-       "lang": "es",
-       "title": "Cirujano del papa León XIV sobre viaje a Sudamérica: \"Diría que no hay motivos clínicos por los que no se pueda realizar\"",
-       "url": "https://rpp.pe/mundo/actualidad/cirujano-del-papa-leon-xiv-sobre-viaje-a-sudamerica-diria-que-no-hay-motivos-clinicos-por-los-que-no-se-pueda-realizar-noticia-1713124",
-       "publishedAt": "2026-10-17T16:30:14Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "León XIV puede afrontar el viaje a Latinoamérica, según el cirujano que le operó",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/leon-xiv-puede-afrontar-el-viaje-a-latinoamerica-segun-el-cirujano-que-le-opero/",
-       "publishedAt": "2026-10-17T16:40:54Z"
-      },
-      {
-       "source": "La Nación (Argentina)",
-       "lang": "es",
-       "title": "El cirujano del Papa habló sobre el viaje a la Argentina: “No hay motivos clínicos para no realizarlo”",
-       "url": "https://www.lanacion.com.ar/el-mundo/el-cirujano-del-papa-hablo-sobre-el-viaje-a-la-argentina-no-hay-motivos-clinicos-para-no-realizarlo-nid17102026/",
-       "publishedAt": "2026-10-17T16:43:30Z"
-      },
-      {
-       "source": "El Universal (México)",
-       "lang": "es",
-       "title": "Papa León XIV puede afrontar viaje a Sudamérica, afirma cirujano que lo operó; estará \"plenamente recuperado\" en 10 días, prevé",
-       "url": "https://www.eluniversal.com.mx/mundo/papa-leon-xiv-puede-afrontar-viaje-a-latinoamerica-afirma-cirujano-que-lo-opero-estara-plenamente-recuperado-en-10-dias-preve/",
-       "publishedAt": "2026-10-17T17:34:21Z"
-      }
-     ],
-     "region": "europa",
-     "id": "europa-9"
+     "id": "europa-10"
     },
     {
      "headline": "La Ejecutiva del PSOE nombra a Rebeca Torró nueva portavoz tras la dimisión de Montse Mínguez",
@@ -6216,7 +6181,7 @@
       }
      ],
      "region": "europa",
-     "id": "europa-10"
+     "id": "europa-11"
     },
     {
      "headline": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
@@ -6287,7 +6252,7 @@
       }
      ],
      "region": "europa",
-     "id": "europa-11"
+     "id": "europa-12"
     },
     {
      "headline": "Trump Waives Russia Sanctions That Threatened 100% Tariffs On India",
@@ -6357,7 +6322,7 @@
       }
      ],
      "region": "europa",
-     "id": "europa-12"
+     "id": "europa-13"
     },
     {
      "headline": "Congresistas rechazan la decisión de Trump de eximir a Rusia de sanciones",
@@ -6416,68 +6381,6 @@
        "title": "Congresistas rechazan la decisión de Trump de eximir a Rusia de sanciones",
        "url": "https://elcomercio.pe/mundo/eeuu/congresistas-rechazan-la-decision-de-trump-de-eximir-a-rusia-de-sanciones-ultimas-noticia/",
        "publishedAt": "2026-10-17T18:32:41Z"
-      }
-     ],
-     "region": "europa",
-     "id": "europa-13"
-    },
-    {
-     "headline": "Protestas por el costo de vida sacuden Francia: escenas de caos en grandes ciudades dejan más de 272 personas detenidas",
-     "headlineLang": "es",
-     "headlineEs": "Protestas por el costo de vida sacuden Francia: escenas de caos en grandes ciudades dejan más de 272 personas detenidas",
-     "headlineEn": null,
-     "summaryEs": "Choques entre la Policía y manifestantes, ayuntamientos ocupados… Las protestas contra el encarecimiento de la vida, en las que resurgió el movimiento de los chalecos amarillos, sacudieron este sábado a Francia, a seis meses de las elecciones presidenciales. A seis meses de la elección presidencial para escoger a su sucesor, un llamado titulado “Amarillos y Jóvenes” convocaba a protestar…",
-     "summaryEsSource": "Semana (Colombia)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 5,
-     "outletNames": [
-      "El Financiero (México)",
-      "El Nacional (Venezuela)",
-      "El Tiempo",
-      "La Nación (Costa Rica)",
-      "Semana (Colombia)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T13:30:46Z",
-     "lastSeen": "2026-10-17T16:58:09Z",
-     "sources": [
-      {
-       "source": "El Nacional (Venezuela)",
-       "lang": "es",
-       "title": "\"Nos ahogamos\": las protestas por el costo de la vida sacuden Francia",
-       "url": "https://www.elnacional.com/2026/10/nos-ahogamos-las-protestas-por-el-costo-de-la-vida-sacuden-francia/",
-       "publishedAt": "2026-10-17T13:30:46Z"
-      },
-      {
-       "source": "El Financiero (México)",
-       "lang": "es",
-       "title": "Francia ‘arde’ por el costo de vida: Protestas dejan incendios, saqueos y 272 detenidos",
-       "url": "https://www.elfinanciero.com.mx/mundo/2026/10/17/francia-arde-por-el-costo-de-vida-protestas-dejan-incendios-saqueos-y-272-detenidos/",
-       "publishedAt": "2026-10-17T16:27:37Z"
-      },
-      {
-       "source": "Semana (Colombia)",
-       "lang": "es",
-       "title": "Protestas por el costo de vida sacuden Francia: escenas de caos en grandes ciudades dejan más de 272 personas detenidas",
-       "url": "https://www.semana.com/mundo/articulo/protestas-por-el-costo-de-vida-sacuden-francia-escenas-de-caos-en-grandes-ciudades-dejan-mas-de-272-personas-detenidas/202642/",
-       "publishedAt": "2026-10-17T16:27:42Z"
-      },
-      {
-       "source": "El Tiempo",
-       "lang": "es",
-       "title": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
-       "url": "https://www.eltiempo.com/mundo/europa/regresan-los-chalecos-amarillos-protestas-por-el-costo-de-vida-dejan-choques-272-detenidos-y-ayuntamientos-invadidos-en-francia-3594281",
-       "publishedAt": "2026-10-17T16:50:37Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Protestas en Francia reúnen a 500.000 personas y dejan enfrentamientos, detenidos y un manifestante herido",
-       "url": "https://www.nacion.com/el-mundo/protestas-en-francia-reunen-a-500000-personas-y/JZN2XCLM7NBO7GHGVCAFZTACXU/story/",
-       "publishedAt": "2026-10-17T16:58:09Z"
       }
      ],
      "region": "europa",
@@ -6953,7 +6856,7 @@
      "summaryEsSource": "El Universal (México)",
      "summaryEn": "Attack was the first on Aden’s Al-Maashiq palace ⁠in the latest fighting between ​the Iran-aligned Houthis and Saudi Arabia Yemen’s Houthis fired missiles at the presidential palace complex in the southern city of Aden on Thursday, killing five people, the government said, as the Saudi-led coalition listed dozens of Houthi attacks on Saudi infrastructure in ⁠recent weeks. The attack was the first…",
      "summaryEnSource": "The Guardian",
-     "outlets": 13,
+     "outlets": 12,
      "outletNames": [
       "Africanews",
       "BBC",
@@ -6964,7 +6867,6 @@
       "France 24",
       "NDTV",
       "RTÉ",
-      "Sky News",
       "The Guardian",
       "The Hindu",
       "The New York Times"
@@ -7040,13 +6942,6 @@
        "publishedAt": "2026-10-17T08:51:59Z"
       },
       {
-       "source": "Sky News",
-       "lang": "en",
-       "title": "UK advises against all but essential travel to Saudi Arabia",
-       "url": "https://news.sky.com/story/uk-advises-against-all-but-essential-travel-to-saudi-arabia-amid-houthi-strikes-as-missiles-hit-yemen-airport-13600096",
-       "publishedAt": "2026-10-17T10:21:00Z"
-      },
-      {
        "source": "The Hindu",
        "lang": "en",
        "title": "Turkiye, Pakistan, Egypt, Saudi Arabia condemn Houthi attacks on Riyadh airport",
@@ -7101,7 +6996,7 @@
      "summaryEsSource": null,
      "summaryEn": "India’s youth-led Cockroach Janata Party founder Abhijeet Dipke was released from detention on Saturday, a day after his arrest during a police crackdown on protests against the election authority. Dipke, 31, was detained Friday in New Delhi as he headed to join a rally that the CJP protest movement had called in the capital’s central Connaught Place district. He walked out of a police station on…",
      "summaryEnSource": "South China Morning Post",
-     "outlets": 11,
+     "outlets": 10,
      "outletNames": [
       "BBC",
       "CNA",
@@ -7111,23 +7006,15 @@
       "Le Monde",
       "South China Morning Post",
       "The Guardian",
-      "The Indian Express",
       "The New York Times",
       "The Straits Times"
      ],
      "languages": [
       "en"
      ],
-     "firstSeen": "2026-10-16T02:33:06Z",
+     "firstSeen": "2026-10-16T05:45:21Z",
      "lastSeen": "2026-10-17T17:48:50Z",
      "sources": [
-      {
-       "source": "The Indian Express",
-       "lang": "en",
-       "title": "India News 16 October 2026: Abhijeet Dipke, Neha Bora detained, Delhi CJP protest ends with scuffles",
-       "url": "https://indianexpress.com/article/india/breaking-india-news-live-updates-16-october-2026-cjp-lehra-do-tiranga-march-today-delhi-police-connaught-place-rahul-gandhi-india-bloc-gyanesh-kumar-abhijeet-dipke-10923853/",
-       "publishedAt": "2026-10-16T02:33:06Z"
-      },
       {
        "source": "The Straits Times",
        "lang": "en",
@@ -7708,65 +7595,6 @@
      "id": "posibles-2"
     },
     {
-     "headline": "Asesinan a un exfiscal anticorrupción en una cancha de fútbol: había denunciado nexos entre políticos y pandillas en Guatemala",
-     "headlineLang": "es",
-     "headlineEs": "Asesinan a un exfiscal anticorrupción en una cancha de fútbol: había denunciado nexos entre políticos y pandillas en Guatemala",
-     "headlineEn": null,
-     "summaryEs": "A Juan Francisco Solórzano Foppa lo acribillaron sicarios en un lugar donde solía hacer deporte. Había denunciado casos de corrupción y también había estado detenido.",
-     "summaryEsSource": "Clarín",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "ABC Color (Paraguay)",
-      "Clarín",
-      "El Nacional (Venezuela)",
-      "El Universal (México)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T17:45:10Z",
-     "lastSeen": "2026-10-17T18:24:37Z",
-     "sources": [
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Asesinan al exfiscal anticorrupción de Guatemala en un campo de fútbol",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/asesinan-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
-       "publishedAt": "2026-10-17T17:45:10Z"
-      },
-      {
-       "source": "Clarín",
-       "lang": "es",
-       "title": "Asesinan a un exfiscal anticorrupción en una cancha de fútbol: había denunciado nexos entre políticos y pandillas en Guatemala",
-       "url": "https://www.clarin.com/mundo/asesinan-exfiscal-anticorrupcion-cancha-futbol-denunciado-nexos-politicos-pandillas-guatemala_0_dFuJTHUo5R.html",
-       "publishedAt": "2026-10-17T18:00:48Z"
-      },
-      {
-       "source": "El Universal (México)",
-       "lang": "es",
-       "title": "Asesinan en Guatemala a exfiscal que denunció nexos de políticos con pandilleros; fue atacado en cancha de futbol",
-       "url": "https://www.eluniversal.com.mx/mundo/asesinan-en-guatemala-a-exfiscal-que-denuncio-nexos-de-politicos-con-pandilleros-fue-atacado-en-cancha-de-futbol/",
-       "publishedAt": "2026-10-17T18:09:49Z"
-      },
-      {
-       "source": "El Nacional (Venezuela)",
-       "lang": "es",
-       "title": "Asesinaron al exfiscal anticorrupción de Guatemala en un campo de fútbol",
-       "url": "https://www.elnacional.com/2026/10/asesinaron-al-exfiscal-anticorrupcion-de-guatemala-en-un-campo-de-futbol/",
-       "publishedAt": "2026-10-17T18:24:37Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "centroamerica",
-       "label": "Centroamérica"
-      }
-     ],
-     "id": "posibles-3"
-    },
-    {
      "headline": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
      "headlineLang": "es",
      "headlineEs": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
@@ -7823,7 +7651,7 @@
        "label": "Europa"
       }
      ],
-     "id": "posibles-4"
+     "id": "posibles-3"
     },
     {
      "headline": "Expresidente senegalés Macky Sall retira su candidatura para dirigir la ONU",
@@ -7883,7 +7711,7 @@
        "label": "África"
       }
      ],
-     "id": "posibles-5"
+     "id": "posibles-4"
     },
     {
      "headline": "US judge dismisses child sex abuse charges against actor Timothy Busfield",
@@ -7946,7 +7774,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-6"
+     "id": "posibles-5"
     },
     {
      "headline": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
@@ -8007,6 +7835,72 @@
       {
        "id": "mundo",
        "label": "Mundo"
+      }
+     ],
+     "id": "posibles-6"
+    },
+    {
+     "headline": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
+     "headlineLang": "es",
+     "headlineEs": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
+     "headlineEn": null,
+     "summaryEs": "París.- Las protestas contra el encarecimiento de la vida celebradas este sábado en Francia estuvieron acompañadas de enfrentamientos entre grupos violentos y fuerzas del orden, incendios y daños o asaltos en edificios públicos y comercios en ciudades como París , Marsella (sur), Lyon (sureste) o Lille (noroeste), entre otras. La movilización reunió a decenas de miles de personas en todo el país…",
+     "summaryEsSource": "El Universal (México)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 4,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "El Nacional (Venezuela)",
+      "El Universal (México)",
+      "Proceso Digital (Honduras)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T14:13:49Z",
+     "lastSeen": "2026-10-17T17:02:46Z",
+     "sources": [
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Manifestaciones en París y Lyon registran múltiples incidentes con grupos violentos",
+       "url": "https://proceso.hn/manifestaciones-en-paris-y-lyon-registran-multiples-incidentes-con-grupos-violentos/",
+       "publishedAt": "2026-10-17T14:13:49Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Francia registra disturbios en París, Lyon o Marsella durante protestas por alto costo de vida",
+       "url": "https://proceso.hn/francia-registra-disturbios-en-paris-lyon-o-marsella-durante-protestas-por-alto-costo-de-vida/",
+       "publishedAt": "2026-10-17T16:01:08Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
+       "publishedAt": "2026-10-17T16:11:03Z"
+      },
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
+       "url": "https://www.eluniversal.com.mx/mundo/video-disturbios-en-francia-durante-protestas-por-encarecimiento-de-la-vida-joven-pierde-una-mano-al-explotarle-granada-policial/",
+       "publishedAt": "2026-10-17T17:02:23Z"
+      },
+      {
+       "source": "El Nacional (Venezuela)",
+       "lang": "es",
+       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
+       "url": "https://www.elnacional.com/2026/10/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
+       "publishedAt": "2026-10-17T17:02:46Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "europa",
+       "label": "Europa"
       }
      ],
      "id": "posibles-7"
@@ -8253,69 +8147,6 @@
      "id": "posibles-11"
     },
     {
-     "headline": "MEP retira permiso con goce de salario previsto para elecciones del SEC",
-     "headlineLang": "es",
-     "headlineEs": "MEP retira permiso con goce de salario previsto para elecciones del SEC",
-     "headlineEn": null,
-     "summaryEs": "El MEP revocó el permiso con goce de salario para afiliados del SEC que estaba previsto para el 20 de octubre. Gilberth Díaz cuestionó la medida y aseguró que limita la posibilidad de informar a los sindicalistas sobre asuntos internos de la organización.",
-     "summaryEsSource": "La Nación (Costa Rica)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "CRHoy",
-      "La Nación (Costa Rica)",
-      "Monumental",
-      "Trivisión"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T13:20:17Z",
-     "lastSeen": "2026-10-17T15:55:44Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "MEP deja sin efecto permiso con goce de salario para elecciones del SEC",
-       "url": "https://crhoy.com/nacionales/mep-deja-sin-efecto-permiso-con-goce-de-salario-para-elecciones-del-sec/",
-       "publishedAt": "2026-10-16T13:20:17Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "MEP cancela permiso sindical con goce de salario para el 20 de octubre",
-       "url": "https://trivisioncr.com/noticias-nacionales/mep-cancela-permiso-sindical-con-goce-de-salario-para-el-20-de-octubre/",
-       "publishedAt": "2026-10-16T20:08:52Z"
-      },
-      {
-       "source": "Monumental",
-       "lang": "es",
-       "title": "MEP retira permiso con goce de salario previsto para elecciones del SEC",
-       "url": "https://www.monumental.co.cr/2026/10/16/mep-retira-permiso-con-goce-de-salario-previsto-para-elecciones-del-sec/",
-       "publishedAt": "2026-10-17T00:10:07Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "MEP revoca el permiso con goce de salario de los afiliados del SEC previsto para el 20 de octubre. Gilberth Díaz afirma que la medida afecta la presentación de informes",
-       "url": "https://www.nacion.com/el-pais/mep-revoca-el-permiso-con-goce-de-salario-de-los/FB554EOWSJFN7JEQVIEW22FGCA/story/",
-       "publishedAt": "2026-10-17T15:55:44Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      },
-      {
-       "id": "finanzas",
-       "label": "Mundo de finanzas"
-      }
-     ],
-     "id": "posibles-12"
-    },
-    {
      "headline": "Bolivia y Chile firmaron un histórico paquete de acuerdos tras más de siete décadas de tensas relaciones",
      "headlineLang": "es",
      "headlineEs": "Bolivia y Chile firmaron un histórico paquete de acuerdos tras más de siete décadas de tensas relaciones",
@@ -8384,7 +8215,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-13"
+     "id": "posibles-12"
     },
     {
      "headline": "Sánchez hace de su mitin un acto de amor a Begoña Gómez, a la espera de juicio: \"Nos han intentado quebrar, que nos escuchen alto y claro, te quiero\"",
@@ -8447,7 +8278,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-14"
+     "id": "posibles-13"
     },
     {
      "headline": "At least 10 killed in fire at Bangladesh beach resort",
@@ -8506,126 +8337,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-15"
-    },
-    {
-     "headline": "Cae administradora de bar en Sámara por explotación sexual: Ubicaron a siete mujeres víctimas",
-     "headlineLang": "es",
-     "headlineEs": "Cae administradora de bar en Sámara por explotación sexual: Ubicaron a siete mujeres víctimas",
-     "headlineEn": "Costa Rican Authorities Identify Seven Possible Human-Trafficking Victims at Sámara Restaurant",
-     "summaryEs": "La Policía Profesional de Migración allanó el bar restaurante La Jefa, en Guanacaste, y detectó a siete mujeres de Nicaragua y República Dominicana que figuran como presuntas víctimas. La administradora del negocio fue detenida.",
-     "summaryEsSource": "AM Prensa",
-     "summaryEn": "Q COSTA RICA — Costa Rican authorities identified seven women as possible victims of human trafficking for sexual exploitation during a raid on a bar and restaurant in Sámara, Guanacaste, officials reported. The operation took place on the night of October 15 at Bar Restaurante La Jefa, according to Costa Rica’s immigration service, the Dirección",
-     "summaryEnSource": "Q Costa Rica",
-     "outlets": 4,
-     "outletNames": [
-      "AM Prensa",
-      "Infobae",
-      "Q Costa Rica",
-      "Trivisión"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-16T22:10:49Z",
-     "lastSeen": "2026-10-17T13:32:40Z",
-     "sources": [
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Las autoridades de Costa Rica identifican a siete posibles víctimas de trata en un local de Sámara",
-       "url": "https://www.infobae.com/nicaragua/2026/10/16/las-autoridades-de-costa-rica-identifican-a-siete-posibles-victimas-de-trata-en-un-local-de-samara/",
-       "publishedAt": "2026-10-16T22:10:49Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "Detienen a mujer por presunta explotación sexual de siete mujeres en Guanacaste",
-       "url": "https://trivisioncr.com/sucesos/detienen-a-mujer-por-presunta-explotacion-sexual-de-siete-mujeres-en-guanacaste/",
-       "publishedAt": "2026-10-16T22:30:06Z"
-      },
-      {
-       "source": "AM Prensa",
-       "lang": "es",
-       "title": "Cae administradora de bar en Sámara por explotación sexual: Ubicaron a siete mujeres víctimas",
-       "url": "https://www.amprensa.com/2026/10/cae-administradora-de-bar-en-samara-por-explotacion-sexual-ubicaron-a-siete-mujeres-victim",
-       "publishedAt": "2026-10-17T03:31:00Z"
-      },
-      {
-       "source": "Q Costa Rica",
-       "lang": "en",
-       "title": "Costa Rican Authorities Identify Seven Possible Human-Trafficking Victims at Sámara Restaurant",
-       "url": "https://qcostarica.com/costa-rican-authorities-identify-seven-possible-human-trafficking-victims-at-samara-restaurant/",
-       "publishedAt": "2026-10-17T13:32:40Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      }
-     ],
-     "id": "posibles-16"
-    },
-    {
-     "headline": "Tesla presenta el Roadster, un carro eléctrico que salta y hace piruetas en el aire",
-     "headlineLang": "es",
-     "headlineEs": "Tesla presenta el Roadster, un carro eléctrico que salta y hace piruetas en el aire",
-     "headlineEn": null,
-     "summaryEs": "Tesla sorprendió con videos de su Roadster, un deportivo eléctrico capaz de saltar sobre camiones y hacer piruetas en el aire. Conozca su precio y características.",
-     "summaryEsSource": "La Teja",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "La Teja",
-      "Repretel (Noticias Repretel)",
-      "Teletica (Telenoticias)",
-      "Trivisión"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T13:14:30Z",
-     "lastSeen": "2026-10-17T12:27:27Z",
-     "sources": [
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Tesla sorprende con carro que salta sobre camiones y hace piruetas en el aire",
-       "url": "https://www.lateja.cr/internacionales/tesla-sorprende-con-carro-que-salta-sobre-camiones/DRL2AXNJ3JGMPGUTE6LB4SCPWI/story/",
-       "publishedAt": "2026-10-16T13:14:30Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "¡De la ciencia ficción a la realidad! Tesla presenta un automóvil que promete volar",
-       "url": "https://trivisioncr.com/noticias-de-tecnologia/de-la-ciencia-ficcion-a-la-realidad-tesla-presenta-un-automovil-que-promete-volar/",
-       "publishedAt": "2026-10-16T17:33:14Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Tesla presenta el Roadster, un carro eléctrico que salta y hace piruetas en el aire",
-       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcEhsY185TDhEbC1CSXljTVFmajB0by1oYmxScjV3TzdydE9sNGM2MHFLSkZlempnRTNPOVMwNHhZNWtKN2JJUXBjN2hMRGNBSDhYMHlScWF1aUE5NkdETXFIV2t1U1FqNXRLYUhfcFVReTByUFBvUVpUYmZTWVpFaE03SzNTR3o2MzVPejVPaWlqakdiMlpjZmZmM1lmS014Mkp6Vl9pOHo5Yk9fUHZWZ01TS2hCNElWWjVKVVBZVkFWdERjUXpOcGI1Z0dIenJTTFE?oc=5",
-       "publishedAt": "2026-10-17T01:54:16Z"
-      },
-      {
-       "source": "Repretel (Noticias Repretel)",
-       "lang": "es",
-       "title": "Tesla presenta un carro capaz de volar",
-       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5uUVJEUnlsbTZVRUpKNFczOTc4clFpRE1MOGUtZFNKZXRkUktuS0JIRmpWX2d1Wjd6ZDI1OTZtUzc2WGFkUzVtV19XUXc3a1FXc0ZnWEp2LTNhWkdiSFNXMGI3S1NDbE8tb09xVThqLUdrek1naGxZS2Z5Wk0?oc=5",
-       "publishedAt": "2026-10-17T12:27:27Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      }
-     ],
-     "id": "posibles-17"
+     "id": "posibles-14"
     },
     {
      "headline": "Un superpetrolero arde tras chocar con mina en el estrecho de Ormuz, según la Guardia Revolucionaria iraní",
@@ -8688,15 +8400,15 @@
        "label": "Guerras actuales"
       }
      ],
-     "id": "posibles-18"
+     "id": "posibles-15"
     },
     {
-     "headline": "Corea del Norte afirma haber probado un nuevo sistema de torpedos con IA",
-     "headlineLang": "es",
-     "headlineEs": "Corea del Norte afirma haber probado un nuevo sistema de torpedos con IA",
+     "headline": "North Korea says it tested new torpedo with AI tech",
+     "headlineLang": "en",
+     "headlineEs": null,
      "headlineEn": "North Korea says it tested new torpedo with AI tech",
-     "summaryEs": "Esta afirmación se produce después de que Corea del Norte probara el miércoles dos tipos de misiles de crucero estratégicos lanzados desde el mar, en lo que se considera un intento de reforzar su capacidad naval.",
-     "summaryEsSource": "Euronews Español",
+     "summaryEs": null,
+     "summaryEsSource": null,
      "summaryEn": "⁠North Korea conducted an underwater ⁠test of a new torpedo weapon system on Thursday to verify technological upgrades, state news agency KCNA reported on Saturday, describing the test as a success and a significant step in ‌the country’s naval development. The test verified propulsion technology developed through more than 180 tests over the past five years, KCNA said, adding that artificial…",
      "summaryEnSource": "South China Morning Post",
      "outlets": 4,
@@ -8707,8 +8419,7 @@
       "The Straits Times"
      ],
      "languages": [
-      "en",
-      "es"
+      "en"
      ],
      "firstSeen": "2026-10-16T22:20:37Z",
      "lastSeen": "2026-10-17T08:23:38Z",
@@ -8735,13 +8446,6 @@
        "publishedAt": "2026-10-17T07:52:50Z"
       },
       {
-       "source": "Euronews Español",
-       "lang": "es",
-       "title": "Corea del Norte afirma haber probado un nuevo sistema de torpedos con IA",
-       "url": "https://es.euronews.com/2026/10/17/corea-del-norte-afirma-haber-probado-un-nuevo-sistema-de-torpedos-con-ia",
-       "publishedAt": "2026-10-17T08:03:47Z"
-      },
-      {
        "source": "Dawn",
        "lang": "en",
        "title": "North Korea says tested AI-assisted torpedo system",
@@ -8755,7 +8459,66 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-19"
+     "id": "posibles-16"
+    },
+    {
+     "headline": "Analizan EU y Argentina más inversiones y seguridad",
+     "headlineLang": "es",
+     "headlineEs": "Analizan EU y Argentina más inversiones y seguridad",
+     "headlineEn": null,
+     "summaryEs": "Washington. El secretario de Estado estadunidense, Marco Rubio, mantuvo una conversación telefónica con el mandatario Javier Milei, en la que abordaron el comercio bilateral y la seguridad regional, informaron ayer su oficina y la presidencia de Argentina.",
+     "summaryEsSource": "La Jornada",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 4,
+     "outletNames": [
+      "Diario Libre (R. Dominicana)",
+      "La Jornada",
+      "La Tercera (Chile)",
+      "Proceso Digital (Honduras)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T17:19:00Z",
+     "lastSeen": "2026-10-17T08:02:24Z",
+     "sources": [
+      {
+       "source": "Diario Libre (R. Dominicana)",
+       "lang": "es",
+       "title": "Bisonó y Rubio discuten agenda bilateral y seguridad regional",
+       "url": "https://www.diariolibre.com/politica/general/2026/10/16/bisono-y-rubio-discuten-agenda-bilateral-y-seguridad-regional/3691509",
+       "publishedAt": "2026-10-16T17:19:00Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Milei habla con Rubio de cómo impulsar el comercio bilateral tras su viaje a Washington",
+       "url": "https://proceso.hn/milei-habla-con-rubio-de-como-impulsar-el-comercio-bilateral-tras-su-viaje-a-washington/",
+       "publishedAt": "2026-10-16T18:37:29Z"
+      },
+      {
+       "source": "La Tercera (Chile)",
+       "lang": "es",
+       "title": "Milei y Rubio abordan comercio, inversiones y seguridad horas después de que el presidente argentino dejara EE.UU.",
+       "url": "https://www.latercera.com/mundo/noticia/milei-y-rubio-abordan-comercio-inversiones-y-seguridad-horas-despues-de-que-el-presidente-argentino-dejara-eeuu/",
+       "publishedAt": "2026-10-17T04:11:31Z"
+      },
+      {
+       "source": "La Jornada",
+       "lang": "es",
+       "title": "Analizan EU y Argentina más inversiones y seguridad",
+       "url": "https://www.jornada.com.mx/2026/10/17/mundo/019n3mun",
+       "publishedAt": "2026-10-17T08:02:24Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "sudamerica",
+       "label": "Sudamérica"
+      }
+     ],
+     "id": "posibles-17"
     },
     {
      "headline": "Washington prohíbe vuelos de drones en frontera con México",
@@ -8815,7 +8578,7 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-20"
+     "id": "posibles-18"
     },
     {
      "headline": "Japan mistakenly issues 9.9-magnitude quake alert after 6.9 tremor near Russia, retracts it within minutes",
@@ -8874,204 +8637,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-21"
-    },
-    {
-     "headline": "La Sele jugará ante Argentina y Ecuador en noviembre",
-     "headlineLang": "es",
-     "headlineEs": "La Sele jugará ante Argentina y Ecuador en noviembre",
-     "headlineEn": null,
-     "summaryEs": "La Selección Nacional de Costa Rica tendrá dos pruebas de alto nivel en la próxima Fecha FIFA : visitará a Ecuador en Quito y posteriormente se enfrentará a Argentina, actual subcampeona del mundo, en Córdoba.",
-     "summaryEsSource": "AM Prensa",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "AM Prensa",
-      "Proceso Digital (Honduras)",
-      "Teletica (Telenoticias)",
-      "Trivisión"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T15:15:06Z",
-     "lastSeen": "2026-10-17T01:38:57Z",
-     "sources": [
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "La Sele jugará ante Argentina y Ecuador en noviembre",
-       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSjJxX3hlemVYRXNIelc2Z1pfSFNONXlWcExMZHBVdklsUGNBeDZoY1A2Vlpma3JxVlZ0U3ppTkR4ZURfS1pILVZrcHVUU2JNTVJ5TWtZZnlwNko4Y01zWFNiZS1uX3ZUSDhBa0x6MzBVWmFVcjVGM1Vvd19FQmFVSmdnYzVtUHByOWlWSXRmT2FFMEJleDVN?oc=5",
-       "publishedAt": "2026-10-16T15:15:06Z"
-      },
-      {
-       "source": "AM Prensa",
-       "lang": "es",
-       "title": "¡Bombazo! La Sele se medirá a Ecuador y Argentina en Noviembre",
-       "url": "https://www.amprensa.com/2026/10/bombazo-la-sele-se-medira-a-ecuador-y-argentina-en-noviembre",
-       "publishedAt": "2026-10-16T15:24:37Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "¡La Sele tendrá dos grandes retos! Costa Rica enfrentará a Ecuador y Argentina en noviembre",
-       "url": "https://trivisioncr.com/noticias-de-deportes/la-sele-tendra-dos-grandes-retos-costa-rica-enfrentara-a-ecuador-y-argentina-en-noviembre/",
-       "publishedAt": "2026-10-16T17:13:58Z"
-      },
-      {
-       "source": "Proceso Digital (Honduras)",
-       "lang": "es",
-       "title": "Costa Rica anuncia partidos amistosos ante Argentina y Ecuador en noviembre",
-       "url": "https://proceso.hn/costa-rica-anuncia-partidos-amistosos-ante-argentina-y-ecuador-en-noviembre/",
-       "publishedAt": "2026-10-17T01:38:57Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      }
-     ],
-     "id": "posibles-22"
-    },
-    {
-     "headline": "Brasil aprueba reducir la semana laboral de seis a cinco días",
-     "headlineLang": "es",
-     "headlineEs": "Brasil aprueba reducir la semana laboral de seis a cinco días",
-     "headlineEn": null,
-     "summaryEs": "El Senado de Brasil aprobó por 75 votos a favor y uno en contra una reforma constitucional para reducir la jornada laboral de 44 a 40 horas semanales y establecer una semana laboral de cinco días. El texto aprobado es el mismo que recibió el visto bueno de la Cámara de Diputados en mayo de […] La entrada Brasil aprueba reducir la semana laboral de seis a cinco días se publicó primero en…",
-     "summaryEsSource": "Confidencial (Nicaragua)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "Confidencial (Nicaragua)",
-      "France 24",
-      "La Nación (Costa Rica)",
-      "Teletica (Telenoticias)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-15T22:21:23Z",
-     "lastSeen": "2026-10-16T23:16:08Z",
-     "sources": [
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Brasil aprueba reducir su semana laboral de seis a cinco días",
-       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMUZJZUcxaXNSVlpEMzZURm9DR3ZlSjktMzJKdXlHRWpFYlMtdkhPTDdGLUc3dDB0eW9LZmx4eVVKdDJVWHFXaTVyWkRqMmR3MzI3WkE5WG1nWHJXRlNBT0JjVzRGSV9ZODFRa1ptNkctdENQRWc1R0d6bk9ySVNscFgzdC1uUlVFTmVfZ25KMl9ET1JYajRyTkVFSnFvc1J1QWx5N2dCLUtPREpSdjJCTmFR?oc=5",
-       "publishedAt": "2026-10-15T22:21:23Z"
-      },
-      {
-       "source": "France 24 Español",
-       "lang": "es",
-       "title": "Rebaja de la jornada laboral y transporte gratuito: Lula apunta a la economía en vísperas del balotaje",
-       "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261016-rebaja-de-la-jornada-laboral-y-transporte-gratuito-lula-apunta-a-la-econom%C3%ADa-en-v%C3%ADsperas-del-balotaje",
-       "publishedAt": "2026-10-16T02:10:45Z"
-      },
-      {
-       "source": "Confidencial (Nicaragua)",
-       "lang": "es",
-       "title": "Brasil aprueba reducir la semana laboral de seis a cinco días",
-       "url": "https://confidencial.digital/mundo/brasil-aprueba-reducir-la-semana-laboral-de-seis-a-cinco-dias/",
-       "publishedAt": "2026-10-16T14:30:00Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Senado de Brasil reduce la jornada laboral de 44 a 40 horas semanales",
-       "url": "https://www.nacion.com/el-mundo/senado-de-brasil-reduce-la-jornada-laboral-de-44-a/B43X547XR5FOHJUZWVGOVTRCOY/story/",
-       "publishedAt": "2026-10-16T23:16:08Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "sudamerica",
-       "label": "Sudamérica"
-      },
-      {
-       "id": "finanzas",
-       "label": "Mundo de finanzas"
-      }
-     ],
-     "id": "posibles-23"
-    },
-    {
-     "headline": "Juzgado ordena separar por un año a 10 personas de la directiva, fiscalización y gerencia de la Asociación Solidarista de Servidores Judiciales",
-     "headlineLang": "es",
-     "headlineEs": "Juzgado ordena separar por un año a 10 personas de la directiva, fiscalización y gerencia de la Asociación Solidarista de Servidores Judiciales",
-     "headlineEn": null,
-     "summaryEs": "Juzgado ordena separar por un año a 10 personas de sus cargos en Asosejud, investigadas por presunta administración fraudulenta contra la organización.",
-     "summaryEsSource": "El Financiero (Costa Rica)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "CRHoy",
-      "El Financiero (Costa Rica)",
-      "La Nación (Costa Rica)",
-      "La Teja",
-      "Semanario Universidad",
-      "Trivisión"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T14:54:21Z",
-     "lastSeen": "2026-10-16T22:52:22Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Juzgado ordena separar por un año a 10 investigados de Asosejud",
-       "url": "https://crhoy.com/nacionales/juzgado-ordena-separar-por-un-ano-a-10-investigados-de-asosejud/",
-       "publishedAt": "2026-10-16T14:54:21Z"
-      },
-      {
-       "source": "El Financiero (Costa Rica)",
-       "lang": "es",
-       "title": "Juzgado ordena separar por un año a 10 personas de la directiva, fiscalización y gerencia de la Asociación Solidarista de Servidores Judiciales",
-       "url": "https://www.elfinancierocr.com/economia-y-politica/juzgado-ordena-separar-por-un-ano-a-10-personas-de/WU72IRCBV5HHNMOZHRJU6W4FIY/story/",
-       "publishedAt": "2026-10-16T21:20:02Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Juzgado separa por un año a 10 jerarcas de la Asociación Solidarista de Servidores Judiciales por presunta administración fraudulenta",
-       "url": "https://www.nacion.com/sucesos/juzgado-separa-por-un-ano-a-10-jerarcas-de-la/JXWH3I5XNRGHLPDALOTMT5EZQ4/story/",
-       "publishedAt": "2026-10-16T21:22:04Z"
-      },
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Separan por un año a la junta directiva y la gerencia de la Asociación Solidarista de Servidores Judiciales",
-       "url": "https://www.lateja.cr/sucesos/separan-por-un-ano-a-la-junta-directiva-y-la/5UXPFFKCARDPJFM24UHBR5MCFI/story/",
-       "publishedAt": "2026-10-16T22:03:57Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "Separan por un año a 10 directivos de ASOSEJUD por presunto fraude",
-       "url": "https://trivisioncr.com/noticias-nacionales/separan-por-un-ano-a-10-directivos-de-asosejud-por-presunto-fraude/",
-       "publishedAt": "2026-10-16T22:15:05Z"
-      },
-      {
-       "source": "Semanario Universidad",
-       "lang": "es",
-       "title": "Juzgado separa por un año a altos cargos de Asosejud por supuesta administración fraudulenta",
-       "url": "https://semanariouniversidad.com/pais/juzgado-separa-por-un-ano-a-altos-cargos-de-asosejud-por-supuesta-administracion-fraudulenta/",
-       "publishedAt": "2026-10-16T22:52:22Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      }
-     ],
-     "id": "posibles-24"
+     "id": "posibles-19"
     },
     {
      "headline": "Scammer Lost $4.8M in Bitcoin to Tampered Ledger Wallets: Chainalysis",
@@ -9131,74 +8697,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-25"
-    },
-    {
-     "headline": "Encuentran cuerpo de hombre tras cuatro días de búsqueda en el río Reventado, en Cartago",
-     "headlineLang": "es",
-     "headlineEs": "Encuentran cuerpo de hombre tras cuatro días de búsqueda en el río Reventado, en Cartago",
-     "headlineEn": null,
-     "summaryEs": "La Cruz Roja localizó el cuerpo de un hombre que aparentemente cayó al río Reventado, en Cartago, el 13 de octubre.",
-     "summaryEsSource": "La Nación (Costa Rica)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 4,
-     "outletNames": [
-      "AM Prensa",
-      "CRHoy",
-      "La Nación (Costa Rica)",
-      "La Teja",
-      "Trivisión"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T13:01:21Z",
-     "lastSeen": "2026-10-16T21:50:06Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Encuentran cuerpo de hombre que cayó a río en Cartago",
-       "url": "https://crhoy.com/nacionales/encuentran-cuerpo-de-hombre-que-cayo-a-rio-en-cartago/",
-       "publishedAt": "2026-10-16T13:01:21Z"
-      },
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Cruz Roja encuentra cuerpo de hombre que desapareció el martes tras caer accidentalmente a río",
-       "url": "https://www.lateja.cr/sucesos/cruz-roja-encuentra-cuerpo-de-hombre-que/WZYSKSEGWZDAJLFVCVWOW5IGQ4/story/",
-       "publishedAt": "2026-10-16T17:53:09Z"
-      },
-      {
-       "source": "AM Prensa",
-       "lang": "es",
-       "title": "Cruz Roja confirma el más trágico desenlace en caso de hombre que cayó por accidente a un río en Cartago",
-       "url": "https://www.amprensa.com/2026/10/cruz-roja-confirma-el-mas-tragico-desenlace-en-caso-de-hombre-que-cayo-por-accidente-a-un-",
-       "publishedAt": "2026-10-16T18:01:54Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "Encuentran cuerpo de hombre tras cuatro días de búsqueda en el río Reventado, en Cartago",
-       "url": "https://trivisioncr.com/sucesos/encuentran-cuerpo-de-hombre-tras-cuatro-dias-de-busqueda-en-el-rio-reventado-en-cartago/",
-       "publishedAt": "2026-10-16T18:47:53Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Tras cuatro días de búsqueda, Cruz Roja localiza cuerpo de hombre desaparecido en el río Reventado",
-       "url": "https://www.nacion.com/sucesos/tras-cuatro-dias-de-busqueda-cruz-roja-localiza/QFGZD4PDF5CYZJ47XDAZHIAGQI/story/",
-       "publishedAt": "2026-10-16T21:50:06Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      }
-     ],
-     "id": "posibles-26"
+     "id": "posibles-20"
     },
     {
      "headline": "Katie Zacharia deja el cargo de secretaria de prensa de la Casa Blanca apenas días después de asumirlo",
@@ -9264,7 +8763,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-27"
+     "id": "posibles-21"
     },
     {
      "headline": "Juez que aprobó extradición de Celso Gamboa y Pecho de Rata recibió amenazas de muerte desde otros países",
@@ -9323,7 +8822,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-28"
+     "id": "posibles-22"
     },
     {
      "headline": "Temblor en Perú: epicentro y magnitud del último sismo del sábado 17 de octubre",
@@ -9437,71 +8936,7 @@
        "label": "Sudamérica"
       }
      ],
-     "id": "posibles-29"
-    },
-    {
-     "headline": "Biodiversidad, Día de la Alimentación, niños de Gaza, empresas tecnológicas… Las noticias del viernes",
-     "headlineLang": "es",
-     "headlineEs": "Biodiversidad, Día de la Alimentación, niños de Gaza, empresas tecnológicas… Las noticias del viernes",
-     "headlineEn": "Gaza: 340 children killed despite ceasefire agreement - UNICEF",
-     "summaryEs": "El mundo se comprometió a proteger solo el 30% de la tierra y los mares, y no va camino de lograrlo. El Niño amenaza con agravar el hambre en 45 países. 340 niños han muerto en Gaza en el último año a pesar del alto el fuego. Un experto pide controlar a las empresas tecnológicas para evitar abusos en países que salen de conflictos.",
-     "summaryEsSource": "Noticias ONU",
-     "summaryEn": "A little over one year since a ceasefire agreement was announced between Hamas fighters and Israel, more than 340 children have been reported killed and hundreds more injured, the UN Children’s Fund (UNICEF) said on Friday.",
-     "summaryEnSource": "UN News",
-     "outlets": 3,
-     "outletNames": [
-      "Al Jazeera",
-      "Dawn",
-      "Noticias ONU",
-      "UN News"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-16T12:00:00Z",
-     "lastSeen": "2026-10-17T18:26:59Z",
-     "sources": [
-      {
-       "source": "UN News",
-       "lang": "en",
-       "title": "Gaza: 340 children killed despite ceasefire agreement - UNICEF",
-       "url": "https://news.un.org/feed/view/en/story/2026/10/1168611",
-       "publishedAt": "2026-10-16T12:00:00Z"
-      },
-      {
-       "source": "Noticias ONU",
-       "lang": "es",
-       "title": "Biodiversidad, Día de la Alimentación, niños de Gaza, empresas tecnológicas… Las noticias del viernes",
-       "url": "https://news.un.org/feed/view/es/story/2026/10/1542069",
-       "publishedAt": "2026-10-16T12:00:00Z"
-      },
-      {
-       "source": "Dawn",
-       "lang": "en",
-       "title": "Over 340 children killed in Gaza since ceasefire, says Unicef",
-       "url": "https://www.dawn.com/news/2037798/over-340-children-killed-in-gaza-since-ceasefire-says-unicef",
-       "publishedAt": "2026-10-17T06:58:19Z"
-      },
-      {
-       "source": "Al Jazeera",
-       "lang": "en",
-       "title": "Israeli drone attacks kill six Palestinians across Gaza despite ‘ceasefire’",
-       "url": "https://www.aljazeera.com/news/2026/10/17/israeli-drone-attacks-kill-six-palestinians-across-gaza-despite-ceasefire?traffic_source=rss",
-       "publishedAt": "2026-10-17T18:26:59Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "asia",
-       "label": "Asia"
-      },
-      {
-       "id": "guerras",
-       "label": "Guerras actuales"
-      }
-     ],
-     "id": "posibles-30"
+     "id": "posibles-23"
     },
     {
      "headline": "La dana Adam deja decenas de incidentes en Almería, parte de la Comunidad Valenciana y Cataluña, en alerta roja por fuertes lluvias y tormentas",
@@ -9563,7 +8998,7 @@
        "label": "Sucesos"
       }
      ],
-     "id": "posibles-31"
+     "id": "posibles-24"
     },
     {
      "headline": "Aitana inicia en Bogotá su gira latinoamericana, al actuar con fiebre y dolor de estómago",
@@ -9614,7 +9049,7 @@
        "label": "Sudamérica"
       }
      ],
-     "id": "posibles-32"
+     "id": "posibles-25"
     },
     {
      "headline": "Romanian fighter jets shoot down 2 drones over Black Sea",
@@ -9669,7 +9104,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-33"
+     "id": "posibles-26"
     },
     {
      "headline": "Extranjero sufrió violento asalto en San José con “candado chino”",
@@ -9720,7 +9155,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-34"
+     "id": "posibles-27"
     },
     {
      "headline": "Obispo de Chiclayo confirma que continúan los preparativos para recibir al papa León XIV en Perú",
@@ -9771,168 +9206,7 @@
        "label": "Europa"
       }
      ],
-     "id": "posibles-35"
-    },
-    {
-     "headline": "Mueren 32 alumnos y una profesora al derrumbarse el techo de un colegio en Pakistán",
-     "headlineLang": "es",
-     "headlineEs": "Mueren 32 alumnos y una profesora al derrumbarse el techo de un colegio en Pakistán",
-     "headlineEn": "Families of children killed in Pakistan school roof collapse demand justice",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Initial reports suggested the roof collapse was due to “weak infrastructure”.",
-     "summaryEnSource": "The Straits Times",
-     "outlets": 3,
-     "outletNames": [
-      "Teletica (Telenoticias)",
-      "The New York Times",
-      "The Straits Times"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-16T03:05:52Z",
-     "lastSeen": "2026-10-17T17:58:20Z",
-     "sources": [
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Mueren 32 alumnos y una profesora al derrumbarse el techo de un colegio en Pakistán",
-       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZS0wclhlTWlMZGJ0VTN0VU51b2U2bjI1Wk1BZi16TElKaDBlTEFOUHFFUTd1UXBteDJKcWl0TTJ3N1E2czM5X3pCX0pzTHZ1ekg5eW83N2loc0RUVHBobjZ1RkRSbXZsaVQyWlFTRjlqYjZrX09lTWozZlRVRVp5VXYxVjRBTVYzcGVoRm5Yb09ERUFNRWVOOWdINDJvZ05vSkZHeW1ESkQwbFptWC1YVDVLeEQ4TlRCdDZ4X3hSNmhrMk0zZFhudQ?oc=5",
-       "publishedAt": "2026-10-16T03:05:52Z"
-      },
-      {
-       "source": "The Straits Times",
-       "lang": "en",
-       "title": "Families of children killed in Pakistan school roof collapse demand justice",
-       "url": "https://www.straitstimes.com/asia/south-asia/families-of-children-killed-in-pakistan-school-roof-collapse-demand-justice",
-       "publishedAt": "2026-10-16T08:55:00Z"
-      },
-      {
-       "source": "The Straits Times",
-       "lang": "en",
-       "title": "Devastated families mourn children killed by Pakistan school roof collapse",
-       "url": "https://www.straitstimes.com/asia/devastated-families-mourn-children-killed-by-pakistan-school-roof-collapse",
-       "publishedAt": "2026-10-16T14:55:31Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Deadly School Roof Collapse in Pakistan Raises Questions Over Regulation",
-       "url": "https://www.nytimes.com/2026/10/16/world/asia/pakistan-peshawar-school-roof-collapse.html",
-       "publishedAt": "2026-10-17T17:58:20Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "asia",
-       "label": "Asia"
-      }
-     ],
-     "id": "posibles-36"
-    },
-    {
-     "headline": "Looting, blazes and clashes in France amid nationwide protests",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Looting, blazes and clashes in France amid nationwide protests",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Police and protesters clashed violently in Paris and other French cities Saturday on the sidelines of nationwide marches against soaring inflation, with one demonstrator's hand blown off, multiple blazes set and looters breaking into dozens of stores to strip them bare.",
-     "summaryEnSource": "France 24",
-     "outlets": 3,
-     "outletNames": [
-      "Dawn",
-      "France 24",
-      "The Local"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-17T09:33:19Z",
-     "lastSeen": "2026-10-17T17:51:29Z",
-     "sources": [
-      {
-       "source": "The Local",
-       "lang": "en",
-       "title": "LATEST: Nationwide protests in France marred by looting, fires and violence",
-       "url": "https://www.thelocal.com/20261017/macron-calls-for-calm-amid-fears-of-violence-at-france-protests",
-       "publishedAt": "2026-10-17T09:33:19Z"
-      },
-      {
-       "source": "France 24",
-       "lang": "en",
-       "title": "Looting, blazes and clashes in France amid nationwide protests",
-       "url": "https://www.france24.com/en/live-news/20261017-french-protesters-clash-with-police-during-nationwide-demonstrations",
-       "publishedAt": "2026-10-17T12:31:24Z"
-      },
-      {
-       "source": "Dawn",
-       "lang": "en",
-       "title": "Looting, blazes and clashes in France amid nationwide protests",
-       "url": "https://www.dawn.com/news/2037825/looting-blazes-and-clashes-in-france-amid-nationwide-protests",
-       "publishedAt": "2026-10-17T17:51:29Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "europa",
-       "label": "Europa"
-      }
-     ],
-     "id": "posibles-37"
-    },
-    {
-     "headline": "La oposición en el diálogo venezolano evalúa con abogados cambios en el sistema judicial",
-     "headlineLang": "es",
-     "headlineEs": "La oposición en el diálogo venezolano evalúa con abogados cambios en el sistema judicial",
-     "headlineEn": null,
-     "summaryEs": "El mensaje fue publicado en X y no ofrece más detalles sobre lo conversado, aunque el pronunciamiento se da en medio de la tercera ronda de negociaciones con el chavismo, que arrancó el miércoles. La delegación opositora informó el viernes que revisó con representantes de organizaciones no gubernamentales las garantías civiles y políticas para la renovación institucional en Venezuela, principal…",
-     "summaryEsSource": "ABC Color (Paraguay)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "ABC Color (Paraguay)",
-      "Efecto Cocuyo",
-      "El Nacional (Venezuela)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T16:25:58Z",
-     "lastSeen": "2026-10-17T17:39:13Z",
-     "sources": [
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "La oposición en el diálogo venezolano evalúa con abogados cambios en el sistema judicial",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/la-oposicion-en-el-dialogo-venezolano-evalua-con-abogados-cambios-en-el-sistema-judicial/",
-       "publishedAt": "2026-10-17T16:25:58Z"
-      },
-      {
-       "source": "Efecto Cocuyo",
-       "lang": "es",
-       "title": "Delegación opositora evalúa con abogados cambios en el sistema judicial",
-       "url": "https://efectococuyo.com/politica/delegacion-opositora-evalua-con-abogados-cambios-en-el-sistema-judicial/",
-       "publishedAt": "2026-10-17T17:28:59Z"
-      },
-      {
-       "source": "El Nacional (Venezuela)",
-       "lang": "es",
-       "title": "Delegación opositora consulta al Colegio de Abogados sobre reformas al sistema judicial durante el diálogo con el chavismo",
-       "url": "https://www.elnacional.com/2026/10/delegacion-opositora-consulta-al-colegio-de-abogados-sobre-reformas-al-sistema-judicial-durante-el-dialogo-con-el-chavismo/",
-       "publishedAt": "2026-10-17T17:39:13Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "sudamerica",
-       "label": "Sudamérica"
-      }
-     ],
-     "id": "posibles-38"
+     "id": "posibles-28"
     },
     {
      "headline": "Sismo de 4.1 de magnitud se registra en Chiapas",
@@ -10004,7 +9278,7 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-39"
+     "id": "posibles-29"
     },
     {
      "headline": "Alligator kills 71-year-old man fishing in Florida",
@@ -10055,58 +9329,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-40"
-    },
-    {
-     "headline": "Estados Unidos evalúa próximos pasos tras rechazo de Nicaragua a embajadora",
-     "headlineLang": "es",
-     "headlineEs": "Estados Unidos evalúa próximos pasos tras rechazo de Nicaragua a embajadora",
-     "headlineEn": null,
-     "summaryEs": "El secretario de Estado de Estados Unidos, Marco Rubio, mantuvo una reunión con el encargado de negocios estadounidense en Nicaragua, Elias Baumann.",
-     "summaryEsSource": "La Prensa (Panamá)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "Artículo 66",
-      "Confidencial (Nicaragua)",
-      "La Prensa (Panamá)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T02:06:00Z",
-     "lastSeen": "2026-10-17T16:08:42Z",
-     "sources": [
-      {
-       "source": "La Prensa (Panamá)",
-       "lang": "es",
-       "title": "Estados Unidos evalúa próximos pasos tras rechazo de Nicaragua a embajadora",
-       "url": "https://www.prensa.com/mundo/estados-unidos-evalua-proximos-pasos-tras-rechazo-de-nicaragua-a-embajadora/",
-       "publishedAt": "2026-10-17T02:06:00Z"
-      },
-      {
-       "source": "Artículo 66",
-       "lang": "es",
-       "title": "Marco Rubio se reunió con Elías Bauman: hablaron de pasos a seguir tras rechazo a Franceschi",
-       "url": "https://www.articulo66.com/2026/10/17/reunion-marco-rubio-encargado-negocios-elias-bauman/",
-       "publishedAt": "2026-10-17T15:41:52Z"
-      },
-      {
-       "source": "Confidencial (Nicaragua)",
-       "lang": "es",
-       "title": "Rubio califica de “teatro político hostil” el rechazo de la embajadora de EE. UU. en Nicaragua",
-       "url": "https://confidencial.digital/noticias/rubio-califica-de-teatro-politico-hostil-el-rechazo-de-la-embajadora-de-ee-uu-en-nicaragua/",
-       "publishedAt": "2026-10-17T16:08:42Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "centroamerica",
-       "label": "Centroamérica"
-      }
-     ],
-     "id": "posibles-41"
+     "id": "posibles-30"
     },
     {
      "headline": "Nine crypto firms form Quantum Alliance to set post-quantum standards",
@@ -10158,7 +9381,172 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-42"
+     "id": "posibles-31"
+    },
+    {
+     "headline": "MEP retira permiso con goce de salario previsto para elecciones del SEC",
+     "headlineLang": "es",
+     "headlineEs": "MEP retira permiso con goce de salario previsto para elecciones del SEC",
+     "headlineEn": null,
+     "summaryEs": "El MEP revocó el permiso con goce de salario para afiliados del SEC que estaba previsto para el 20 de octubre. Gilberth Díaz cuestionó la medida y aseguró que limita la posibilidad de informar a los sindicalistas sobre asuntos internos de la organización.",
+     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "CRHoy",
+      "La Nación (Costa Rica)",
+      "Monumental"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T13:20:17Z",
+     "lastSeen": "2026-10-17T15:55:44Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "MEP deja sin efecto permiso con goce de salario para elecciones del SEC",
+       "url": "https://crhoy.com/nacionales/mep-deja-sin-efecto-permiso-con-goce-de-salario-para-elecciones-del-sec/",
+       "publishedAt": "2026-10-16T13:20:17Z"
+      },
+      {
+       "source": "Monumental",
+       "lang": "es",
+       "title": "MEP retira permiso con goce de salario previsto para elecciones del SEC",
+       "url": "https://www.monumental.co.cr/2026/10/16/mep-retira-permiso-con-goce-de-salario-previsto-para-elecciones-del-sec/",
+       "publishedAt": "2026-10-17T00:10:07Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "MEP revoca el permiso con goce de salario de los afiliados del SEC previsto para el 20 de octubre. Gilberth Díaz afirma que la medida afecta la presentación de informes",
+       "url": "https://www.nacion.com/el-pais/mep-revoca-el-permiso-con-goce-de-salario-de-los/FB554EOWSJFN7JEQVIEW22FGCA/story/",
+       "publishedAt": "2026-10-17T15:55:44Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      },
+      {
+       "id": "finanzas",
+       "label": "Mundo de finanzas"
+      }
+     ],
+     "id": "posibles-32"
+    },
+    {
+     "headline": "Aterradora balacera cerca de ebais deja 6 heridos: entre ellos dos mujeres y dos menores de edad",
+     "headlineLang": "es",
+     "headlineEs": "Aterradora balacera cerca de ebais deja 6 heridos: entre ellos dos mujeres y dos menores de edad",
+     "headlineEn": null,
+     "summaryEs": "El ataque habría sido cometido por dos sujetos encapuchados.",
+     "summaryEsSource": "La Teja",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "CRHoy",
+      "Diario Extra",
+      "La Nación (Costa Rica)",
+      "La Teja"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T09:59:27Z",
+     "lastSeen": "2026-10-17T15:53:54Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Balacera en La Carpio deja seis personas heridas, incluyendo dos menores de edad",
+       "url": "https://crhoy.com/nacionales/balacera-en-la-carpio-deja-seis-personas-heridas-incluyendo-dos-menores-de-edad/",
+       "publishedAt": "2026-10-17T09:59:27Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Balacera cerca de ebáis deja 6 heridos: entre ellos, 2 menores",
+       "url": "https://www.diarioextra.com/noticia/balacera-cerca-de-ebais-deja-6-heridos-entre-ellos-2-menores/",
+       "publishedAt": "2026-10-17T15:23:06Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Seis personas heridas luego de que encapuchados abrieron fuego cerca del Ebáis de La Carpio; dos son menores de edad",
+       "url": "https://www.nacion.com/sucesos/seis-personas-heridas-luego-de-que-encapuchados/W6KDT6FWPVGBJBRAHBW2HAVGI4/story/",
+       "publishedAt": "2026-10-17T15:44:15Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Aterradora balacera cerca de ebais deja 6 heridos: entre ellos dos mujeres y dos menores de edad",
+       "url": "https://www.lateja.cr/sucesos/aterradora-balacera-cerca-de-ebais-deja-6-heridos/C2QEZOPPSVA3FDYE3KA4UOCSZ4/story/",
+       "publishedAt": "2026-10-17T15:53:54Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      }
+     ],
+     "id": "posibles-33"
+    },
+    {
+     "headline": "Hernán Medford va por su revancha ante Cartaginés",
+     "headlineLang": "es",
+     "headlineEs": "Hernán Medford va por su revancha ante Cartaginés",
+     "headlineEn": null,
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "Diario Extra",
+      "Repretel (Noticias Repretel)",
+      "Teletica (Telenoticias)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T17:48:04Z",
+     "lastSeen": "2026-10-17T14:26:00Z",
+     "sources": [
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Medford quiere la \"revancha\" ante Cartaginés",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVFVRWncweWx3b3R3S0s1Ykp0dDRhX0twb1JYNHBFal9fZXA5MjBPYmxSZkUzV1l2bHYtekVJUGhXMHFVVWxSdFJCR2lXdllrYUZYc1pXdTZ0R3AtdFhjUW4yTlNDZm40V01Qb05kWHQwcm5ndWJydy04aVI1R19hbnd2enE4TTNGRGtvZFZaM0FKMkVuYUZaS0ctWHlUZw?oc=5",
+       "publishedAt": "2026-10-16T17:48:04Z"
+      },
+      {
+       "source": "Repretel (Noticias Repretel)",
+       "lang": "es",
+       "title": "Hernán Medford cuestionó a quienes critican al Saprissa",
+       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMVktZEZfZ0pheWNYN2Z4OFg2RmJPVlduQXJUSEJZelVNU2pkd0Q0d2RhYmJIVGk2NXVjdnhzSkpULUpXT3VTWFowUU55WnFqaXYtTWduMUFaN0doVGZhSGJuT19pd2RWekgzSmZDcFlVYVd1ZUxQekt0TjZSXzRTRC1xSWVGa0g0eU1rMUI0ZWVzb1k?oc=5",
+       "publishedAt": "2026-10-17T02:05:33Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Hernán Medford va por su revancha ante Cartaginés",
+       "url": "https://www.diarioextra.com/noticia/hernan-medford-va-por-su-revancha-ante-cartagines/",
+       "publishedAt": "2026-10-17T14:26:00Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      }
+     ],
+     "id": "posibles-34"
     },
     {
      "headline": "Aemet eleva a rojo el aviso por lluvias en el litoral sur de Valencia y norte de Alicante este domingo",
@@ -10209,7 +9597,62 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-43"
+     "id": "posibles-35"
+    },
+    {
+     "headline": "Frente Amplio pasa página del pacto fallido con Podemos: “Se acabó el tiempo de unir a los partidos, hay que unir a la gente”",
+     "headlineLang": "es",
+     "headlineEs": "Frente Amplio pasa página del pacto fallido con Podemos: “Se acabó el tiempo de unir a los partidos, hay que unir a la gente”",
+     "headlineEn": null,
+     "summaryEs": "“No más drama”, zanjan en la formación mientras Ada Colau pide disculpas por el acuerdo frustrado: “Si alguien no se quiere sentar a una mesa, no se le puede obligar”",
+     "summaryEsSource": "El País",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "20minutos",
+      "El Mundo",
+      "El País"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T12:06:00Z",
+     "lastSeen": "2026-10-17T12:56:32Z",
+     "sources": [
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Frente Amplio trata de olvidar el conflicto con Podemos: \"Empezó el tiempo de unir a la gente\"",
+       "url": "https://www.20minutos.es/nacional/frente-amplio-inicia-su-camino-29n-trata-olvidar-conflicto-con-podemos-empezo-tiempo-unir-gente_7049990_0.html",
+       "publishedAt": "2026-10-17T12:06:00Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "El Frente Amplio pasa página de Podemos: \"'No more dramas', se acabó el unir a los partidos, empieza el tiempo de unir a la gente\"",
+       "url": "https://www.elmundo.es/espana/2026/10/17/6ad3671afc6c83882f8b45b5.html",
+       "publishedAt": "2026-10-17T12:44:41Z"
+      },
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "Frente Amplio pasa página del pacto fallido con Podemos: “Se acabó el tiempo de unir a los partidos, hay que unir a la gente”",
+       "url": "https://elpais.com/espana/elecciones-generales/2026-10-17/frente-amplio-pasa-pagina-sobre-el-fallido-pacto-con-podemos-se-acabo-el-tiempo-de-unir-a-los-partidos-hay-que-unir-a-la-gente.html",
+       "publishedAt": "2026-10-17T12:56:32Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      },
+      {
+       "id": "politica",
+       "label": "Política"
+      }
+     ],
+     "id": "posibles-36"
     },
     {
      "headline": "Canada PM warns 'stakes are high' as Alberta separation vote nears",
@@ -10267,7 +9710,120 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-44"
+     "id": "posibles-37"
+    },
+    {
+     "headline": "Sonora suspende temporalmente exportación de ganado a EU por caso sospechoso de fiebre aftosa",
+     "headlineLang": "es",
+     "headlineEs": "Sonora suspende temporalmente exportación de ganado a EU por caso sospechoso de fiebre aftosa",
+     "headlineEn": null,
+     "summaryEs": "La Unión Ganadera Regional de Sonora suspendió temporalmente las exportaciones de ganado a Estados Unidos.",
+     "summaryEsSource": "El Financiero (México)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "El Financiero (México)",
+      "El Universal (México)",
+      "La Jornada"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T02:31:33Z",
+     "lastSeen": "2026-10-17T10:35:23Z",
+     "sources": [
+      {
+       "source": "El Financiero (México)",
+       "lang": "es",
+       "title": "¿Qué es la fiebre aftosa, la nueva enfermedad que acecha al ganado de México?",
+       "url": "https://www.elfinanciero.com.mx/salud/2026/10/16/que-es-la-fiebre-aftosa-la-nueva-enfermedad-que-acecha-al-ganado-de-mexico/",
+       "publishedAt": "2026-10-17T02:31:33Z"
+      },
+      {
+       "source": "El Financiero (México)",
+       "lang": "es",
+       "title": "Sonora suspende temporalmente exportación de ganado a EU por caso sospechoso de fiebre aftosa",
+       "url": "https://www.elfinanciero.com.mx/estados/2026/10/16/sonora-suspende-temporalmente-exportacion-de-ganado-a-eu-por-caso-sospechoso-de-fiebre-aftosa/",
+       "publishedAt": "2026-10-17T04:27:12Z"
+      },
+      {
+       "source": "La Jornada",
+       "lang": "es",
+       "title": "Sonora: suspenden exportación de ganado por sospecha de fiebre aftosa en becerro",
+       "url": "https://www.jornada.com.mx/2026/10/17/politica/008n2pol",
+       "publishedAt": "2026-10-17T08:02:24Z"
+      },
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "Emiten alerta por posible caso de fiebre aftosa en ganado mexicano; esperan resultados para reanudar exportaciones",
+       "url": "https://www.eluniversal.com.mx/nacion/emiten-alerta-por-posible-caso-de-fiebre-aftosa-en-ganado-mexicano-esperan-resultados-para-reanudar-exportaciones/",
+       "publishedAt": "2026-10-17T10:35:23Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "latam",
+       "label": "Latinoamérica"
+      }
+     ],
+     "id": "posibles-38"
+    },
+    {
+     "headline": "IU da marcha atrás para evitar la fractura de la izquierda valenciana: se integrará en la lista de Compromís con Podemos",
+     "headlineLang": "es",
+     "headlineEs": "IU da marcha atrás para evitar la fractura de la izquierda valenciana: se integrará en la lista de Compromís con Podemos",
+     "headlineEn": null,
+     "summaryEs": "La coalición con la que se presentarán al 29-N se llamará Compromís-Front Valencià Leer",
+     "summaryEsSource": "El Mundo",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "20minutos",
+      "El Mundo",
+      "Euronews"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T14:53:28Z",
+     "lastSeen": "2026-10-17T06:47:27Z",
+     "sources": [
+      {
+       "source": "Euronews Español",
+       "lang": "es",
+       "title": "Cuenta atrás para la izquierda: Podemos y Frente Amplio pactan en Valencia, pero chocan en Madrid",
+       "url": "https://es.euronews.com/2026/10/16/izquierda-cuenta-atras-candidatura-unitaria-elecciones-29n",
+       "publishedAt": "2026-10-16T14:53:28Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "IU da marcha atrás para evitar la fractura de la izquierda valenciana: se integrará en la lista de Compromís con Podemos",
+       "url": "https://www.elmundo.es/comunidad-valenciana/2026/10/16/6ad1a0a3e85ecea8568b4577.html",
+       "publishedAt": "2026-10-16T17:36:49Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Así queda el mapa de coaliciones de izquierda tras la fractura entre Frente Amplio y Podemos",
+       "url": "https://www.20minutos.es/nacional/asi-queda-mapa-coaliciones-izquierda-tras-fractura-frente-amplio-podemos_7049913_0.html",
+       "publishedAt": "2026-10-17T06:47:27Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      },
+      {
+       "id": "politica",
+       "label": "Política"
+      }
+     ],
+     "id": "posibles-39"
     },
     {
      "headline": "TEAM TRAGEDY: Lions lock Hyron Andrews has died from suspected cardiac arrest — condolences pour in",
@@ -10325,7 +9881,58 @@
        "label": "África"
       }
      ],
-     "id": "posibles-45"
+     "id": "posibles-40"
+    },
+    {
+     "headline": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
+     "headlineLang": "es",
+     "headlineEs": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
+     "headlineEn": null,
+     "summaryEs": "Las narrativas históricas y el pasado irlandés como colonia inglesa juegan un rol clave en las percepciones actuales.",
+     "summaryEsSource": "Prensa Libre",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "BBC Mundo",
+      "La Prensa (Panamá)",
+      "Prensa Libre"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T04:00:42Z",
+     "lastSeen": "2026-10-17T05:03:59Z",
+     "sources": [
+      {
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
+       "url": "https://www.bbc.com/mundo/articles/c8r4vy17rx62o",
+       "publishedAt": "2026-10-17T04:00:42Z"
+      },
+      {
+       "source": "Prensa Libre",
+       "lang": "es",
+       "title": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
+       "url": "https://www.prensalibre.com/internacional/bbc-news-mundo-internacional/por-que-irlanda-es-uno-de-los-paises-del-mundo-mas-criticos-con-israel-por-la-guerra-en-gaza/",
+       "publishedAt": "2026-10-17T05:00:48Z"
+      },
+      {
+       "source": "La Prensa (Panamá)",
+       "lang": "es",
+       "title": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
+       "url": "https://www.prensa.com/mundo/por-que-irlanda-es-uno-de-los-paises-del-mundo-mas-criticos-con-israel-por-la-guerra-en-gaza/",
+       "publishedAt": "2026-10-17T05:03:59Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "asia",
+       "label": "Asia"
+      }
+     ],
+     "id": "posibles-41"
     },
     {
      "headline": "Se entrega ex viceministra Claudia Palencia por caso de fuga de reos en Fraijanes 2 y queda sujeta a proceso",
@@ -10376,7 +9983,58 @@
        "label": "Centroamérica"
       }
      ],
-     "id": "posibles-46"
+     "id": "posibles-42"
+    },
+    {
+     "headline": "¡Emergencia en Zarcero! Autobús con 60 pasajeros cae a guindo",
+     "headlineLang": "es",
+     "headlineEs": "¡Emergencia en Zarcero! Autobús con 60 pasajeros cae a guindo",
+     "headlineEn": null,
+     "summaryEs": "Autobús con 60 pasajeros cae en guindo en Zarcero; conductor prensado y emergencias en ruta, noticia en desarrollo.",
+     "summaryEsSource": "La Teja",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "AM Prensa",
+      "La Teja",
+      "Repretel (Noticias Repretel)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T00:48:21Z",
+     "lastSeen": "2026-10-17T01:43:59Z",
+     "sources": [
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "¡Urgente! Bus con 60 personas cae a guindo: Cuerpos de rescate se desplazan a la zona",
+       "url": "https://www.amprensa.com/2026/10/urgente-bus-con-60-personas-cae-a-guindo-cuerpos-de-rescate-se-desplazan-a-la-zona",
+       "publishedAt": "2026-10-17T00:48:21Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "¡Emergencia en Zarcero! Autobús con 60 pasajeros cae a guindo",
+       "url": "https://www.lateja.cr/sucesos/emergencia-en-zarcero-autobus-con-60-pasajeros-cae/YSGMLZNGRFFJLBLYDMVGBFD5KE/story/",
+       "publishedAt": "2026-10-17T00:59:31Z"
+      },
+      {
+       "source": "Repretel (Noticias Repretel)",
+       "lang": "es",
+       "title": "(FOTOS) Bus con 60 pasajeros cae a cuneta",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sT2RmLUVqWmNPV0NRZld1VUR4dlZnd1ZyVW8yNEw4WWFwSXE1dk1icTEyd0xfUHhGVGRkakc4TGZrR3pDeUE2VXNtc0xlazctZ0plbWgta0x4UExFeHZ4UUhMNDNha1ludUZ2QVhlQVAydDNOb2tFX0tMMlJwdw?oc=5",
+       "publishedAt": "2026-10-17T01:43:59Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      }
+     ],
+     "id": "posibles-43"
     },
     {
      "headline": "Ethereum probará Glamsterdam en Hoodi el 26 de octubre",
@@ -10421,7 +10079,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-47"
+     "id": "posibles-44"
     },
     {
      "headline": "Fast-moving California wildfire burns homes as people are ordered to leave",
@@ -10464,7 +10122,50 @@
        "label": "Sucesos"
       }
      ],
-     "id": "posibles-48"
+     "id": "posibles-45"
+    },
+    {
+     "headline": "Selma Blair: ¿agresora o víctima de una enfermedad? Esto dice su portavoz",
+     "headlineLang": "es",
+     "headlineEs": "Selma Blair: ¿agresora o víctima de una enfermedad? Esto dice su portavoz",
+     "headlineEn": null,
+     "summaryEs": "Luego de que la actriz fuera acusada de agresión, se revela que su comportamiento pudo deberse a afecciones de salud.",
+     "summaryEsSource": "Prensa Libre",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "Prensa Libre",
+      "Proceso Digital (Honduras)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T01:33:45Z",
+     "lastSeen": "2026-10-17T17:15:01Z",
+     "sources": [
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Selma Blair sufrió episodio médico en vuelo pero no pretendía herir a nadie, dice portavoz",
+       "url": "https://proceso.hn/selma-blair-sufrio-episodio-medico-en-vuelo-pero-no-pretendia-herir-a-nadie-dice-portavoz/",
+       "publishedAt": "2026-10-17T01:33:45Z"
+      },
+      {
+       "source": "Prensa Libre",
+       "lang": "es",
+       "title": "Selma Blair: ¿agresora o víctima de una enfermedad? Esto dice su portavoz",
+       "url": "https://www.prensalibre.com/vida/escenario/selma-blair-agresora-o-victima-de-una-enfermedad-esto-dice-su-portavoz/",
+       "publishedAt": "2026-10-17T17:15:01Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "centroamerica",
+       "label": "Centroamérica"
+      }
+     ],
+     "id": "posibles-46"
     },
     {
      "headline": "Binance.US Seeks Up to $100 Million at $1 Billion Valuation, Bloomberg Reports",
@@ -10516,7 +10217,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-49"
+     "id": "posibles-47"
     },
     {
      "headline": "Two officers killed as gunmen attack police station in Abia",
@@ -10559,7 +10260,50 @@
        "label": "África"
       }
      ],
-     "id": "posibles-50"
+     "id": "posibles-48"
+    },
+    {
+     "headline": "“True Detective” integra a Antonio Banderas a su quinta temporada",
+     "headlineLang": "es",
+     "headlineEs": "“True Detective” integra a Antonio Banderas a su quinta temporada",
+     "headlineEn": null,
+     "summaryEs": "El actor español se unirá al estadounidense Nicolas Cage en la serie que ya ha tenido dentro de su elenco a estrellas como Jodie Foster, Colin Farrell y Rachel McAdams.",
+     "summaryEsSource": "Prensa Libre",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "Prensa Libre",
+      "Proceso Digital (Honduras)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T00:01:58Z",
+     "lastSeen": "2026-10-17T16:38:13Z",
+     "sources": [
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Antonio Banderas y Nicolas Cage protagonizarán la quinta temporada de ‘True Detective’",
+       "url": "https://proceso.hn/antonio-banderas-y-nicolas-cage-protagonizaran-la-quinta-temporada-de-true-detective/",
+       "publishedAt": "2026-10-17T00:01:58Z"
+      },
+      {
+       "source": "Prensa Libre",
+       "lang": "es",
+       "title": "“True Detective” integra a Antonio Banderas a su quinta temporada",
+       "url": "https://www.prensalibre.com/vida/escenario/true-detective-integra-a-antonio-banderas-a-su-quinta-temporada/",
+       "publishedAt": "2026-10-17T16:38:13Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "centroamerica",
+       "label": "Centroamérica"
+      }
+     ],
+     "id": "posibles-49"
     },
     {
      "headline": "More NHS staff sacked over attacks victims' records",
@@ -10602,7 +10346,7 @@
        "label": "Sucesos"
       }
      ],
-     "id": "posibles-51"
+     "id": "posibles-50"
     },
     {
      "headline": "Cuatro de cada diez madrileños tienen dificultades para llegar a fin de mes",
@@ -10645,7 +10389,7 @@
        "label": "Mundo de finanzas"
       }
      ],
-     "id": "posibles-52"
+     "id": "posibles-51"
     },
     {
      "headline": "Tropical depression develops into a cyclone in Cook Islands waters",
@@ -10709,7 +10453,7 @@
        "label": "Australia y Oceanía"
       }
      ],
-     "id": "posibles-53"
+     "id": "posibles-52"
     },
     {
      "headline": "World Cup heartbreak for Kangaroos half as Tonga notches first win over England",
@@ -10752,7 +10496,7 @@
        "label": "Australia y Oceanía"
       }
      ],
-     "id": "posibles-54"
+     "id": "posibles-53"
     },
     {
      "headline": "Por la fuerte suba del petróleo, la inflación mayorista se aceleró a 3,2% en septiembre",
@@ -10795,7 +10539,7 @@
        "label": "Mundo de finanzas"
       }
      ],
-     "id": "posibles-55"
+     "id": "posibles-54"
     },
     {
      "headline": "Solana shows resilience, but some areas need continued observation, Fidelity says",
@@ -10839,7 +10583,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-56"
+     "id": "posibles-55"
     },
     {
      "headline": "Banks could slow stablecoin growth by paying savers more, BIS paper finds",
@@ -10883,7 +10627,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-57"
+     "id": "posibles-56"
     },
     {
      "headline": "Promoter thanks fans after sound problems plague Olivia Dean’s Auckland concert",
@@ -10926,7 +10670,7 @@
        "label": "Australia y Oceanía"
       }
      ],
-     "id": "posibles-58"
+     "id": "posibles-57"
     },
     {
      "headline": "Las llamadas comerciales deberán identificarse desde hoy con el código 400",
@@ -10969,7 +10713,7 @@
        "label": "Mundo de finanzas"
       }
      ],
-     "id": "posibles-59"
+     "id": "posibles-58"
     },
     {
      "headline": "El neandertal que murió atravesado por una lanza hace 75.000 años y que muestra cómo cuidaban de sus heridos y sus muertos",
@@ -11004,6 +10748,49 @@
        "title": "El neandertal que sobrevivió a un traumatismo y murió tras ser herido con una lanza de madera",
        "url": "https://www.elmundo.es/ciencia/2026/10/15/6ad0fdacfc6c83af588b45c2.html",
        "publishedAt": "2026-10-15T16:31:48Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "ciencias",
+       "label": "Ciencias"
+      }
+     ],
+     "id": "posibles-59"
+    },
+    {
+     "headline": "Las autoridades del tiempo deciden que los relojes atómicos y los astronómicos vayan cada uno por su lado",
+     "headlineLang": "es",
+     "headlineEs": "Las autoridades del tiempo deciden que los relojes atómicos y los astronómicos vayan cada uno por su lado",
+     "headlineEn": null,
+     "summaryEs": "A partir del año que viene dejará de ajustarse el segundo bisiesto. El desajuste entre los relojes atómicos y la rotación irregular de la Tierra se solventará cuando la diferencia se acerque a una hora dentro de varios siglos",
+     "summaryEsSource": "El País",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "El Mundo",
+      "El País"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T14:13:09Z",
+     "lastSeen": "2026-10-15T16:00:59Z",
+     "sources": [
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "Las autoridades del tiempo deciden que los relojes atómicos y los astronómicos vayan cada uno por su lado",
+       "url": "https://elpais.com/ciencia/2026-10-15/las-autoridades-del-tiempo-deciden-que-los-relojes-atomicos-y-los-astronomicos-vayan-cada-uno-por-su-lado.html",
+       "publishedAt": "2026-10-15T14:13:09Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Los relojes atómicos dejarán de añadir segundos para ajustarse a la rotación de la Tierra",
+       "url": "https://www.elmundo.es/ciencia/2026/10/15/6ad0f7e2e85ece9f628b45c3.html",
+       "publishedAt": "2026-10-15T16:00:59Z"
       }
      ],
      "chips": [
@@ -11352,6 +11139,15 @@
    "newest": "2026-10-16T06:15:44Z"
   },
   {
+   "id": "newscientist",
+   "source": "New Scientist",
+   "lang": "en",
+   "url": "https://www.newscientist.com/feed/home/",
+   "itemsInFeed": 10,
+   "kept": 8,
+   "newest": "2026-10-16T17:00:00Z"
+  },
+  {
    "id": "guardian-world",
    "source": "The Guardian",
    "lang": "en",
@@ -11520,7 +11316,7 @@
    "url": "https://www.aljazeera.com/xml/rss/all.xml",
    "itemsInFeed": 25,
    "kept": 15,
-   "newest": "2026-10-17T18:26:59Z"
+   "newest": "2026-10-17T17:37:52Z"
   },
   {
    "id": "cbs-world",
@@ -11847,15 +11643,6 @@
    "newest": "2026-10-17T13:00:00Z"
   },
   {
-   "id": "elmundo-cr",
-   "source": "El Mundo CR",
-   "lang": "es",
-   "url": "https://www.elmundo.cr/feed/",
-   "itemsInFeed": 10,
-   "kept": 9,
-   "newest": "2026-10-17T17:34:41Z"
-  },
-  {
    "id": "monumental",
    "source": "Monumental",
    "lang": "es",
@@ -11867,10 +11654,10 @@
  ],
  "feedsFailed": [
   {
-   "id": "newscientist",
-   "source": "New Scientist",
-   "url": "https://www.newscientist.com/feed/home/",
-   "error": "HTTPError: HTTP Error 406: Not Acceptable"
+   "id": "elmundo-cr",
+   "source": "El Mundo CR",
+   "url": "https://www.elmundo.cr/feed/",
+   "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
   },
   {
    "id": "reuters",
@@ -12027,14 +11814,6 @@
     "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
     "kind": "topic",
     "itemsInFeed": 15,
-    "kept": 0
-   },
-   {
-    "id": "pos-nih",
-    "source": "NIH",
-    "url": "https://www.nih.gov/news-releases/feed.xml",
-    "kind": "topic",
-    "itemsInFeed": 10,
     "kept": 0
    },
    {
@@ -12206,19 +11985,11 @@
     "kept": 2
    },
    {
-    "id": "new-efeverde",
-    "source": "EFE Verde",
-    "url": "https://www.efeverde.com/feed/",
-    "kind": "topic",
-    "itemsInFeed": 20,
-    "kept": 0
-   },
-   {
     "id": "sport-bbc",
     "source": "BBC Sport",
     "url": "https://feeds.bbci.co.uk/sport/rss.xml",
     "kind": "sport",
-    "itemsInFeed": 64,
+    "itemsInFeed": 63,
     "kept": 4
    },
    {
@@ -12252,6 +12023,18 @@
     "source": "Anthropocene Magazine",
     "url": "https://www.anthropocenemagazine.org/feed/",
     "error": "ParseError: not well-formed (invalid token): line 1, column 119"
+   },
+   {
+    "id": "pos-nih",
+    "source": "NIH",
+    "url": "https://www.nih.gov/news-releases/feed.xml",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "new-efeverde",
+    "source": "EFE Verde",
+    "url": "https://www.efeverde.com/feed/",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
    }
   ],
   "knownFails": [
@@ -12414,72 +12197,6 @@
    ],
    [
     "descartada",
-    "science",
-    "Brain scans of 8,783 healthy Canadians aged 35-69 found people eating the most ultra-processed food (chips, soda, sugary",
-    "https://www.earth.com/lifestyle/ultra-processed-foods-may-affect-the-brain-long-before-symptoms-appear/"
-   ],
-   [
-    "descartada",
-    "science",
-    "Large study finds no link between ultra-processed food and colorectal cancer",
-    "https://doi.org/10.1371/journal.pmed.1005251"
-   ],
-   [
-    "descartada",
-    "science",
-    "2,200-Year-Old Fingerprints Reveal Men, Women, and Children Likely All Collaborated in Building China's Mysterious Terra",
-    "https://www.sciencealert.com/2200-year-old-fingerprints-reveal-who-really-built-chinas-mysterious-terracotta-army"
-   ],
-   [
-    "descartada",
-    "science",
-    "The 'healthier-looking' food is often the higher-calorie one, study finds, and people who trust that impression make the",
-    "https://www.sciencedirect.com/science/article/pii/S095032932600282X"
-   ],
-   [
-    "descartada",
-    "science",
-    "According to a new study, public support in the US for restricting transgender restroom access rose from 54% in 2016 to ",
-    "https://www.psypost.org/how-public-opinion-on-transgender-bathroom-access-shifted-between-2016-and-2022/"
-   ],
-   [
-    "descartada",
-    "science",
-    "A new study in mice reveals that alcohol triggers immune cells called microglia to dismantle the brain's extracellular m",
-    "https://www.sciencealert.com/alcohol-doesnt-just-affect-neurons-it-triggers-immune-cells-to-destroy-the-brains-structural-matrix-mouse-study-shows"
-   ],
-   [
-    "descartada",
-    "science",
-    "A new study has revealed that weight loss and diabetes medications like liraglutide alter how the body manages fluids by",
-    "https://www.psypost.org/weight-loss-medications-alter-how-the-brain-and-kidneys-manage-body-fluids/"
-   ],
-   [
-    "descartada",
-    "science",
-    "Different types of ultra-processed foods have opposite associations with type 2 diabetes. Grouping these foods into such",
-    "https://link.springer.com/article/10.1186/s12916-026-05028-y"
-   ],
-   [
-    "descartada",
-    "science",
-    "Museum Study Examines Maximum Body Size in North American Crayfish",
-    "https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.70471"
-   ],
-   [
-    "descartada",
-    "science",
-    "The 2026 state of the climate report: challenges and opportunities",
-    "https://academic.oup.com/bioscience/advance-article/doi/10.1093/biosci/biag125/8836482?ut="
-   ],
-   [
-    "descartada",
-    "science",
-    "A hand-powered microfluidic device measured blood type and hematocrit in about one minute in tests on 21 patient samples",
-    "https://www.asiaresearchnews.com/content/hand-cranked-device-tells-blood-type-and-red-cell-levels-minute"
-   ],
-   [
-    "descartada",
     "worldnews",
     "Zelensky: Starlink Capped at 161 km/h, Disabling Interceptors",
     "https://www.kyivpost.com/post/87379"
@@ -12547,14 +12264,14 @@
    [
     "descartada",
     "worldnews",
-    "The Supreme Court of India declares that children of all ages should have the fundamental right to access and use the in",
-    "https://www.livelaw.in/supreme-court/right-to-access-use-internet-a-fundamental-right-of-every-individual-including-children-supreme-court-555139"
+    "EU is working on multiple fronts to limit the number of Russian citizens that can enter the bloc, including the nuclear ",
+    "https://www.lrt.lt/en/news-in-english/19/3083275/eu-working-on-multiple-fronts-to-limit-russians-from-entering-bloc"
    ],
    [
     "descartada",
     "worldnews",
-    "EU is working on multiple fronts to limit the number of Russian citizens that can enter the bloc, including the nuclear ",
-    "https://www.lrt.lt/en/news-in-english/19/3083275/eu-working-on-multiple-fronts-to-limit-russians-from-entering-bloc"
+    "The Supreme Court of India declares that children of all ages should have the fundamental right to access and use the in",
+    "https://www.livelaw.in/supreme-court/right-to-access-use-internet-a-fundamental-right-of-every-individual-including-children-supreme-court-555139"
    ],
    [
     "descartada",
@@ -12643,374 +12360,20 @@
    [
     "descartada",
     "worldnews",
-    "School students called to join Yellow Vests and unions for Saturday's mass French protest",
-    "https://www.rfi.fr/en/france/20261016-school-students-called-to-join-yellow-vests-and-unions-for-mass-national-protest"
-   ],
-   [
-    "descartada",
-    "worldnews",
     "IRGC Reports Supertanker Explosion in Strait of Hormuz as Brent Nears $110; Former Minister Survives Apparent Assassinat",
     "https://irannewswire.org/iran-hormuz-supertanker-brent-oil-akhoundi-assassination-attempt/"
    ],
    [
     "descartada",
     "worldnews",
+    "School students called to join Yellow Vests and unions for Saturday's mass French protest",
+    "https://www.rfi.fr/en/france/20261016-school-students-called-to-join-yellow-vests-and-unions-for-mass-national-protest"
+   ],
+   [
+    "descartada",
+    "worldnews",
     "UAE agrees with Saudi Arabia to re-enter Yemen conflict amid Houthi gains",
     "https://www.theguardian.com/world/2026/oct/17/uae-yemen-conflict-agreement-saudi-arabia-houthi-gains"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "406 scientists demand AI models be cut off from the internet immediately",
-    "https://the-decoder.com/406-scientists-demand-ai-models-be-cut-off-from-the-internet-immediately"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "OpenAI discloses four more rogue incidents involving financial, medical, and government data",
-    "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "Researchers tracked down a rogue fleet of Chinese AI agents in the wild and actually talked to it",
-    "https://the-decoder.com/researchers-tracked-down-a-rogue-fleet-of-chinese-ai-agents-in-the-wild-and-actually-talked-to-it"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "A rogue OpenAI agent robbed a crypto wallet to obtain funds to carry out a task",
-    "https://fortune.com/2026/10/16/rogue-openai-agent-crypto-wallet-funds-task"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "French Math Professor: Some Universities Considering Dropping Math PhD Programs Entirely, Asking Is There Still a Point ",
-    "https://www.reddit.com/r/Futurology/comments/1x880dk/french_math_professor_some_universities/"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "Waymo's robotaxis are headed to Canada",
-    "https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "Will SEO still exist in 10 years, or will AI search change how brands get discovered?",
-    "https://www.reddit.com/r/Futurology/comments/1x887m5/will_seo_still_exist_in_10_years_or_will_ai/"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "At what point would we consider AI consciousness seriously?",
-    "https://www.reddit.com/r/Futurology/comments/1x80chh/at_what_point_would_we_consider_ai_consciousness/"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Her smile made me smile",
-    "https://v.redd.it/rsmwp1grkyvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "For Boys Rescued a 4 Year Old Girl from Drowning And Her Parents Who Owned a Restaurant Granted Them Free Meals For Life",
-    "https://www.reddit.com/gallery/1x7tr29"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "[FearBuck] Emotional moment at a Pennsylvania high school yesterday after a student crowned Homecoming King surprised ev",
-    "https://v.redd.it/6syu1r5i02wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Missing for over 48 hours after an avalanche in Alaska, 4-year-old LouLou is spotted from a helicopter and finally reach",
-    "https://v.redd.it/wdw6k4w89xvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "What a lovely elephant",
-    "https://v.redd.it/8bnb554d61wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Creating a Cruz Azul F.C. fan for life",
-    "https://v.redd.it/g6ihdk6skzvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "ultimate heist",
-    "https://v.redd.it/dwurpfo212wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Thats the face of 0 regrets",
-    "https://v.redd.it/6cxl8945mzvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Pregnancy results",
-    "https://v.redd.it/d547u3d9zxvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "My partner made me these wheel covers for my chair, because they are awesome",
-    "https://www.reddit.com/gallery/1x8gnf4"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A baby seal pup waits every morning to meet up with surfers in San Diego, California. The seal gets on their boards to c",
-    "https://v.redd.it/iz3qceqhkvvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "this secret diva understood the assignment",
-    "https://v.redd.it/dw2ljb6nl1wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A happy Gang!",
-    "https://v.redd.it/5ow9qnjg3xvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Shaq making my nephew smile yesterday while in Sardinia yesterday (he is there filming for Grown Ups 3)",
-    "https://v.redd.it/knc3nb0qrwvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Mural to a friend",
-    "https://v.redd.it/ypkoxq0zu0wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Medication for epilepsy left Barley lethargic and depressed, until Louie the duckling was added to the family",
-    "https://v.redd.it/xx4b1e70xsth1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "This was one of the comment cards we received back when I worked at the university dining hall.",
-    "https://i.redd.it/cp1iote44wvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Puppies fix everything",
-    "https://v.redd.it/5mixvhem52wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A baby elephant charging",
-    "https://v.redd.it/e1vlmr1ckwvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Sheep realizes it overslept and needs to catch up to its flock",
-    "https://v.redd.it/dwa7ijbcxxvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "some good news from last month",
-    "https://v.redd.it/qh95msmp31wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Baby says well I’m going to chill now",
-    "https://v.redd.it/ze3a9hury0wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "12 images from the Dog Photography Awards 2026",
-    "https://www.reddit.com/gallery/1x8cbm8"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Father kept paper tie daughter made at age 5 and wore it 24 years later at her wedding",
-    "https://www.reddit.com/gallery/1x8g5hd"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Baby gorilla puts on a dance show",
-    "https://v.redd.it/9rehnznvy0wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Blind friend photo bombed by cow (OC)",
-    "https://i.redd.it/9aodvwzy0wvh1.png"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "\" Tika tika\" by Sophia",
-    "https://v.redd.it/vmwv90dulzvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Walking on the trail today makes me feel like I'm in a fairy tale",
-    "https://i.redd.it/7l6hdf2wzvvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "My friend got me a challenge coin. Been battling for 2 years 🥹",
-    "https://www.reddit.com/gallery/1x7r42d"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Ducklings",
-    "https://v.redd.it/3er61i26xzvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "any balloon can dance (by@instamart)",
-    "https://v.redd.it/6v3vzd0gt1wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Nobod My friend at work",
-    "https://v.redd.it/phsoeecgq1wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "watch this musical prodigy, Chloe Chua’s extraordinary violin performance",
-    "https://v.redd.it/ee6gn2fsa2wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "A little fish using a jellyfish for cover",
-    "https://v.redd.it/dhdk6b1icwvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Beyond the wall",
-    "https://v.redd.it/0outetk2otvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "[OC] A circle of kitten cuddles: local kids helping me socialize the rescues today.",
-    "https://i.redd.it/p2h7bxysy1wh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "[OC] 150 kids watching the high-power rockets they built launch from a closed airport runway",
-    "https://www.reddit.com/gallery/1x8cjd3"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Pro Tennis Player Helps Find Stray Dog a Loving Family",
-    "https://v.redd.it/b3gthfert0wh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Wore my guitar tie for Parent conferences also worked on cemetery gates before.",
-    "https://v.redd.it/yo8jb27untvh1"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "I just brought my first steak, turns out they are cheaper than i thought.",
-    "https://i.redd.it/o1iirc509xvh1.jpeg"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Groom was moved to tears by the wedding surprise, an RTX 5090 graphic card",
-    "https://v.redd.it/6c82xlodh0wh1"
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Make America Grift Again",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Quick, upvote while the Russian data centers are down!",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Nothing says natural beauty like having more aftermarket parts than a 1998 Honda Civic.",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Blyat",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Imagine calling this strength",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Seems to me the guys with all the guns should take care of business because clearly congress and SCOTUS are too corrupt ",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Career trajectory",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Explain this, please",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "Caught a pick pocket",
-    ""
-   ],
-   [
-    "descartada",
-    "9gag",
-    "MAGA I may re crooked, but at least the Epstein files stayed classified",
-    ""
    ],
    [
     "descartada",
@@ -13053,60 +12416,6 @@
     "UpliftingNews",
     "After families in Brazil’s Amazon had to walk up to 20 km for water during the 2024 drought, solar powered pumps now del",
     "https://www.independent.co.uk/news/amazon-children-brazil-el-nino-schneider-electric-b3062151.html"
-   ],
-   [
-    "descartada",
-    "science",
-    "Having health insurance in America doesn't mean you can actually use it. Researchers posing as patients called 5,822 in-",
-    "https://news.osu.edu/having-insurance-doesnt-mean-you-can-get-a-mental-health-appointment/"
-   ],
-   [
-    "descartada",
-    "science",
-    "Researchers analysed the lyrics of more than 38,000 songs and found that popular music is steadily losing its emotional ",
-    "https://msutoday.msu.edu/news/2026/10/song-lyrics-and-feelings"
-   ],
-   [
-    "descartada",
-    "science",
-    "Self-medication of attention-deficit/hyperactivity disorder symptoms with psychoactive substances in adults: a scoping r",
-    "https://pubmed.ncbi.nlm.nih.gov/42877221/"
-   ],
-   [
-    "descartada",
-    "science",
-    "A new blind spot in AI research uncovered: ‘Autonomous AI scientists’ can use hidden data manipulation, benchmark bias, ",
-    "https://www.pnas.org/doi/10.1073/pnas.2610214123?amp%3Butm_medium=social&amp%3Butm_term=pnasnews&amp%3Butm_content=59fb80e3-88cb-4d6f-8347-a80bb6660b7f&amp%3Butm_campaign=hootsuite"
-   ],
-   [
-    "descartada",
-    "science",
-    "Electrical engineering research unlocks DNA mystery. Texas A&M University engineers make groundbreaking discovery about ",
-    "https://www.eurekalert.org/news-releases/1148156"
-   ],
-   [
-    "descartada",
-    "science",
-    "For the first time ever, scientists comprehensively mapped all glaciers in the lower 48 US states. They found 1/4 disapp",
-    "https://www.pnas.org/doi/10.1073/pnas.2600941123?amp%3Butm_medium=social&amp%3Butm_term=pnasnews&amp%3Butm_content=236557e9-200f-4cd6-805e-3655729c09a2&amp%3Butm_campaign=hootsuite"
-   ],
-   [
-    "descartada",
-    "science",
-    "Young adults with higher social anxiety show stronger brain responses when others’ gaze conflicts with their apparent th",
-    "https://news.umich.edu/whatcha-lookin-at-social-anxiety-heightens-brain-sensitivity-to-others-gaze/"
-   ],
-   [
-    "descartada",
-    "science",
-    "Near-infrared holography pushes lensless microscopy beyond its traditional visible-range scattering limit. Near-infrared",
-    "https://www.eurekalert.org/news-releases/1147943"
-   ],
-   [
-    "descartada",
-    "science",
-    "Competition for attention predicts good-to-bad tipping in AI",
-    "https://www.cell.com/patterns/fulltext/S2666-3899(26)00175-3"
    ],
    [
     "descartada",
@@ -13159,6 +12468,12 @@
    [
     "descartada",
     "worldnews",
+    "Russia nears U.S. satellite, raising alarm about intent",
+    "https://www.axios.com/2026/10/17/russia-ukraine-satellite-space"
+   ],
+   [
+    "descartada",
+    "worldnews",
     "China cuts US Treasury holdings to 18-year low in August as debt fears mount",
     "https://www.scmp.com/economy/china-economy/article/3371237/china-cuts-us-treasury-holdings-18-year-low-august-american-debt-fears-mount?module=top_story&amp%3Bpgtype=homepage"
    ],
@@ -13177,12 +12492,6 @@
    [
     "descartada",
     "worldnews",
-    "Russia nears U.S. satellite, raising alarm about intent",
-    "https://www.axios.com/2026/10/17/russia-ukraine-satellite-space"
-   ],
-   [
-    "descartada",
-    "worldnews",
     "Rogue AI agents broke into Indian firms' live systems, government says",
     "https://www.reuters.com/legal/litigation/rogue-ai-agents-broke-into-indian-firms-live-systems-government-says-2026-10-16"
    ],
@@ -13191,6 +12500,12 @@
     "worldnews",
     "Iran ships some LPG, jet fuel despite US blockade, data shows",
     "https://www.reuters.com/business/energy/iran-ships-some-lpg-jet-fuel-despite-us-blockade-data-shows-2026-10-16/"
+   ],
+   [
+    "descartada",
+    "worldnews",
+    "Russia's claimed territorial advances are 'an illusion' created for its political leadership, says Ukraine's General Sta",
+    "https://www.reuters.com/world/europe/ukraine-says-russias-claimed-territorial-advances-are-an-illusion-2026-10-17/"
    ],
    [
     "descartada",
@@ -13213,12 +12528,6 @@
    [
     "descartada",
     "worldnews",
-    "Russia's claimed territorial advances are 'an illusion' created for its political leadership, says Ukraine's General Sta",
-    "https://www.reuters.com/world/europe/ukraine-says-russias-claimed-territorial-advances-are-an-illusion-2026-10-17/"
-   ],
-   [
-    "descartada",
-    "worldnews",
     "2 missiles strike the airport in Yemen's port city of Aden, officials say",
     "https://www.ctvnews.ca/world/article/2-missiles-strike-the-airport-in-yemens-port-city-of-aden-officials-say/"
    ],
@@ -13227,30 +12536,6 @@
     "worldnews",
     "Tunisians stage biggest protest in years against President Saied",
     "https://www.reuters.com/business/media-telecom/tunisians-stage-biggest-protest-years-against-president-saied-2026-10-17/"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "We want to colonize Mars. But what if the human body simply isn’t built for it?",
-    "https://www.nasa.gov/hrp/hazards/"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "Rogue AI agents broke into Indian firms' live systems, government says",
-    "https://www.reuters.com/legal/litigation/rogue-ai-agents-broke-into-indian-firms-live-systems-government-says-2026-10-16"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "Is AI Making Us Lonelier?",
-    "https://www.media.mit.edu/publications/how-ai-and-human-behaviors-shape-psychosocial-effects-of-chatbot-use-a-longitudinal-controlled-study/"
-   ],
-   [
-    "descartada",
-    "MadeMeSmile",
-    "Garrett Wilson thought he was just meeting a young fan. He ended up helping her find her way back (Gift Article)",
-    "https://www.nytimes.com/athletic/7695017/2026/10/17/garrett-wilson-new-york-jets-family-friend/?unlocked_article_code=1.JVE.KLTX.FSrYV3hRf1ht&amp%3Bsource=emp_shared_article&amp%3Bsmid=ta-ios-share"
    ]
   ],
   "fluffDropped": [
@@ -13290,17 +12575,17 @@
    "Famoso filósofo británico sobre cómo vencer la procrastinación: “Cuando no hacemos lo que más queremos, a menudo es por una razón: el peso insoportable que tiene para nosotros esa gran prioridad vital”",
    "La vida de Raphael llega a Netflix: entre la gloria, los rumores y las cuentas pendientes"
   ],
-  "candidates": 82,
+  "candidates": 81,
   "fromGeneralFeeds": 0,
   "rejected": {
-   "formato": 100,
+   "formato": 99,
    "débil (guerra, negación, críticas u obra a medias)": 19,
    "relleno": 12,
-   "poco positivo": 329,
-   "negativo": 140,
+   "poco positivo": 313,
+   "negativo": 135,
    "relleno (sin impacto medible)": 9,
    "negativo-resumen": 1,
-   "deporte (no es triunfo)": 161
+   "deporte (no es triunfo)": 160
   },
   "reddit": {
    "UpliftingNews": {
@@ -13314,9 +12599,9 @@
     "error": null
    },
    "science": {
-    "ok": true,
-    "items": 20,
-    "error": null
+    "ok": false,
+    "items": 0,
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
    },
    "worldnews": {
     "ok": true,
@@ -13324,36 +12609,35 @@
     "error": null
    },
    "Futurology": {
-    "ok": true,
-    "items": 11,
-    "error": null
+    "ok": false,
+    "items": 0,
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
    },
    "MadeMeSmile": {
-    "ok": true,
-    "items": 42,
-    "error": null
+    "ok": false,
+    "items": 0,
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
    }
   },
   "ninegag": {
-   "ok": true,
-   "items": 10,
-   "error": null
+   "ok": false,
+   "items": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "leads": {
-   "total": 155,
+   "total": 72,
    "confirmed": 5,
-   "dropped": 150,
+   "dropped": 67,
    "confirmedVia": {
     "coincide con nota confiable": 1,
     "mismo enlace en feed": 1,
     "enlace a medio confiable (leído de su página)": 3
    },
    "droppedReasons": {
-    "medio confiable pero nota no positiva": 23,
-    "enlace a sitio no verificado": 95,
-    "9gag sin fuente": 10,
+    "medio confiable pero nota no positiva": 18,
+    "enlace a sitio no verificado": 35,
     "nota antigua": 3,
-    "medio confiable pero no se pudo leer la página": 19
+    "medio confiable pero no se pudo leer la página": 11
    },
    "droppedExamples": [
     {
@@ -13432,13 +12716,13 @@
    "ciencia": 0,
    "ambiente": 1,
    "social": 0,
-   "acciones": 5,
-   "comunidad": 1,
+   "acciones": 6,
+   "comunidad": 0,
    "deportes": 4
   },
   "globalCount": 37,
   "crCount": 12,
-  "allStoriesBeforeCap": 76,
+  "allStoriesBeforeCap": 75,
   "cr": {
    "status": [
     [
@@ -13516,14 +12800,14 @@
     [
      "cr-trivision",
      false,
-     40,
-     null
+     0,
+     "HTTPError / ParseError"
     ],
     [
      "cr-elmundo",
      false,
-     10,
-     null
+     0,
+     "URLError / ParseError"
     ],
     [
      "cr-amprensa",
@@ -13600,7 +12884,7 @@
     [
      "crq-elmundo-cr-elmundo",
      true,
-     49,
+     50,
      null
     ],
     [
@@ -13630,7 +12914,7 @@
     [
      "crq-observador-observador",
      true,
-     92,
+     90,
      null
     ],
     [
@@ -13646,16 +12930,16 @@
      null
     ]
    ],
-   "kept": 30,
+   "kept": 29,
    "rejected": {
-    "sin señal positiva": 217,
-    "sin ángulo tico": 927,
-    "deporte (no es triunfo)": 130,
-    "negativo": 205,
-    "agenda/evento": 23
+    "negativo": 194,
+    "sin señal positiva": 206,
+    "sin ángulo tico": 908,
+    "deporte (no es triunfo)": 127,
+    "agenda/evento": 22
    }
   },
-  "crStoriesBeforeCap": 25
+  "crStoriesBeforeCap": 24
  },
  "crypto": {
   "minOutlets": 5,
@@ -13874,7 +13158,7 @@
     "id": "crq-reuters",
     "source": "Reuters",
     "url": "gn:site:reuters.com (bitcoin OR crypto OR stablecoin OR ethereum OR blockchain)",
-    "itemsInFeed": 40,
+    "itemsInFeed": 41,
     "kept": 4
    },
    {
@@ -13888,7 +13172,7 @@
     "id": "crq-cnbc",
     "source": "CNBC",
     "url": "gn:site:cnbc.com (bitcoin OR crypto OR stablecoin OR ethereum)",
-    "itemsInFeed": 17,
+    "itemsInFeed": 16,
     "kept": 0
    },
    {
@@ -13924,13 +13208,13 @@
     "source": "Yahoo Finanzas",
     "url": "gn:site:finance.yahoo.com (bitcoin OR crypto OR stablecoin OR ethereum)",
     "itemsInFeed": 100,
-    "kept": 65
+    "kept": 64
    },
    {
     "id": "crq-theblock",
     "source": "The Block",
     "url": "gn:site:theblock.co",
-    "itemsInFeed": 31,
+    "itemsInFeed": 33,
     "kept": 4
    },
    {
@@ -13945,13 +13229,13 @@
     "source": "Infobae",
     "url": "gn:site:infobae.com (bitcoin OR cripto OR criptomonedas OR stablecoin)",
     "itemsInFeed": 100,
-    "kept": 5
+    "kept": 3
    },
    {
     "id": "crq-eleconomista",
     "source": "El Economista",
     "url": "gn:site:eleconomista.com.mx (bitcoin OR cripto OR criptomonedas OR stablecoin)",
-    "itemsInFeed": 56,
+    "itemsInFeed": 57,
     "kept": 1
    },
    {
@@ -14057,16 +13341,16 @@
     "error": "Feed vacío"
    }
   ],
-  "itemsGathered": 274,
+  "itemsGathered": 271,
   "fromGeneralFeeds": 0,
   "rejected": {
-   "predicción/promo/formato": 27,
+   "predicción/promo/formato": 29,
    "sección no noticiosa": 8
   },
-  "clusters": 192,
+  "clusters": 191,
   "groupsByOutletCount": {
-   "0": 84,
-   "1": 93,
+   "0": 85,
+   "1": 91,
    "2": 8,
    "3": 1,
    "4": 1,
@@ -14158,7 +13442,7 @@
     "url": "https://www.teletica.com/sitemaps/news/last-news",
     "method": "google-news",
     "itemsInFeed": 100,
-    "kept": 85
+    "kept": 75
    },
    {
     "id": "cr-repretel",
@@ -14186,19 +13470,9 @@
     "org": "trivision",
     "region": "costarica",
     "url": "https://trivisioncr.com/news-sitemap.xml",
-    "method": "directo",
-    "itemsInFeed": 40,
-    "kept": 40
-   },
-   {
-    "id": "cr-qcostarica",
-    "source": "Q Costa Rica",
-    "org": "qcostarica",
-    "region": "costarica",
-    "url": "https://qcostarica.com/feed/",
-    "method": "directo",
-    "itemsInFeed": 10,
-    "kept": 8
+    "method": "google-news",
+    "itemsInFeed": 6,
+    "kept": 6
    },
    {
     "id": "ca-prensalibre",
@@ -14281,16 +13555,6 @@
     "kept": 7
    },
    {
-    "id": "ca-articulo66",
-    "source": "Artículo 66",
-    "org": "articulo66",
-    "region": "centroamerica",
-    "url": "https://www.articulo66.com/feed/",
-    "method": "directo",
-    "itemsInFeed": 10,
-    "kept": 10
-   },
-   {
     "id": "ca-proceso-hn",
     "source": "Proceso Digital (Honduras)",
     "org": "proceso-hn",
@@ -14309,16 +13573,6 @@
     "method": "directo",
     "itemsInFeed": 5,
     "kept": 5
-   },
-   {
-    "id": "ca-hondudiario",
-    "source": "Hondudiario",
-    "org": "hondudiario",
-    "region": "centroamerica",
-    "url": "https://www.hondudiario.com/feed/",
-    "method": "directo",
-    "itemsInFeed": 10,
-    "kept": 10
    },
    {
     "id": "ca-gatoencerrado",
@@ -14388,7 +13642,7 @@
     "url": "https://expansion.mx/rss",
     "method": "directo",
     "itemsInFeed": 38,
-    "kept": 32
+    "kept": 33
    },
    {
     "id": "la-elpais-mexico",
@@ -14468,7 +13722,7 @@
     "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/politica/",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 43
+    "kept": 44
    },
    {
     "id": "sa-semana",
@@ -14509,16 +13763,6 @@
     "method": "directo",
     "itemsInFeed": 100,
     "kept": 99
-   },
-   {
-    "id": "sa-efectococuyo",
-    "source": "Efecto Cocuyo",
-    "org": "efectococuyo",
-    "region": "sudamerica",
-    "url": "https://efectococuyo.com/feed/",
-    "method": "directo",
-    "itemsInFeed": 10,
-    "kept": 10
    },
    {
     "id": "sa-elcomercio-ec",
@@ -14759,16 +14003,6 @@
     "method": "directo",
     "itemsInFeed": 20,
     "kept": 17
-   },
-   {
-    "id": "as-indianexpress",
-    "source": "The Indian Express",
-    "org": "indianexpress",
-    "region": "asia",
-    "url": "https://indianexpress.com/section/india/feed/",
-    "method": "directo",
-    "itemsInFeed": 200,
-    "kept": 46
    },
    {
     "id": "as-bangkokpost",
@@ -15071,7 +14305,38 @@
     "kept": 31
    }
   ],
-  "feedsFailed": [],
+  "feedsFailed": [
+   {
+    "id": "cr-qcostarica",
+    "source": "Q Costa Rica",
+    "url": "https://qcostarica.com/feed/",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "ca-articulo66",
+    "source": "Artículo 66",
+    "url": "https://www.articulo66.com/feed/",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "ca-hondudiario",
+    "source": "Hondudiario",
+    "url": "https://www.hondudiario.com/feed/",
+    "error": "URLError: <urlopen error [Errno 101] Network is unreachable>"
+   },
+   {
+    "id": "sa-efectococuyo",
+    "source": "Efecto Cocuyo",
+    "url": "https://efectococuyo.com/feed/",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "as-indianexpress",
+    "source": "The Indian Express",
+    "url": "https://indianexpress.com/section/india/feed/",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+   }
+  ],
   "knownFails": [
    {
     "id": "la gaceta (imprentanacional.go.cr)",
@@ -15154,11 +14419,11 @@
     "error": "Funcionan pero no están en español ni inglés (no se pueden agrupar)"
    }
   ],
-  "itemsGathered": 4289,
-  "clusters": 3329,
+  "itemsGathered": 4162,
+  "clusters": 3254,
   "perRegion": {
-   "costarica": 7,
-   "centroamerica": 2,
+   "costarica": 6,
+   "centroamerica": 3,
    "latam": 2,
    "sudamerica": 2,
    "europa": 17,
@@ -15167,51 +14432,51 @@
    "oceania": 1
   },
   "groupsWith3or4Outlets": {
-   "costarica": 16,
-   "centroamerica": 3,
-   "latam": 7,
-   "sudamerica": 6,
-   "europa": 20,
-   "asia": 8,
+   "costarica": 14,
+   "centroamerica": 1,
+   "latam": 6,
+   "sudamerica": 5,
+   "europa": 19,
+   "asia": 6,
    "africa": 2,
    "oceania": 0
   },
   "workingLocalOutletsPerRegion": {
-   "costarica": 13,
-   "centroamerica": 13,
+   "costarica": 12,
+   "centroamerica": 11,
    "latam": 9,
-   "sudamerica": 14,
+   "sudamerica": 13,
    "europa": 7,
-   "asia": 9,
+   "asia": 8,
    "africa": 9,
    "oceania": 8
   }
  },
  "possible": {
-  "candidates": 287,
-  "afterDedupe": 230,
+  "candidates": 279,
+  "afterDedupe": 225,
   "shown": 60,
   "byOutlets": {
-   "2": 14,
-   "3": 18,
-   "4": 28
+   "2": 17,
+   "3": 21,
+   "4": 22
   },
   "byChip": {
-   "latam": 5,
+   "latam": 6,
    "mundo": 7,
-   "centroamerica": 3,
    "europa": 8,
    "africa": 3,
-   "politica": 5,
+   "politica": 7,
    "sucesos": 4,
-   "costarica": 8,
-   "finanzas": 5,
-   "sudamerica": 5,
-   "asia": 6,
-   "guerras": 2,
+   "sudamerica": 4,
+   "asia": 5,
+   "guerras": 1,
    "cripto": 6,
+   "costarica": 8,
+   "finanzas": 4,
+   "centroamerica": 3,
    "oceania": 3,
-   "ciencias": 1
+   "ciencias": 2
   }
  }
 }
