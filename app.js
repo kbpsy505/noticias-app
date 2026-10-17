@@ -2,7 +2,7 @@ const TZ = "America/Costa_Rica";
 const when = new Intl.DateTimeFormat("es-CR", {
   timeZone: TZ, weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit",
 });
-const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas" };
+const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas", mundoInfo: false };
 
 function fmt(iso) {
   const d = new Date(iso);
@@ -230,7 +230,14 @@ function renderList() {
   if (cat.title) list.append(el("h2", "cat-title", cat.title));
   let stories = cat.stories;
   if (cat.id === "mundo") {
-    list.append(el("p", "note", "Noticias internacionales publicadas por 5 o más medios distintos. Filtra por región; «General» son las de alcance mundial."));
+    // Descripción en una línea; el resto se abre con «más info».
+    const info = el("details", "note mnote");
+    info.open = state.mundoInfo;
+    info.addEventListener("toggle", () => { state.mundoInfo = info.open; });
+    const sm = el("summary");
+    sm.append("Noticias internacionales de 5 o más medios. ", el("span", "more", "más info"));
+    info.append(sm, el("p", null, "Filtra por región; «General» son las de alcance mundial. La región sale de los lugares que nombran las notas y de dónde son los medios."));
+    list.append(info);
     const bar = el("div", "bfilter mfilter");
     bar.setAttribute("role", "group");
     bar.setAttribute("aria-label", "Filtrar Mundo por región");
@@ -245,6 +252,11 @@ function renderList() {
       bar.append(b);
     });
     list.append(bar);
+    // Fila de un solo renglón que se desliza: deja visible el filtro activo (sin mover la página).
+    const onChip = bar.querySelector(".bf.on");
+    if (onChip && bar.scrollWidth > bar.clientWidth) {
+      bar.scrollLeft = onChip.offsetLeft - (bar.clientWidth - onChip.offsetWidth) / 2;
+    }
     const f = state.mundoFilter;
     if (f === "general") stories = stories.filter((s) => s.mundoGeneral);
     else if (f !== "todas") stories = stories.filter((s) => (s.mundoRegions || []).includes(f));

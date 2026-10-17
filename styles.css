@@ -158,8 +158,36 @@ h1 { margin: 0; font-family: var(--serif); font-size: var(--text-title); font-we
 .bf.on { background: var(--ink); color: var(--white); border-color: var(--ink); }
 .bf .count { margin-inline-start: 6px; font-size: .75rem; opacity: .75; }
 .bf.zero { opacity: .55; }
-.mfilter { gap: 6px; }
-.mfilter .bf { padding: 5px 10px; font-size: .8rem; }
+/* Regiones de Mundo: una sola fila que se desliza de lado, de borde a borde de la pantalla. */
+.mfilter {
+  position: relative; /* offsetLeft de los chips se mide contra la fila */
+  flex-wrap: nowrap; gap: 6px;
+  overflow-x: auto; overscroll-behavior-x: contain;
+  margin-inline: -14px; padding-inline: 14px; scroll-padding-inline: 14px;
+  /* Espacio para el área táctil de 44px: el desplazamiento recorta lo que sobresale. */
+  padding-block: 8px; margin-block: -8px 4px;
+  scrollbar-width: thin;
+}
+.mfilter .bf { flex: none; padding: 5px 10px; font-size: .8rem; white-space: nowrap; }
+.mfilter .bf::after { inset-block: min(0px, (100% - 44px) / 2); inset-inline: -3px; }
+/* Sombra-difuminado en el borde que todavía tiene chips (Chrome/Android 115+, Safari 26; en Firefox solo se desliza). */
+@property --fade-start { syntax: "<length>"; inherits: false; initial-value: 0px; }
+@property --fade-end { syntax: "<length>"; inherits: false; initial-value: 0px; }
+@keyframes mfilter-edges {
+  from { --fade-start: 0px; --fade-end: 1.75rem; }
+  10%, 90% { --fade-start: 1.75rem; --fade-end: 1.75rem; }
+  to { --fade-start: 1.75rem; --fade-end: 0px; }
+}
+.mfilter {
+  animation: mfilter-edges linear;
+  animation-timeline: scroll(self inline);
+  mask-image: linear-gradient(to right, transparent, #000 var(--fade-start), #000 calc(100% - var(--fade-end)), transparent);
+}
+.mnote summary { cursor: pointer; list-style: none; }
+.mnote summary::-webkit-details-marker { display: none; }
+.mnote .more { color: var(--accent); font-weight: 650; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+.mnote[open] .more { display: none; }
+.mnote p { margin-block: 4px 0; }
 .cat-title { margin-block: 0 8px; font-family: var(--serif); font-size: 20px; font-weight: 600; }
 
 /* Tipo de cambio */
