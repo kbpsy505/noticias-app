@@ -124,7 +124,7 @@ POLITICA = re.compile(
     re.I,
 )
 FINANZAS = re.compile(
-    r"(petr[oó]leo|\boil\b|crudo|mercado|market|bolsa|stocks?\b|shares\b|\bbanc|\bbank|inflaci|inflation|"
+    r"(petr[oó]leo|\boil\b|crudo|mercado|market|bolsa|stocks?\b|shares\b|\bbanc|(?<!west )\bbank|inflaci|inflation|"
     r"\bfed\b|reserva federal|\bbce\b|\becb\b|acciones|investor|inversor|econom|arancel|tariff|\bempleo\b|"
     r"jobs\b|unemploy|desempleo|bonos|\bbonds?\b|\blng\b|deuda|\bdebt\b|wall street|tipos? de inter[eé]s|"
     r"interest rates?|tasas? de inter[eé]s|\bpib\b|\bgdp\b|recesi[oó]n|recession|d[oó]lar|dollar|"
@@ -734,6 +734,22 @@ def main():
             continue
         stories_by_cat[cat].append(story)
 
+    # Refuerzo de Finanzas y Ciencias con medios especializados (ver tema.py); misma regla de 5+.
+    topic_reports = {}
+    for tcat in ("finanzas", "ciencias"):
+        try:
+            import tema
+            before = (len(stories_by_cat.get(tcat, [])), sum(1 for c in candidates if c.get("category") == tcat))
+            t_st, t_cand, t_rep, t_dbg, t_merges = tema.build(tcat, now, pool, {f[1] for f in FEEDS})
+            stories_by_cat[tcat] = t_st
+            candidates = [c for c in candidates if c.get("category") != tcat] + t_cand
+            t_rep["before"] = {"stories": before[0], "candidates": before[1]}
+            topic_reports[tcat] = t_rep
+            print(tcat, "antes", before, "después", (len(t_st), len(t_cand)), t_rep["groupsByOutletCount"])
+        except Exception as exc:  # nunca romper la actualización principal
+            topic_reports[tcat] = {"error": f"{type(exc).__name__}: {exc}"}
+            print(tcat, "FAIL", type(exc).__name__, exc)
+
     crypto_report = None
     out_cats = []
     summary_counts = {}
@@ -846,6 +862,7 @@ def main():
         "feedsFailed": failed,
         "goodNews": good_report,
         "crypto": crypto_report,
+        "topics": topic_reports,
         "regions": region_report,
         "possible": posibles_report,
     }

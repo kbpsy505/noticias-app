@@ -94,6 +94,16 @@ Historias **sin confirmar** que publican **2 a 4 medios distintos** (no llegaron
 - Si todos los medios de un grupo son de la misma región, o la mitad lo son y la región se nombra, la historia va a esa región aunque el titular no diga el lugar.
 - Informe en `noticias.json` → `possible`.
 
+## Mundo de finanzas y Ciencias reforzadas
+
+`tema.py` suma medios especializados a estas dos pestañas y agrupa aparte, con la misma regla de **5 o más medios distintos**.
+
+- **Finanzas:** CNBC, WSJ, MarketWatch, Bloomberg, FT, Cinco Días, Bloomberg Línea, Axios, Fortune, Business Insider y, por Google Noticias por sitio (`when:2d`), Reuters, AP, WSJ, Barron's, Nikkei Asia, Yahoo Finanzas, El Economista, La República y El Financiero CR. Se descartan consejos de finanzas personales, ensayos en primera persona, «X acciones para comprar», charla de cotizaciones, resúmenes de media sesión y comunicados. Las notas de mercado que mencionan una guerra (p. ej. «el petróleo sube por Oriente Medio») salen en Finanzas y también en Guerras.
+- **Ciencias:** Scientific American, Quanta, Ars Technica, Science News, Smithsonian, The Conversation, NYT Space, ScienceDaily, Phys.org, NASA, ESA, Muy Interesante y, por Google Noticias (`when:7d`), Reuters, AP, CNN, New Scientist, National Geographic, Live Science, Space.com, SINC e Infobae. Ventana de 7 días y agrupación más larga, porque la ciencia se publica en días distintos. Se descartan ofertas, guías del cielo y páginas de autor.
+- **Medios que cuentan:** los que reescriben comunicados o son fuente primaria (ScienceDaily, Phys.org, NASA, ESA, Space.com, Live Science, Muy Interesante) y los de menor fiabilidad en negocios (Business Insider, Fortune, Barron's) solo suman cuando la historia ya tiene 3+ medios confiables. Yahoo Finanzas nunca cuenta. Todos se muestran como fuentes.
+- Una segunda pasada une grupos del mismo hecho contado con palabras distintas (centros parecidos y términos o nombres propios poco comunes en común).
+- Informe en `noticias.json` → `topics`.
+
 ## Pestaña "Criptomonedas"
 
 `cripto.py` arma una pestaña con consenso estricto: una noticia de criptomonedas solo aparece si la publican **5 o más medios distintos** (misma regla de organizaciones que el resto).
