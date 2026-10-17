@@ -1,6 +1,6 @@
 {
- "updatedAt": "2026-10-17T17:46:46Z",
- "nextRefreshAt": "2026-10-17T18:00:00Z",
+ "updatedAt": "2026-10-17T18:12:28Z",
+ "nextRefreshAt": "2026-10-17T21:00:00Z",
  "refreshHours": 3,
  "method": {
   "minOutlets": 5,
@@ -11,8 +11,8 @@
  "stats": {
   "feedsOk": 95,
   "feedsFailed": 7,
-  "itemsGathered": 1679,
-  "clusters": 1407,
+  "itemsGathered": 1680,
+  "clusters": 1408,
   "consensusStories": 10,
   "perCategory": {
    "sucesos": 2,
@@ -1786,8 +1786,9 @@
      "summaryEsSource": "La Nación (Costa Rica)",
      "summaryEn": null,
      "summaryEnSource": null,
-     "outlets": 9,
+     "outlets": 10,
      "outletNames": [
+      "El Mundo CR",
       "El Observador",
       "Infobae",
       "La Nación (Costa Rica)",
@@ -1903,6 +1904,13 @@
        "publishedAt": "2026-10-17T15:15:00Z"
       },
       {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "Bukele elogia a Laura Fernández: “Los costarricenses tienen mucha suerte”",
+       "url": "https://elmundo.cr/costa-rica/bukele-elogia-a-laura-fernandez-los-costarricenses-tienen-mucha-suerte/",
+       "publishedAt": "2026-10-17T15:23:58Z"
+      },
+      {
        "source": "El Observador",
        "lang": "es",
        "title": "Laura Fernández defiende “mano dura” inspirada en Bukele",
@@ -2013,6 +2021,13 @@
       {
        "source": "Teletica (Telenoticias)",
        "lang": "es",
+       "title": "Dos países del Consejo de Seguridad vetan a Rebeca Grynspan en carrera por Secretaría de ONU",
+       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQd0ZOeXJxeWpMaURhRXkzR1ZsaHptOWk4VVRwUXhRN3FuenFJUFVRdjhMeEVwT3RpcTRJVlhCUXZ2OS05dm5seU1WeF92amlKOGVFSkEwRFBoTXpGWVhUeUlBdnpySXBJSUJWbU95SjNKRDAtUm9oemhNaHhlNERBUmZlS0hSQjFiS3hlbHBrX3VESTJNeDQyc2RuRjY5eklJSmw0ZG9LQ3RuOHVOWTVfWEV0Ry1obTcxRTJ2czdrVlJDdU5BTkZEdS1zV0w2WmJCMU5hTA?oc=5",
+       "publishedAt": "2026-10-17T02:14:57Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
        "title": "\"Somos los mejor posicionados\", afirma Rebeca Grynspan tras veto en Consejo de Seguridad de la ONU",
        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOV3hZbDNDUXdzVEJwSzdSd2NCdEhWS1JFbU4wdTVBWnZmMzZLWFQwYWQybnJhYktZZEZIeVhUV3JYQWFRWTJQWHlpQlBsRXV4d2lIT3VGYl9JZHM3QUE5cXF6Q2JBX3liUjRpb1BFb2p5UXpSeV8tdWluUk9CSDNTVW9hdjNwemROVEl6R3VpRllYVkg4MlFxdlBXRzlRU1hMOTl1Ul9WR0RVdExud3RVLUhuTnJMZld0VlpLdWMyM1d0MGZCTlV6VEpoRWJlTk16RUE?oc=5",
        "publishedAt": "2026-10-17T02:34:59Z"
@@ -2036,113 +2051,6 @@
      "id": "costarica-2"
     },
     {
-     "headline": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
-     "headlineLang": "es",
-     "headlineEs": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
-     "headlineEn": null,
-     "summaryEs": "Diputados liberacionistas ponen esta condición para votar a favor el proyecto prioritario del Gobierno y el oficialismo prefirió romper el diálogo antes de cumplir la condición",
-     "summaryEsSource": "La Teja",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 7,
-     "outletNames": [
-      "CRHoy",
-      "El Mundo CR",
-      "El Observador",
-      "La Nación (Costa Rica)",
-      "La Teja",
-      "Monumental",
-      "Teletica (Telenoticias)",
-      "Trivisión"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T13:28:36Z",
-     "lastSeen": "2026-10-17T15:25:27Z",
-     "sources": [
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
-       "url": "https://crhoy.com/nacionales/pln-condiciona-dialogo-sobre-armonizacion-electrica-al-retiro-de-recortes-a-universidades/",
-       "publishedAt": "2026-10-16T13:28:36Z"
-      },
-      {
-       "source": "CRHoy",
-       "lang": "es",
-       "title": "Siete diputados del PLN habrían acordado votar armonización eléctrica con el PPSO",
-       "url": "https://crhoy.com/nacionales/siete-diputados-del-pln-habrian-acordado-votar-armonizacion-electrica-con-el-ppso/",
-       "publishedAt": "2026-10-16T16:17:13Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Nogui Acosta abandona diálogo con rectores de U públicas, molesto porque PLN condiciona freno a recortes para seguir negociación sobre armonización eléctrica",
-       "url": "https://www.nacion.com/politica/nogui-acosta-abandona-dialogo-con-rectores-de-u/OVB54WJPWJGFHDFQDRFBRLHQ6U/story/",
-       "publishedAt": "2026-10-16T18:45:58Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Liberación Nacional y Pueblo Soberano negocian acuerdo sobre armonización eléctrica",
-       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWUhSNWVDSHJxWnhCcE80UnVIbkhYbTFPUk5ZVGpGN201MjlRcUdoU3BlVlhQcXBNZ0hpY3l3M0ViRWlGVG14bzFybTd3aURFUERpeGE2UElNdEo0M1JvVGhNaFFjUDhvUWgxd2t1WWRQcG81bnJCQUFtR01XR0FHdFRuN1k4Q19Jb1QzUFhkSzJCdTJuODB6dmdSaHFCUThPUGdjcWRYLWY2MVFPdUZ6Skh6ZFVYaFhuamhmR3ZzQnN4UUJ0OVE?oc=5",
-       "publishedAt": "2026-10-16T20:13:49Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "PPSO revela acuerdo previo con siete diputados del PLN para torcerles el voto a favor de armonización eléctrica",
-       "url": "https://www.nacion.com/politica/ppso-revela-que-acuerdo-previo-con-siete-diputados/5OKJL74DBZCUNA45WXCUR67DSY/story/",
-       "publishedAt": "2026-10-16T20:14:30Z"
-      },
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Diputados del PLN ponen condiciones para apoyar proyecto de armonización eléctrica y legisladores del PPSO explotan",
-       "url": "https://www.lateja.cr/nacional/politica/diputados-del-pln-ponen-condiciones-para-apoyar/SAQHNGXNVZH3FAVFKUXIMOLJHU/story/",
-       "publishedAt": "2026-10-16T21:34:54Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
-       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa19hamFGdHA1c28tTW1ZTEo4QWdLczF5WWNvWHRnOEE5RnotWWdYY01MR21obmlPX0pzd0p6WGx6am12VF9WaDBBNkRrWkNPSTEzTGtmR2VZV2FFVzBJemhKeGVzQU96MF9uV1NNY0ltOElNYmFGVHVjc2FqTTJxTkxnUlczbnRTbkI3eXZsNTRweWdXeG5IZFc2cXI1Z3l6QWkwTjU5Ny04YnF4SDN1QkxreVp1dENwMWoweF9pWWI?oc=5",
-       "publishedAt": "2026-10-16T22:23:44Z"
-      },
-      {
-       "source": "Monumental",
-       "lang": "es",
-       "title": "Oficialismo se retira de negociación sobre armonización eléctrica tras condicionamiento del PLN",
-       "url": "https://www.monumental.co.cr/2026/10/16/oficialismo-se-retira-de-negociacion-sobre-armonizacion-electrica-tras-condicionamiento-del-pln/",
-       "publishedAt": "2026-10-16T23:04:03Z"
-      },
-      {
-       "source": "El Observador",
-       "lang": "es",
-       "title": "Uccaep rechaza condicionar negociación sobre armonización eléctrica a recortes a universidades",
-       "url": "https://observador.cr/uccaep-rechaza-condicionar-negociacion-sobre-armonizacion-electrica-a-recortes-a-universidades/",
-       "publishedAt": "2026-10-16T23:45:12Z"
-      },
-      {
-       "source": "Trivisión",
-       "lang": "es",
-       "title": "Oficialismo cuestiona al PLN por condiciones para aprobar ley de armonización eléctrica",
-       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWHZ4QVViYWdIVy1XYUN3YlFFb1F4cGUzWmg1ODM5YWxhOElwN3ptbndpSkhWUTlvU3VjVjFBVFZvRWp5cHNONzhuZkhvVmZHN0NKM2pIOWlJSjRYZ2x1czZMYWktZm83S0dOQ2Z1UVF0YnpKTkZ3bkFlZ0ZUaDAzMWswNzFDcmNxTktLZmFmQ0x1aTlwMERRTXhwbXgtY1ZHLVlrVjQwQk1HNTRSc0VSSHNXUHN2cVBwb3NWaldEeXZaR2I2Q3hrdHdDOG5mUQ?oc=5",
-       "publishedAt": "2026-10-17T00:05:07Z"
-      },
-      {
-       "source": "El Mundo CR",
-       "lang": "es",
-       "title": "PLN niega acuerdo con Pueblo Soberano sobre armonización eléctrica",
-       "url": "https://elmundo.cr/costa-rica/pln-niega-acuerdo-con-pueblo-soberano-sobre-armonizacion-electrica/",
-       "publishedAt": "2026-10-17T15:25:27Z"
-      }
-     ],
-     "region": "costarica",
-     "id": "costarica-3"
-    },
-    {
      "headline": "Oficial detenido por intentar ingresar celular y dispositivos ilegales a máxima seguridad de La Reforma queda libre",
      "headlineLang": "es",
      "headlineEs": "Oficial detenido por intentar ingresar celular y dispositivos ilegales a máxima seguridad de La Reforma queda libre",
@@ -2156,7 +2064,6 @@
       "AM Prensa",
       "CRHoy",
       "Infobae",
-      "La Nación (Costa Rica)",
       "La Teja",
       "Monumental",
       "Repretel (Noticias Repretel)",
@@ -2204,13 +2111,6 @@
        "publishedAt": "2026-10-16T17:55:59Z"
       },
       {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Juzgado define medidas contra policía encargado de vigilar a Diablo y Tan, detenido por ingresar con celular y cargadores a Máxima Seguridad",
-       "url": "https://www.nacion.com/sucesos/juzgado-define-medidas-contra-policia-encargado-de/ILSMBLDWH5DVNOLMCW2Y23MXOI/story/",
-       "publishedAt": "2026-10-16T18:09:36Z"
-      },
-      {
        "source": "Repretel (Noticias Repretel)",
        "lang": "es",
        "title": "¿Por qué quedó en libertad el oficial detenido con un celular en La Reforma?",
@@ -2244,6 +2144,98 @@
        "title": "Dejan en libertad a policía detenido con celular en área de máxima seguridad de La Reforma",
        "url": "https://www.monumental.co.cr/2026/10/16/dejan-en-libertad-a-policia-detenido-con-celular-en-area-de-maxima-seguridad-de-la-reforma/",
        "publishedAt": "2026-10-17T00:09:56Z"
+      }
+     ],
+     "region": "costarica",
+     "id": "costarica-3"
+    },
+    {
+     "headline": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
+     "headlineLang": "es",
+     "headlineEs": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
+     "headlineEn": null,
+     "summaryEs": "Diputados liberacionistas ponen esta condición para votar a favor el proyecto prioritario del Gobierno y el oficialismo prefirió romper el diálogo antes de cumplir la condición",
+     "summaryEsSource": "La Teja",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 6,
+     "outletNames": [
+      "CRHoy",
+      "El Mundo CR",
+      "La Nación (Costa Rica)",
+      "La Teja",
+      "Monumental",
+      "Teletica (Telenoticias)",
+      "Trivisión"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T13:28:36Z",
+     "lastSeen": "2026-10-17T15:25:27Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "PLN condiciona diálogo sobre armonización eléctrica al retiro de recortes a universidades",
+       "url": "https://crhoy.com/nacionales/pln-condiciona-dialogo-sobre-armonizacion-electrica-al-retiro-de-recortes-a-universidades/",
+       "publishedAt": "2026-10-16T13:28:36Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Siete diputados del PLN habrían acordado votar armonización eléctrica con el PPSO",
+       "url": "https://crhoy.com/nacionales/siete-diputados-del-pln-habrian-acordado-votar-armonizacion-electrica-con-el-ppso/",
+       "publishedAt": "2026-10-16T16:17:13Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Liberación Nacional y Pueblo Soberano negocian acuerdo sobre armonización eléctrica",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWUhSNWVDSHJxWnhCcE80UnVIbkhYbTFPUk5ZVGpGN201MjlRcUdoU3BlVlhQcXBNZ0hpY3l3M0ViRWlGVG14bzFybTd3aURFUERpeGE2UElNdEo0M1JvVGhNaFFjUDhvUWgxd2t1WWRQcG81bnJCQUFtR01XR0FHdFRuN1k4Q19Jb1QzUFhkSzJCdTJuODB6dmdSaHFCUThPUGdjcWRYLWY2MVFPdUZ6Skh6ZFVYaFhuamhmR3ZzQnN4UUJ0OVE?oc=5",
+       "publishedAt": "2026-10-16T20:13:49Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "PPSO revela acuerdo previo con siete diputados del PLN para torcerles el voto a favor de armonización eléctrica",
+       "url": "https://www.nacion.com/politica/ppso-revela-que-acuerdo-previo-con-siete-diputados/5OKJL74DBZCUNA45WXCUR67DSY/story/",
+       "publishedAt": "2026-10-16T20:14:30Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Diputados del PLN ponen condiciones para apoyar proyecto de armonización eléctrica y legisladores del PPSO explotan",
+       "url": "https://www.lateja.cr/nacional/politica/diputados-del-pln-ponen-condiciones-para-apoyar/SAQHNGXNVZH3FAVFKUXIMOLJHU/story/",
+       "publishedAt": "2026-10-16T21:34:54Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Oficialismo dice tener siete votos del PLN para aprobar armonización eléctrica",
+       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa19hamFGdHA1c28tTW1ZTEo4QWdLczF5WWNvWHRnOEE5RnotWWdYY01MR21obmlPX0pzd0p6WGx6am12VF9WaDBBNkRrWkNPSTEzTGtmR2VZV2FFVzBJemhKeGVzQU96MF9uV1NNY0ltOElNYmFGVHVjc2FqTTJxTkxnUlczbnRTbkI3eXZsNTRweWdXeG5IZFc2cXI1Z3l6QWkwTjU5Ny04YnF4SDN1QkxreVp1dENwMWoweF9pWWI?oc=5",
+       "publishedAt": "2026-10-16T22:23:44Z"
+      },
+      {
+       "source": "Monumental",
+       "lang": "es",
+       "title": "Oficialismo se retira de negociación sobre armonización eléctrica tras condicionamiento del PLN",
+       "url": "https://www.monumental.co.cr/2026/10/16/oficialismo-se-retira-de-negociacion-sobre-armonizacion-electrica-tras-condicionamiento-del-pln/",
+       "publishedAt": "2026-10-16T23:04:03Z"
+      },
+      {
+       "source": "Trivisión",
+       "lang": "es",
+       "title": "Oficialismo cuestiona al PLN por condiciones para aprobar ley de armonización eléctrica",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWHZ4QVViYWdIVy1XYUN3YlFFb1F4cGUzWmg1ODM5YWxhOElwN3ptbndpSkhWUTlvU3VjVjFBVFZvRWp5cHNONzhuZkhvVmZHN0NKM2pIOWlJSjRYZ2x1czZMYWktZm83S0dOQ2Z1UVF0YnpKTkZ3bkFlZ0ZUaDAzMWswNzFDcmNxTktLZmFmQ0x1aTlwMERRTXhwbXgtY1ZHLVlrVjQwQk1HNTRSc0VSSHNXUHN2cVBwb3NWaldEeXZaR2I2Q3hrdHdDOG5mUQ?oc=5",
+       "publishedAt": "2026-10-17T00:05:07Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "PLN niega acuerdo con Pueblo Soberano sobre armonización eléctrica",
+       "url": "https://elmundo.cr/costa-rica/pln-niega-acuerdo-con-pueblo-soberano-sobre-armonizacion-electrica/",
+       "publishedAt": "2026-10-17T15:25:27Z"
       }
      ],
      "region": "costarica",
@@ -2391,7 +2383,6 @@
       "CRHoy",
       "El Financiero (Costa Rica)",
       "Infobae",
-      "La Nación (Costa Rica)",
       "La Teja",
       "Monumental"
      ],
@@ -2407,13 +2398,6 @@
        "title": "Gobierno despide a embajador en México Pablo Heriberto Abarca",
        "url": "https://crhoy.com/nacionales/cesan-a-embajador-de-costa-rica-en-mexico-pablo-heriberto-abarca/",
        "publishedAt": "2026-10-16T11:34:45Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Gobierno destituye a embajador de Costa Rica en México; funcionario afirma que se enteró por la prensa",
-       "url": "https://www.nacion.com/politica/gobierno-destituye-a-embajador-de-costa-rica-en/KC2B27VGJZCYRFSOS5JBPOYCT4/story/",
-       "publishedAt": "2026-10-16T18:07:02Z"
       },
       {
        "source": "La Teja",
@@ -3520,36 +3504,15 @@
       "en",
       "es"
      ],
-     "firstSeen": "2026-10-16T12:57:23Z",
+     "firstSeen": "2026-10-16T15:57:45Z",
      "lastSeen": "2026-10-17T17:37:52Z",
      "sources": [
-      {
-       "source": "France 24",
-       "lang": "en",
-       "title": "Pope Leo XIV celebrates mass in hospital while recovering from lung cancer operation",
-       "url": "https://www.france24.com/en/europe/20261016-pope-leo-xiv-celebrates-mass-in-hospital-while-recovering-from-lung-cancer-operation",
-       "publishedAt": "2026-10-16T12:57:23Z"
-      },
-      {
-       "source": "Euronews",
-       "lang": "en",
-       "title": "Pope Leo XIV celebrates Mass as recovery from cancer surgery progresses",
-       "url": "https://www.euronews.com/2026/10/16/pope-leo-xiv-celebrates-mass-as-recovery-from-cancer-surgery-progresses",
-       "publishedAt": "2026-10-16T14:41:47Z"
-      },
       {
        "source": "Euronews Español",
        "lang": "es",
        "title": "Avanza su recuperación: el Papa León XIV celebra misa en el hospital y le pide un alto el fuego a Putin",
        "url": "https://es.euronews.com/2026/10/16/avanza-su-recuperacion-el-papa-leon-xiv-celebra-misa-en-el-hospital-donde-se-encuentra-ing",
        "publishedAt": "2026-10-16T15:57:45Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Photos show pope celebrating Mass at hospital after cancer surgery",
-       "url": "https://www.cbsnews.com/news/photos-pope-leo-mass-hospital-recovery-surgery/",
-       "publishedAt": "2026-10-17T00:04:02Z"
       },
       {
        "source": "Sky News",
@@ -3613,13 +3576,6 @@
        "title": "El Papa León XIV sale del hospital tras la operación de pulmón",
        "url": "https://es.euronews.com/2026/10/17/el-vaticano-afirma-que-el-papa-leon-xiv-recibe-hoy-el-alta-hospitalaria",
        "publishedAt": "2026-10-17T11:23:51Z"
-      },
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Papa León XIV sale del Gemelli para regresar al Vaticano tras recibir el alta hospitalaria",
-       "url": "https://elcomercio.pe/mundo/europa/papa-leon-xiv-sale-del-gemelli-para-regresar-al-vaticano-tras-recibir-el-alta-hospitalaria-apuesplan-ultimas-noticia/",
-       "publishedAt": "2026-10-17T13:39:20Z"
       },
       {
        "source": "The Guardian",
@@ -3772,7 +3728,7 @@
       "es"
      ],
      "firstSeen": "2026-10-16T14:31:04Z",
-     "lastSeen": "2026-10-17T17:29:37Z",
+     "lastSeen": "2026-10-17T17:58:01Z",
      "sources": [
       {
        "source": "BBC",
@@ -3824,13 +3780,6 @@
        "publishedAt": "2026-10-16T19:32:00Z"
       },
       {
-       "source": "Le Monde",
-       "lang": "en",
-       "title": "Pressure and violence against journalists intensify in Israel",
-       "url": "https://www.lemonde.fr/en/international/article/2026/10/17/pressure-and-violence-against-journalists-intensify-in-israel_6758696_4.html",
-       "publishedAt": "2026-10-17T02:02:13Z"
-      },
-      {
        "source": "Al Jazeera",
        "lang": "en",
        "title": "Israeli settlers attack European diplomats during West Bank olive harvest",
@@ -3859,17 +3808,10 @@
        "publishedAt": "2026-10-17T15:56:46Z"
       },
       {
-       "source": "Financial Times",
-       "lang": "en",
-       "title": "Israeli settlers attack European diplomats in the West Bank",
-       "url": "https://www.ft.com/content/35a08f82-6830-41fa-83ae-d3765f3970e0",
-       "publishedAt": "2026-10-17T16:11:59Z"
-      },
-      {
        "source": "DW",
        "lang": "en",
-       "title": "West Bank: Israeli settlers attack EU diplomats",
-       "url": "https://www.dw.com/en/west-bank-israeli-settlers-attack-eu-diplomats/a-79688819?maca=en-rss-en-all-1573-rdf",
+       "title": "West Bank: Israeli settlers attack EU diplomats, French mayor",
+       "url": "https://www.dw.com/en/west-bank-israeli-settlers-attack-eu-diplomats-french-mayor/a-79688819?maca=en-rss-en-all-1573-rdf",
        "publishedAt": "2026-10-17T16:29:00Z"
       },
       {
@@ -3892,6 +3834,13 @@
        "title": "Un grupo de colonos israelíes ataca a una comitiva de diplomáticos europeos en Cisjordania",
        "url": "https://elpais.com/internacional/2026-10-17/un-grupo-de-colonos-israelies-ataca-a-una-comitiva-de-diplomaticos-europeos-en-cisjordania.html",
        "publishedAt": "2026-10-17T17:29:37Z"
+      },
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Israeli settlers attack European diplomats in the West Bank",
+       "url": "https://www.ft.com/content/35a08f82-6830-41fa-83ae-d3765f3970e0",
+       "publishedAt": "2026-10-17T17:58:01Z"
       }
      ],
      "id": "guerras-1"
@@ -4123,8 +4072,8 @@
       {
        "source": "Diario Extra",
        "lang": "es",
-       "title": "Bukele releva cuántos presos liberará del CECOT",
-       "url": "https://www.diarioextra.com/noticia/bukele-releva-cuantos-presos-liberara-del-cecot/",
+       "title": "Bukele revela cuántos presos liberará del CECOT",
+       "url": "https://www.diarioextra.com/noticia/bukele-revela-cuantos-presos-liberara-del-cecot/",
        "publishedAt": "2026-10-17T16:39:20Z"
       }
      ],
@@ -4140,12 +4089,12 @@
    "minOutlets": 5,
    "stories": [
     {
-     "headline": "Huracán Trudy avanza hacia Jalisco y Colima; pronostican lluvias torrenciales, fuerte oleaje y mayor fuerza",
+     "headline": "Huracán ‘Trudy’ se degrada a categoría 1 y avanza por el Pacífico: ¿Dónde habrá lluvias fuertes HOY?",
      "headlineLang": "es",
-     "headlineEs": "Huracán Trudy avanza hacia Jalisco y Colima; pronostican lluvias torrenciales, fuerte oleaje y mayor fuerza",
+     "headlineEs": "Huracán ‘Trudy’ se degrada a categoría 1 y avanza por el Pacífico: ¿Dónde habrá lluvias fuertes HOY?",
      "headlineEn": "Hurricane Trudy makes its way towards Mexico, threatening heavy rain",
-     "summaryEs": "Ciudad de México.- El huracán Trudy , de categoría 1, se acerca este sábado a las costas de Jalisco y Colima , en el Pacífico mexicano, con pronósticos de lluvias torrenciales, rachas de viento de hasta 120 kilómetros por hora y oleaje de siete metros, mientras se espera que el ciclón vuelva a fortalecerse a categoría 2. Después de provocar inundaciones en Colima, una región todavía afectada por…",
-     "summaryEsSource": "El Universal (México)",
+     "summaryEs": "El huracán Trudy se degradó a categoría 2 frente a las costas de Michoacán durante la tarde de este viernes 16 de octubre.",
+     "summaryEsSource": "El Financiero (México)",
      "summaryEn": "Trudy is the latest in successive storms that have hit Mexico's Pacific coast this year.",
      "summaryEnSource": "Al Jazeera",
      "outlets": 8,
@@ -4164,7 +4113,7 @@
       "es"
      ],
      "firstSeen": "2026-10-16T14:14:33Z",
-     "lastSeen": "2026-10-17T17:41:42Z",
+     "lastSeen": "2026-10-17T17:42:53Z",
      "sources": [
       {
        "source": "CRHoy",
@@ -4241,7 +4190,7 @@
        "lang": "es",
        "title": "Huracán ‘Trudy’ es categoría 1, pero sigue ‘bravo’: Hay alerta en 4 estados por lluvias",
        "url": "https://www.elfinanciero.com.mx/estados/2026/10/17/huracan-trudy-es-categoria-1-pero-sigue-bravo-hay-alerta-en-4-estados-por-lluvias/",
-       "publishedAt": "2026-10-17T17:41:42Z"
+       "publishedAt": "2026-10-17T17:42:53Z"
       }
      ],
      "region": "latam",
@@ -4490,11 +4439,10 @@
      "summaryEsSource": "El Comercio (Perú)",
      "summaryEn": "Pope Leo has left hospital, four days after his lung cancer surgery.",
      "summaryEnSource": "Sky News",
-     "outlets": 51,
+     "outlets": 49,
      "outletNames": [
       "20minutos",
       "ABC",
-      "ABC Color (Paraguay)",
       "ABC News (Australia)",
       "Africanews",
       "Al Jazeera",
@@ -4507,7 +4455,6 @@
       "Crónica (Guatemala)",
       "DW",
       "Dawn",
-      "Diario Extra",
       "Diario Libre (R. Dominicana)",
       "El Comercio (Perú)",
       "El Confidencial",
@@ -4521,6 +4468,7 @@
       "El Universal (México)",
       "Euronews",
       "Expansión",
+      "Expansión México",
       "France 24",
       "Hondudiario",
       "La Hora (Guatemala)",
@@ -4539,7 +4487,6 @@
       "RPP (Perú)",
       "RTÉ",
       "República (Guatemala)",
-      "Semana (Colombia)",
       "Sky News",
       "South China Morning Post",
       "The Guardian",
@@ -4730,13 +4677,6 @@
        "publishedAt": "2026-10-17T11:10:50Z"
       },
       {
-       "source": "Semana (Colombia)",
-       "lang": "es",
-       "title": "Papa León XIV volverá este sábado al Vaticano tras su operación de pulmón: este es el nuevo parte médico",
-       "url": "https://www.semana.com/mundo/articulo/papa-leon-xiv-volvera-este-sabado-al-vaticano-tras-su-operacion-de-pulmon-este-es-el-nuevo-parte-medico/202659/",
-       "publishedAt": "2026-10-17T11:19:59Z"
-      },
-      {
        "source": "RPP (Perú)",
        "lang": "es",
        "title": "El papa León XIV recibió el alta hospitalaria y regresará al Vaticano este sábado",
@@ -4770,13 +4710,6 @@
        "title": "Papa León XIV abandonó el hospital Gemelli de Roma tras recibir el alta médica",
        "url": "https://rpp.pe/mundo/actualidad/leon-xiv-abandono-el-hospital-gemelli-de-roma-tras-recibir-el-alta-medica-noticia-1713104",
        "publishedAt": "2026-10-17T13:35:23Z"
-      },
-      {
-       "source": "El Comercio (Perú)",
-       "lang": "es",
-       "title": "Papa León XIV sale del Gemelli para regresar al Vaticano tras recibir el alta hospitalaria",
-       "url": "https://elcomercio.pe/mundo/europa/papa-leon-xiv-sale-del-gemelli-para-regresar-al-vaticano-tras-recibir-el-alta-hospitalaria-apuesplan-ultimas-noticia/",
-       "publishedAt": "2026-10-17T13:39:20Z"
       },
       {
        "source": "The Guardian",
@@ -4833,13 +4766,6 @@
        "title": "El papa León XIV fue dado de alta tras ser operado por un cáncer de pulmón",
        "url": "https://www.lanacion.com.ar/el-mundo/el-papa-leon-xiv-sera-dado-de-alta-tras-ser-operado-por-un-cancer-de-pulmon-nid17102026/",
        "publishedAt": "2026-10-17T13:59:37Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "León XIV sale del Hospital para regresar al Vaticano tras recibir el alta hospitalaria",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/leon-xiv-sale-del-hospital-para-regresar-al-vaticano-tras-recibir-el-alta-hospitalaria/",
-       "publishedAt": "2026-10-17T14:00:11Z"
       },
       {
        "source": "El Nuevo Día (Puerto Rico)",
@@ -4912,13 +4838,6 @@
        "publishedAt": "2026-10-17T14:45:08Z"
       },
       {
-       "source": "Semana (Colombia)",
-       "lang": "es",
-       "title": "El papa León XIV abandona el hospital Gemelli de Roma y mañana rezará el Ángelus en el Vaticano",
-       "url": "https://www.semana.com/mundo/articulo/el-papa-leon-xiv-abandona-el-hospital-gemelli-de-roma-y-manana-rezara-el-angelus-en-el-vaticano/202613/",
-       "publishedAt": "2026-10-17T14:46:54Z"
-      },
-      {
        "source": "Prensa Libre",
        "lang": "es",
        "title": "Caminando y sonriente: Papa León XIV abandona hospital Gemelli tras cirugía",
@@ -4926,25 +4845,11 @@
        "publishedAt": "2026-10-17T14:54:33Z"
       },
       {
-       "source": "Diario Extra",
-       "lang": "es",
-       "title": "Papa regresa al Vaticano tras ser operado de un cáncer de pulmón",
-       "url": "https://www.diarioextra.com/noticia/papa-regresa-al-vaticano-tras-ser-operado-de-un-cancer-de-pulmon/",
-       "publishedAt": "2026-10-17T14:59:41Z"
-      },
-      {
        "source": "NPR",
        "lang": "en",
        "title": "Pope Leo XIV leaves hospital days after lung cancer surgery",
        "url": "https://www.npr.org/2026/10/17/nx-s1-6006762/pope-leo-xiv-leaves-hospital-days-after-lung-cancer-surgery",
        "publishedAt": "2026-10-17T15:10:14Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "León XIV sale del hospital y regresa al Vaticano tras su operación por un tumor pulmonar",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/leon-xiv-sale-del-hospital-y-regresa-al-vaticano-tras-su-operacion-por-un-tumor-pulmonar/",
-       "publishedAt": "2026-10-17T15:11:01Z"
       },
       {
        "source": "El Observador",
@@ -5022,6 +4927,13 @@
        "title": "León XIV sale del Hospital para regresar al Vaticano tras recibir el alta hospitalaria",
        "url": "https://www.hondudiario.com/2026/10/17/leon-xiv-sale-del-hospital-para-regresar-al-vaticano-tras-recibir-el-alta-hospitalaria/",
        "publishedAt": "2026-10-17T16:21:00Z"
+      },
+      {
+       "source": "Expansión México",
+       "lang": "es",
+       "title": "El papa León XIV sale del hospital tras una operación por cáncer de pulmón, ¿cuál es su estado de salud?",
+       "url": "https://expansion.mx/mundo/2026/10/17/papa-leon-xiv-regresa-vaticano-tras-cirugia-pulmonar",
+       "publishedAt": "2026-10-17T16:31:47Z"
       },
       {
        "source": "NDTV",
@@ -5174,100 +5086,6 @@
      "id": "europa-2"
     },
     {
-     "headline": "Protesters clash with police as demonstrations erupt across France",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Protesters clash with police as demonstrations erupt across France",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Tens of thousands take to the streets to demonstrate over high living costs and dissatisfaction with the education system",
-     "summaryEnSource": "Financial Times",
-     "outlets": 9,
-     "outletNames": [
-      "CBS News",
-      "DW",
-      "Financial Times",
-      "NPR",
-      "Politico Europe",
-      "South China Morning Post",
-      "Stuff",
-      "The Guardian",
-      "The Sydney Morning Herald"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-17T08:02:00Z",
-     "lastSeen": "2026-10-17T17:45:49Z",
-     "sources": [
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "France: Police and protesters clash in nationwide protests",
-       "url": "https://www.dw.com/en/france-police-and-protesters-clash-in-nationwide-protests/a-79685584?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-17T08:02:00Z"
-      },
-      {
-       "source": "Stuff",
-       "lang": "en",
-       "title": "Protesters across France rally over rising living costs, joining students' grievances",
-       "url": "https://www.stuff.co.nz/world-news/361047855/protesters-across-france-rally-over-rising-living-costs-join",
-       "publishedAt": "2026-10-17T09:36:03Z"
-      },
-      {
-       "source": "South China Morning Post",
-       "lang": "en",
-       "title": "French police clash with protesters as thousands rally over cost of living",
-       "url": "https://www.scmp.com/news/world/europe/article/3371255/french-protesters-take-streets-over-rising-prices-social-strain",
-       "publishedAt": "2026-10-17T10:12:29Z"
-      },
-      {
-       "source": "Politico Europe",
-       "lang": "en",
-       "title": "Police, demonstrators clash on sidelines of mass French protests",
-       "url": "https://www.politico.eu/article/police-protesters-clash-ahead-of-mass-demonstrations-in-france/",
-       "publishedAt": "2026-10-17T11:33:31Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Protests erupt in France against living costs, support of students",
-       "url": "https://www.cbsnews.com/news/protests-france-rising-living-costs-students/",
-       "publishedAt": "2026-10-17T13:13:51Z"
-      },
-      {
-       "source": "NPR",
-       "lang": "en",
-       "title": "Scuffles and fires break out as protesters rally across France, joining students",
-       "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
-       "publishedAt": "2026-10-17T15:57:40Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Police clash with protesters as tens of thousands take to streets across France",
-       "url": "https://www.theguardian.com/world/2026/oct/17/protests-france-high-prices-social-security-gilets-jaunes",
-       "publishedAt": "2026-10-17T16:55:57Z"
-      },
-      {
-       "source": "The Sydney Morning Herald",
-       "lang": "en",
-       "title": "Police clash with protestors in France as tens of thousands rally over cost of living",
-       "url": "https://www.smh.com.au/world/europe/police-clash-with-protestors-in-france-as-tens-of-thousands-rally-over-cost-of-living-20261018-p616ex.html",
-       "publishedAt": "2026-10-17T17:37:18Z"
-      },
-      {
-       "source": "Financial Times",
-       "lang": "en",
-       "title": "Protesters clash with police as demonstrations erupt across France",
-       "url": "https://www.ft.com/content/bcb6c27a-f082-4867-ade4-ae6eb757b780",
-       "publishedAt": "2026-10-17T17:45:49Z"
-      }
-     ],
-     "region": "europa",
-     "id": "europa-3"
-    },
-    {
      "headline": "Trump suspende temporalmente las sanciones del Congreso contra Rusia por \"interés nacional\"",
      "headlineLang": "es",
      "headlineEs": "Trump suspende temporalmente las sanciones del Congreso contra Rusia por \"interés nacional\"",
@@ -5359,7 +5177,7 @@
       }
      ],
      "region": "europa",
-     "id": "europa-4"
+     "id": "europa-3"
     },
     {
      "headline": "Trump calls Ukraine’s renewed strikes on Russian oil refineries ‘a disgrace’",
@@ -5459,7 +5277,7 @@
       }
      ],
      "region": "europa",
-     "id": "europa-5"
+     "id": "europa-4"
     },
     {
      "headline": "León XIV habla desde el hospital con Putin para reclamarle una tregua y ofrecerle diálogo",
@@ -5485,9 +5303,16 @@
       "en",
       "es"
      ],
-     "firstSeen": "2026-10-16T15:32:45Z",
+     "firstSeen": "2026-10-16T15:32:34Z",
      "lastSeen": "2026-10-17T06:39:38Z",
      "sources": [
+      {
+       "source": "ANSA",
+       "lang": "en",
+       "title": "Phone call between pope and Putin",
+       "url": "https://www.ansa.it/english/news/2026/10/16/phone-call-between-pope-and-putin_2dbd6b88-3fb1-426c-a358-422355a58dfc.html",
+       "publishedAt": "2026-10-16T15:32:34Z"
+      },
       {
        "source": "The Irish Times",
        "lang": "en",
@@ -5543,6 +5368,84 @@
        "title": "Pope Leo Speaks To Putin From Hospital, Seeks Russia-Ukraine Ceasefire",
        "url": "https://www.ndtv.com/world-news/pope-leo-xiv-speaks-to-russian-president-vladimir-putin-from-hospital-seeks-russia-ukraine-ceasefire-12198253",
        "publishedAt": "2026-10-17T06:39:38Z"
+      }
+     ],
+     "region": "europa",
+     "id": "europa-5"
+    },
+    {
+     "headline": "Protesters clash with police as demonstrations erupt across France",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Protesters clash with police as demonstrations erupt across France",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Tens of thousands take to the streets to demonstrate over high living costs and dissatisfaction with the education system",
+     "summaryEnSource": "Financial Times",
+     "outlets": 7,
+     "outletNames": [
+      "DW",
+      "Financial Times",
+      "NPR",
+      "Politico Europe",
+      "South China Morning Post",
+      "Stuff",
+      "The Guardian"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-17T08:02:00Z",
+     "lastSeen": "2026-10-17T17:45:49Z",
+     "sources": [
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "France: Police and protesters clash in nationwide protests",
+       "url": "https://www.dw.com/en/france-police-and-protesters-clash-in-nationwide-protests/a-79685584?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-17T08:02:00Z"
+      },
+      {
+       "source": "Stuff",
+       "lang": "en",
+       "title": "Protesters across France rally over rising living costs, joining students' grievances",
+       "url": "https://www.stuff.co.nz/world-news/361047855/protesters-across-france-rally-over-rising-living-costs-join",
+       "publishedAt": "2026-10-17T09:36:03Z"
+      },
+      {
+       "source": "South China Morning Post",
+       "lang": "en",
+       "title": "French police clash with protesters as thousands rally over cost of living",
+       "url": "https://www.scmp.com/news/world/europe/article/3371255/french-protesters-take-streets-over-rising-prices-social-strain",
+       "publishedAt": "2026-10-17T10:12:29Z"
+      },
+      {
+       "source": "Politico Europe",
+       "lang": "en",
+       "title": "Police, demonstrators clash on sidelines of mass French protests",
+       "url": "https://www.politico.eu/article/police-protesters-clash-ahead-of-mass-demonstrations-in-france/",
+       "publishedAt": "2026-10-17T11:33:31Z"
+      },
+      {
+       "source": "NPR",
+       "lang": "en",
+       "title": "Scuffles and fires break out as protesters rally across France, joining students",
+       "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+       "publishedAt": "2026-10-17T15:57:40Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Police clash with protesters as tens of thousands take to streets across France",
+       "url": "https://www.theguardian.com/world/2026/oct/17/protests-france-high-prices-social-security-gilets-jaunes",
+       "publishedAt": "2026-10-17T16:55:57Z"
+      },
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Protesters clash with police as demonstrations erupt across France",
+       "url": "https://www.ft.com/content/bcb6c27a-f082-4867-ade4-ae6eb757b780",
+       "publishedAt": "2026-10-17T17:45:49Z"
       }
      ],
      "region": "europa",
@@ -5627,6 +5530,83 @@
      "id": "europa-7"
     },
     {
+     "headline": "Trump waiving sanctions 'rewards' Putin, says Zelensky",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Trump waiving sanctions 'rewards' Putin, says Zelensky",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Ukraine's Volodymyr Zelensky has said that US President Donald Trump's decision to waive Russian sanctions only \"rewards\" Vladimir Putin.",
+     "summaryEnSource": "RTÉ",
+     "outlets": 6,
+     "outletNames": [
+      "Hindustan Times",
+      "RFI",
+      "RTÉ",
+      "The Guardian",
+      "The Hindu",
+      "The Kyiv Independent"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-17T03:20:51Z",
+     "lastSeen": "2026-10-17T17:35:14Z",
+     "sources": [
+      {
+       "source": "RTÉ",
+       "lang": "en",
+       "title": "Trump waiving sanctions 'rewards' Putin, says Zelensky",
+       "url": "https://www.rte.ie/news/us/2026/1017/1595735-trump-executive-order-russia/",
+       "publishedAt": "2026-10-17T03:20:51Z"
+      },
+      {
+       "source": "Hindustan Times",
+       "lang": "en",
+       "title": "‘Truly historic moment’: Putin's envoy hails Trump's move to waive some sanctions against Russia",
+       "url": "https://www.hindustantimes.com/world-news/putin-envoy-kirill-dmitriev-hails-trump-decision-on-waiving-some-russia-sanctions-calls-it-historic-moment-101792221321563.html",
+       "publishedAt": "2026-10-17T07:27:23Z"
+      },
+      {
+       "source": "The Hindu",
+       "lang": "en",
+       "title": "Trump blocking Russia sanctions a 'historic moment': Putin’s envoy",
+       "url": "https://www.thehindu.com/news/international/trump-blocking-russia-sanctions-a-historic-moment-putins-envoy/article71595853.ece",
+       "publishedAt": "2026-10-17T09:36:48Z"
+      },
+      {
+       "source": "RFI",
+       "lang": "en",
+       "title": "Zelensky says US move to waive sanctions 'rewards' Russia's Putin",
+       "url": "https://www.rfi.fr/en/international/20261017-zelensky-says-us-move-to-waive-sanctions-rewards-russia-s-putin",
+       "publishedAt": "2026-10-17T11:11:39Z"
+      },
+      {
+       "source": "The Kyiv Independent",
+       "lang": "en",
+       "title": "'Putin feels joy' — Zelensky calls Trump's waiving of key Russia sanctions 'wrong'",
+       "url": "https://kyivindependent.com/putin-feels-joy-zelensky-calls-trumps-waiving-of-key-russia-sanctions-wrong/",
+       "publishedAt": "2026-10-17T12:14:26Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Trump’s pause on Russia sanctions is ‘reward’ for Putin, Zelenskyy says",
+       "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine",
+       "publishedAt": "2026-10-17T15:38:17Z"
+      },
+      {
+       "source": "Hindustan Times",
+       "lang": "en",
+       "title": "'Reward for Putin': Zelensky fears US sanctions relief to Russia, diesel deal not the end of it",
+       "url": "https://www.hindustantimes.com/world-news/reward-for-putin-zelensky-fears-us-sanctions-relief-to-russia-diesel-deal-not-the-end-of-it-101792252174760.html",
+       "publishedAt": "2026-10-17T17:35:14Z"
+      }
+     ],
+     "region": "europa",
+     "id": "europa-8"
+    },
+    {
      "headline": "El cirujano que operó a León XIV dijo que “no hay motivos clínicos” para que el papa suspenda su gira por América Latina",
      "headlineLang": "es",
      "headlineEs": "El cirujano que operó a León XIV dijo que “no hay motivos clínicos” para que el papa suspenda su gira por América Latina",
@@ -5694,147 +5674,7 @@
       }
      ],
      "region": "europa",
-     "id": "europa-8"
-    },
-    {
-     "headline": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
-     "headlineLang": "es",
-     "headlineEs": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
-     "headlineEn": null,
-     "summaryEs": "Estudiantes, funcionarios y transportistas se sumaron a la convocatoria en unos 500 puntos del país; el presidente Macron había pedido calma.",
-     "summaryEsSource": "El Tiempo",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 6,
-     "outletNames": [
-      "El Financiero (México)",
-      "El Nacional (Venezuela)",
-      "El Tiempo",
-      "La Nación (Costa Rica)",
-      "La Vanguardia",
-      "Semana (Colombia)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T08:14:03Z",
-     "lastSeen": "2026-10-17T16:58:09Z",
-     "sources": [
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "Graves disturbios marcan el regreso de los 'chalecos amarillos' en Francia",
-       "url": "https://www.lavanguardia.com/internacional/20261017/11661342/primeros-bloqueos-ciudades-francesas-retorno-chalecos-amarillos.html",
-       "publishedAt": "2026-10-17T08:14:03Z"
-      },
-      {
-       "source": "El Nacional (Venezuela)",
-       "lang": "es",
-       "title": "\"Nos ahogamos\": las protestas por el costo de la vida sacuden Francia",
-       "url": "https://www.elnacional.com/2026/10/nos-ahogamos-las-protestas-por-el-costo-de-la-vida-sacuden-francia/",
-       "publishedAt": "2026-10-17T13:30:46Z"
-      },
-      {
-       "source": "El Financiero (México)",
-       "lang": "es",
-       "title": "Francia ‘arde’ por el costo de vida: Protestas dejan incendios, saqueos y 272 detenidos",
-       "url": "https://www.elfinanciero.com.mx/mundo/2026/10/17/francia-arde-por-el-costo-de-vida-protestas-dejan-incendios-saqueos-y-272-detenidos/",
-       "publishedAt": "2026-10-17T16:27:37Z"
-      },
-      {
-       "source": "Semana (Colombia)",
-       "lang": "es",
-       "title": "Protestas por el costo de vida sacuden Francia: escenas de caos en grandes ciudades dejan más de 272 personas detenidas",
-       "url": "https://www.semana.com/mundo/articulo/protestas-por-el-costo-de-vida-sacuden-francia-escenas-de-caos-en-grandes-ciudades-dejan-mas-de-272-personas-detenidas/202642/",
-       "publishedAt": "2026-10-17T16:27:42Z"
-      },
-      {
-       "source": "El Tiempo",
-       "lang": "es",
-       "title": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
-       "url": "https://www.eltiempo.com/mundo/europa/regresan-los-chalecos-amarillos-protestas-por-el-costo-de-vida-dejan-choques-272-detenidos-y-ayuntamientos-invadidos-en-francia-3594281",
-       "publishedAt": "2026-10-17T16:50:37Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Protestas en Francia reúnen a 500.000 personas y dejan enfrentamientos, detenidos y un manifestante herido",
-       "url": "https://www.nacion.com/el-mundo/protestas-en-francia-reunen-a-500000-personas-y/JZN2XCLM7NBO7GHGVCAFZTACXU/story/",
-       "publishedAt": "2026-10-17T16:58:09Z"
-      }
-     ],
-     "region": "europa",
      "id": "europa-9"
-    },
-    {
-     "headline": "Trump waiving sanctions 'rewards' Putin, says Zelensky",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Trump waiving sanctions 'rewards' Putin, says Zelensky",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Ukraine's Volodymyr Zelensky has said that US President Donald Trump's decision to waive Russian sanctions only \"rewards\" Vladimir Putin.",
-     "summaryEnSource": "RTÉ",
-     "outlets": 6,
-     "outletNames": [
-      "Hindustan Times",
-      "RFI",
-      "RTÉ",
-      "The Guardian",
-      "The Hindu",
-      "The Kyiv Independent"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-17T03:20:51Z",
-     "lastSeen": "2026-10-17T15:38:17Z",
-     "sources": [
-      {
-       "source": "RTÉ",
-       "lang": "en",
-       "title": "Trump waiving sanctions 'rewards' Putin, says Zelensky",
-       "url": "https://www.rte.ie/news/us/2026/1017/1595735-trump-executive-order-russia/",
-       "publishedAt": "2026-10-17T03:20:51Z"
-      },
-      {
-       "source": "Hindustan Times",
-       "lang": "en",
-       "title": "‘Truly historic moment’: Putin's envoy hails Trump's move to waive some sanctions against Russia",
-       "url": "https://www.hindustantimes.com/world-news/putin-envoy-kirill-dmitriev-hails-trump-decision-on-waiving-some-russia-sanctions-calls-it-historic-moment-101792221321563.html",
-       "publishedAt": "2026-10-17T07:27:23Z"
-      },
-      {
-       "source": "The Hindu",
-       "lang": "en",
-       "title": "Trump blocking Russia sanctions a 'historic moment': Putin’s envoy",
-       "url": "https://www.thehindu.com/news/international/trump-blocking-russia-sanctions-a-historic-moment-putins-envoy/article71595853.ece",
-       "publishedAt": "2026-10-17T09:36:48Z"
-      },
-      {
-       "source": "RFI",
-       "lang": "en",
-       "title": "Zelensky says US move to waive sanctions 'rewards' Russia's Putin",
-       "url": "https://www.rfi.fr/en/international/20261017-zelensky-says-us-move-to-waive-sanctions-rewards-russia-s-putin",
-       "publishedAt": "2026-10-17T11:11:39Z"
-      },
-      {
-       "source": "The Kyiv Independent",
-       "lang": "en",
-       "title": "'Putin feels joy' — Zelensky calls Trump's waiving of key Russia sanctions 'wrong'",
-       "url": "https://kyivindependent.com/putin-feels-joy-zelensky-calls-trumps-waiving-of-key-russia-sanctions-wrong/",
-       "publishedAt": "2026-10-17T12:14:26Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Trump’s pause on Russia sanctions is ‘reward’ for Putin, Zelenskyy says",
-       "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine",
-       "publishedAt": "2026-10-17T15:38:17Z"
-      }
-     ],
-     "region": "europa",
-     "id": "europa-10"
     },
     {
      "headline": "La Ejecutiva del PSOE nombra a Rebeca Torró nueva portavoz tras la dimisión de Montse Mínguez",
@@ -5939,7 +5779,7 @@
       }
      ],
      "region": "europa",
-     "id": "europa-11"
+     "id": "europa-10"
     },
     {
      "headline": "Las protestas estudiantiles en Albania entran en su quinto día con nuevos choques en Tirana",
@@ -6010,7 +5850,7 @@
       }
      ],
      "region": "europa",
-     "id": "europa-12"
+     "id": "europa-11"
     },
     {
      "headline": "Trump Waives Russia Sanctions That Threatened 100% Tariffs On India",
@@ -6077,6 +5917,68 @@
        "title": "Trump waives Russia-related sanctions before they even kick in as Ukraine ties worsen",
        "url": "https://www.egyptindependent.com/trump-waives-russia-related-sanctions-before-they-even-kick-in-as-ukraine-ties-worsen/",
        "publishedAt": "2026-10-17T12:19:08Z"
+      }
+     ],
+     "region": "europa",
+     "id": "europa-12"
+    },
+    {
+     "headline": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+     "headlineLang": "es",
+     "headlineEs": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+     "headlineEn": null,
+     "summaryEs": "Los aparatos fueron interceptados tras entrar en el espacio aéreo rumano, en plena escalada de ataques contra buques mercantes en el mar Negro.",
+     "summaryEsSource": "20minutos",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 5,
+     "outletNames": [
+      "20minutos",
+      "ABC Color (Paraguay)",
+      "El Universal (México)",
+      "Infobae",
+      "La Vanguardia"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T16:35:06Z",
+     "lastSeen": "2026-10-17T17:50:16Z",
+     "sources": [
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/dos-cazas-rumanos-derriban-dos-drones-sobre-sus-aguas-territoriales-en-el-mar-negro/",
+       "publishedAt": "2026-10-17T16:35:06Z"
+      },
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+       "url": "https://www.lavanguardia.com/internacional/20261017/11661529/dos-cazas-rumanos-derriban-dos-drones-sobre-aguas-territoriales-mar-negro.html",
+       "publishedAt": "2026-10-17T16:36:09Z"
+      },
+      {
+       "source": "20minutos",
+       "lang": "es",
+       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+       "url": "https://www.20minutos.es/internacional/dos-cazas-rumanos-derriban-dos-drones-sobre-sus-aguas-territoriales-mar-negro_7050044_0.html",
+       "publishedAt": "2026-10-17T17:04:01Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Rumania interceptó y derribó dos drones en su espacio aéreo sobre el mar Negro",
+       "url": "https://www.infobae.com/america/mundo/2026/10/17/rumania-intercepto-y-derribo-dos-drones-en-su-espacio-aereo-sobre-el-mar-negro/",
+       "publishedAt": "2026-10-17T17:05:58Z"
+      },
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "Rumania derriba drones en su espacio aéreo sobre el mar Negro; OTAN abordará el tema en reunión del Consejo del Atlántico Norte",
+       "url": "https://www.eluniversal.com.mx/mundo/rumania-derriba-drones-en-su-espacio-aereo-sobre-el-mar-negro-otan-abordara-el-tema-en-reunion-del-consejo-del-atlantico-norte/",
+       "publishedAt": "2026-10-17T17:50:16Z"
       }
      ],
      "region": "europa",
@@ -6289,14 +6191,13 @@
      "headline": "Colonos israelíes dan brutal paliza a una periodista de “The Washington Post” en Cisjordania ocupada",
      "headlineLang": "es",
      "headlineEs": "Colonos israelíes dan brutal paliza a una periodista de “The Washington Post” en Cisjordania ocupada",
-     "headlineEn": "Israeli settlers attack European diplomats in the West Bank",
+     "headlineEn": "West Bank: Israeli settlers attack EU diplomats, French mayor",
      "summaryEs": "Heidi Levine, fotoperiodista del Washington Post, resultó herida tras un ataque de colonos israelíes mientras cubría la cosecha de aceitunas en Cisjordania.",
      "summaryEsSource": "El Financiero (Costa Rica)",
-     "summaryEn": "Belgian foreign minister says his government will ‘press for EU sanctions against those responsible for this violence’",
-     "summaryEnSource": "Financial Times",
-     "outlets": 24,
+     "summaryEn": "A group of Israeli settlers attacked vehicles carrying European diplomats in the West Bank. Belgium has condemned the attack.",
+     "summaryEnSource": "DW",
+     "outlets": 23,
      "outletNames": [
-      "ABC Color (Paraguay)",
       "Al Jazeera",
       "BBC",
       "CBS News",
@@ -6325,9 +6226,16 @@
       "en",
       "es"
      ],
-     "firstSeen": "2026-10-16T10:34:44Z",
-     "lastSeen": "2026-10-17T17:29:37Z",
+     "firstSeen": "2026-10-16T08:45:54Z",
+     "lastSeen": "2026-10-17T18:00:52Z",
      "sources": [
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "China tells Israel to stop 'forced establishment' of West Bank settlements",
+       "url": "https://www.bbc.co.uk/news/articles/cq1j3wdxy48ro",
+       "publishedAt": "2026-10-16T08:45:54Z"
+      },
       {
        "source": "RTÉ",
        "lang": "en",
@@ -6406,13 +6314,6 @@
        "publishedAt": "2026-10-16T19:32:00Z"
       },
       {
-       "source": "Le Monde",
-       "lang": "en",
-       "title": "Pressure and violence against journalists intensify in Israel",
-       "url": "https://www.lemonde.fr/en/international/article/2026/10/17/pressure-and-violence-against-journalists-intensify-in-israel_6758696_4.html",
-       "publishedAt": "2026-10-17T02:02:13Z"
-      },
-      {
        "source": "El Mundo",
        "lang": "es",
        "title": "La veterana fotógrafa del Washington Post, Heidi Levine, es brutalmente agredida por colonos israelíes en Abu Falah (Cisjordania)",
@@ -6448,25 +6349,11 @@
        "publishedAt": "2026-10-17T15:00:53Z"
       },
       {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Bélgica condena el ataque de colonos israelíes contra una delegación diplomática europea",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/belgica-condena-el-ataque-de-colonos-israelies-contra-una-delegacion-diplomatica-europea/",
-       "publishedAt": "2026-10-17T15:05:09Z"
-      },
-      {
        "source": "El Confidencial",
        "lang": "es",
        "title": "Colonos israelíes atacan a diplomáticos europeos que visitaban una localidad cristiana en Cisjordania",
        "url": "https://www.elconfidencial.com/mundo/2026-10-17/colonos-israelies-atacan-a-una-delegacion-diplomatica_4447226/",
        "publishedAt": "2026-10-17T15:11:00Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Colonos israelíes atacan a diplomáticos europeos durante la recogida de la aceituna",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/colonos-israelies-atacan-a-diplomaticos-europeos-durante-la-recogida-de-la-aceituna/",
-       "publishedAt": "2026-10-17T15:25:58Z"
       },
       {
        "source": "France 24 Español",
@@ -6490,25 +6377,11 @@
        "publishedAt": "2026-10-17T15:56:46Z"
       },
       {
-       "source": "Financial Times",
-       "lang": "en",
-       "title": "Israeli settlers attack European diplomats in the West Bank",
-       "url": "https://www.ft.com/content/35a08f82-6830-41fa-83ae-d3765f3970e0",
-       "publishedAt": "2026-10-17T16:11:59Z"
-      },
-      {
        "source": "DW",
        "lang": "en",
-       "title": "West Bank: Israeli settlers attack EU diplomats",
-       "url": "https://www.dw.com/en/west-bank-israeli-settlers-attack-eu-diplomats/a-79688819?maca=en-rss-en-all-1573-rdf",
+       "title": "West Bank: Israeli settlers attack EU diplomats, French mayor",
+       "url": "https://www.dw.com/en/west-bank-israeli-settlers-attack-eu-diplomats-french-mayor/a-79688819?maca=en-rss-en-all-1573-rdf",
        "publishedAt": "2026-10-17T16:29:00Z"
-      },
-      {
-       "source": "La Tercera (Chile)",
-       "lang": "es",
-       "title": "Colonos israelíes atacan convoy diplomático y golpean a un alcalde francés en Cisjordania",
-       "url": "https://www.latercera.com/mundo/noticia/colonos-israelies-atacan-convoy-diplomatico-y-golpean-a-un-alcalde-frances-en-cisjordania/",
-       "publishedAt": "2026-10-17T16:53:16Z"
       },
       {
        "source": "The Guardian",
@@ -6537,6 +6410,20 @@
        "title": "Un grupo de colonos israelíes ataca a una comitiva de diplomáticos europeos en Cisjordania",
        "url": "https://elpais.com/internacional/2026-10-17/un-grupo-de-colonos-israelies-ataca-a-una-comitiva-de-diplomaticos-europeos-en-cisjordania.html",
        "publishedAt": "2026-10-17T17:29:37Z"
+      },
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Israeli settlers attack European diplomats in the West Bank",
+       "url": "https://www.ft.com/content/35a08f82-6830-41fa-83ae-d3765f3970e0",
+       "publishedAt": "2026-10-17T17:58:01Z"
+      },
+      {
+       "source": "La Tercera (Chile)",
+       "lang": "es",
+       "title": "Colonos israelíes atacan convoy diplomático y golpean a un alcalde francés en Cisjordania",
+       "url": "https://www.latercera.com/mundo/noticia/colonos-israelies-atacan-convoy-diplomatico-y-golpean-a-un-alcalde-frances-en-cisjordania/",
+       "publishedAt": "2026-10-17T18:00:52Z"
       }
      ],
      "region": "asia",
@@ -6551,9 +6438,8 @@
      "summaryEsSource": "El Universal (México)",
      "summaryEn": "Attack was the first on Aden’s Al-Maashiq palace ⁠in the latest fighting between ​the Iran-aligned Houthis and Saudi Arabia Yemen’s Houthis fired missiles at the presidential palace complex in the southern city of Aden on Thursday, killing five people, the government said, as the Saudi-led coalition listed dozens of Houthi attacks on Saudi infrastructure in ⁠recent weeks. The attack was the first…",
      "summaryEnSource": "The Guardian",
-     "outlets": 14,
+     "outlets": 13,
      "outletNames": [
-      "ABC Color (Paraguay)",
       "Africanews",
       "BBC",
       "Bloomberg",
@@ -6681,13 +6567,6 @@
        "publishedAt": "2026-10-17T14:51:22Z"
       },
       {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Al menos nueve muertos en ataque saudí contra el suroeste del Yemen, según hutíes",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/al-menos-nueve-muertos-en-ataque-saudi-contra-el-suroeste-del-yemen-segun-huties/",
-       "publishedAt": "2026-10-17T15:20:07Z"
-      },
-      {
        "source": "NDTV",
        "lang": "en",
        "title": "Saudi Arabia Intercepts Four Drones Over Riyadh Amid Houthi Attacks",
@@ -6699,17 +6578,16 @@
      "id": "asia-2"
     },
     {
-     "headline": "India libera bajo condiciones al líder de las “Cucarachas” tras las protestas electorales",
-     "headlineLang": "es",
-     "headlineEs": "India libera bajo condiciones al líder de las “Cucarachas” tras las protestas electorales",
-     "headlineEn": "India's 'cockroach' movement founder released from police custody",
-     "summaryEs": "El dirigente del Cockroach Janta Party (CJP) compareció ante un magistrado ejecutivo especial en la comisaría de Mandir Marg, donde se acordó su liberación tras comprometerse a mantener la paz y la buena conducta durante un año, según informaron fuentes policiales a la agencia india PTI. La Policía había formalizado su arresto preventivo este sábado por presuntamente incumplir un compromiso…",
-     "summaryEsSource": "ABC Color (Paraguay)",
-     "summaryEn": "India’s Cockroach Janata Party (CJP) founder Abhijeet Dipke was released from detention on Saturday, a day after he was detained during a police crackdown on protests against the election authority. Dipke, 31, was detained on Friday in New Delhi as he headed to join a rally that the CJP protest movement had called in the capital’s central Connaught Place district. He was arrested to prevent a…",
-     "summaryEnSource": "Dawn",
-     "outlets": 11,
+     "headline": "‘Cockroach’ party founder released by Indian police",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "‘Cockroach’ party founder released by Indian police",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "India’s youth-led Cockroach Janata Party founder Abhijeet Dipke was released from detention on Saturday, a day after his arrest during a police crackdown on protests against the election authority. Dipke, 31, was detained Friday in New Delhi as he headed to join a rally that the CJP protest movement had called in the capital’s central Connaught Place district. He walked out of a police station on…",
+     "summaryEnSource": "South China Morning Post",
+     "outlets": 10,
      "outletNames": [
-      "ABC Color (Paraguay)",
       "BBC",
       "CNA",
       "DW",
@@ -6722,11 +6600,10 @@
       "The Straits Times"
      ],
      "languages": [
-      "en",
-      "es"
+      "en"
      ],
      "firstSeen": "2026-10-16T05:45:21Z",
-     "lastSeen": "2026-10-17T15:50:19Z",
+     "lastSeen": "2026-10-17T17:48:50Z",
      "sources": [
       {
        "source": "The Straits Times",
@@ -6813,13 +6690,6 @@
        "publishedAt": "2026-10-17T13:15:00Z"
       },
       {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "India libera bajo condiciones al líder de las “Cucarachas” tras las protestas electorales",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/india-libera-bajo-condiciones-al-lider-de-las-cucarachas-tras-las-protestas-electorales/",
-       "publishedAt": "2026-10-17T15:00:06Z"
-      },
-      {
        "source": "Dawn",
        "lang": "en",
        "title": "India's 'cockroach' movement founder released from police custody",
@@ -6832,6 +6702,13 @@
        "title": "Indian Gen Z Protest Leader Is Released on Bail After Arrest",
        "url": "https://www.nytimes.com/2026/10/17/world/asia/india-abhijeet-dipke-cockroach-janta-party.html",
        "publishedAt": "2026-10-17T15:50:19Z"
+      },
+      {
+       "source": "South China Morning Post",
+       "lang": "en",
+       "title": "‘Cockroach’ party founder released by Indian police",
+       "url": "https://www.scmp.com/news/asia/south-asia/article/3371274/cockroach-party-founder-released-indian-police",
+       "publishedAt": "2026-10-17T17:48:50Z"
       }
      ],
      "region": "asia",
@@ -6917,7 +6794,7 @@
        "source": "DW",
        "lang": "en",
        "title": "Ethiopia's Abiy Ahmed appoints interim Tigray government",
-       "url": "https://www.dw.com/en/ethiopia-s-abiy-ahmed-appoints-interim-tigray-government/a-79683519?maca=en-rss-en-all-1573-rdf",
+       "url": "https://www.dw.com/en/ethiopia-s-abiy-ahmed-appoints-interim-tigray-government/a-79683519?maca=en-rss-en-africa-8291-rdf",
        "publishedAt": "2026-10-16T16:19:00Z"
       },
       {
@@ -6937,6 +6814,76 @@
      ],
      "region": "africa",
      "id": "africa-1"
+    },
+    {
+     "headline": "Egypt Ready to Defend Saudi Arabia if Needed, Sisi Says",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Egypt Ready to Defend Saudi Arabia if Needed, Sisi Says",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "Egyptian President Abdel-Fattah El-Sisi said his nation stands ready to defend Saudi Arabia as it comes under attack from Yemen’s Houthis and called on parliament to convene an emergency session to authorize such action if it became necessary.",
+     "summaryEnSource": "Bloomberg",
+     "outlets": 6,
+     "outletNames": [
+      "Africanews",
+      "Al Jazeera",
+      "Bloomberg",
+      "DW",
+      "Dawn",
+      "The New York Times"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-17T11:55:57Z",
+     "lastSeen": "2026-10-17T18:06:53Z",
+     "sources": [
+      {
+       "source": "Dawn",
+       "lang": "en",
+       "title": "Egypt's President Sisi pledges to leave office when term ends in 2030",
+       "url": "https://www.dawn.com/news/2037828/egypts-president-sisi-pledges-to-leave-office-when-term-ends-in-2030",
+       "publishedAt": "2026-10-17T11:55:57Z"
+      },
+      {
+       "source": "Bloomberg",
+       "lang": "en",
+       "title": "Egypt Ready to Defend Saudi Arabia if Needed, Sisi Says",
+       "url": "https://www.bloomberg.com/news/articles/2026-10-17/egypt-ready-to-defend-saudi-arabia-if-needed-sisi-says",
+       "publishedAt": "2026-10-17T12:14:33Z"
+      },
+      {
+       "source": "Al Jazeera",
+       "lang": "en",
+       "title": "Egypt’s Sisi seeks authorisation for defence assistance to Saudi Arabia",
+       "url": "https://www.aljazeera.com/economy/2026/10/17/egypts-sisi-seeks-authorisation-for-defence-assistance-to-saudi-arabia?traffic_source=rss",
+       "publishedAt": "2026-10-17T14:00:24Z"
+      },
+      {
+       "source": "Africanews",
+       "lang": "en",
+       "title": "Egypt's President Sisi will step down when term expires in 2030",
+       "url": "http://www.africanews.com/2026/10/17/egypts-president-sisi-will-step-down-when-term-expires-in-2030/",
+       "publishedAt": "2026-10-17T14:18:28Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "Egypt's Ssisi says he'll defend Saudi Arabia, if asked",
+       "url": "https://www.dw.com/en/egypt-s-ssisi-says-he-ll-defend-saudi-arabia-if-asked/a-79689105?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-17T17:49:00Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Egypt’s President Says He Will Leave Office in 2030",
+       "url": "https://www.nytimes.com/2026/10/17/world/middleeast/egypt-president-el-sisi-term-limits-2030.html",
+       "publishedAt": "2026-10-17T18:06:53Z"
+      }
+     ],
+     "region": "africa",
+     "id": "africa-2"
     },
     {
      "headline": "Kenya confirms third Ebola case",
@@ -6998,68 +6945,6 @@
       }
      ],
      "region": "africa",
-     "id": "africa-2"
-    },
-    {
-     "headline": "Egypt's President Sisi will step down when term expires in 2030",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Egypt's President Sisi will step down when term expires in 2030",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Egypt’s President Abdel Fattah al-Sisi says he’ll leave office when his term expires in 2030. Making the announcement on Saturday, Sisi described the matter as “completely settled.”",
-     "summaryEnSource": "Africanews",
-     "outlets": 5,
-     "outletNames": [
-      "Africanews",
-      "Al Jazeera",
-      "Bloomberg",
-      "Dawn",
-      "Punch"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-17T11:55:57Z",
-     "lastSeen": "2026-10-17T14:18:28Z",
-     "sources": [
-      {
-       "source": "Dawn",
-       "lang": "en",
-       "title": "Egypt's President Sisi pledges to leave office when term ends in 2030",
-       "url": "https://www.dawn.com/news/2037828/egypts-president-sisi-pledges-to-leave-office-when-term-ends-in-2030",
-       "publishedAt": "2026-10-17T11:55:57Z"
-      },
-      {
-       "source": "Bloomberg",
-       "lang": "en",
-       "title": "Egypt Ready to Defend Saudi Arabia if Needed, Sisi Says",
-       "url": "https://www.bloomberg.com/news/articles/2026-10-17/egypt-ready-to-defend-saudi-arabia-if-needed-sisi-says",
-       "publishedAt": "2026-10-17T12:14:33Z"
-      },
-      {
-       "source": "Punch",
-       "lang": "en",
-       "title": "Egyptian President Sisi rules out remaining in power beyond 2030",
-       "url": "https://punchng.com/egyptian-president-sisi-rules-out-remaining-in-power-beyond-2030/",
-       "publishedAt": "2026-10-17T13:16:04Z"
-      },
-      {
-       "source": "Al Jazeera",
-       "lang": "en",
-       "title": "Egypt’s Sisi seeks authorisation for defence assistance to Saudi Arabia",
-       "url": "https://www.aljazeera.com/economy/2026/10/17/egypts-sisi-seeks-authorisation-for-defence-assistance-to-saudi-arabia?traffic_source=rss",
-       "publishedAt": "2026-10-17T14:00:24Z"
-      },
-      {
-       "source": "Africanews",
-       "lang": "en",
-       "title": "Egypt's President Sisi will step down when term expires in 2030",
-       "url": "http://www.africanews.com/2026/10/17/egypts-president-sisi-will-step-down-when-term-expires-in-2030/",
-       "publishedAt": "2026-10-17T14:18:28Z"
-      }
-     ],
-     "region": "africa",
      "id": "africa-3"
     }
    ]
@@ -7079,9 +6964,8 @@
      "summaryEsSource": "BBC Mundo",
      "summaryEn": "Australian ​brothers Jake ​and Callum Robinson, and ​their ‌American friend Carter Rhoad, were killed while on a surf trip in Baja California in 2024 Get our breaking news email , free app or daily news podcast A Mexican ⁠judge ⁠has sentenced ​three men to 158 years ⁠and nine months in prison each for ⁠the murder of ​two Australian ‌brothers ‌and their American friend during ‌a 2024 surf trip to…",
      "summaryEnSource": "The Guardian",
-     "outlets": 10,
+     "outlets": 9,
      "outletNames": [
-      "ABC News (Australia)",
       "BBC",
       "BBC Mundo",
       "CBS News",
@@ -7106,13 +6990,6 @@
        "title": "Condenan a 158 años de cárcel a asesinos de surfistas extranjeros en México",
        "url": "https://crhoy.com/mundo/condenan-a-158-anos-de-carcel-a-asesinos-de-surfistas-extranjeros-en-mexico/",
        "publishedAt": "2026-10-16T21:36:40Z"
-      },
-      {
-       "source": "ABC News (Australia)",
-       "lang": "en",
-       "title": "Killers of Perth brothers Jake and Callum Robinson sentenced in Mexican court",
-       "url": "https://www.abc.net.au/news/2026-10-17/jake-callum-robinson-mexico-murder-trial-sentence/107271152",
-       "publishedAt": "2026-10-17T02:31:11Z"
       },
       {
        "source": "The Guardian",
@@ -7190,54 +7067,236 @@
    "maxOutlets": 4,
    "stories": [
     {
-     "headline": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+     "headline": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
      "headlineLang": "es",
-     "headlineEs": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
+     "headlineEs": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
      "headlineEn": null,
-     "summaryEs": "Los aparatos fueron interceptados tras entrar en el espacio aéreo rumano, en plena escalada de ataques contra buques mercantes en el mar Negro.",
-     "summaryEsSource": "20minutos",
+     "summaryEs": "Durante la jornada de protestas en París y otras ciudades hubo choques con la policía, que enfrentó a los manifestantes con gases lacrimógenos.",
+     "summaryEsSource": "La Prensa (Panamá)",
      "summaryEn": null,
      "summaryEnSource": null,
      "outlets": 4,
      "outletNames": [
-      "20minutos",
+      "BBC Mundo",
+      "El Observador",
+      "La Prensa (Panamá)",
+      "Prensa Libre"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T15:04:05Z",
+     "lastSeen": "2026-10-17T18:02:06Z",
+     "sources": [
+      {
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "\"Día de furia\" en Francia: asaltos a edificios y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
+       "url": "https://www.bbc.com/mundo/articles/cvwy7rzx34r1o",
+       "publishedAt": "2026-10-17T15:04:05Z"
+      },
+      {
+       "source": "La Prensa (Panamá)",
+       "lang": "es",
+       "title": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
+       "url": "https://www.prensa.com/mundo/dia-de-furia-en-francia-un-edificio-en-llamas-y-mas-de-270-detenidos-en-multitudinarias-protestas-por-la-educacion-y-el-costo-de-vida/",
+       "publishedAt": "2026-10-17T15:32:33Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "“Día de furia” en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
+       "url": "https://observador.cr/dia-de-furia-en-francia-un-edificio-en-llamas-y-mas-de-270-detenidos-en-multitudinarias-protestas-por-la-educacion-y-el-costo-de-vida/",
+       "publishedAt": "2026-10-17T17:20:11Z"
+      },
+      {
+       "source": "Prensa Libre",
+       "lang": "es",
+       "title": "“Día de furia” en Francia: asaltos a edificios y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
+       "url": "https://www.prensalibre.com/internacional/bbc-news-mundo-internacional/dia-de-furia-en-francia-asaltos-a-edificios-y-mas-de-270-detenidos-en-multitudinarias-protestas-por-la-educacion-y-el-costo-de-vida/",
+       "publishedAt": "2026-10-17T18:02:06Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "europa",
+       "label": "Europa"
+      }
+     ],
+     "id": "posibles-1"
+    },
+    {
+     "headline": "Expresidente senegalés Macky Sall retira su candidatura para dirigir la ONU",
+     "headlineLang": "es",
+     "headlineEs": "Expresidente senegalés Macky Sall retira su candidatura para dirigir la ONU",
+     "headlineEn": "Senegal's Macky Sall withdraws from race for UN top job",
+     "summaryEs": "El expresidente senegalés Macky Sall retiró su candidatura para dirigir la ONU tras una votación preliminar que favoreció a la costarricense Rebeca Grynspan.",
+     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEn": "Senegal’s former President Macky Sall is pulling out of the race to lead the United Nations. Saturday's announcement comes one day after an informal straw poll by UN Security Council members saw all seven candidates receive at least one veto.",
+     "summaryEnSource": "Africanews",
+     "outlets": 4,
+     "outletNames": [
       "ABC Color (Paraguay)",
-      "Infobae",
+      "Africanews",
+      "La Nación (Costa Rica)",
+      "Premium Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-17T13:28:15Z",
+     "lastSeen": "2026-10-17T18:00:13Z",
+     "sources": [
+      {
+       "source": "Africanews",
+       "lang": "en",
+       "title": "Senegal's Macky Sall withdraws from race for UN top job",
+       "url": "http://www.africanews.com/2026/10/17/senegals-macky-sall-withdraws-from-race-for-un-top-job/",
+       "publishedAt": "2026-10-17T13:28:15Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Expresidente senegalés Macky Sall retira su candidatura para dirigir la ONU",
+       "url": "https://www.nacion.com/el-mundo/expresidente-senegales-macky-sall-retira-su/QGEREC5CCNC6XCW5D6ICFUH234/story/",
+       "publishedAt": "2026-10-17T15:42:31Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Expresidente senegalés Macky Sall retira su candidatura a la Secretaría General de la ONU",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/expresidente-senegales-macky-sall-retira-su-candidatura-a-la-secretaria-general-de-la-onu/",
+       "publishedAt": "2026-10-17T17:35:07Z"
+      },
+      {
+       "source": "Premium Times",
+       "lang": "en",
+       "title": "Macky Sall withdraws from UN Secretary-General race",
+       "url": "https://www.premiumtimesng.com/news/headlines/917853-macky-sall-withdraws-from-un-secretary-general-race.html",
+       "publishedAt": "2026-10-17T18:00:13Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "africa",
+       "label": "África"
+      }
+     ],
+     "id": "posibles-2"
+    },
+    {
+     "headline": "US judge dismisses child sex abuse charges against actor Timothy Busfield",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "US judge dismisses child sex abuse charges against actor Timothy Busfield",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "New Mexico judge says prosecution did not act in a fair and impartial manner in case of actor, who denies the allegations",
+     "summaryEnSource": "The Irish Times",
+     "outlets": 4,
+     "outletNames": [
+      "BBC",
+      "Hindustan Times",
+      "The Guardian",
+      "The Irish Times"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-16T22:32:13Z",
+     "lastSeen": "2026-10-17T17:56:20Z",
+     "sources": [
+      {
+       "source": "Hindustan Times",
+       "lang": "en",
+       "title": "'Field of Dreams' actor Timothy Busfield's child sex abuse indictment dismissed",
+       "url": "https://www.hindustantimes.com/world-news/us-news/field-of-dreams-actor-timothy-busfields-child-sex-abuse-indictment-dismissed-101792187680520.html",
+       "publishedAt": "2026-10-16T22:32:13Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Judge throws out child sex abuse charges against actor Timothy Busfield",
+       "url": "https://www.bbc.co.uk/news/articles/c8vgxwq4q5r2o",
+       "publishedAt": "2026-10-17T00:38:34Z"
+      },
+      {
+       "source": "The Irish Times",
+       "lang": "en",
+       "title": "US judge dismisses child sex abuse charges against actor Timothy Busfield",
+       "url": "https://www.irishtimes.com/world/us/2026/10/17/us-judge-dismisses-child-sex-abuse-charges-against-actor-timothy-busfield/",
+       "publishedAt": "2026-10-17T07:42:29Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Child sex abuse charges against actor Timothy Busfield dismissed by judge",
+       "url": "https://www.theguardian.com/us-news/2026/oct/17/child-sex-abuse-charges-against-actor-timothy-busfield-dismissed-by-judge",
+       "publishedAt": "2026-10-17T17:56:20Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "latam",
+       "label": "Latinoamérica"
+      },
+      {
+       "id": "mundo",
+       "label": "Mundo"
+      }
+     ],
+     "id": "posibles-3"
+    },
+    {
+     "headline": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
+     "headlineLang": "es",
+     "headlineEs": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
+     "headlineEn": null,
+     "summaryEs": "Estudiantes, funcionarios y transportistas se sumaron a la convocatoria en unos 500 puntos del país; el presidente Macron había pedido calma.",
+     "summaryEsSource": "El Tiempo",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 4,
+     "outletNames": [
+      "El Financiero (México)",
+      "El Tiempo",
+      "La Nación (Costa Rica)",
       "La Vanguardia"
      ],
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-17T16:35:06Z",
-     "lastSeen": "2026-10-17T17:05:58Z",
+     "firstSeen": "2026-10-17T08:14:03Z",
+     "lastSeen": "2026-10-17T16:58:09Z",
      "sources": [
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/dos-cazas-rumanos-derriban-dos-drones-sobre-sus-aguas-territoriales-en-el-mar-negro/",
-       "publishedAt": "2026-10-17T16:35:06Z"
-      },
       {
        "source": "La Vanguardia",
        "lang": "es",
-       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
-       "url": "https://www.lavanguardia.com/internacional/20261017/11661529/dos-cazas-rumanos-derriban-dos-drones-sobre-aguas-territoriales-mar-negro.html",
-       "publishedAt": "2026-10-17T16:36:09Z"
+       "title": "Graves disturbios marcan el regreso de los 'chalecos amarillos' en Francia",
+       "url": "https://www.lavanguardia.com/internacional/20261017/11661342/primeros-bloqueos-ciudades-francesas-retorno-chalecos-amarillos.html",
+       "publishedAt": "2026-10-17T08:14:03Z"
       },
       {
-       "source": "20minutos",
+       "source": "El Financiero (México)",
        "lang": "es",
-       "title": "Dos cazas rumanos derriban dos drones sobre sus aguas territoriales en el mar Negro",
-       "url": "https://www.20minutos.es/internacional/dos-cazas-rumanos-derriban-dos-drones-sobre-sus-aguas-territoriales-mar-negro_7050044_0.html",
-       "publishedAt": "2026-10-17T17:04:01Z"
+       "title": "Francia ‘arde’ por el costo de vida: Protestas dejan incendios, saqueos y 272 detenidos",
+       "url": "https://www.elfinanciero.com.mx/mundo/2026/10/17/francia-arde-por-el-costo-de-vida-protestas-dejan-incendios-saqueos-y-272-detenidos/",
+       "publishedAt": "2026-10-17T16:27:37Z"
       },
       {
-       "source": "Infobae",
+       "source": "El Tiempo",
        "lang": "es",
-       "title": "Rumania interceptó y derribó dos drones en su espacio aéreo sobre el mar Negro",
-       "url": "https://www.infobae.com/america/mundo/2026/10/17/rumania-intercepto-y-derribo-dos-drones-en-su-espacio-aereo-sobre-el-mar-negro/",
-       "publishedAt": "2026-10-17T17:05:58Z"
+       "title": "Regresan los chalecos amarillos: protestas por el costo de vida dejan choques, 272 detenidos y ayuntamientos invadidos en Francia",
+       "url": "https://www.eltiempo.com/mundo/europa/regresan-los-chalecos-amarillos-protestas-por-el-costo-de-vida-dejan-choques-272-detenidos-y-ayuntamientos-invadidos-en-francia-3594281",
+       "publishedAt": "2026-10-17T16:50:37Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Protestas en Francia reúnen a 500.000 personas y dejan enfrentamientos, detenidos y un manifestante herido",
+       "url": "https://www.nacion.com/el-mundo/protestas-en-francia-reunen-a-500000-personas-y/JZN2XCLM7NBO7GHGVCAFZTACXU/story/",
+       "publishedAt": "2026-10-17T16:58:09Z"
       }
      ],
      "chips": [
@@ -7246,11 +7305,11 @@
        "label": "Europa"
       },
       {
-       "id": "mundo",
-       "label": "Mundo"
+       "id": "sucesos",
+       "label": "Sucesos"
       }
      ],
-     "id": "posibles-1"
+     "id": "posibles-4"
     },
     {
      "headline": "Rectora del TEC afirma que superávit no se puede destinar a sede de Limón luego de que ministro del MEP la acusara de ‘extorsión política’",
@@ -7309,7 +7368,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-2"
+     "id": "posibles-5"
     },
     {
      "headline": "El Defensor del Pueblo lleva al Tribunal Constitucional la 'ley de nietos'",
@@ -7368,7 +7427,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-3"
+     "id": "posibles-6"
     },
     {
      "headline": "Líder independentista escocés dice que la campaña por un nuevo referéndum ya ha comenzado",
@@ -7432,7 +7491,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-4"
+     "id": "posibles-7"
     },
     {
      "headline": "Detenidos dos menores por la muerte de una mujer inmovilizada y amordazada en un robo",
@@ -7491,7 +7550,7 @@
        "label": "Sucesos"
       }
      ],
-     "id": "posibles-5"
+     "id": "posibles-8"
     },
     {
      "headline": "Detenido El Ingeniero, constructor de túneles para el tráfico de drogas del CJNG a Estados Unidos",
@@ -7550,7 +7609,7 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-6"
+     "id": "posibles-9"
     },
     {
      "headline": "Sánchez hace de su mitin un acto de amor a Begoña Gómez, a la espera de juicio: \"Nos han intentado quebrar, que nos escuchen alto y claro, te quiero\"",
@@ -7613,7 +7672,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-7"
+     "id": "posibles-10"
     },
     {
      "headline": "At least 10 killed in fire at Bangladesh beach resort",
@@ -7672,7 +7731,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-8"
+     "id": "posibles-11"
     },
     {
      "headline": "Un superpetrolero arde tras chocar con mina en el estrecho de Ormuz, según la Guardia Revolucionaria iraní",
@@ -7735,7 +7794,7 @@
        "label": "Guerras actuales"
       }
      ],
-     "id": "posibles-9"
+     "id": "posibles-12"
     },
     {
      "headline": "Corea del Norte afirma haber probado un nuevo sistema de torpedos con IA",
@@ -7802,7 +7861,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-10"
+     "id": "posibles-13"
     },
     {
      "headline": "Washington prohíbe vuelos de drones en frontera con México",
@@ -7862,7 +7921,7 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-11"
+     "id": "posibles-14"
     },
     {
      "headline": "Analizan EU y Argentina más inversiones y seguridad",
@@ -7921,7 +7980,7 @@
        "label": "Sudamérica"
       }
      ],
-     "id": "posibles-12"
+     "id": "posibles-15"
     },
     {
      "headline": "Tensión en LaLiga: Real Madrid exige la dimisión de Javier Tebas tras comparaciones con propaganda nazi",
@@ -7984,7 +8043,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-13"
+     "id": "posibles-16"
     },
     {
      "headline": "Japan mistakenly issues 9.9-magnitude quake alert after 6.9 tremor near Russia, retracts it within minutes",
@@ -8043,7 +8102,82 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-14"
+     "id": "posibles-17"
+    },
+    {
+     "headline": "Juzgado ordena separar por un año a 10 personas de la directiva, fiscalización y gerencia de la Asociación Solidarista de Servidores Judiciales",
+     "headlineLang": "es",
+     "headlineEs": "Juzgado ordena separar por un año a 10 personas de la directiva, fiscalización y gerencia de la Asociación Solidarista de Servidores Judiciales",
+     "headlineEn": null,
+     "summaryEs": "Juzgado ordena separar por un año a 10 personas de sus cargos en Asosejud, investigadas por presunta administración fraudulenta contra la organización.",
+     "summaryEsSource": "El Financiero (Costa Rica)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 4,
+     "outletNames": [
+      "CRHoy",
+      "El Financiero (Costa Rica)",
+      "La Nación (Costa Rica)",
+      "La Teja",
+      "Semanario Universidad",
+      "Trivisión"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T14:54:21Z",
+     "lastSeen": "2026-10-16T22:52:22Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Juzgado ordena separar por un año a 10 investigados de Asosejud",
+       "url": "https://crhoy.com/nacionales/juzgado-ordena-separar-por-un-ano-a-10-investigados-de-asosejud/",
+       "publishedAt": "2026-10-16T14:54:21Z"
+      },
+      {
+       "source": "El Financiero (Costa Rica)",
+       "lang": "es",
+       "title": "Juzgado ordena separar por un año a 10 personas de la directiva, fiscalización y gerencia de la Asociación Solidarista de Servidores Judiciales",
+       "url": "https://www.elfinancierocr.com/economia-y-politica/juzgado-ordena-separar-por-un-ano-a-10-personas-de/WU72IRCBV5HHNMOZHRJU6W4FIY/story/",
+       "publishedAt": "2026-10-16T21:20:02Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Juzgado separa por un año a 10 jerarcas de la Asociación Solidarista de Servidores Judiciales por presunta administración fraudulenta",
+       "url": "https://www.nacion.com/sucesos/juzgado-separa-por-un-ano-a-10-jerarcas-de-la/JXWH3I5XNRGHLPDALOTMT5EZQ4/story/",
+       "publishedAt": "2026-10-16T21:22:04Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Separan por un año a la junta directiva y la gerencia de la Asociación Solidarista de Servidores Judiciales",
+       "url": "https://www.lateja.cr/sucesos/separan-por-un-ano-a-la-junta-directiva-y-la/5UXPFFKCARDPJFM24UHBR5MCFI/story/",
+       "publishedAt": "2026-10-16T22:03:57Z"
+      },
+      {
+       "source": "Trivisión",
+       "lang": "es",
+       "title": "Separan por un año a 10 directivos de ASOSEJUD por presunto fraude",
+       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQN2hkN3BJRzFnalc1M01Zdmhuamx3U1hIXzBTSkpHbmxadE1raXVCMVh0RHFqa1E4Z1pfSkR6ZVhOS0swREM5R2lEeEoxUExEZ3NRbGJ3NVRrLUpfTzVVZ2JtYm5ZaVh3TGhBTEJleklvNlYwUjFRcXdHSzZnVFFQUUVQRE0xUmo5R1VwcE5DNUNEZkRkdXNHOVJFTHc4THJuMWRtd0hnV2JjeHZoU3Y2Vw?oc=5",
+       "publishedAt": "2026-10-16T22:41:54Z"
+      },
+      {
+       "source": "Semanario Universidad",
+       "lang": "es",
+       "title": "Juzgado separa por un año a altos cargos de Asosejud por supuesta administración fraudulenta",
+       "url": "https://semanariouniversidad.com/pais/juzgado-separa-por-un-ano-a-altos-cargos-de-asosejud-por-supuesta-administracion-fraudulenta/",
+       "publishedAt": "2026-10-16T22:52:22Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      }
+     ],
+     "id": "posibles-18"
     },
     {
      "headline": "Scammer Lost $4.8M in Bitcoin to Tampered Ledger Wallets: Chainalysis",
@@ -8103,7 +8237,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-15"
+     "id": "posibles-19"
     },
     {
      "headline": "Katie Zacharia deja el cargo de secretaria de prensa de la Casa Blanca apenas días después de asumirlo",
@@ -8169,70 +8303,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-16"
-    },
-    {
-     "headline": "Germany, France agree on deal to support Europe's struggling car industry",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Germany, France agree on deal to support Europe's struggling car industry",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "The two countries said the agreement aimed to safeguard Europe's automotive industry, encouraging development and research. Automakers in Europe have so far struggled to compete with Chinese electric car companies.",
-     "summaryEnSource": "DW",
-     "outlets": 4,
-     "outletNames": [
-      "DW",
-      "Euronews",
-      "France 24",
-      "RFI"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-15T23:48:57Z",
-     "lastSeen": "2026-10-16T15:31:00Z",
-     "sources": [
-      {
-       "source": "France 24",
-       "lang": "en",
-       "title": "France and Germany agree to ease EU car emissions rules in new deal",
-       "url": "https://www.france24.com/en/europe/20261015-france-and-germany-agree-to-ease-eu-car-emissions-rules-in-new-deal",
-       "publishedAt": "2026-10-15T23:48:57Z"
-      },
-      {
-       "source": "Euronews",
-       "lang": "en",
-       "title": "France and Germany strike car-industry deal linking 2035 engine rules to ‘Made in Europe’ push",
-       "url": "https://www.euronews.com/2026/10/16/france-and-germany-strike-car-industry-deal-linking-2035-engine-rules-to-made-in-europe-pu",
-       "publishedAt": "2026-10-16T12:36:20Z"
-      },
-      {
-       "source": "RFI",
-       "lang": "en",
-       "title": "France and Germany strike deal to boost Europe's struggling car industry",
-       "url": "https://www.rfi.fr/en/international/20261016-france-and-germany-strike-deal-to-boost-europe-s-struggling-car-industry",
-       "publishedAt": "2026-10-16T14:38:29Z"
-      },
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "Germany, France agree on deal to support Europe's struggling car industry",
-       "url": "https://www.dw.com/en/germany-france-agree-on-deal-to-support-europe-s-struggling-car-industry/a-79678595?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-16T15:31:00Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "europa",
-       "label": "Europa"
-      },
-      {
-       "id": "mundo",
-       "label": "Mundo"
-      }
-     ],
-     "id": "posibles-17"
+     "id": "posibles-20"
     },
     {
      "headline": "Juez que aprobó extradición de Celso Gamboa y Pecho de Rata recibió amenazas de muerte desde otros países",
@@ -8291,360 +8362,151 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-18"
-    },
-    {
-     "headline": "Un avión de Vueling aterriza de emergencia en Barcelona tras chocar con una bandada de aves",
-     "headlineLang": "es",
-     "headlineEs": "Un avión de Vueling aterriza de emergencia en Barcelona tras chocar con una bandada de aves",
-     "headlineEn": null,
-     "summaryEs": "El vuelo, con destino a Milán, regresó a El Prat sin que se registraran heridos",
-     "summaryEsSource": "La Vanguardia",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "ABC Color (Paraguay)",
-      "Infobae",
-      "La Vanguardia"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T17:09:06Z",
-     "lastSeen": "2026-10-17T17:43:22Z",
-     "sources": [
-      {
-       "source": "La Vanguardia",
-       "lang": "es",
-       "title": "Un avión de Vueling aterriza de emergencia en Barcelona tras chocar con una bandada de aves",
-       "url": "https://www.lavanguardia.com/local/barcelona/20261017/11661540/avion-vueling-aterriza-emergencia-barcelona-chocar-aves.html",
-       "publishedAt": "2026-10-17T17:09:06Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Aterriza de emergencia en Barcelona un avión con destino Milán tras impactar contra aves",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/aterriza-de-emergencia-en-barcelona-un-avion-con-destino-milan-tras-impactar-contra-aves/",
-       "publishedAt": "2026-10-17T17:20:07Z"
-      },
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Un avión de Vueling rumbo a Milán aterriza de emergencia en Barcelona tras chocar con aves y sufrir un incendio en un motor",
-       "url": "https://www.infobae.com/espana/2026/10/17/un-avion-de-vueling-rumbo-a-milan-aterriza-de-emergencia-en-barcelona-tras-chocar-con-aves-y-sufrir-un-incendio-en-un-motor/",
-       "publishedAt": "2026-10-17T17:43:22Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "europa",
-       "label": "Europa"
-      },
-      {
-       "id": "sucesos",
-       "label": "Sucesos"
-      }
-     ],
-     "id": "posibles-19"
-    },
-    {
-     "headline": "Director de la DAET respalda reducir la edad punible para menores vinculados a maras",
-     "headlineLang": "es",
-     "headlineEs": "Director de la DAET respalda reducir la edad punible para menores vinculados a maras",
-     "headlineEn": null,
-     "summaryEs": "*** Molina consideró necesario revisar la legislación ante la participación de menores de edad en actividades delictivas vinculadas a maras y pandillas. El director de la División Anti Extorsión y Asociaciones Terroristas (DAET), Daniel Molina respaldó la propuesta de reducir la edad punible para menores vinculados a maras y pandillas, señalando que algunos jóvenes participan […] La entrada…",
-     "summaryEsSource": "Hondudiario",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "Hondudiario",
-      "Infobae",
-      "Proceso Digital (Honduras)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T17:18:32Z",
-     "lastSeen": "2026-10-17T17:37:12Z",
-     "sources": [
-      {
-       "source": "Proceso Digital (Honduras)",
-       "lang": "es",
-       "title": "Constitucionalista de acuerdo con reducir la edad punible",
-       "url": "https://proceso.hn/constitucionalista-de-acuerdo-con-reducir-la-edad-punible/",
-       "publishedAt": "2026-10-16T17:18:32Z"
-      },
-      {
-       "source": "Hondudiario",
-       "lang": "es",
-       "title": "Director de la DAET respalda reducir la edad punible para menores vinculados a maras",
-       "url": "https://www.hondudiario.com/2026/10/16/director-de-la-daet-respalda-reducir-la-edad-punible-para-menores-vinculados-a-maras/",
-       "publishedAt": "2026-10-17T00:38:30Z"
-      },
-      {
-       "source": "Infobae",
-       "lang": "es",
-       "title": "Honduras debate si reduce la edad punible ante participación de menores en maras y pandillas",
-       "url": "https://www.infobae.com/honduras/2026/10/17/honduras-debate-si-reduce-la-edad-punible-ante-participacion-de-menores-en-maras-y-pandillas/",
-       "publishedAt": "2026-10-17T17:37:12Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "centroamerica",
-       "label": "Centroamérica"
-      }
-     ],
-     "id": "posibles-20"
-    },
-    {
-     "headline": "Expresidente senegalés Macky Sall retira su candidatura para dirigir la ONU",
-     "headlineLang": "es",
-     "headlineEs": "Expresidente senegalés Macky Sall retira su candidatura para dirigir la ONU",
-     "headlineEn": "Senegal's Macky Sall withdraws from race for UN top job",
-     "summaryEs": "El expresidente senegalés Macky Sall retiró su candidatura para dirigir la ONU tras una votación preliminar que favoreció a la costarricense Rebeca Grynspan.",
-     "summaryEsSource": "La Nación (Costa Rica)",
-     "summaryEn": "Senegal’s former President Macky Sall is pulling out of the race to lead the United Nations. Saturday's announcement comes one day after an informal straw poll by UN Security Council members saw all seven candidates receive at least one veto.",
-     "summaryEnSource": "Africanews",
-     "outlets": 3,
-     "outletNames": [
-      "ABC Color (Paraguay)",
-      "Africanews",
-      "La Nación (Costa Rica)"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-17T13:28:15Z",
-     "lastSeen": "2026-10-17T17:35:07Z",
-     "sources": [
-      {
-       "source": "Africanews",
-       "lang": "en",
-       "title": "Senegal's Macky Sall withdraws from race for UN top job",
-       "url": "http://www.africanews.com/2026/10/17/senegals-macky-sall-withdraws-from-race-for-un-top-job/",
-       "publishedAt": "2026-10-17T13:28:15Z"
-      },
-      {
-       "source": "La Nación (Costa Rica)",
-       "lang": "es",
-       "title": "Expresidente senegalés Macky Sall retira su candidatura para dirigir la ONU",
-       "url": "https://www.nacion.com/el-mundo/expresidente-senegales-macky-sall-retira-su/QGEREC5CCNC6XCW5D6ICFUH234/story/",
-       "publishedAt": "2026-10-17T15:42:31Z"
-      },
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Expresidente senegalés Macky Sall retira su candidatura a la Secretaría General de la ONU",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/expresidente-senegales-macky-sall-retira-su-candidatura-a-la-secretaria-general-de-la-onu/",
-       "publishedAt": "2026-10-17T17:35:07Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "africa",
-       "label": "África"
-      }
-     ],
      "id": "posibles-21"
     },
     {
-     "headline": "Araqchí dice en OCI que Ormuz podría reabrirse en siete días si EEUU acepta plan iraní",
+     "headline": "Detienen a César Jáuregui, exfiscal de Chihuahua, por investigación sobre operativo con agentes de la CIA",
      "headlineLang": "es",
-     "headlineEs": "Araqchí dice en OCI que Ormuz podría reabrirse en siete días si EEUU acepta plan iraní",
+     "headlineEs": "Detienen a César Jáuregui, exfiscal de Chihuahua, por investigación sobre operativo con agentes de la CIA",
      "headlineEn": null,
-     "summaryEs": "El ministro de Exteriores iraní, Abás Araqchí, afirmó este sábado durante una reunión de la Organización de Cooperación Islámica (OCI) en Bagdad que el tráfico en el estrecho de Ormuz podría reabrirse en un plazo de siete días si Estados Unidos acepta la propuesta de Teherán. La entrada Araqchí dice en OCI que Ormuz podría reabrirse en siete días si EEUU acepta plan iraní se publicó primero en…",
-     "summaryEsSource": "Proceso Digital (Honduras)",
+     "summaryEs": "Detienen a César Jáuregui, exfiscal de Chihuahua, por presunto ejercicio ilegal del servicio público y falsedad ante las autoridades, dentro de una investigación por un operativo de abril de 2026.",
+     "summaryEsSource": "El Financiero (México)",
      "summaryEn": null,
      "summaryEnSource": null,
      "outlets": 3,
      "outletNames": [
-      "ABC Color (Paraguay)",
-      "Expansión",
-      "Proceso Digital (Honduras)"
+      "El Financiero (México)",
+      "El Universal (México)",
+      "Infobae"
      ],
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-17T14:35:11Z",
-     "lastSeen": "2026-10-17T17:22:50Z",
+     "firstSeen": "2026-10-17T17:57:03Z",
+     "lastSeen": "2026-10-17T18:10:28Z",
      "sources": [
       {
-       "source": "ABC Color (Paraguay)",
+       "source": "El Universal (México)",
        "lang": "es",
-       "title": "Araqchí dice en OCI que Ormuz podría reabrirse en siete días si EE.UU. acepta plan iraní",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/araqchi-dice-en-oci-que-ormuz-podria-reabrirse-en-siete-dias-si-eeuu-acepta-plan-irani/",
-       "publishedAt": "2026-10-17T14:35:11Z"
+       "title": "Detienen al exfiscal de Chihuahua, César Jáuregui, por uso indebido de funciones; gobernadora confirma investigación en su contra",
+       "url": "https://www.eluniversal.com.mx/estados/detienen-al-exfiscal-de-chihuahua-cesar-jauregui-por-uso-indebido-de-funciones-gobernadora-confirma-investigacion-en-su-contra/",
+       "publishedAt": "2026-10-17T17:57:03Z"
       },
       {
-       "source": "Proceso Digital (Honduras)",
+       "source": "El Financiero (México)",
        "lang": "es",
-       "title": "Araqchí dice en OCI que Ormuz podría reabrirse en siete días si EEUU acepta plan iraní",
-       "url": "https://proceso.hn/araqchi-dice-en-oci-que-ormuz-podria-reabrirse-en-siete-dias-si-eeuu-acepta-plan-irani/",
-       "publishedAt": "2026-10-17T14:42:01Z"
+       "title": "Detienen a César Jáuregui, exfiscal de Chihuahua, por investigación sobre operativo con agentes de la CIA",
+       "url": "https://www.elfinanciero.com.mx/estados/2026/10/17/detienen-a-cesar-jauregui-exfiscal-de-chihuahua-por-investigacion-sobre-operativo-con-agentes-de-la-cia/",
+       "publishedAt": "2026-10-17T18:07:23Z"
       },
       {
-       "source": "Expansión",
+       "source": "Infobae",
        "lang": "es",
-       "title": "Irán afirma que el estrecho de Ormuz podría reabrirse en siete días si EEUU acepta su plan",
-       "url": "https://www.expansion.com/economia/2026/10/17/iran-afirma-estrecho-ormuz-podria-reabrirse-siete-dias-eeuu-acepta-plan.html",
-       "publishedAt": "2026-10-17T17:22:50Z"
+       "title": "César Jáuregui, exfiscal de Chihuahua, es detenido tras investigación por el caso CIA",
+       "url": "https://www.infobae.com/mexico/2026/10/17/detienen-a-cesar-jauregui-ex-fiscal-de-chihuahua/",
+       "publishedAt": "2026-10-17T18:10:28Z"
       }
      ],
      "chips": [
       {
-       "id": "asia",
-       "label": "Asia"
+       "id": "latam",
+       "label": "Latinoamérica"
       }
      ],
      "id": "posibles-22"
     },
     {
-     "headline": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
+     "headline": "Extranjero sufrió violento asalto en San José con “candado chino”",
      "headlineLang": "es",
-     "headlineEs": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
+     "headlineEs": "Extranjero sufrió violento asalto en San José con “candado chino”",
      "headlineEn": null,
-     "summaryEs": "Durante la jornada de protestas en París y otras ciudades hubo choques con la policía, que enfrentó a los manifestantes con gases lacrimógenos.",
-     "summaryEsSource": "La Prensa (Panamá)",
+     "summaryEs": "La víctima sufrió golpes en el rostro y fue trasladada a un centro médico",
+     "summaryEsSource": "Diario Extra",
      "summaryEn": null,
      "summaryEnSource": null,
      "outlets": 3,
      "outletNames": [
-      "BBC Mundo",
-      "El Observador",
-      "La Prensa (Panamá)"
+      "CRHoy",
+      "Diario Extra",
+      "La Nación (Costa Rica)"
      ],
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-17T15:04:05Z",
-     "lastSeen": "2026-10-17T17:20:11Z",
+     "firstSeen": "2026-10-17T10:08:10Z",
+     "lastSeen": "2026-10-17T18:02:05Z",
      "sources": [
       {
-       "source": "BBC Mundo",
+       "source": "CRHoy",
        "lang": "es",
-       "title": "\"Día de furia\" en Francia: asaltos a edificios y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
-       "url": "https://www.bbc.com/mundo/articles/cvwy7rzx34r1o",
-       "publishedAt": "2026-10-17T15:04:05Z"
+       "title": "Extranjero sufrió violento asalto en San José con “candado chino”",
+       "url": "https://crhoy.com/nacionales/extranjero-sufrio-violento-asalto-en-san-jose-con-candado-chino/",
+       "publishedAt": "2026-10-17T10:08:10Z"
       },
       {
-       "source": "La Prensa (Panamá)",
+       "source": "La Nación (Costa Rica)",
        "lang": "es",
-       "title": "‘Día de furia’ en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
-       "url": "https://www.prensa.com/mundo/dia-de-furia-en-francia-un-edificio-en-llamas-y-mas-de-270-detenidos-en-multitudinarias-protestas-por-la-educacion-y-el-costo-de-vida/",
-       "publishedAt": "2026-10-17T15:32:33Z"
+       "title": "Usan ‘candado chino’ para someter a neerlandés y robarle el celular en el centro de San José",
+       "url": "https://www.nacion.com/sucesos/usan-candado-chino-para-someter-a-neerlandes-y/4QMIRFFMYFAVZMJXNGFQX6BJ6I/story/",
+       "publishedAt": "2026-10-17T16:25:12Z"
       },
       {
-       "source": "El Observador",
+       "source": "Diario Extra",
        "lang": "es",
-       "title": "“Día de furia” en Francia: un edificio en llamas y más de 270 detenidos en multitudinarias protestas por la educación y el costo de vida",
-       "url": "https://observador.cr/dia-de-furia-en-francia-un-edificio-en-llamas-y-mas-de-270-detenidos-en-multitudinarias-protestas-por-la-educacion-y-el-costo-de-vida/",
-       "publishedAt": "2026-10-17T17:20:11Z"
+       "title": "Extranjero es víctima de violento asalto con “candado chino”",
+       "url": "https://www.diarioextra.com/noticia/extranjero-es-victima-de-violento-asalto-con-candado-chino/",
+       "publishedAt": "2026-10-17T18:02:05Z"
       }
      ],
      "chips": [
       {
-       "id": "europa",
-       "label": "Europa"
+       "id": "costarica",
+       "label": "Costa Rica"
       }
      ],
      "id": "posibles-23"
     },
     {
-     "headline": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
-     "headlineLang": "es",
-     "headlineEs": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
-     "headlineEn": null,
-     "summaryEs": "El joven herido explicó, de acuerdo con el relato de los sanitarios, que había cogido del suelo la granada antes de explotar.",
-     "summaryEsSource": "El Nacional (Venezuela)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "ABC Color (Paraguay)",
-      "El Nacional (Venezuela)",
-      "El Universal (México)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T16:11:03Z",
-     "lastSeen": "2026-10-17T17:02:46Z",
-     "sources": [
-      {
-       "source": "ABC Color (Paraguay)",
-       "lang": "es",
-       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
-       "url": "https://www.abc.com.py/internacionales/2026/10/17/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
-       "publishedAt": "2026-10-17T16:11:03Z"
-      },
-      {
-       "source": "El Universal (México)",
-       "lang": "es",
-       "title": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
-       "url": "https://www.eluniversal.com.mx/mundo/video-disturbios-en-francia-durante-protestas-por-encarecimiento-de-la-vida-joven-pierde-una-mano-al-explotarle-granada-policial/",
-       "publishedAt": "2026-10-17T17:02:23Z"
-      },
-      {
-       "source": "El Nacional (Venezuela)",
-       "lang": "es",
-       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
-       "url": "https://www.elnacional.com/2026/10/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
-       "publishedAt": "2026-10-17T17:02:46Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "europa",
-       "label": "Europa"
-      }
-     ],
-     "id": "posibles-24"
-    },
-    {
-     "headline": "Alligator kills 71-year-old man fishing in Florida",
+     "headline": "Ilhan Omar’s attorneys say federal search of her home was ‘neither justified nor lawful’",
      "headlineLang": "en",
      "headlineEs": null,
-     "headlineEn": "Alligator kills 71-year-old man fishing in Florida",
+     "headlineEn": "Ilhan Omar’s attorneys say federal search of her home was ‘neither justified nor lawful’",
      "summaryEs": null,
      "summaryEsSource": null,
-     "summaryEn": "The 3.7m (12ft) alligator reportedly dragged the man into the water where he was fishing near Orlando.",
-     "summaryEnSource": "BBC",
+     "summaryEn": "Minnesota lawmaker’s attorneys asked for return of seized items and the preservation of any recordings of search Ilhan Omar ’s attorneys have asked the US Department of Justice to return property that federal agents removed days earlier from her home during a search. The lawyers for the Minnesota Democrat contended that the seizure as “neither justified nor lawful”, according to a letter that the…",
+     "summaryEnSource": "The Guardian",
      "outlets": 3,
      "outletNames": [
-      "BBC",
-      "CBS News",
-      "The Guardian"
+      "Al Jazeera",
+      "The Guardian",
+      "The New York Times"
      ],
      "languages": [
       "en"
      ],
-     "firstSeen": "2026-10-17T13:38:18Z",
-     "lastSeen": "2026-10-17T16:52:38Z",
+     "firstSeen": "2026-10-17T14:21:24Z",
+     "lastSeen": "2026-10-17T18:01:05Z",
      "sources": [
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Alligator kills 71-year-old man fishing at pond in Florida",
-       "url": "https://www.cbsnews.com/news/alligator-kills-man-fishing-at-pond-winter-garden-florida/",
-       "publishedAt": "2026-10-17T13:38:18Z"
-      },
       {
        "source": "The Guardian",
        "lang": "en",
-       "title": "Florida fisher dragged into water and killed by 12ft alligator",
-       "url": "https://www.theguardian.com/us-news/2026/oct/17/alligator-attack-florida-fisher-killed",
-       "publishedAt": "2026-10-17T15:23:32Z"
+       "title": "Ilhan Omar’s attorneys say federal search of her home was ‘neither justified nor lawful’",
+       "url": "https://www.theguardian.com/us-news/2026/oct/17/ilhan-omar-search-seized-items",
+       "publishedAt": "2026-10-17T14:21:24Z"
       },
       {
-       "source": "BBC",
+       "source": "Al Jazeera",
        "lang": "en",
-       "title": "Alligator kills 71-year-old man fishing in Florida",
-       "url": "https://www.bbc.co.uk/news/articles/c84g1d1xd029o",
-       "publishedAt": "2026-10-17T16:52:38Z"
+       "title": "Ilhan Omar’s lawyers demand the return of property seized in house raid",
+       "url": "https://www.aljazeera.com/news/2026/10/17/ilhan-omars-lawyers-demand-the-return-of-property-seized-in-house-raid?traffic_source=rss",
+       "publishedAt": "2026-10-17T15:20:27Z"
+      },
+      {
+       "source": "The New York Times",
+       "lang": "en",
+       "title": "Ilhan Omar’s Sister’s Phone Was Seized Before Search of Lawmaker’s Home",
+       "url": "https://www.nytimes.com/2026/10/16/us/politics/ilhan-omar-investigation-phone.html",
+       "publishedAt": "2026-10-17T18:01:05Z"
       }
      ],
      "chips": [
@@ -8653,7 +8515,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-25"
+     "id": "posibles-24"
     },
     {
      "headline": "Temblor en Perú: epicentro y magnitud del último sismo del sábado 17 de octubre",
@@ -8674,7 +8536,7 @@
       "es"
      ],
      "firstSeen": "2026-10-15T22:09:45Z",
-     "lastSeen": "2026-10-17T16:33:54Z",
+     "lastSeen": "2026-10-17T17:57:49Z",
      "sources": [
       {
        "source": "RPP (Perú)",
@@ -8696,6 +8558,13 @@
        "title": "Temblor de magnitud 5.1 y otros dos sismos registra el Insivumeh en las últimas horas",
        "url": "https://www.prensalibre.com/guatemala/comunitario/temblor-de-magnitud-5-1-y-otros-dos-sismos-registra-el-insivumeh-en-las-ultimas-horas-breaking/",
        "publishedAt": "2026-10-16T14:46:55Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Sismos registrados en el Perú este miércoles 14 de octubre",
+       "url": "https://elcomercio.pe/peru/temblor-hoy-en-peru-consulta-donde-ocurrio-el-ultimo-sismo-magnitud-y-reporte-segun-el-igp-tdpe-noticia/",
+       "publishedAt": "2026-10-16T21:49:18Z"
       },
       {
        "source": "RPP (Perú)",
@@ -8766,6 +8635,13 @@
        "title": "Temblor en Venezuela: magnitud, hora y lugar del último sismo de hoy, sábado 17 de octubre",
        "url": "https://elcomercio.pe/respuestas/venezuela/temblor-en-venezuela-en-vivo-magnitud-epicentro-e-intensidad-del-ultimo-sismo-reportado-este-17-y-18-de-octubre-de-2026-segun-el-funvisis-proteccion-civil-caracas-la-guaira-lbposting-noticia/",
        "publishedAt": "2026-10-17T16:33:54Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Último temblor en Perú hoy, 17 de octubre: epicentro y magnitud del sismo",
+       "url": "https://elcomercio.pe/peru/ultimo-temblor-en-peru-hoy-epicentro-del-sismo-y-magnitud-ultima-hora-censis-tdpe-noticia/",
+       "publishedAt": "2026-10-17T17:57:49Z"
       }
      ],
      "chips": [
@@ -8774,49 +8650,278 @@
        "label": "Sudamérica"
       }
      ],
-     "id": "posibles-26"
+     "id": "posibles-25"
     },
     {
-     "headline": "Ilhan Omar’s attorneys say federal search of her home was ‘neither justified nor lawful’",
+     "headline": "Looting, blazes and clashes in France amid nationwide protests",
      "headlineLang": "en",
      "headlineEs": null,
-     "headlineEn": "Ilhan Omar’s attorneys say federal search of her home was ‘neither justified nor lawful’",
+     "headlineEn": "Looting, blazes and clashes in France amid nationwide protests",
      "summaryEs": null,
      "summaryEsSource": null,
-     "summaryEn": "Minnesota lawmaker’s attorneys asked for return of seized items and the preservation of any recordings of search Ilhan Omar ’s attorneys have asked the US Department of Justice to return property that federal agents removed days earlier from her home during a search. The lawyers for the Minnesota Democrat contended that the seizure as “neither justified nor lawful”, according to a letter that the…",
-     "summaryEnSource": "The Guardian",
+     "summaryEn": "Police and protesters clashed violently in Paris and other French cities Saturday on the sidelines of nationwide marches against soaring inflation, with one demonstrator's hand blown off, multiple blazes set and looters breaking into dozens of stores to strip them bare.",
+     "summaryEnSource": "France 24",
      "outlets": 3,
      "outletNames": [
-      "Al Jazeera",
-      "The Guardian",
-      "The New York Times"
+      "Dawn",
+      "France 24",
+      "The Local"
      ],
      "languages": [
       "en"
      ],
-     "firstSeen": "2026-10-17T14:21:24Z",
-     "lastSeen": "2026-10-17T16:33:36Z",
+     "firstSeen": "2026-10-17T09:33:19Z",
+     "lastSeen": "2026-10-17T17:51:29Z",
      "sources": [
+      {
+       "source": "The Local",
+       "lang": "en",
+       "title": "LATEST: Nationwide protests in France marred by looting, fires and violence",
+       "url": "https://www.thelocal.com/20261017/macron-calls-for-calm-amid-fears-of-violence-at-france-protests",
+       "publishedAt": "2026-10-17T09:33:19Z"
+      },
+      {
+       "source": "France 24",
+       "lang": "en",
+       "title": "Looting, blazes and clashes in France amid nationwide protests",
+       "url": "https://www.france24.com/en/live-news/20261017-french-protesters-clash-with-police-during-nationwide-demonstrations",
+       "publishedAt": "2026-10-17T12:31:24Z"
+      },
+      {
+       "source": "Dawn",
+       "lang": "en",
+       "title": "Looting, blazes and clashes in France amid nationwide protests",
+       "url": "https://www.dawn.com/news/2037825/looting-blazes-and-clashes-in-france-amid-nationwide-protests",
+       "publishedAt": "2026-10-17T17:51:29Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "europa",
+       "label": "Europa"
+      }
+     ],
+     "id": "posibles-26"
+    },
+    {
+     "headline": "Un avión de Vueling aterriza de emergencia en Barcelona tras chocar con una bandada de aves",
+     "headlineLang": "es",
+     "headlineEs": "Un avión de Vueling aterriza de emergencia en Barcelona tras chocar con una bandada de aves",
+     "headlineEn": null,
+     "summaryEs": "El vuelo, con destino a Milán, regresó a El Prat sin que se registraran heridos",
+     "summaryEsSource": "La Vanguardia",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "Infobae",
+      "La Vanguardia"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T17:09:06Z",
+     "lastSeen": "2026-10-17T17:46:31Z",
+     "sources": [
+      {
+       "source": "La Vanguardia",
+       "lang": "es",
+       "title": "Un avión de Vueling aterriza de emergencia en Barcelona tras chocar con una bandada de aves",
+       "url": "https://www.lavanguardia.com/local/barcelona/20261017/11661540/avion-vueling-aterriza-emergencia-barcelona-chocar-aves.html",
+       "publishedAt": "2026-10-17T17:09:06Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Aterriza de emergencia en Barcelona un avión con destino Milán tras impactar contra aves",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/aterriza-de-emergencia-en-barcelona-un-avion-con-destino-milan-tras-impactar-contra-aves/",
+       "publishedAt": "2026-10-17T17:20:07Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Un avión de Vueling rumbo a Milán aterriza de emergencia en Barcelona tras chocar con aves y sufrir un incendio en un motor",
+       "url": "https://www.infobae.com/espana/2026/10/17/un-avion-de-vueling-rumbo-a-milan-aterriza-de-emergencia-en-barcelona-tras-chocar-con-aves-y-sufrir-un-incendio-en-un-motor/",
+       "publishedAt": "2026-10-17T17:46:31Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "europa",
+       "label": "Europa"
+      },
+      {
+       "id": "sucesos",
+       "label": "Sucesos"
+      }
+     ],
+     "id": "posibles-27"
+    },
+    {
+     "headline": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
+     "headlineLang": "es",
+     "headlineEs": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
+     "headlineEn": null,
+     "summaryEs": "El joven herido explicó, de acuerdo con el relato de los sanitarios, que había cogido del suelo la granada antes de explotar.",
+     "summaryEsSource": "El Nacional (Venezuela)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "El Nacional (Venezuela)",
+      "El Universal (México)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T16:11:03Z",
+     "lastSeen": "2026-10-17T17:02:46Z",
+     "sources": [
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
+       "url": "https://www.abc.com.py/internacionales/2026/10/17/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
+       "publishedAt": "2026-10-17T16:11:03Z"
+      },
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "VIDEOS: Disturbios en Francia durante protestas por encarecimiento de la vida; joven pierde una mano al explotarle granada policial",
+       "url": "https://www.eluniversal.com.mx/mundo/video-disturbios-en-francia-durante-protestas-por-encarecimiento-de-la-vida-joven-pierde-una-mano-al-explotarle-granada-policial/",
+       "publishedAt": "2026-10-17T17:02:23Z"
+      },
+      {
+       "source": "El Nacional (Venezuela)",
+       "lang": "es",
+       "title": "Un manifestante en Francia pierde la mano al explotarle una granada policial",
+       "url": "https://www.elnacional.com/2026/10/un-manifestante-en-francia-pierde-la-mano-al-explotarle-una-granada-policial/",
+       "publishedAt": "2026-10-17T17:02:46Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "europa",
+       "label": "Europa"
+      }
+     ],
+     "id": "posibles-28"
+    },
+    {
+     "headline": "Sismo de 4.1 de magnitud se registra en Chiapas",
+     "headlineLang": "es",
+     "headlineEs": "Sismo de 4.1 de magnitud se registra en Chiapas",
+     "headlineEn": null,
+     "summaryEs": "El temblor aconteció a las 21:28 horas, a una distancia de 122 km de Cd Hidalgo y tuvo una profundidad de 10.0 km",
+     "summaryEsSource": "Infobae",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "El País",
+      "El Universal (México)",
+      "Infobae"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T04:45:51Z",
+     "lastSeen": "2026-10-17T16:58:39Z",
+     "sources": [
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Sismo de 4.1 de magnitud se registra en Chiapas",
+       "url": "https://www.infobae.com/mexico/2026/10/17/sismo-de-41-de-magnitud-se-registra-en-chiapas/",
+       "publishedAt": "2026-10-17T04:45:51Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Sismo de 4.3 de magnitud se registra en Guerrero",
+       "url": "https://www.infobae.com/mexico/2026/10/17/sismo-de-43-de-magnitud-se-registra-en-guerrero/",
+       "publishedAt": "2026-10-17T10:15:57Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Chiapas registra sismo de 4.1 de intensidad en Cd Hidalgo",
+       "url": "https://www.infobae.com/mexico/2026/10/17/chiapas-registra-sismo-de-41-de-intensidad-en-cd-hidalgo/",
+       "publishedAt": "2026-10-17T13:15:56Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Se registra sismo de 5.1 de magnitud",
+       "url": "https://www.infobae.com/mexico/2026/10/17/se-registra-sismo-de-51-de-magnitud/",
+       "publishedAt": "2026-10-17T14:31:07Z"
+      },
+      {
+       "source": "El Universal (México)",
+       "lang": "es",
+       "title": "Sismo de 5.1 grados sacude Ciudad Hidalgo, Chiapas; no se reportan afectaciones",
+       "url": "https://www.eluniversal.com.mx/estados/sismo-de-51-grados-sacude-ciudad-hidalgo-chiapas-no-se-reportan-afectaciones/",
+       "publishedAt": "2026-10-17T14:48:19Z"
+      },
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "Un sismo de 5,1 sacude Chiapas",
+       "url": "https://elpais.com/mexico/2026-10-17/un-sismo-de-51-sacude-chiapas.html",
+       "publishedAt": "2026-10-17T16:58:39Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "latam",
+       "label": "Latinoamérica"
+      }
+     ],
+     "id": "posibles-29"
+    },
+    {
+     "headline": "Alligator kills 71-year-old man fishing in Florida",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Alligator kills 71-year-old man fishing in Florida",
+     "summaryEs": null,
+     "summaryEsSource": null,
+     "summaryEn": "The 3.7m (12ft) alligator reportedly dragged the man into the water where he was fishing near Orlando.",
+     "summaryEnSource": "BBC",
+     "outlets": 3,
+     "outletNames": [
+      "BBC",
+      "CBS News",
+      "The Guardian"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-10-17T13:38:18Z",
+     "lastSeen": "2026-10-17T16:52:38Z",
+     "sources": [
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Alligator kills 71-year-old man fishing at pond in Florida",
+       "url": "https://www.cbsnews.com/news/alligator-kills-man-fishing-at-pond-winter-garden-florida/",
+       "publishedAt": "2026-10-17T13:38:18Z"
+      },
       {
        "source": "The Guardian",
        "lang": "en",
-       "title": "Ilhan Omar’s attorneys say federal search of her home was ‘neither justified nor lawful’",
-       "url": "https://www.theguardian.com/us-news/2026/oct/17/ilhan-omar-search-seized-items",
-       "publishedAt": "2026-10-17T14:21:24Z"
+       "title": "Florida fisher dragged into water and killed by 12ft alligator",
+       "url": "https://www.theguardian.com/us-news/2026/oct/17/alligator-attack-florida-fisher-killed",
+       "publishedAt": "2026-10-17T15:23:32Z"
       },
       {
-       "source": "Al Jazeera",
+       "source": "BBC",
        "lang": "en",
-       "title": "Ilhan Omar’s lawyers demand the return of property seized in house raid",
-       "url": "https://www.aljazeera.com/news/2026/10/17/ilhan-omars-lawyers-demand-the-return-of-property-seized-in-house-raid?traffic_source=rss",
-       "publishedAt": "2026-10-17T15:20:27Z"
-      },
-      {
-       "source": "The New York Times",
-       "lang": "en",
-       "title": "Ilhan Omar’s Sister’s Phone Was Seized Before Search of Lawmaker’s Home",
-       "url": "https://www.nytimes.com/2026/10/16/us/politics/ilhan-omar-investigation-phone.html",
-       "publishedAt": "2026-10-17T16:33:36Z"
+       "title": "Alligator kills 71-year-old man fishing in Florida",
+       "url": "https://www.bbc.co.uk/news/articles/c84g1d1xd029o",
+       "publishedAt": "2026-10-17T16:52:38Z"
       }
      ],
      "chips": [
@@ -8825,7 +8930,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-27"
+     "id": "posibles-30"
     },
     {
      "headline": "Nine crypto firms form Quantum Alliance to set post-quantum standards",
@@ -8877,7 +8982,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-28"
+     "id": "posibles-31"
     },
     {
      "headline": "MEP retira permiso con goce de salario previsto para elecciones del SEC",
@@ -8932,7 +9037,7 @@
        "label": "Mundo de finanzas"
       }
      ],
-     "id": "posibles-29"
+     "id": "posibles-32"
     },
     {
      "headline": "Aterradora balacera cerca de ebais deja 6 heridos: entre ellos dos mujeres y dos menores de edad",
@@ -8991,7 +9096,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-30"
+     "id": "posibles-33"
     },
     {
      "headline": "IMF raises Africa growth outlook, warns of shrinking aid",
@@ -9042,7 +9147,58 @@
        "label": "África"
       }
      ],
-     "id": "posibles-31"
+     "id": "posibles-34"
+    },
+    {
+     "headline": "Vaguada dejará lluvias y tormentas eléctricas en varias regiones",
+     "headlineLang": "es",
+     "headlineEs": "Vaguada dejará lluvias y tormentas eléctricas en varias regiones",
+     "headlineEn": null,
+     "summaryEs": "*** Las precipitaciones podrían alcanzar intensidad fuerte en algunos sectores. La Secretaría de Gestión de Riesgos y Contingencias Nacionales (Copeco) pronosticó lluvias y chubascos de débiles a moderados en la mayor parte de Honduras este sábado, con tormentas eléctricas y mayores acumulados en las regiones noroccidental, suroccidental, central y sur, debido a la presencia de […] La entrada…",
+     "summaryEsSource": "Hondudiario",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "Hondudiario",
+      "La Nación (Costa Rica)",
+      "Proceso Digital (Honduras)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-17T13:30:00Z",
+     "lastSeen": "2026-10-17T15:12:50Z",
+     "sources": [
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "IMN pronostica fuertes aguaceros y tormentas eléctricas este sábado: ¿cuáles zonas tendrán más lluvia?",
+       "url": "https://www.nacion.com/sucesos/imn-pronostica-fuertes-aguaceros-y-tormentas/YXKAG63GPBFDBI4OZ4IIIWWZOQ/story/",
+       "publishedAt": "2026-10-17T13:30:00Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Vaguada provocará lluvias en gran parte de Honduras este sábado",
+       "url": "https://proceso.hn/vaguada-provocara-lluvias-en-gran-parte-de-honduras-este-sabado/",
+       "publishedAt": "2026-10-17T14:01:50Z"
+      },
+      {
+       "source": "Hondudiario",
+       "lang": "es",
+       "title": "Vaguada dejará lluvias y tormentas eléctricas en varias regiones",
+       "url": "https://www.hondudiario.com/2026/10/17/vaguada-dejara-lluvias-y-tormentas-electricas-en-varias-regiones/",
+       "publishedAt": "2026-10-17T15:12:50Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "centroamerica",
+       "label": "Centroamérica"
+      }
+     ],
+     "id": "posibles-35"
     },
     {
      "headline": "Hernán Medford va por su revancha ante Cartaginés",
@@ -9093,7 +9249,7 @@
        "label": "Costa Rica"
       }
      ],
-     "id": "posibles-32"
+     "id": "posibles-36"
     },
     {
      "headline": "Aemet eleva a rojo el aviso por lluvias en el litoral sur de Valencia y norte de Alicante este domingo",
@@ -9144,7 +9300,7 @@
        "label": "Mundo"
       }
      ],
-     "id": "posibles-33"
+     "id": "posibles-37"
     },
     {
      "headline": "Frente Amplio pasa página del pacto fallido con Podemos: “Se acabó el tiempo de unir a los partidos, hay que unir a la gente”",
@@ -9199,58 +9355,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-34"
-    },
-    {
-     "headline": "Tesla presenta el Roadster, un carro eléctrico que salta y hace piruetas en el aire",
-     "headlineLang": "es",
-     "headlineEs": "Tesla presenta el Roadster, un carro eléctrico que salta y hace piruetas en el aire",
-     "headlineEn": null,
-     "summaryEs": "Tesla sorprendió con videos de su Roadster, un deportivo eléctrico capaz de saltar sobre camiones y hacer piruetas en el aire. Conozca su precio y características.",
-     "summaryEsSource": "La Teja",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "La Teja",
-      "Repretel (Noticias Repretel)",
-      "Teletica (Telenoticias)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T13:14:30Z",
-     "lastSeen": "2026-10-17T12:27:27Z",
-     "sources": [
-      {
-       "source": "La Teja",
-       "lang": "es",
-       "title": "Tesla sorprende con carro que salta sobre camiones y hace piruetas en el aire",
-       "url": "https://www.lateja.cr/internacionales/tesla-sorprende-con-carro-que-salta-sobre-camiones/DRL2AXNJ3JGMPGUTE6LB4SCPWI/story/",
-       "publishedAt": "2026-10-16T13:14:30Z"
-      },
-      {
-       "source": "Teletica (Telenoticias)",
-       "lang": "es",
-       "title": "Tesla presenta el Roadster, un carro eléctrico que salta y hace piruetas en el aire",
-       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcEhsY185TDhEbC1CSXljTVFmajB0by1oYmxScjV3TzdydE9sNGM2MHFLSkZlempnRTNPOVMwNHhZNWtKN2JJUXBjN2hMRGNBSDhYMHlScWF1aUE5NkdETXFIV2t1U1FqNXRLYUhfcFVReTByUFBvUVpUYmZTWVpFaE03SzNTR3o2MzVPejVPaWlqakdiMlpjZmZmM1lmS014Mkp6Vl9pOHo5Yk9fUHZWZ01TS2hCNElWWjVKVVBZVkFWdERjUXpOcGI1Z0dIenJTTFE?oc=5",
-       "publishedAt": "2026-10-17T01:54:16Z"
-      },
-      {
-       "source": "Repretel (Noticias Repretel)",
-       "lang": "es",
-       "title": "Tesla presenta un carro capaz de volar",
-       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5uUVJEUnlsbTZVRUpKNFczOTc4clFpRE1MOGUtZFNKZXRkUktuS0JIRmpWX2d1Wjd6ZDI1OTZtUzc2WGFkUzVtV19XUXc3a1FXc0ZnWEp2LTNhWkdiSFNXMGI3S1NDbE8tb09xVThqLUdrek1naGxZS2Z5Wk0?oc=5",
-       "publishedAt": "2026-10-17T12:27:27Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      }
-     ],
-     "id": "posibles-35"
+     "id": "posibles-38"
     },
     {
      "headline": "Canada PM warns 'stakes are high' as Alberta separation vote nears",
@@ -9308,7 +9413,7 @@
        "label": "Política"
       }
      ],
-     "id": "posibles-36"
+     "id": "posibles-39"
     },
     {
      "headline": "Sonora suspende temporalmente exportación de ganado a EU por caso sospechoso de fiebre aftosa",
@@ -9366,113 +9471,7 @@
        "label": "Latinoamérica"
       }
      ],
-     "id": "posibles-37"
-    },
-    {
-     "headline": "US judge dismisses child sex abuse charges against actor Timothy Busfield",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "US judge dismisses child sex abuse charges against actor Timothy Busfield",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "New Mexico judge says prosecution did not act in a fair and impartial manner in case of actor, who denies the allegations",
-     "summaryEnSource": "The Irish Times",
-     "outlets": 3,
-     "outletNames": [
-      "BBC",
-      "Hindustan Times",
-      "The Irish Times"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T22:32:13Z",
-     "lastSeen": "2026-10-17T07:42:29Z",
-     "sources": [
-      {
-       "source": "Hindustan Times",
-       "lang": "en",
-       "title": "'Field of Dreams' actor Timothy Busfield's child sex abuse indictment dismissed",
-       "url": "https://www.hindustantimes.com/world-news/us-news/field-of-dreams-actor-timothy-busfields-child-sex-abuse-indictment-dismissed-101792187680520.html",
-       "publishedAt": "2026-10-16T22:32:13Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Judge throws out child sex abuse charges against actor Timothy Busfield",
-       "url": "https://www.bbc.co.uk/news/articles/c8vgxwq4q5r2o",
-       "publishedAt": "2026-10-17T00:38:34Z"
-      },
-      {
-       "source": "The Irish Times",
-       "lang": "en",
-       "title": "US judge dismisses child sex abuse charges against actor Timothy Busfield",
-       "url": "https://www.irishtimes.com/world/us/2026/10/17/us-judge-dismisses-child-sex-abuse-charges-against-actor-timothy-busfield/",
-       "publishedAt": "2026-10-17T07:42:29Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "latam",
-       "label": "Latinoamérica"
-      }
-     ],
-     "id": "posibles-38"
-    },
-    {
-     "headline": "IU da marcha atrás para evitar la fractura de la izquierda valenciana: se integrará en la lista de Compromís con Podemos",
-     "headlineLang": "es",
-     "headlineEs": "IU da marcha atrás para evitar la fractura de la izquierda valenciana: se integrará en la lista de Compromís con Podemos",
-     "headlineEn": null,
-     "summaryEs": "La coalición con la que se presentarán al 29-N se llamará Compromís-Front Valencià Leer",
-     "summaryEsSource": "El Mundo",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 3,
-     "outletNames": [
-      "20minutos",
-      "El Mundo",
-      "Euronews"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-16T14:53:28Z",
-     "lastSeen": "2026-10-17T06:47:27Z",
-     "sources": [
-      {
-       "source": "Euronews Español",
-       "lang": "es",
-       "title": "Cuenta atrás para la izquierda: Podemos y Frente Amplio pactan en Valencia, pero chocan en Madrid",
-       "url": "https://es.euronews.com/2026/10/16/izquierda-cuenta-atras-candidatura-unitaria-elecciones-29n",
-       "publishedAt": "2026-10-16T14:53:28Z"
-      },
-      {
-       "source": "El Mundo",
-       "lang": "es",
-       "title": "IU da marcha atrás para evitar la fractura de la izquierda valenciana: se integrará en la lista de Compromís con Podemos",
-       "url": "https://www.elmundo.es/comunidad-valenciana/2026/10/16/6ad1a0a3e85ecea8568b4577.html",
-       "publishedAt": "2026-10-16T17:36:49Z"
-      },
-      {
-       "source": "20minutos",
-       "lang": "es",
-       "title": "Así queda el mapa de coaliciones de izquierda tras la fractura entre Frente Amplio y Podemos",
-       "url": "https://www.20minutos.es/nacional/asi-queda-mapa-coaliciones-izquierda-tras-fractura-frente-amplio-podemos_7049913_0.html",
-       "publishedAt": "2026-10-17T06:47:27Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "costarica",
-       "label": "Costa Rica"
-      },
-      {
-       "id": "politica",
-       "label": "Política"
-      }
-     ],
-     "id": "posibles-39"
+     "id": "posibles-40"
     },
     {
      "headline": "TEAM TRAGEDY: Lions lock Hyron Andrews has died from suspected cardiac arrest — condolences pour in",
@@ -9530,7 +9529,7 @@
        "label": "África"
       }
      ],
-     "id": "posibles-40"
+     "id": "posibles-41"
     },
     {
      "headline": "Por qué Irlanda es uno de los países del mundo más críticos con Israel por la guerra en Gaza",
@@ -9581,7 +9580,7 @@
        "label": "Asia"
       }
      ],
-     "id": "posibles-41"
+     "id": "posibles-42"
     },
     {
      "headline": "Se entrega ex viceministra Claudia Palencia por caso de fuga de reos en Fraijanes 2 y queda sujeta a proceso",
@@ -9632,7 +9631,58 @@
        "label": "Centroamérica"
       }
      ],
-     "id": "posibles-42"
+     "id": "posibles-43"
+    },
+    {
+     "headline": "El hijo de Maduro confía en la diplomacia y el diálogo para lograr libertad de su padre",
+     "headlineLang": "es",
+     "headlineEs": "El hijo de Maduro confía en la diplomacia y el diálogo para lograr libertad de su padre",
+     "headlineEn": null,
+     "summaryEs": "El diputado chavista Nicolás Maduro Guerra, hijo del depuesto presidente Nicolás Maduro, aseguró que su padre y la esposa de este, Cilia Flores, saldrán \"más temprano que tarde\" de la cárcel en la que se encuentran detenidos en Nueva York, y se mostró confiado en la vía de la diplomacia y el diálogo para lograr ese objetivo. La entrada El hijo de Maduro confía en la diplomacia y el diálogo para…",
+     "summaryEsSource": "Proceso Digital (Honduras)",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "El Nacional (Venezuela)",
+      "Proceso Digital (Honduras)",
+      "Semana (Colombia)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-16T17:49:18Z",
+     "lastSeen": "2026-10-17T02:08:42Z",
+     "sources": [
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "El hijo de Maduro confía en la diplomacia y el diálogo para lograr libertad de su padre",
+       "url": "https://proceso.hn/el-hijo-de-maduro-confia-en-la-diplomacia-y-el-dialogo-para-lograr-libertad-de-su-padre/",
+       "publishedAt": "2026-10-16T17:49:18Z"
+      },
+      {
+       "source": "El Nacional (Venezuela)",
+       "lang": "es",
+       "title": "Nicolás Maduro Guerra confía en la vía diplomática para la liberación de su padre tras la comparecencia en Nueva York",
+       "url": "https://www.elnacional.com/2026/10/nicolas-maduro-guerra-confia-en-la-via-diplomatica-para-la-liberacion-de-su-padre-tras-la-comparecencia-en-nueva-york/",
+       "publishedAt": "2026-10-16T20:19:35Z"
+      },
+      {
+       "source": "Semana (Colombia)",
+       "lang": "es",
+       "title": "Nicolás Maduro saldrá “más temprano que tarde”: afirmó el hijo de Maduro tras audiencia judicial",
+       "url": "https://www.semana.com/mundo/articulo/nicolas-maduro-saldra-mas-temprano-que-tarde-afirmo-el-hijo-de-maduro-tras-audiencia-judicial/202642/",
+       "publishedAt": "2026-10-17T02:08:42Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "sudamerica",
+       "label": "Sudamérica"
+      }
+     ],
+     "id": "posibles-44"
     },
     {
      "headline": "Senado de Brasil reduce la jornada laboral de 44 a 40 horas semanales",
@@ -9687,161 +9737,47 @@
        "label": "Mundo de finanzas"
       }
      ],
-     "id": "posibles-43"
+     "id": "posibles-45"
     },
     {
-     "headline": "Colombia retira obras sobre diversidad sexual y paz de su Museo Nacional",
+     "headline": "Selma Blair: ¿agresora o víctima de una enfermedad? Esto dice su portavoz",
      "headlineLang": "es",
-     "headlineEs": "Colombia retira obras sobre diversidad sexual y paz de su Museo Nacional",
+     "headlineEs": "Selma Blair: ¿agresora o víctima de una enfermedad? Esto dice su portavoz",
      "headlineEn": null,
-     "summaryEs": "Trabajadores del museo dijeron a la AFP que tienen prohibido dar declaraciones. Vea el origen de la controversia.",
-     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEs": "Luego de que la actriz fuera acusada de agresión, se revela que su comportamiento pudo deberse a afecciones de salud.",
+     "summaryEsSource": "Prensa Libre",
      "summaryEn": null,
      "summaryEnSource": null,
-     "outlets": 3,
+     "outlets": 2,
      "outletNames": [
-      "BBC Mundo",
-      "CRHoy",
-      "La Nación (Costa Rica)"
+      "Prensa Libre",
+      "Proceso Digital (Honduras)"
      ],
      "languages": [
       "es"
      ],
-     "firstSeen": "2026-10-16T13:22:05Z",
-     "lastSeen": "2026-10-16T20:59:10Z",
+     "firstSeen": "2026-10-17T01:33:45Z",
+     "lastSeen": "2026-10-17T17:15:01Z",
      "sources": [
       {
-       "source": "CRHoy",
+       "source": "Proceso Digital (Honduras)",
        "lang": "es",
-       "title": "Colombia retira obras sobre diversidad sexual y paz de su Museo Nacional",
-       "url": "https://crhoy.com/mundo/colombia-retira-obras-sobre-diversidad-sexual-y-paz-de-su-museo-nacional/",
-       "publishedAt": "2026-10-16T13:22:05Z"
+       "title": "Selma Blair sufrió episodio médico en vuelo pero no pretendía herir a nadie, dice portavoz",
+       "url": "https://proceso.hn/selma-blair-sufrio-episodio-medico-en-vuelo-pero-no-pretendia-herir-a-nadie-dice-portavoz/",
+       "publishedAt": "2026-10-17T01:33:45Z"
       },
       {
-       "source": "La Nación (Costa Rica)",
+       "source": "Prensa Libre",
        "lang": "es",
-       "title": "Gobierno de Colombia ordena retirar obras sobre procesos de paz y diversidad del Museo Nacional",
-       "url": "https://www.nacion.com/el-mundo/gobierno-de-colombia-ordena-retirar-obras-sobre/4OF5WRAHD5ALFDQXYJ3EF3B7LE/story/",
-       "publishedAt": "2026-10-16T19:32:12Z"
-      },
-      {
-       "source": "BBC Mundo",
-       "lang": "es",
-       "title": "La polémica por la retirada de decenas de obras del Museo Nacional de Colombia (y qué dice de la \"batalla cultural\" de De la Espriella)",
-       "url": "https://www.bbc.com/mundo/articles/cw98zj48e4r4o",
-       "publishedAt": "2026-10-16T20:59:10Z"
+       "title": "Selma Blair: ¿agresora o víctima de una enfermedad? Esto dice su portavoz",
+       "url": "https://www.prensalibre.com/vida/escenario/selma-blair-agresora-o-victima-de-una-enfermedad-esto-dice-su-portavoz/",
+       "publishedAt": "2026-10-17T17:15:01Z"
       }
      ],
      "chips": [
       {
-       "id": "sudamerica",
-       "label": "Sudamérica"
-      },
-      {
-       "id": "politica",
-       "label": "Política"
-      }
-     ],
-     "id": "posibles-44"
-    },
-    {
-     "headline": "South African pastor, wife arrested after 200 found in suspected illegal rehab centre",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "South African pastor, wife arrested after 200 found in suspected illegal rehab centre",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "Police in South Africa have arrested a pastor and his wife after a raid on a church-run rehabilitation centre in Mpumalanga province revealed shocking living conditions.",
-     "summaryEnSource": "Africanews",
-     "outlets": 3,
-     "outletNames": [
-      "Africanews",
-      "BBC",
-      "The Citizen (Sudáfrica)"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T10:07:46Z",
-     "lastSeen": "2026-10-16T14:57:51Z",
-     "sources": [
-      {
-       "source": "The Citizen (Sudáfrica)",
-       "lang": "en",
-       "title": "Couple arrested after 200 people found at alleged illegal rehab centre in Mpumalanga",
-       "url": "https://www.citizen.co.za/news/south-africa/crime/couple-arrested-after-200-people-found-alleged-illegal-rehab-centre-mpumalanga/",
-       "publishedAt": "2026-10-16T10:07:46Z"
-      },
-      {
-       "source": "Africanews",
-       "lang": "en",
-       "title": "South African pastor, wife arrested after 200 found in suspected illegal rehab centre",
-       "url": "http://www.africanews.com/2026/10/16/south-african-pastor-wife-arrested-after-200-found-in-suspected-illegal-rehab-centre/",
-       "publishedAt": "2026-10-16T14:54:51Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Patients in chains rescued from suspected illegal rehab centre in South Africa",
-       "url": "https://www.bbc.co.uk/news/articles/cmwyvxj49gpwo",
-       "publishedAt": "2026-10-16T14:57:51Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "africa",
-       "label": "África"
-      }
-     ],
-     "id": "posibles-45"
-    },
-    {
-     "headline": "Four killed fighting wildfires in Indonesian national park",
-     "headlineLang": "en",
-     "headlineEs": null,
-     "headlineEn": "Four killed fighting wildfires in Indonesian national park",
-     "summaryEs": null,
-     "summaryEsSource": null,
-     "summaryEn": "They were overwhelmed while battling flames on Oct 15 in the Bromo Tengger Semeru National Park.",
-     "summaryEnSource": "The Straits Times",
-     "outlets": 3,
-     "outletNames": [
-      "CNA",
-      "DW",
-      "The Straits Times"
-     ],
-     "languages": [
-      "en"
-     ],
-     "firstSeen": "2026-10-16T04:04:10Z",
-     "lastSeen": "2026-10-16T08:11:00Z",
-     "sources": [
-      {
-       "source": "The Straits Times",
-       "lang": "en",
-       "title": "Four killed fighting wildfires in Indonesian national park",
-       "url": "https://www.straitstimes.com/asia/se-asia/four-killed-fighting-wildfires-in-indonesian-national-park-ministry",
-       "publishedAt": "2026-10-16T04:04:10Z"
-      },
-      {
-       "source": "CNA",
-       "lang": "en",
-       "title": "Four killed fighting wildfires in Indonesian national park",
-       "url": "https://www.channelnewsasia.com/asia/four-killed-fighting-wildfires-in-indonesian-national-park-6465026",
-       "publishedAt": "2026-10-16T04:59:00Z"
-      },
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "Wildfire kills 4 firefighters in Indonesia's Mount Bromo national park",
-       "url": "https://www.dw.com/en/wildfire-kills-4-firefighters-in-indonesia-s-mount-bromo-national-park/a-79676291?maca=en-rss-en-asia-5133-rdf",
-       "publishedAt": "2026-10-16T08:11:00Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "asia",
-       "label": "Asia"
+       "id": "centroamerica",
+       "label": "Centroamérica"
       }
      ],
      "id": "posibles-46"
@@ -10092,49 +10028,6 @@
      "id": "posibles-51"
     },
     {
-     "headline": "Estados Unidos evalúa próximos pasos tras rechazo de Nicaragua a embajadora",
-     "headlineLang": "es",
-     "headlineEs": "Estados Unidos evalúa próximos pasos tras rechazo de Nicaragua a embajadora",
-     "headlineEn": null,
-     "summaryEs": "El secretario de Estado de Estados Unidos, Marco Rubio, mantuvo una reunión con el encargado de negocios estadounidense en Nicaragua, Elias Baumann.",
-     "summaryEsSource": "La Prensa (Panamá)",
-     "summaryEn": null,
-     "summaryEnSource": null,
-     "outlets": 2,
-     "outletNames": [
-      "Confidencial (Nicaragua)",
-      "La Prensa (Panamá)"
-     ],
-     "languages": [
-      "es"
-     ],
-     "firstSeen": "2026-10-17T02:06:00Z",
-     "lastSeen": "2026-10-17T16:08:42Z",
-     "sources": [
-      {
-       "source": "La Prensa (Panamá)",
-       "lang": "es",
-       "title": "Estados Unidos evalúa próximos pasos tras rechazo de Nicaragua a embajadora",
-       "url": "https://www.prensa.com/mundo/estados-unidos-evalua-proximos-pasos-tras-rechazo-de-nicaragua-a-embajadora/",
-       "publishedAt": "2026-10-17T02:06:00Z"
-      },
-      {
-       "source": "Confidencial (Nicaragua)",
-       "lang": "es",
-       "title": "Rubio califica de “teatro político hostil” el rechazo de la embajadora de EE. UU. en Nicaragua",
-       "url": "https://confidencial.digital/noticias/rubio-califica-de-teatro-politico-hostil-el-rechazo-de-la-embajadora-de-ee-uu-en-nicaragua/",
-       "publishedAt": "2026-10-17T16:08:42Z"
-      }
-     ],
-     "chips": [
-      {
-       "id": "centroamerica",
-       "label": "Centroamérica"
-      }
-     ],
-     "id": "posibles-52"
-    },
-    {
      "headline": "Por la fuerte suba del petróleo, la inflación mayorista se aceleró a 3,2% en septiembre",
      "headlineLang": "es",
      "headlineEs": "Por la fuerte suba del petróleo, la inflación mayorista se aceleró a 3,2% en septiembre",
@@ -10175,7 +10068,7 @@
        "label": "Mundo de finanzas"
       }
      ],
-     "id": "posibles-53"
+     "id": "posibles-52"
     },
     {
      "headline": "Solana shows resilience, but some areas need continued observation, Fidelity says",
@@ -10219,7 +10112,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-54"
+     "id": "posibles-53"
     },
     {
      "headline": "Banks could slow stablecoin growth by paying savers more, BIS paper finds",
@@ -10263,7 +10156,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-55"
+     "id": "posibles-54"
     },
     {
      "headline": "Cómo será el megaproyecto inmobiliario que aprobó la Ciudad en el sitio de la histórica fábrica de Alpargatas",
@@ -10306,41 +10199,41 @@
        "label": "Mundo de finanzas"
       }
      ],
-     "id": "posibles-56"
+     "id": "posibles-55"
     },
     {
-     "headline": "13-year-old arrested in Narrabeen Lagoon 'sexual touching' probe",
+     "headline": "Auckland braces for traffic chaos as Olivia Dean fans descend on Western Springs",
      "headlineLang": "en",
      "headlineEs": null,
-     "headlineEn": "13-year-old arrested in Narrabeen Lagoon 'sexual touching' probe",
+     "headlineEn": "Auckland braces for traffic chaos as Olivia Dean fans descend on Western Springs",
      "summaryEs": null,
      "summaryEsSource": null,
-     "summaryEn": "NSW Police are investigating multiple incidents of alleged sexual offences against women while walking along Narrabeen Lagoon in Sydney's northern beaches.",
-     "summaryEnSource": "ABC News (Australia)",
+     "summaryEn": "Fans have begun queuing outside Auckland's Western Springs Bowl hours before British singer Olivia Dean takes to the stage for her sold-out concert.",
+     "summaryEnSource": "Stuff",
      "outlets": 2,
      "outletNames": [
-      "ABC News (Australia)",
-      "The Sydney Morning Herald"
+      "NZ Herald",
+      "Stuff"
      ],
      "languages": [
       "en"
      ],
-     "firstSeen": "2026-10-17T07:40:43Z",
-     "lastSeen": "2026-10-17T10:56:53Z",
+     "firstSeen": "2026-10-17T02:04:11Z",
+     "lastSeen": "2026-10-17T09:09:30Z",
      "sources": [
       {
-       "source": "ABC News (Australia)",
+       "source": "Stuff",
        "lang": "en",
-       "title": "13-year-old arrested in Narrabeen Lagoon 'sexual touching' probe",
-       "url": "https://www.abc.net.au/news/2026-10-17/women-report-sexual-offences-narrabeen-lagoon-walking-trails/107279134",
-       "publishedAt": "2026-10-17T07:40:43Z"
+       "title": "Auckland braces for traffic chaos as Olivia Dean fans descend on Western Springs",
+       "url": "https://www.stuff.co.nz/nz-news/361047683/olivia-dean-fans-queue-hours-early-major-road-closures-loom",
+       "publishedAt": "2026-10-17T02:04:11Z"
       },
       {
-       "source": "The Sydney Morning Herald",
+       "source": "NZ Herald",
        "lang": "en",
-       "title": "Teen, 13, arrested as police investigate alleged sex offences on walking trails",
-       "url": "https://www.smh.com.au/national/nsw/teen-13-arrested-as-police-investigate-alleged-sex-offences-on-walking-trails-20261017-p616bi.html",
-       "publishedAt": "2026-10-17T10:56:53Z"
+       "title": "Olivia Dean’s Auckland concert plagued by sound difficulties",
+       "url": "https://www.nzherald.co.nz/nz/olivia-deans-auckland-concert-plagued-by-sound-difficulties/YYRO43S2TNG2RJLCVFIVT3H3WM/",
+       "publishedAt": "2026-10-17T09:09:30Z"
       }
      ],
      "chips": [
@@ -10349,7 +10242,7 @@
        "label": "Australia y Oceanía"
       }
      ],
-     "id": "posibles-57"
+     "id": "posibles-56"
     },
     {
      "headline": "Varios incendios arrasan viviendas en el sur de California y obligan a evacuar a cientos de vecinos",
@@ -10392,7 +10285,7 @@
        "label": "Sucesos"
       }
      ],
-     "id": "posibles-58"
+     "id": "posibles-57"
     },
     {
      "headline": "Coinbase and Marqeta Expand Partnership for Enterprise Stablecoin Cards",
@@ -10452,7 +10345,7 @@
        "label": "Criptomonedas"
       }
      ],
-     "id": "posibles-59"
+     "id": "posibles-58"
     },
     {
      "headline": "El neandertal que murió atravesado por una lanza hace 75.000 años y que muestra cómo cuidaban de sus heridos y sus muertos",
@@ -10495,6 +10388,49 @@
        "label": "Ciencias"
       }
      ],
+     "id": "posibles-59"
+    },
+    {
+     "headline": "Las autoridades del tiempo deciden que los relojes atómicos y los astronómicos vayan cada uno por su lado",
+     "headlineLang": "es",
+     "headlineEs": "Las autoridades del tiempo deciden que los relojes atómicos y los astronómicos vayan cada uno por su lado",
+     "headlineEn": null,
+     "summaryEs": "A partir del año que viene dejará de ajustarse el segundo bisiesto. El desajuste entre los relojes atómicos y la rotación irregular de la Tierra se solventará cuando la diferencia se acerque a una hora dentro de varios siglos",
+     "summaryEsSource": "El País",
+     "summaryEn": null,
+     "summaryEnSource": null,
+     "outlets": 2,
+     "outletNames": [
+      "El Mundo",
+      "El País"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-10-15T14:13:09Z",
+     "lastSeen": "2026-10-15T16:00:59Z",
+     "sources": [
+      {
+       "source": "El País",
+       "lang": "es",
+       "title": "Las autoridades del tiempo deciden que los relojes atómicos y los astronómicos vayan cada uno por su lado",
+       "url": "https://elpais.com/ciencia/2026-10-15/las-autoridades-del-tiempo-deciden-que-los-relojes-atomicos-y-los-astronomicos-vayan-cada-uno-por-su-lado.html",
+       "publishedAt": "2026-10-15T14:13:09Z"
+      },
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Los relojes atómicos dejarán de añadir segundos para ajustarse a la rotación de la Tierra",
+       "url": "https://www.elmundo.es/ciencia/2026/10/15/6ad0f7e2e85ece9f628b45c3.html",
+       "publishedAt": "2026-10-15T16:00:59Z"
+      }
+     ],
+     "chips": [
+      {
+       "id": "ciencias",
+       "label": "Ciencias"
+      }
+     ],
      "id": "posibles-60"
     }
    ]
@@ -10506,7 +10442,7 @@
    "source": "BBC",
    "lang": "en",
    "url": "https://feeds.bbci.co.uk/news/rss.xml",
-   "itemsInFeed": 26,
+   "itemsInFeed": 27,
    "kept": 16,
    "newest": "2026-10-17T16:52:38Z"
   },
@@ -10570,7 +10506,7 @@
    "lang": "en",
    "url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
    "itemsInFeed": 32,
-   "kept": 10,
+   "kept": 9,
    "newest": "2026-10-17T01:36:39Z"
   },
   {
@@ -10616,7 +10552,7 @@
    "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada",
    "itemsInFeed": 21,
    "kept": 15,
-   "newest": "2026-10-17T17:29:37Z"
+   "newest": "2026-10-17T17:56:26Z"
   },
   {
    "id": "elpais-america",
@@ -10679,7 +10615,7 @@
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
    "itemsInFeed": 21,
    "kept": 20,
-   "newest": "2026-10-17T16:53:31Z"
+   "newest": "2026-10-17T18:01:44Z"
   },
   {
    "id": "elmundo-int",
@@ -10687,7 +10623,7 @@
    "lang": "es",
    "url": "https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml",
    "itemsInFeed": 52,
-   "kept": 25,
+   "kept": 24,
    "newest": "2026-10-17T17:41:12Z"
   },
   {
@@ -10767,9 +10703,9 @@
    "source": "Financial Times",
    "lang": "en",
    "url": "https://www.ft.com/rss/home",
-   "itemsInFeed": 12,
-   "kept": 12,
-   "newest": "2026-10-17T16:11:59Z"
+   "itemsInFeed": 11,
+   "kept": 11,
+   "newest": "2026-10-17T17:58:01Z"
   },
   {
    "id": "ft-world",
@@ -10777,7 +10713,7 @@
    "lang": "en",
    "url": "https://www.ft.com/world?format=rss",
    "itemsInFeed": 25,
-   "kept": 18,
+   "kept": 19,
    "newest": "2026-10-17T17:45:49Z"
   },
   {
@@ -10812,8 +10748,8 @@
    "source": "Bloomberg",
    "lang": "en",
    "url": "https://feeds.bloomberg.com/economics/news.rss",
-   "itemsInFeed": 12,
-   "kept": 11,
+   "itemsInFeed": 11,
+   "kept": 10,
    "newest": "2026-10-17T13:01:25Z"
   },
   {
@@ -10850,7 +10786,7 @@
    "url": "https://www.theguardian.com/world/rss",
    "itemsInFeed": 45,
    "kept": 31,
-   "newest": "2026-10-17T17:02:14Z"
+   "newest": "2026-10-17T17:56:20Z"
   },
   {
    "id": "guardian-us",
@@ -10867,7 +10803,7 @@
    "lang": "en",
    "url": "https://www.theguardian.com/politics/rss",
    "itemsInFeed": 21,
-   "kept": 8,
+   "kept": 7,
    "newest": "2026-10-17T11:33:20Z"
   },
   {
@@ -10922,7 +10858,7 @@
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
    "itemsInFeed": 15,
    "kept": 12,
-   "newest": "2026-10-17T16:23:36Z"
+   "newest": "2026-10-17T18:00:06Z"
   },
   {
    "id": "nyt-world",
@@ -10930,8 +10866,8 @@
    "lang": "en",
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
    "itemsInFeed": 52,
-   "kept": 35,
-   "newest": "2026-10-17T17:41:07Z"
+   "kept": 37,
+   "newest": "2026-10-17T18:06:53Z"
   },
   {
    "id": "nyt-politics",
@@ -10939,8 +10875,8 @@
    "lang": "en",
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
    "itemsInFeed": 20,
-   "kept": 15,
-   "newest": "2026-10-17T16:33:36Z"
+   "kept": 14,
+   "newest": "2026-10-17T18:01:05Z"
   },
   {
    "id": "nyt-business",
@@ -11066,7 +11002,7 @@
    "url": "https://rss.dw.com/rdf/rss-en-all",
    "itemsInFeed": 137,
    "kept": 27,
-   "newest": "2026-10-17T16:29:00Z"
+   "newest": "2026-10-17T17:51:00Z"
   },
   {
    "id": "dw-en-bus",
@@ -11092,7 +11028,7 @@
    "lang": "en",
    "url": "https://www.france24.com/en/rss",
    "itemsInFeed": 24,
-   "kept": 3,
+   "kept": 4,
    "newest": "2026-10-17T14:58:54Z"
   },
   {
@@ -11101,7 +11037,7 @@
    "lang": "en",
    "url": "https://www.france24.com/en/europe/rss",
    "itemsInFeed": 30,
-   "kept": 21,
+   "kept": 20,
    "newest": "2026-10-16T20:25:46Z"
   },
   {
@@ -11165,7 +11101,7 @@
    "url": "https://www.euronews.com/rss",
    "itemsInFeed": 50,
    "kept": 37,
-   "newest": "2026-10-17T17:29:24Z"
+   "newest": "2026-10-17T18:11:08Z"
   },
   {
    "id": "euronews-es",
@@ -11173,8 +11109,8 @@
    "lang": "es",
    "url": "https://es.euronews.com/rss",
    "itemsInFeed": 50,
-   "kept": 43,
-   "newest": "2026-10-17T16:57:33Z"
+   "kept": 44,
+   "newest": "2026-10-17T17:52:14Z"
   },
   {
    "id": "un-en",
@@ -11201,7 +11137,7 @@
    "url": "https://www.lemonde.fr/en/rss/une.xml",
    "itemsInFeed": 14,
    "kept": 12,
-   "newest": "2026-10-17T17:29:39Z"
+   "newest": "2026-10-17T17:34:09Z"
   },
   {
    "id": "elconfidencial-mundo",
@@ -11246,7 +11182,7 @@
    "url": "https://www.20minutos.es/rss/",
    "itemsInFeed": 191,
    "kept": 115,
-   "newest": "2026-10-17T17:27:37Z"
+   "newest": "2026-10-17T17:58:15Z"
   },
   {
    "id": "infobae",
@@ -11255,7 +11191,7 @@
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/",
    "itemsInFeed": 100,
    "kept": 47,
-   "newest": "2026-10-17T17:43:22Z"
+   "newest": "2026-10-17T18:11:57Z"
   },
   {
    "id": "infobae-america",
@@ -11263,8 +11199,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/america/",
    "itemsInFeed": 100,
-   "kept": 83,
-   "newest": "2026-10-17T16:22:14Z"
+   "kept": 86,
+   "newest": "2026-10-17T16:42:53Z"
   },
   {
    "id": "infobae-eco",
@@ -11272,8 +11208,8 @@
    "lang": "es",
    "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/economia/",
    "itemsInFeed": 100,
-   "kept": 51,
-   "newest": "2026-10-17T14:16:12Z"
+   "kept": 52,
+   "newest": "2026-10-17T16:47:47Z"
   },
   {
    "id": "clarin-mundo",
@@ -11282,16 +11218,16 @@
    "url": "https://www.clarin.com/rss/mundo/",
    "itemsInFeed": 10,
    "kept": 9,
-   "newest": "2026-10-17T15:46:47Z"
+   "newest": "2026-10-17T16:54:54Z"
   },
   {
    "id": "lanacion-ar",
    "source": "La Nación (Argentina)",
    "lang": "es",
    "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
-   "itemsInFeed": 94,
-   "kept": 55,
-   "newest": "2026-10-17T17:40:00Z"
+   "itemsInFeed": 93,
+   "kept": 54,
+   "newest": "2026-10-17T18:06:44Z"
   },
   {
    "id": "eltiempo-mundo",
@@ -11309,7 +11245,7 @@
    "url": "https://www.eltiempo.com/rss/colombia.xml",
    "itemsInFeed": 10,
    "kept": 9,
-   "newest": "2026-10-17T16:57:59Z"
+   "newest": "2026-10-17T17:57:55Z"
   },
   {
    "id": "elcomercio-pe",
@@ -11317,8 +11253,8 @@
    "lang": "es",
    "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
    "itemsInFeed": 100,
-   "kept": 58,
-   "newest": "2026-10-17T17:35:06Z"
+   "kept": 60,
+   "newest": "2026-10-17T18:05:01Z"
   },
   {
    "id": "nacion-cr",
@@ -11326,16 +11262,16 @@
    "lang": "es",
    "url": "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml",
    "itemsInFeed": 100,
-   "kept": 49,
-   "newest": "2026-10-17T16:58:09Z"
+   "kept": 48,
+   "newest": "2026-10-17T18:07:20Z"
   },
   {
    "id": "elfinanciero-cr",
    "source": "El Financiero (Costa Rica)",
    "lang": "es",
    "url": "https://www.elfinancierocr.com/arc/outboundfeeds/rss/?outputType=xml",
-   "itemsInFeed": 22,
-   "kept": 16,
+   "itemsInFeed": 21,
+   "kept": 15,
    "newest": "2026-10-17T13:00:00Z"
   },
   {
@@ -11827,26 +11763,20 @@
    [
     "descartada",
     "UpliftingNews",
-    "At 15, Andreas Okholm dreamed of harnessing wind with a kite. Years later, his Danish startup KiteX has turned that idea",
-    "https://www.ecoticias.com/en/danish-startup-kitexs-small-wind-turbine-weighs-about-770-pounds-and-goes-up-in-a-day-and-wind-pioneer-henrik-stiesdal-called-it-the-most-compelling-small-scale-wind-power-concept-i-have-encounte/52019/"
-   ],
-   [
-    "descartada",
-    "UpliftingNews",
     "61-Year-Old Grandmother Breaks Her Own World Record with Staggering 5-Hour Plank",
     "https://people.com/grandmother-breaks-own-record-planking-world-record-at-5-hours-12170377"
-   ],
-   [
-    "descartada",
-    "UpliftingNews",
-    "Mozambican engineering student Cleiton Michaque has built 14 drones from scratch and is testing an autonomous drone to d",
-    "https://clubofmozambique.com/news/young-mozambican-student-tests-drone-to-deliver-medicines-over-distances-of-up-to-200-km-photos/"
    ],
    [
     "confirmada",
     "UpliftingNews",
     "Amazon Deforestation Has Fallen To Its Lowest Level In A Decade",
     "https://stories.thenewsindata.com/amazon/"
+   ],
+   [
+    "descartada",
+    "UpliftingNews",
+    "Mozambican engineering student Cleiton Michaque has built 14 drones from scratch and is testing an autonomous drone to d",
+    "https://clubofmozambique.com/news/young-mozambican-student-tests-drone-to-deliver-medicines-over-distances-of-up-to-200-km-photos/"
    ],
    [
     "descartada",
@@ -11958,45 +11888,255 @@
    ],
    [
     "descartada",
-    "Futurology",
-    "406 scientists demand AI models be cut off from the internet immediately",
-    "https://the-decoder.com/406-scientists-demand-ai-models-be-cut-off-from-the-internet-immediately"
+    "MadeMeSmile",
+    "Her smile made me smile",
+    "https://v.redd.it/rsmwp1grkyvh1"
    ],
    [
     "descartada",
-    "Futurology",
-    "Researchers tracked down a rogue fleet of Chinese AI agents in the wild and actually talked to it",
-    "https://the-decoder.com/researchers-tracked-down-a-rogue-fleet-of-chinese-ai-agents-in-the-wild-and-actually-talked-to-it"
+    "MadeMeSmile",
+    "For Boys Rescued a 4 Year Old Girl from Drowning And Her Parents Who Owned a Restaurant Granted Them Free Meals For Life",
+    "https://www.reddit.com/gallery/1x7tr29"
    ],
    [
     "descartada",
-    "Futurology",
-    "OpenAI discloses four more rogue incidents involving financial, medical, and government data",
-    "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data"
+    "MadeMeSmile",
+    "[FearBuck] Emotional moment at a Pennsylvania high school yesterday after a student crowned Homecoming King surprised ev",
+    "https://v.redd.it/6syu1r5i02wh1"
    ],
    [
     "descartada",
-    "Futurology",
-    "French Math Professor: Some Universities Considering Dropping Math PhD Programs Entirely, Asking Is There Still a Point ",
-    "https://www.reddit.com/r/Futurology/comments/1x880dk/french_math_professor_some_universities/"
+    "MadeMeSmile",
+    "Missing for over 48 hours after an avalanche in Alaska, 4-year-old LouLou is spotted from a helicopter and finally reach",
+    "https://v.redd.it/wdw6k4w89xvh1"
    ],
    [
     "descartada",
-    "Futurology",
-    "Waymo's robotaxis are headed to Canada",
-    "https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/"
+    "MadeMeSmile",
+    "What a lovely elephant",
+    "https://v.redd.it/8bnb554d61wh1"
    ],
    [
     "descartada",
-    "Futurology",
-    "Will SEO still exist in 10 years, or will AI search change how brands get discovered?",
-    "https://www.reddit.com/r/Futurology/comments/1x887m5/will_seo_still_exist_in_10_years_or_will_ai/"
+    "MadeMeSmile",
+    "Creating a Cruz Azul F.C. fan for life",
+    "https://v.redd.it/g6ihdk6skzvh1"
    ],
    [
     "descartada",
-    "Futurology",
-    "At what point would we consider AI consciousness seriously?",
-    "https://www.reddit.com/r/Futurology/comments/1x80chh/at_what_point_would_we_consider_ai_consciousness/"
+    "MadeMeSmile",
+    "Thats the face of 0 regrets",
+    "https://v.redd.it/6cxl8945mzvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "ultimate heist",
+    "https://v.redd.it/dwurpfo212wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Pregnancy results",
+    "https://v.redd.it/d547u3d9zxvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A baby seal pup waits every morning to meet up with surfers in San Diego, California. The seal gets on their boards to c",
+    "https://v.redd.it/iz3qceqhkvvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "this secret diva understood the assignment",
+    "https://v.redd.it/dw2ljb6nl1wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A happy Gang!",
+    "https://v.redd.it/5ow9qnjg3xvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Shaq making my nephew smile yesterday while in Sardinia yesterday (he is there filming for Grown Ups 3)",
+    "https://v.redd.it/knc3nb0qrwvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Mural to a friend",
+    "https://v.redd.it/ypkoxq0zu0wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Medication for epilepsy left Barley lethargic and depressed, until Louie the duckling was added to the family",
+    "https://v.redd.it/xx4b1e70xsth1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "This was one of the comment cards we received back when I worked at the university dining hall.",
+    "https://i.redd.it/cp1iote44wvh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "My partner made me these wheel covers for my chair, because they are awesome",
+    "https://www.reddit.com/gallery/1x8gnf4"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A baby elephant charging",
+    "https://v.redd.it/e1vlmr1ckwvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Puppies fix everything",
+    "https://v.redd.it/5mixvhem52wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Sheep realizes it overslept and needs to catch up to its flock",
+    "https://v.redd.it/dwa7ijbcxxvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "some good news from last month",
+    "https://v.redd.it/qh95msmp31wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "12 images from the Dog Photography Awards 2026",
+    "https://www.reddit.com/gallery/1x8cbm8"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Baby says well I’m going to chill now",
+    "https://v.redd.it/ze3a9hury0wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Baby gorilla puts on a dance show",
+    "https://v.redd.it/9rehnznvy0wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Blind friend photo bombed by cow (OC)",
+    "https://i.redd.it/9aodvwzy0wvh1.png"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "\" Tika tika\" by Sophia",
+    "https://v.redd.it/vmwv90dulzvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Walking on the trail today makes me feel like I'm in a fairy tale",
+    "https://i.redd.it/7l6hdf2wzvvh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Father kept paper tie daughter made at age 5 and wore it 24 years later at her wedding",
+    "https://www.reddit.com/gallery/1x8g5hd"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "My friend got me a challenge coin. Been battling for 2 years 🥹",
+    "https://www.reddit.com/gallery/1x7r42d"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Ducklings",
+    "https://v.redd.it/3er61i26xzvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "any balloon can dance (by@instamart)",
+    "https://v.redd.it/6v3vzd0gt1wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Nobod My friend at work",
+    "https://v.redd.it/phsoeecgq1wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "A little fish using a jellyfish for cover",
+    "https://v.redd.it/dhdk6b1icwvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Beyond the wall",
+    "https://v.redd.it/0outetk2otvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "watch this musical prodigy, Chloe Chua’s extraordinary violin performance",
+    "https://v.redd.it/ee6gn2fsa2wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "[OC] A circle of kitten cuddles: local kids helping me socialize the rescues today.",
+    "https://i.redd.it/p2h7bxysy1wh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "[OC] 150 kids watching the high-power rockets they built launch from a closed airport runway",
+    "https://www.reddit.com/gallery/1x8cjd3"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Pro Tennis Player Helps Find Stray Dog a Loving Family",
+    "https://v.redd.it/b3gthfert0wh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "He hit the wrong target",
+    "https://v.redd.it/06a4opa2pnvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Wore my guitar tie for Parent conferences also worked on cemetery gates before.",
+    "https://v.redd.it/yo8jb27untvh1"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "I just brought my first steak, turns out they are cheaper than i thought.",
+    "https://i.redd.it/o1iirc509xvh1.jpeg"
+   ],
+   [
+    "descartada",
+    "MadeMeSmile",
+    "Groom was moved to tears by the wedding surprise, an RTX 5090 graphic card",
+    "https://v.redd.it/6c82xlodh0wh1"
    ],
    [
     "descartada",
@@ -12096,21 +12236,9 @@
    ],
    [
     "descartada",
-    "Futurology",
-    "We want to colonize Mars. But what if the human body simply isn’t built for it?",
-    "https://www.nasa.gov/hrp/hazards/"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "Rogue AI agents broke into Indian firms' live systems, government says",
-    "https://www.reuters.com/legal/litigation/rogue-ai-agents-broke-into-indian-firms-live-systems-government-says-2026-10-16"
-   ],
-   [
-    "descartada",
-    "Futurology",
-    "Is AI Making Us Lonelier?",
-    "https://www.media.mit.edu/publications/how-ai-and-human-behaviors-shape-psychosocial-effects-of-chatbot-use-a-longitudinal-controlled-study/"
+    "MadeMeSmile",
+    "Garrett Wilson thought he was just meeting a young fan. He ended up helping her find her way back (Gift Article)",
+    "https://www.nytimes.com/athletic/7695017/2026/10/17/garrett-wilson-new-york-jets-family-friend/?unlocked_article_code=1.JVE.KLTX.FSrYV3hRf1ht&amp%3Bsource=emp_shared_article&amp%3Bsmid=ta-ios-share"
    ]
   ],
   "fluffDropped": [
@@ -12146,25 +12274,25 @@
    "Inside Qatar’s Geekend where gamers, cosplayers and artists share their love of games, comics and anime",
    "La ruta de senderismo cerca de Valencia que te lleva a descubrir tres impresionantes cascadas en plena naturaleza",
    "'La bola negra' lo cambia todo: Netflix le dará un giro de 180 grados a sus estrenos a partir de la película de los Javis",
-   "La vida de Raphael llega a Netflix: entre la gloria, los rumores y las cuentas pendientes",
-   "Famoso filósofo británico sobre cómo vencer la procrastinación: “Cuando no hacemos lo que más queremos, a menudo es por una razón: el peso insoportable que tiene para nosotros esa gran prioridad vital”"
+   "Famoso filósofo británico sobre cómo vencer la procrastinación: “Cuando no hacemos lo que más queremos, a menudo es por una razón: el peso insoportable que tiene para nosotros esa gran prioridad vital”",
+   "La vida de Raphael llega a Netflix: entre la gloria, los rumores y las cuentas pendientes"
   ],
   "candidates": 81,
   "fromGeneralFeeds": 0,
   "rejected": {
-   "formato": 101,
+   "formato": 100,
    "débil (guerra, negación, críticas u obra a medias)": 19,
    "relleno": 12,
-   "poco positivo": 315,
+   "poco positivo": 316,
    "negativo": 135,
    "relleno (sin impacto medible)": 10,
    "negativo-resumen": 1,
-   "deporte (no es triunfo)": 159
+   "deporte (no es triunfo)": 161
   },
   "reddit": {
    "UpliftingNews": {
     "ok": true,
-    "items": 22,
+    "items": 21,
     "error": null
    },
    "HumansBeingBros": {
@@ -12183,14 +12311,14 @@
     "error": "HTTPError: HTTP Error 429: Too Many Requests"
    },
    "Futurology": {
-    "ok": true,
-    "items": 10,
-    "error": null
-   },
-   "MadeMeSmile": {
     "ok": false,
     "items": 0,
     "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   },
+   "MadeMeSmile": {
+    "ok": true,
+    "items": 43,
+    "error": null
    }
   },
   "ninegag": {
@@ -12199,16 +12327,16 @@
    "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   "leads": {
-   "total": 51,
+   "total": 83,
    "confirmed": 4,
-   "dropped": 47,
+   "dropped": 79,
    "confirmedVia": {
     "coincide con nota confiable": 1,
     "enlace a medio confiable (leído de su página)": 3
    },
    "droppedReasons": {
-    "medio confiable pero nota no positiva": 5,
-    "enlace a sitio no verificado": 30,
+    "medio confiable pero nota no positiva": 3,
+    "enlace a sitio no verificado": 64,
     "nota antigua": 3,
     "medio confiable pero no se pudo leer la página": 9
    },
@@ -12222,11 +12350,6 @@
      "sub": "UpliftingNews",
      "title": "New method reversed doomed bleached coral at record speed",
      "link": "https://www.yahoo.com/news/science/articles/method-reversed-doomed-bleached-coral-184056576.html"
-    },
-    {
-     "sub": "UpliftingNews",
-     "title": "At 15, Andreas Okholm dreamed of harnessing wind with a kite. Years later, his Danish startup KiteX has turned that idea into a turbine that",
-     "link": "https://www.ecoticias.com/en/danish-startup-kitexs-small-wind-turbine-weighs-about-770-pounds-and-goes-up-in-a-day-and-wind-pioneer-henrik-stiesdal-called-it-the-most-compelling-small-scale-wind-power-concept-i-have-encounte/52019/"
     },
     {
      "sub": "UpliftingNews",
@@ -12272,6 +12395,11 @@
      "sub": "UpliftingNews",
      "title": "Woman Celebrates 100th Birthday with 5 Generations of Family, Reveals Secret to Her Long Life (Exclusive)",
      "link": "https://people.com/woman-celebrates-100th-birthday-reveals-secret-to-living-long-life-exclusive-12170568"
+    },
+    {
+     "sub": "UpliftingNews",
+     "title": "A heart disease warning could soon show up in your mammogram results",
+     "link": "https://archive.li/blBPR"
     }
    ]
   },
@@ -12307,13 +12435,13 @@
     [
      "cr-nacion-pais",
      false,
-     20,
+     19,
      null
     ],
     [
      "cr-nacion-viva",
      false,
-     46,
+     47,
      null
     ],
     [
@@ -12325,7 +12453,7 @@
     [
      "cr-crhoy",
      false,
-     170,
+     168,
      null
     ],
     [
@@ -12457,7 +12585,7 @@
     [
      "crq-elmundo-cr-elmundo",
      true,
-     53,
+     48,
      null
     ],
     [
@@ -12487,7 +12615,7 @@
     [
      "crq-observador-observador",
      true,
-     90,
+     92,
      null
     ],
     [
@@ -12505,10 +12633,10 @@
    ],
    "kept": 29,
    "rejected": {
-    "sin ángulo tico": 904,
-    "deporte (no es triunfo)": 129,
-    "sin señal positiva": 210,
-    "negativo": 201,
+    "deporte (no es triunfo)": 127,
+    "negativo": 200,
+    "sin ángulo tico": 901,
+    "sin señal positiva": 208,
     "agenda/evento": 22
    }
   },
@@ -12704,14 +12832,14 @@
     "source": "Cryptonews",
     "url": "https://cryptonews.com/news/feed/",
     "itemsInFeed": 20,
-    "kept": 6
+    "kept": 5
    },
    {
     "id": "cr-utoday",
     "source": "U.Today",
     "url": "https://u.today/rss",
     "itemsInFeed": 92,
-    "kept": 18
+    "kept": 19
    },
    {
     "id": "cr-coingape",
@@ -12731,8 +12859,8 @@
     "id": "crq-reuters",
     "source": "Reuters",
     "url": "gn:site:reuters.com (bitcoin OR crypto OR stablecoin OR ethereum OR blockchain)",
-    "itemsInFeed": 46,
-    "kept": 5
+    "itemsInFeed": 44,
+    "kept": 4
    },
    {
     "id": "crq-bloomberg",
@@ -12745,7 +12873,7 @@
     "id": "crq-cnbc",
     "source": "CNBC",
     "url": "gn:site:cnbc.com (bitcoin OR crypto OR stablecoin OR ethereum)",
-    "itemsInFeed": 16,
+    "itemsInFeed": 14,
     "kept": 0
    },
    {
@@ -12753,14 +12881,14 @@
     "source": "The Wall Street Journal",
     "url": "gn:site:wsj.com (bitcoin OR crypto OR stablecoin OR ethereum)",
     "itemsInFeed": 100,
-    "kept": 5
+    "kept": 4
    },
    {
     "id": "crq-fortune",
     "source": "Fortune",
     "url": "gn:site:fortune.com (bitcoin OR crypto OR stablecoin OR ethereum)",
     "itemsInFeed": 100,
-    "kept": 3
+    "kept": 2
    },
    {
     "id": "crq-axios",
@@ -12781,13 +12909,13 @@
     "source": "Yahoo Finanzas",
     "url": "gn:site:finance.yahoo.com (bitcoin OR crypto OR stablecoin OR ethereum)",
     "itemsInFeed": 100,
-    "kept": 65
+    "kept": 64
    },
    {
     "id": "crq-theblock",
     "source": "The Block",
     "url": "gn:site:theblock.co",
-    "itemsInFeed": 30,
+    "itemsInFeed": 32,
     "kept": 4
    },
    {
@@ -12914,17 +13042,17 @@
     "error": "Feed vacío"
    }
   ],
-  "itemsGathered": 279,
+  "itemsGathered": 275,
   "fromGeneralFeeds": 0,
   "rejected": {
-   "predicción/promo/formato": 30,
+   "predicción/promo/formato": 28,
    "sección no noticiosa": 8
   },
-  "clusters": 199,
+  "clusters": 195,
   "groupsByOutletCount": {
-   "0": 87,
-   "1": 97,
-   "2": 8,
+   "0": 85,
+   "1": 96,
+   "2": 7,
    "3": 1,
    "4": 1,
    "5": 1,
@@ -12944,7 +13072,7 @@
     "region": "costarica",
     "url": "https://www.nacion.com/arc/outboundfeeds/rss/category/el-pais/?outputType=xml",
     "method": "directo",
-    "itemsInFeed": 20,
+    "itemsInFeed": 19,
     "kept": 12
    },
    {
@@ -12955,7 +13083,7 @@
     "url": "https://www.lateja.cr/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 51
+    "kept": 52
    },
    {
     "id": "cr-observador",
@@ -12995,7 +13123,7 @@
     "url": "https://www.amprensa.com/feed/",
     "method": "directo",
     "itemsInFeed": 50,
-    "kept": 39
+    "kept": 38
    },
    {
     "id": "cr-crhoy",
@@ -13004,8 +13132,8 @@
     "region": "costarica",
     "url": "https://crhoy.com/sitemaps/sitemap-news.xml",
     "method": "directo",
-    "itemsInFeed": 170,
-    "kept": 97
+    "itemsInFeed": 168,
+    "kept": 96
    },
    {
     "id": "cr-teletica",
@@ -13015,7 +13143,7 @@
     "url": "https://www.teletica.com/sitemaps/news/last-news",
     "method": "google-news",
     "itemsInFeed": 100,
-    "kept": 75
+    "kept": 74
    },
    {
     "id": "cr-repretel",
@@ -13055,7 +13183,7 @@
     "url": "https://www.prensalibre.com/feed/",
     "method": "directo",
     "itemsInFeed": 99,
-    "kept": 75
+    "kept": 78
    },
    {
     "id": "ca-republica-gt",
@@ -13075,7 +13203,7 @@
     "url": "https://lahora.gt/feed/",
     "method": "directo",
     "itemsInFeed": 10,
-    "kept": 8
+    "kept": 9
    },
    {
     "id": "ca-cronica-gt",
@@ -13105,7 +13233,7 @@
     "url": "https://www.critica.com.pa/rss.xml",
     "method": "directo",
     "itemsInFeed": 10,
-    "kept": 7
+    "kept": 8
    },
    {
     "id": "ca-confidencial",
@@ -13195,7 +13323,7 @@
     "url": "https://www.eluniversal.com.mx/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 72
+    "kept": 70
    },
    {
     "id": "la-jornada",
@@ -13215,7 +13343,7 @@
     "url": "https://www.elfinanciero.com.mx/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 58
+    "kept": 59
    },
    {
     "id": "la-expansion-mx",
@@ -13235,7 +13363,7 @@
     "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/mexico/portada",
     "method": "directo",
     "itemsInFeed": 109,
-    "kept": 12
+    "kept": 13
    },
    {
     "id": "la-infobae-mx",
@@ -13254,8 +13382,8 @@
     "region": "latam",
     "url": "https://www.diariolibre.com/rss/portada.xml",
     "method": "directo",
-    "itemsInFeed": 46,
-    "kept": 29
+    "itemsInFeed": 49,
+    "kept": 32
    },
    {
     "id": "la-elnuevodia",
@@ -13265,7 +13393,7 @@
     "url": "https://www.elnuevodia.com/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 30,
-    "kept": 21
+    "kept": 20
    },
    {
     "id": "la-14ymedio",
@@ -13295,7 +13423,7 @@
     "url": "https://www.clarin.com/rss/lo-ultimo/",
     "method": "directo",
     "itemsInFeed": 10,
-    "kept": 7
+    "kept": 8
    },
    {
     "id": "sa-infobae-ar",
@@ -13305,7 +13433,7 @@
     "url": "https://www.infobae.com/arc/outboundfeeds/rss/category/politica/",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 43
+    "kept": 42
    },
    {
     "id": "sa-semana",
@@ -13315,7 +13443,7 @@
     "url": "https://www.semana.com/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 69
+    "kept": 73
    },
    {
     "id": "sa-latercera",
@@ -13335,7 +13463,7 @@
     "url": "https://rpp.pe/rss",
     "method": "directo",
     "itemsInFeed": 60,
-    "kept": 27
+    "kept": 28
    },
    {
     "id": "sa-elnacional-ve",
@@ -13365,7 +13493,7 @@
     "url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 71
+    "kept": 70
    },
    {
     "id": "sa-agenciabrasil",
@@ -13465,7 +13593,7 @@
     "url": "https://www.ansa.it/english/news/english_nr_rss.xml",
     "method": "directo",
     "itemsInFeed": 100,
-    "kept": 56
+    "kept": 54
    },
    {
     "id": "eu-notesfrompoland",
@@ -13564,8 +13692,8 @@
     "region": "asia",
     "url": "https://www.dawn.com/feeds/home",
     "method": "directo",
-    "itemsInFeed": 25,
-    "kept": 24
+    "itemsInFeed": 26,
+    "kept": 25
    },
    {
     "id": "as-hindustantimes",
@@ -13725,7 +13853,7 @@
     "url": "https://www.africanews.com/feed/rss",
     "method": "directo",
     "itemsInFeed": 50,
-    "kept": 41
+    "kept": 40
    },
    {
     "id": "af-egyptindependent",
@@ -13755,7 +13883,7 @@
     "url": "https://rss.dw.com/rdf/rss-en-africa",
     "method": "directo",
     "itemsInFeed": 3,
-    "kept": 0
+    "kept": 1
    },
    {
     "id": "af-rfi-africa",
@@ -13805,7 +13933,7 @@
     "url": "https://www.smh.com.au/rss/feed.xml",
     "method": "directo",
     "itemsInFeed": 20,
-    "kept": 13
+    "kept": 9
    },
    {
     "id": "oc-theage",
@@ -13815,7 +13943,7 @@
     "url": "https://www.theage.com.au/rss/feed.xml",
     "method": "directo",
     "itemsInFeed": 20,
-    "kept": 1
+    "kept": 0
    },
    {
     "id": "oc-crikey",
@@ -13854,8 +13982,8 @@
     "region": "oceania",
     "url": "https://www.rnz.co.nz/rss/national.xml",
     "method": "directo",
-    "itemsInFeed": 45,
-    "kept": 44
+    "itemsInFeed": 46,
+    "kept": 45
    },
    {
     "id": "oc-rnz-pacific",
@@ -13884,7 +14012,7 @@
     "region": "oceania",
     "url": "https://www.stuff.co.nz/rss",
     "method": "directo",
-    "itemsInFeed": 82,
+    "itemsInFeed": 83,
     "kept": 30
    }
   ],
@@ -13996,8 +14124,8 @@
     "error": "Funcionan pero no están en español ni inglés (no se pueden agrupar)"
    }
   ],
-  "itemsGathered": 4197,
-  "clusters": 3288,
+  "itemsGathered": 4202,
+  "clusters": 3301,
   "perRegion": {
    "costarica": 6,
    "centroamerica": 2,
@@ -14011,11 +14139,11 @@
   "groupsWith3or4Outlets": {
    "costarica": 16,
    "centroamerica": 2,
-   "latam": 4,
-   "sudamerica": 4,
+   "latam": 6,
+   "sudamerica": 5,
    "europa": 17,
-   "asia": 7,
-   "africa": 4,
+   "asia": 6,
+   "africa": 3,
    "oceania": 0
   },
   "workingLocalOutletsPerRegion": {
@@ -14030,30 +14158,30 @@
   }
  },
  "possible": {
-  "candidates": 266,
-  "afterDedupe": 217,
+  "candidates": 270,
+  "afterDedupe": 218,
   "shown": 60,
   "byOutlets": {
-   "2": 14,
-   "3": 28,
-   "4": 18
+   "2": 15,
+   "3": 24,
+   "4": 21
   },
   "byChip": {
    "europa": 8,
-   "mundo": 5,
+   "africa": 3,
+   "latam": 6,
+   "mundo": 4,
+   "sucesos": 5,
    "costarica": 8,
-   "politica": 9,
-   "sucesos": 4,
-   "latam": 4,
-   "asia": 7,
+   "politica": 7,
+   "asia": 5,
    "guerras": 1,
    "sudamerica": 4,
    "cripto": 6,
-   "centroamerica": 3,
-   "africa": 4,
    "finanzas": 5,
+   "centroamerica": 3,
    "oceania": 3,
-   "ciencias": 1
+   "ciencias": 2
   }
  }
 }
