@@ -97,3 +97,11 @@ h1 { margin: 0; font-family: Georgia, "Iowan Old Style", Palatino, serif; font-s
 .tour-tip button:disabled { opacity: .35; cursor: default; }
 .tour-glow { opacity: 1 !important; z-index: 1003; background: #fff !important; box-shadow: 0 0 0 3px #f5b400; }
 html.tour-open { scroll-behavior: auto; }
+.st-deportes { background: #eaf0ff; color: #2a3f8f; }
+.chip.cr { background: #fde9e7; color: #8d2d24; }
+.bfilter { display: flex; gap: 8px; margin: 0 0 12px; flex-wrap: wrap; }
+.bf { font: inherit; font-size: .85rem; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.bf.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+.bf .count { margin-left: 6px; font-size: .75rem; opacity: .75; }
+.cardtop .chip, .cardtop .subtopic { white-space: nowrap; }
+.cardtop { flex-wrap: wrap; row-gap: 4px; }

@@ -66,6 +66,14 @@ Agregar un resumen escrito por IA para cada historia de consenso, que explique e
 - Reddit (r/UpliftingNews, r/science, etc.) y 9gag solo sirven como pistas: una pista entra únicamente si enlaza a un medio confiable, y lo que se muestra es ese medio.
 - Máximo 40 notas, 5 por medio y 10 por subtema (12 en medio ambiente). El informe completo (feeds, pistas confirmadas y descartadas) queda en `noticias.json` → `goodNews`.
 
+## Buenas noticias de Costa Rica y deportes
+
+- **Costa Rica** (`cr_buenas.py`, `cr_filtro.py`): medios ticos (La Nación/La Teja, CRHoy, Teletica, Repretel, AmeliaRueda, Diario Extra, Delfino, Semanario Universidad, El Observador, Trivisión, El Mundo CR, AM Prensa, Monumental, Tico Times, The Costa Rica News), la UCR, el TEC y la UNA, más búsquedas de Google Noticias por sitio con palabras positivas (`when:7d` va al inicio de la búsqueda). Tiene su propio filtro en español tico: exige un ángulo tico (lugar, institución o gentilicio) y descarta sucesos, pleitos políticos, lotería, farándula, eventos y publicidad de empresas.
+- Tienen su propio espacio: hasta 12 notas de Costa Rica, máximo 3 por medio, aparte del tope global de 60. En la página se filtran con los botones Todas / Costa Rica / Mundo.
+- Titulares ticos cortos del mismo hecho se agrupan en una sola tarjeta: comparten palabras raras de la semana (por raíz: «cohete» = «cohetería») dentro de 72 h.
+- **Deportes** (`deportes.py`): cuenta cualquier triunfo (títulos, medallas, récords, clasificaciones, premios, primeros lugares), no resultados de partidos, derrotas, fichajes, lesiones, apuestas, escándalos ni previas. Máximo 6 en Costa Rica y 6 en lo global, con la etiqueta «Deportes».
+- Se descartan notas «positivas» débiles: guerra o tema militar, negaciones («aún no»), críticas o investigaciones, déficits y avances parciales de obras.
+
 ## Pestañas por región
 
 `regiones.py` agrega Costa Rica, Centroamérica, Latinoamérica (México, Caribe y temas latinoamericanos generales), Sudamérica, Europa, Asia (incluye Medio Oriente), África y Australia y Oceanía.

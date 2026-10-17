@@ -2,7 +2,7 @@ const TZ = "America/Costa_Rica";
 const when = new Intl.DateTimeFormat("es-CR", {
   timeZone: TZ, weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit",
 });
-const state = { data: null, cat: "buenas", lang: "all" };
+const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas" };
 
 function fmt(iso) {
   const d = new Date(iso);
@@ -78,6 +78,7 @@ function card(s) {
   const art = el("article", "card");
   const top = el("div", "cardtop");
   if (s.subtopicLabel) top.append(el("span", "subtopic st-" + s.subtopic, s.subtopicLabel));
+  if (s.cr) top.append(el("span", "chip cr", "Costa Rica"));
   (s.chips || []).forEach((c) => top.append(el("span", "chip", c.label)));
   if (!s.subtopic || s.outlets > 1) {
     top.append(el("span", "outlets" + (s.outlets >= 5 ? " hot" : "") + (state.cat === "posibles" ? " maybe" : ""), s.outlets + " medios"));
@@ -151,7 +152,26 @@ function renderList() {
   if (cat.id === "buenas") {
     list.append(el("p", "note", "Progreso y buenas acciones de todo el mundo. Aquí basta una fuente confiable; las pistas de Reddit solo entran si un medio serio publica la nota."));
   }
-  cat.stories.forEach((s) => list.append(card(s)));
+  let stories = cat.stories;
+  if (cat.id === "buenas") {
+    const nCr = stories.filter((s) => s.cr).length;
+    const bar = el("div", "bfilter");
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "Filtrar buenas noticias");
+    [["todas", "Todas", stories.length], ["cr", "Costa Rica", nCr], ["mundo", "Mundo", stories.length - nCr]].forEach(([id, label, n]) => {
+      const b = el("button", "bf" + (state.buenasFilter === id ? " on" : ""));
+      b.type = "button";
+      b.dataset.filter = id;
+      b.append(label, el("span", "count", String(n)));
+      b.addEventListener("click", () => { state.buenasFilter = id; renderList(); });
+      bar.append(b);
+    });
+    list.append(bar);
+    if (state.buenasFilter === "cr") stories = stories.filter((s) => s.cr);
+    if (state.buenasFilter === "mundo") stories = stories.filter((s) => !s.cr);
+    if (!stories.length) list.append(el("p", "empty", "Ahora mismo no hay buenas noticias de Costa Rica confirmadas por un medio confiable."));
+  }
+  stories.forEach((s) => list.append(card(s)));
 }
 
 function renderFoot(data) {

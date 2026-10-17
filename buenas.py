@@ -26,13 +26,19 @@ from html import unescape
 from urllib.parse import urlparse
 
 import actualizar as A
+import deportes as D
 
 GOOD_HOURS = 24 * 7       # las secciones de soluciones publican despacio
 GENERAL_HOURS = 72        # notas de los feeds generales
-MAX_ITEMS = 40
-PER_SUBTOPIC_MAX = 10
-SUBTOPIC_MAX = {"ambiente": 12}
+MAX_ITEMS = 60            # notas globales (las de Costa Rica van aparte)
+PER_SUBTOPIC_MAX = 12
+SUBTOPIC_MAX = {"ambiente": 15, "deportes": 6}
 PER_OUTLET_MAX = 5
+CR_ENABLED = True
+CR_MAX = 12            # espacio propio para Costa Rica, aparte del tope global
+CR_PER_OUTLET_MAX = 3
+CR_SPORTS_MAX = 6
+CR_LOG = {}
 REDDIT_UA = "noticias-app/0.1 (personal news briefing; github.com/kbpsy505/noticias-app)"
 
 SUBTOPICS = [
@@ -42,6 +48,7 @@ SUBTOPICS = [
     ("social", "Progreso social"),
     ("acciones", "Buenas acciones"),
     ("comunidad", "Comunidad"),
+    ("deportes", "Deportes"),
 ]
 SUB_LABEL = dict(SUBTOPICS)
 
@@ -84,6 +91,13 @@ GOOD_FEEDS = [
     ("pos-planetafuturo", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/planeta-futuro/portada", "El País", "elpais", "es", "topic", "social"),
     ("pos-elpais-clima", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/clima-y-medio-ambiente/portada", "El País", "elpais", "es", "topic", "ambiente"),
     ("pos-elpais-tec", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/tecnologia/portada", "El País", "elpais", "es", "topic", "ciencia"),
+    ("new-betterindia", "https://thebetterindia.com/feed/", "The Better India", "betterindia", "en", "good", "acciones"),
+    ("new-mit", "https://news.mit.edu/rss/research", "MIT News", "mit", "en", "topic", "ciencia"),
+    ("new-efeverde", "https://www.efeverde.com/feed/", "EFE Verde", "efe", "es", "topic", "ambiente"),
+    # ---- deportes: solo triunfos (títulos, medallas, récords, clasificaciones), ver deportes.py
+    ("sport-bbc", "https://feeds.bbci.co.uk/sport/rss.xml", "BBC Sport", "bbc", "en", "sport", "deportes"),
+    ("sport-elpais", "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/deportes/portada", "El País", "elpais", "es", "sport", "deportes"),
+    ("sport-infobae", "https://www.infobae.com/arc/outboundfeeds/rss/category/deportes/", "Infobae", "infobae", "es", "sport", "deportes"),
     ("pos-infobae-salud", "https://www.infobae.com/arc/outboundfeeds/rss/category/salud/", "Infobae", "infobae", "es", "topic", "salud"),
 ]
 
@@ -316,10 +330,20 @@ def impact_score(title: str, summary: str) -> int:
     return 2 * len(IMPACT.findall(title)) + min(2, len(IMPACT.findall(summary[:300])))
 
 
+# Reglas generales contra notas «positivas» débiles: guerra/militar, negaciones («still not restored»),
+# críticas o investigaciones, y avances parciales de obras («supera el 60% de avance»).
+WEAK = re.compile(r"(?i)\b(military|militar(es)?|army|ejército|troops|tropas|still not|not yet|not fully|fails? to|"
+                  r"aún no|todavía no|sin resolver|criticism|criticised|criticized|inquiry|backlash|críticas|polémica|"
+                  r"compensation scheme|indemnizaci[oó]n|falling short|falls? short|shortfall)\b|\d+ ?% (de )?avance|supera el \d+ ?%|avance de (la )?obra")
+PEACE = re.compile(r"(?i)\b(peace|paz|ceasefire|alto el fuego|tregua|reconstru\w*|rebuild\w*)\b")
+
+
 def tone_score(title: str, summary: str):
     """Devuelve (puntaje, motivo de rechazo o None)."""
     if FORMAT_SKIP.search(title):
         return 0, "formato"
+    if WEAK.search(title) or (A.WAR.search(title) and not PEACE.search(title)):
+        return 0, "débil (guerra, negación, críticas u obra a medias)"
     remedy = False
     if NEG_TITLE.search(title):
         # Se salva solo si la acción es claramente positiva y no hay violencia/política dura.
@@ -450,6 +474,76 @@ def ninegag_leads():
 
 
 # ---------------------------------------------------------------- principal
+# ---------------------------------------------------------------- agrupación extra para notas ticas
+CR_STOP = set("costa rica ticos ticas tico tica costarricense costarricenses gana ganan premio primer lugar nueva nuevo nuevas nuevos "
+              "segun sobre tras entre desde hasta para por con los las del una uno unos unas este esta estos estas como mas "
+              "orgullo reconocimiento reconocen recibe historia historico hace destaca logra marca hito cientos miles millones "
+              "lleva llevan estudiantes estudiante competencia concurso internacional nacional mundial universitarios "
+              "colegio colegiales escuela escuelas primera primero".split())
+
+
+def cr_tokens(title):
+    """Raíces de 7 letras de las palabras de 4+ letras (cohete ≈ cohetería; correos ≠ corredor)."""
+    words = re.findall(r"[a-z0-9]{4,}", A.fold(title.lower()))
+    return {_stem(w) for w in words if w not in CR_STOP}
+
+
+def _stem(w):
+    for suf in ("erias", "eria", "es", "s", "a", "o", "e"):
+        if w.endswith(suf) and len(w) - len(suf) >= 4:
+            w = w[: -len(suf)]
+            break
+    return w[:7]
+
+
+def cr_token_df(items):
+    df = Counter()
+    for it in items:
+        df.update(cr_tokens(it["title"]))
+    return df
+
+
+def cr_merge(groups, cands, df):
+    """Une grupos de notas ticas que cuentan el mismo hecho con titulares cortos y distintos:
+    comparten 2 raíces poco comunes (≤ 8 notas ticas de la semana) o 1 muy rara (≤ 5), dentro de 72 h."""
+    if not df:
+        return groups
+    groups = [list(g) for g in groups]
+    info = []
+    for g in groups:
+        ms = [cands[i] for i in g]
+        cr = any(m.get("cr") for m in ms)
+        toks = set().union(*(cr_tokens(m["title"]) for m in ms))
+        rare = {t for t in toks if df.get(t, 0) <= 8}
+        inst = set().union(*(set(re.findall(r"\b(UCR|UNA|TEC|UNED|UTN)\b", m["title"])) for m in ms))
+        info.append((cr, rare, min(m["_ts"] for m in ms), max(m["_ts"] for m in ms), inst))
+    parent = list(range(len(groups)))
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+    for a in range(len(groups)):
+        if not info[a][0]:
+            continue
+        for b in range(a + 1, len(groups)):
+            if not info[b][0]:
+                continue
+            if abs(info[a][2] - info[b][2]) > 72 * 3600 and abs(info[a][3] - info[b][3]) > 72 * 3600:
+                continue
+            shared = info[a][1] & info[b][1]
+            # 2 raíces poco comunes, o 1 muy rara (≤ 5 notas en la semana: p. ej. «cohet» de cohete/cohetería)
+            if info[a][4] and info[b][4] and not (info[a][4] & info[b][4]):
+                continue    # una nota de la UCR y otra de la UNA no son el mismo hecho
+            if len(shared) >= 2 or any(df.get(t, 0) <= 5 and len(t) >= 5 for t in shared):
+                parent[find(b)] = find(a)
+    merged = defaultdict(list)
+    for i, g in enumerate(groups):
+        merged[find(i)].extend(g)
+    return list(merged.values())
+
+
 def build(now: datetime, general_pool: list[dict], main_feeds: list):
     trusted = set(EXTRA_TRUSTED)
     for f in list(main_feeds) + GOOD_FEEDS:
@@ -483,12 +577,23 @@ def build(now: datetime, general_pool: list[dict], main_feeds: list):
         kept = 0
         for title, link, date_s, desc in rows:
             u = A.clean_url(link)
-            if not u.startswith("http") or A.SKIP_PATH.search(urlparse(u).path.lower()):
+            if not u.startswith("http") or (kind != "sport" and A.SKIP_PATH.search(urlparse(u).path.lower())):
                 continue
             pub = parse_date(date_s)
             if pub is None or pub > now + timedelta(hours=3) or pub < now - timedelta(hours=GOOD_HOURS):
                 continue
             summary = desc if desc and A.fold(desc.lower())[:60] != A.fold(title.lower())[:60] else ""
+            if kind == "sport":
+                if pub < now - timedelta(hours=GENERAL_HOURS):
+                    continue
+                if not D.sport_win(A.fold(title.lower())):
+                    rejected["deporte (no es triunfo)"] += 1
+                    continue
+                if add({"title": title, "url": u, "source": source, "org": org, "lang": lang, "summary": A.trim(summary),
+                        "publishedAt": pub.strftime("%Y-%m-%dT%H:%M:%SZ"), "_ts": pub.timestamp(), "score": 4,
+                        "default": "deportes", "feed": fid, "kind": kind, "reddit": []}):
+                    kept += 1
+                continue
             score, why = tone_score(title, summary)
             if why:
                 rejected[why] += 1
@@ -522,6 +627,23 @@ def build(now: datetime, general_pool: list[dict], main_feeds: list):
         if add({**{k: it[k] for k in ("title", "url", "source", "org", "lang", "summary", "publishedAt", "_ts")},
                 "score": score, "default": default, "feed": it["feed"], "kind": "general", "reddit": []}):
             gen_kept += 1
+
+    # ---------------- Costa Rica: medios ticos + universidades, filtro propio en español tico
+    cr_kept, cr_rej = 0, Counter()
+    if CR_ENABLED:
+        import cr_buenas, cr_filtro
+        cr_items, cr_status = cr_buenas.gather(now)
+        CR_LOG["status"] = cr_status
+        CR_LOG["_df"] = cr_token_df(cr_items)
+        for it in cr_items:
+            sub, why = cr_filtro.judge(it)
+            if why:
+                cr_rej[why] += 1
+                continue
+            if add({**{k: it[k] for k in ("title", "url", "source", "org", "lang", "summary", "publishedAt", "_ts")},
+                    "score": 4, "default": sub, "feed": it["feed"], "kind": "cr", "reddit": [], "cr": True}):
+                cr_kept += 1
+        CR_LOG.update(kept=cr_kept, rejected=dict(cr_rej))
 
     # ---------------- Reddit / 9gag: solo pistas
     leads, rstatus = reddit_leads()
@@ -644,6 +766,7 @@ def build(now: datetime, general_pool: list[dict], main_feeds: list):
     # ---------------- agrupar el mismo hecho entre medios
     idf, df = A.build_vectors(cands)
     groups, sims = A.cluster(cands, idf, df) if len(cands) > 1 else ([[0]] if cands else [], {})
+    groups = cr_merge(groups, cands, CR_LOG.pop("_df", None))
     stories = []
     for g in groups:
         members = [cands[i] for i in g]
@@ -654,9 +777,12 @@ def build(now: datetime, general_pool: list[dict], main_feeds: list):
         es_best = max(es, key=lambda m: (m["score"], len(m["summary"]))) if es else None
         en_best = max(en, key=lambda m: (m["score"], len(m["summary"]))) if en else None
         text = " ".join(m["title"] + " " + m["summary"][:200] for m in members)
-        sub = subtopic(" ".join(m["title"] for m in members), best["default"])
-        if sub == best["default"]:
-            sub = subtopic(text, best["default"], deeds_first=False)
+        if all(m.get("cr") or m["kind"] == "sport" for m in members) or best["default"] == "deportes":
+            sub = best["default"]   # el filtro tico / de deportes ya decidió el subtema
+        else:
+            sub = subtopic(" ".join(m["title"] for m in members), best["default"])
+            if sub == best["default"]:
+                sub = subtopic(text, best["default"], deeds_first=False)
         reddit = [r for m in members for r in m.get("reddit", [])]
         ts = [m["_ts"] for m in members]
         stories.append({
@@ -680,19 +806,31 @@ def build(now: datetime, general_pool: list[dict], main_feeds: list):
                      - (now.timestamp() - max(ts)) / (36 * 3600),
             "_feeds": sorted({m["feed"] for m in members}),
             "_org": best["org"],
+            "cr": any(m.get("cr") for m in members),
         })
 
-    # Orden: puntaje; luego equilibrio por subtema.
+    # Orden: puntaje; luego equilibrio por subtema. Costa Rica tiene su propio espacio (no cuenta en el tope global).
     stories.sort(key=lambda s: s["_rank"], reverse=True)
     per, per_org, chosen = Counter(), Counter(), []
+    cr_per, cr_org, cr_chosen = Counter(), Counter(), []
     for s in stories:
+        if s["cr"]:
+            org = s["_org"]
+            if (len(cr_chosen) >= CR_MAX or cr_org[org] >= CR_PER_OUTLET_MAX
+                    or (s["subtopic"] == "deportes" and cr_per["deportes"] >= CR_SPORTS_MAX)):
+                continue
+            cr_per[s["subtopic"]] += 1
+            cr_org[org] += 1
+            cr_chosen.append(s)
+            continue
+        if len(chosen) >= MAX_ITEMS:
+            continue
         if per[s["subtopic"]] >= SUBTOPIC_MAX.get(s["subtopic"], PER_SUBTOPIC_MAX) or per_org[s["_org"]] >= PER_OUTLET_MAX:
             continue
         per[s["subtopic"]] += 1
         per_org[s["_org"]] += 1
         chosen.append(s)
-        if len(chosen) >= MAX_ITEMS:
-            break
+    chosen += cr_chosen
     chosen.sort(key=lambda s: s["lastSeen"], reverse=True)
     for i, s in enumerate(chosen):
         s["id"] = f"buenas-{i + 1}"
@@ -711,6 +849,9 @@ def build(now: datetime, general_pool: list[dict], main_feeds: list):
                   "confirmedVia": dict(lead_log["confirmedVia"]), "droppedReasons": dict(lead_log["droppedReasons"]),
                   "droppedExamples": lead_log["examples"]},
         "perSubtopic": {k: per.get(k, 0) for k, _ in SUBTOPICS},
+        "crPerSubtopic": {k: cr_per.get(k, 0) for k, _ in SUBTOPICS},
+        "globalCount": len(chosen) - len(cr_chosen), "crCount": len(cr_chosen),
         "allStoriesBeforeCap": len(stories),
+        "cr": CR_LOG, "crStoriesBeforeCap": sum(1 for x in stories if x["cr"]),
     }
     return chosen, report
