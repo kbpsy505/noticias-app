@@ -9,7 +9,7 @@
     {
       target: "#tabs",
       title: "Pestañas",
-      text: "Desliza hacia los lados para ver los temas: Costa Rica, Finanzas, Cripto, Política, Ciencias, Mundo (con filtros por región: Europa, Asia…), Guerras y más. La app abre en Buenas noticias. El número de cada pestaña es cuántas historias tiene.",
+      text: "Desliza hacia los lados para ver los temas: Costa Rica, Finanzas, Cripto, Política, Ciencias, Mundo (con filtros por región: Europa, Asia…), Sucesos, Guerras y más. La app abre en Buenas noticias. El número de cada pestaña es cuántas historias tiene.",
       onShow: () => scrollTabTo(".tab.on"),
     },
     {

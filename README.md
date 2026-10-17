@@ -2,7 +2,7 @@
 
 Página móvil (en español) que muestra **solo las noticias que publican varios medios a la vez**. La idea es quitar el ruido: si una historia aparece en un solo medio, no se muestra. Si la publican 2, 5 o 19 medios distintos, aparece, ordenada por cuántos medios la cubren.
 
-Pestañas, en este orden: Buenas noticias (la que abre), Costa Rica, Mundo de finanzas, Criptomonedas, Política, Ciencias, Mundo (con filtros por región), Guerras y conflictos, Sucesos y Posibles noticias.
+Pestañas, en este orden: Buenas noticias (la que abre), Costa Rica, Mundo de finanzas, Criptomonedas, Política, Ciencias, Mundo (con filtros por región), Sucesos, Guerras y conflictos y Posibles noticias.
 
 **Abrir en el teléfono:** https://kbpsy505.github.io/noticias-app/ (en Chrome; no hace falta cuenta ni instalar nada).
 

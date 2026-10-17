@@ -6857,6 +6857,192 @@
    ]
   },
   {
+   "id": "sucesos",
+   "label": "Sucesos",
+   "minOutlets": 5,
+   "stories": [
+    {
+     "headline": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
+     "headlineLang": "es",
+     "headlineEs": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
+     "headlineEn": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
+     "summaryEs": "El ataque ocurrió en la escuela Silver Rail de la localidad de Bend, en el noroeste de EE.UU. El sospechoso fue abatido por un transeúnte.",
+     "summaryEsSource": "BBC Mundo",
+     "summaryEn": "A teacher was also killed in the attack at the Silver Rail Elementary School in the city of Bend, Oregon, police say.",
+     "summaryEnSource": "BBC",
+     "outlets": 9,
+     "outletNames": [
+      "BBC",
+      "BBC Mundo",
+      "CBS News",
+      "DW",
+      "El Confidencial",
+      "El Mundo",
+      "El Tiempo",
+      "NPR",
+      "Sky News",
+      "The Guardian"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-16T05:42:48Z",
+     "lastSeen": "2026-10-17T12:30:30Z",
+     "sources": [
+      {
+       "source": "El Mundo",
+       "lang": "es",
+       "title": "Un menor de 16 años mata a tres niños de 5, 8 y 11 y a una maestra en un tiroteo en una escuela de Oregón",
+       "url": "https://www.elmundo.es/internacional/2026/10/16/6ad14ce921efa029108b45a6.html",
+       "publishedAt": "2026-10-16T05:42:48Z"
+      },
+      {
+       "source": "El Confidencial",
+       "lang": "es",
+       "title": "Un tiroteo en una escuela de Oregón deja cinco muertos: tres niños, una maestra y el presunto asesino",
+       "url": "https://www.elconfidencial.com/mundo/2026-10-16/tiroteo-escuela-primaria-bend-oregon-1tps_4446110/",
+       "publishedAt": "2026-10-16T06:21:00Z"
+      },
+      {
+       "source": "NPR",
+       "lang": "en",
+       "title": "Teen kills 4 at Oregon school. And, DOJ sues California over alleged noncitizens",
+       "url": "https://www.npr.org/2026/10/16/g-s1-148373/up-first-newsletter-bend-oregon-school-shooting-california-doj-voters-presidential-papers",
+       "publishedAt": "2026-10-16T11:03:57Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
+       "url": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo",
+       "publishedAt": "2026-10-16T11:41:58Z"
+      },
+      {
+       "source": "Sky News",
+       "lang": "en",
+       "title": "Teacher fought with Oregon gunman before parent shot suspect",
+       "url": "https://news.sky.com/story/heroic-teacher-fought-with-gunman-before-parent-shot-suspect-who-killed-four-at-oregon-school-13600075",
+       "publishedAt": "2026-10-16T20:58:00Z"
+      },
+      {
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
+       "url": "https://www.bbc.com/mundo/articles/ckj0l9lrenq6o",
+       "publishedAt": "2026-10-17T00:01:38Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "Oregon school shooting: Police praise 'heroism' of those who intervened to stop more killing",
+       "url": "https://www.dw.com/en/oregon-school-shooting-police-praise-heroism-of-those-who-intervened-to-stop-more-killing/a-79685302?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-17T06:04:00Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Teacher fought US school attacker before armed dad shot suspect 'multiple times'",
+       "url": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o",
+       "publishedAt": "2026-10-17T09:58:17Z"
+      },
+      {
+       "source": "El Tiempo",
+       "lang": "es",
+       "title": "Heroica intervención de una maestra en medio del tiroteo en un colegio de Oregón, Estados Unidos: despistó al atacante con su teléfono y lo derribó",
+       "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/heroica-intervencion-de-una-maestra-en-medio-del-tiroteo-en-un-colegio-de-oregon-estados-unidos-despisto-al-atacante-con-su-telefono-y-lo-derribo-3594188",
+       "publishedAt": "2026-10-17T10:01:00Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Hero bystander, teacher praised for saving lives in school shooting",
+       "url": "https://www.cbsnews.com/news/oregon-school-shooter-bystander-identified-silver-rail-elementary/",
+       "publishedAt": "2026-10-17T12:17:00Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "After the unimaginable happens, an Oregon town mourns: ‘You can’t stop thinking about the kids’",
+       "url": "https://www.theguardian.com/us-news/2026/oct/17/bend-oregon-school-shooting",
+       "publishedAt": "2026-10-17T12:30:30Z"
+      }
+     ],
+     "id": "sucesos-1"
+    },
+    {
+     "headline": "Condenan a 158 años de cárcel a tres hombres por el asesinato de dos hermanos surfistas australianos y su amigo estadounidense en México",
+     "headlineLang": "es",
+     "headlineEs": "Condenan a 158 años de cárcel a tres hombres por el asesinato de dos hermanos surfistas australianos y su amigo estadounidense en México",
+     "headlineEn": "Mexican judge sentences three men to 158 years in prison for murders of Australian and US surfers​",
+     "summaryEs": "Los cuerpos de Jake y Callum Robinson y de su amigo Carter Rhoad fueron encontrados en el fondo de un pozo en Baja California.",
+     "summaryEsSource": "BBC Mundo",
+     "summaryEn": "Australian ​brothers Jake ​and Callum Robinson, and ​their ‌American friend Carter Rhoad, were killed while on a surf trip in Baja California in 2024 Get our breaking news email , free app or daily news podcast A Mexican ⁠judge ⁠has sentenced ​three men to 158 years ⁠and nine months in prison each for ⁠the murder of ​two Australian ‌brothers ‌and their American friend during ‌a 2024 surf trip to…",
+     "summaryEnSource": "The Guardian",
+     "outlets": 5,
+     "outletNames": [
+      "BBC",
+      "BBC Mundo",
+      "CBS News",
+      "DW",
+      "Sky News",
+      "The Guardian"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-10-17T02:52:59Z",
+     "lastSeen": "2026-10-17T12:08:49Z",
+     "sources": [
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Mexican judge sentences three men to 158 years in prison for murders of Australian and US surfers​",
+       "url": "https://www.theguardian.com/australia-news/2026/oct/17/mexican-judge-sentences-three-men-to-158-years-in-prison-for-murders-of-australian-and-us-surfers-ntwnfb",
+       "publishedAt": "2026-10-17T02:52:59Z"
+      },
+      {
+       "source": "BBC",
+       "lang": "en",
+       "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
+       "url": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo",
+       "publishedAt": "2026-10-17T03:11:10Z"
+      },
+      {
+       "source": "BBC Mundo",
+       "lang": "es",
+       "title": "Condenan a 158 años de cárcel a tres hombres por el asesinato de dos hermanos surfistas australianos y su amigo estadounidense en México",
+       "url": "https://www.bbc.com/mundo/articles/ck1wve08vzyro",
+       "publishedAt": "2026-10-17T06:41:13Z"
+      },
+      {
+       "source": "Sky News",
+       "lang": "en",
+       "title": "Three men sentenced to more than 158 years in jail for murders of surfers​",
+       "url": "https://news.sky.com/story/three-men-sentenced-to-more-than-158-years-in-prison-for-murders-of-australian-and-us-surfers-13600108",
+       "publishedAt": "2026-10-17T07:23:00Z"
+      },
+      {
+       "source": "DW",
+       "lang": "en",
+       "title": "Mexico sentences killers of US, Australian surfers to 158 years each in prison",
+       "url": "https://www.dw.com/en/mexico-sentences-killers-of-us-australian-surfers-to-158-years-each-in-prison/a-79685975?maca=en-rss-en-all-1573-rdf",
+       "publishedAt": "2026-10-17T08:19:00Z"
+      },
+      {
+       "source": "CBS News",
+       "lang": "en",
+       "title": "Killers of U.S., Australian surf trio sentenced to 158 years",
+       "url": "https://www.cbsnews.com/news/australian-us-surfers-mexico-murder-sentence-prison/",
+       "publishedAt": "2026-10-17T12:08:49Z"
+      }
+     ],
+     "id": "sucesos-2"
+    }
+   ]
+  },
+  {
    "id": "guerras",
    "label": "Guerras y conflictos",
    "minOutlets": 5,
@@ -7123,192 +7309,6 @@
     }
    ],
    "title": "Guerras y conflictos mundiales actuales"
-  },
-  {
-   "id": "sucesos",
-   "label": "Sucesos",
-   "minOutlets": 5,
-   "stories": [
-    {
-     "headline": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
-     "headlineLang": "es",
-     "headlineEs": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
-     "headlineEn": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
-     "summaryEs": "El ataque ocurrió en la escuela Silver Rail de la localidad de Bend, en el noroeste de EE.UU. El sospechoso fue abatido por un transeúnte.",
-     "summaryEsSource": "BBC Mundo",
-     "summaryEn": "A teacher was also killed in the attack at the Silver Rail Elementary School in the city of Bend, Oregon, police say.",
-     "summaryEnSource": "BBC",
-     "outlets": 9,
-     "outletNames": [
-      "BBC",
-      "BBC Mundo",
-      "CBS News",
-      "DW",
-      "El Confidencial",
-      "El Mundo",
-      "El Tiempo",
-      "NPR",
-      "Sky News",
-      "The Guardian"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-16T05:42:48Z",
-     "lastSeen": "2026-10-17T12:30:30Z",
-     "sources": [
-      {
-       "source": "El Mundo",
-       "lang": "es",
-       "title": "Un menor de 16 años mata a tres niños de 5, 8 y 11 y a una maestra en un tiroteo en una escuela de Oregón",
-       "url": "https://www.elmundo.es/internacional/2026/10/16/6ad14ce921efa029108b45a6.html",
-       "publishedAt": "2026-10-16T05:42:48Z"
-      },
-      {
-       "source": "El Confidencial",
-       "lang": "es",
-       "title": "Un tiroteo en una escuela de Oregón deja cinco muertos: tres niños, una maestra y el presunto asesino",
-       "url": "https://www.elconfidencial.com/mundo/2026-10-16/tiroteo-escuela-primaria-bend-oregon-1tps_4446110/",
-       "publishedAt": "2026-10-16T06:21:00Z"
-      },
-      {
-       "source": "NPR",
-       "lang": "en",
-       "title": "Teen kills 4 at Oregon school. And, DOJ sues California over alleged noncitizens",
-       "url": "https://www.npr.org/2026/10/16/g-s1-148373/up-first-newsletter-bend-oregon-school-shooting-california-doj-voters-presidential-papers",
-       "publishedAt": "2026-10-16T11:03:57Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
-       "url": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo",
-       "publishedAt": "2026-10-16T11:41:58Z"
-      },
-      {
-       "source": "Sky News",
-       "lang": "en",
-       "title": "Teacher fought with Oregon gunman before parent shot suspect",
-       "url": "https://news.sky.com/story/heroic-teacher-fought-with-gunman-before-parent-shot-suspect-who-killed-four-at-oregon-school-13600075",
-       "publishedAt": "2026-10-16T20:58:00Z"
-      },
-      {
-       "source": "BBC Mundo",
-       "lang": "es",
-       "title": "Qué se sabe del tiroteo en el que un adolescente de 16 años mató a 3 niños y una maestra en una escuela primaria de Oregón",
-       "url": "https://www.bbc.com/mundo/articles/ckj0l9lrenq6o",
-       "publishedAt": "2026-10-17T00:01:38Z"
-      },
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "Oregon school shooting: Police praise 'heroism' of those who intervened to stop more killing",
-       "url": "https://www.dw.com/en/oregon-school-shooting-police-praise-heroism-of-those-who-intervened-to-stop-more-killing/a-79685302?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-17T06:04:00Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Teacher fought US school attacker before armed dad shot suspect 'multiple times'",
-       "url": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o",
-       "publishedAt": "2026-10-17T09:58:17Z"
-      },
-      {
-       "source": "El Tiempo",
-       "lang": "es",
-       "title": "Heroica intervención de una maestra en medio del tiroteo en un colegio de Oregón, Estados Unidos: despistó al atacante con su teléfono y lo derribó",
-       "url": "https://www.eltiempo.com/mundo/eeuu-y-canada/heroica-intervencion-de-una-maestra-en-medio-del-tiroteo-en-un-colegio-de-oregon-estados-unidos-despisto-al-atacante-con-su-telefono-y-lo-derribo-3594188",
-       "publishedAt": "2026-10-17T10:01:00Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Hero bystander, teacher praised for saving lives in school shooting",
-       "url": "https://www.cbsnews.com/news/oregon-school-shooter-bystander-identified-silver-rail-elementary/",
-       "publishedAt": "2026-10-17T12:17:00Z"
-      },
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "After the unimaginable happens, an Oregon town mourns: ‘You can’t stop thinking about the kids’",
-       "url": "https://www.theguardian.com/us-news/2026/oct/17/bend-oregon-school-shooting",
-       "publishedAt": "2026-10-17T12:30:30Z"
-      }
-     ],
-     "id": "sucesos-1"
-    },
-    {
-     "headline": "Condenan a 158 años de cárcel a tres hombres por el asesinato de dos hermanos surfistas australianos y su amigo estadounidense en México",
-     "headlineLang": "es",
-     "headlineEs": "Condenan a 158 años de cárcel a tres hombres por el asesinato de dos hermanos surfistas australianos y su amigo estadounidense en México",
-     "headlineEn": "Mexican judge sentences three men to 158 years in prison for murders of Australian and US surfers​",
-     "summaryEs": "Los cuerpos de Jake y Callum Robinson y de su amigo Carter Rhoad fueron encontrados en el fondo de un pozo en Baja California.",
-     "summaryEsSource": "BBC Mundo",
-     "summaryEn": "Australian ​brothers Jake ​and Callum Robinson, and ​their ‌American friend Carter Rhoad, were killed while on a surf trip in Baja California in 2024 Get our breaking news email , free app or daily news podcast A Mexican ⁠judge ⁠has sentenced ​three men to 158 years ⁠and nine months in prison each for ⁠the murder of ​two Australian ‌brothers ‌and their American friend during ‌a 2024 surf trip to…",
-     "summaryEnSource": "The Guardian",
-     "outlets": 5,
-     "outletNames": [
-      "BBC",
-      "BBC Mundo",
-      "CBS News",
-      "DW",
-      "Sky News",
-      "The Guardian"
-     ],
-     "languages": [
-      "en",
-      "es"
-     ],
-     "firstSeen": "2026-10-17T02:52:59Z",
-     "lastSeen": "2026-10-17T12:08:49Z",
-     "sources": [
-      {
-       "source": "The Guardian",
-       "lang": "en",
-       "title": "Mexican judge sentences three men to 158 years in prison for murders of Australian and US surfers​",
-       "url": "https://www.theguardian.com/australia-news/2026/oct/17/mexican-judge-sentences-three-men-to-158-years-in-prison-for-murders-of-australian-and-us-surfers-ntwnfb",
-       "publishedAt": "2026-10-17T02:52:59Z"
-      },
-      {
-       "source": "BBC",
-       "lang": "en",
-       "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
-       "url": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo",
-       "publishedAt": "2026-10-17T03:11:10Z"
-      },
-      {
-       "source": "BBC Mundo",
-       "lang": "es",
-       "title": "Condenan a 158 años de cárcel a tres hombres por el asesinato de dos hermanos surfistas australianos y su amigo estadounidense en México",
-       "url": "https://www.bbc.com/mundo/articles/ck1wve08vzyro",
-       "publishedAt": "2026-10-17T06:41:13Z"
-      },
-      {
-       "source": "Sky News",
-       "lang": "en",
-       "title": "Three men sentenced to more than 158 years in jail for murders of surfers​",
-       "url": "https://news.sky.com/story/three-men-sentenced-to-more-than-158-years-in-prison-for-murders-of-australian-and-us-surfers-13600108",
-       "publishedAt": "2026-10-17T07:23:00Z"
-      },
-      {
-       "source": "DW",
-       "lang": "en",
-       "title": "Mexico sentences killers of US, Australian surfers to 158 years each in prison",
-       "url": "https://www.dw.com/en/mexico-sentences-killers-of-us-australian-surfers-to-158-years-each-in-prison/a-79685975?maca=en-rss-en-all-1573-rdf",
-       "publishedAt": "2026-10-17T08:19:00Z"
-      },
-      {
-       "source": "CBS News",
-       "lang": "en",
-       "title": "Killers of U.S., Australian surf trio sentenced to 158 years",
-       "url": "https://www.cbsnews.com/news/australian-us-surfers-mexico-murder-sentence-prison/",
-       "publishedAt": "2026-10-17T12:08:49Z"
-      }
-     ],
-     "id": "sucesos-2"
-    }
-   ]
   },
   {
    "id": "posibles",

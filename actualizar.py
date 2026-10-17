@@ -589,9 +589,9 @@ def build_posibles(candidates, out_cats, region_labels):
     return out, report
 
 
-# Orden de pestañas pedido: Buenas, Costa Rica, Finanzas, Política, Cripto, Sucesos y luego el resto
-# (Mundo, Ciencias, Guerras, regiones, Posibles) en su orden actual.
-TAB_FIRST = ["buenas", "costarica", "finanzas", "cripto", "politica", "ciencias", "mundo", "guerras", "sucesos", "posibles"]
+# Orden de pestañas pedido: Buenas, Costa Rica, Finanzas, Cripto, Política, Ciencias, Mundo (con las
+# regiones dentro), Sucesos, Guerras y conflictos y Posibles noticias.
+TAB_FIRST = ["buenas", "costarica", "finanzas", "cripto", "politica", "ciencias", "mundo", "sucesos", "guerras", "posibles"]
 CAT_TITLES = {"guerras": "Guerras y conflictos mundiales actuales"}
 
 # Regiones que van dentro de la pestaña Mundo (Costa Rica sigue con pestaña propia).
