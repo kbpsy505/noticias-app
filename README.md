@@ -2,7 +2,7 @@
 
 Página móvil (en español) que muestra **solo las noticias que publican varios medios a la vez**. La idea es quitar el ruido: si una historia aparece en un solo medio, no se muestra. Si la publican 2, 5 o 19 medios distintos, aparece, ordenada por cuántos medios la cubren.
 
-Categorías: Sucesos, Política, Mundo de finanzas, Mundo, Ciencias y Guerras actuales.
+Pestañas, en este orden: Buenas noticias (la que abre), Costa Rica, Mundo de finanzas, Criptomonedas, Política, Ciencias, Mundo (con filtros por región), Guerras y conflictos, Sucesos y Posibles noticias.
 
 **Abrir en el teléfono:** https://kbpsy505.github.io/noticias-app/ (en Chrome; no hace falta cuenta ni instalar nada).
 
@@ -74,7 +74,7 @@ Agregar un resumen escrito por IA para cada historia de consenso, que explique e
 - **Deportes** (`deportes.py`): cuenta cualquier triunfo (títulos, medallas, récords, clasificaciones, premios, primeros lugares), no resultados de partidos, derrotas, fichajes, lesiones, apuestas, escándalos ni previas. Máximo 6 en Costa Rica y 6 en lo global, con la etiqueta «Deportes».
 - Se descartan notas «positivas» débiles: guerra o tema militar, negaciones («aún no»), críticas o investigaciones, déficits y avances parciales de obras.
 
-## Pestañas por región
+## Costa Rica y regiones de Mundo
 
 `regiones.py` agrega Costa Rica, Centroamérica, Latinoamérica (México, Caribe y temas latinoamericanos generales), Sudamérica, Europa, Asia (incluye Medio Oriente), África y Australia y Oceanía.
 
@@ -82,6 +82,7 @@ Agregar un resumen escrito por IA para cada historia de consenso, que explique e
 - Misma regla: **5 o más medios distintos** por historia.
 - Medios ticos sin RSS: CRHoy y Trivisión se leen de su sitemap de noticias. Si el feed propio falla o no trae notas de las últimas 48 h (Teletica, Repretel), se usa Google Noticias limitado a su sitio (`site:`), con el nombre del medio original. La Gaceta (Imprenta Nacional) no tiene RSS ni sitemap de publicaciones, así que no se incluye.
 - La región sale de los lugares, países y personajes que nombran los titulares y resúmenes. Para asignarla, al menos 2 medios distintos deben nombrar un lugar de esa región, y entre esos y los medios locales de la región deben sumar la mitad del grupo. Las historias que son sobre todo de EE. UU. no van a ninguna región. Una historia puede salir también en su pestaña de tema.
+- Costa Rica tiene pestaña propia. Las demás regiones van dentro de **Mundo**, con filtros Todas / General / Centroamérica / Latinoamérica / Sudamérica / Europa / Asia / África / Oceanía y su número de historias. En «Todas», una historia que está en Mundo general y en una región (comparten notas) sale una sola vez con sus etiquetas de región, ordenadas por número de medios y luego por lo más reciente (`merge_mundo` en `actualizar.py`). La regla de 5+ medios no cambia.
 - Informe en `noticias.json` → `regions` (feeds que fallaron, medios locales activos por región, grupos de 3–4 medios que no llegaron a 5).
 
 ## Pestaña "Posibles noticias"

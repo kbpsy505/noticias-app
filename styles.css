@@ -132,3 +132,7 @@ html.tour-open { scroll-behavior: auto; }
 .fx-tomorrow { margin: 6px 0 0; font-size: 13px; color: var(--ink); font-variant-numeric: tabular-nums; }
 .fx-more { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 650; color: var(--ink); text-decoration: none;
   border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; background: var(--bg); }
+.cat-title { margin: 0 0 8px; font-family: Georgia, "Iowan Old Style", Palatino, serif; font-size: 20px; font-weight: 600; }
+.mfilter { gap: 6px; }
+.mfilter .bf { padding: 5px 10px; font-size: .8rem; }
+.bf.zero { opacity: .55; }

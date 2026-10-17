@@ -53,7 +53,7 @@ CATEGORIES = [
     ("finanzas", "Mundo de finanzas"),
     ("mundo", "Mundo"),
     ("ciencias", "Ciencias"),
-    ("guerras", "Guerras actuales"),
+    ("guerras", "Guerras y conflictos"),
 ]
 
 # ---------------------------------------------------------------- filtros
@@ -591,10 +591,62 @@ def build_posibles(candidates, out_cats, region_labels):
 
 # Orden de pestañas pedido: Buenas, Costa Rica, Finanzas, Política, Cripto, Sucesos y luego el resto
 # (Mundo, Ciencias, Guerras, regiones, Posibles) en su orden actual.
-TAB_FIRST = ["buenas", "costarica", "finanzas", "politica", "cripto", "sucesos"]
+TAB_FIRST = ["buenas", "costarica", "finanzas", "cripto", "politica", "ciencias", "mundo", "guerras", "sucesos", "posibles"]
+CAT_TITLES = {"guerras": "Guerras y conflictos mundiales actuales"}
+
+# Regiones que van dentro de la pestaña Mundo (Costa Rica sigue con pestaña propia).
+MUNDO_REGIONS = ["centroamerica", "latam", "sudamerica", "europa", "asia", "africa", "oceania"]
+MUNDO_SHORT = {"oceania": "Oceanía"}
+
+
+def merge_mundo(cats):
+    """Une la pestaña Mundo (general) con las regionales en una sola, con filtros por región.
+    Una historia que está en Mundo general y en una región (comparten notas) queda en una
+    sola tarjeta con sus etiquetas de región; se queda la versión con más medios."""
+    by_id = {c["id"]: c for c in cats}
+    general = by_id.get("mundo")
+    if not general:
+        return cats
+    regs = [by_id[r] for r in MUNDO_REGIONS if r in by_id]
+    merged = []
+    for s in general["stories"]:
+        merged.append({"s": s, "general": True, "regions": [], "urls": {x["url"] for x in s["sources"]}})
+    for rc in regs:
+        for s in rc["stories"]:
+            urls = {x["url"] for x in s["sources"]}
+            dup = next((m for m in merged if m["urls"] & urls), None)
+            if dup:
+                if rc["id"] not in dup["regions"]:
+                    dup["regions"].append(rc["id"])
+                if s["outlets"] > dup["s"]["outlets"]:
+                    dup["s"] = s
+                dup["urls"] |= urls
+                continue
+            merged.append({"s": s, "general": False, "regions": [rc["id"]], "urls": urls})
+    labels = {rc["id"]: MUNDO_SHORT.get(rc["id"], rc["label"]) for rc in regs}
+    out = []
+    for m in sorted(merged, key=lambda m: (m["s"]["outlets"], m["s"]["lastSeen"]), reverse=True):
+        s = dict(m["s"])
+        s.pop("region", None)
+        s["mundoGeneral"] = m["general"]
+        s["mundoRegions"] = m["regions"]
+        s["chips"] = [{"id": r, "label": labels[r]} for r in m["regions"]]
+        out.append(s)
+    for i, s in enumerate(out):
+        s["id"] = f"mundo-{i + 1}"
+    filters = [{"id": "general", "label": "General", "count": sum(1 for s in out if s["mundoGeneral"])}]
+    filters += [{"id": r, "label": labels[r], "count": sum(1 for s in out if r in s["mundoRegions"])}
+                for r in MUNDO_REGIONS if r in labels]
+    general.update({"stories": out, "filters": filters})
+    gone = {rc["id"] for rc in regs}
+    return [c for c in cats if c["id"] not in gone]
 
 
 def order_tabs(cats):
+    cats = merge_mundo(cats)
+    for c in cats:
+        if c["id"] in CAT_TITLES:
+            c["title"] = CAT_TITLES[c["id"]]
     first = [c for t in TAB_FIRST for c in cats if c["id"] == t]
     return first + [c for c in cats if c["id"] not in TAB_FIRST]
 

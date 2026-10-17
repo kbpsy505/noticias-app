@@ -2,7 +2,7 @@ const TZ = "America/Costa_Rica";
 const when = new Intl.DateTimeFormat("es-CR", {
   timeZone: TZ, weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit",
 });
-const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas" };
+const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas" };
 
 function fmt(iso) {
   const d = new Date(iso);
@@ -209,7 +209,7 @@ function renderList() {
   const list = document.getElementById("list");
   list.innerHTML = "";
   const cat = state.data.categories.find((c) => c.id === state.cat);
-  if (!cat || !cat.stories.length) {
+  if (!cat || (!cat.stories.length && cat.id !== "mundo")) {
     let msg = "En esta actualización ninguna historia de esta categoría fue publicada por 5 o más medios distintos. Vuelve a revisar en la próxima actualización.";
     if (state.cat === "buenas") msg = "Ahora mismo no hay buenas noticias confirmadas por un medio confiable.";
     if (cat && cat.group === "region") msg = "En esta actualización ninguna noticia de " + cat.label + " fue publicada por 5 o más medios distintos. Vuelve a revisar en la próxima actualización.";
@@ -227,7 +227,34 @@ function renderList() {
   if (cat.id === "buenas") {
     list.append(el("p", "note", "Progreso y buenas acciones de todo el mundo. Aquí basta una fuente confiable; las pistas de Reddit solo entran si un medio serio publica la nota."));
   }
+  if (cat.title) list.append(el("h2", "cat-title", cat.title));
   let stories = cat.stories;
+  if (cat.id === "mundo") {
+    list.append(el("p", "note", "Noticias internacionales publicadas por 5 o más medios distintos. Filtra por región; «General» son las de alcance mundial."));
+    const bar = el("div", "bfilter mfilter");
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "Filtrar Mundo por región");
+    const opts = [{ id: "todas", label: "Todas", count: stories.length }].concat(cat.filters || []);
+    if (!opts.some((o) => o.id === state.mundoFilter)) state.mundoFilter = "todas";
+    opts.forEach((o) => {
+      const b = el("button", "bf" + (state.mundoFilter === o.id ? " on" : "") + (o.count ? "" : " zero"));
+      b.type = "button";
+      b.dataset.filter = o.id;
+      b.append(o.label, el("span", "count", String(o.count)));
+      b.addEventListener("click", () => { state.mundoFilter = o.id; renderList(); });
+      bar.append(b);
+    });
+    list.append(bar);
+    const f = state.mundoFilter;
+    if (f === "general") stories = stories.filter((s) => s.mundoGeneral);
+    else if (f !== "todas") stories = stories.filter((s) => (s.mundoRegions || []).includes(f));
+    if (!stories.length) {
+      const o = opts.find((x) => x.id === f);
+      list.append(el("p", "empty", f === "todas"
+        ? "En esta actualización ninguna noticia internacional fue publicada por 5 o más medios distintos."
+        : "En esta actualización ninguna noticia de " + (f === "general" ? "alcance mundial" : o.label) + " fue publicada por 5 o más medios distintos."));
+    }
+  }
   if (cat.id === "buenas") {
     const nCr = stories.filter((s) => s.cr).length;
     const bar = el("div", "bfilter");
@@ -255,7 +282,7 @@ function renderFoot(data) {
   f.innerHTML = "";
   f.append(
     el("p", null, "Cómo funciona: cada 3 horas se leen " + (st.feedsOk || "?") + " canales RSS públicos (" +
-      (st.itemsGathered || "?") + " notas en esta tanda). Se agrupan las notas que hablan del mismo hecho, en español o inglés, y solo se muestran los grupos que publican al menos 5 medios distintos. Más medios = más consenso. Las pestañas por región usan la misma regla; la región sale de los lugares que nombran las notas y de dónde son los medios. Excepción: en Buenas noticias basta un medio confiable, y lo que sale de Reddit o 9gag solo se usa como pista."),
+      (st.itemsGathered || "?") + " notas en esta tanda). Se agrupan las notas que hablan del mismo hecho, en español o inglés, y solo se muestran los grupos que publican al menos 5 medios distintos. Más medios = más consenso. Costa Rica y los filtros por región de Mundo usan la misma regla; la región sale de los lugares que nombran las notas y de dónde son los medios. Excepción: en Buenas noticias basta un medio confiable, y lo que sale de Reddit o 9gag solo se usa como pista."),
     el("p", null, "Los titulares y resúmenes son los de cada medio, sin cambios. No hay IA ni se inventa nada; toca una fuente para leer el original."),
     el("p", "small", "Medios: " + (data.sourcesUsed || []).join(", ") + ".")
   );
