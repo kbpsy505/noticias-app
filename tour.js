@@ -123,7 +123,7 @@
       window.scrollTo({ top: 0 });
     }
     place();
-    next.focus({ preventScroll: true });
+    next.focus({ preventScroll: true, focusVisible: false });
   }
 
   function btn(label, cls, fn) {
