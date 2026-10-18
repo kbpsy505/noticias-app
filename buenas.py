@@ -28,12 +28,12 @@ from urllib.parse import urlparse
 import actualizar as A
 import deportes as D
 
-GOOD_HOURS = 24 * 7       # las secciones de soluciones publican despacio
-GENERAL_HOURS = 72        # notas de los feeds generales
+GOOD_HOURS = 72          # secciones de soluciones (antes 7 días)
+GENERAL_HOURS = 36       # notas de los feeds generales (antes 72 h)
 MAX_ITEMS = 60            # notas globales (las de Costa Rica van aparte)
 PER_SUBTOPIC_MAX = 12
 SUBTOPIC_MAX = {"ambiente": 15, "deportes": 6}
-PER_OUTLET_MAX = 5
+PER_OUTLET_MAX = 3
 CR_ENABLED = True
 CR_MAX = 12            # espacio propio para Costa Rica, aparte del tope global
 CR_PER_OUTLET_MAX = 3

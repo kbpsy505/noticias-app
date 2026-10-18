@@ -2,7 +2,7 @@ const TZ = "America/Costa_Rica";
 const when = new Intl.DateTimeFormat("es-CR", {
   timeZone: TZ, weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit",
 });
-const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas", mundoInfo: false };
+const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas", mundoInfo: false, olderOpen: {} };
 
 function fmt(iso) {
   const d = new Date(iso);
@@ -159,7 +159,14 @@ function card(s) {
   } else {
     top.append(el("span", "outlets one", s.outletNames[0]));
   }
-  top.append(el("span", "time", rel(s.lastSeen)));
+  if (s.fresh) {
+    const en = state.lang === "en";
+    const label = s.fresh === "nuevo" ? (en ? "New" : "Nuevo") : (en ? "Ongoing" : "Sigue");
+    const b = el("span", "fresh " + s.fresh, label);
+    if (s.fresh === "sigue" && s.firstShown) b.title = (en ? "Shown since " : "En la app desde ") + fmt(s.firstShown);
+    top.append(b);
+  }
+  top.append(el("span", "time", rel(s.lastArticle || s.lastSeen)));
   art.append(top);
 
   const es = { h: s.headlineEs, s: s.summaryEs, src: s.summaryEsSource };
@@ -285,7 +292,31 @@ function renderList() {
     if (state.buenasFilter === "mundo") stories = stories.filter((s) => !s.cr);
     if (!stories.length) list.append(el("p", "empty", "Ahora mismo no hay buenas noticias de Costa Rica confirmadas por un medio confiable."));
   }
-  stories.forEach((s) => list.append(card(s)));
+  renderStories(list, cat.id, stories);
+}
+
+// Activas arriba; las que no tienen notas nuevas en 24 h van plegadas en «Anteriores».
+function renderStories(list, catId, stories) {
+  const en = state.lang === "en";
+  const active = stories.filter((s) => !s.stale);
+  const older = stories.filter((s) => s.stale);
+  active.forEach((s) => list.append(card(s)));
+  if (!older.length) return;
+  if (!active.length) {
+    list.append(el("p", "empty", en ? "No story here has new articles in the last 24 hours."
+      : "Ninguna historia de aquí tiene notas nuevas en las últimas 24 horas."));
+  }
+  const det = el("details", "older");
+  det.open = !!state.olderOpen[catId];
+  det.addEventListener("toggle", () => { state.olderOpen[catId] = det.open; });
+  const sum = el("summary");
+  sum.append(el("span", "older-title", (en ? "Earlier" : "Anteriores") + " (" + older.length + ")"),
+    el("span", "older-note", en ? "no new articles in 24 h" : "sin notas nuevas en 24 h"));
+  det.append(sum);
+  const box = el("div", "older-list");
+  older.forEach((s) => box.append(card(s)));
+  det.append(box);
+  list.append(det);
 }
 
 function renderFoot(data) {

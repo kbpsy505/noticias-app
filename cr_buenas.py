@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlparse
 import actualizar as A
 
-GN = "https://news.google.com/rss/search?q=when:7d+site:{}&hl=es-419&gl=CR&ceid=CR:es-419"
+GN = "https://news.google.com/rss/search?q=when:3d+site:{}&hl=es-419&gl=CR&ceid=CR:es-419"
 # (id, url, fuente, org, lang, tipo)  tipo: medio | inst (institución: universidad, etc.)
 CR_GOOD_FEEDS = [
     ("cr-nacion", "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml", "La Nación (Costa Rica)", "grupo-nacion", "es", "medio"),
@@ -48,7 +48,7 @@ def fetch(feed):
             return feed, None, f"{type(exc).__name__} / {type(exc2).__name__}"
 
 
-def gather(now, hours=24 * 7):
+def gather(now, hours=72):
     with ThreadPoolExecutor(12) as ex:
         res = list(ex.map(fetch, CR_GOOD_FEEDS))
     items, seen, status = [], set(), []
@@ -85,7 +85,7 @@ for _s, _src, _org in [("crhoy.com", "CRHoy", "crhoy"), ("teletica.com", "Teleti
                        ("observador.cr", "El Observador", "observador"), ("semanariouniversidad.com", "Semanario Universidad", "semanario"),
                        ("monumental.co.cr", "Monumental", "monumental")]:
     CR_GOOD_FEEDS.append(("crq-" + _org + "-" + _s.split(".")[0], "https://news.google.com/rss/search?" + _up.urlencode(
-        {"q": f"when:7d site:{_s} ({KW_Q})", "hl": "es-419", "gl": "CR", "ceid": "CR:es-419"}), _src, _org, "es", "medio"))
+        {"q": f"when:3d site:{_s} ({KW_Q})", "hl": "es-419", "gl": "CR", "ceid": "CR:es-419"}), _src, _org, "es", "medio"))
 
 
 if __name__ == "__main__":

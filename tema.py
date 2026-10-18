@@ -164,7 +164,7 @@ ANCHOR_STOP = set("wall street stocks stock markets market growth high record fe
 ANCHOR_HOURS = 30
 
 
-def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, anchor_h=ANCHOR_HOURS, cross=False, anchor_extra=0.0):
+def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, anchor_h=ANCHOR_HOURS, cross=False, anchor_extra=0.0, anchor_cos=None):
     """Une grupos del mismo hecho contado con palabras distintas: centros parecidos y 2+ términos
     poco comunes en los titulares de ambos (4+ términos permiten un centro algo menos parecido)."""
     rare_cut = math.log((n_ref + 1) / (max(4, n_ref * 0.012) + 0.5))
@@ -200,7 +200,7 @@ def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, an
                 if len(groups[a]) + len(groups[b]) < 3 and not anchor:
                     continue
                 c = A.cos(info[a][0], info[b][0])
-                need = ANCHOR_COS if anchor else (cos_min if shared < 4 else cos_many)
+                need = (anchor_cos or ANCHOR_COS) if anchor else (cos_min if shared < 4 else cos_many)
                 if c >= need and (best is None or c > best[0]):
                     best = (c, a, b, anchor, shared)
         if not best:

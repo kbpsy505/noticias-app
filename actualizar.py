@@ -524,6 +524,116 @@ def make_story(g, pool, sims):
     }
 
 
+TOPIC_TABS = ("politica", "sucesos", "guerras", "finanzas")
+TOPIC_PRIO = {"guerras": 6, "sucesos": 5, "ciencias": 4, "finanzas": 3, "politica": 2, "mundo": 1}
+
+
+def merge_pass(groups, pool, idf, hours=48):
+    """Segunda pasada (tema.merge_split) solo sobre grupos de 2+ medios: une la misma noticia
+    contada con otras palabras o en otro idioma. Las notas sueltas no se tocan (y así es rápido)."""
+    import tema
+    multi = [g for g in groups if len({pool[i]["org"] for i in g}) >= 2]
+    rest = [g for g in groups if len({pool[i]["org"] for i in g}) < 2]
+    # Con nombre propio en común se pide un centro algo más parecido (0.32) que en las pestañas temáticas:
+    # aquí se mezclan todos los temas y, p. ej., «Zelenski critica a Trump» no debe unirse al ataque con drones.
+    multi, merges = tema.merge_split(multi, pool, idf, len(pool), hours, anchor_cos=0.32)
+    return multi + rest, merges
+
+
+def story_topic(members):
+    """Tema de una historia regional por votos de sus notas (como en el agrupador general).
+    Solo cuenta si el tema tiene un respaldo claro; Finanzas pide mayoría."""
+    votes = Counter(m.get("category") or "mundo" for m in members)
+    n = len(members)
+    if votes.get("guerras", 0) * 3 >= n:
+        return "guerras"
+    cat = max(votes, key=lambda c: (votes[c], TOPIC_PRIO.get(c, 0)))
+    if cat not in TOPIC_TABS:
+        return None
+    if cat == "finanzas":
+        return cat if votes[cat] * 2 >= n else None
+    return cat if votes[cat] >= max(2, n * 0.34) else None
+
+
+def add_regional_topics(out_cats, reg_cats, region_labels):
+    """Las historias regionales de 5+ medios también salen en su pestaña temática (Política, Sucesos,
+    Guerras, Finanzas), igual que una nota de mercados por una guerra sale en Finanzas y en Guerras.
+    Si la pestaña ya tiene la misma historia (comparten notas), queda la versión con más medios."""
+    by_id = {c["id"]: c for c in out_cats}
+    added = Counter()
+    for rc in reg_cats:
+        for st in rc["stories"]:
+            tid = st.get("topic")
+            if tid not in by_id:
+                continue
+            tab = by_id[tid]["stories"]
+            urls = {x["url"] for x in st["sources"]}
+            dup = next((i for i, x in enumerate(tab) if urls & {y["url"] for y in x["sources"]}), None)
+            copy = json.loads(json.dumps(st))
+            copy.pop("topic", None)
+            copy.pop("region", None)
+            copy["chips"] = [{"id": rc["id"], "label": region_labels.get(rc["id"], rc["label"])}]
+            if dup is not None:
+                if copy["outlets"] > tab[dup]["outlets"]:
+                    tab[dup] = copy
+                continue
+            tab.append(copy)
+            added[tid] += 1
+    for tid in TOPIC_TABS:
+        if tid in by_id:
+            lst = sorted(by_id[tid]["stories"], key=lambda s: (s["outlets"], s.get("lastSeen", "")), reverse=True)[:MAX_STORIES]
+            for i, s in enumerate(lst):
+                s["id"] = f"{tid}-{i + 1}"
+            by_id[tid]["stories"] = lst
+    return dict(added)
+
+
+FRESH_HOURS = 24           # sin notas nuevas en 24 h -> sección "Anteriores"
+
+
+def load_previous():
+    """El noticias.json publicado (en GitHub Actions es el del checkout, antes de sobrescribirlo)."""
+    try:
+        return json.loads(OUT.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def apply_freshness(cats, prev, now):
+    """Marca cada historia como Nuevo/Sigue comparando con la publicación anterior (misma pestaña,
+    al menos una nota en común), ordena por actividad reciente y separa las que no tienen notas nuevas en 24 h."""
+    old = {}
+    if prev:
+        for c in prev.get("categories", []):
+            old[c["id"]] = [({x["url"] for x in s.get("sources", [])}, s.get("firstShown") or prev.get("updatedAt"))
+                            for s in c.get("stories", [])]
+    report = {}
+    for c in cats:
+        prev_tab = old.get(c["id"], [])
+        for s in c["stories"]:
+            urls = {x["url"] for x in s.get("sources", [])}
+            hit = next((fs for u, fs in prev_tab if u & urls), None)
+            last = max((x["publishedAt"] for x in s.get("sources", []) if x.get("publishedAt")), default=s.get("lastSeen"))
+            s["lastArticle"] = last
+            if prev is None:
+                s["fresh"] = None
+            elif hit:
+                s["fresh"], s["firstShown"] = "sigue", hit
+            else:
+                s["fresh"], s["firstShown"] = "nuevo", iso(now.timestamp())
+            age_h = max(0.0, (now - datetime.fromisoformat(last.replace("Z", "+00:00"))).total_seconds() / 3600) if last else 999
+            s["stale"] = age_h > FRESH_HOURS
+            # Actividad: la nota más reciente pesa más; los medios suman con logaritmo.
+            s["_score"] = (1 + math.log(max(1, s.get("outlets", 1)))) * math.exp(-age_h / 12)
+        c["stories"].sort(key=lambda s: (s["stale"], -s["_score"]))
+        for s in c["stories"]:
+            s.pop("_score", None)
+        report[c["id"]] = {"total": len(c["stories"]), "nuevo": sum(1 for s in c["stories"] if s["fresh"] == "nuevo"),
+                           "sigue": sum(1 for s in c["stories"] if s["fresh"] == "sigue"),
+                           "anteriores": sum(1 for s in c["stories"] if s["stale"])}
+    return report
+
+
 POSIBLES_MAX = 60          # tope total de la pestaña "Posibles noticias"
 POSIBLES_PER_CHIP = 8      # tope por categoría/región
 POSIBLES_MIN_PER_CHIP = 3  # se reservan hasta 3 por categoría/región para que no las tapen otras
@@ -653,6 +763,7 @@ def order_tabs(cats):
 
 def main():
     now = datetime.now(timezone.utc)
+    previous = load_previous()   # leer antes de sobrescribir noticias.json
     ok_feeds, failed = [], []
     pool, seen = [], set()
 
@@ -711,6 +822,7 @@ def main():
     print(f"\nitems={len(pool)}")
     idf, df = build_vectors(pool)
     groups, sims = cluster(pool, idf, df)
+    groups, main_merges = merge_pass(groups, pool, idf)
 
     stories_by_cat = defaultdict(list)
     candidates = []          # grupos de 2-4 medios: van a "Posibles noticias"
@@ -795,6 +907,10 @@ def main():
         out_cats.extend(reg_cats)
         for c in reg_cats:
             summary_counts[c["id"]] = len(c["stories"])
+        region_report["topicAdds"] = add_regional_topics(out_cats, reg_cats, dict(MUNDO_SHORT, **{k: v for k, v in regiones.REGIONS if k not in MUNDO_SHORT}))
+        for tid in TOPIC_TABS:
+            summary_counts[tid] = len(next((c["stories"] for c in out_cats if c["id"] == tid), []))
+        print("temas desde regiones", region_report["topicAdds"])
         print("regiones", region_report["perRegion"], "medios locales", region_report["workingLocalOutletsPerRegion"])
         if DEBUG:
             with open(ROOT / "debug_regiones.txt", "w", encoding="utf-8") as fh:
@@ -836,6 +952,9 @@ def main():
     except Exception as exc:
         print("tipo de cambio FAIL", type(exc).__name__, exc)
 
+    final_cats = order_tabs(out_cats)
+    fresh_report = apply_freshness(final_cats, previous, now)
+    print("frescura", fresh_report)
     payload = {
         "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "exchange": exchange,
@@ -857,13 +976,15 @@ def main():
             "perCategory": summary_counts,
         },
         "sourcesUsed": sorted({f["source"] for f in ok_feeds if f["kept"] > 0}),
-        "categories": order_tabs(out_cats),
+        "categories": final_cats,
+        "freshness": fresh_report,
         "feedsOk": ok_feeds,
         "feedsFailed": failed,
         "goodNews": good_report,
         "crypto": crypto_report,
         "topics": topic_reports,
         "regions": region_report,
+        "mainMerges": [{"a": a, "b": b, "cos": c, "anchor": an, "shared": sh} for a, b, c, an, sh in main_merges],
         "possible": posibles_report,
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")

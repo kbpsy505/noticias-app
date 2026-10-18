@@ -20,7 +20,7 @@
     {
       target: "#list .card",
       title: "Cada historia",
-      text: "Titular y resumen tal como los publicó el medio, en español y/o inglés (cámbialo con Ambos · Español · English). Toca «Ver fuente» o «Ver fuentes» para leer las notas originales.",
+      text: "Titular y resumen tal como los publicó el medio, en español y/o inglés (cámbialo con Ambos · Español · English). Toca «Ver fuente» o «Ver fuentes» para leer las notas originales. «Nuevo» marca lo que apareció en esta actualización y «Sigue» lo que ya estaba; lo que no tiene notas nuevas en 24 h queda plegado al final, en «Anteriores».",
       tall: true,
     },
     {

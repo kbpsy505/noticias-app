@@ -300,6 +300,12 @@ def pick_region(members, loose=False):
                     r = "costarica"
                 return r, votes
     best, n = votes.most_common(1)[0]
+    # Nombres repetidos (p. ej. Liberia, Guanacaste): si la mitad o más de los medios son ticos y se nombra
+    # un lugar de otra región, es de Costa Rica.
+    if best != "costarica" and len(local_orgs.get("costarica", set())) * 2 >= len(orgs) and us <= n * 1.5:
+        best, n = "costarica", max(n, votes.get("costarica", 0))
+        named = local_orgs["costarica"]
+        return (best, votes) if len(named) >= 2 else (None, votes)
     # Costa Rica es parte de Centroamérica: si hay señales de ambas y CR pesa, va a Costa Rica.
     if best in ("centroamerica", "latam") and votes.get("costarica", 0) >= n * 0.6:
         best, n = "costarica", votes["costarica"]
@@ -359,7 +365,7 @@ def build(now, general_pool, main_feed_urls):
         k1, k2 = keys(it["url"], it["org"], it["title"])
         seen.update((k1, k2))
         pool.append({k: it[k] for k in ("title", "url", "source", "org", "lang", "summary", "publishedAt", "_ts")}
-                    | {"region": MAIN_FEED_REGION.get(it.get("feed"))})
+                    | {"region": MAIN_FEED_REGION.get(it.get("feed")), "category": it.get("category")})
 
     feeds_ok, feeds_failed = [], []
     for feed, rows, err, method in results:
@@ -385,13 +391,16 @@ def build(now, general_pool, main_feed_urls):
             summary = desc if desc and A.fold(desc.lower())[:60] != A.fold(title.lower())[:60] else ""
             pool.append({"title": title, "url": u, "source": source, "org": org, "lang": lang,
                          "summary": A.trim(summary), "publishedAt": pub.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                         "_ts": pub.timestamp(), "region": region})
+                         "_ts": pub.timestamp(), "region": region,
+                         "category": A.classify(title, summary, None, urlparse(u).path.lower())})
             kept += 1
         feeds_ok.append({"id": fid, "source": source, "org": org, "region": region, "url": url, "method": method,
                          "itemsInFeed": len(rows), "kept": kept})
 
     idf, df = A.build_vectors(pool)
     groups, sims = A.cluster(pool, idf, df)
+    # Segunda pasada: une grupos del mismo hecho contado con otras palabras (ver tema.merge_split).
+    groups, merges = A.merge_pass(groups, pool, idf)
 
     by_region = defaultdict(list)
     candidates = []    # grupos de 2-4 medios con región, para "Posibles noticias"
@@ -416,6 +425,9 @@ def build(now, general_pool, main_feed_urls):
             continue
         s = A.make_story(g, pool, sims)
         s["region"] = region
+        topic = A.story_topic(members)
+        if topic:
+            s["topic"] = topic
         by_region[region].append(s)
 
     cats = []
@@ -434,6 +446,7 @@ def build(now, general_pool, main_feed_urls):
         "feedsOk": feeds_ok, "feedsFailed": feeds_failed,
         "knownFails": [{"id": a, "url": b, "error": c} for a, b, c in REGION_KNOWN_FAILS],
         "itemsGathered": len(pool), "clusters": len(groups),
+        "merges": [{"a": a, "b": b, "cos": c, "anchor": an, "shared": sh} for a, b, c, an, sh in merges],
         "perRegion": counts,
         "groupsWith3or4Outlets": {r: near.get(r, 0) for r, _ in REGIONS},
         "workingLocalOutletsPerRegion": {
