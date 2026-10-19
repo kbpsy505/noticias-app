@@ -26,6 +26,7 @@ CR_GOOD_FEEDS = [
     ("cr-monumental", "https://www.monumental.co.cr/feed/", "Monumental", "monumental", "es", "medio"),
     ("cr-ticotimes", "https://ticotimes.net/feed", "The Tico Times", "ticotimes", "en", "medio"),
     ("cr-crnews", "https://thecostaricanews.com/feed/", "The Costa Rica News", "crnews", "en", "medio"),
+    ("cr-larepublica", GN.format("larepublica.net"), "La República (CR)", "larepublica-cr", "es", "medio"),
     ("cr-ucr", GN.format("ucr.ac.cr"), "UCR", "ucr", "es", "inst"),
     ("cr-tec", "https://www.tec.ac.cr/rss.xml", "TEC", "tec", "es", "inst"),
     ("cr-una", "https://www.unacomunica.una.ac.cr/index.php?format=feed&type=rss", "UNA Comunica", "una", "es", "inst"),
@@ -33,7 +34,7 @@ CR_GOOD_FEEDS = [
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
 SUFFIX = re.compile(r"\s+[|\-–]\s*(CR ?Hoy|Teletica|Repretel|Noticias Repretel|Diario Extra|Trivisi[oó]n[^|]*|AmeliaRueda\.com|"
                     r"Amelia Rueda|Universidad de Costa Rica|UCR|Tecnológico de Costa Rica|La Nación Costa Rica|La Nación|Delfino\.cr|Delfino|"
-                    r"Semanario Universidad|El Mundo CR|AM Prensa|El Observador( CR)?|Monumental|elmundo\.cr|Teletica\.com)\s*$", re.I)
+                    r"Semanario Universidad|El Mundo CR|AM Prensa|El Observador( CR)?|Monumental|elmundo\.cr|Teletica\.com|(Periódico )?La República( \(Costa Rica\)| CR|\.net)?|The Tico Times|Tico Times)\s*$", re.I)
 
 
 def fetch(feed):
@@ -83,9 +84,16 @@ for _s, _src, _org in [("crhoy.com", "CRHoy", "crhoy"), ("teletica.com", "Teleti
                        ("delfino.cr", "Delfino", "delfino"), ("ameliarueda.com", "AmeliaRueda.com", "ameliarueda"),
                        ("amprensa.com", "AM Prensa", "amprensa"), ("trivisioncr.com", "Trivisión", "trivision"),
                        ("observador.cr", "El Observador", "observador"), ("semanariouniversidad.com", "Semanario Universidad", "semanario"),
-                       ("monumental.co.cr", "Monumental", "monumental")]:
+                       ("monumental.co.cr", "Monumental", "monumental"),
+                       ("larepublica.net", "La República (CR)", "larepublica-cr")]:
     CR_GOOD_FEEDS.append(("crq-" + _org + "-" + _s.split(".")[0], "https://news.google.com/rss/search?" + _up.urlencode(
         {"q": f"when:3d site:{_s} ({KW_Q})", "hl": "es-419", "gl": "CR", "ceid": "CR:es-419"}), _src, _org, "es", "medio"))
+
+
+# Tico Times (inglés): búsqueda positiva en inglés por Google Noticias.
+CR_GOOD_FEEDS.append(("crq-ticotimes", "https://news.google.com/rss/search?" + _up.urlencode(
+    {"q": "when:3d site:ticotimes.net (rescue OR award OR record OR conservation OR turtles OR \"new species\" OR wins OR first)",
+     "hl": "en-US", "gl": "US", "ceid": "US:en"}), "The Tico Times", "ticotimes", "en", "medio"))
 
 
 if __name__ == "__main__":

@@ -44,6 +44,9 @@ REGION_FEEDS = [
     ("cr-repretel", "https://www.repretel.com/feed/", "Repretel (Noticias Repretel)", "repretel", "es", "costarica"),
     ("cr-extra", "https://www.diarioextra.com/feed", "Diario Extra", "diarioextra", "es", "costarica"),
     ("cr-trivision", "https://trivisioncr.com/news-sitemap.xml", "Trivisión", "trivision", "es", "costarica"),
+    ("cr-ticotimes", "https://ticotimes.net/feed", "The Tico Times", "ticotimes", "en", "costarica"),
+    ("cr-ameliarueda", "https://news.google.com/rss/search?q=site:ameliarueda.com+when:2d&hl=es-419&gl=CR&ceid=CR:es-419", "AmeliaRueda.com", "ameliarueda", "es", "costarica"),
+    ("cr-larepublica", "https://news.google.com/rss/search?q=site:larepublica.net+when:2d&hl=es-419&gl=CR&ceid=CR:es-419", "La República (CR)", "larepublica-cr", "es", "costarica"),
     ("cr-qcostarica", "https://qcostarica.com/feed/", "Q Costa Rica", "qcostarica", "en", "costarica"),
     # (La Nación portada, El Financiero, El Mundo CR y Monumental ya están en feeds.py)
     # --- Centroamérica ---
@@ -145,10 +148,12 @@ REGION_FEEDS = [
 REGION_KNOWN_FAILS = [
     ("la gaceta (imprentanacional.go.cr)", "https://www.imprentanacional.go.cr/gaceta/",
      "Sin RSS ni sitemap de publicaciones (solo visor web); no se incluye"),
-    ("ticotimes", "https://ticotimes.net/feed", "Respuesta comprimida ilegible (brotli)"),
-    ("ameliarueda", "https://www.ameliarueda.com/feed/", "404"),
-    ("crc891 / elobservador.cr / trece.cr / elpais.cr", "-", "Error de conexión TLS"),
-    ("laprensalibre.cr", "-", "403"),
+    ("ameliarueda (feed propio)", "https://www.ameliarueda.com/feed/", "404; se usa Google Noticias site:ameliarueda.com"),
+    ("crc891", "https://www.crc891.com/feed/", "Certificado TLS inválido; en Google Noticias solo aparecen páginas de sección («Noticias - CRC 891»)"),
+    ("elobservador.cr / trece.cr / elpais.cr", "-", "Error de conexión TLS"),
+    ("laprensalibre.cr", "https://www.laprensalibre.cr/feed/", "El dominio ahora publica contenido SEO sobre IA, no noticias de Costa Rica"),
+    ("columbia.co.cr / elguardian.cr", "-", "404 y sin resultados en Google Noticias"),
+    ("vozdeguanacaste.com", "https://vozdeguanacaste.com/feed/", "Funciona, pero publica pocas notas (última hace más de 48 h)"),
     ("elguardian.cr / ncr", "-", "Sin notas recientes"),
     ("la prensa gráfica / elsalvador.com / laprensa.com.ni", "-", "403"),
     ("el faro / soy502", "-", "Devuelve HTML o XML inválido"),
@@ -326,16 +331,21 @@ FALLBACK = {
     "cr-repretel": ("repretel.com", "Repretel"),
     "cr-extra": ("diarioextra.com", "Diario Extra"),
     "cr-trivision": ("trivisioncr.com", "Trivisión"),
+    "cr-observador": ("observador.cr", "El Observador"),
+    "cr-delfino": ("delfino.cr", "Delfino"),
 }
 # Sufijos de nombre del medio que Google Noticias o los sitemaps agregan al titular.
 TITLE_SUFFIX = re.compile(r"\s+[|\-–]\s*(CR ?Hoy|crhoy\.com|Teletica|Telenoticias|Repretel|Noticias Repretel|"
-                          r"Diario Extra|Trivisi[oó]n( Costa Rica)?)\s*$", re.I)
+                          r"Diario Extra|Trivisi[oó]n( Costa Rica)?|AmeliaRueda\.com|Amelia Rueda|(Periódico )?La República( \(Costa Rica\)| CR|\.net)?|"
+                          r"El Observador( CR)?|Delfino(\.cr)?)\s*$", re.I)
 
 
 def fetch_with_fallback(feed):
     """Prueba el feed propio del medio; si falla o no trae notas recientes, usa Google Noticias."""
     feed_, rows, err = A.fetch_feed(feed)
     fid = feed[0]
+    if "news.google.com" in feed[1]:  # medio que solo se lee por Google Noticias (resumen = titular)
+        return feed_, [(t, l, d, "") for t, l, d, _ in rows or []] or None, err, "google-news"
     if fid not in FALLBACK:
         return feed_, rows, err, "directo"
     recent = [r for r in rows or [] if (d := A.parse_date(r[2])) and d > datetime.now(timezone.utc) - timedelta(hours=48)]

@@ -59,6 +59,9 @@ TOPICS = {
             ("finq-yahoo", "gn:site:finance.yahoo.com (stocks OR economy OR fed OR earnings OR markets)", "Yahoo Finanzas", "yahoo", "en", False),
             ("finq-eleconomista", "gn:site:eleconomista.com.mx (economía OR mercados OR peso OR Banxico OR inflación)", "El Economista", "eleconomista", "es", False),
             ("finq-larepublica", "gn:site:larepublica.net (economía OR dólar OR BCCR OR exportaciones OR inflación OR empresas)", "La República (CR)", "larepublica-cr", "es", False),
+            ("fin-cnbc-world", "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100727362", "CNBC", "cnbc", "en", True),
+            ("fin-nyt-economy", "https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml", "The New York Times", "nyt", "en", True),
+            ("fin-guardian-eco", "https://www.theguardian.com/business/economics/rss", "The Guardian", "guardian", "en", True),
             ("finq-elfinanciero", "gn:site:elfinancierocr.com", "El Financiero (Costa Rica)", "grupo-nacion", "es", True),
         ],
         "low": {"businessinsider", "fortune", "barrons"},
@@ -97,6 +100,10 @@ TOPICS = {
             ("sci-muyinteresante", "https://www.muyinteresante.com/feed", "Muy Interesante", "muyinteresante", "es", False),
             ("sci-livescience", "https://www.livescience.com/feeds/all", "Live Science", "livescience", "en", True),
             ("sci-space", "https://www.space.com/feeds/all", "Space.com", "spacecom", "en", True),
+            ("sci-wired", "https://www.wired.com/feed/category/science/latest/rss", "Wired", "wired", "en", False),
+            ("sci-popsci", "https://www.popsci.com/feed/", "Popular Science", "popsci", "en", False),
+            ("sci-sciencealert", "https://www.sciencealert.com/feed", "ScienceAlert", "sciencealert", "en", True),
+            ("sci-universetoday", "https://www.universetoday.com/feed/", "Universe Today", "universetoday", "en", True),
             ("sciq-reuters", "gn:site:reuters.com/science", "Reuters", "reuters", "en", True),
             ("sciq-ap", "gn:site:apnews.com (science OR scientists OR space OR NASA OR study OR researchers)", "AP", "ap", "en", False),
             ("sciq-cnn", "gn:site:cnn.com/science", "CNN", "cnn", "en", True),
@@ -109,7 +116,8 @@ TOPICS = {
             ("sciq-infobae", "gn:site:infobae.com/ciencia OR site:infobae.com (científicos OR estudio OR NASA OR espacio)", "Infobae", "infobae", "es", False),
         ],
         # Republican comunicados de universidades o son fuente primaria (no medio): solo suman con 3+ confiables.
-        "low": {"sciencedaily", "physorg", "nasa", "esa", "muyinteresante", "spacecom", "livescience"},
+        "low": {"sciencedaily", "physorg", "nasa", "esa", "muyinteresante", "spacecom", "livescience",
+                "sciencealert", "universetoday"},
         "agg": set(),
         "skip": re.compile(
             r"(?i)(\bdeals?\b|\boferta|\bdescuento|\bprecio\b|black friday|smart tv|\bsale\b|\bbuy\b|\bcomprar\b|"
@@ -164,7 +172,7 @@ ANCHOR_STOP = set("wall street stocks stock markets market growth high record fe
 ANCHOR_HOURS = 30
 
 
-def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, anchor_h=ANCHOR_HOURS, cross=False, anchor_extra=0.0, anchor_cos=None):
+def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, anchor_h=ANCHOR_HOURS, cross=False, anchor_extra=0.0, anchor_cos=None, cos_strong=None):
     """Une grupos del mismo hecho contado con palabras distintas: centros parecidos y 2+ términos
     poco comunes en los titulares de ambos (4+ términos permiten un centro algo menos parecido)."""
     rare_cut = math.log((n_ref + 1) / (max(4, n_ref * 0.012) + 0.5))
@@ -195,12 +203,17 @@ def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, an
                 else:
                     anchor = bool(info[a][4] & info[b][4])
                 anchor = anchor and span <= anchor_h * 3600
-                if shared < 2 and not anchor:
+                # Historia muy grande: sus palabras dejan de ser «raras» en el conjunto; con un centro muy
+                # parecido (cos_strong) se unen igual aunque no compartan términos raros.
+                strong = cos_strong is not None and len(groups[a]) >= 3 and len(groups[b]) >= 3
+                if shared < 2 and not anchor and not strong:
                     continue
                 if len(groups[a]) + len(groups[b]) < 3 and not anchor:
                     continue
                 c = A.cos(info[a][0], info[b][0])
                 need = (anchor_cos or ANCHOR_COS) if anchor else (cos_min if shared < 4 else cos_many)
+                if shared < 2 and not anchor:
+                    need = cos_strong
                 if c >= need and (best is None or c > best[0]):
                     best = (c, a, b, anchor, shared)
         if not best:

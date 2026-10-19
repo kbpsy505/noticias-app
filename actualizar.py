@@ -197,6 +197,10 @@ def trim(txt: str, limit: int = SUMMARY_MAX) -> str:
     return cut.rstrip(" ,;:.-—") + "…"
 
 
+CURL_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
+GN_TITLE_SUFFIX = re.compile(r"\s+[-|–]\s+[^-|–]{2,45}$")
+
+
 def fetch(url: str, simple: bool = False) -> bytes:
     headers = {"User-Agent": UA}
     if not simple:
@@ -264,6 +268,17 @@ def fetch_feed(feed):
         except Exception as exc:
             err = f"{type(exc).__name__}: {str(exc)[:160]}"
             time.sleep(2)
+    # Último intento con curl --compressed: algunos sitios (p. ej. Tico Times) responden en brotli
+    # aunque se pida gzip, o rechazan a urllib (PBS); curl sí los lee desde GitHub Actions.
+    try:
+        import subprocess
+        data = subprocess.run(["curl", "-sL", "-m", "25", "--compressed", "-A", CURL_UA, url],
+                              capture_output=True, timeout=30).stdout
+        rows = parse_items(data.lstrip(b"\xef\xbb\xbf \t\r\n"))
+        if rows:
+            return feed, rows, None
+    except Exception:
+        pass
     return feed, None, err
 
 
@@ -536,7 +551,7 @@ def merge_pass(groups, pool, idf, hours=48):
     rest = [g for g in groups if len({pool[i]["org"] for i in g}) < 2]
     # Con nombre propio en común se pide un centro algo más parecido (0.32) que en las pestañas temáticas:
     # aquí se mezclan todos los temas y, p. ej., «Zelenski critica a Trump» no debe unirse al ataque con drones.
-    multi, merges = tema.merge_split(multi, pool, idf, len(pool), hours, anchor_cos=0.32)
+    multi, merges = tema.merge_split(multi, pool, idf, len(pool), hours, anchor_cos=0.32, cos_strong=0.55)
     return multi + rest, merges
 
 
@@ -564,15 +579,24 @@ def add_regional_topics(out_cats, reg_cats, region_labels):
     for rc in reg_cats:
         for st in rc["stories"]:
             tid = st.get("topic")
-            if tid not in by_id:
-                continue
-            tab = by_id[tid]["stories"]
             urls = {x["url"] for x in st["sources"]}
-            dup = next((i for i, x in enumerate(tab) if urls & {y["url"] for y in x["sources"]}), None)
             copy = json.loads(json.dumps(st))
             copy.pop("topic", None)
             copy.pop("region", None)
             copy["chips"] = [{"id": rc["id"], "label": region_labels.get(rc["id"], rc["label"])}]
+            # La misma historia ya en otra pestaña temática con menos medios: se cambia por la versión
+            # regional (más completa) aunque su tema por votos sea otro.
+            for oid in TOPIC_TABS:
+                if oid == tid or oid not in by_id:
+                    continue
+                otab = by_id[oid]["stories"]
+                od = next((i for i, x in enumerate(otab) if urls & {y["url"] for y in x["sources"]}), None)
+                if od is not None and copy["outlets"] > otab[od]["outlets"]:
+                    otab[od] = json.loads(json.dumps(copy))
+            if tid not in by_id:
+                continue
+            tab = by_id[tid]["stories"]
+            dup = next((i for i, x in enumerate(tab) if urls & {y["url"] for y in x["sources"]}), None)
             if dup is not None:
                 if copy["outlets"] > tab[dup]["outlets"]:
                     tab[dup] = copy
@@ -778,7 +802,10 @@ def main():
             continue
         kept = 0
         newest = None
+        gnews = "news.google.com" in url
         for title, link, date_s, desc in rows:
+            if gnews:  # Google Noticias agrega « - Medio» al titular y el resumen es solo el titular
+                title, desc = GN_TITLE_SUFFIX.sub("", title).strip(), ""
             if len(title) < 18 or SKIP_TITLE.search(title) or SECTION_TITLE.search(title):
                 continue
             url_c = clean_url(link)
