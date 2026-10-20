@@ -1,6 +1,6 @@
 # Noticias · briefing de consenso
 
-Página móvil (en español) que muestra **solo las noticias que publican varios medios a la vez**. La idea es quitar el ruido: si una historia aparece en un solo medio, no se muestra. Si la publican 2, 5 o 19 medios distintos, aparece, ordenada por cuántos medios la cubren.
+Página móvil (en español) que muestra **solo las noticias que publican varios medios a la vez**. La idea es quitar el ruido: si una historia aparece en un solo medio, no se muestra. Si la publican 3, 5 o 19 medios distintos, aparece, ordenada por cuántos medios la cubren.
 
 Pestañas, en este orden: Buenas noticias (la que abre), Costa Rica, Mundo de finanzas, Criptomonedas, Política, Ciencias, Mundo (con filtros por región), Sucesos, Guerras y conflictos y Posibles noticias.
 
@@ -14,7 +14,7 @@ Cada 3 horas, GitHub Actions ejecuta `actualizar.py`:
 2. **Filtrar.** Descarta opinión, podcasts, videos, blogs en vivo, deportes, cultura y notas de más de 48 horas (7 días en ciencia).
 3. **Normalizar.** Pasa títulos y resúmenes a un vocabulario común: quita tildes y palabras vacías, traduce términos frecuentes del español al inglés con un diccionario pequeño (`vocab.py`: países, gentilicios, “alto el fuego” → *ceasefire*, “aranceles” → *tariff*…) y recorta cada palabra a 6 letras para que “elecciones” y “elections” coincidan.
 4. **Agrupar.** Compara cada par de notas con TF‑IDF (similitud de coseno). Dos notas se unen solo si: se publicaron con 36 horas o menos de diferencia, su similitud es alta, comparten al menos 2 términos poco comunes (nombres, lugares, cifras) y al menos uno está en ambos titulares. Al unir grupos se exige que la similitud promedio entre todas sus notas siga siendo alta, para no encadenar historias distintas.
-5. **Consenso.** Se queda solo con los grupos que publican **5 o más medios distintos** (`MIN_OUTLETS` en `actualizar.py`; igual en todas las pestañas de consenso, incluida Criptomonedas). Ediciones del mismo grupo cuentan como un solo medio: BBC = BBC Mundo, El País = El País English, DW EN = DW ES, France 24 EN = ES, RFI EN = ES, Euronews EN = ES, El Mundo = Expansión, La Nación CR = El Financiero CR.
+5. **Consenso.** Se queda solo con los grupos que publican **3 o más medios distintos** (`MIN_OUTLETS` en `actualizar.py`; igual en todas las pestañas de consenso, incluida Criptomonedas). Ediciones del mismo grupo cuentan como un solo medio: BBC = BBC Mundo, El País = El País English, DW EN = DW ES, France 24 EN = ES, RFI EN = ES, Euronews EN = ES, El Mundo = Expansión, La Nación CR = El Financiero CR.
 6. **Ordenar y publicar.** Ordena por número de medios y luego por lo más reciente. Para cada historia guarda un titular en español (y en inglés si existe), el mejor resumen por idioma, el número de medios, la lista de fuentes con enlaces y la primera y última hora vista. Todo va a `noticias.json`, que la página lee.
 
 Nada se inventa: los titulares y resúmenes son los que publica cada medio. La página enlaza siempre al original.
@@ -79,41 +79,41 @@ Agregar un resumen escrito por IA para cada historia de consenso, que explique e
 `regiones.py` agrega Costa Rica, Centroamérica, Latinoamérica (México, Caribe y temas latinoamericanos generales), Sudamérica, Europa, Asia (incluye Medio Oriente), África y Australia y Oceanía.
 
 - Suma medios locales de cada región (p. ej. en Costa Rica: La Nación/El Financiero/La Teja, CRHoy, Teletica/Telenoticias, Repretel, Diario Extra, Trivisión, El Observador, Delfino, Semanario Universidad, El Mundo CR, Monumental, AM Prensa, Q Costa Rica) a todas las notas de las pestañas de tema, y agrupa igual que el resto.
-- Misma regla: **5 o más medios distintos** por historia.
+- Misma regla: **3 o más medios distintos** por historia.
 - Medios ticos sin RSS: CRHoy y Trivisión se leen de su sitemap de noticias. Si el feed propio falla o no trae notas de las últimas 48 h (Teletica, Repretel), se usa Google Noticias limitado a su sitio (`site:`), con el nombre del medio original. La Gaceta (Imprenta Nacional) no tiene RSS ni sitemap de publicaciones, así que no se incluye.
 - La región sale de los lugares, países y personajes que nombran los titulares y resúmenes. Para asignarla, al menos 2 medios distintos deben nombrar un lugar de esa región, y entre esos y los medios locales de la región deben sumar la mitad del grupo. Las historias que son sobre todo de EE. UU. no van a ninguna región. Una historia puede salir también en su pestaña de tema.
-- Costa Rica tiene pestaña propia. Las demás regiones van dentro de **Mundo**, con filtros Todas / General / Centroamérica / Latinoamérica / Sudamérica / Europa / Asia / África / Oceanía y su número de historias. En «Todas», una historia que está en Mundo general y en una región (comparten notas) sale una sola vez con sus etiquetas de región, ordenadas por número de medios y luego por lo más reciente (`merge_mundo` en `actualizar.py`). La regla de 5+ medios no cambia.
-- Informe en `noticias.json` → `regions` (feeds que fallaron, medios locales activos por región, grupos de 3–4 medios que no llegaron a 5).
+- Costa Rica tiene pestaña propia. Las demás regiones van dentro de **Mundo**, con filtros Todas / General / Centroamérica / Latinoamérica / Sudamérica / Europa / Asia / África / Oceanía y su número de historias. En «Todas», una historia que está en Mundo general y en una región (comparten notas) sale una sola vez con sus etiquetas de región, ordenadas por número de medios y luego por lo más reciente (`merge_mundo` en `actualizar.py`). La regla de 3+ medios no cambia.
+- Informe en `noticias.json` → `regions` (feeds que fallaron, medios locales activos por región, grupos de 2 medios que no llegaron a 3).
 
 ## Pestaña "Posibles noticias"
 
-Historias **sin confirmar** que publican **2 a 4 medios distintos** (no llegaron a los 5 de consenso). Salen de los mismos agrupamientos de las pestañas de tema, de región y de cripto. Cada tarjeta lleva etiquetas de categoría/región, el número de medios y las fuentes.
+Historias **sin confirmar** que publican **2 medios distintos** (no llegaron a los 3 de consenso). Salen de los mismos agrupamientos de las pestañas de tema, de región y de cripto. Cada tarjeta lleva etiquetas de categoría/región, el número de medios y las fuentes.
 
-- Nada se repite con las pestañas de consenso: se descarta cualquier grupo que comparta una nota con una historia de 5+ medios. Los grupos repetidos entre corpus se fusionan.
+- Nada se repite con las pestañas de consenso: se descarta cualquier grupo que comparta una nota con una historia de 3+ medios. Los grupos repetidos entre corpus se fusionan.
 - Orden: más medios primero y luego lo más reciente. Hay tope de 60 en total y 8 por categoría/región, y se reservan hasta 3 por cada una (6 para Criptomonedas) para que Costa Rica, Centroamérica o cripto no queden tapadas (`POSIBLES_*` en `actualizar.py`).
 - Si todos los medios de un grupo son de la misma región, o la mitad lo son y la región se nombra, la historia va a esa región aunque el titular no diga el lugar.
 - Informe en `noticias.json` → `possible`.
 
 ## Mundo de finanzas y Ciencias reforzadas
 
-`tema.py` suma medios especializados a estas dos pestañas y agrupa aparte, con la misma regla de **5 o más medios distintos**.
+`tema.py` suma medios especializados a estas dos pestañas y agrupa aparte, con la misma regla de **3 o más medios distintos**.
 
 - **Finanzas:** CNBC, WSJ, MarketWatch, Bloomberg, FT, Cinco Días, Bloomberg Línea, Axios, Fortune, Business Insider y, por Google Noticias por sitio (`when:2d`), Reuters, AP, WSJ, Barron's, Nikkei Asia, Yahoo Finanzas, El Economista, La República y El Financiero CR. Se descartan consejos de finanzas personales, ensayos en primera persona, «X acciones para comprar», charla de cotizaciones, resúmenes de media sesión y comunicados. Las notas de mercado que mencionan una guerra (p. ej. «el petróleo sube por Oriente Medio») salen en Finanzas y también en Guerras.
 - **Ciencias:** Scientific American, Quanta, Ars Technica, Science News, Smithsonian, The Conversation, NYT Space, ScienceDaily, Phys.org, NASA, ESA, Muy Interesante y, por Google Noticias (`when:7d`), Reuters, AP, CNN, New Scientist, National Geographic, Live Science, Space.com, SINC e Infobae. Ventana de 7 días y agrupación más larga, porque la ciencia se publica en días distintos. Se descartan ofertas, guías del cielo y páginas de autor.
-- **Medios que cuentan:** los que reescriben comunicados o son fuente primaria (ScienceDaily, Phys.org, NASA, ESA, Space.com, Live Science, Muy Interesante) y los de menor fiabilidad en negocios (Business Insider, Fortune, Barron's) solo suman cuando la historia ya tiene 3+ medios confiables. Yahoo Finanzas nunca cuenta. Todos se muestran como fuentes.
+- **Medios que cuentan:** los que reescriben comunicados o son fuente primaria (ScienceDaily, Phys.org, NASA, ESA, Space.com, Live Science, Muy Interesante) y los de menor fiabilidad en negocios (Business Insider, Fortune, Barron's) solo suman cuando la historia ya tiene 2+ medios confiables. Yahoo Finanzas nunca cuenta. Todos se muestran como fuentes.
 - Una segunda pasada une grupos del mismo hecho contado con palabras distintas (centros parecidos y términos o nombres propios poco comunes en común).
 - Informe en `noticias.json` → `topics`.
 
 ## Pestaña "Criptomonedas"
 
-`cripto.py` arma una pestaña con consenso estricto: una noticia de criptomonedas solo aparece si la publican **5 o más medios distintos** (misma regla de organizaciones que el resto).
+`cripto.py` arma una pestaña con consenso estricto: una noticia de criptomonedas solo aparece si la publican **3 o más medios distintos** (misma regla de organizaciones que el resto).
 
 - Fuentes: los feeds generales y financieros de la app más medios cripto y de negocios (CoinDesk, The Block, Decrypt, Cointelegraph, Bitcoin Magazine, The Defiant, Unchained, Protos, CryptoSlate, Crypto Briefing, CriptoNoticias, DiarioBitcoin, Bloomberg, FT, Expansión…). Reuters, Bloomberg, CNBC, WSJ, Fortune, Axios, Forbes, Yahoo Finanzas, Infobae, El Economista y Expansión entran también por búsquedas de Google Noticias por sitio (`when:2d` al inicio).
-- **Medios que cuentan:** los de baja fiabilidad o mucho contenido de precio (U.Today, CoinGape, Cryptonews, BeInCrypto, NewsBTC, Forbes) solo suman cuando ya hay **3+ medios confiables** en la historia. Yahoo Finanzas e Investing.com **nunca** cuentan porque republican notas de otros medios. Todos se muestran como fuentes («+N fuentes extra que no cuentan»), y el titular y el resumen se toman de un medio que cuenta (`LOW_TIER`, `AGGREGATORS`, `TIER_MODE` en `cripto.py`).
+- **Medios que cuentan:** los de baja fiabilidad o mucho contenido de precio (U.Today, CoinGape, Cryptonews, BeInCrypto, NewsBTC, Forbes) solo suman cuando ya hay **2+ medios confiables** en la historia. Yahoo Finanzas e Investing.com **nunca** cuentan porque republican notas de otros medios. Todos se muestran como fuentes («+N fuentes extra que no cuentan»), y el titular y el resumen se toman de un medio que cuenta (`LOW_TIER`, `AGGREGATORS`, `TIER_MODE` en `cripto.py`).
 - Una segunda pasada une grupos que cuentan el mismo hecho con palabras distintas (centros parecidos y 2+ términos poco comunes en los titulares de ambos, dentro de 48 h).
 - Se descartan comunicados de prensa (PR Newswire, GlobeNewswire, Business Wire…), contenido patrocinado, predicciones de precio, análisis técnico (soportes, resistencias, «could surge», «altcoins a observar»), páginas de cotización, listas de "monedas para comprar" y airdrops.
 - La agrupación usa el mismo código que las demás pestañas; la rareza de los términos se mide contra todo el corpus del día.
-- Si ninguna noticia llega a 5 medios, la pestaña lo dice en vez de mostrar algo sin verificar. Informe en `noticias.json` → `crypto`.
+- Si ninguna noticia llega a 3 medios, la pestaña lo dice en vez de mostrar algo sin verificar. Informe en `noticias.json` → `crypto`.
 
 ## Tipo de cambio
 

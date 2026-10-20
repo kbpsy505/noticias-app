@@ -2,7 +2,7 @@
 
 Para cada tema se suman medios especializados (RSS directo o búsqueda de Google Noticias por
 sitio) a las notas del tema que ya trae el corpus general, y se agrupa aparte. La regla no
-cambia: una historia aparece solo si la publican 5 o más medios distintos.
+cambia: una historia aparece solo si la publican 3 o más medios distintos.
 - Medios de baja fiabilidad o que reescriben comunicados (LOW) solo suman cuando la historia ya
   tiene 3+ medios confiables; los agregadores que republican notas ajenas (AGG) nunca cuentan.
 - Se descartan comunicados, patrocinados, consejos de finanzas personales, recomendaciones de
@@ -21,8 +21,8 @@ from urllib.parse import quote, urlparse
 
 import actualizar as A
 
-MIN_OUTLETS = 5
-MIN_RELIABLE = 3
+MIN_OUTLETS = 3
+MIN_RELIABLE = 2   # los medios de menor nivel solo suman cuando ya hay 2+ confiables
 GNEWS = {"en": "https://news.google.com/rss/search?q={}&hl=en-US&gl=US&ceid=US:en",
          "es": "https://news.google.com/rss/search?q={}&hl=es-419&gl=US&ceid=US:es-419"}
 GN_SUFFIX = re.compile(r"\s+[-|–]\s+[^-|–]{2,45}$")
@@ -115,7 +115,7 @@ TOPICS = {
             ("sciq-natgeo-es", "gn:site:nationalgeographic.com.es", "National Geographic España", "natgeo", "es", False),
             ("sciq-infobae", "gn:site:infobae.com/ciencia OR site:infobae.com (científicos OR estudio OR NASA OR espacio)", "Infobae", "infobae", "es", False),
         ],
-        # Republican comunicados de universidades o son fuente primaria (no medio): solo suman con 3+ confiables.
+        # Republican comunicados de universidades o son fuente primaria (no medio): solo suman con 2+ confiables.
         "low": {"sciencedaily", "physorg", "nasa", "esa", "muyinteresante", "spacecom", "livescience",
                 "sciencealert", "universetoday"},
         "agg": set(),
@@ -172,7 +172,7 @@ ANCHOR_STOP = set("wall street stocks stock markets market growth high record fe
 ANCHOR_HOURS = 30
 
 
-def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, anchor_h=ANCHOR_HOURS, cross=False, anchor_extra=0.0, anchor_cos=None, cos_strong=None):
+def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, anchor_h=ANCHOR_HOURS, cross=False, anchor_extra=0.0, anchor_cos=None, cos_strong=None, anchor_weak=None, cos_many_override=None):
     """Une grupos del mismo hecho contado con palabras distintas: centros parecidos y 2+ términos
     poco comunes en los titulares de ambos (4+ términos permiten un centro algo menos parecido)."""
     rare_cut = math.log((n_ref + 1) / (max(4, n_ref * 0.012) + 0.5))
@@ -214,6 +214,12 @@ def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, an
                 need = (anchor_cos or ANCHOR_COS) if anchor else (cos_min if shared < 4 else cos_many)
                 if shared < 2 and not anchor:
                     need = cos_strong
+                # Nombre propio en común pero pocos términos raros (p. ej. dos notas distintas sobre la
+                # presidenta): con el umbral de 3 medios se pide un centro más parecido.
+                if anchor and anchor_weak is not None and shared < 3:
+                    need = max(need, anchor_weak)
+                if not anchor and shared >= 4 and cos_many_override is not None:
+                    need = max(need, cos_many_override)
                 if c >= need and (best is None or c > best[0]):
                     best = (c, a, b, anchor, shared)
         if not best:

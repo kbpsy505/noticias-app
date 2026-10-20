@@ -5,7 +5,7 @@
 2. Normaliza títulos y resúmenes en español e inglés a un vocabulario común.
 3. Agrupa notas sobre el mismo hecho (TF-IDF + coincidencia de términos
    distintivos + ventana de tiempo), aunque estén en idiomas distintos.
-4. Conserva solo los grupos que publican 5 o más medios distintos (MIN_OUTLETS).
+4. Conserva solo los grupos que publican 3 o más medios distintos (MIN_OUTLETS).
 5. Escribe noticias.json para la página.
 
 No inventa nada: cada texto mostrado sale tal cual de un feed.
@@ -45,7 +45,7 @@ SCIENCE_HOURS = 24 * 7   # ciencia publica más lento
 PAIR_WINDOW_H = 36       # dos notas solo se unen si se publicaron con <= 36 h de diferencia
 SUMMARY_MAX = 400
 MAX_STORIES = 30         # por categoría
-MIN_OUTLETS = 5          # medios distintos necesarios para que una historia aparezca
+MIN_OUTLETS = 3          # medios distintos necesarios para que una historia aparezca
 
 CATEGORIES = [
     ("sucesos", "Sucesos"),
@@ -74,7 +74,10 @@ SKIP_TITLE = re.compile(
     r"\|\s*directo|minuto a minuto|última hora de|ultima hora de|latest news bulletin|"
     r"bloomberg this weekend|^the latest:|crossword|horóscopo|horoscopo|^letters:|quiz\b|"
     r"in pictures|en im[aá]genes|fotos:|photos:|^bbc news at|what we know so far|lo que sabemos|^the papers:|"
-    r"^firstft:|temblor hoy|[uú]ltimos sismos|sismos? hoy|fin de semana:|mejores planes|planes para|qu[eé] hacer este)",
+    r"^firstft:|temblor hoy|[uú]ltimos sismos|sismos? hoy|fin de semana:|mejores planes|planes para|qu[eé] hacer este|"
+    # Notas de servicio que se repiten con otro país o sorteo (con 3 medios se agrupaban entre sí).
+    r"^temblor en [^:]{2,30}( hoy|: (sismos|hora|epicentro|lugar|[uú]ltimo))|sismos recientes|loter[ií]a nacional: est|n[uú]meros ganadores|resultados del (sorteo|tris|chispazo|gana diario|progol|melate)|"
+    r"^sorteo mayor|^progol|qu[eé] est[aá] pasando en el metro|pron[oó]stico del tiempo:)",
     re.I,
 )
 SECTION_TITLE = re.compile(
@@ -551,7 +554,8 @@ def merge_pass(groups, pool, idf, hours=48):
     rest = [g for g in groups if len({pool[i]["org"] for i in g}) < 2]
     # Con nombre propio en común se pide un centro algo más parecido (0.32) que en las pestañas temáticas:
     # aquí se mezclan todos los temas y, p. ej., «Zelenski critica a Trump» no debe unirse al ataque con drones.
-    multi, merges = tema.merge_split(multi, pool, idf, len(pool), hours, anchor_cos=0.32, cos_strong=0.55)
+    multi, merges = tema.merge_split(multi, pool, idf, len(pool), hours, anchor_cos=0.32, cos_strong=0.55,
+                                    anchor_weak=0.38, cos_many_override=0.41)
     return multi + rest, merges
 
 
@@ -571,7 +575,7 @@ def story_topic(members):
 
 
 def add_regional_topics(out_cats, reg_cats, region_labels):
-    """Las historias regionales de 5+ medios también salen en su pestaña temática (Política, Sucesos,
+    """Las historias regionales de 3+ medios también salen en su pestaña temática (Política, Sucesos,
     Guerras, Finanzas), igual que una nota de mercados por una guerra sale en Finanzas y en Guerras.
     Si la pestaña ya tiene la misma historia (comparten notas), queda la versión con más medios."""
     by_id = {c["id"]: c for c in out_cats}
@@ -665,7 +669,7 @@ POSIBLES_MIN_CHIP = {"cripto": 6}  # Criptomonedas tiene 6 lugares asegurados
 
 
 def build_posibles(candidates, out_cats, region_labels):
-    """Grupos con 2-4 medios distintos que no están en ninguna pestaña de consenso (5+).
+    """Grupos con 2 medios distintos que no están en ninguna pestaña de consenso (3+).
     Se descarta cualquier grupo que comparta una nota con una historia ya confirmada, y los
     grupos repetidos entre el corpus general, el regional y el cripto se fusionan (se queda el
     de más medios y se juntan las etiquetas de categoría/región)."""
@@ -852,7 +856,7 @@ def main():
     groups, main_merges = merge_pass(groups, pool, idf)
 
     stories_by_cat = defaultdict(list)
-    candidates = []          # grupos de 2-4 medios: van a "Posibles noticias"
+    candidates = []          # grupos de 2 medios: van a "Posibles noticias"
     debug_rows = []
     for g in groups:
         members = [pool[i] for i in g]
@@ -873,7 +877,7 @@ def main():
             continue
         stories_by_cat[cat].append(story)
 
-    # Refuerzo de Finanzas y Ciencias con medios especializados (ver tema.py); misma regla de 5+.
+    # Refuerzo de Finanzas y Ciencias con medios especializados (ver tema.py); misma regla de 3+.
     topic_reports = {}
     for tcat in ("finanzas", "ciencias"):
         try:
@@ -902,7 +906,7 @@ def main():
         summary_counts[cid] = len(lst)
         out_cats.append({"id": cid, "label": label, "minOutlets": MIN_OUTLETS, "stories": lst})
         if cid == "finanzas":
-            # Pestaña "Criptomonedas": solo historias con 5+ medios distintos (ver cripto.py).
+            # Pestaña "Criptomonedas": solo historias con 3+ medios distintos (ver cripto.py).
             try:
                 import cripto
                 crypto_stories, crypto_report, crypto_debug = cripto.build(now, pool)
@@ -923,7 +927,7 @@ def main():
                 crypto_report = {"error": f"{type(exc).__name__}: {exc}"}
                 print("cripto FAIL", type(exc).__name__, exc)
 
-    # Pestañas regionales: 5+ medios distintos, región por lugares nombrados (ver regiones.py).
+    # Pestañas regionales: 3+ medios distintos, región por lugares nombrados (ver regiones.py).
     region_report = None
     region_labels = {}
     try:
@@ -949,7 +953,7 @@ def main():
         region_report = {"error": f"{type(exc).__name__}: {exc}"}
         print("regiones FAIL", type(exc).__name__, exc)
 
-    # Pestaña "Posibles noticias": grupos de 2-4 medios distintos que NO llegaron a 5.
+    # Pestaña "Posibles noticias": grupos de 2 medios distintos que NO llegaron a 3.
     try:
         posibles, posibles_report = build_posibles(candidates, out_cats, region_labels)
         out_cats.append({"id": "posibles", "label": "Posibles noticias", "minOutlets": 2,
@@ -992,7 +996,7 @@ def main():
             "minOutlets": MIN_OUTLETS,
             "pairWindowHours": PAIR_WINDOW_H,
             "newsMaxAgeHours": NEWS_HOURS,
-            "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 5+ medios distintos.",
+            "description": "Agrupación por TF-IDF y términos distintivos comunes (ES/EN), solo grupos con 3+ medios distintos.",
         },
         "stats": {
             "feedsOk": len(ok_feeds),

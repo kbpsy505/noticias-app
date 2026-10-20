@@ -15,7 +15,7 @@
     {
       target: "#list .card .outlets",
       title: "Cuántos medios",
-      text: "Esta etiqueta dice cuántos medios distintos publicaron la historia. En casi todas las pestañas solo aparecen las que publican 5 o más. En Buenas noticias basta 1 medio confiable, y ahí se ve su nombre.",
+      text: "Esta etiqueta dice cuántos medios distintos publicaron la historia. En casi todas las pestañas solo aparecen las que publican 3 o más. En Buenas noticias basta 1 medio confiable, y ahí se ve su nombre.",
     },
     {
       target: "#list .card",
@@ -26,7 +26,7 @@
     {
       target: '.tab[data-cat="posibles"]',
       title: "Posibles noticias",
-      text: "Aquí van las historias que publican solo 2 a 4 medios. Todavía no están confirmadas: tómalas con cautela. Si más medios las publican, pasan a su pestaña.",
+      text: "Aquí van las historias que publican solo 2 medios. Todavía no están confirmadas: tómalas con cautela. Si más medios las publican, pasan a su pestaña.",
       onShow: () => scrollTabTo('.tab[data-cat="posibles"]'),
       onHide: () => scrollTabTo(".tab.on"),
     },

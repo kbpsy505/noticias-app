@@ -2,7 +2,7 @@
 Asia, África y Australia y Oceanía.
 
 Misma regla que las pestañas de consenso: una historia aparece solo si la publican
-5 o más medios distintos (ediciones del mismo grupo cuentan una vez). La región de
+3 o más medios distintos (ediciones del mismo grupo cuentan una vez). La región de
 cada grupo se decide por los países, ciudades y líderes que nombran sus titulares
 y resúmenes, más la región del medio local que la publicó. Una historia puede estar
 también en su pestaña temática. Solo código: no hay IA ni se inventa nada.
@@ -246,7 +246,8 @@ KW = {
                     r"papua", r"samoa\w*", r"tonga\w*", r"solomon islands", r"vanuatu", r"pacific island\w*",
                     r"cook islands", r"oceania", r"maori"]),
 }
-US = _rx([r"estados unidos", r"eeuu", r"ee\.uu", r"united states", r"u\.s", r"trump", r"washington",
+AMBIG_CR = _rx([r"liberia"])
+US = _rx([r"estados unidos", r"estadounidenses?", r"eeuu", r"ee\.uu", r"united states", r"u\.s", r"trump", r"washington",
           r"white house", r"casa blanca", r"congress", r"congreso de ee", r"oregon", r"texas", r"california",
           r"new york", r"nueva york", r"florida", r"pentagon\w*", r"pentagono"])
 
@@ -261,7 +262,11 @@ def fold(s):
 
 
 # Nombres que contienen un lugar pero no hablan de él (grupo británico "Palestine Action").
-NOT_PLACE = re.compile(r"palestine action")
+NOT_PLACE = re.compile(r"palestine action|"
+                       # ICE de EE. UU. (inmigración) no es el ICE tico.
+                       r"(agentes|agents|officers|oficiales|redadas?|raids?) (del |de )?ice(?![a-z])|ice (agents|officers|raids?|detention|custody|agentes)|"
+                       r"(?<![a-z])ice(?![a-z])(?=.{0,80}(california|chicago|minneapolis|estadounidense|eeuu|ee\\.uu|estados unidos|inmigra|migrant|deport|trump))|"
+                       r"(california|chicago|minneapolis|estadounidense|eeuu|ee\\.uu|estados unidos|inmigra|migrant|deport|trump).{0,80}(?<![a-z])ice(?![a-z])")
 
 
 def region_votes(members):
@@ -281,7 +286,21 @@ def region_votes(members):
     return votes, us, kw_orgs, local_orgs
 
 
+# Grupos chicos (menos de 5 medios): la región también vale si todos los medios son de ella
+# o la mitad son locales y la nombran (regla «loose», la de antes para Posibles).
+LOOSE_BELOW = 5
+
+
 def pick_region(members, loose=False):
+    region, votes = _pick_region(members, loose)
+    # Costa Rica pide al menos un medio tico: «Frente Amplio», «PLN» o «UCR» también existen en
+    # España, Uruguay o Argentina (p. ej. Mónica García y el Frente Amplio español caía en Costa Rica).
+    if region == "costarica" and not any(m.get("region") == "costarica" for m in members):
+        return None, votes
+    return region, votes
+
+
+def _pick_region(members, loose=False):
     """Región de un grupo: la más nombrada, pero solo si al menos 2 medios distintos nombran
     un lugar de esa región y, entre medios que la nombran y medios locales de ella, suman
     la mitad de los medios del grupo. Así una noticia global (p. ej. un producto de Tesla)
@@ -300,14 +319,19 @@ def pick_region(members, loose=False):
         # Si la mitad o más de los medios son de una región que además se nombra, es de esa región
         # (p. ej. medios venezolanos sobre Diosdado Cabello aunque el titular diga "Suiza").
         for r, lo in sorted(local_orgs.items(), key=lambda x: -len(x[1])):
-            if len(lo) * 2 >= len(orgs) and votes.get(r, 0) > 0 and us <= votes[r] * 1.5:
+            # ...y que la región sea de las más nombradas (si no, p. ej. medios ticos y hondureños sobre
+            # Colombia caían en Costa Rica).
+            top = max(votes.values()) if votes else 0
+            if len(lo) * 2 >= len(orgs) and votes.get(r, 0) > 0 and votes[r] >= top * 0.6 and us <= votes[r] * 1.5:
                 if r in ("centroamerica", "latam") and votes.get("costarica", 0) >= votes[r] * 0.6:
                     r = "costarica"
                 return r, votes
     best, n = votes.most_common(1)[0]
     # Nombres repetidos (p. ej. Liberia, Guanacaste): si la mitad o más de los medios son ticos y se nombra
     # un lugar de otra región, es de Costa Rica.
-    if best != "costarica" and len(local_orgs.get("costarica", set())) * 2 >= len(orgs) and us <= n * 1.5:
+    # Solo con un nombre ambiguo (Liberia): si no, una nota tica sobre Ecuador caía en Costa Rica.
+    ambiguous = any(AMBIG_CR.search(fold(m["title"] + " " + m["summary"][:200])) for m in members)
+    if ambiguous and best != "costarica" and len(local_orgs.get("costarica", set())) * 2 >= len(orgs) and us <= n * 1.5:
         best, n = "costarica", max(n, votes.get("costarica", 0))
         named = local_orgs["costarica"]
         return (best, votes) if len(named) >= 2 else (None, votes)
@@ -413,7 +437,7 @@ def build(now, general_pool, main_feed_urls):
     groups, merges = A.merge_pass(groups, pool, idf)
 
     by_region = defaultdict(list)
-    candidates = []    # grupos de 2-4 medios con región, para "Posibles noticias"
+    candidates = []    # grupos de 2 medios con región, para "Posibles noticias"
     near = Counter()   # grupos con 3-4 medios por región (para el informe)
     debug = []
     for g in groups:
@@ -421,7 +445,7 @@ def build(now, general_pool, main_feed_urls):
         k = len({m["org"] for m in members})
         if k < 2:
             continue
-        region, votes = pick_region(members, loose=k < A.MIN_OUTLETS)
+        region, votes = pick_region(members, loose=k < LOOSE_BELOW)
         if not region:
             continue
         if k >= 3:

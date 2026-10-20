@@ -1,6 +1,6 @@
 """Pestaña "Criptomonedas": consenso estricto, solo con código.
 
-Una historia aparece solo si la publican 5 o más medios distintos (misma regla de
+Una historia aparece solo si la publican 3 o más medios distintos (misma regla de
 "organización" que el resto de pestañas: ediciones del mismo grupo cuentan una vez).
 Usa los feeds generales/financieros de la app más medios cripto y de negocios
 reconocidos. Se descartan comunicados de prensa, contenido patrocinado,
@@ -17,7 +17,7 @@ from urllib.parse import quote, urlparse
 
 import actualizar as A
 
-MIN_OUTLETS = 5
+MIN_OUTLETS = 3
 MAX_STORIES = 30
 
 # (id, url, medio, organización, idioma, solo_cripto)
@@ -75,7 +75,7 @@ CRYPTO_FEEDS = [
 LOW_TIER = {"beincrypto", "cryptonews", "utoday", "coingape", "newsbtc", "bitcoinist", "investing", "yahoo", "forbes"}
 # Agregadores que republican notas de otros medios (Yahoo copia a Bloomberg o Decrypt tal cual): nunca cuentan.
 AGGREGATORS = {"yahoo", "investing"}
-MIN_REPUTABLE = 3   # los medios de LOW_TIER (salvo agregadores) solo suman si ya hay 3+ confiables
+MIN_REPUTABLE = 2   # los medios de LOW_TIER (salvo agregadores) solo suman si ya hay 2+ confiables
 TIER_MODE = "hybrid"  # "strict": solo confiables; "hybrid": regla de arriba; "all": todos cuentan igual
 
 
@@ -236,7 +236,7 @@ def build(now, general_pool):
         results = list(ex.map(fetch, CRYPTO_FEEDS))
 
     pool, seen = [], set()
-    candidates = []  # grupos de 2-4 medios para "Posibles noticias"
+    candidates = []  # grupos de 2 medios para "Posibles noticias"
     feeds_ok, feeds_failed, rejected = [], [], Counter()
 
     def add(it):
