@@ -77,7 +77,9 @@ SKIP_TITLE = re.compile(
     r"^firstft:|temblor hoy|[uú]ltimos sismos|sismos? hoy|fin de semana:|mejores planes|planes para|qu[eé] hacer este|"
     # Notas de servicio que se repiten con otro país o sorteo (con 3 medios se agrupaban entre sí).
     r"^temblor en [^:]{2,30}( hoy|: (sismos|hora|epicentro|lugar|[uú]ltimo))|sismos recientes|loter[ií]a nacional: est|n[uú]meros ganadores|resultados del (sorteo|tris|chispazo|gana diario|progol|melate)|"
-    r"^sorteo mayor|^progol|qu[eé] est[aá] pasando en el metro|pron[oó]stico del tiempo:)",
+    r"^sorteo mayor|^progol|qu[eé] est[aá] pasando en el metro|pron[oó]stico del tiempo:|"
+    # Cotización diaria del dólar (se repite cada día y por país).
+    r"precio del d[oó]lar\b.{0,30}\bhoy\b|precio del d[oó]lar (hoy|en )|d[oó]lar (blue |oficial |estadounidense )?hoy\b|tipo de cambio (del d[oó]lar )?(hoy|para este)|casas de cambio: precio)",
     re.I,
 )
 SECTION_TITLE = re.compile(
@@ -126,6 +128,56 @@ POLITICA = re.compile(
     r"republican|dem[oó]crat|pp\b|psoe|vox\b)",
     re.I,
 )
+# Presupuesto y gasto público: es política (Corte, Asamblea, Gobierno), no mercados. Va a Política
+# salvo que el titular hable también de mercados o economía en sentido estricto.
+PUBLIC_BUDGET = re.compile(
+    r"(presupuest|budget|recortes?\b|\bcuts?\b|fondos? (p[uú]blicos|para|de vivienda|del estado)|gasto p[uú]blico|"
+    r"public spending|financiamiento (de|para) (la|las|los|el)|\bfees\b|transferencias?\b|partidas?\b)",
+    re.I,
+)
+GOV_ACTOR = re.compile(
+    r"(poder judicial|\bcorte\b|sala iv|sala constitucional|asamblea|diputad|congres|parlament|senad|gobierno|"
+    r"government|ministr|universidad|\bucr\b|\btec\b|municipal|alcald|contralor|hacienda|chaves|"
+    r"s[aá]nchez|presiden|\bcaja\b|ccss|\bmep\b|\boij\b|fiscal[ií]a|tribunal|38 votos|votos)",
+    re.I,
+)
+MARKET_CORE = re.compile(
+    r"(bolsa|stocks?\b|shares\b|wall street|inflaci|inflation|\bfed\b|reserva federal|\bbccr\b|banco central|"
+    r"tipos? de inter[eé]s|tasas? de inter[eé]s|interest rates?|\bpib\b|\bgdp\b|recesi|recession|arancel|tariff|"
+    r"d[oó]lar|dollar|earnings|bonos|\bbonds?\b|petr[oó]leo|\boil\b|mercados?\b|markets?\b|\bfmi\b|\bimf\b|"
+    r"calificaci[oó]n|rating|deuda soberana|eurobonos)",
+    re.I,
+)
+
+
+def budget_politics(t: str) -> bool:
+    return bool(PUBLIC_BUDGET.search(t) and GOV_ACTOR.search(t) and not MARKET_CORE.search(t))
+
+
+# Notas que nombran un país en guerra pero no son de la guerra (deportaciones, deporte, cultura).
+NON_WAR = re.compile(
+    r"(deport|migrant|inmigra|immigra|refugee status|protected status|\btps\b|asylum|asilo|visa|"
+    r"tennis|tenis|davis cup|copa davis|\bcup\b|\bcopa\b|\bwta\b|\batp\b|open\b|torneo|tournament|f[uú]tbol|football|soccer|champions|mundial|"
+    r"world cup|olymp|ol[ií]mpic|eurovisi|festival|film|pel[ií]cula|museo|museum|concierto|concert|"
+    r"\bmatch\b|partido de|semifinal|final\b|cuartos de final|quarter-?final|beat[s]?\b|vence|derrota a)",
+    re.I,
+)
+HARD_WAR = re.compile(
+    r"(bombard|bombs?\b|bombas?\b|missile|misil|airstrike|air strike|strikes? on|ataques? (rus|israel|a[eé]re|con dron)|"
+    r"drone attack|drones? (rus|ucran|attack)|killed|kills|muert|mata\b|matan\b|troops|tropas|ofensiva|offensive|"
+    r"shelling|front ?line|frente de batalla|invasi|ceasefire|cease-fire|alto el fuego|peace talks|negociaciones de paz)",
+    re.I,
+)
+
+
+def war_story(t: str) -> bool:
+    """Señal real de guerra: el patrón WAR, sin ser una nota de migración/deporte/cultura
+    (salvo que también traiga términos duros de guerra)."""
+    if not WAR.search(t):
+        return False
+    return not NON_WAR.search(t) or bool(HARD_WAR.search(t))
+
+
 FINANZAS = re.compile(
     r"(petr[oó]leo|\boil\b|crudo|mercado|market|bolsa|stocks?\b|shares\b|\bbanc|(?<!west )\bbank|inflaci|inflation|"
     r"\bfed\b|reserva federal|\bbce\b|\becb\b|acciones|investor|inversor|econom|arancel|tariff|\bempleo\b|"
@@ -290,9 +342,9 @@ def fetch_feed(feed):
 
 def classify(title: str, summary: str, hint: str | None, path: str) -> str | None:
     t = title
-    if WAR.search(t):
+    if war_story(t):
         return "guerras"
-    if hint == "guerras":
+    if hint == "guerras" and not (NON_WAR.search(t) and not HARD_WAR.search(t)):
         return "guerras"
     sci_path = bool(re.search(r"/(science|ciencia|ciencias|environment|medio-ambiente|clima|salud|health)(/|-|$)", path))
     if hint == "ciencias":
@@ -301,6 +353,8 @@ def classify(title: str, summary: str, hint: str | None, path: str) -> str | Non
         return "ciencias"
     if SUCESOS.search(t):
         return "sucesos"
+    if budget_politics(t):
+        return "politica"
     pol, fin = bool(POLITICA.search(t)), bool(FINANZAS.search(t))
     if hint == "finanzas":
         return "politica" if (pol and not fin) else "finanzas"
@@ -380,9 +434,136 @@ class DSU:
         return ra
 
 
+_NOT_NAMES = set("""january february march april may june july august september october november december
+enero febrero marzo abril mayo junio julio agosto septiembre setiembre octubre noviembre diciembre
+monday tuesday wednesday thursday friday saturday sunday lunes martes miercoles jueves viernes sabado domingo""".split())
+
+
+def title_names(title: str, lower: set | None = None) -> set[str]:
+    """Nombres propios del titular (palabras con mayúscula, siglas), en forma de término.
+    Incluye la primera palabra (en «Salomon abre su primera tienda» la marca va al inicio), pero
+    no los términos que en otros titulares aparecen en minúscula («Temblor», «Corte», «Launches»)."""
+    words = re.findall(r"[\w’'&]+", title)
+    longw = [w for w in words if len(w) >= 4 and not w.isupper()]
+    # Titulares en «Title Case» (WSJ, Bloomberg): todas las palabras van con mayúscula, no se distinguen nombres.
+    if len(longw) >= 4 and sum(w[0].isupper() for w in longw) >= 0.7 * len(longw):
+        return set()
+    def skip(w):
+        return fold(w).lower() in _NOT_NAMES or bool(lower and w.lower() in lower)
+
+    # Rachas de palabras con mayúscula («Rob Jetten», «Países Bajos»): se pasan juntas a términos para
+    # que las frases del vocabulario se apliquen («Países Bajos» -> netherlands).
+    runs, cur = [], []
+    for w in words:
+        if w[:1].isupper():
+            cur.append(w)
+        else:
+            if cur:
+                runs.append(cur)
+            cur = []
+    if cur:
+        runs.append(cur)
+    out = set()
+    for run in runs:
+        keep = [w for w in run if not skip(w) and (len(w) >= 3 or len(run) > 1)]
+        if not keep:
+            continue
+        drop = set()
+        for w in run:
+            if skip(w):
+                drop.update(terms(w))
+        out.update(t for t in terms(" ".join(run)) if t not in drop)
+    return out
+
+
+def lowercase_terms(items) -> set:
+    """Palabras (completas) que aparecen escritas en minúscula en algún titular: no son nombres propios."""
+    low = set()
+    for it in items:
+        for w in re.findall(r"[\w’'&]+", it["title"])[1:]:
+            if w[:1].islower():
+                low.add(w)
+    return low
+
+
+# Países (texto plegado, minúsculas) -> código. Dos titulares de países distintos que no se nombran
+# entre sí cuentan como hechos distintos («temblor en Guatemala» ≠ «temblor en Costa Rica»).
+_COUNTRIES = {
+    "cr": r"costa rica|costarricens\w*", "gt": r"guatemal\w*", "hn": r"hondur\w*", "sv": r"el salvador|salvadoren\w*",
+    "ni": r"nicaragu\w*", "pa": r"panam[ae]\w*", "mx": r"mexic\w*|mejic\w*", "cu": r"cuba\w*", "co": r"colombia\w*",
+    "ve": r"venezuel\w*", "ec": r"ecuador\w*", "pe": r"peru\w*", "cl": r"chile\w*", "ar": r"argentin\w*",
+    "bo": r"bolivia\w*", "py": r"paraguay\w*", "uy": r"uruguay\w*", "br": r"brasil\w*|brazil\w*",
+    "do": r"republica dominicana|dominican\w*", "es": r"espana|spain|spanish",
+    "jp": r"japon\w*|japan\w*", "cn": r"china|chinese|chin[oa]s", "in": r"india|indian", "ph": r"filipin\w*|philippin\w*",
+    "id": r"indonesia\w*", "tr": r"turquia|turkey|turkish", "it": r"italia\w*|italy|italian\w*",
+    "gr": r"greece|greek|griego\w*", "ir": r"iran\w*", "af": r"afganistan|afghan\w*", "pk": r"pakistan\w*",
+    "nz": r"nueva zelanda|new zealand", "au": r"australia\w*", "tw": r"taiwan\w*",
+}
+_COUNTRY_RX = [(k, re.compile(r"(?<![a-z])(" + v + r")(?![a-z])")) for k, v in _COUNTRIES.items()]
+_MAG_RX = re.compile(r"(?<![a-z])(?:magnitud|magnitude|m)\s*(?:preliminar\s*(?:de\s*)?)?(?:de\s*)?(\d)[.,](\d)")
+
+
+def places(text: str) -> set[str]:
+    t = fold(text).lower()
+    return {k for k, rx in _COUNTRY_RX if rx.search(t)}
+
+
+def magnitude(title: str):
+    t = fold(title).lower()
+    if not re.search(r"temblor|sismo|terremoto|quake|tremor|magnitud", t):
+        return None
+    m = _MAG_RX.search(t)
+    return (m.group(1) + "." + m.group(2)) if m else None
+
+
+# Parte de ataques (misiles, bombardeos, muertos) frente a nota diplomática (conversaciones, enviado,
+# acusaciones): el mismo día de una guerra no son la misma historia aunque compartan «Ucrania» y «Zelenski».
+_ATTACK = re.compile(r"(missiles? rain|blitz|barrage|kills? \d|killed|kills\b|dead\b|muert|mueren|deja \d|bombard|"
+                     r"(drone|missile|air) (attack|strike)s?|ataques? (masivo|con (misiles|drones))|shelling|struck|hit by)")
+_DIPLO = re.compile(r"(talks|conversacion|negociac|envoy|enviad|witkoff|rubio|summit|cumbre|meets|se reune|reunion|"
+                    r"accus|acusa|delay|retras|sanction|sancion|peace|paz|diplomat|norway|noruega|oslo)")
+
+
+def event_kind(title: str):
+    t = fold(title).lower()
+    att, dip = bool(_ATTACK.search(t)), bool(_DIPLO.search(t))
+    return "attack" if att and not dip else ("diplo" if dip and not att else None)
+
+
+def event_clash(a, b) -> bool:
+    """Mismo tipo de hecho en lugares distintos (país del titular) o sismos de magnitud distinta."""
+    ka, kb = a.get("_kind"), b.get("_kind")
+    if ka and kb and ka != kb:
+        return True
+    ma, mb = a.get("_mag"), b.get("_mag")
+    if ma and mb and ma != mb:
+        return True
+    pa, pb = a.get("_pl"), b.get("_pl")
+    if pa and pb and not (pa & pb) and not (pa & b.get("_pla", set())) and not (pb & a.get("_pla", set())):
+        return True
+    return False
+
+
+def names_clash(a_names, a_all, b_names, b_all, idf, rare_cut):
+    """Cada lado nombra algo poco común que el otro no menciona en ninguna parte y no comparten
+    ningún nombre: son hechos distintos aunque el resto del titular se parezca
+    (p. ej. «Salomon abre su primera tienda en Costa Rica» y «BICIAN abre su primera tienda en Costa Rica»)."""
+    na = {w for w in a_names if idf.get(w, 0) >= rare_cut}
+    nb = {w for w in b_names if idf.get(w, 0) >= rare_cut}
+    if not na or not nb or (na & nb):
+        return False
+    return not (na & b_all) and not (nb & a_all)
+
+
 def build_vectors(items):
     docs = []
+    lower = lowercase_terms(items)
     for it in items:
+        it["_pn"] = title_names(it["title"], lower)
+        it["_pl"] = places(it["title"])
+        it["_pla"] = places(it["title"] + " " + it.get("summary", ""))
+        it["_mag"] = magnitude(it["title"])
+        it["_kind"] = event_kind(it["title"])
         tt = terms(it["title"])
         st = terms(it["summary"][:300]) if it["summary"] else []
         it["_tt"] = set(tt)
@@ -449,6 +630,8 @@ def cluster(items, idf, df, n_ref=None):
         need = 0.30 if cross else 0.36
         ok = (s >= need and len(rare) >= 2 and len(rare_title) >= 1) or \
              (s >= 0.55 and len(rare) >= 1 and len(shared_title) >= 2)
+        if ok and (event_clash(a, b) or names_clash(a["_pn"], a["_all"], b["_pn"], b["_all"], idf, rare_cut)):
+            ok = False
         sims[(i, j)] = s
         if ok:
             pairs.append((s, i, j))
@@ -474,10 +657,18 @@ def cluster(items, idf, df, n_ref=None):
         if max(ts) - min(ts) > 60 * 3600:
             continue
         tot = 0.0
+        clash = 0
         for x in A:
             for y in B:
                 tot += sim(x, y)
+                a_, b_ = items[x], items[y]
+                if event_clash(a_, b_) or names_clash(a_["_pn"], a_["_all"], b_["_pn"], b_["_all"], idf, rare_cut):
+                    clash += 1
         if tot / (len(A) * len(B)) < AVG_MIN:
+            continue
+        # Dos tercios o más de los pares nombran cosas distintas (otra marca, otro país, otra magnitud,
+        # ataque frente a diplomacia): son hechos distintos.
+        if clash * 3 >= 2 * len(A) * len(B):
             continue
         dsu.union(i, j)
     groups = [m for m in dsu.members.values()]
@@ -574,6 +765,25 @@ def story_topic(members):
     return cat if votes[cat] >= max(2, n * 0.34) else None
 
 
+def _overlapping(tab, urls):
+    """Tarjetas de `tab` que son (al menos a medias) la misma historia: la mitad o más de sus notas
+    están en la historia. Compartir una sola nota no basta (otra historia relacionada no se borra)."""
+    out = []
+    for i, x in enumerate(tab):
+        su = {y["url"] for y in x["sources"]}
+        k = len(urls & su)
+        if k and k * 2 >= len(su):
+            out.append(i)
+    return out
+
+
+def _absorb(tab, idx, story):
+    """Pone `story` en el lugar de la primera tarjeta de `idx` y quita las demás (eran parte de ella)."""
+    tab[idx[0]] = story
+    for i in sorted(idx[1:], reverse=True):
+        del tab[i]
+
+
 def add_regional_topics(out_cats, reg_cats, region_labels):
     """Las historias regionales de 3+ medios también salen en su pestaña temática (Política, Sucesos,
     Guerras, Finanzas), igual que una nota de mercados por una guerra sale en Finanzas y en Guerras.
@@ -594,16 +804,17 @@ def add_regional_topics(out_cats, reg_cats, region_labels):
                 if oid == tid or oid not in by_id:
                     continue
                 otab = by_id[oid]["stories"]
-                od = next((i for i, x in enumerate(otab) if urls & {y["url"] for y in x["sources"]}), None)
-                if od is not None and copy["outlets"] > otab[od]["outlets"]:
-                    otab[od] = json.loads(json.dumps(copy))
+                od = _overlapping(otab, urls)
+                if od and copy["outlets"] > max(otab[i]["outlets"] for i in od):
+                    _absorb(otab, od, json.loads(json.dumps(copy)))
             if tid not in by_id:
                 continue
             tab = by_id[tid]["stories"]
-            dup = next((i for i, x in enumerate(tab) if urls & {y["url"] for y in x["sources"]}), None)
-            if dup is not None:
-                if copy["outlets"] > tab[dup]["outlets"]:
-                    tab[dup] = copy
+            dups = _overlapping(tab, urls)
+            if dups:
+                # Puede haber varias tarjetas parciales de la misma historia: la versión regional las absorbe.
+                if copy["outlets"] > max(tab[i]["outlets"] for i in dups):
+                    _absorb(tab, dups, copy)
                 continue
             tab.append(copy)
             added[tid] += 1

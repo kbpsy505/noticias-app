@@ -172,6 +172,15 @@ ANCHOR_STOP = set("wall street stocks stock markets market growth high record fe
 ANCHOR_HOURS = 30
 
 
+def _group_kind(g, pool):
+    """«attack» o «diplo» si más de la mitad de las notas del grupo son de ese tipo (ver A.event_kind)."""
+    kinds = Counter(pool[i].get("_kind") for i in g)
+    for k in ("attack", "diplo"):
+        if kinds[k] * 2 > len(g):
+            return k
+    return None
+
+
 def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, anchor_h=ANCHOR_HOURS, cross=False, anchor_extra=0.0, anchor_cos=None, cos_strong=None, anchor_weak=None, cos_many_override=None):
     """Une grupos del mismo hecho contado con palabras distintas: centros parecidos y 2+ términos
     poco comunes en los titulares de ambos (4+ términos permiten un centro algo menos parecido)."""
@@ -190,6 +199,7 @@ def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, an
         info = [(centre(g), {w for i in g for w in pool[i]["_tt"] if idf.get(w, 0) >= rare_cut},
                  min(pool[i]["_ts"] for i in g), max(pool[i]["_ts"] for i in g),
                  {w for i in g for w in proper(pool[i]["title"]) if idf.get(w, 0) >= rare_cut + anchor_extra}) for g in groups]
+        gkind = [_group_kind(g, pool) for g in groups]
         best = None
         for a in range(len(groups)):
             for b in range(a + 1, len(groups)):
@@ -209,6 +219,9 @@ def merge_split(groups, pool, idf, n_ref, hours, cos_min=0.42, cos_many=0.35, an
                 if shared < 2 and not anchor and not strong:
                     continue
                 if len(groups[a]) + len(groups[b]) < 3 and not anchor:
+                    continue
+                # Un grupo de partes de ataques y uno diplomático no se unen aunque compartan nombres.
+                if gkind[a] and gkind[b] and gkind[a] != gkind[b]:
                     continue
                 c = A.cos(info[a][0], info[b][0])
                 need = (anchor_cos or ANCHOR_COS) if anchor else (cos_min if shared < 4 else cos_many)
@@ -277,6 +290,9 @@ def build(cat, now, general_pool, main_feed_urls=()):
             return False
         if skip.search(title) or A.SKIP_TITLE.search(title):
             rejected["consejo/promo/formato"] += 1
+            return False
+        if cat == "finanzas" and A.budget_politics(title):
+            rejected["presupuesto público (política)"] += 1
             return False
         if re.search(r"sponsored|patrocinado|press release|this is a paid", summary[:300], re.I):
             rejected["patrocinado"] += 1

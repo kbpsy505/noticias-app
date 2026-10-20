@@ -81,7 +81,7 @@ WORDS = {
     "suecia": "sweden", "sueco": "sweden", "swedish": "sweden", "noruega": "norway", "noruego": "norway", "norwegian": "norway",
     "dinamarca": "denmark", "danes": "denmark", "danish": "denmark", "finlandia": "finland", "finlandes": "finland", "finnish": "finland",
     "suiza": "switzerland", "suizo": "switzerland", "swiss": "switzerland", "belgica": "belgium", "belga": "belgium", "belgian": "belgium",
-    "holandes": "netherlands", "dutch": "netherlands", "irlanda": "ireland", "irlandes": "ireland", "irish": "ireland",
+    "holandes": "netherlands", "neerlandes": "netherlands", "neerlandesa": "netherlands", "neerlandeses": "netherlands", "holandesa": "netherlands", "holanda": "netherlands", "dutch": "netherlands", "irlanda": "ireland", "irlandes": "ireland", "irish": "ireland",
     "escocia": "scotland", "escoces": "scotland", "scottish": "scotland", "portugues": "portugal",
     "groenlandia": "greenland", "filipinas": "philippines", "filipino": "philippines", "tailandia": "thailand", "tailandes": "thailand", "thai": "thailand",
     "camboya": "cambodia", "vietnamita": "vietnam", "indonesio": "indonesia", "indonesian": "indonesia",
@@ -159,6 +159,8 @@ WORDS = {
     "cientificos": "scientist", "cientifico": "scientist", "scientists": "scientist", "estudio": "study", "estudios": "study",
     "studies": "study", "investigadores": "researcher", "researchers": "researcher", "vacuna": "vaccine", "vacunas": "vaccine",
     "vaccines": "vaccine", "virus": "virus", "enfermedad": "disease", "salud": "health", "cancer": "cancer", "luna": "moon",
+    # Espacio (misión japonesa MMX a Fobos: notas EN y ES se juntaban mal).
+    "marte": "mars", "marciana": "mars", "marciano": "mars", "marcianas": "mars", "marcianos": "mars", "martian": "mars", "fobos": "phobos", "deimos": "deimos", "mision": "mission", "misiones": "mission", "missions": "mission", "muestra": "sample", "muestras": "sample", "samples": "sample", "lanza": "launch", "lanzan": "launch", "lanzar": "launch", "lanzo": "launch", "lanzamiento": "launch", "launches": "launch", "launched": "launch", "launching": "launch", "traer": "bring", "traera": "bring", "traeran": "bring", "recolectar": "collect", "recoger": "collect", "sonda": "probe", "nave": "spacecraft", "lunas": "moon", "moons": "moon", "suelo": "soil", "rocas": "rocks", "tierra": "earth", "historica": "historic", "historico": "historic",
     "espacio": "space", "espacial": "space", "cohete": "rocket", "planeta": "planet", "estrella": "star", "agujero": "hole",
     "especie": "species", "especies": "species", "dinosaurio": "dinosaur", "dinosaurios": "dinosaur", "dinosaurs": "dinosaur",
     "fosil": "fossil", "fosiles": "fossil", "fossils": "fossil", "hielo": "ice", "artico": "arctic", "antartida": "antarctica",
