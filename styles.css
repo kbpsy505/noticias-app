@@ -34,10 +34,15 @@ body {
   font-family: var(--sans);
   background: var(--bg); color: var(--ink); min-block-size: 100svh;
   padding-block-end: calc(24px + env(safe-area-inset-bottom, 0px));
+  /* Teléfono en horizontal: el texto no queda bajo la muesca (el fondo sí llega al borde) */
+  padding-inline: env(safe-area-inset-left, 0px) env(safe-area-inset-right, 0px);
 }
 h1, h2, h3 { text-wrap: balance; }
 button, a, summary { touch-action: manipulation; }
-button { user-select: none; -webkit-user-select: none; }
+/* Controles: mantener el dedo no selecciona el texto ni abre el menú de copiar (el contenido sigue seleccionable) */
+:is(button, .sources summary, .fx-banks summary, .older > summary) {
+  user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+}
 
 /* Foco visible solo con teclado; nunca outline: none */
 :focus-visible { outline: max(2px, 0.08em) solid currentColor; outline-offset: 0.2em; }
@@ -45,7 +50,7 @@ button { user-select: none; -webkit-user-select: none; }
 
 /* Respuesta al tocar (el resaltado gris del navegador está desactivado arriba) */
 :is(.tab, .lang, .bf, .tour-btn, .tour-tip button, .fx-more):active:not(:disabled) { transform: scale(0.97); }
-:is(.sources, .fx-banks) summary:active { opacity: 0.7; }
+:is(.sources, .fx-banks, .mnote) summary:active { opacity: 0.7; }
 @media (prefers-reduced-motion: no-preference) {
   :is(.tab, .lang, .bf, .tour-btn, .tour-tip button, .fx-more) { transition: transform 160ms var(--ease-out); }
 }
