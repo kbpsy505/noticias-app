@@ -2,7 +2,7 @@ const TZ = "America/Costa_Rica";
 const when = new Intl.DateTimeFormat("es-CR", {
   timeZone: TZ, weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit",
 });
-const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas", mundoInfo: false, olderOpen: {} };
+const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas", mundoInfo: false, olderOpen: {}, cryptoSel: null };
 
 function fmt(iso) {
   const d = new Date(iso);
@@ -112,6 +112,128 @@ function renderFx(data) {
   const src = el("p", "fx-src");
   src.append("Referencia oficial del Banco Central de Costa Rica. Consultado " + fmt(fx.consultado) + ".");
   box.append(src);
+}
+
+// Precios de cripto (CoinGecko, cada ~3 h): primera sección de la pestaña Criptomonedas.
+const usdFmt = (v) => {
+  const a = Math.abs(v);
+  const d = a >= 1000 ? 0 : a >= 1 ? 2 : 4;
+  return "US$" + Number(v).toLocaleString("es-CR", { minimumFractionDigits: d, maximumFractionDigits: d });
+};
+const pctFmt = (v) => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toLocaleString("es-CR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " %";
+const bigUsd = (v) => v >= 1e12 ? "US$" + (v / 1e12).toLocaleString("es-CR", { maximumFractionDigits: 2 }) + " billones"
+  : "US$" + (v / 1e9).toLocaleString("es-CR", { maximumFractionDigits: 1 }) + " mil millones";
+const SVGNS = "http://www.w3.org/2000/svg";
+
+function sparkSvg(vals, w, h, cls, area) {
+  const svg = document.createElementNS(SVGNS, "svg");
+  svg.setAttribute("viewBox", "0 0 " + w + " " + h);
+  svg.setAttribute("preserveAspectRatio", "none");
+  svg.setAttribute("class", cls);
+  svg.setAttribute("aria-hidden", "true");
+  if (!vals || vals.length < 2) return svg;
+  const min = Math.min(...vals), max = Math.max(...vals), span = max - min || 1, pad = 2;
+  const pts = vals.map((v, i) => [(i / (vals.length - 1)) * w, pad + (1 - (v - min) / span) * (h - pad * 2)]);
+  const d = pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
+  if (area) {
+    const a = document.createElementNS(SVGNS, "path");
+    a.setAttribute("d", d + " L" + w + " " + h + " L0 " + h + " Z");
+    a.setAttribute("class", "cx-area");
+    svg.append(a);
+  }
+  const line = document.createElementNS(SVGNS, "path");
+  line.setAttribute("d", d);
+  line.setAttribute("class", "cx-line");
+  line.setAttribute("vector-effect", "non-scaling-stroke");
+  svg.append(line);
+  return svg;
+}
+
+function trend(v) { return v > 0 ? " up" : v < 0 ? " down" : ""; }
+
+function renderCrypto(list) {
+  const cp = state.data.cryptoPrices;
+  if (!cp || !cp.coins || !cp.coins.length) return;
+  const sec = el("section", "cx");
+  sec.setAttribute("aria-label", "Precios de criptomonedas");
+  const head = el("div", "cx-head");
+  head.append(el("h2", "cx-title", "Precios"), el("span", "cx-sub", "US$ · gráfica de 7 días"));
+  sec.append(head);
+
+  if (!cp.coins.some((c) => c.id === state.cryptoSel)) state.cryptoSel = cp.coins[0].id;
+  const c = cp.coins.find((x) => x.id === state.cryptoSel);
+  const wk = c.spark7d && c.spark7d.length > 1 ? c.spark7d : null;
+  const ch7 = c.change7d != null ? c.change7d : wk ? (wk[wk.length - 1] / wk[0] - 1) * 100 : null;
+  const feat = el("div", "cx-feat" + trend(ch7));
+  const ft = el("div", "cx-ftop");
+  const nm = el("p", "cx-fname");
+  nm.append(el("strong", null, c.name), " ", el("span", null, c.symbol));
+  const pr = el("p", "cx-fprice", usdFmt(c.price));
+  const fx = state.data.exchange && state.data.exchange.dolar;
+  ft.append(nm, pr);
+  if (fx && fx.venta) ft.append(el("p", "cx-fcrc", "≈ " + crc(c.price * fx.venta).replace(/,\d\d$/, "") + " (venta BCCR)"));
+  const chips = el("p", "cx-fchips");
+  chips.append(el("span", "cx-chg" + trend(c.change24h), pctFmt(c.change24h) + " 24 h"));
+  if (ch7 != null) chips.append(el("span", "cx-chg" + trend(ch7), pctFmt(ch7) + " 7 d"));
+  ft.append(chips);
+  feat.append(ft);
+  if (wk) {
+    const chart = el("div", "cx-chart");
+    chart.append(sparkSvg(wk, 320, 110, "cx-big", true),
+      el("span", "cx-max", "máx. " + usdFmt(Math.max(...wk))),
+      el("span", "cx-min", "mín. " + usdFmt(Math.min(...wk))));
+    feat.append(chart);
+    const ax = el("div", "cx-axis");
+    ax.append(el("span", null, "hace 7 d"), el("span", null, "ahora"));
+    feat.append(ax);
+  }
+  const st = el("p", "cx-stats");
+  const bits = [];
+  if (c.low24h != null && c.high24h != null) bits.push("24 h: " + usdFmt(c.low24h) + " – " + usdFmt(c.high24h));
+  if (c.marketCap) bits.push("Cap. de mercado " + bigUsd(c.marketCap));
+  st.textContent = bits.join(" · ");
+  feat.append(st);
+  sec.append(feat);
+
+  const rows = el("ul", "cx-list");
+  cp.coins.forEach((x) => {
+    const li = el("li");
+    const b = el("button", "cx-row" + (x.id === c.id ? " on" : "") + trend(x.change24h));
+    b.type = "button";
+    b.setAttribute("aria-pressed", String(x.id === c.id));
+    b.setAttribute("aria-label", x.name + ", " + usdFmt(x.price) + ", " + pctFmt(x.change24h) + " en 24 horas. Ver gráfica");
+    const id = el("span", "cx-id");
+    id.append(el("span", "cx-sym", x.symbol), el("span", "cx-name", x.name));
+    const right = el("span", "cx-right");
+    right.append(el("span", "cx-price", usdFmt(x.price)), el("span", "cx-chg" + trend(x.change24h), pctFmt(x.change24h)));
+    b.append(id, sparkSvg(x.spark7d, 72, 26, "cx-spark", false), right);
+    b.addEventListener("click", () => {
+      state.cryptoSel = x.id;
+      const old = list.querySelector(".cx");
+      const y = window.scrollY;
+      const tmp = el("div");
+      renderCrypto(tmp);
+      if (old && tmp.firstChild) old.replaceWith(tmp.firstChild);
+      window.scrollTo({ top: y });
+      // Si la gráfica quedó fuera de la vista (bajo las pestañas fijas), se sube hasta ella.
+      const feat = list.querySelector(".cx-feat");
+      const tabs = document.getElementById("tabs").getBoundingClientRect().bottom;
+      if (feat && feat.getBoundingClientRect().top < tabs) {
+        window.scrollTo({ top: window.scrollY + list.querySelector(".cx").getBoundingClientRect().top - tabs - 8, behavior: "smooth" });
+      }
+    });
+    li.append(b);
+    rows.append(li);
+  });
+  sec.append(rows);
+
+  const foot = el("p", "cx-foot");
+  const a = el("a", null, cp.source);
+  a.href = cp.sourceUrl; a.target = "_blank"; a.rel = "noopener";
+  foot.append("Datos: ", a, " · actualizado " + rel(cp.fetchedAt || cp.updatedAt) +
+    ". Se renuevan con cada actualización (cada ~3 h); no son en tiempo real. Toca una moneda para ver su gráfica.");
+  sec.append(foot);
+  list.append(sec);
 }
 
 function renderTabs() {
@@ -284,6 +406,7 @@ function renderList() {
   const list = document.getElementById("list");
   list.innerHTML = "";
   const cat = state.data.categories.find((c) => c.id === state.cat);
+  if (state.cat === "cripto") renderCrypto(list);
   if (!cat || (!cat.stories.length && cat.id !== "mundo")) {
     let msg = "En esta actualización ninguna historia de esta categoría fue publicada por 3 o más medios distintos. Vuelve a revisar en la próxima actualización.";
     if (state.cat === "buenas") msg = "Ahora mismo no hay buenas noticias confirmadas por un medio confiable.";

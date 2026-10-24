@@ -337,3 +337,62 @@ html.tour-open { scroll-behavior: auto; }
 .cardtop .outlets.one { min-inline-size: 0; flex: 0 1 auto; white-space: nowrap; overflow: clip; text-overflow: ellipsis; }
 .cardtop:has(.outlets.one) { flex-wrap: nowrap; }
 .cardtop:has(.outlets.one) .subtopic { flex: none; }
+
+/* Precios de cripto: primera sección de la pestaña Criptomonedas */
+.cx {
+  --up: oklch(48% 0.12 150);
+  --down: var(--accent);
+  --trend: var(--muted);
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  padding-block: 12px 10px; padding-inline: 12px;
+}
+.cx .up { --trend: var(--up); }
+.cx .down { --trend: var(--down); }
+.cx-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-block-end: 8px; }
+.cx-title { margin: 0; font-family: var(--serif); font-size: 19px; font-weight: 600; }
+.cx-sub { font-size: 11px; color: var(--muted); }
+.cx-feat { color: var(--trend); }
+.cx-ftop { color: var(--ink); }
+.cx-fname { margin: 0; font-size: 13px; color: var(--muted); }
+.cx-fname strong { color: var(--ink); font-weight: 700; }
+.cx-fprice { margin: 2px 0 0; font-size: 26px; font-weight: 750; letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+.cx-fcrc { margin: 0; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cx-fchips { display: flex; flex-wrap: wrap; gap: 6px; margin-block: 6px 0; }
+.cx-fchips .cx-chg {
+  font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+  background: color-mix(in oklch, var(--trend) 12%, var(--white));
+}
+.cx-chg { color: var(--trend); font-variant-numeric: tabular-nums; }
+.cx-chart { position: relative; margin-block-start: 8px; }
+.cx-big { display: block; inline-size: 100%; block-size: 110px; }
+.cx-line { fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.cx-area { fill: currentColor; opacity: .1; stroke: none; }
+.cx-max, .cx-min {
+  position: absolute; inset-inline-end: 0; font-size: 10.5px; color: var(--muted);
+  background: color-mix(in oklch, var(--card) 85%, transparent); padding-inline: 3px; border-radius: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.cx-max { inset-block-start: 0; }
+.cx-min { inset-block-end: 0; }
+.cx-axis { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--muted); margin-block-start: 2px; }
+.cx-stats { margin-block: 6px 0; font-size: 12px; color: var(--muted); line-height: 1.45; font-variant-numeric: tabular-nums; }
+.cx-list { list-style: none; margin-block: 10px 0; margin-inline: 0; padding: 0; border-block-start: 1px solid var(--line); }
+.cx-list li + li { border-block-start: 1px solid var(--line); }
+.cx-row {
+  display: grid; grid-template-columns: minmax(0, 1fr) 72px minmax(0, 1fr); align-items: center; gap: 10px;
+  inline-size: 100%; min-block-size: 48px; padding-block: 6px; padding-inline: 4px;
+  border: 0; background: transparent; font: inherit; color: var(--ink); text-align: start; border-radius: 10px;
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation; user-select: none;
+}
+.cx-row.on { background: var(--chip); }
+.cx-row:active { opacity: .7; }
+.cx-id { display: flex; flex-direction: column; min-inline-size: 0; }
+.cx-sym { font-size: 14px; font-weight: 750; }
+.cx-name { font-size: 11.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cx-spark { inline-size: 72px; block-size: 26px; color: var(--trend); }
+.cx-spark .cx-line { stroke-width: 1.5; }
+.cx-right { display: flex; flex-direction: column; align-items: flex-end; }
+.cx-price { font-size: 14px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.cx-right .cx-chg { font-size: 12px; font-weight: 650; }
+.cx-foot { margin-block: 8px 0; font-size: 11px; color: var(--muted); line-height: 1.45; }
+.cx-foot a { color: var(--accent); font-weight: 650; }

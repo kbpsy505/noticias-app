@@ -1204,6 +1204,14 @@ def main():
     except Exception as exc:
         print("tipo de cambio FAIL", type(exc).__name__, exc)
 
+    crypto_prices, crypto_prices_report = None, None
+    try:  # precios y gráficas de cripto para la pestaña Criptomonedas; nunca rompe la actualización
+        import criptoprecios
+        crypto_prices, crypto_prices_report = criptoprecios.build(now)
+        print("precios cripto", crypto_prices_report)
+    except Exception as exc:
+        print("precios cripto FAIL", type(exc).__name__, exc)
+
     final_cats = order_tabs(out_cats)
     fresh_report = apply_freshness(final_cats, previous, now)
     print("frescura", fresh_report)
@@ -1218,6 +1226,8 @@ def main():
         "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "exchange": exchange,
         "exchangeReport": exchange_report,
+        "cryptoPrices": crypto_prices,
+        "cryptoPricesReport": crypto_prices_report,
         "nextRefreshAt": next_cron(now).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "refreshHours": REFRESH_HOURS,
         "method": {

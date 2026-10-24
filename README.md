@@ -124,6 +124,15 @@ Historias **sin confirmar** que publican **2 medios distintos** (no llegaron a l
 - Crédito: «Datos: TipoCambioCR» bajo las cifras y el botón «Ver más en TipoCambioCR ↗».
 - Si las dos fuentes fallan, el bloque no aparece y el resto de la actualización sigue igual.
 
+## Precios de criptomonedas
+
+`criptoprecios.py` agrega, en cada actualización de 3 horas, los precios de BTC, ETH, SOL, XRP, BNB, DOGE, ADA y USDT, y los guarda en `noticias.json` → `cryptoPrices` (informe en `cryptoPricesReport`). Es la primera sección de la pestaña Criptomonedas, antes de la nota y de las noticias.
+
+- **Fuente:** [CoinGecko](https://www.coingecko.com/es), API pública sin llave (`/api/v3/coins/markets` con `sparkline=true`): una sola llamada por actualización, muy por debajo del límite gratuito. Hasta 3 intentos si responde 429/5xx.
+- **App:** gráfica de 7 días (SVG, sin librerías) de la moneda elegida con precio, equivalente aproximado en colones (venta BCCR), cambio 24 h y 7 d, rango 24 h y capitalización; debajo, lista con mini gráfica, precio y cambio 24 h. Tocar una moneda cambia la gráfica. Verde sube, rojo baja.
+- Los precios no son en tiempo real: se renuevan con cada actualización y la sección lo dice.
+- Si CoinGecko falla, la sección no aparece y las noticias siguen igual.
+
 ## Tour de bienvenida
 
 `tour.js` (sin librerías) muestra un tour corto de 6 pasos la primera vez que alguien abre la página: bienvenida, pestañas, etiqueta de medios, tarjeta, Posibles noticias y hora de actualización. Resalta cada parte real de la página y arranca cuando ya cargó `noticias.json`. Se marca como visto en `localStorage` (`noticias_tour_v1`) y se repite con el botón «?» del encabezado. Si falta un elemento (p. ej. una pestaña vacía), el mensaje se muestra centrado.
