@@ -790,6 +790,8 @@ def build(now: datetime, general_pool: list[dict], main_feeds: list):
                 sub = subtopic(text, best["default"], deeds_first=False)
         reddit = [r for m in members for r in m.get("reddit", [])]
         ts = [m["_ts"] for m in members]
+        for m in members:   # textos para narrar.py
+            A.ARTICLE_TEXT[m["url"]] = m.get("summary") or ""
         stories.append({
             "headline": (es_best or en_best)["title"],
             "headlineLang": "es" if es_best else "en",

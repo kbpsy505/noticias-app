@@ -50,7 +50,7 @@ button, a, summary { touch-action: manipulation; }
 
 /* Respuesta al tocar (el resaltado gris del navegador está desactivado arriba) */
 :is(.tab, .lang, .bf, .tour-btn, .tour-tip button, .fx-more):active:not(:disabled) { transform: scale(0.97); }
-:is(.sources, .fx-banks, .mnote) summary:active { opacity: 0.7; }
+:is(.sources, .fx-banks, .mnote) summary:active, .more-btn:active { opacity: 0.7; }
 @media (prefers-reduced-motion: no-preference) {
   :is(.tab, .lang, .bf, .tour-btn, .tour-tip button, .fx-more) { transition: transform 160ms var(--ease-out); }
 }
@@ -116,6 +116,42 @@ h1 { margin: 0; font-family: var(--serif); font-size: var(--text-title); font-we
 .summary { margin-block: 6px 0; font-size: 14.5px; line-height: 1.5; color: var(--ink-2); }
 .secondary .summary { font-size: 13.5px; color: var(--muted); }
 .via { color: var(--muted); font-size: 12px; font-style: italic; }
+
+/* Relato de la historia (IA o extracto): etiqueta, texto plegado a 4 líneas y «Leer más» */
+.narr-label {
+  margin-block: 6px 0; font-size: 11.5px; line-height: 1.3; font-weight: 650; color: var(--muted);
+  display: flex; align-items: baseline; gap: 2px;
+}
+.narr-mark { color: var(--accent); font-size: 11px; }
+.narr .summary { margin-block-start: 3px; }
+.clamp {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; overflow: hidden;
+}
+.secondary .clamp { -webkit-line-clamp: 3; line-clamp: 3; }
+.clamp.open { display: block; -webkit-line-clamp: unset; line-clamp: none; overflow: visible; }
+.more-btn {
+  position: relative; display: inline-flex; align-items: center; margin-block-start: 2px; padding-block: 4px; padding-inline: 0;
+  border: 0; background: none; color: var(--accent); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+}
+.more-btn[hidden] { display: none; }
+/* Se ve como texto, pero el área táctil llega a 44px */
+.more-btn::after { content: ""; position: absolute; inset-block: -11px; inset-inline: -12px; }
+@media (hover: hover) and (pointer: fine) {
+  .more-btn:hover { text-decoration: underline; text-underline-offset: 2px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .more-btn { transition: opacity 120ms var(--ease-out); }
+}
+
+/* Resúmenes originales dentro de «Ver fuentes» */
+.orig { margin-block: 6px 12px; display: flex; flex-direction: column; gap: 8px; }
+.orig-title { margin: 0; font-size: 11.5px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.orig blockquote {
+  margin: 0; padding-block: 2px; padding-inline: 10px 0; border-inline-start: 2px solid var(--line);
+  font-size: 13.5px; line-height: 1.45; color: var(--ink-2);
+}
+.orig blockquote p { margin: 0; }
+.orig blockquote .srcmeta { margin-block: 3px 0; }
 .badge { display: inline-block; vertical-align: 2px; font-family: var(--sans); font-size: 10px; font-weight: 800; letter-spacing: .04em; border-radius: 999px; padding: 1px 6px; }
 .badge.es { background: oklch(94.9% 0.017 162.7); color: var(--es); }
 .badge.en { background: oklch(94.6% 0.016 253.9); color: var(--en); }

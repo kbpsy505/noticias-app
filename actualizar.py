@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Briefing de consenso, solo con código (sin IA ni claves).
+"""Briefing de consenso: agrupación solo con código; el relato de cada historia lo escribe una IA
+o, sin clave, se arma con frases de varios medios (narrar.py).
 
 1. Descarga RSS públicos (feeds.py).
 2. Normaliza títulos y resúmenes en español e inglés a un vocabulario común.
 3. Agrupa notas sobre el mismo hecho (TF-IDF + coincidencia de términos
    distintivos + ventana de tiempo), aunque estén en idiomas distintos.
 4. Conserva solo los grupos que publican 3 o más medios distintos (MIN_OUTLETS).
-5. Escribe noticias.json para la página.
+5. Relato de cada historia (narrar.py): IA vía cualquier API compatible con OpenAI (xAI por omisión,
+   Gemini, Groq…) con todas sus notas; sin clave o si falla, extracto de frases de varios medios.
+6. Escribe noticias.json para la página.
 
-No inventa nada: cada texto mostrado sale tal cual de un feed.
+Titulares y fuentes salen tal cual de cada feed; el relato lo escribe la IA solo con esos textos.
 """
 from __future__ import annotations
 
@@ -688,6 +691,10 @@ def next_cron(now: datetime) -> datetime:
     return base.replace(hour=0) + timedelta(hours=h)
 
 
+# url -> resumen RSS de cada nota mostrada (lo usa narrar.py; no va a noticias.json).
+ARTICLE_TEXT = {}
+
+
 def make_story(g, pool, sims):
     """Arma la tarjeta de un grupo: titular y resumen por idioma (el más central), medios y fuentes."""
     members = [pool[i] for i in g]
@@ -715,6 +722,7 @@ def make_story(g, pool, sims):
     head_en = pool[by_lang["en"][0]]["title"] if "en" in by_lang else None
     sources = []
     for m in sorted(members, key=lambda m: m["_ts"]):
+        ARTICLE_TEXT[m["url"]] = m.get("summary") or ""
         sources.append({"source": m["source"], "lang": m["lang"], "title": m["title"],
                         "url": m["url"], "publishedAt": m["publishedAt"]})
     return {
@@ -1180,6 +1188,8 @@ def main():
     try:
         import buenas
         good, good_report = buenas.build(now, pool, FEEDS)
+        if buenas.A.ARTICLE_TEXT is not ARTICLE_TEXT:  # al correr como script, buenas importa otra copia del módulo
+            ARTICLE_TEXT.update(buenas.A.ARTICLE_TEXT)
         out_cats.append({"id": "buenas", "label": "Buenas noticias", "minOutlets": 1, "stories": good})
         summary_counts["buenas"] = len(good)
         print("buenas", good_report["perSubtopic"], "leads", good_report["leads"]["confirmed"], "/", good_report["leads"]["total"])
@@ -1197,6 +1207,13 @@ def main():
     final_cats = order_tabs(out_cats)
     fresh_report = apply_freshness(final_cats, previous, now)
     print("frescura", fresh_report)
+    narr_report = None
+    try:  # relato con IA de todas las fuentes; sin clave o si falla, queda el resumen de un medio
+        import narrar
+        narr_report = narrar.narrate(final_cats, ARTICLE_TEXT, now)
+        print("narración IA", narr_report)
+    except Exception as exc:  # nunca romper la actualización principal
+        print("narración IA FAIL", type(exc).__name__)
     payload = {
         "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "exchange": exchange,
@@ -1228,6 +1245,7 @@ def main():
         "regions": region_report,
         "mainMerges": [{"a": a, "b": b, "cos": c, "anchor": an, "shared": sh} for a, b, c, an, sh in main_merges],
         "possible": posibles_report,
+        "narration": narr_report,
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print("clusters", len(groups), "consensus", summary_counts)

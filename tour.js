@@ -20,7 +20,7 @@
     {
       target: "#list .card",
       title: "Cada historia",
-      text: "Titular y resumen tal como los publicó el medio, en español y/o inglés (cámbialo con Ambos · Español · English). Toca «Ver fuente» o «Ver fuentes» para leer las notas originales. «Nuevo» marca lo que apareció en esta actualización y «Sigue» lo que ya estaba; lo que no tiene notas nuevas en 24 h queda plegado al final, en «Anteriores».",
+      text: "El titular es el de un medio, tal cual. La descripción junta lo que cuentan todos los medios de la historia: o la escribe una IA solo con sus textos, o son frases copiadas de varios medios con su nombre; la etiqueta de arriba dice cuál. «Leer más» la abre entera y en «Ver fuentes» están los resúmenes originales y las notas. Cambia el idioma con Ambos · Español · English. «Nuevo» marca lo que apareció en esta actualización y «Sigue» lo que ya estaba; lo que no tiene notas nuevas en 24 h queda plegado al final, en «Anteriores».",
       tall: true,
     },
     {

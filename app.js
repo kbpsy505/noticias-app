@@ -132,7 +132,16 @@ function renderTabs() {
   });
 }
 
-function textBlock(lang, headline, summary, summarySource, primary) {
+// Relato de la historia: lo escribe una IA con todas las fuentes, o es un extracto de frases de varios medios.
+function narrLabel(kind, n, lang) {
+  if (lang === "en") return kind === "ia" ? "AI-generated summary from " + n + (n === 1 ? " outlet" : " outlets")
+    : "Excerpts from " + n + " outlets, no AI";
+  return kind === "ia" ? "Resumen generado con IA a partir de " + n + (n === 1 ? " medio" : " medios")
+    : "Extracto de " + n + " medios, sin IA";
+}
+
+let clampId = 0;
+function textBlock(lang, headline, d, primary) {
   const wrap = el("div", "txt " + (primary ? "primary" : "secondary"));
   if (headline) {
     const h = el(primary ? "h2" : "h3");
@@ -140,13 +149,45 @@ function textBlock(lang, headline, summary, summarySource, primary) {
     h.append(headline);
     wrap.append(h);
   }
-  if (summary) {
-    const p = el("p", "summary", summary);
-    if (summarySource) p.append(el("span", "via", " — " + summarySource));
+  if (d && d.narr) {
+    const box = el("div", "narr " + d.kind);
+    const lab = el("p", "narr-label");
+    lab.append(el("span", "narr-mark", d.kind === "ia" ? "✦" : "❝"), " ", narrLabel(d.kind, d.n, d.lang));
+    const p = el("p", "summary clamp", d.narr);
+    p.lang = d.lang;
+    p.id = "narr-" + (++clampId);
+    const more = el("button", "more-btn", d.lang === "en" ? "Read more" : "Leer más");
+    more.type = "button";
+    more.hidden = true; // fitClamps lo muestra si el texto no cabe
+    more.setAttribute("aria-controls", p.id);
+    more.setAttribute("aria-expanded", "false");
+    more.addEventListener("click", () => {
+      const open = p.classList.toggle("open");
+      more.setAttribute("aria-expanded", String(open));
+      more.textContent = d.lang === "en" ? (open ? "Show less" : "Read more") : (open ? "Leer menos" : "Leer más");
+    });
+    box.append(lab, p, more);
+    wrap.append(box);
+  } else if (d && d.s) {
+    const p = el("p", "summary", d.s);
+    if (d.src) p.append(el("span", "via", " — " + d.src));
     wrap.append(p);
   }
   return wrap;
 }
+
+// «Leer más» solo si el relato no cabe en sus líneas (se mide ya pintado; lo plegado se mide al abrirlo).
+function fitClamps(root) {
+  root.querySelectorAll(".clamp:not(.open)").forEach((p) => {
+    if (!p.clientHeight) return;
+    p.nextElementSibling.hidden = p.scrollHeight <= p.clientHeight + 2;
+  });
+}
+let fitTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(fitTimer);
+  fitTimer = setTimeout(() => fitClamps(document.getElementById("list")), 150);
+});
 
 function card(s) {
   const art = el("article", "card");
@@ -169,13 +210,24 @@ function card(s) {
   top.append(el("span", "time", rel(s.lastArticle || s.lastSeen)));
   art.append(top);
 
-  const es = { h: s.headlineEs, s: s.summaryEs, src: s.summaryEsSource };
-  const en = { h: s.headlineEn, s: s.summaryEn, src: s.summaryEnSource };
+  // Descripción: relato (IA o extracto) en el idioma pedido si existe; si no, el resumen de un medio.
+  const kind = s.narrKind;
+  const nar = {
+    es: s.narrEs ? { narr: s.narrEs, kind, lang: "es", n: s.narrNEs || s.narrN || s.outlets } : null,
+    en: s.narrEn ? { narr: s.narrEn, kind, lang: "en", n: s.narrNEn || s.narrN || s.outlets } : null,
+  };
+  const plain = { es: { s: s.summaryEs, src: s.summaryEsSource }, en: { s: s.summaryEn, src: s.summaryEnSource } };
+  const heads = { es: s.headlineEs, en: s.headlineEn };
   let order;
-  if (state.lang === "en") order = en.h ? [["en", en]] : [["es", es]];
-  else if (state.lang === "es") order = es.h ? [["es", es]] : [["en", en]];
-  else order = [["es", es], ["en", en]].filter(([, v]) => v.h);
-  order.forEach(([lang, v], i) => art.append(textBlock(lang, v.h, v.s, v.src, i === 0)));
+  if (state.lang === "all") order = ["es", "en"].filter((l) => heads[l]).map((l) => [l, nar[l] || plain[l]]);
+  else {
+    const want = state.lang;
+    const hl = heads[want] ? want : (want === "es" ? "en" : "es");
+    // Sin titular en el idioma pedido: titular del otro idioma y, si hay, el relato de la IA en el pedido.
+    order = [[hl, (kind === "ia" && nar[want]) || nar[hl] || plain[hl]]];
+  }
+  order.forEach(([lang, d], i) => art.append(textBlock(lang, heads[lang], d, i === 0)));
+  const shownNarr = order.some(([, d]) => d && d.narr);
 
   const det = el("details", "sources");
   const sum = el("summary", null, s.outlets > 1
@@ -183,6 +235,22 @@ function card(s) {
       (s.extraOutlets ? " + " + s.extraOutlets + (s.extraOutlets === 1 ? " fuente extra que no cuenta" : " fuentes extra que no cuentan") : "") + ")"
     : "Ver fuente" + (s.sources.length > 1 ? "s (" + s.sources.length + " notas)" : ""));
   det.append(sum);
+  if (shownNarr && (s.summaryEs || s.summaryEn)) {
+    // Los resúmenes tal como los publicó cada medio, para comparar con el relato.
+    const orig = el("div", "orig");
+    orig.append(el("p", "orig-title", state.lang === "en" ? "Original summaries" : "Resúmenes originales"));
+    [["es", s.summaryEs, s.summaryEsSource], ["en", s.summaryEn, s.summaryEnSource]].forEach(([l, t, src]) => {
+      if (!t) return;
+      const q = el("blockquote");
+      q.lang = l;
+      q.append(el("p", null, t));
+      const c = el("p", "srcmeta");
+      c.append(el("strong", null, src || ""), " ", el("span", "badge " + l, l.toUpperCase()));
+      q.append(c);
+      orig.append(q);
+    });
+    det.append(orig);
+  }
   const ul = el("ul");
   s.sources.forEach((x) => {
     const li = el("li");
@@ -293,6 +361,7 @@ function renderList() {
     if (!stories.length) list.append(el("p", "empty", "Ahora mismo no hay buenas noticias de Costa Rica confirmadas por un medio confiable."));
   }
   renderStories(list, cat.id, stories);
+  requestAnimationFrame(() => fitClamps(list));
 }
 
 // Activas arriba; las que no tienen notas nuevas en 24 h van plegadas en «Anteriores».
@@ -308,7 +377,7 @@ function renderStories(list, catId, stories) {
   }
   const det = el("details", "older");
   det.open = !!state.olderOpen[catId];
-  det.addEventListener("toggle", () => { state.olderOpen[catId] = det.open; });
+  det.addEventListener("toggle", () => { state.olderOpen[catId] = det.open; if (det.open) fitClamps(det); });
   const sum = el("summary");
   sum.append(el("span", "older-title", (en ? "Earlier" : "Anteriores") + " (" + older.length + ")"),
     el("span", "older-note", en ? "no new articles in 24 h" : "sin notas nuevas en 24 h"));
@@ -319,6 +388,24 @@ function renderStories(list, catId, stories) {
   list.append(det);
 }
 
+// Qué es de los medios y qué no, según lo que trae esta actualización.
+function aboutText(data) {
+  const all = data.categories.flatMap((c) => c.stories);
+  const ia = all.some((s) => s.narrKind === "ia");
+  const ex = all.some((s) => s.narrKind === "extracto");
+  if (!ia && !ex) return "Los titulares y resúmenes son los de cada medio, sin cambios. No hay IA ni se inventa nada; toca una fuente para leer el original.";
+  let t = "Los titulares son los de cada medio, sin cambios. ";
+  if (ia) {
+    const model = data.narration && data.narration.model ? " (" + data.narration.model + ")" : "";
+    t += "Las descripciones marcadas «Resumen generado con IA» las escribe una IA" + model +
+      " solo con los titulares y resúmenes de los medios de esa historia: no busca nada más, pero puede equivocarse u omitir algo. ";
+  }
+  if (ex) t += (ia ? "Las marcadas" : "Las descripciones marcadas") +
+    " «Extracto» son frases copiadas de varios medios, cada una con el nombre de quien la publicó, sin IA. ";
+  if (all.some((s) => !s.narrKind)) t += "Las demás muestran el resumen de un medio, tal cual. ";
+  return t + "En «Ver fuentes» están los resúmenes originales y las notas; toca una para leer el original.";
+}
+
 function renderFoot(data) {
   const st = data.stats || {};
   const f = document.getElementById("foot");
@@ -326,7 +413,7 @@ function renderFoot(data) {
   f.append(
     el("p", null, "Cómo funciona: cada 3 horas se leen " + (st.feedsOk || "?") + " canales RSS públicos (" +
       (st.itemsGathered || "?") + " notas en esta tanda). Se agrupan las notas que hablan del mismo hecho, en español o inglés, y solo se muestran los grupos que publican al menos 3 medios distintos. Más medios = más consenso. Costa Rica y los filtros por región de Mundo usan la misma regla; la región sale de los lugares que nombran las notas y de dónde son los medios. Excepción: en Buenas noticias basta un medio confiable, y lo que sale de Reddit o 9gag solo se usa como pista."),
-    el("p", null, "Los titulares y resúmenes son los de cada medio, sin cambios. No hay IA ni se inventa nada; toca una fuente para leer el original."),
+    el("p", null, aboutText(data)),
     el("p", "small", "Medios: " + (data.sourcesUsed || []).join(", ") + ".")
   );
 }
