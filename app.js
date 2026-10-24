@@ -2,7 +2,7 @@ const TZ = "America/Costa_Rica";
 const when = new Intl.DateTimeFormat("es-CR", {
   timeZone: TZ, weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit",
 });
-const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas", mundoInfo: false, olderOpen: {}, cryptoSel: null, sportSel: null };
+const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas", mundoInfo: false, olderOpen: {}, cryptoSel: null, sportSel: null, cfbAll: false };
 
 function fmt(iso) {
   const d = new Date(iso);
@@ -321,7 +321,7 @@ function gameCard(g, lg) {
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/";
 const SP_LEAGUES = {
   nfl: { path: "football/nfl", mode: "week", label: "NFL", name: "NFL", official: "https://www.nfl.com/scores/", officialName: "nfl.com" },
-  cfb: { path: "football/college-football", mode: "week", label: "CFB", name: "Fútbol americano universitario (Top 25)", official: "https://www.ncaa.com/scoreboard/football/fbs", officialName: "ncaa.com" },
+  cfb: { path: "football/college-football", query: "?groups=80", views: true, mode: "week", label: "CFB", name: "Fútbol americano universitario (FBS)", official: "https://www.ncaa.com/scoreboard/football/fbs", officialName: "ncaa.com" },
   nba: { path: "basketball/nba", mode: "days", label: "NBA", name: "NBA", official: "https://www.nba.com/games", officialName: "nba.com" },
   cbb: { path: "basketball/mens-college-basketball", mode: "days", label: "CBB", name: "Baloncesto universitario masculino", official: "https://www.ncaa.com/scoreboard/basketball-men/d1", officialName: "ncaa.com" },
   mlb: { path: "baseball/mlb", mode: "days", label: "MLB", name: "MLB", official: "https://www.mlb.com/scores", officialName: "mlb.com" },
@@ -409,7 +409,7 @@ function spOdds(comp, sport) {
     provider: (o.provider || {}).displayName || (o.provider || {}).name || null,
     details: o.details || null,
     ml: mlA != null || mlH != null ? { away: mlA, home: mlH } : null,
-    spread: sa.line || sh.line ? { name: SP_SPREAD[sport] || "Hándicap",
+    spread: sa.line || sh.line ? { name: SP_SPREAD[sport] || "Spread",
       away: { line: sa.line || null, odds: spAmerican(sa.odds) }, home: { line: sh.line || null, odds: spAmerican(sh.odds) } } : null,
     total: tl != null ? { line: tl, over: spAmerican(ov.odds), under: spAmerican(un.odds) } : null,
     fav: null, favProb: null,
@@ -529,7 +529,11 @@ async function spFetchLeague(id) {
   } else if (cfg.mode === "mma") {
     games = spMma(await spGet(ESPN + cfg.path + "/scoreboard"));
   } else if (cfg.mode === "week") {
-    games = spTeamGames(await spGet(ESPN + cfg.path + "/scoreboard"), sport);
+    // CFB pide todos los juegos FBS (groups=80); si falla, el marcador por defecto (Top 25).
+    let d;
+    try { d = await spGet(ESPN + cfg.path + "/scoreboard" + (cfg.query || "")); }
+    catch (e) { if (!cfg.query) throw e; d = await spGet(ESPN + cfg.path + "/scoreboard"); }
+    games = spTeamGames(d, sport);
   } else {
     const days = [-1, 0, 1].map((d) => crDay(new Date(Date.now() + d * 864e5)).replace(/-/g, ""));
     const all = await Promise.all(days.map((d) => spGet(ESPN + cfg.path + "/scoreboard?dates=" + d)));
@@ -641,23 +645,32 @@ function oddsBlock(g) {
   t.setAttribute("aria-label", "Líneas del mercado");
   const cell = (txt, cls) => { const c = el("span", cls || "od-c", txt); c.setAttribute("role", "cell"); return c; };
   const hdr = el("div", "od-row od-h"); hdr.setAttribute("role", "row");
-  hdr.append(cell(""), cell("Ganador (ML)"), cell(o.spread ? o.spread.name : "Hándicap"));
+  hdr.append(cell(""), cell("Money line"), cell(o.spread ? o.spread.name : "Spread"), cell("Total"));
   t.append(hdr);
-  [["away", away], ["home", home]].forEach(([k, sd]) => {
+  // Total en las filas como en las casas: visitante = Más (O), local = Menos (U).
+  const tot = o.total;
+  [["away", away, "O ", tot && tot.over], ["home", home, "U ", tot && tot.under]].forEach(([k, sd, ou, toOdds]) => {
     const r = el("div", "od-row" + (o.fav === k ? " fav" : "")); r.setAttribute("role", "row");
     const s = o.spread && o.spread[k];
     r.append(cell(nm(sd), "od-c od-team"), cell(o.ml ? spFmt(o.ml[k]) : "—"),
-      cell(s && s.line ? spLine(s.line) + (s.odds != null ? " (" + spFmt(s.odds) + ")" : "") : "—"));
+      cell(s && s.line ? spLine(s.line) + (s.odds != null ? " (" + spFmt(s.odds) + ")" : "") : "—"),
+      cell(tot && tot.line != null ? ou + tot.line + (toOdds != null ? " (" + spFmt(toOdds) + ")" : "") : "—"));
     t.append(r);
   });
   box.append(t);
-  if (o.total) {
-    box.append(el("p", "od-total", "Total " + o.total.line + " · Más " + spFmt(o.total.over) + " / Menos " + spFmt(o.total.under)));
-  }
+  if (tot && tot.line != null) box.append(el("p", "od-total", "Total " + tot.line + " puntos: O = más (over), U = menos (under)."));
   return box;
 }
 
 const SP_UPCOMING_MAX = 10;
+// CFB: «Top 25» = partidos con al menos un equipo rankeado; «show all games» = todos los FBS.
+const spTop = (g) => g.sides.some((sd) => sd.rank);
+function spView(lg) {
+  if (!SP_LEAGUES[lg.id] || !SP_LEAGUES[lg.id].views) return { games: lg.games, all: false, top: null };
+  const top = lg.games.filter(spTop);
+  const all = state.cfbAll || !top.length;  // sin rankeados (pretemporada/bowls): todos
+  return { games: all ? lg.games : top, all, top: top.length };
+}
 function renderSports(list) {
   const sp = spEnsure();
   const sec = el("section", "sp");
@@ -679,7 +692,7 @@ function renderSports(list) {
     b.type = "button";
     b.setAttribute("aria-pressed", String(l.id === state.sportSel));
     if (l.counts && l.counts.in) b.append(el("span", "sp-dot", ""));
-    b.append(l.label, el("span", "count", String(l.games.length)));
+    b.append(l.label, el("span", "count", String(spView(l).games.length)));
     b.addEventListener("click", () => { state.sportSel = l.id; renderList(); spRefresh(l.id, false); });
     bar.append(b);
   });
@@ -689,13 +702,30 @@ function renderSports(list) {
     const on = bar.querySelector(".bf.on");
     if (on && bar.scrollWidth > bar.clientWidth) bar.scrollLeft = on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2;
   });
-  const lg = sp.leagues.find((l) => l.id === state.sportSel);
+  const lg0 = sp.leagues.find((l) => l.id === state.sportSel);
+  const view = spView(lg0);
+  const lg = Object.assign({}, lg0, { games: view.games });
   const lh = el("div", "sp-lhead");
-  lh.append(el("h3", "sp-lname", lg.name));
+  lh.append(el("h3", "sp-lname", view.top == null ? lg.name : "Fútbol americano universitario · " + (view.all ? "todos los juegos FBS" : "Top 25")));
   const off = el("a", "sp-off", lg.officialName + " ↗");
   off.href = lg.official; off.target = "_blank"; off.rel = "noopener noreferrer";
   lh.append(off);
   sec.append(lh);
+  if (view.top != null) {
+    const vb = el("div", "bfilter sp-view");
+    vb.setAttribute("role", "group");
+    vb.setAttribute("aria-label", "Qué partidos de CFB mostrar");
+    [[false, "Top 25", view.top], [true, "show all games", lg0.games.length]].forEach(([all, txt, n]) => {
+      const b = el("button", "bf" + (view.all === all ? " on" : "") + (n ? "" : " zero"));
+      b.type = "button";
+      b.setAttribute("aria-pressed", String(view.all === all));
+      b.append(txt, el("span", "count", String(n)));
+      b.addEventListener("click", () => { state.cfbAll = all; renderList(); });
+      vb.append(b);
+    });
+    sec.append(vb);
+    if (!view.top && lg0.games.length) sec.append(el("p", "sp-oddsnote", "Esta semana no hay partidos con equipos del Top 25: se muestran todos."));
+  }
   const ls = spStatusText(lg);
   const lv = el("div", "sp-live " + ls.cls);
   lv.setAttribute("role", "status");

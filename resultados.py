@@ -30,8 +30,11 @@ TENNIS_MAX = 24                      # por circuito
 LEAGUES = [
     {"id": "nfl", "label": "NFL", "name": "NFL", "path": "football/nfl", "mode": "week",
      "official": "https://www.nfl.com/scores/", "officialName": "nfl.com"},
-    {"id": "cfb", "label": "CFB", "name": "Fútbol americano universitario (Top 25)", "path": "football/college-football",
-     "mode": "week", "official": "https://www.ncaa.com/scoreboard/football/fbs", "officialName": "ncaa.com"},
+    # CFB: groups=80 = todos los juegos FBS de la semana (el marcador por defecto de ESPN solo trae los del
+    # Top 25). La app muestra Top 25 por defecto (filtrando los partidos con un equipo rankeado) y
+    # «show all games» con la lista completa.
+    {"id": "cfb", "label": "CFB", "name": "Fútbol americano universitario (FBS)", "path": "football/college-football",
+     "query": "?groups=80", "mode": "week", "official": "https://www.ncaa.com/scoreboard/football/fbs", "officialName": "ncaa.com"},
     {"id": "nba", "label": "NBA", "name": "NBA", "path": "basketball/nba", "mode": "days",
      "official": "https://www.nba.com/games", "officialName": "nba.com"},
     {"id": "cbb", "label": "CBB", "name": "Baloncesto universitario masculino", "path": "basketball/mens-college-basketball",
@@ -196,7 +199,7 @@ def parse_odds(comp, sport):
         "provider": (o.get("provider") or {}).get("displayName") or (o.get("provider") or {}).get("name"),
         "details": o.get("details"),
         "ml": {"away": ml_a, "home": ml_h} if (ml_a is not None or ml_h is not None) else None,
-        "spread": {"name": SPREAD_NAMES.get(sport, "Hándicap"),
+        "spread": {"name": SPREAD_NAMES.get(sport, "Spread"),
                    "away": {"line": sp_a.get("line"), "odds": _american(sp_a.get("odds"))},
                    "home": {"line": sp_h.get("line"), "odds": _american(sp_h.get("odds"))}} if (sp_a.get("line") or sp_h.get("line")) else None,
         "total": {"line": total_line, "over": _american(ov.get("odds")), "under": _american(un.get("odds"))} if total_line is not None else None,
@@ -365,7 +368,9 @@ def build_league(lg, now):
         errs += [err] if err else []
         games = mma_games(data)
     elif lg["mode"] == "week":
-        data, err = fetch(BASE + lg["path"] + "/scoreboard")
+        data, err = fetch(BASE + lg["path"] + "/scoreboard" + lg.get("query", ""))
+        if err and lg.get("query"):  # si falla la lista completa, al menos el marcador por defecto
+            data, err = fetch(BASE + lg["path"] + "/scoreboard")
         errs += [err] if err else []
         games = team_games(data, sport)
     else:

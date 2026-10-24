@@ -138,7 +138,7 @@ Historias **sin confirmar** que publican **2 medios distintos** (no llegaron a l
 `resultados.py` (no confundir con `deportes.py`, que solo filtra triunfos para Buenas noticias) arma en cada actualización de 3 horas los marcadores de NFL, CFB, NBA, CBB, MLB, NHL, tenis y MMA, y los guarda en `noticias.json` → `sports` (informe en `sportsReport`). La pestaña va después de Criptomonedas y no tiene noticias: muestra chips por liga y, en cada una, «En juego», «Finalizados» y «Próximos», con fecha y hora de Costa Rica.
 
 - **Fuente:** marcadores públicos de ESPN sin llave (`site.api.espn.com/apis/site/v2/sports/<deporte>/<liga>/scoreboard`):
-  - NFL `football/nfl` y CFB `football/college-football` (Top 25): semana en curso.
+  - NFL `football/nfl` y CFB `football/college-football?groups=80` (todos los juegos FBS; la app muestra Top 25 por defecto y «show all games» para todos): semana en curso.
   - NBA `basketball/nba`, CBB `basketball/mens-college-basketball`, MLB `baseball/mlb`, NHL `hockey/nhl`: ayer, hoy y mañana (`?dates=AAAAMMDD`, hora CR); si no hay nada, la próxima fecha con partidos.
   - Tenis `tennis/atp` y `tennis/wta`: individuales de ±30 h, cuadro principal primero (máx. 24 por circuito).
   - MMA `mma/ufc`: la velada en curso o la próxima, estelar primero.
