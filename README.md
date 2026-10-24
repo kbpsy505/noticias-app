@@ -133,6 +133,45 @@ Historias **sin confirmar** que publican **2 medios distintos** (no llegaron a l
 - Los precios no son en tiempo real: se renuevan con cada actualización y la sección lo dice.
 - Si CoinGecko falla, la sección no aparece y las noticias siguen igual.
 
+## Pestaña "Deportes" (resultados y líneas)
+
+`resultados.py` (no confundir con `deportes.py`, que solo filtra triunfos para Buenas noticias) arma en cada actualización de 3 horas los marcadores de NFL, CFB, NBA, CBB, MLB, NHL, tenis y MMA, y los guarda en `noticias.json` → `sports` (informe en `sportsReport`). La pestaña va después de Criptomonedas y no tiene noticias: muestra chips por liga y, en cada una, «En juego», «Finalizados» y «Próximos», con fecha y hora de Costa Rica.
+
+- **Fuente:** marcadores públicos de ESPN sin llave (`site.api.espn.com/apis/site/v2/sports/<deporte>/<liga>/scoreboard`):
+  - NFL `football/nfl` y CFB `football/college-football` (Top 25): semana en curso.
+  - NBA `basketball/nba`, CBB `basketball/mens-college-basketball`, MLB `baseball/mlb`, NHL `hockey/nhl`: ayer, hoy y mañana (`?dates=AAAAMMDD`, hora CR); si no hay nada, la próxima fecha con partidos.
+  - Tenis `tennis/atp` y `tennis/wta`: individuales de ±30 h, cuadro principal primero (máx. 24 por circuito).
+  - MMA `mma/ufc`: la velada en curso o la próxima, estelar primero.
+- **Sitios oficiales** (nfl.com, nba.com, ncaa.com, mlb.com, nhl.com) y **Flashscore** (tenis, MMA) se enlazan en cada liga, pero no se leen: arman los marcadores con JavaScript y feeds internos firmados, poco fiables desde GitHub Actions.
+
+### Marcadores al momento (sin esperar las 3 horas)
+
+La API de ESPN responde con `Access-Control-Allow-Origin: *`, así que el navegador puede pedirla directo:
+
+1. Al abrir Deportes (o tocar otra liga), `app.js` pide **solo esa liga** a ESPN y reemplaza la foto de `noticias.json`. Lo dice la línea de estado: «Al momento · ESPN hace N s».
+2. Mientras la pestaña está abierta y visible, la vuelve a pedir **cada 60 s** si hay partidos en juego (o uno empieza en menos de 20 min), y **cada 5 min** si no. Al ocultar la pestaña o cambiar de sección se detiene. El botón «Actualizar» la pide al instante.
+3. Si ESPN falla (sin red, bloqueo, error), queda la foto de la última actualización y la línea de estado dice «Sin conexión con ESPN: datos de la actualización de hace X». Si la actualización tampoco trajo marcadores, la pestaña se arma vacía y se llena desde ESPN.
+
+El análisis de ESPN existe dos veces con el mismo formato: `resultados.py` (respaldo del pipeline) y las funciones `sp*` de `app.js` (en vivo). Si se cambia uno, hay que cambiar el otro.
+
+Se eligió esto en vez de un workflow cada 15–30 min que regenere un `deportes.json`: el cron de GitHub Actions se atrasa con frecuencia (a veces 30–60 min), cada corrida sería un commit más (≈70 al día) y un despliegue de Pages, y aun así el marcador no sería del minuto. Pedir a ESPN desde el teléfono da el marcador actual sin commits.
+
+### Líneas del mercado y «Favorito del mercado»
+
+Del mismo marcador de ESPN (`competitions[].odds`, casi siempre DraftKings) se guardan, en cada partido próximo o en juego, `odds`:
+
+```json
+{"provider": "DraftKings", "ml": {"away": -162, "home": 136},
+ "spread": {"name": "Hándicap", "away": {"line": "-3", "odds": -110}, "home": {"line": "+3", "odds": -110}},
+ "total": {"line": 44.5, "over": -112, "under": -108}, "fav": "away", "favProb": 59}
+```
+
+- Se usa la línea vigente (`close`) y, si falta, la de apertura. En MLB el hándicap se llama «Run line» y en NHL «Puck line».
+- **Favorito del mercado** = el lado con la cuota de moneyline más baja. `favProb` es su probabilidad implícita sin el margen de la casa: p = 100/(cuota+100) si es positiva, −cuota/(−cuota+100) si es negativa, normalizada entre los dos lados. Si están a menos de 0,5 puntos, «Parejo». Sin moneyline se usa el lado con hándicap negativo.
+- La app muestra bajo cada partido la etiqueta «Favorito del mercado», una barra con el %, una tabla Ganador (ML) / Hándicap y el total (más/menos). Si un partido no trae líneas no se muestra ningún bloque.
+- Pie: explica las cuotas americanas y aclara que es lo que dice el mercado, no una predicción propia, ni consejo de apuesta ni financiero.
+- ESPN casi nunca publica líneas de tenis ni de UFC en este marcador; de partidos terminados no se muestran.
+
 ## Tour de bienvenida
 
 `tour.js` (sin librerías) muestra un tour corto de 6 pasos la primera vez que alguien abre la página: bienvenida, pestañas, etiqueta de medios, tarjeta, Posibles noticias y hora de actualización. Resalta cada parte real de la página y arranca cuando ya cargó `noticias.json`. Se marca como visto en `localStorage` (`noticias_tour_v1`) y se repite con el botón «?» del encabezado. Si falta un elemento (p. ej. una pestaña vacía), el mensaje se muestra centrado.

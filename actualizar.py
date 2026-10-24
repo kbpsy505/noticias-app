@@ -948,7 +948,7 @@ def build_posibles(candidates, out_cats, region_labels):
 
 # Orden de pestañas pedido: Buenas, Costa Rica, Finanzas, Cripto, Política, Ciencias, Mundo (con las
 # regiones dentro), Sucesos, Guerras y conflictos y Posibles noticias.
-TAB_FIRST = ["buenas", "costarica", "finanzas", "cripto", "politica", "ciencias", "mundo", "sucesos", "guerras", "posibles"]
+TAB_FIRST = ["buenas", "costarica", "finanzas", "cripto", "deportes", "politica", "ciencias", "mundo", "sucesos", "guerras", "posibles"]
 CAT_TITLES = {"guerras": "Guerras y conflictos mundiales actuales"}
 
 # Regiones que van dentro de la pestaña Mundo (Costa Rica sigue con pestaña propia).
@@ -1212,6 +1212,16 @@ def main():
     except Exception as exc:
         print("precios cripto FAIL", type(exc).__name__, exc)
 
+    sports, sports_report = None, None
+    try:  # marcadores de NFL, CFB, NBA, CBB, MLB, NHL, tenis y MMA (ESPN); nunca rompe la actualización
+        import resultados
+        sports, sports_report = resultados.build(now)
+        print("resultados deportivos", sports_report)
+    except Exception as exc:
+        print("resultados deportivos FAIL", type(exc).__name__, exc)
+    # Pestaña de marcadores, no de noticias: sin historias; la app la llena con «sports».
+    out_cats.append({"id": "deportes", "label": "Deportes", "kind": "scores", "minOutlets": 0, "stories": []})
+
     final_cats = order_tabs(out_cats)
     fresh_report = apply_freshness(final_cats, previous, now)
     print("frescura", fresh_report)
@@ -1228,6 +1238,8 @@ def main():
         "exchangeReport": exchange_report,
         "cryptoPrices": crypto_prices,
         "cryptoPricesReport": crypto_prices_report,
+        "sports": sports,
+        "sportsReport": sports_report,
         "nextRefreshAt": next_cron(now).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "refreshHours": REFRESH_HOURS,
         "method": {
