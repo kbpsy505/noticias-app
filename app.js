@@ -747,11 +747,16 @@ function renderSports(list) {
     if (!gs.length) return;
     sec.append(el("h4", "sp-gtitle", title + " (" + gs.length + ")"));
     const shown = stt === "pre" ? gs.slice(0, SP_UPCOMING_MAX) : gs;
-    shown.forEach((g) => sec.append(gameCard(g, lg)));
+    // Cada grupo va en .sp-games: una columna en el teléfono, cuadrícula en PC.
+    const box = el("div", "sp-games");
+    shown.forEach((g) => box.append(gameCard(g, lg)));
+    sec.append(box);
     if (gs.length > shown.length) {
       const det = el("details", "sp-more");
       det.append(el("summary", null, "Ver " + (gs.length - shown.length) + " más"));
-      gs.slice(SP_UPCOMING_MAX).forEach((g) => det.append(gameCard(g, lg)));
+      const more = el("div", "sp-games");
+      gs.slice(SP_UPCOMING_MAX).forEach((g) => more.append(gameCard(g, lg)));
+      det.append(more);
       sec.append(det);
     }
   });

@@ -468,3 +468,30 @@ html.tour-open { scroll-behavior: auto; }
 .od-row.fav .od-c { font-weight: 750; }
 .od-total { margin: 4px 0 0; color: var(--muted); font-variant-numeric: tabular-nums; }
 .od-foot { margin: 6px 0 0; font-size: 11.5px; line-height: 1.45; color: var(--amber-ink); background: var(--amber-bg); border-radius: 10px; padding: 8px 10px; }
+
+/* Partidos de Deportes: lista en el teléfono, cuadrícula intrínseca cuando hay ancho */
+.sp-games { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); align-items: start; gap: 8px; }
+
+/* Escritorio: cuadrícula de tarjetas en vez de una columna estrecha */
+@media (min-width: 1000px) {
+  :root { --page: min(1180px, 100%); }
+  .list, .top, .langs, .foot { max-inline-size: var(--page); margin-inline: auto; }
+  .tabs { padding-inline: max(var(--gutter), calc((100% - var(--page)) / 2 + var(--gutter))); scroll-padding-inline: max(var(--gutter), calc((100% - var(--page)) / 2 + var(--gutter))); }
+  .top { padding-block-start: calc(28px + env(safe-area-inset-top, 0px)); }
+  .intro { max-inline-size: 70ch; }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+    align-items: start;
+    gap: 16px;
+    padding-inline: var(--gutter);
+  }
+  .list > :not(.card) { grid-column: 1 / -1; }
+  .older-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); align-items: start; gap: 16px; }
+}
+/* Escritorio: tipo de cambio a la derecha del encabezado (solo si se muestra) */
+@media (min-width: 1000px) {
+  .top:has(> .fx:not([hidden])) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 26rem); column-gap: 32px; align-items: start; }
+  .top:has(> .fx:not([hidden])) > :not(.fx, .tour-btn) { grid-column: 1; }
+  .top > .fx { grid-column: 2; grid-row: 1 / span 5; margin-block-start: 0; margin-inline-end: 44px; }
+}
