@@ -46,5 +46,10 @@ jobs:
             exit 0
           fi
           git commit -m "Actualizar noticias $(date -u +'%Y-%m-%d %H:%M') UTC"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          # Si otra corrida subió noticias mientras tanto, gana la versión más nueva (esta).
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin main || { git rebase --abort || true; git fetch origin main; git reset --soft origin/main; git commit -m "Actualizar noticias $(date -u +'%Y-%m-%d %H:%M') UTC" || exit 0; }
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 5
+          done
+          exit 1
