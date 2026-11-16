@@ -58,7 +58,10 @@ ROUNDS = {"Round 1": "1.ª ronda", "Round 2": "2.ª ronda", "Round 3": "3.ª ron
 def get(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
     with urllib.request.urlopen(req, timeout=20) as r:
-        return json.loads(r.read().decode("utf-8"))
+        data = r.read(8_000_001)
+    if len(data) > 8_000_000:
+        raise ValueError("respuesta demasiado grande")
+    return json.loads(data.decode("utf-8"))
 
 
 def fetch(url):

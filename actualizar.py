@@ -16,8 +16,10 @@ Titulares y fuentes salen tal cual de cada feed; el relato lo escribe la IA solo
 from __future__ import annotations
 
 import gzip
+import zlib
 import json
 import math
+import os
 import re
 import ssl
 import sys
@@ -255,6 +257,9 @@ def trim(txt: str, limit: int = SUMMARY_MAX) -> str:
     return cut.rstrip(" ,;:.-—") + "…"
 
 
+FETCH_TIMEOUT = 25
+MAX_DOWNLOAD = 4_000_000
+MAX_DECOMPRESSED = 20_000_000
 CURL_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
 GN_TITLE_SUFFIX = re.compile(r"\s+[-|–]\s+[^-|–]{2,45}$")
 
@@ -265,15 +270,47 @@ def fetch(url: str, simple: bool = False) -> bytes:
         headers["Accept"] = "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
         headers["Accept-Encoding"] = "gzip"
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=25, context=ssl.create_default_context()) as resp:
-        data = resp.read(4_000_000)
+    with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT, context=ssl.create_default_context()) as resp:
+        data = resp.read(MAX_DOWNLOAD + 1)
+    if len(data) > MAX_DOWNLOAD:
+        raise ValueError("respuesta demasiado grande")
     if data[:2] == b"\x1f\x8b":
-        data = gzip.decompress(data)
+        data = gunzip_capped(data)
     return data.lstrip(b"\xef\xbb\xbf \t\r\n")
 
 
+def gunzip_capped(data: bytes, limit: int | None = None) -> bytes:
+    """Descomprime gzip con tope de salida (evita gzip bombs)."""
+    limit = MAX_DECOMPRESSED if limit is None else limit
+    d = zlib.decompressobj(16 + zlib.MAX_WBITS)
+    out = d.decompress(data, limit + 1)
+    if len(out) > limit or d.unconsumed_tail:
+        raise ValueError("gzip descomprimido supera el tope")
+    return out
+
+
+# Un DOCTYPE simple (sin subconjunto interno) es inofensivo para ElementTree; se rechazan
+# las declaraciones de entidades y los DOCTYPE con subconjunto interno [ ... ].
+_DTD_RE = re.compile(rb"<!ENTITY|<!DOCTYPE[^>\[]*\[", re.I)
+
+
+def safe_fromstring(xml_bytes: bytes):
+    """Parsea XML rechazando ENTITY y DOCTYPE con subconjunto interno (sin XXE ni expansión de entidades)."""
+    if _DTD_RE.search(xml_bytes[:MAX_DECOMPRESSED]):
+        raise ValueError("XML con DOCTYPE/ENTITY rechazado")
+    return ET.fromstring(xml_bytes)
+
+
+def is_safe_http_url(url: str) -> bool:
+    try:
+        p = urlparse(url)
+    except ValueError:
+        return False
+    return p.scheme in ("http", "https") and bool(p.hostname) and url.startswith(p.scheme + "://")
+
+
 def parse_items(xml_bytes: bytes):
-    root = ET.fromstring(xml_bytes)
+    root = safe_fromstring(xml_bytes)
     found = []
     for it in root.iter():
         if local(it.tag) not in ("item", "entry"):
@@ -330,8 +367,14 @@ def fetch_feed(feed):
     # aunque se pida gzip, o rechazan a urllib (PBS); curl sí los lee desde GitHub Actions.
     try:
         import subprocess
-        data = subprocess.run(["curl", "-sL", "-m", "25", "--compressed", "-A", CURL_UA, url],
-                              capture_output=True, timeout=30).stdout
+        if not is_safe_http_url(url):
+            return feed, None, err
+        data = subprocess.run(["curl", "-sL", "--proto", "=http,https", "--max-redirs", "5",
+                               "-m", str(FETCH_TIMEOUT), "--max-filesize", str(MAX_DOWNLOAD),
+                               "--compressed", "-A", CURL_UA, url],
+                              capture_output=True, timeout=FETCH_TIMEOUT + 5).stdout
+        if len(data) > MAX_DECOMPRESSED:
+            raise ValueError("respuesta curl demasiado grande")
         rows = parse_items(data.lstrip(b"\xef\xbb\xbf \t\r\n"))
         if rows:
             return feed, rows, None
@@ -1032,7 +1075,7 @@ def main():
             if len(title) < 18 or SKIP_TITLE.search(title) or SECTION_TITLE.search(title):
                 continue
             url_c = clean_url(link)
-            if not url_c.startswith("http"):
+            if not is_safe_http_url(url_c):
                 continue
             path = urlparse(url_c).path.lower()
             if SKIP_PATH.search(path):
@@ -1269,7 +1312,7 @@ def main():
         "possible": posibles_report,
         "narration": narr_report,
     }
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    write_json_atomic(OUT, payload)
     print("clusters", len(groups), "consensus", summary_counts)
 
     if DEBUG:
@@ -1278,6 +1321,36 @@ def main():
                 fh.write(f"\n=== [{cat}] {k} medios\n")
                 for m in sorted(members, key=lambda m: m["org"]):
                     fh.write(f"  {m['lang']} {m['source'][:18]:18s} {m['title'][:110]}\n")
+
+
+def validate_payload(payload) -> None:
+    """Esquema mínimo de noticias.json; si falla, no se escribe (ni se publica)."""
+    if not isinstance(payload, dict):
+        raise ValueError("payload no es objeto")
+    if not isinstance(payload.get("updatedAt"), str):
+        raise ValueError("updatedAt falta")
+    cats = payload.get("categories")
+    if not isinstance(cats, list) or not cats:
+        raise ValueError("categories vacío")
+    for c in cats:
+        if not isinstance(c, dict) or not isinstance(c.get("id"), str) or not isinstance(c.get("stories"), list):
+            raise ValueError("categoría inválida")
+        for st in c["stories"]:
+            for src in st.get("sources", []):
+                if not is_safe_http_url(src.get("url", "")):
+                    raise ValueError("url de fuente inválida")
+
+
+def write_json_atomic(path: Path, payload) -> None:
+    validate_payload(payload)
+    text = json.dumps(payload, ensure_ascii=False, indent=1, allow_nan=False)
+    json.loads(text)
+    tmp = path.with_name(path.name + ".tmp")
+    with open(tmp, "w", encoding="utf-8") as fh:
+        fh.write(text)
+        fh.flush()
+        os.fsync(fh.fileno())
+    os.replace(tmp, path)
 
 
 if __name__ == "__main__":

@@ -19,6 +19,23 @@ function rel(iso) {
   return "hace " + Math.round(h / 24) + " d";
 }
 
+// Solo enlaces http(s) absolutos con host (bloquea javascript:, data:, "http:javascript:", etc.).
+function safeHttpUrl(u) {
+  if (typeof u !== "string") return null;
+  const raw = u.trim();
+  if (!/^https?:\/\//i.test(raw)) return null;
+  try {
+    const x = new URL(raw);
+    if ((x.protocol !== "http:" && x.protocol !== "https:") || !x.hostname) return null;
+    return x.href;
+  } catch (e) { return null; }
+}
+function setHref(a, u) {
+  const safe = safeHttpUrl(u);
+  if (safe) a.href = safe; else a.removeAttribute("href");
+  return a;
+}
+
 function el(tag, cls, text) {
   const e = document.createElement(tag);
   if (cls) e.className = cls;
@@ -70,7 +87,7 @@ function renderFx(data) {
   box.append(el("p", "fx-title", "Tipo de cambio de referencia BCCR · " + fday(d.fecha)), grid);
   const link = (text, href, cls) => {
     const a = el("a", cls || null, text);
-    a.href = href; a.target = "_blank"; a.rel = "noopener";
+    setHref(a, href); a.target = "_blank"; a.rel = "noopener";
     return a;
   };
   const credit = el("p", "fx-credit");
@@ -229,7 +246,7 @@ function renderCrypto(list) {
 
   const foot = el("p", "cx-foot");
   const a = el("a", null, cp.source);
-  a.href = cp.sourceUrl; a.target = "_blank"; a.rel = "noopener";
+  setHref(a, cp.sourceUrl); a.target = "_blank"; a.rel = "noopener";
   foot.append("Datos: ", a, " · actualizado " + rel(cp.fetchedAt || cp.updatedAt) +
     ". Se renuevan con cada actualización (cada ~3 h); no son en tiempo real. Toca una moneda para ver su gráfica.");
   sec.append(foot);
@@ -256,7 +273,7 @@ function sideRow(g, sd, tennis) {
   const who = el("span", "gm-who");
   if (sd.logo || sd.flag) {
     const img = el("img", sd.logo ? "gm-logo" : "gm-flag");
-    img.src = sd.logo || sd.flag; img.alt = ""; img.loading = "lazy"; img.decoding = "async";
+    img.src = safeHttpUrl(sd.logo || sd.flag) || ""; img.alt = ""; img.loading = "lazy"; img.decoding = "async";
     img.width = 22; img.height = sd.logo ? 22 : 15;
     img.addEventListener("error", () => img.remove());
     who.append(img);
@@ -306,7 +323,7 @@ function gameCard(g, lg) {
     const m = el("p", "gm-meta", meta.join(" · "));
     if (g.link) {
       const a = el("a", null, "Ver en ESPN ↗");
-      a.href = g.link; a.target = "_blank"; a.rel = "noopener noreferrer";
+      setHref(a, g.link); a.target = "_blank"; a.rel = "noopener noreferrer";
       if (meta.length) m.append(" · ");
       m.append(a);
     }
@@ -708,7 +725,7 @@ function renderSports(list) {
   const lh = el("div", "sp-lhead");
   lh.append(el("h3", "sp-lname", view.top == null ? lg.name : "Fútbol americano universitario · " + (view.all ? "todos los juegos FBS" : "Top 25")));
   const off = el("a", "sp-off", lg.officialName + " ↗");
-  off.href = lg.official; off.target = "_blank"; off.rel = "noopener noreferrer";
+  setHref(off, lg.official); off.target = "_blank"; off.rel = "noopener noreferrer";
   lh.append(off);
   sec.append(lh);
   if (view.top != null) {
@@ -766,7 +783,7 @@ function renderSports(list) {
   }
   const foot = el("p", "cx-foot");
   const a = el("a", null, "ESPN");
-  a.href = sp.sourceUrl; a.target = "_blank"; a.rel = "noopener";
+  setHref(a, sp.sourceUrl); a.target = "_blank"; a.rel = "noopener";
   foot.append("Datos vía ", a, " (NFL, CFB, NBA, CBB, MLB, NHL, ATP/WTA y UFC). Al abrir esta pestaña se piden los marcadores al momento y se renuevan cada minuto mientras hay partidos en juego; si ESPN no responde, se muestra la última actualización (cada ~3 h). Toca el sitio oficial de cada liga para el detalle jugada a jugada.");
   sec.append(foot);
   list.append(sec);
@@ -920,7 +937,7 @@ function card(s) {
   s.sources.forEach((x) => {
     const li = el("li");
     const a = el("a", null, x.title);
-    a.href = x.url;
+    setHref(a, x.url);
     a.target = "_blank";
     a.rel = "noopener noreferrer";
     const meta = el("div", "srcmeta");
@@ -934,7 +951,7 @@ function card(s) {
     const r = el("p", "reddit", "También en Reddit: ");
     s.alsoOnReddit.forEach((x, i) => {
       const a = el("a", null, "r/" + x.sub);
-      a.href = x.url;
+      setHref(a, x.url);
       a.target = "_blank";
       a.rel = "noopener noreferrer";
       if (i) r.append(", ");
