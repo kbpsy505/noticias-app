@@ -46,13 +46,16 @@ REFRESH_HOURS = 3
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 
-PHASE = 4                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
-NEWS_HOURS = 48          # antigüedad máxima de una nota (noticias)
+PHASE = 5                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
+NEWS_HOURS = 72          # antigüedad máxima de una nota (noticias); Arreglo 6: antes 48 h
 SCIENCE_HOURS = 24 * 7   # ciencia publica más lento
 PAIR_WINDOW_H = 36       # dos notas solo se unen si se publicaron con <= 36 h de diferencia
 SUMMARY_MAX = 400
 MAX_STORIES = 30         # por categoría
 MIN_OUTLETS = 3          # medios distintos necesarios para que una historia aparezca
+# Arreglo 4: pestañas/regiones flacas con umbral de 2 medios (al menos 1 nota que no venga de Google Noticias);
+# esas historias llevan twoOutlets: true y la etiqueta «2 medios». Ciencias se maneja en tema.py.
+MIN_OUTLETS_BY_CAT = {"ciencias": 2, "oceania": 2, "africa": 2, "sudamerica": 2}
 FROZEN_HOURS = 72        # un feed cuya nota más nueva tiene más de 72 h se marca «congelado» (salvo semanales)
 WEEKLY_HOURS = 24 * 10   # tope de «congelado» para los feeds semanales
 
@@ -963,8 +966,8 @@ def apply_freshness(cats, prev, now):
     return report
 
 
-POSIBLES_MAX = 60          # tope total de la pestaña "Posibles noticias"
-POSIBLES_PER_CHIP = 8      # tope por categoría/región
+POSIBLES_MAX = 150         # tope total de «En desarrollo» (antes Posibles, 60); Arreglo 4
+POSIBLES_PER_CHIP = 15     # tope por categoría/región (antes 8)
 POSIBLES_MIN_PER_CHIP = 3  # se reservan hasta 3 por categoría/región para que no las tapen otras
 POSIBLES_MIN_CHIP = {"cripto": 6}  # Criptomonedas tiene 6 lugares asegurados
 
@@ -1433,7 +1436,7 @@ def main():
             published = parse_date(date_s)
             if published is None or published > now + timedelta(hours=3):
                 continue
-            hours = SCIENCE_HOURS if hint == "ciencias" else NEWS_HOURS
+            hours = SCIENCE_HOURS if (hint == "ciencias" or fid in WEEKLY_FEEDS) else NEWS_HOURS
             if published < now - timedelta(hours=hours):
                 continue
             summary = desc

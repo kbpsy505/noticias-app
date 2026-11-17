@@ -485,13 +485,17 @@ def build(now, general_pool, main_feed_urls):
             debug.append((region, k, members))
         if 3 <= k <= 4:   # antes se contaba dentro de «k < MIN_OUTLETS», así que con MIN_OUTLETS = 3 siempre daba 0
             near[region] += 1
-        if k < A.MIN_OUTLETS:
+        min_k = A.MIN_OUTLETS_BY_CAT.get(region, A.MIN_OUTLETS)
+        direct = any("news.google.com" not in m["url"] for m in members)
+        if k < A.MIN_OUTLETS and (k < min_k or not direct):
             c = A.make_story(g, pool, sims)
             c["region"] = region
             candidates.append(c)
             continue
         s = A.make_story(g, pool, sims)
         s["region"] = region
+        if k < A.MIN_OUTLETS:
+            s["twoOutlets"] = True     # Arreglo 4: región flaca, se muestra con «2 medios»
         topic = A.story_topic(members)
         if topic:
             s["topic"] = topic

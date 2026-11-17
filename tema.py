@@ -23,6 +23,11 @@ import actualizar as A
 
 MIN_OUTLETS = 3
 MIN_RELIABLE = 2   # los medios de menor nivel solo suman cuando ya hay 2+ confiables
+# Arreglo 6: en Ciencias basta 1 confiable para que sumen los de menor nivel (la lista «low» es muy amplia:
+# ScienceDaily, Phys.org, Live Science…). En Finanzas y Cripto la regla no cambia (comunicados disfrazados).
+MIN_RELIABLE_BY_CAT = {"ciencias": 1}
+# Arreglo 4: pestañas flacas con umbral de 2 medios (siempre con al menos 1 confiable); llevan «2 medios».
+MIN_OUTLETS_BY_CAT = {"ciencias": 2}
 GNEWS = {"en": "https://news.google.com/rss/search?q={}&hl=en-US&gl=US&ceid=US:en",
          "es": "https://news.google.com/rss/search?q={}&hl=es-419&gl=US&ceid=US:es-419"}
 GN_SUFFIX = re.compile(r"\s+[-|–]\s+[^-|–]{2,45}$")
@@ -116,7 +121,8 @@ TOPICS = {
             ("sciq-infobae", "gn:site:infobae.com/ciencia OR site:infobae.com (científicos OR estudio OR NASA OR espacio)", "Infobae", "infobae", "es", False),
         ],
         # Republican comunicados de universidades o son fuente primaria (no medio): solo suman con 2+ confiables.
-        "low": {"sciencedaily", "physorg", "nasa", "esa", "muyinteresante", "spacecom", "livescience",
+        "primary": {"nasa", "esa"},
+        "low": {"sciencedaily", "physorg", "muyinteresante", "spacecom", "livescience",
                 "sciencealert", "universetoday"},
         "agg": set(),
         "skip": re.compile(
@@ -143,9 +149,11 @@ def fetch(args):
     return feed, [(GN_SUFFIX.sub("", t), l, d, "") for t, l, d, _ in rows or []] or None, err
 
 
-def counted(orgs, low, agg):
-    good = orgs - low - agg
-    if len(good) >= MIN_RELIABLE:
+def counted(orgs, low, agg, primary=frozenset(), min_reliable=MIN_RELIABLE):
+    """(medios que cuentan, medios confiables). «primary» (NASA y ESA en Ciencias: fuente primaria de sus propias
+    misiones) suma pero no basta sola: no cuenta como confiable."""
+    good = orgs - low - agg - primary
+    if len(good) >= min_reliable:
         return orgs - agg, good
     return good, good
 
@@ -267,6 +275,9 @@ def build(cat, now, general_pool, main_feed_urls=()):
     with ThreadPoolExecutor(max_workers=16) as ex:
         results = list(ex.map(fetch, [(f, cfg["gn_when"]) for f in feeds]))
     low, agg, skip, match = cfg["low"], cfg["agg"], cfg["skip"], cfg["match"]
+    primary = cfg.get("primary", frozenset())
+    min_rel = MIN_RELIABLE_BY_CAT.get(cat, MIN_RELIABLE)
+    min_out = MIN_OUTLETS_BY_CAT.get(cat, MIN_OUTLETS)
     pool, seen, rejected = [], set(), Counter()
     feeds_ok, feeds_failed = [], []
 
@@ -352,17 +363,19 @@ def build(cat, now, general_pool, main_feed_urls=()):
         for g in groups:
             members = [pool[i] for i in g]
             orgs = {m["org"] for m in members}
-            cnt, good = counted(orgs, low, agg)
+            cnt, good = counted(orgs, low, agg, primary, min_rel)
             if len(orgs) >= 2:
                 debug.append((len(cnt), members))
-            if len(good) < 2:
+            if len(good) < min_rel or len(cnt) < 2:
                 continue
             st = A.make_story(g, pool, sims)
-            prefer_reliable(st, members, low, agg)
+            prefer_reliable(st, members, low | primary, agg)
             st["outlets"] = len(cnt)
             st["extraOutlets"] = len(orgs) - len(cnt)
             st["category"] = cat
-            (stories if len(cnt) >= MIN_OUTLETS else candidates).append(st)
+            if len(cnt) < MIN_OUTLETS and len(cnt) >= min_out:
+                st["twoOutlets"] = True       # se muestra con la etiqueta «2 medios»
+            (stories if len(cnt) >= min_out else candidates).append(st)
     stories.sort(key=lambda s: (s["outlets"], s["_last"]), reverse=True)
     stories = stories[:A.MAX_STORIES]
     for s in stories:              # actualizar.py ordena, recorta y pone los ids
@@ -370,7 +383,7 @@ def build(cat, now, general_pool, main_feed_urls=()):
     report = {
         "itemsGathered": len(pool), "fromGeneralFeeds": from_general, "rejected": dict(rejected),
         "feedsOk": feeds_ok, "feedsFailed": feeds_failed,
-        "groupsByOutletCount": {str(k): v for k, v in sorted(Counter(len(counted({pool[i]["org"] for i in g}, low, agg)[0]) for g in groups).items())},
+        "groupsByOutletCount": {str(k): v for k, v in sorted(Counter(len(counted({pool[i]["org"] for i in g}, low, agg, primary, min_rel)[0]) for g in groups).items())},
         "stories": len(stories), "candidates": len(candidates), "merges": len(merges),
     }
     return stories, candidates, report, debug, merges
