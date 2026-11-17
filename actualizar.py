@@ -46,7 +46,7 @@ REFRESH_HOURS = 3
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 
-PHASE = 3                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
+PHASE = 4                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
 NEWS_HOURS = 48          # antigüedad máxima de una nota (noticias)
 SCIENCE_HOURS = 24 * 7   # ciencia publica más lento
 PAIR_WINDOW_H = 36       # dos notas solo se unen si se publicaron con <= 36 h de diferencia

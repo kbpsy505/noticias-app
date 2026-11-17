@@ -24,7 +24,8 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-MAX_DECODES = 60        # decodificaciones con Google por corrida (2 peticiones cada una)
+MAX_DECODES = 100       # decodificaciones con Google por corrida (2 peticiones cada una); lo resuelto se
+                        # reutiliza en la corrida siguiente (gnUrl), así que el tope rinde más con el tiempo
 TIMEOUT = 8
 FAIL_STREAK_STOP = 5    # tras 5 fallos seguidos se deja de pedir (Google limitando)
 GN_SUFFIX = re.compile(r"\s+[-|–]\s+[^-|–]{2,45}$")

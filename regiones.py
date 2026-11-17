@@ -180,9 +180,42 @@ def _rx(words):
     return re.compile(r"(?<![a-z])(" + "|".join(words) + r")(?![a-z])")
 
 
+# Los 84 cantones de Costa Rica (Arreglo 3). Aquí van los de nombre inequívoco; los que también son
+# países, ciudades de otros países, apellidos o palabras comunes van en CR_CANTONES_AMBIG y solo cuentan con
+# contexto tico (AMBIG_CR, como ya pasaba con Liberia). Más algunos lugares muy nombrados en las notas.
+CR_CANTONES = [
+    # San José
+    r"escazu", r"desamparados", r"puriscal", r"tarrazu", r"aserri", r"goicoechea", r"alajuelita",
+    r"vazquez de coronado", r"tibas", r"moravia", r"montes de oca", r"turrubares", r"curridabat", r"perez zeledon",
+    r"leon cortes", r"san isidro de el general",
+    # Alajuela
+    r"poas", r"orotina", r"zarcero", r"sarchi", r"valverde vega", r"upala", r"los chiles", r"guatuso",
+    r"ciudad quesada", r"san ramon de alajuela",
+    # Cartago
+    r"turrialba", r"oreamuno", r"el guarco", r"tres rios",
+    # Heredia
+    r"barva", r"sarapiqui", r"santo domingo de heredia",
+    # Guanacaste
+    r"nicoya", r"bagaces", r"abangares", r"tilaran", r"nandayure", r"hojancha",
+    # Puntarenas
+    r"montes de oro", r"quepos", r"golfito", r"coto brus", r"parrita", r"garabito", r"puerto jimenez",
+    # Limón
+    r"pococi", r"siquirres", r"talamanca", r"guacimo", r"matina",
+    # Lugares muy nombrados (distritos, playas, pasos de frontera)
+    r"manuel antonio", r"tamarindo", r"jaco", r"uvita", r"tortuguero", r"cahuita", r"paso canoas",
+    r"penas blancas", r"pavas", r"hatillo", r"la uruca", r"zona de los santos", r"ciudad neily",
+]
+CR_CANTONES_AMBIG = [
+    r"liberia", r"santa ana", r"la cruz", r"atenas", r"buenos aires", r"paraiso", r"flores", r"mora", r"dota",
+    r"acosta", r"grecia", r"naranjo", r"palmares", r"san carlos", r"san mateo", r"san ramon", r"rio cuarto",
+    r"la union", r"jimenez", r"alvarado", r"santo domingo", r"santa barbara", r"san rafael", r"san isidro", r"belen",
+    r"san pablo", r"santa cruz", r"carrillo", r"canas", r"esparza", r"osa", r"corredores", r"monteverde",
+    r"coronado",
+]
+
 # Palabras en minúsculas y sin tildes (se compara contra texto "plegado").
 KW = {
-    "costarica": _rx([r"costa rica", r"costarricens\w*", r"ticos?", r"ticas?", r"guanacaste", r"puntarenas", r"limon",
+    "costarica": _rx(CR_CANTONES + [r"costa rica", r"costarricens\w*", r"ticos?", r"ticas?", r"guanacaste", r"puntarenas", r"limon",
                       r"cartago", r"heredia", r"alajuela", r"oij", r"ccss", r"aresep", r"mopt", r"bccr", r"sugef",
                       r"rodrigo chaves", r"chaves", r"laura fernandez", r"asamblea legislativa", r"sala iv",
                       r"sala constitucional", r"ucr", r"pln", r"pusc", r"frente amplio", r"san jose", r"zapote",
@@ -246,7 +279,7 @@ KW = {
                     r"papua", r"samoa\w*", r"tonga\w*", r"solomon islands", r"vanuatu", r"pacific island\w*",
                     r"cook islands", r"oceania", r"maori"]),
 }
-AMBIG_CR = _rx([r"liberia"])
+AMBIG_CR = _rx(CR_CANTONES_AMBIG)
 US = _rx([r"estados unidos", r"estadounidenses?", r"eeuu", r"ee\.uu", r"united states", r"u\.s", r"trump", r"washington",
           r"white house", r"casa blanca", r"congress", r"congreso de ee", r"oregon", r"texas", r"california",
           r"new york", r"nueva york", r"florida", r"pentagon\w*", r"pentagono"])
