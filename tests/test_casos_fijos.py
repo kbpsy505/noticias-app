@@ -33,11 +33,13 @@ def cards_with(cs, word):
 
 def pipeline(cs, decoded=None, monkeypatch=None):
     """Pasos nuevos de la rama, en el orden de main(): resolver Google Noticias, deduplicar y asignar sección."""
+    import enlaces
     if monkeypatch is not None:
-        monkeypatch.setattr(actualizar, "_gn_decode", lambda url: (decoded or {}).get(url))
-        actualizar.GN_CACHE.clear()
+        monkeypatch.setattr(enlaces, "_gn_decode", lambda url: (decoded or {}).get(url))
+        monkeypatch.setattr(enlaces, "_state", {"decodes": 0, "streak": 0})
+        enlaces.CACHE.clear()
     actualizar.resolve_story_links(cs)
-    cs = actualizar.final_dedup(cs)
+    cs, _ = actualizar.final_dedup(cs)
     actualizar.assign_sections(cs)
     return cs
 

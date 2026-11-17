@@ -450,9 +450,9 @@ def build(now, general_pool, main_feed_urls):
             continue
         if k >= 3:
             debug.append((region, k, members))
+        if 3 <= k <= 4:   # antes se contaba dentro de «k < MIN_OUTLETS», así que con MIN_OUTLETS = 3 siempre daba 0
+            near[region] += 1
         if k < A.MIN_OUTLETS:
-            if k >= 3:
-                near[region] += 1
             c = A.make_story(g, pool, sims)
             c["region"] = region
             candidates.append(c)

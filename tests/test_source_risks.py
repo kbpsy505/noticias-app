@@ -47,7 +47,8 @@ def test_gzip_decompress_has_a_size_cap():
 
 
 def test_curl_fallback_has_a_size_cap():
-    src = inspect.getsource(actualizar.fetch_feed)
+    # fetch_feed envuelve a _fetch_feed (índice de titulares para enlaces de Google Noticias)
+    src = inspect.getsource(getattr(actualizar, "_fetch_feed", actualizar.fetch_feed))
     assert "curl" in src
     assert re.search(r"(max-filesize|head -c|stdout\[:|len\(data\))", src)
 
