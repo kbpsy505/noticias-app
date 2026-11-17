@@ -1,0 +1,3565 @@
+{
+"_nota": "Inventario de la grabación de feeds del 2026-11-17 13:13 (hora de Costa Rica) con el código de main c620ea0. Las respuestas grabadas viven fuera del repo (/workspace/diag/feedcache), no se suben.",
+"respuestas": [
+{
+"url": "https://www.lateja.cr/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 152425
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 49359
+},
+{
+"url": "https://theconversation.com/au/articles.atom",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 178531
+},
+{
+"url": "https://www.bangkokpost.com/rss/data/topstories.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2220
+},
+{
+"url": "https://www.amprensa.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 54645
+},
+{
+"url": "https://efectococuyo.com/feed/",
+"via": "urlopen:simple",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/africa/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5802
+},
+{
+"url": "https://www.critica.com.pa/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1766
+},
+{
+"url": "https://www.nasa.gov/news-release/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 45436
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/economia/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 35207
+},
+{
+"url": "https://e00-expansion.uecdn.es/rss/portada.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24385
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Atrivisioncr.com+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 891
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Aasia.nikkei.com&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 16488
+},
+{
+"url": "https://criterio.hn/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2932
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Aagenciasinc.es&hl=es-419&gl=US&ceid=US:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 11448
+},
+{
+"url": "https://cointelegraph.com/rss/tag/bitcoin",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8328
+},
+{
+"url": "https://www.tipocambiocr.net/api/snapshots?from=2026-11-07",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3328
+},
+{
+"url": "https://www.sciencedaily.com/rss/top/health.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12091
+},
+{
+"url": "https://news.mongabay.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 29876
+},
+{
+"url": "https://www.thehindu.com/news/national/feeder/default.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 11152
+},
+{
+"url": "https://proceso.hn/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 25292
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8546
+},
+{
+"url": "https://news.google.com/rss/search?q=site:ameliarueda.com+when:2d&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9498
+},
+{
+"url": "https://www.france24.com/en/asia-pacific/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 11498
+},
+{
+"url": "https://www.pbs.org/newshour/feeds/rss/politics",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 36328
+},
+{
+"url": "https://www.aljazeera.com/xml/rss/all.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4178
+},
+{
+"url": "https://theconversation.com/es/articles.atom",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 179362
+},
+{
+"url": "https://observador.cr/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 42923
+},
+{
+"url": "https://www.france24.com/en/business-tech/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12277
+},
+{
+"url": "https://nextcity.org/feeds/daily",
+"via": "urlopen:full",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261118",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 163146
+},
+{
+"url": "https://www.pbs.org/newshour/feeds/rss/politics",
+"via": "urlopen:simple",
+"ok": true,
+"status": 202,
+"error": null,
+"bytes": 0
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4562
+},
+{
+"url": "https://www.prensalibre.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 953537
+},
+{
+"url": "https://www.thelocal.com/feeds/rss.php",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5019
+},
+{
+"url": "https://rss.dw.com/rdf/rss-en-bus",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4582
+},
+{
+"url": "https://www.nih.gov/news-releases/feed.xml",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 5649
+},
+{
+"url": "https://unchainedcrypto.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 22222
+},
+{
+"url": "https://punchng.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6208
+},
+{
+"url": "https://feeds.nbcnews.com/nbcnews/public/news",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8960
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 10648
+},
+{
+"url": "https://api.hacienda.go.cr/indicadores/tc",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 253
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Aelmundo.cr+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4258
+},
+{
+"url": "https://www.sciencedaily.com/rss/top/environment.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12717
+},
+{
+"url": "https://www.rnz.co.nz/rss/national.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8358
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Aticotimes.net+%28rescue+OR+award+OR+record+OR+conservation+OR+turtles+OR+%22new+species%22+OR+wins+OR+first%29&hl=en-US&gl=US&ceid=US%3Aen",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5061
+},
+{
+"url": "https://fortune.com/feed/fortune-feeds/?id=3230629",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 30334
+},
+{
+"url": "https://www.muyinteresante.com/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5072
+},
+{
+"url": "https://www.positive.news/feed/",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 1360
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/cincodias.elpais.com/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 68517
+},
+{
+"url": "https://www.economist.com/business/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 35973
+},
+{
+"url": "https://www.investing.com/rss/news_301.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1417
+},
+{
+"url": "https://www.latercera.com/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 224810
+},
+{
+"url": "https://www.infobae.com/arc/outboundfeeds/rss/category/deportes/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 275964
+},
+{
+"url": "https://rss.dw.com/rdf/rss-en-africa",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1702
+},
+{
+"url": "https://news.google.com/rss/search?q=when:3d+site:ameliarueda.com&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 11118
+},
+{
+"url": "https://www.infobae.com/arc/outboundfeeds/rss/category/politica/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 346501
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/planeta-futuro/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 101848
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates=20261116",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20851
+},
+{
+"url": "https://www.theguardian.com/global-development/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 37977
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/deportes/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 30011
+},
+{
+"url": "https://www.abc.es/rss/2.0/espana/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 37332
+},
+{
+"url": "https://www.monumental.co.cr/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3109
+},
+{
+"url": "https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7034
+},
+{
+"url": "https://www.france24.com/en/middle-east/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 11751
+},
+{
+"url": "https://www.egyptindependent.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 25410
+},
+{
+"url": "https://efectococuyo.com/feed/",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 1762
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261116",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 62317
+},
+{
+"url": "https://feeds.feedburner.com/ndtvnews-world-news",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5566
+},
+{
+"url": "https://feeds.bloomberg.com/business/news.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3056
+},
+{
+"url": "https://feeds.npr.org/1007/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3565
+},
+{
+"url": "https://www.theguardian.com/uk/business/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 29590
+},
+{
+"url": "https://rss.dw.com/xml/rss-sp-all",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4884
+},
+{
+"url": "https://www.thehindu.com/news/international/feeder/default.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 13339
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Areuters.com/business&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 27296
+},
+{
+"url": "https://news.google.com/rss/search?q=when:3d+site:repretel.com&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 18261
+},
+{
+"url": "https://www.dailymaverick.co.za/dmrss/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12711
+},
+{
+"url": "https://www.newscientist.com/feed/home/",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 0
+},
+{
+"url": "https://feeds.businessinsider.com/custom/all",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 58997
+},
+{
+"url": "https://news.un.org/feed/subscribe/es/news/all/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 39930
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7820
+},
+{
+"url": "https://www.pravda.com.ua/eng/rss/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 17534
+},
+{
+"url": "https://www.reddit.com/r/UpliftingNews/top/.rss?t=day&limit=50",
+"via": "urlopen:simple",
+"ok": false,
+"status": 404,
+"error": "Not Found",
+"bytes": 0
+},
+{
+"url": "https://rss.dw.com/rdf/rss-en-eu",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4561
+},
+{
+"url": "https://e360.yale.edu/feed.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 17385
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Abloomberg.com%20%28bitcoin%20OR%20crypto%20OR%20stablecoin%20OR%20ethereum%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 25469
+},
+{
+"url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8507
+},
+{
+"url": "https://www.prensa.com/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:simple",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 38
+},
+{
+"url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
+"via": "urlopen:simple",
+"ok": false,
+"status": 404,
+"error": "Not Found",
+"bytes": 0
+},
+{
+"url": "https://www.premiumtimesng.com/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6863
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=20261118",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1396
+},
+{
+"url": "https://www.economist.com/international/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 37354
+},
+{
+"url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 265242
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261117",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 227267
+},
+{
+"url": "https://delfino.cr/feed",
+"via": "urlopen:full",
+"ok": false,
+"status": null,
+"error": "URLError: <urlopen error timed out>",
+"bytes": 0
+},
+{
+"url": "https://www.bloomberglinea.com/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 263732
+},
+{
+"url": "https://www.infobae.com/arc/outboundfeeds/rss/category/america/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 276427
+},
+{
+"url": "https://www.theguardian.com/world/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 32824
+},
+{
+"url": "https://feeds.npr.org/1001/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4394
+},
+{
+"url": "https://www.hindustantimes.com/feeds/rss/world-news/rssfeed.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24947
+},
+{
+"url": "https://efectococuyo.com/feed/",
+"via": "urlopen:full",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://feeds.bbci.co.uk/news/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5636
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/ciencia/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 34520
+},
+{
+"url": "https://www.reddit.com/r/MadeMeSmile/top/.rss?t=day&limit=50",
+"via": "urlopen:simple",
+"ok": false,
+"status": 429,
+"error": "Too Many Requests",
+"bytes": 0
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Aelfinancierocr.com&hl=es-419&gl=US&ceid=US:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7985
+},
+{
+"url": "https://news.google.com/rss/search?q=when:3d+site:teletica.com&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24366
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Anacion.com+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12186
+},
+{
+"url": "https://api.axios.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 222126
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Acrhoy.com+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 11683
+},
+{
+"url": "https://www.elfinancierocr.com/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 61205
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4227
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Aeleconomista.com.mx%20%28bitcoin%20OR%20cripto%20OR%20criptomonedas%20OR%20stablecoin%29&hl=es-419&gl=US&ceid=US:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 30398
+},
+{
+"url": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/curated/78/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4072
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20011
+},
+{
+"url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5208
+},
+{
+"url": "https://www.theguardian.com/environment/renewableenergy/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 16051
+},
+{
+"url": "https://www.positive.news/feed/",
+"via": "urlopen:full",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://cronica.com.gt/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2957
+},
+{
+"url": "https://trivisioncr.com/news-sitemap.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1776
+},
+{
+"url": "https://www.infobae.com/arc/outboundfeeds/rss/category/economia/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 318581
+},
+{
+"url": "https://news.mit.edu/rss/research",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 518140
+},
+{
+"url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6511",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5437
+},
+{
+"url": "https://feeds.npr.org/1014/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4202
+},
+{
+"url": "https://www.tec.ac.cr/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 45053
+},
+{
+"url": "https://feeds.bbci.co.uk/sport/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 10578
+},
+{
+"url": "https://www.prensa.com/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 58
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/sociedad/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 29319
+},
+{
+"url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 34322
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20295
+},
+{
+"url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana,ripple,binancecoin,dogecoin,cardano,tether&sparkline=true&price_change_percentage=24h,7d&precision=full",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 32687
+},
+{
+"url": "https://confidencial.digital/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14606
+},
+{
+"url": "https://www.infobae.com/arc/outboundfeeds/rss/category/salud/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 340883
+},
+{
+"url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9118
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Awsj.com%20%28bitcoin%20OR%20crypto%20OR%20stablecoin%20OR%20ethereum%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 23798
+},
+{
+"url": "https://es.euronews.com/rss",
+"via": "urlopen:full",
+"ok": false,
+"status": 406,
+"error": "Not Acceptable",
+"bytes": 0
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Abitcoinmagazine.com&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6603
+},
+{
+"url": "https://www.theblock.co/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5947
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Ainfobae.com%20%28bitcoin%20OR%20cripto%20OR%20criptomonedas%20OR%20stablecoin%29&hl=es-419&gl=US&ceid=US:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7037
+},
+{
+"url": "https://e00-elmundo.uecdn.es/elmundo/rss/economia.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14479
+},
+{
+"url": "https://www.infobae.com/arc/outboundfeeds/rss/category/mexico/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 265341
+},
+{
+"url": "https://e00-elmundo.uecdn.es/elmundo/rss/ciencia.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 15348
+},
+{
+"url": "https://notesfrompoland.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 42071
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Alarepublica.net+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 18597
+},
+{
+"url": "https://www.yesmagazine.org/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 215153
+},
+{
+"url": "https://coingape.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6541
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Areuters.com%20%28bitcoin%20OR%20crypto%20OR%20stablecoin%20OR%20ethereum%20OR%20blockchain%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14175
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Acnbc.com%20%28bitcoin%20OR%20crypto%20OR%20stablecoin%20OR%20ethereum%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7865
+},
+{
+"url": "https://feeds.skynews.com/feeds/rss/home.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2362
+},
+{
+"url": "https://news.google.com/rss/search?q=site:teletica.com+when:2d&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24419
+},
+{
+"url": "https://delfino.cr/feed",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 28806
+},
+{
+"url": "https://amprensa.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 54624
+},
+{
+"url": "https://www.theguardian.com/environment/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 23644
+},
+{
+"url": "https://www.anthropocenemagazine.org/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 294755
+},
+{
+"url": "https://www.goodnewsnetwork.org/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 17434
+},
+{
+"url": "https://www.rte.ie/feeds/rss/?index=/news/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9033
+},
+{
+"url": "https://theconversation.com/global/articles.atom",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 170330
+},
+{
+"url": "https://en.mercopress.com/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3991
+},
+{
+"url": "https://feeds.bbci.co.uk/news/politics/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 10369
+},
+{
+"url": "https://www.france24.com/en/europe/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 11737
+},
+{
+"url": "https://news.google.com/rss/search?q=when:2d+site:timesofisrael.com&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 34414
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates=20261117",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 207285
+},
+{
+"url": "https://expansion.mx/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 96079
+},
+{
+"url": "https://feeds.npr.org/1004/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4039
+},
+{
+"url": "https://feeds.bloomberg.com/technology/news.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5247
+},
+{
+"url": "https://www.nih.gov/news-releases/feed.xml",
+"via": "urlopen:full",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Aameliarueda.com+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1531
+},
+{
+"url": "https://www.livescience.com/feeds/all",
+"via": "urlopen:simple",
+"ok": false,
+"status": 500,
+"error": "Internal Server Error",
+"bytes": 0
+},
+{
+"url": "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6351
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 104456
+},
+{
+"url": "https://www.theguardian.com/technology/cryptocurrencies/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 15890
+},
+{
+"url": "https://www.ft.com/global-economy?format=rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3935
+},
+{
+"url": "https://www.abc.net.au/news/feed/2942460/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9216
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 242432
+},
+{
+"url": "https://www.ft.com/cryptocurrencies?format=rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3898
+},
+{
+"url": "https://www.smithsonianmag.com/rss/innovation/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1683
+},
+{
+"url": "https://www.theguardian.com/business/economics/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 15593
+},
+{
+"url": "https://www.scmp.com/rss/91/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20803
+},
+{
+"url": "https://reasonstobecheerful.world/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 45703
+},
+{
+"url": "https://www.eluniversal.com.mx/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 236948
+},
+{
+"url": "https://news.google.com/rss/search?q=when:2d+site:usatoday.com/story/news/politics&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6810
+},
+{
+"url": "https://www.hondudiario.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 81844
+},
+{
+"url": "https://www.newscientist.com/feed/home/",
+"via": "urlopen:simple",
+"ok": false,
+"status": 406,
+"error": "Not Acceptable",
+"bytes": 0
+},
+{
+"url": "https://www.cbsnews.com/latest/rss/main",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7958
+},
+{
+"url": "https://www.straitstimes.com/news/asia/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7946
+},
+{
+"url": "https://news.google.com/rss/search?q=site:larepublica.net+when:2d&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20307
+},
+{
+"url": "https://es.euronews.com/rss",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 0
+},
+{
+"url": "https://rss.politico.com/politics-news.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 63854
+},
+{
+"url": "https://decrypt.co/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8268
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Ainfobae.com/ciencia%20OR%20site%3Ainfobae.com%20%28cient%C3%ADficos%20OR%20estudio%20OR%20NASA%20OR%20espacio%29&hl=es-419&gl=US&ceid=US:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 44425
+},
+{
+"url": "https://www.economist.com/finance-and-economics/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 35456
+},
+{
+"url": "https://feeds.bloomberg.com/crypto/news.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1050
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Atheblock.co&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20719
+},
+{
+"url": "https://rss.dw.com/rdf/rss-en-asia",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3212
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Acnn.com/science&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1551
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 17384
+},
+{
+"url": "https://www.lemonde.fr/en/rss/une.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5721
+},
+{
+"url": "https://www.sciencedaily.com/rss/top/science.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12501
+},
+{
+"url": "https://www.space.com/feeds/all",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 1170752
+},
+{
+"url": "https://feeds.bbci.co.uk/news/health/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8313
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Alivescience.com&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12813
+},
+{
+"url": "https://www.nature.com/nature.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 109502
+},
+{
+"url": "https://es.beincrypto.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 27044
+},
+{
+"url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 354
+},
+{
+"url": "https://thedefiant.io/api/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 21388
+},
+{
+"url": "https://feeds.skynews.com/feeds/rss/world.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1794
+},
+{
+"url": "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 180377
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12980
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Ateletica.com+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 25330
+},
+{
+"url": "https://nation.africa/kenya/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4703
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261117",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 101903
+},
+{
+"url": "https://www.eltiempo.com/rss/colombia.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3037
+},
+{
+"url": "https://www.theage.com.au/rss/feed.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5983
+},
+{
+"url": "https://feeds.abcnews.com/abcnews/politicsheadlines",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5741
+},
+{
+"url": "https://www.reddit.com/r/Futurology/top/.rss?t=day&limit=50",
+"via": "urlopen:simple",
+"ok": false,
+"status": 429,
+"error": "Too Many Requests",
+"bytes": 0
+},
+{
+"url": "https://feeds.abcnews.com/abcnews/topstories",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5791
+},
+{
+"url": "https://www.goodgoodgood.co/articles/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 19863
+},
+{
+"url": "https://www.smithsonianmag.com/rss/science-nature/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7101
+},
+{
+"url": "https://thebetterindia.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 116226
+},
+{
+"url": "https://www.20minutos.es/rss/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 299036
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Aobservador.cr+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 16456
+},
+{
+"url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+"via": "urlopen:simple",
+"ok": false,
+"status": 404,
+"error": "Not Found",
+"bytes": 0
+},
+{
+"url": "https://www.europapress.es/rss/rss.aspx",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3033
+},
+{
+"url": "https://www.nacion.com/arc/outboundfeeds/rss/category/el-pais/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 52145
+},
+{
+"url": "https://www.theguardian.com/environment/wildlife/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 15330
+},
+{
+"url": "https://feeds.bbci.co.uk/mundo/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7438
+},
+{
+"url": "https://es.euronews.com/rss",
+"via": "urlopen:simple",
+"ok": false,
+"status": 406,
+"error": "Not Acceptable",
+"bytes": 0
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4453
+},
+{
+"url": "https://www.efeverde.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 40294
+},
+{
+"url": "https://e00-expansion.uecdn.es/rss/mercados/criptomonedas.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14833
+},
+{
+"url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4891
+},
+{
+"url": "https://www.clarin.com/rss/lo-ultimo/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3520
+},
+{
+"url": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 10164
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Afinance.yahoo.com%20%28bitcoin%20OR%20crypto%20OR%20stablecoin%20OR%20ethereum%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24077
+},
+{
+"url": "https://www.al-monitor.com/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 16566
+},
+{
+"url": "https://thecostaricanews.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 18515
+},
+{
+"url": "https://www.politico.eu/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 26474
+},
+{
+"url": "https://www.france24.com/es/medio-oriente/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 13763
+},
+{
+"url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 354
+},
+{
+"url": "https://www.smh.com.au/rss/feed.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5996
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Aapnews.com%20%28economy%20OR%20stocks%20OR%20markets%20OR%20inflation%20OR%20tariffs%20OR%20fed%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24947
+},
+{
+"url": "https://rss.elconfidencial.com/mundo/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 25757
+},
+{
+"url": "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7413
+},
+{
+"url": "https://www.citizen.co.za/feed/",
+"via": "urlopen:full",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://www.unacomunica.una.ac.cr/index.php?format=feed&type=rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 19365
+},
+{
+"url": "https://www.20minutos.es/rss/nacional/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 59094
+},
+{
+"url": "https://thediplomat.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 17342
+},
+{
+"url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839069",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4857
+},
+{
+"url": "https://www.diarioextra.com/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 21925
+},
+{
+"url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2788
+},
+{
+"url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5951
+},
+{
+"url": "https://www.citizen.co.za/feed/",
+"via": "urlopen:simple",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://www.nacion.com/arc/outboundfeeds/rss/category/viva/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 58357
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=20261117",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1396
+},
+{
+"url": "https://ticotimes.net/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2805
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/clima-y-medio-ambiente/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 36213
+},
+{
+"url": "https://www.euronews.com/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9435
+},
+{
+"url": "https://www.rfi.fr/en/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8070
+},
+{
+"url": "https://www.europapress.es/rss/rss.aspx?ch=00069",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3377
+},
+{
+"url": "https://rss.elconfidencial.com/espana/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 42734
+},
+{
+"url": "https://www.stuff.co.nz/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 37523
+},
+{
+"url": "https://www.ft.com/companies?format=rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3913
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Aamprensa.com+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1839
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=20261116",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1396
+},
+{
+"url": "https://news.un.org/feed/subscribe/es/news/topic/climate-change/feed/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9419
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Areuters.com/science&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1664
+},
+{
+"url": "https://www.elfinanciero.com.mx/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 220633
+},
+{
+"url": "https://www.14ymedio.com/rss/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 34398
+},
+{
+"url": "https://www.scientificamerican.com/platform/syndication/rss/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9774
+},
+{
+"url": "https://www.optimistdaily.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 38155
+},
+{
+"url": "https://www.livescience.com/feeds/all",
+"via": "urlopen:full",
+"ok": false,
+"status": 500,
+"error": "Internal Server Error",
+"bytes": 0
+},
+{
+"url": "https://beincrypto.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 26047
+},
+{
+"url": "https://www.esa.int/rssfeed/Our_Activities/Space_News",
+"via": "urlopen:full",
+"ok": false,
+"status": 404,
+"error": "Not Found",
+"bytes": 0
+},
+{
+"url": "https://news.un.org/feed/subscribe/es/news/topic/health/feed/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 39576
+},
+{
+"url": "https://lahora.gt/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 26126
+},
+{
+"url": "https://bitcoinmagazine.com/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 26106
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Amonumental.co.cr+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3743
+},
+{
+"url": "https://www.lavanguardia.com/rss/politica.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 47136
+},
+{
+"url": "https://feeds.bloomberg.com/markets/news.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4784
+},
+{
+"url": "https://rss.dw.com/rdf/rss-en-all",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 28706
+},
+{
+"url": "https://www.theguardian.com/world/americas/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14736
+},
+{
+"url": "https://www.latimes.com/politics/rss2.0.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 23633
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 32236
+},
+{
+"url": "https://www.reddit.com/r/worldnews/top/.rss?t=day&limit=50",
+"via": "urlopen:simple",
+"ok": false,
+"status": 404,
+"error": "Not Found",
+"bytes": 0
+},
+{
+"url": "https://www.universetoday.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9066
+},
+{
+"url": "https://feeds.nbcnews.com/nbcnews/public/politics",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8937
+},
+{
+"url": "https://semanariouniversidad.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 19374
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Areuters.com/markets&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9017
+},
+{
+"url": "https://thehill.com/news/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5572
+},
+{
+"url": "https://www.clarin.com/rss/mundo/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3261
+},
+{
+"url": "https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14732
+},
+{
+"url": "https://www.ft.com/rss/home",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2782
+},
+{
+"url": "https://www.reddit.com/r/science/top/.rss?t=day&limit=50",
+"via": "urlopen:simple",
+"ok": false,
+"status": 429,
+"error": "Too Many Requests",
+"bytes": 0
+},
+{
+"url": "https://api.quantamagazine.org/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2861
+},
+{
+"url": "https://www.abc.com.py/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 141870
+},
+{
+"url": "https://www.articulo66.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3190
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 18288
+},
+{
+"url": "https://cryptobriefing.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5876
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Aeleconomista.com.mx%20%28econom%C3%ADa%20OR%20mercados%20OR%20peso%20OR%20Banxico%20OR%20inflaci%C3%B3n%29&hl=es-419&gl=US&ceid=US:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 35892
+},
+{
+"url": "https://www.tipocambiocr.net/today/full.json",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5880
+},
+{
+"url": "https://www.teletica.com/sitemaps/news/last-news",
+"via": "urlopen:full",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/australia/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3523
+},
+{
+"url": "https://www.dawn.com/feeds/home",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 83274
+},
+{
+"url": "https://www.theguardian.com/world/africa/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 15271
+},
+{
+"url": "https://www.elcomercio.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 43623
+},
+{
+"url": "https://www.newsbtc.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20251
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Afinance.yahoo.com%20%28stocks%20OR%20economy%20OR%20fed%20OR%20earnings%20OR%20markets%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24116
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Asemanariouniversidad.com+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2442
+},
+{
+"url": "https://phys.org/rss-feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7501
+},
+{
+"url": "https://www.theguardian.com/world/europe-news/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 15181
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3584
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261116",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 191074
+},
+{
+"url": "https://www.theguardian.com/australia-news/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14871
+},
+{
+"url": "https://feeds.arstechnica.com/arstechnica/science",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 73772
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 79067
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Aforbes.com%20%28bitcoin%20OR%20crypto%20OR%20stablecoin%20OR%20ethereum%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 22597
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Awsj.com%20%28markets%20OR%20economy%20OR%20stocks%20OR%20fed%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 23627
+},
+{
+"url": "https://ourworldindata.org/atom.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 2250
+},
+{
+"url": "https://www.teletica.com/sitemaps/news/last-news",
+"via": "urlopen:simple",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://www.theguardian.com/politics/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 15518
+},
+{
+"url": "https://www.france24.com/en/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9210
+},
+{
+"url": "https://www.africanews.com/feed/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 47656
+},
+{
+"url": "https://www.ft.com/markets?format=rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3888
+},
+{
+"url": "https://www.theguardian.com/science/medical-research/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 15874
+},
+{
+"url": "https://www.prensa.com/arc/outboundfeeds/rss/?outputType=xml",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 38
+},
+{
+"url": "https://www.irishtimes.com/arc/outboundfeeds/feed-world/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 33179
+},
+{
+"url": "https://www.space.com/feeds/all",
+"via": "urlopen:simple",
+"ok": false,
+"status": 500,
+"error": "Internal Server Error",
+"bytes": 0
+},
+{
+"url": "https://9gag.com/v1/interest-posts/interest/news/type/hot",
+"via": "urlopen:simple",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 30654
+},
+{
+"url": "https://news.google.com/rss/search?q=when:3d+site:repretel.com&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "urlopen:full",
+"ok": false,
+"status": null,
+"error": "URLError: <urlopen error timed out>",
+"bytes": 0
+},
+{
+"url": "https://nextcity.org/feeds/daily",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 5574
+},
+{
+"url": "https://www.wired.com/feed/category/science/latest/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6166
+},
+{
+"url": "https://kyivindependent.com/news-archive/rss/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4701
+},
+{
+"url": "https://www.eltiempo.com/rss/mundo.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3245
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Anationalgeographic.com.es&hl=es-419&gl=US&ceid=US:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 29838
+},
+{
+"url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+"via": "urlopen:full",
+"ok": true,
+"status": 202,
+"error": null,
+"bytes": 0
+},
+{
+"url": "https://agenciabrasil.ebc.com.br/es/rss/ultimasnoticias/feed.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 18486
+},
+{
+"url": "https://news.google.com/rss/search?q=when:3d+site:ucr.ac.cr&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 10785
+},
+{
+"url": "https://news.google.com/rss/search?q=when:3d+site:larepublica.net&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24359
+},
+{
+"url": "https://www.lavanguardia.com/rss/home.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 71932
+},
+{
+"url": "https://www.france24.com/es/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 10828
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Adelfino.cr+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 23287
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Adiarioextra.com+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20980
+},
+{
+"url": "https://rpp.pe/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 215124
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Space.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6304
+},
+{
+"url": "https://news.un.org/feed/subscribe/en/news/topic/sdgs/feed/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7136
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/tecnologia/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 16761
+},
+{
+"url": "https://cryptonews.com/news/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 50912
+},
+{
+"url": "https://www.scmp.com/rss/3/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20848
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5136
+},
+{
+"url": "https://nextcity.org/feeds/daily",
+"via": "urlopen:simple",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Abarrons.com&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20344
+},
+{
+"url": "https://www.theguardian.com/world/ukraine/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 19348
+},
+{
+"url": "https://www.elnacional.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24000
+},
+{
+"url": "https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14013
+},
+{
+"url": "https://www.livescience.com/feeds/all",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 1261772
+},
+{
+"url": "https://www.rappler.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 109594
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Aspace.com&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 23402
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Anationalgeographic.com%20%28science%20OR%20animals%20OR%20space%20OR%20scientists%20OR%20discovery%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12080
+},
+{
+"url": "https://www.theguardian.com/world/asia-pacific/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 13650
+},
+{
+"url": "https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6863
+},
+{
+"url": "https://www.theguardian.com/us-news/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 25217
+},
+{
+"url": "https://cryptoslate.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3357
+},
+{
+"url": "https://www.france24.com/en/africa/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 11221
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Afortune.com%20%28bitcoin%20OR%20crypto%20OR%20stablecoin%20OR%20ethereum%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 22743
+},
+{
+"url": "https://qcostarica.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14818
+},
+{
+"url": "https://www.sciencedaily.com/rss/top/technology.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 12222
+},
+{
+"url": "https://www.nih.gov/news-releases/feed.xml",
+"via": "urlopen:simple",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 89476
+},
+{
+"url": "https://www.abc.net.au/news/feed/51120/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 10178
+},
+{
+"url": "https://www.canarymedia.com/rss.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20695
+},
+{
+"url": "https://grist.org/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 170107
+},
+{
+"url": "https://www.citizen.co.za/feed/",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 5603
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard?dates=20261118",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 65100
+},
+{
+"url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4959
+},
+{
+"url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3588
+},
+{
+"url": "https://www.elnuevodia.com/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 10545
+},
+{
+"url": "https://www.pbs.org/newshour/feeds/rss/politics",
+"via": "urlopen:full",
+"ok": true,
+"status": 202,
+"error": null,
+"bytes": 0
+},
+{
+"url": "https://www.popsci.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 242485
+},
+{
+"url": "https://feeds.bbci.co.uk/news/world/asia/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3324
+},
+{
+"url": "https://u.today/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14429
+},
+{
+"url": "https://www.standardmedia.co.ke/rss/headlines.php",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6669
+},
+{
+"url": "https://crhoy.com/sitemaps/sitemap-news.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 93012
+},
+{
+"url": "https://feeds.bloomberg.com/economics/news.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4304
+},
+{
+"url": "https://www.diariolibre.com/rss/portada.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 113698
+},
+{
+"url": "https://feeds.bbci.co.uk/mundo/america_latina/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7439
+},
+{
+"url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+"via": "urlopen:simple",
+"ok": true,
+"status": 202,
+"error": null,
+"bytes": 0
+},
+{
+"url": "https://www.rfi.fr/en/africa/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 10503
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups=80",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 1300658
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Alarepublica.net%20%28econom%C3%ADa%20OR%20d%C3%B3lar%20OR%20BCCR%20OR%20exportaciones%20OR%20inflaci%C3%B3n%20OR%20empresas%29&hl=es-419&gl=US&ceid=US:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 19206
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A3d+site%3Arepretel.com+%28premio+OR+%22primer+lugar%22+OR+rescatan+OR+donan+OR+voluntarios+OR+tortugas+OR+reforestaci%C3%B3n+OR+beca+OR+descubren+OR+inauguran+OR+r%C3%A9cord+OR+%22nueva+especie%22+OR+medalla+OR+ganan+OR+reconocimiento%29&hl=es-419&gl=CR&ceid=CR%3Aes-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 6359
+},
+{
+"url": "https://www.science.org/rss/news_current.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3131
+},
+{
+"url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7506
+},
+{
+"url": "https://www.sciencealert.com/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3176
+},
+{
+"url": "https://www.breakingbelizenews.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 11662
+},
+{
+"url": "https://news.google.com/rss/search?q=site:repretel.com+when:2d&hl=es-419&gl=CR&ceid=CR:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4065
+},
+{
+"url": "https://feeds.npr.org/1006/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3899
+},
+{
+"url": "https://www.ansa.it/english/news/english_nr_rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 60133
+},
+{
+"url": "https://www.infobae.com/arc/outboundfeeds/rss/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 234425
+},
+{
+"url": "https://www.abc.es/rss/2.0/portada/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 51854
+},
+{
+"url": "https://gatoencerrado.news/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20874
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Aexpansion.com%20%28bitcoin%20OR%20cripto%20OR%20criptomonedas%20OR%20stablecoin%29&hl=es-419&gl=US&ceid=US:es-419",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 41318
+},
+{
+"url": "https://www.rnz.co.nz/rss/pacific.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3134
+},
+{
+"url": "https://www.france24.com/es/am%C3%A9rica-latina/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 13365
+},
+{
+"url": "https://www.rfi.fr/es/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 9391
+},
+{
+"url": "https://www.positive.news/feed/",
+"via": "urlopen:simple",
+"ok": false,
+"status": 403,
+"error": "Forbidden",
+"bytes": 0
+},
+{
+"url": "https://www.theguardian.com/world/middleeast/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 16216
+},
+{
+"url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 36027
+},
+{
+"url": "https://www.ft.com/world?format=rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4105
+},
+{
+"url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100727362",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5146
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates=20261118",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 93059
+},
+{
+"url": "https://balkaninsight.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24581
+},
+{
+"url": "https://indianexpress.com/section/india/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 32088
+},
+{
+"url": "https://www.criptonoticias.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3151
+},
+{
+"url": "https://www.cbsnews.com/latest/rss/politics",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7431
+},
+{
+"url": "https://www.sciencenews.org/feed",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4729
+},
+{
+"url": "https://www.semana.com/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 196844
+},
+{
+"url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/mexico/portada",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 114602
+},
+{
+"url": "https://www.eldiario.es/rss/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 392218
+},
+{
+"url": "https://www.cbsnews.com/latest/rss/world",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 7635
+},
+{
+"url": "https://www.space.com/feeds/all",
+"via": "urlopen:full",
+"ok": false,
+"status": 500,
+"error": "Internal Server Error",
+"bytes": 0
+},
+{
+"url": "https://www.newscientist.com/feed/home/",
+"via": "urlopen:full",
+"ok": false,
+"status": 406,
+"error": "Not Acceptable",
+"bytes": 0
+},
+{
+"url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+"via": "urlopen:full",
+"ok": false,
+"status": 404,
+"error": "Not Found",
+"bytes": 0
+},
+{
+"url": "https://ethic.es/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 31369
+},
+{
+"url": "https://www.jpost.com/rss/rssfeedsfrontpage.aspx",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 42395
+},
+{
+"url": "https://www.jornada.com.mx/rss/edicion.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 18125
+},
+{
+"url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 284056
+},
+{
+"url": "https://es.mongabay.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 26615
+},
+{
+"url": "https://www.reddit.com/r/HumansBeingBros/top/.rss?t=day&limit=50",
+"via": "urlopen:simple",
+"ok": false,
+"status": 404,
+"error": "Not Found",
+"bytes": 0
+},
+{
+"url": "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 20647
+},
+{
+"url": "https://cointelegraph.com/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 8712
+},
+{
+"url": "https://www.theguardian.com/environment/conservation/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 16242
+},
+{
+"url": "https://www.crikey.com.au/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4042
+},
+{
+"url": "https://www.teletica.com/sitemaps/news/last-news",
+"via": "curl",
+"ok": true,
+"status": null,
+"error": null,
+"bytes": 4558
+},
+{
+"url": "https://www.divergentes.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 5881
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Anewscientist.com&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 14832
+},
+{
+"url": "https://www.economist.com/united-states/rss.xml",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 35881
+},
+{
+"url": "https://protos.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 22841
+},
+{
+"url": "https://www.diariobitcoin.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 69808
+},
+{
+"url": "https://www.elmundo.cr/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4080
+},
+{
+"url": "https://www.repretel.com/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4034
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A7d%20site%3Aapnews.com%20%28science%20OR%20scientists%20OR%20space%20OR%20NASA%20OR%20study%20OR%20researchers%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 24759
+},
+{
+"url": "https://www.europapress.es/rss/rss.aspx?ch=00066",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 3217
+},
+{
+"url": "https://feeds.bloomberg.com/politics/news.rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 4769
+},
+{
+"url": "https://news.google.com/rss/search?q=when%3A2d%20site%3Aaxios.com%20%28bitcoin%20OR%20crypto%20OR%20stablecoin%20OR%20ethereum%29&hl=en-US&gl=US&ceid=US:en",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 727
+},
+{
+"url": "https://www.theguardian.com/science/rss",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 19108
+},
+{
+"url": "https://republica.gt/feed/",
+"via": "urlopen:full",
+"ok": true,
+"status": 200,
+"error": null,
+"bytes": 51752
+}
+]
+}

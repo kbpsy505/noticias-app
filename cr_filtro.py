@@ -79,8 +79,17 @@ def judge(it, allow_agenda=False):
     """Devuelve (subtema, motivo_rechazo)."""
     t = A.fold(it["title"].lower())
     s = A.fold(it.get("summary", "")[:200].lower())
-    # Notas de agencias sobre otros países que publican medios ticos: fuera si no tienen ángulo tico.
-    if it.get("kind") != "inst" and not cr_angle(t + " " + s, it["title"] + " " + it.get("summary", "")[:200]):
+    # Arreglo 3: se invierte la carga. Una nota de un MEDIO TICO (o de un feed con región Costa Rica) se acepta
+    # salvo que sea claramente extranjera (nombra otro país y no Costa Rica). Antes se exigía nombrar Costa Rica,
+    # una provincia o una institución, y se perdían notas de cantones (Quepos, Pérez Zeledón, Sarapiquí…).
+    # Las instituciones (universidades) siguen pasando siempre; otras fuentes siguen pidiendo el ángulo tico.
+    angle = cr_angle(t + " " + s, it["title"] + " " + it.get("summary", "")[:200])
+    if it.get("kind") == "inst":
+        pass
+    elif it.get("kind") == "medio" or it.get("region") == "costarica":
+        if not angle and foreign(t + " " + s):
+            return None, "sin ángulo tico"
+    elif not angle:
         return None, "sin ángulo tico"
     if (SPORT.search(t) or D.is_sport(t)) and not POS["ciencia"].search(t) and "startup" not in t:
         if D.sport_win(t) and not NEG.search(t.replace("ganadores", "")):

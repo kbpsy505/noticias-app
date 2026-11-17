@@ -17,12 +17,13 @@
     <button type="button" class="tour-btn" id="tourBtn" aria-label="Ver tour de ayuda" title="Ver tour">?</button>
     <p class="kicker">Briefing de consenso</p>
     <h1>Noticias</h1>
-    <p class="intro">Noticias por tema, de Costa Rica y del mundo (en Mundo puedes filtrar por región: Centroamérica, Latinoamérica, Sudamérica, Europa, Asia, África y Oceanía). Solo aparecen las historias que publican al menos 3 medios distintos (en Buenas noticias basta 1 medio confiable). En Posibles noticias van, sin confirmar, las que publican 2 medios.</p>
+    <p class="intro">Seis secciones: Hoy, Costa Rica, Mundo, Dinero, Deportes y Avances. Solo aparecen las historias que publican al menos 3 medios distintos (en las buenas noticias basta 1 medio confiable; en Ciencias y en algunas regiones, 2 medios, y la tarjeta lo dice). Lo que publican 2 medios va, sin confirmar, en «En desarrollo» al final de cada sección.</p>
     <p class="schedule" id="schedule">Cargando la última actualización…</p>
+    <p class="fxline" id="fxline"></p>
     <section class="fx" id="fx" hidden aria-label="Tipo de cambio"></section>
   </header>
 
-  <nav class="tabs" id="tabs" aria-label="Categorías"></nav>
+  <nav class="tabs" id="tabs" aria-label="Secciones"></nav>
 
   <div class="langs" role="group" aria-label="Idioma del texto">
     <button type="button" class="lang on" data-lang="all">Ambos</button>
@@ -34,5 +35,6 @@
   <footer class="foot" id="foot"></footer>
   <script src="tour.js"></script>
   <script src="app.js"></script>
+  <script src="secciones.js"></script>
 </body>
 </html>

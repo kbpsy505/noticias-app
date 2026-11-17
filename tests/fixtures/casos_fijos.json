@@ -1,0 +1,1855 @@
+{
+ "_fuente": "noticias.json de main c620ea0 (2026-11-17 06:04 UTC), recortado a los casos fijos",
+ "updatedAt": "2026-11-17T06:04:22Z",
+ "categories": [
+  {
+   "id": "buenas",
+   "label": "Buenas noticias",
+   "stories": [
+    {
+     "headline": "Costarricense de Quepos obtiene beca Rhodes para investigar el cáncer en Oxford",
+     "headlineLang": "es",
+     "headlineEs": "Costarricense de Quepos obtiene beca Rhodes para investigar el cáncer en Oxford",
+     "headlineEn": null,
+     "summaryEsSource": null,
+     "summaryEnSource": null,
+     "subtopic": "comunidad",
+     "subtopicLabel": "Comunidad",
+     "outlets": 1,
+     "outletNames": [
+      "El Observador"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-11-16T22:05:00Z",
+     "lastSeen": "2026-11-16T22:05:00Z",
+     "sources": [
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Costarricense de Quepos obtiene beca Rhodes para investigar el cáncer en Oxford",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWVBXVXFyeVhaX3RLQlYxZnRwLW9PZzVIaTI3aU9SMHJNd0ZSQ0hPY3hiSlZsaTBJWl9aSDFmbTZPbzNrQk5PRkpGSTZuLXV6ZjFKaGZBVVg4dUZPcmI3bEJVSmhaOTg0ZWdBUjhNcEVFZHA5U2pXZ1BVTXZQOEIxMlpPTmM1QTIwMzBZUUtNSm43Wk8wQS1HYkgzbVZPMUdiak1kSA?oc=5",
+       "publishedAt": "2026-11-16T22:05:00Z"
+      }
+     ],
+     "alsoOnReddit": [],
+     "cr": true,
+     "id": "buenas-5",
+     "lastArticle": "2026-11-16T22:05:00Z",
+     "fresh": "nuevo",
+     "firstShown": "2026-11-17T06:04:22Z",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "id": "costarica",
+   "label": "Costa Rica",
+   "stories": [
+    {
+     "headline": "Asesinan al periodista Camilo Rodríguez",
+     "headlineLang": "es",
+     "headlineEs": "Asesinan al periodista Camilo Rodríguez",
+     "headlineEn": "Journalist Camilo Rodríguez shot to death",
+     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEnSource": "Q Costa Rica",
+     "outlets": 26,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "AM Prensa",
+      "AmeliaRueda.com",
+      "CRHoy",
+      "Confidencial (Nicaragua)",
+      "Delfino",
+      "Diario Extra",
+      "El Comercio (Perú)",
+      "El Financiero (Costa Rica)",
+      "El Observador",
+      "Europa Press",
+      "France 24",
+      "Infobae",
+      "La Nación (Argentina)",
+      "La Nación (Costa Rica)",
+      "La República (CR)",
+      "La Teja",
+      "Le Monde",
+      "Monumental",
+      "Prensa Libre",
+      "Proceso Digital (Honduras)",
+      "Q Costa Rica",
+      "Repretel (Noticias Repretel)",
+      "Semanario Universidad",
+      "Teletica (Telenoticias)",
+      "The Jerusalem Post",
+      "The Tico Times",
+      "Trivisión"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-11-16T15:58:23Z",
+     "lastSeen": "2026-11-17T06:00:00Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez en Santo Domingo de Heredia",
+       "url": "https://crhoy.com/nacionales/asesinan-al-periodista-camilo-rodriguez-en-santo-domingo-de-heredia/",
+       "publishedAt": "2026-11-16T15:58:23Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "¿Quién era el periodista Camilo Rodríguez, asesinado esta tarde?",
+       "url": "https://crhoy.com/nacionales/quien-era-el-periodista-camilo-rodriguez-asesinado-esta-tarde/",
+       "publishedAt": "2026-11-16T16:30:58Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Camilo Rodríguez fue asesinado a 300 metros del sitio donde mataron a Parmenio Medina",
+       "url": "https://crhoy.com/nacionales/camilo-rodriguez-fue-asesinado-a-300-metros-del-sitio-donde-mataron-a-parmenio-medina/",
+       "publishedAt": "2026-11-16T17:19:40Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Sección de Homicidios de San José del OIJ investigará el asesinato de Camilo Rodríguez",
+       "url": "https://crhoy.com/nacionales/seccion-de-homicidios-de-san-jose-del-oij-investigara-el-asesinato-de-camilo-rodriguez/",
+       "publishedAt": "2026-11-16T17:36:53Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Camilo Rodríguez interpuso 10 denuncias por amenazas en su contra en los últimos meses",
+       "url": "https://crhoy.com/nacionales/camilo-rodriguez-interpuso-10-denuncias-por-amenazas-en-su-contra-en-los-ultimos-meses/",
+       "publishedAt": "2026-11-16T17:56:08Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Sicarios se aseguraron de matar a Camilo Rodríguez, detalla el OIJ",
+       "url": "https://crhoy.com/nacionales/sicarios-se-aseguraron-de-matar-a-camilo-rodriguez-detalla-el-oij/",
+       "publishedAt": "2026-11-16T18:10:33Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Obispos condenan asesinato de Camilo Rodríguez y defienden libertad de prensa",
+       "url": "https://crhoy.com/nacionales/obispos-condenan-asesinato-de-camilo-rodriguez-y-defienden-libertad-de-prensa/",
+       "publishedAt": "2026-11-16T21:07:57Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez",
+       "url": "https://www.lateja.cr/sucesos/asesinan-al-periodista-camilo-rodriguez/27DEAEDC65HTLIC3V3COE2AMZM/story/",
+       "publishedAt": "2026-11-16T21:57:26Z"
+      },
+      {
+       "source": "Repretel (Noticias Repretel)",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9RdGdkbUlfUWRvSkZNazhPOTRUa2RhTTMtNE1MeWZxNUxDS3lXb3hjYU8zNzVtbzJucEpQdVBXQXdva3UtRzdHdl9SV2VuajZlcGY1Q3pGWHh0M1loVVVXanFUVk9aMFBKVFhzTzhzMmtMMmV5b2dfdDdsUDFvUQ?oc=5",
+       "publishedAt": "2026-11-16T21:57:50Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Asesinan a periodista Camilo Rodríguez en ataque a balazos",
+       "url": "https://www.amprensa.com/2026/11/asesinan-periodista-camilo-rodriguez-ataque-balazos",
+       "publishedAt": "2026-11-16T22:03:05Z"
+      },
+      {
+       "source": "El Financiero (Costa Rica)",
+       "lang": "es",
+       "title": "Muere asesinado el periodista Camilo Rodríguez",
+       "url": "https://www.elfinancierocr.com/economia-y-politica/muere-asesinado-el-periodista-camilo-rodriguez/WC4JIGGJMBDFPGQEBMKS5CRUPU/story/",
+       "publishedAt": "2026-11-16T22:08:48Z"
+      },
+      {
+       "source": "AmeliaRueda.com",
+       "lang": "es",
+       "title": "Asesinan a balazos al periodista Camilo Rodríguez - AmeliaRueda.com - Noticias de Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdWpZbTBsV0hGQ241X0J0ZUpnSGlwOEpRRl9MTW5vV2p4eG5tOGNtell1Q0lNZ1FJb2o3UWJhc0lGeDRKeEhoVldYM1FGOFBaa1ZHZm9IVkFTMXZYLS1ub2l3eHhYX3ZhdU1NeXdlcUFQdnpqVWZSMTlGSXR6QWFmN0dSa21obk9ycmVScWlCcWs5bzVTaER3TkM0R2I?oc=5",
+       "publishedAt": "2026-11-16T22:12:07Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Video | Asesinan a balazos al periodista Camilo Rodríguez en la ruta 32",
+       "url": "https://observador.cr/asesinan-al-periodista-camilo-rodriguez-en-la-ruta-32/",
+       "publishedAt": "2026-11-16T22:13:48Z"
+      },
+      {
+       "source": "Monumental",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez en su vehículo sobre la Ruta 32",
+       "url": "https://www.monumental.co.cr/2026/11/16/asesinan-al-periodista-camilo-rodriguez-en-su-vehiculo-sobre-la-ruta-32/",
+       "publishedAt": "2026-11-16T22:17:54Z"
+      },
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Periodista Camilo Rodríguez fue asesinado en Santo Domingo de Heredia",
+       "url": "https://delfino.cr/2026/11/periodista-camilo-rodriguez-fue-asesinado-en-santo-domingo-de-heredia",
+       "publishedAt": "2026-11-16T22:19:20Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Periodista Camilo Rodríguez fue asesinado este lunes en la ruta 32",
+       "url": "https://www.nacion.com/sucesos/periodista-camilo-rodriguez-fue-asesinado-este/ZYZXOILSZBELNPJ2WSXGM4TMXA/story/",
+       "publishedAt": "2026-11-16T22:24:26Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Esto narran los vecinos de la comunidad donde asesinaron a Camilo Rodríguez",
+       "url": "https://www.lateja.cr/sucesos/esto-narran-los-vecinos-de-la-comunidad-donde/XS4REZBM3VHJXO3CPRGI32422U/story/",
+       "publishedAt": "2026-11-16T22:29:17Z"
+      },
+      {
+       "source": "Trivisión",
+       "lang": "es",
+       "title": "Asesinan a balazos al periodista Camilo Rodríguez",
+       "url": "https://trivisioncr.com/sucesos/asesinan-a-balazos-al-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-16T22:36:03Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Asesinan a balazos al periodista costarricense Camilo Rodríguez, conocido por sus denuncias contra el narcotráfico",
+       "url": "https://www.infobae.com/costa-rica/2026/11/16/asesinan-a-balazos-al-periodista-costarricense-camilo-rodriguez-conocido-por-sus-denuncias-contra-el-narcotrafico/",
+       "publishedAt": "2026-11-16T22:38:39Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Asesinato de Camilo Rodríguez ocurrió a escasos metros del sitio donde mataron al periodista Parmenio Medina",
+       "url": "https://www.amprensa.com/2026/11/asesinato-camilo-rodriguez-ocurrio-escasos-metros-sitio",
+       "publishedAt": "2026-11-16T22:51:10Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Asesinato de Camilo Rodríguez revive homicidio de Parmenio Medina: a ambos los mataron casi en el mismo lugar",
+       "url": "https://www.lateja.cr/sucesos/asesinato-de-camilo-rodriguez-revive-homicidio-de/7AR7KD3SKZDOTCPMHLOIKF6GEA/story/",
+       "publishedAt": "2026-11-16T22:52:40Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Camilo Rodríguez fue asesinado a menos de 50 metros del lugar donde mataron a Parmenio Medina",
+       "url": "https://www.nacion.com/sucesos/camilo-rodriguez-fue-asesinado-a-menos-de-50/VIZ5R7POTBCLLNM6QYXEXUKGYI/story/",
+       "publishedAt": "2026-11-16T22:58:42Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Atención conductores: ruta 32 cerrada a la altura de San Miguel de Santo Domingo tras asesinato de Camilo Rodríguez",
+       "url": "https://www.nacion.com/sucesos/atencion-conductores-ruta-32-cerrada-a-la-altura/FH5FNMOBNBGUXC2DQ5Q5QMSZXE/story/",
+       "publishedAt": "2026-11-16T23:01:24Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Camilo Rodríguez rehusó acogerse al programa de protección de víctimas y testigos, afirma Carlo Díaz",
+       "url": "https://www.nacion.com/sucesos/camilo-rodriguez-rehuso-acogerse-al-programa-de/427N6KNVDJFCRBDXPOUCAZHCWY/story/",
+       "publishedAt": "2026-11-16T23:03:17Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Fiscalía investigará denuncias de Camilo Rodríguez para esclarecer su muerte, confirma fiscal",
+       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVlBWMTdrYW9JYTJ0Z3l4UWY0WldXb1hfY3NrWkhvWURhWWJ2RHV4MC0tUk9EbnNJY3o1d1RxS21faWJ0TVg1UktoSHVzU1JUWG9vYlIwS24wTm12ckFQcWJKSlFnLXRJQkRma0QyWVkzeTFLWllQanNxYTYyWi1sUXoxZzVrWVZQd3pWUE9RZEVaeTg5SFR5V3ZnV1I1RlhtaVRaa0FKS3otU1FfeTNDZjFRZEczeTVpVjdqLWZXUVB6Q1JVRHdkV3Z0bW8?oc=5",
+       "publishedAt": "2026-11-16T23:03:45Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Asesinan en Costa Rica a un periodista que denunciaba casos de narcotráfico",
+       "url": "https://www.abc.com.py/internacionales/2026/11/16/asesinan-en-costa-rica-a-un-periodista-que-denunciaba-casos-de-narcotrafico/",
+       "publishedAt": "2026-11-16T23:10:13Z"
+      },
+      {
+       "source": "AmeliaRueda.com",
+       "lang": "es",
+       "title": "Asesinato de Camilo Rodríguez ocurrió a pocos metros del sitio donde mataron a Parmenio Medina en 2001 - AmeliaRueda.com - Noticias de Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbGZqRTNZWmsya0RUdUxDN2QtcUtzdTNRcUZObVJmMGVfQ29FTHJobHdMZGpsUkVoR1ZqZDRCX0hPbV80Yjl0bnFkQU5XdWlER0JnSWtIWDhvZVVtRnE1OXNRdGFadTZMNW9vazl2WmlVbXdRck1ZNGQyMDFZamlGeGZTdXZsdmVzNzc5UGl2bkxQaXU5cGJINTg2Zk9TQ1BQWVZYcXFPRmhEVWJPMUpqSlUyOUN5MEZpekVndW9wS0c1LUFTT2h6NllEXzN0MEs2LU5yZWJRZzVDU0pnWUhn?oc=5",
+       "publishedAt": "2026-11-16T23:12:19Z"
+      },
+      {
+       "source": "Semanario Universidad",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez en Santo Domingo de Heredia",
+       "url": "https://semanariouniversidad.com/pais/asesinan-al-periodista-camilo-rodiguez-en-santo-domingo-de-heredia/",
+       "publishedAt": "2026-11-16T23:12:46Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Asesinan en Costa Rica a un periodista que denunciaba casos de narcotráfico",
+       "url": "https://proceso.hn/asesinan-en-costa-rica-a-un-periodista-que-denunciaba-casos-de-narcotrafico/",
+       "publishedAt": "2026-11-16T23:15:44Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Carlo Díaz: Fiscalía investigará denuncias de Camilo Rodríguez para esclarecer su muerte",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTHh5X2tMakFFNDZvQTYyX2RldGF2OXNLbHI4MFFZUkxmMlQ1ZnZkak9oQllYOGFqMG9XWVdaTEJYT2FDOTNIWEd6OFk1QW82U25PX2Z1VG1zVUJzZ1p1QzlPRnhmczlSWGNUWnFIUmgwNFB3bTBnN3VkYXpwUktpeVUzS2NvdUM0dGlUQzU1STZtSWF2dVh0d0Nla0YyS1NlOW1FM0Rxenk5bDd5YkJYeTd6R3d0UEdLREtDYjNiaTctWGVXbUE?oc=5",
+       "publishedAt": "2026-11-16T23:17:59Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Presidenta condena homicidio de Camilo Rodríguez y da una orden a todos los policías para esclarecer el crimen",
+       "url": "https://www.amprensa.com/2026/11/presidenta-condena-homicidio-camilo-rodriguez-da-orden-todos",
+       "publishedAt": "2026-11-16T23:24:43Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "OIJ da primeros detalles sobre los homicidas de Camilo Rodríguez",
+       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNjA0MWs2VXdBY0EwY0VxWXdxVUNYRzVWTzRHQkFwOU9HUmpHYUc2MDR3a1pDZk51LWxuQmlXa1lEb0ZMUGNJblVyNnN6SFZJenVoY0lpTkJXdzE0ZDVDcEFNcldaM180WWJsdHVXSlVJWFRZRldkemZwamJHWDhnZXNXbi1EeWpETk9xWkpHOXRTMzc5SXBJWTR1YVNWcnNKNzFpbDgyN20?oc=5",
+       "publishedAt": "2026-11-16T23:33:30Z"
+      },
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Laura Fernández condena asesinato de Camilo Rodríguez y ordena apoyo policial a la investigación",
+       "url": "https://delfino.cr/2026/11/laura-fernandez-condena-asesinato-de-camilo-rodriguez-y-ordena-apoyo-policial-a-la-investigacion",
+       "publishedAt": "2026-11-16T23:36:16Z"
+      },
+      {
+       "source": "Confidencial (Nicaragua)",
+       "lang": "es",
+       "title": "Asesinan en Costa Rica a un periodista que denunciaba casos de narcotráfico",
+       "url": "https://confidencial.digital/mundo/asesinan-en-costa-rica-a-un-periodista-que-denunciaba-casos-de-narcotrafico/",
+       "publishedAt": "2026-11-16T23:37:28Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Laura Fernández se pronuncia sobre asesinato del periodista Camilo Rodríguez",
+       "url": "https://www.nacion.com/politica/laura-fernandez-se-pronuncia-sobre-asesinato-del/OGAQ5PBVFJEOBESVAOJO4VMIBE/story/",
+       "publishedAt": "2026-11-16T23:38:42Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Esta es la reacción de la presidenta Laura Fernández por el asesinato de Camilo Rodríguez",
+       "url": "https://www.lateja.cr/nacional/esta-es-la-reaccion-de-la-presidenta-laura/TCPWA6UFPBC4ZB5XBJL4LEO3RY/story/",
+       "publishedAt": "2026-11-16T23:40:19Z"
+      },
+      {
+       "source": "AmeliaRueda.com",
+       "lang": "es",
+       "title": "Presidenta Fernández condena asesinato de Camilo Rodríguez: “Lo que hoy ocurrió en nuestro país es una mancha contra la libertad de expresión” - AmeliaRueda.com - Noticias de Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcDNTZkRfRlRBSU12UmtqOHZNTTM1SDdvcHUyMk1wXy1QeWhyOHduc0ZwTkwxWFRhLW1XRjVKZ2NHVVNGVGJ6d2xKRF9tbnk2RGlPUDBWUEhnUXFhRFd0MWgwdUdzdVY5TWYybDgyNnZIdWl0Y3J5ZFpFWFVOWHpoaHdpLXlMMjd1MVlCT0Fjc2NzdG9xZEMtQ3BTYURual9oSGhuc0NoZFN0Qko2aUNKNWFDMA?oc=5",
+       "publishedAt": "2026-11-16T23:42:09Z"
+      },
+      {
+       "source": "The Tico Times",
+       "lang": "en",
+       "title": "Gunmen Kill Costa Rican Journalist Camilo Rodríguez on Route 32 in Heredia",
+       "url": "https://ticotimes.net/2026/11/16/journalist-camilo-rodriguez-killed-route-32-heredia",
+       "publishedAt": "2026-11-16T23:50:34Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Laura Fernández condena asesinato del periodista Camilo Rodríguez y ordena colaboración policial para esclarecer el crimen",
+       "url": "https://www.infobae.com/costa-rica/2026/11/17/laura-fernandez-condena-asesinato-del-periodista-camilo-rodriguez-y-ordena-colaboracion-policial-para-esclarecer-el-crimen/",
+       "publishedAt": "2026-11-17T00:00:02Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Colegio de Periodistas e Iplex exigen investigar a fondo el asesinato de Camilo Rodríguez",
+       "url": "https://www.nacion.com/sucesos/colegio-de-periodistas-e-iplex-exigen-investigar-a/O65X7XXLNRDYXMQASY67V5UX7Q/story/",
+       "publishedAt": "2026-11-17T00:06:11Z"
+      },
+      {
+       "source": "AmeliaRueda.com",
+       "lang": "es",
+       "title": "Al menos 10 denuncias por amenazas contra su integridad había interpuesto periodista Camilo Rodríguez en los últimos dos años - AmeliaRueda.com - Noticias de Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVG96dk9UYzVTRFdoanczREhRNXlIV3VZeU0zUW52OHlYSGtBYmwwUkZEY0ZURUVWTkpUMEtUMjJMOFRoWXl3M1FPNHAyX0JEUVZaeWZhWHloZTV5Vl9HY2VTTUd3M19lNm9Lc3I1cnp1S0ZwWm04SXJZY3AyZVJkaDVaUkJIWnR6N3pHZE9EM1h2UkllekhpRTF4SmtmdjFUbzZScUdka0hMWVMzdWdiOWRB?oc=5",
+       "publishedAt": "2026-11-17T00:07:27Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Presidenta de Costa Rica repudia el \"cobarde asesinato\" del periodista Camilo Rodríguez",
+       "url": "https://www.abc.com.py/internacionales/2026/11/16/presidenta-de-costa-rica-repudia-el-cobarde-asesinato-del-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T00:15:08Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Gatilleros que asesinaron a Camilo Rodríguez viajaban en motocicleta blanca, afirma OIJ",
+       "url": "https://www.nacion.com/sucesos/gatilleros-que-asesinaron-a-camilo-rodriguez/SVGHP5WFF5GGJEE2B5M52ZQQXY/story/",
+       "publishedAt": "2026-11-17T00:16:42Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Así luce la escena donde asesinaron al periodista Camilo Rodríguez",
+       "url": "https://www.amprensa.com/2026/11/luce-escena-donde-asesinaron-periodista-camilo-rodriguez",
+       "publishedAt": "2026-11-17T00:20:36Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Presidenta de Costa Rica repudia el «cobarde asesinato» del periodista Camilo Rodríguez",
+       "url": "https://proceso.hn/presidenta-de-costa-rica-repudia-el-cobarde-asesinato-del-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T00:28:37Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Costa Rica: Asesinan a periodista que denunciaba el crimen organizado",
+       "url": "https://elcomercio.pe/mundo/centroamerica/camili-rodriguez-costa-rica-asesinan-a-periodista-que-denunciaba-el-crimen-organizado-santo-domingo-de-heredia-san-jose-ultimas-noticia/",
+       "publishedAt": "2026-11-17T01:02:22Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Gremio periodístico exige esclarecer el homicidio de Camilo Rodríguez",
+       "url": "https://www.lateja.cr/nacional/gremio-periodistico-exige-esclarecer-el-homicidio/TB2U2UVEBFFIRCMZN52B6YHBNU/story/",
+       "publishedAt": "2026-11-17T01:03:06Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Parmenio Medina y Camilo Rodríguez: las coincidencias y diferencias entre dos crímenes separados por 25 años",
+       "url": "https://observador.cr/parmenio-medina-y-camilo-rodriguez-las-coincidencias-y-diferencias-entre-dos-crimenes-separados-por-25-anos/",
+       "publishedAt": "2026-11-17T01:05:14Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "OIJ inicia el proceso de levantamiento del cuerpo del periodista Camilo Rodríguez, asesinado en la ruta 32",
+       "url": "https://www.nacion.com/sucesos/oij-realiza-el-levantamiento-del-cuerpo-del/VZHTKVJPBJECNCCVDZBTWBZGOE/story/",
+       "publishedAt": "2026-11-17T01:17:32Z"
+      },
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Congresistas condenan asesinato de Camilo Rodríguez y piden esclarecer móvil del crimen",
+       "url": "https://delfino.cr/2026/11/congresistas-condenan-asesinato-de-camilo-rodriguez-y-piden-esclarecer-movil-del-crimen",
+       "publishedAt": "2026-11-17T01:21:35Z"
+      },
+      {
+       "source": "Q Costa Rica",
+       "lang": "en",
+       "title": "Journalist Camilo Rodríguez shot to death",
+       "url": "https://qcostarica.com/journalist-camilo-rodriguez-shot-to-death/",
+       "publishedAt": "2026-11-17T01:25:15Z"
+      },
+      {
+       "source": "Prensa Libre",
+       "lang": "es",
+       "title": "Periodista asesinado en Costa Rica: las amenazas que había recibido por denunciar al narcotráfico",
+       "url": "https://www.prensalibre.com/internacional/periodista-asesinado-en-costa-rica-las-amenazas-que-habia-recibido-por-denunciar-al-narcotrafico/",
+       "publishedAt": "2026-11-17T01:27:19Z"
+      },
+      {
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "Asesinan a un periodista que denunciaba casos relacionados con el narcotráfico en Costa Rica",
+       "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261117-asesinan-a-un-periodista-que-denunciaba-casos-relacionados-con-el-narcotr%C3%A1fico-en-costa-rica",
+       "publishedAt": "2026-11-17T01:48:31Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "El gremio periodístico exige investigación tras asesinato de comunicador en Costa Rica",
+       "url": "https://www.abc.com.py/internacionales/2026/11/16/el-gremio-periodistico-exige-investigacion-tras-asesinato-de-comunicador-en-costa-rica/",
+       "publishedAt": "2026-11-17T01:55:11Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Video | Laura Fernández condenó el asesinato de periodista Camilo Rodríguez",
+       "url": "https://observador.cr/video-laura-fernandez-condeno-el-asesinato-de-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T01:57:30Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Camilo Rodríguez, el tercer periodista en ser silenciado a tiros en Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORE9vcXpPTHpaMXB5OFlGTmJBZ2RDMFg1WHNsdHc3bFc3VVp5eEo4Q2dZOU52cmtvQkUzamh4TGxiUGRLQkxQc1FJV09VM0Z4cG9wNnp3YUJ4R2N0cWczU3VjZmRwRmVMal9EcEl5Q1lfYWRVdWkzcFhEMnNvTXBqeDhURzI3QkZNMGlpd0NybzRiRDRhVGhPai1VNzdhRGFSbWZWUFRlcUpQM2M1ZEd0SG4td0F5azZX?oc=5",
+       "publishedAt": "2026-11-17T02:24:57Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Periodista Camilo Rodríguez asesinado a tiros",
+       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVWZYRlZaYXFnbjlzcEt2clNkZjlxTE5ObGxEWHdWZjkwMm03V24xTmxSdFBfT0RDdVVTNW9IaEI2YmtNTkZsT2E4bU5RU0JFaXF5ZjhhVFFFNnhVeXdVd1pPekhqNG9PaVpLQVQ5a3I5d192eUxjQjlESHRXY0hQOEFtRUR5d0ZuQUI3S0xR?oc=5",
+       "publishedAt": "2026-11-17T02:39:34Z"
+      },
+      {
+       "source": "La República (CR)",
+       "lang": "es",
+       "title": "“Es una acción contra la libertad de expresión y contra la libertad de prensa”, advierte Abril Gordienko tras asesinato de Camilo Rodríguez",
+       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR0NBUVN6SlRweHJjalg5T3pxTlBJeC04UzRIQlM3MTQxOWxOdm1VTXF1QW1MWGo3cHVzbjMyYzB1SE5HQjVmcWE1bHFKZ29zeG9jNm56SVhZYUJIVm5ER2VLTE5BdVBWTEllVGZ5TDNkVWdieGV3b2Z1Nkt5R1AtVnpyZnJ4Zw?oc=5",
+       "publishedAt": "2026-11-17T03:16:02Z"
+      },
+      {
+       "source": "La República (CR)",
+       "lang": "es",
+       "title": "Carlo Díaz sobre asesinato de Camilo: “Es una señal fuerte de que no tenemos libertad de expresión”",
+       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOb0ljbW1nbmUwLS05dF9RTWV4cjJrNDU2SzlmckVZRUNrWUpMYlFoXzlkVkF4U3dJUW50dFlid2RPQlluSm5OcXpYQmtOY2ktLW1FcXF1WWRVQTZhYUNKRlNCWG5Eb3o3bG1LVDhoOGJTZlA4d19FTjdocUFjRlFoeWNKa2lwbloxZjRIa0ZnQjM4dDgycE9reGE2ck81QmExeUZHdTlwUG9yeEhPRkpCelA5Uk5iMTRseThsLVhEY2NfRkk?oc=5",
+       "publishedAt": "2026-11-17T03:16:02Z"
+      },
+      {
+       "source": "La República (CR)",
+       "lang": "es",
+       "title": "Laura Fernández sobre asesinato de Camilo Rodríguez: “Es una mancha contra la libertad de expresión”",
+       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFVqdHdic1Q1Z3RPR3ZoTlRmVlVTTEQ5Y3RuX3JRX2JBZHRNNy1NZ25ubjRGUzYwYU0zU2diT2M2eWQ3Q0w4ZkVGOVAwYUFJYnpfaEprV1llR2FUTHI2aXR1TWxRanJwTzg5czYzTmE0cmVENktGWWZfdlVCSW9vcjVkRUh6a1l0VE1KRi1LLUxrXzRpX3NoT3RDLWNGQWJjT1h0dkZETWV5MGJjdXdLUFY3T3B4aENPNGZuaHd4Zm5DYTdj?oc=5",
+       "publishedAt": "2026-11-17T03:30:57Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "OIJ levanta el cuerpo de Camilo Rodríguez tras varias horas de trabajo en la escena",
+       "url": "https://www.lateja.cr/sucesos/oij-levanta-el-cuerpo-de-camilo-rodriguez-tras/NQZJOFNGCZGATDAO3IOR4WUWFM/story/",
+       "publishedAt": "2026-11-17T03:34:52Z"
+      },
+      {
+       "source": "Semanario Universidad",
+       "lang": "es",
+       "title": "Escuela de Comunicación de UCR, Proledi e Iplex condenan asesinato de periodista Camilo Rodríguez",
+       "url": "https://semanariouniversidad.com/pais/escuela-de-comunicacion-de-ucr-proledi-e-iplex-condenan-asesinato-de-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T03:43:14Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Iglesia católica lamenta asesinato de Camilo Rodríguez y advierte sobre la violencia contra la libertad de prensa en Costa Rica",
+       "url": "https://www.nacion.com/sucesos/iglesia-catolica-lamenta-asesinato-de-camilo/KXX4TVVPQNCZ3M6EGAR55IK524/story/",
+       "publishedAt": "2026-11-17T03:50:51Z"
+      },
+      {
+       "source": "Europa Press",
+       "lang": "es",
+       "title": "Asesinado a tiros el periodista costarricense Camilo Rodríguez en una carretera al norte de San José",
+       "url": "https://www.europapress.es/internacional/noticia-asesinado-tiros-periodista-costarricense-camilo-rodriguez-carretera-norte-san-jose-20261117045334.html",
+       "publishedAt": "2026-11-17T03:53:34Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Asesinato del periodista Camilo Rodríguez en Costa Rica enciende las alarmas por la libertad de prensa: exigen esclarecer el crimen",
+       "url": "https://www.infobae.com/costa-rica/2026/11/17/asesinato-del-periodista-camilo-rodriguez-en-costa-rica-enciende-las-alarmas-por-la-libertad-de-prensa-exigen-esclarecer-el-crimen/",
+       "publishedAt": "2026-11-17T03:55:40Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "OIJ custodia vivienda del periodista Camilo Rodríguez en Santo Domingo de Heredia",
+       "url": "https://www.nacion.com/sucesos/oij-custodia-vivienda-del-periodista-camilo/PGJL5JVPSVGBZBO4JU37ZH4KUQ/story/",
+       "publishedAt": "2026-11-17T04:07:32Z"
+      },
+      {
+       "source": "The Jerusalem Post",
+       "lang": "en",
+       "title": "Costa Rican journalist shot dead in first such killing in 25 years",
+       "url": "https://www.jpost.com/international/article-915113",
+       "publishedAt": "2026-11-17T04:24:35Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Allanan apartamento de Camilo Rodríguez en busca de evidencias",
+       "url": "https://www.diarioextra.com/noticia/allanan-apartamento-de-camilo-rodriguez-en-busca-de-evidencias/",
+       "publishedAt": "2026-11-17T04:26:58Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "OIJ y Fiscalía revisan apartamento de Camilo Rodríguez en busca de evidencias",
+       "url": "https://www.lateja.cr/sucesos/oij-y-fiscalia-revisan-apartamento-de-camilo/GN5OMWJTZRE2RCVFUWWGGFHCTY/story/",
+       "publishedAt": "2026-11-17T04:29:20Z"
+      },
+      {
+       "source": "Le Monde",
+       "lang": "en",
+       "title": "Costa Rican journalist gunned down near capital",
+       "url": "https://www.lemonde.fr/en/international/article/2026/11/17/costa-rican-journalist-gunned-down-near-capital_6782668_4.html",
+       "publishedAt": "2026-11-17T04:33:08Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Video capta el momento en que asesinaron a balazos al periodista Camilo Rodríguez",
+       "url": "https://www.nacion.com/sucesos/video-capto-el-momento-en-que-asesinaron-a-balazos/IC77HK3UFZHQBMTWWJFUOXBMMI/story/",
+       "publishedAt": "2026-11-17T04:38:29Z"
+      },
+      {
+       "source": "La Nación (Argentina)",
+       "lang": "es",
+       "title": "Asesinaron en Costa Rica a un periodista que denunciaba actividades del narcotráfico",
+       "url": "https://www.lanacion.com.ar/el-mundo/asesinaron-en-costa-rica-a-un-periodista-que-denunciaba-actividades-del-narcotrafico-nid17112026/",
+       "publishedAt": "2026-11-17T05:06:41Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Gatilleros asesinan al periodista Camilo Rodríguez",
+       "url": "https://www.diarioextra.com/noticia/periodista-camilo-rodriguez-asesinado-por-gatilleros/",
+       "publishedAt": "2026-11-17T06:00:00Z"
+      }
+     ],
+     "region": "costarica",
+     "topic": "sucesos",
+     "id": "costarica-1",
+     "lastArticle": "2026-11-17T06:00:00Z",
+     "fresh": "sigue",
+     "firstShown": "2026-11-17T00:23:44Z",
+     "stale": false,
+     "narrKind": "extracto",
+     "narrEs": "Según AM Prensa, la mandataria calificó el homicidio como una “mancha contra la libertad de expresión” e instruyó a los cuerpos policiales a colaborar con la investigación para identificar a los responsables. De acuerdo con El Financiero (Costa Rica), el periodista Camilo Rodríguez Chaverri fue asesinado la tarde de este lunes 16 de noviembre. Según Infobae, el comunicador fue atacado mientras viajaba en su vehículo por Santo Domingo de Heredia. De acuerdo con ABC Color (Paraguay), el Organismo de Investigación Judicial (OIJ) informó que el caso se encuentra en investigación para tratar de dar con los responsables del crimen.",
+     "narrNEs": 4,
+     "narrEn": "The Tico Times reports: Journalist Camilo Rodríguez was shot dead on Route 32 in Heredia. Le Monde reports: Camilo Rodriguez, an independent journalist who had linked drug traffickers to politicians, was killed outside the capital as Costa Rica struggles with a surge in organized crime. The Tico Times reports: Prosecutors are examining earlier death threats in the third killing of a journalist in Costa Rica.",
+     "narrNEn": 2
+    },
+    {
+     "headline": "Laura Chinchilla lamenta asesinato de Camilo Rodríguez",
+     "headlineLang": "es",
+     "headlineEs": "Laura Chinchilla lamenta asesinato de Camilo Rodríguez",
+     "headlineEn": null,
+     "summaryEsSource": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "CRHoy",
+      "Diario Extra",
+      "El Mundo CR"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-11-16T18:22:24Z",
+     "lastSeen": "2026-11-17T06:00:00Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Laura Chinchilla lamenta asesinato de Camilo Rodríguez",
+       "url": "https://crhoy.com/nacionales/laura-chinchilla-lamenta-asesinato-de-camilo-rodriguez-es-hora-de-frenar-la-violencia/",
+       "publishedAt": "2026-11-16T18:22:24Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "Laura Chinchilla: Es hora de frenar la violencia que está erosionando como nunca antes la paz en Costa Rica",
+       "url": "https://elmundo.cr/costa-rica/laura-chinchilla-es-hora-de-frenar-la-violencia-que-esta-erosionando-como-nunca-antes-la-paz-en-costa-rica/",
+       "publishedAt": "2026-11-16T23:57:52Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Figuras públicas y periodistas lamentan asesinato de Camilo Rodríguez",
+       "url": "https://www.diarioextra.com/noticia/figuras-publicas-y-periodistas-lamentan-asesinato-de-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T06:00:00Z"
+      }
+     ],
+     "region": "costarica",
+     "topic": "sucesos",
+     "id": "costarica-8",
+     "lastArticle": "2026-11-17T06:00:00Z",
+     "fresh": "nuevo",
+     "firstShown": "2026-11-17T06:04:22Z",
+     "stale": false
+    },
+    {
+     "headline": "Colper exige investigar “con celeridad” el asesinato del periodista Camilo Rodríguez",
+     "headlineLang": "es",
+     "headlineEs": "Colper exige investigar “con celeridad” el asesinato del periodista Camilo Rodríguez",
+     "headlineEn": null,
+     "summaryEsSource": "Delfino",
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "Delfino",
+      "El Mundo CR",
+      "Semanario Universidad"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-11-16T23:35:30Z",
+     "lastSeen": "2026-11-17T02:24:37Z",
+     "sources": [
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Colegio de Periodistas exige investigar con celeridad el asesinato de Camilo Rodríguez",
+       "url": "https://delfino.cr/2026/11/colegio-de-periodistas-exige-investigar-con-celeridad-el-asesinato-de-camilo-rodriguez",
+       "publishedAt": "2026-11-16T23:35:30Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "Colper exige investigar “con celeridad” el asesinato del periodista Camilo Rodríguez",
+       "url": "https://elmundo.cr/costa-rica/colper-exige-investigar-con-celeridad-el-asesinato-del-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T00:06:31Z"
+      },
+      {
+       "source": "Semanario Universidad",
+       "lang": "es",
+       "title": "Colper exige investigación exhaustiva tras asesinato del periodista Camilo Rodríguez",
+       "url": "https://semanariouniversidad.com/pais/colper-exige-investigacion-exhaustiva-tras-asesinato-del-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T02:24:37Z"
+      }
+     ],
+     "region": "costarica",
+     "topic": "sucesos",
+     "id": "costarica-10",
+     "lastArticle": "2026-11-17T02:24:37Z",
+     "fresh": "sigue",
+     "firstShown": "2026-11-17T00:23:44Z",
+     "stale": false
+    },
+    {
+     "headline": "Cámara de empresarios también condena asesinato de Camilo Rodríguez",
+     "headlineLang": "es",
+     "headlineEs": "Cámara de empresarios también condena asesinato de Camilo Rodríguez",
+     "headlineEn": null,
+     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "CRHoy",
+      "La Nación (Costa Rica)",
+      "Teletica (Telenoticias)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-11-16T21:10:55Z",
+     "lastSeen": "2026-11-17T01:44:35Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Empresarios rechazan violencia tras asesinato de Camilo Rodríguez",
+       "url": "https://crhoy.com/nacionales/empresarios-rechazan-violencia-tras-asesinato-de-camilo-rodriguez/",
+       "publishedAt": "2026-11-16T21:10:55Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Uccaep condena asesinato del periodista Camilo Rodríguez y pide investigación pronta y rigurosa",
+       "url": "https://www.nacion.com/el-pais/uccaep-condena-asesinato-del-periodista-camilo/JNGKPB3IONEWFHKB5HXVNSWOMM/story/",
+       "publishedAt": "2026-11-17T01:35:43Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Cámara de empresarios también condena asesinato de Camilo Rodríguez",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbEluOEhIa2gyZk9BUTBUMTc5OXI4RFNLQTdoenp1Z2pkTDFwWjltS2Z3ZlpFLU5OVFlxdkRXaGlEemlKV1g0YnFFUHNfald5TzlMeDdVSXBZTGpKd0czM21lalNDanlJS1UzMVh3UWYxSE51bXB4cHNRcldYSmxHUGZPSml5clpCLTQzSmw0ejZjSDZqWE5SYmZGZmtrbUs5YldrMHlvNUYySUhs?oc=5",
+       "publishedAt": "2026-11-17T01:44:35Z"
+      }
+     ],
+     "region": "costarica",
+     "topic": "sucesos",
+     "id": "costarica-11",
+     "lastArticle": "2026-11-17T01:44:35Z",
+     "fresh": "nuevo",
+     "firstShown": "2026-11-17T06:04:22Z",
+     "stale": false
+    },
+    {
+     "headline": "¿Qué denunciaba Camilo Rodríguez en sus redes sociales?",
+     "headlineLang": "es",
+     "headlineEs": "¿Qué denunciaba Camilo Rodríguez en sus redes sociales?",
+     "headlineEn": null,
+     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "CRHoy",
+      "La Nación (Costa Rica)",
+      "Teletica (Telenoticias)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-11-16T17:09:03Z",
+     "lastSeen": "2026-11-17T01:23:36Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "¿Qué denunciaba Camilo Rodríguez en sus redes sociales?",
+       "url": "https://crhoy.com/nacionales/que-denunciaba-camilo-rodriguez-en-sus-redes-sociales/",
+       "publishedAt": "2026-11-16T17:09:03Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "¿Quién fue Camilo Rodríguez? El periodista detrás de las punzantes denuncias en redes sociales",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVVVEUDNHOE91eDBZNlppamE1MHNFZ0F3MEJ0dEZfZUlXNHFPT0tNWG5NclJyVGNKelpta3FXNXVJV3NpeUh1Sy0taDFRbXQzTExxWmNNNm1yaU5yNWtxRml0SjBJa3lfODNvdkRXX1d1OGpIYTk1YjdSY2xEbjNRQ1Vwd1Fsc1BMUEJoTGNSS2RfZU5IVDVEc2VvczE2dHhwai1rRjB2cnZKMlUxSDBFRXloYjFNbTVfVnJhOTgzdkVMTllqbFkzNk5vSVZldw?oc=5",
+       "publishedAt": "2026-11-16T23:28:03Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Fiscalía investigará a personas denunciadas por Camilo Rodríguez en redes sociales tras su asesinato",
+       "url": "https://www.nacion.com/sucesos/fiscalia-investigara-a-personas-denunciadas-por/WOV4MXN46BBJTMBYLI3J2YZQSM/story/",
+       "publishedAt": "2026-11-17T01:23:36Z"
+      }
+     ],
+     "region": "costarica",
+     "id": "costarica-12",
+     "lastArticle": "2026-11-17T01:23:36Z",
+     "fresh": "sigue",
+     "firstShown": "2026-11-17T03:19:21Z",
+     "stale": false
+    },
+    {
+     "headline": "Joven de Quepos gana beca para investigar cáncer en Universidad de Oxford",
+     "headlineLang": "es",
+     "headlineEs": "Joven de Quepos gana beca para investigar cáncer en Universidad de Oxford",
+     "headlineEn": null,
+     "summaryEsSource": "Delfino",
+     "summaryEnSource": null,
+     "outlets": 4,
+     "outletNames": [
+      "CRHoy",
+      "Delfino",
+      "El Observador",
+      "La República (CR)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-11-16T16:48:47Z",
+     "lastSeen": "2026-11-16T23:41:50Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Joven de Quepos gana beca para investigar cáncer en Universidad de Oxford",
+       "url": "https://crhoy.com/nacionales/joven-de-quepos-gana-beca-para-investigar-cancer-en-universidad-de-oxford/",
+       "publishedAt": "2026-11-16T16:48:47Z"
+      },
+      {
+       "source": "La República (CR)",
+       "lang": "es",
+       "title": "¡Orgullo! Joven de Quepos gana prestigiosa beca para investigar el cáncer en Oxford",
+       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQY01naGZZMDZqajFqMHk4UmMyTl9VemlTbjFoeHlENHNZYVpRT0Z6c2MxU2R2RndmaVExZTJJSGxUSFd1bHFPQXZQdTdSMHRXWlpULTdPWnlES252OWh3N01ZU1d5OG4xblZvRnE0cEp5NmZGVmszYU5mOU1EVko2bDVCaEl0NnkwdkM4c0FSQ213N3FpZUE?oc=5",
+       "publishedAt": "2026-11-16T21:45:32Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Costarricense de Quepos obtiene beca Rhodes para investigar el cáncer en Oxford",
+       "url": "https://observador.cr/costarricense-de-quepos-obtiene-beca-rhodes-para-investigar-el-cancer-en-oxford/",
+       "publishedAt": "2026-11-16T22:05:00Z"
+      },
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Joven de Quepos obtiene la prestigiosa beca Rhodes para investigar tratamientos contra el cáncer en Oxford",
+       "url": "https://delfino.cr/2026/11/joven-de-quepos-obtiene-la-prestigiosa-beca-rhodes-para-investigar-tratamientos-contra-el-cancer-en-oxford",
+       "publishedAt": "2026-11-16T23:41:50Z"
+      }
+     ],
+     "region": "costarica",
+     "id": "costarica-5",
+     "lastArticle": "2026-11-16T23:41:50Z",
+     "fresh": "sigue",
+     "firstShown": "2026-11-17T00:23:44Z",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "id": "finanzas",
+   "label": "Mundo de finanzas",
+   "stories": [
+    {
+     "headline": "Mark Carney manda recado a Trump: Canadá tiene ‘otras opciones’ para la industria automotriz",
+     "headlineLang": "es",
+     "headlineEs": "Mark Carney manda recado a Trump: Canadá tiene ‘otras opciones’ para la industria automotriz",
+     "headlineEn": "Canada could work with Chinese automakers if US trade talks fail, says Carney",
+     "summaryEsSource": "El Financiero (México)",
+     "summaryEnSource": "The Guardian",
+     "outlets": 6,
+     "outletNames": [
+      "Bloomberg",
+      "CNA",
+      "El Financiero (México)",
+      "The Guardian",
+      "The Hindu",
+      "The Straits Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-11-16T03:46:11Z",
+     "lastSeen": "2026-11-17T04:24:00Z",
+     "sources": [
+      {
+       "source": "The Hindu",
+       "lang": "en",
+       "title": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
+       "url": "https://www.thehindu.com/news/international/carney-says-canada-could-turn-to-chinese-automakers-if-trump-trade-talks-fail/article71706703.ece",
+       "publishedAt": "2026-11-16T03:46:11Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Canada could work with Chinese automakers if US trade talks fail, says Carney",
+       "url": "https://www.theguardian.com/world/2026/nov/16/canada-carney-cars-evs-tariffs-xi-jinping-china-trump-trade-talks",
+       "publishedAt": "2026-11-16T04:39:20Z"
+      },
+      {
+       "source": "Bloomberg",
+       "lang": "en",
+       "title": "China and Canada Expand Tariff Relief as Xi Meets Carney",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-17/china-canada-expand-tariff-relief-in-deepening-trade-thaw",
+       "publishedAt": "2026-11-17T03:37:43Z"
+      },
+      {
+       "source": "El Financiero (México)",
+       "lang": "es",
+       "title": "Mark Carney manda recado a Trump: Canadá tiene ‘otras opciones’ para la industria automotriz",
+       "url": "https://www.elfinanciero.com.mx/mundo/2026/11/16/mark-carney-manda-recado-a-trump-canada-tiene-otras-opciones-para-la-industria-automotriz/",
+       "publishedAt": "2026-11-17T03:53:28Z"
+      },
+      {
+       "source": "The Straits Times",
+       "lang": "en",
+       "title": "Canada and China extend trade deals as Xi meets Carney ahead of APEC summit",
+       "url": "https://www.straitstimes.com/asia/east-asia/china-canada-relations-more-stable-carney-says-as-he-meets-xi",
+       "publishedAt": "2026-11-17T04:19:56Z"
+      },
+      {
+       "source": "CNA",
+       "lang": "en",
+       "title": "Canada and China extend trade deals as Xi meets Carney ahead of APEC summit",
+       "url": "https://www.channelnewsasia.com/east-asia/apec-summit-china-canada-carney-xi-6557766",
+       "publishedAt": "2026-11-17T04:24:00Z"
+      }
+     ],
+     "id": "finanzas-6",
+     "chips": [
+      {
+       "id": "asia",
+       "label": "Asia"
+      }
+     ],
+     "lastArticle": "2026-11-17T04:24:00Z",
+     "fresh": "sigue",
+     "firstShown": "2026-11-16T06:19:37Z",
+     "stale": false,
+     "narrKind": "extracto",
+     "narrEn": "Bloomberg reports: China and Canada agreed to further tariff relief on agriculture and steel exports as President Xi Jinping and Prime Minister Mark Carney met in Shenzhen on Tuesday. CNA reports: Beijing will provide additional tariff relief for around US$280 million in Canadian exports, while Ottawa has agreed to extend by two years existing remission measures for certain Chinese steel and aluminium products. The Straits Times reports: A major plank of Carney’s economic strategy is to reduce Canada’s heavy reliance on the United States.",
+     "narrNEn": 3
+    },
+    {
+     "headline": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
+     "headlineLang": "en",
+     "headlineEs": null,
+     "headlineEn": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
+     "summaryEsSource": null,
+     "summaryEnSource": "The Guardian",
+     "outlets": 4,
+     "outletNames": [
+      "AP",
+      "Bloomberg",
+      "Financial Times",
+      "The Guardian"
+     ],
+     "languages": [
+      "en"
+     ],
+     "firstSeen": "2026-11-16T04:39:20Z",
+     "lastSeen": "2026-11-17T05:44:36Z",
+     "sources": [
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Canada could work with Chinese automakers if US trade talks fail, says Carney",
+       "url": "https://www.theguardian.com/world/2026/nov/16/canada-carney-cars-evs-tariffs-xi-jinping-china-trump-trade-talks",
+       "publishedAt": "2026-11-16T04:39:20Z"
+      },
+      {
+       "source": "AP",
+       "lang": "en",
+       "title": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZTR5N1M3UjBmMW5oTkdUWERHYUFPWFFNU3lHeEVyUlo0VE1KLU5hVXIxMGkxSE5ySlZjdjJWcEZhd1JrYnhvWDFNTFUybU5IRWY1SE55RHU2ZWdOQnY2ejBPLWpscTFCb2dUNDc4SE9iUHFmTUlpMzdsWWNTYlh3emhsTlM3SXljbWxEZVNNWXJwUE9TQjFYVE1GMzRXZw?oc=5",
+       "publishedAt": "2026-11-16T21:21:00Z"
+      },
+      {
+       "source": "Bloomberg",
+       "lang": "en",
+       "title": "China and Canada Expand Tariff Relief as Xi Meets Carney",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-17/china-canada-expand-tariff-relief-in-deepening-trade-thaw",
+       "publishedAt": "2026-11-17T03:37:43Z"
+      },
+      {
+       "source": "AP",
+       "lang": "en",
+       "title": "Xi and Carney call for deeper ties as Canada looks beyond US for trade",
+       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOFVFVjI2cU1tdkxwM0ZqcER1eGJfcndIUmt3M1MtZll1X0JKRmlmQno2XzJjQnlYMXZLcVZMWVBXS2xjT3Y5MElNSXIzV1g1RlItV3BTR1k0SHg4dGR6aWRDVVRYWHlnalNRWkpBNmk2d2ZUTlhITE5YVEJvVDZaa2RpS1E3b2F1MkJ3X2JNdU8?oc=5",
+       "publishedAt": "2026-11-17T04:30:00Z"
+      },
+      {
+       "source": "Financial Times",
+       "lang": "en",
+       "title": "Xi and Canada’s Carney slash tariffs as China courts middle powers",
+       "url": "https://www.ft.com/content/3a8dbdda-1645-4b62-b64b-7da5de611d53",
+       "publishedAt": "2026-11-17T05:44:36Z"
+      }
+     ],
+     "extraOutlets": 0,
+     "id": "finanzas-10",
+     "lastArticle": "2026-11-17T05:44:36Z",
+     "fresh": "sigue",
+     "firstShown": "2026-11-16T06:19:37Z",
+     "stale": false
+    }
+   ]
+  },
+  {
+   "id": "mundo",
+   "label": "Mundo",
+   "stories": [
+    {
+     "headline": "Mark Carney manda recado a Trump: Canadá tiene ‘otras opciones’ para la industria automotriz",
+     "headlineLang": "es",
+     "headlineEs": "Mark Carney manda recado a Trump: Canadá tiene ‘otras opciones’ para la industria automotriz",
+     "headlineEn": "Canada could work with Chinese automakers if US trade talks fail, says Carney",
+     "summaryEsSource": "El Financiero (México)",
+     "summaryEnSource": "The Guardian",
+     "outlets": 6,
+     "outletNames": [
+      "Bloomberg",
+      "CNA",
+      "El Financiero (México)",
+      "The Guardian",
+      "The Hindu",
+      "The Straits Times"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-11-16T03:46:11Z",
+     "lastSeen": "2026-11-17T04:24:00Z",
+     "sources": [
+      {
+       "source": "The Hindu",
+       "lang": "en",
+       "title": "Carney says Canada could turn to Chinese automakers if Trump trade talks fail",
+       "url": "https://www.thehindu.com/news/international/carney-says-canada-could-turn-to-chinese-automakers-if-trump-trade-talks-fail/article71706703.ece",
+       "publishedAt": "2026-11-16T03:46:11Z"
+      },
+      {
+       "source": "The Guardian",
+       "lang": "en",
+       "title": "Canada could work with Chinese automakers if US trade talks fail, says Carney",
+       "url": "https://www.theguardian.com/world/2026/nov/16/canada-carney-cars-evs-tariffs-xi-jinping-china-trump-trade-talks",
+       "publishedAt": "2026-11-16T04:39:20Z"
+      },
+      {
+       "source": "Bloomberg",
+       "lang": "en",
+       "title": "China and Canada Expand Tariff Relief as Xi Meets Carney",
+       "url": "https://www.bloomberg.com/news/articles/2026-11-17/china-canada-expand-tariff-relief-in-deepening-trade-thaw",
+       "publishedAt": "2026-11-17T03:37:43Z"
+      },
+      {
+       "source": "El Financiero (México)",
+       "lang": "es",
+       "title": "Mark Carney manda recado a Trump: Canadá tiene ‘otras opciones’ para la industria automotriz",
+       "url": "https://www.elfinanciero.com.mx/mundo/2026/11/16/mark-carney-manda-recado-a-trump-canada-tiene-otras-opciones-para-la-industria-automotriz/",
+       "publishedAt": "2026-11-17T03:53:28Z"
+      },
+      {
+       "source": "The Straits Times",
+       "lang": "en",
+       "title": "Canada and China extend trade deals as Xi meets Carney ahead of APEC summit",
+       "url": "https://www.straitstimes.com/asia/east-asia/china-canada-relations-more-stable-carney-says-as-he-meets-xi",
+       "publishedAt": "2026-11-17T04:19:56Z"
+      },
+      {
+       "source": "CNA",
+       "lang": "en",
+       "title": "Canada and China extend trade deals as Xi meets Carney ahead of APEC summit",
+       "url": "https://www.channelnewsasia.com/east-asia/apec-summit-china-canada-carney-xi-6557766",
+       "publishedAt": "2026-11-17T04:24:00Z"
+      }
+     ],
+     "topic": "finanzas",
+     "id": "mundo-25",
+     "mundoGeneral": false,
+     "mundoRegions": [
+      "asia"
+     ],
+     "chips": [
+      {
+       "id": "asia",
+       "label": "Asia"
+      }
+     ],
+     "lastArticle": "2026-11-17T04:24:00Z",
+     "fresh": "nuevo",
+     "firstShown": "2026-11-17T06:04:22Z",
+     "stale": false,
+     "narrKind": "extracto",
+     "narrEn": "Bloomberg reports: China and Canada agreed to further tariff relief on agriculture and steel exports as President Xi Jinping and Prime Minister Mark Carney met in Shenzhen on Tuesday. CNA reports: Beijing will provide additional tariff relief for around US$280 million in Canadian exports, while Ottawa has agreed to extend by two years existing remission measures for certain Chinese steel and aluminium products. The Straits Times reports: A major plank of Carney’s economic strategy is to reduce Canada’s heavy reliance on the United States.",
+     "narrNEn": 3
+    }
+   ]
+  },
+  {
+   "id": "sucesos",
+   "label": "Sucesos",
+   "stories": [
+    {
+     "headline": "Asesinan al periodista Camilo Rodríguez",
+     "headlineLang": "es",
+     "headlineEs": "Asesinan al periodista Camilo Rodríguez",
+     "headlineEn": "Journalist Camilo Rodríguez shot to death",
+     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEnSource": "Q Costa Rica",
+     "outlets": 26,
+     "outletNames": [
+      "ABC Color (Paraguay)",
+      "AM Prensa",
+      "AmeliaRueda.com",
+      "CRHoy",
+      "Confidencial (Nicaragua)",
+      "Delfino",
+      "Diario Extra",
+      "El Comercio (Perú)",
+      "El Financiero (Costa Rica)",
+      "El Observador",
+      "Europa Press",
+      "France 24",
+      "Infobae",
+      "La Nación (Argentina)",
+      "La Nación (Costa Rica)",
+      "La República (CR)",
+      "La Teja",
+      "Le Monde",
+      "Monumental",
+      "Prensa Libre",
+      "Proceso Digital (Honduras)",
+      "Q Costa Rica",
+      "Repretel (Noticias Repretel)",
+      "Semanario Universidad",
+      "Teletica (Telenoticias)",
+      "The Jerusalem Post",
+      "The Tico Times",
+      "Trivisión"
+     ],
+     "languages": [
+      "en",
+      "es"
+     ],
+     "firstSeen": "2026-11-16T15:58:23Z",
+     "lastSeen": "2026-11-17T06:00:00Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez en Santo Domingo de Heredia",
+       "url": "https://crhoy.com/nacionales/asesinan-al-periodista-camilo-rodriguez-en-santo-domingo-de-heredia/",
+       "publishedAt": "2026-11-16T15:58:23Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "¿Quién era el periodista Camilo Rodríguez, asesinado esta tarde?",
+       "url": "https://crhoy.com/nacionales/quien-era-el-periodista-camilo-rodriguez-asesinado-esta-tarde/",
+       "publishedAt": "2026-11-16T16:30:58Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Camilo Rodríguez fue asesinado a 300 metros del sitio donde mataron a Parmenio Medina",
+       "url": "https://crhoy.com/nacionales/camilo-rodriguez-fue-asesinado-a-300-metros-del-sitio-donde-mataron-a-parmenio-medina/",
+       "publishedAt": "2026-11-16T17:19:40Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Sección de Homicidios de San José del OIJ investigará el asesinato de Camilo Rodríguez",
+       "url": "https://crhoy.com/nacionales/seccion-de-homicidios-de-san-jose-del-oij-investigara-el-asesinato-de-camilo-rodriguez/",
+       "publishedAt": "2026-11-16T17:36:53Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Camilo Rodríguez interpuso 10 denuncias por amenazas en su contra en los últimos meses",
+       "url": "https://crhoy.com/nacionales/camilo-rodriguez-interpuso-10-denuncias-por-amenazas-en-su-contra-en-los-ultimos-meses/",
+       "publishedAt": "2026-11-16T17:56:08Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Sicarios se aseguraron de matar a Camilo Rodríguez, detalla el OIJ",
+       "url": "https://crhoy.com/nacionales/sicarios-se-aseguraron-de-matar-a-camilo-rodriguez-detalla-el-oij/",
+       "publishedAt": "2026-11-16T18:10:33Z"
+      },
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Obispos condenan asesinato de Camilo Rodríguez y defienden libertad de prensa",
+       "url": "https://crhoy.com/nacionales/obispos-condenan-asesinato-de-camilo-rodriguez-y-defienden-libertad-de-prensa/",
+       "publishedAt": "2026-11-16T21:07:57Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez",
+       "url": "https://www.lateja.cr/sucesos/asesinan-al-periodista-camilo-rodriguez/27DEAEDC65HTLIC3V3COE2AMZM/story/",
+       "publishedAt": "2026-11-16T21:57:26Z"
+      },
+      {
+       "source": "Repretel (Noticias Repretel)",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9RdGdkbUlfUWRvSkZNazhPOTRUa2RhTTMtNE1MeWZxNUxDS3lXb3hjYU8zNzVtbzJucEpQdVBXQXdva3UtRzdHdl9SV2VuajZlcGY1Q3pGWHh0M1loVVVXanFUVk9aMFBKVFhzTzhzMmtMMmV5b2dfdDdsUDFvUQ?oc=5",
+       "publishedAt": "2026-11-16T21:57:50Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Asesinan a periodista Camilo Rodríguez en ataque a balazos",
+       "url": "https://www.amprensa.com/2026/11/asesinan-periodista-camilo-rodriguez-ataque-balazos",
+       "publishedAt": "2026-11-16T22:03:05Z"
+      },
+      {
+       "source": "El Financiero (Costa Rica)",
+       "lang": "es",
+       "title": "Muere asesinado el periodista Camilo Rodríguez",
+       "url": "https://www.elfinancierocr.com/economia-y-politica/muere-asesinado-el-periodista-camilo-rodriguez/WC4JIGGJMBDFPGQEBMKS5CRUPU/story/",
+       "publishedAt": "2026-11-16T22:08:48Z"
+      },
+      {
+       "source": "AmeliaRueda.com",
+       "lang": "es",
+       "title": "Asesinan a balazos al periodista Camilo Rodríguez - AmeliaRueda.com - Noticias de Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdWpZbTBsV0hGQ241X0J0ZUpnSGlwOEpRRl9MTW5vV2p4eG5tOGNtell1Q0lNZ1FJb2o3UWJhc0lGeDRKeEhoVldYM1FGOFBaa1ZHZm9IVkFTMXZYLS1ub2l3eHhYX3ZhdU1NeXdlcUFQdnpqVWZSMTlGSXR6QWFmN0dSa21obk9ycmVScWlCcWs5bzVTaER3TkM0R2I?oc=5",
+       "publishedAt": "2026-11-16T22:12:07Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Video | Asesinan a balazos al periodista Camilo Rodríguez en la ruta 32",
+       "url": "https://observador.cr/asesinan-al-periodista-camilo-rodriguez-en-la-ruta-32/",
+       "publishedAt": "2026-11-16T22:13:48Z"
+      },
+      {
+       "source": "Monumental",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez en su vehículo sobre la Ruta 32",
+       "url": "https://www.monumental.co.cr/2026/11/16/asesinan-al-periodista-camilo-rodriguez-en-su-vehiculo-sobre-la-ruta-32/",
+       "publishedAt": "2026-11-16T22:17:54Z"
+      },
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Periodista Camilo Rodríguez fue asesinado en Santo Domingo de Heredia",
+       "url": "https://delfino.cr/2026/11/periodista-camilo-rodriguez-fue-asesinado-en-santo-domingo-de-heredia",
+       "publishedAt": "2026-11-16T22:19:20Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Periodista Camilo Rodríguez fue asesinado este lunes en la ruta 32",
+       "url": "https://www.nacion.com/sucesos/periodista-camilo-rodriguez-fue-asesinado-este/ZYZXOILSZBELNPJ2WSXGM4TMXA/story/",
+       "publishedAt": "2026-11-16T22:24:26Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Esto narran los vecinos de la comunidad donde asesinaron a Camilo Rodríguez",
+       "url": "https://www.lateja.cr/sucesos/esto-narran-los-vecinos-de-la-comunidad-donde/XS4REZBM3VHJXO3CPRGI32422U/story/",
+       "publishedAt": "2026-11-16T22:29:17Z"
+      },
+      {
+       "source": "Trivisión",
+       "lang": "es",
+       "title": "Asesinan a balazos al periodista Camilo Rodríguez",
+       "url": "https://trivisioncr.com/sucesos/asesinan-a-balazos-al-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-16T22:36:03Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Asesinan a balazos al periodista costarricense Camilo Rodríguez, conocido por sus denuncias contra el narcotráfico",
+       "url": "https://www.infobae.com/costa-rica/2026/11/16/asesinan-a-balazos-al-periodista-costarricense-camilo-rodriguez-conocido-por-sus-denuncias-contra-el-narcotrafico/",
+       "publishedAt": "2026-11-16T22:38:39Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Asesinato de Camilo Rodríguez ocurrió a escasos metros del sitio donde mataron al periodista Parmenio Medina",
+       "url": "https://www.amprensa.com/2026/11/asesinato-camilo-rodriguez-ocurrio-escasos-metros-sitio",
+       "publishedAt": "2026-11-16T22:51:10Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Asesinato de Camilo Rodríguez revive homicidio de Parmenio Medina: a ambos los mataron casi en el mismo lugar",
+       "url": "https://www.lateja.cr/sucesos/asesinato-de-camilo-rodriguez-revive-homicidio-de/7AR7KD3SKZDOTCPMHLOIKF6GEA/story/",
+       "publishedAt": "2026-11-16T22:52:40Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Camilo Rodríguez fue asesinado a menos de 50 metros del lugar donde mataron a Parmenio Medina",
+       "url": "https://www.nacion.com/sucesos/camilo-rodriguez-fue-asesinado-a-menos-de-50/VIZ5R7POTBCLLNM6QYXEXUKGYI/story/",
+       "publishedAt": "2026-11-16T22:58:42Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Atención conductores: ruta 32 cerrada a la altura de San Miguel de Santo Domingo tras asesinato de Camilo Rodríguez",
+       "url": "https://www.nacion.com/sucesos/atencion-conductores-ruta-32-cerrada-a-la-altura/FH5FNMOBNBGUXC2DQ5Q5QMSZXE/story/",
+       "publishedAt": "2026-11-16T23:01:24Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Camilo Rodríguez rehusó acogerse al programa de protección de víctimas y testigos, afirma Carlo Díaz",
+       "url": "https://www.nacion.com/sucesos/camilo-rodriguez-rehuso-acogerse-al-programa-de/427N6KNVDJFCRBDXPOUCAZHCWY/story/",
+       "publishedAt": "2026-11-16T23:03:17Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Fiscalía investigará denuncias de Camilo Rodríguez para esclarecer su muerte, confirma fiscal",
+       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVlBWMTdrYW9JYTJ0Z3l4UWY0WldXb1hfY3NrWkhvWURhWWJ2RHV4MC0tUk9EbnNJY3o1d1RxS21faWJ0TVg1UktoSHVzU1JUWG9vYlIwS24wTm12ckFQcWJKSlFnLXRJQkRma0QyWVkzeTFLWllQanNxYTYyWi1sUXoxZzVrWVZQd3pWUE9RZEVaeTg5SFR5V3ZnV1I1RlhtaVRaa0FKS3otU1FfeTNDZjFRZEczeTVpVjdqLWZXUVB6Q1JVRHdkV3Z0bW8?oc=5",
+       "publishedAt": "2026-11-16T23:03:45Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Asesinan en Costa Rica a un periodista que denunciaba casos de narcotráfico",
+       "url": "https://www.abc.com.py/internacionales/2026/11/16/asesinan-en-costa-rica-a-un-periodista-que-denunciaba-casos-de-narcotrafico/",
+       "publishedAt": "2026-11-16T23:10:13Z"
+      },
+      {
+       "source": "AmeliaRueda.com",
+       "lang": "es",
+       "title": "Asesinato de Camilo Rodríguez ocurrió a pocos metros del sitio donde mataron a Parmenio Medina en 2001 - AmeliaRueda.com - Noticias de Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbGZqRTNZWmsya0RUdUxDN2QtcUtzdTNRcUZObVJmMGVfQ29FTHJobHdMZGpsUkVoR1ZqZDRCX0hPbV80Yjl0bnFkQU5XdWlER0JnSWtIWDhvZVVtRnE1OXNRdGFadTZMNW9vazl2WmlVbXdRck1ZNGQyMDFZamlGeGZTdXZsdmVzNzc5UGl2bkxQaXU5cGJINTg2Zk9TQ1BQWVZYcXFPRmhEVWJPMUpqSlUyOUN5MEZpekVndW9wS0c1LUFTT2h6NllEXzN0MEs2LU5yZWJRZzVDU0pnWUhn?oc=5",
+       "publishedAt": "2026-11-16T23:12:19Z"
+      },
+      {
+       "source": "Semanario Universidad",
+       "lang": "es",
+       "title": "Asesinan al periodista Camilo Rodríguez en Santo Domingo de Heredia",
+       "url": "https://semanariouniversidad.com/pais/asesinan-al-periodista-camilo-rodiguez-en-santo-domingo-de-heredia/",
+       "publishedAt": "2026-11-16T23:12:46Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Asesinan en Costa Rica a un periodista que denunciaba casos de narcotráfico",
+       "url": "https://proceso.hn/asesinan-en-costa-rica-a-un-periodista-que-denunciaba-casos-de-narcotrafico/",
+       "publishedAt": "2026-11-16T23:15:44Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Carlo Díaz: Fiscalía investigará denuncias de Camilo Rodríguez para esclarecer su muerte",
+       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTHh5X2tMakFFNDZvQTYyX2RldGF2OXNLbHI4MFFZUkxmMlQ1ZnZkak9oQllYOGFqMG9XWVdaTEJYT2FDOTNIWEd6OFk1QW82U25PX2Z1VG1zVUJzZ1p1QzlPRnhmczlSWGNUWnFIUmgwNFB3bTBnN3VkYXpwUktpeVUzS2NvdUM0dGlUQzU1STZtSWF2dVh0d0Nla0YyS1NlOW1FM0Rxenk5bDd5YkJYeTd6R3d0UEdLREtDYjNiaTctWGVXbUE?oc=5",
+       "publishedAt": "2026-11-16T23:17:59Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Presidenta condena homicidio de Camilo Rodríguez y da una orden a todos los policías para esclarecer el crimen",
+       "url": "https://www.amprensa.com/2026/11/presidenta-condena-homicidio-camilo-rodriguez-da-orden-todos",
+       "publishedAt": "2026-11-16T23:24:43Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "OIJ da primeros detalles sobre los homicidas de Camilo Rodríguez",
+       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNjA0MWs2VXdBY0EwY0VxWXdxVUNYRzVWTzRHQkFwOU9HUmpHYUc2MDR3a1pDZk51LWxuQmlXa1lEb0ZMUGNJblVyNnN6SFZJenVoY0lpTkJXdzE0ZDVDcEFNcldaM180WWJsdHVXSlVJWFRZRldkemZwamJHWDhnZXNXbi1EeWpETk9xWkpHOXRTMzc5SXBJWTR1YVNWcnNKNzFpbDgyN20?oc=5",
+       "publishedAt": "2026-11-16T23:33:30Z"
+      },
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Laura Fernández condena asesinato de Camilo Rodríguez y ordena apoyo policial a la investigación",
+       "url": "https://delfino.cr/2026/11/laura-fernandez-condena-asesinato-de-camilo-rodriguez-y-ordena-apoyo-policial-a-la-investigacion",
+       "publishedAt": "2026-11-16T23:36:16Z"
+      },
+      {
+       "source": "Confidencial (Nicaragua)",
+       "lang": "es",
+       "title": "Asesinan en Costa Rica a un periodista que denunciaba casos de narcotráfico",
+       "url": "https://confidencial.digital/mundo/asesinan-en-costa-rica-a-un-periodista-que-denunciaba-casos-de-narcotrafico/",
+       "publishedAt": "2026-11-16T23:37:28Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Laura Fernández se pronuncia sobre asesinato del periodista Camilo Rodríguez",
+       "url": "https://www.nacion.com/politica/laura-fernandez-se-pronuncia-sobre-asesinato-del/OGAQ5PBVFJEOBESVAOJO4VMIBE/story/",
+       "publishedAt": "2026-11-16T23:38:42Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Esta es la reacción de la presidenta Laura Fernández por el asesinato de Camilo Rodríguez",
+       "url": "https://www.lateja.cr/nacional/esta-es-la-reaccion-de-la-presidenta-laura/TCPWA6UFPBC4ZB5XBJL4LEO3RY/story/",
+       "publishedAt": "2026-11-16T23:40:19Z"
+      },
+      {
+       "source": "AmeliaRueda.com",
+       "lang": "es",
+       "title": "Presidenta Fernández condena asesinato de Camilo Rodríguez: “Lo que hoy ocurrió en nuestro país es una mancha contra la libertad de expresión” - AmeliaRueda.com - Noticias de Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcDNTZkRfRlRBSU12UmtqOHZNTTM1SDdvcHUyMk1wXy1QeWhyOHduc0ZwTkwxWFRhLW1XRjVKZ2NHVVNGVGJ6d2xKRF9tbnk2RGlPUDBWUEhnUXFhRFd0MWgwdUdzdVY5TWYybDgyNnZIdWl0Y3J5ZFpFWFVOWHpoaHdpLXlMMjd1MVlCT0Fjc2NzdG9xZEMtQ3BTYURual9oSGhuc0NoZFN0Qko2aUNKNWFDMA?oc=5",
+       "publishedAt": "2026-11-16T23:42:09Z"
+      },
+      {
+       "source": "The Tico Times",
+       "lang": "en",
+       "title": "Gunmen Kill Costa Rican Journalist Camilo Rodríguez on Route 32 in Heredia",
+       "url": "https://ticotimes.net/2026/11/16/journalist-camilo-rodriguez-killed-route-32-heredia",
+       "publishedAt": "2026-11-16T23:50:34Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Laura Fernández condena asesinato del periodista Camilo Rodríguez y ordena colaboración policial para esclarecer el crimen",
+       "url": "https://www.infobae.com/costa-rica/2026/11/17/laura-fernandez-condena-asesinato-del-periodista-camilo-rodriguez-y-ordena-colaboracion-policial-para-esclarecer-el-crimen/",
+       "publishedAt": "2026-11-17T00:00:02Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Colegio de Periodistas e Iplex exigen investigar a fondo el asesinato de Camilo Rodríguez",
+       "url": "https://www.nacion.com/sucesos/colegio-de-periodistas-e-iplex-exigen-investigar-a/O65X7XXLNRDYXMQASY67V5UX7Q/story/",
+       "publishedAt": "2026-11-17T00:06:11Z"
+      },
+      {
+       "source": "AmeliaRueda.com",
+       "lang": "es",
+       "title": "Al menos 10 denuncias por amenazas contra su integridad había interpuesto periodista Camilo Rodríguez en los últimos dos años - AmeliaRueda.com - Noticias de Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVG96dk9UYzVTRFdoanczREhRNXlIV3VZeU0zUW52OHlYSGtBYmwwUkZEY0ZURUVWTkpUMEtUMjJMOFRoWXl3M1FPNHAyX0JEUVZaeWZhWHloZTV5Vl9HY2VTTUd3M19lNm9Lc3I1cnp1S0ZwWm04SXJZY3AyZVJkaDVaUkJIWnR6N3pHZE9EM1h2UkllekhpRTF4SmtmdjFUbzZScUdka0hMWVMzdWdiOWRB?oc=5",
+       "publishedAt": "2026-11-17T00:07:27Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "Presidenta de Costa Rica repudia el \"cobarde asesinato\" del periodista Camilo Rodríguez",
+       "url": "https://www.abc.com.py/internacionales/2026/11/16/presidenta-de-costa-rica-repudia-el-cobarde-asesinato-del-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T00:15:08Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Gatilleros que asesinaron a Camilo Rodríguez viajaban en motocicleta blanca, afirma OIJ",
+       "url": "https://www.nacion.com/sucesos/gatilleros-que-asesinaron-a-camilo-rodriguez/SVGHP5WFF5GGJEE2B5M52ZQQXY/story/",
+       "publishedAt": "2026-11-17T00:16:42Z"
+      },
+      {
+       "source": "AM Prensa",
+       "lang": "es",
+       "title": "Así luce la escena donde asesinaron al periodista Camilo Rodríguez",
+       "url": "https://www.amprensa.com/2026/11/luce-escena-donde-asesinaron-periodista-camilo-rodriguez",
+       "publishedAt": "2026-11-17T00:20:36Z"
+      },
+      {
+       "source": "Proceso Digital (Honduras)",
+       "lang": "es",
+       "title": "Presidenta de Costa Rica repudia el «cobarde asesinato» del periodista Camilo Rodríguez",
+       "url": "https://proceso.hn/presidenta-de-costa-rica-repudia-el-cobarde-asesinato-del-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T00:28:37Z"
+      },
+      {
+       "source": "El Comercio (Perú)",
+       "lang": "es",
+       "title": "Costa Rica: Asesinan a periodista que denunciaba el crimen organizado",
+       "url": "https://elcomercio.pe/mundo/centroamerica/camili-rodriguez-costa-rica-asesinan-a-periodista-que-denunciaba-el-crimen-organizado-santo-domingo-de-heredia-san-jose-ultimas-noticia/",
+       "publishedAt": "2026-11-17T01:02:22Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "Gremio periodístico exige esclarecer el homicidio de Camilo Rodríguez",
+       "url": "https://www.lateja.cr/nacional/gremio-periodistico-exige-esclarecer-el-homicidio/TB2U2UVEBFFIRCMZN52B6YHBNU/story/",
+       "publishedAt": "2026-11-17T01:03:06Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Parmenio Medina y Camilo Rodríguez: las coincidencias y diferencias entre dos crímenes separados por 25 años",
+       "url": "https://observador.cr/parmenio-medina-y-camilo-rodriguez-las-coincidencias-y-diferencias-entre-dos-crimenes-separados-por-25-anos/",
+       "publishedAt": "2026-11-17T01:05:14Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "OIJ inicia el proceso de levantamiento del cuerpo del periodista Camilo Rodríguez, asesinado en la ruta 32",
+       "url": "https://www.nacion.com/sucesos/oij-realiza-el-levantamiento-del-cuerpo-del/VZHTKVJPBJECNCCVDZBTWBZGOE/story/",
+       "publishedAt": "2026-11-17T01:17:32Z"
+      },
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Congresistas condenan asesinato de Camilo Rodríguez y piden esclarecer móvil del crimen",
+       "url": "https://delfino.cr/2026/11/congresistas-condenan-asesinato-de-camilo-rodriguez-y-piden-esclarecer-movil-del-crimen",
+       "publishedAt": "2026-11-17T01:21:35Z"
+      },
+      {
+       "source": "Q Costa Rica",
+       "lang": "en",
+       "title": "Journalist Camilo Rodríguez shot to death",
+       "url": "https://qcostarica.com/journalist-camilo-rodriguez-shot-to-death/",
+       "publishedAt": "2026-11-17T01:25:15Z"
+      },
+      {
+       "source": "Prensa Libre",
+       "lang": "es",
+       "title": "Periodista asesinado en Costa Rica: las amenazas que había recibido por denunciar al narcotráfico",
+       "url": "https://www.prensalibre.com/internacional/periodista-asesinado-en-costa-rica-las-amenazas-que-habia-recibido-por-denunciar-al-narcotrafico/",
+       "publishedAt": "2026-11-17T01:27:19Z"
+      },
+      {
+       "source": "France 24 Español",
+       "lang": "es",
+       "title": "Asesinan a un periodista que denunciaba casos relacionados con el narcotráfico en Costa Rica",
+       "url": "https://www.france24.com/es/am%C3%A9rica-latina/20261117-asesinan-a-un-periodista-que-denunciaba-casos-relacionados-con-el-narcotr%C3%A1fico-en-costa-rica",
+       "publishedAt": "2026-11-17T01:48:31Z"
+      },
+      {
+       "source": "ABC Color (Paraguay)",
+       "lang": "es",
+       "title": "El gremio periodístico exige investigación tras asesinato de comunicador en Costa Rica",
+       "url": "https://www.abc.com.py/internacionales/2026/11/16/el-gremio-periodistico-exige-investigacion-tras-asesinato-de-comunicador-en-costa-rica/",
+       "publishedAt": "2026-11-17T01:55:11Z"
+      },
+      {
+       "source": "El Observador",
+       "lang": "es",
+       "title": "Video | Laura Fernández condenó el asesinato de periodista Camilo Rodríguez",
+       "url": "https://observador.cr/video-laura-fernandez-condeno-el-asesinato-de-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T01:57:30Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Camilo Rodríguez, el tercer periodista en ser silenciado a tiros en Costa Rica",
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORE9vcXpPTHpaMXB5OFlGTmJBZ2RDMFg1WHNsdHc3bFc3VVp5eEo4Q2dZOU52cmtvQkUzamh4TGxiUGRLQkxQc1FJV09VM0Z4cG9wNnp3YUJ4R2N0cWczU3VjZmRwRmVMal9EcEl5Q1lfYWRVdWkzcFhEMnNvTXBqeDhURzI3QkZNMGlpd0NybzRiRDRhVGhPai1VNzdhRGFSbWZWUFRlcUpQM2M1ZEd0SG4td0F5azZX?oc=5",
+       "publishedAt": "2026-11-17T02:24:57Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Periodista Camilo Rodríguez asesinado a tiros",
+       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVWZYRlZaYXFnbjlzcEt2clNkZjlxTE5ObGxEWHdWZjkwMm03V24xTmxSdFBfT0RDdVVTNW9IaEI2YmtNTkZsT2E4bU5RU0JFaXF5ZjhhVFFFNnhVeXdVd1pPekhqNG9PaVpLQVQ5a3I5d192eUxjQjlESHRXY0hQOEFtRUR5d0ZuQUI3S0xR?oc=5",
+       "publishedAt": "2026-11-17T02:39:34Z"
+      },
+      {
+       "source": "La República (CR)",
+       "lang": "es",
+       "title": "“Es una acción contra la libertad de expresión y contra la libertad de prensa”, advierte Abril Gordienko tras asesinato de Camilo Rodríguez",
+       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR0NBUVN6SlRweHJjalg5T3pxTlBJeC04UzRIQlM3MTQxOWxOdm1VTXF1QW1MWGo3cHVzbjMyYzB1SE5HQjVmcWE1bHFKZ29zeG9jNm56SVhZYUJIVm5ER2VLTE5BdVBWTEllVGZ5TDNkVWdieGV3b2Z1Nkt5R1AtVnpyZnJ4Zw?oc=5",
+       "publishedAt": "2026-11-17T03:16:02Z"
+      },
+      {
+       "source": "La República (CR)",
+       "lang": "es",
+       "title": "Carlo Díaz sobre asesinato de Camilo: “Es una señal fuerte de que no tenemos libertad de expresión”",
+       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOb0ljbW1nbmUwLS05dF9RTWV4cjJrNDU2SzlmckVZRUNrWUpMYlFoXzlkVkF4U3dJUW50dFlid2RPQlluSm5OcXpYQmtOY2ktLW1FcXF1WWRVQTZhYUNKRlNCWG5Eb3o3bG1LVDhoOGJTZlA4d19FTjdocUFjRlFoeWNKa2lwbloxZjRIa0ZnQjM4dDgycE9reGE2ck81QmExeUZHdTlwUG9yeEhPRkpCelA5Uk5iMTRseThsLVhEY2NfRkk?oc=5",
+       "publishedAt": "2026-11-17T03:16:02Z"
+      },
+      {
+       "source": "La República (CR)",
+       "lang": "es",
+       "title": "Laura Fernández sobre asesinato de Camilo Rodríguez: “Es una mancha contra la libertad de expresión”",
+       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdFVqdHdic1Q1Z3RPR3ZoTlRmVlVTTEQ5Y3RuX3JRX2JBZHRNNy1NZ25ubjRGUzYwYU0zU2diT2M2eWQ3Q0w4ZkVGOVAwYUFJYnpfaEprV1llR2FUTHI2aXR1TWxRanJwTzg5czYzTmE0cmVENktGWWZfdlVCSW9vcjVkRUh6a1l0VE1KRi1LLUxrXzRpX3NoT3RDLWNGQWJjT1h0dkZETWV5MGJjdXdLUFY3T3B4aENPNGZuaHd4Zm5DYTdj?oc=5",
+       "publishedAt": "2026-11-17T03:30:57Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "OIJ levanta el cuerpo de Camilo Rodríguez tras varias horas de trabajo en la escena",
+       "url": "https://www.lateja.cr/sucesos/oij-levanta-el-cuerpo-de-camilo-rodriguez-tras/NQZJOFNGCZGATDAO3IOR4WUWFM/story/",
+       "publishedAt": "2026-11-17T03:34:52Z"
+      },
+      {
+       "source": "Semanario Universidad",
+       "lang": "es",
+       "title": "Escuela de Comunicación de UCR, Proledi e Iplex condenan asesinato de periodista Camilo Rodríguez",
+       "url": "https://semanariouniversidad.com/pais/escuela-de-comunicacion-de-ucr-proledi-e-iplex-condenan-asesinato-de-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T03:43:14Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Iglesia católica lamenta asesinato de Camilo Rodríguez y advierte sobre la violencia contra la libertad de prensa en Costa Rica",
+       "url": "https://www.nacion.com/sucesos/iglesia-catolica-lamenta-asesinato-de-camilo/KXX4TVVPQNCZ3M6EGAR55IK524/story/",
+       "publishedAt": "2026-11-17T03:50:51Z"
+      },
+      {
+       "source": "Europa Press",
+       "lang": "es",
+       "title": "Asesinado a tiros el periodista costarricense Camilo Rodríguez en una carretera al norte de San José",
+       "url": "https://www.europapress.es/internacional/noticia-asesinado-tiros-periodista-costarricense-camilo-rodriguez-carretera-norte-san-jose-20261117045334.html",
+       "publishedAt": "2026-11-17T03:53:34Z"
+      },
+      {
+       "source": "Infobae",
+       "lang": "es",
+       "title": "Asesinato del periodista Camilo Rodríguez en Costa Rica enciende las alarmas por la libertad de prensa: exigen esclarecer el crimen",
+       "url": "https://www.infobae.com/costa-rica/2026/11/17/asesinato-del-periodista-camilo-rodriguez-en-costa-rica-enciende-las-alarmas-por-la-libertad-de-prensa-exigen-esclarecer-el-crimen/",
+       "publishedAt": "2026-11-17T03:55:40Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "OIJ custodia vivienda del periodista Camilo Rodríguez en Santo Domingo de Heredia",
+       "url": "https://www.nacion.com/sucesos/oij-custodia-vivienda-del-periodista-camilo/PGJL5JVPSVGBZBO4JU37ZH4KUQ/story/",
+       "publishedAt": "2026-11-17T04:07:32Z"
+      },
+      {
+       "source": "The Jerusalem Post",
+       "lang": "en",
+       "title": "Costa Rican journalist shot dead in first such killing in 25 years",
+       "url": "https://www.jpost.com/international/article-915113",
+       "publishedAt": "2026-11-17T04:24:35Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Allanan apartamento de Camilo Rodríguez en busca de evidencias",
+       "url": "https://www.diarioextra.com/noticia/allanan-apartamento-de-camilo-rodriguez-en-busca-de-evidencias/",
+       "publishedAt": "2026-11-17T04:26:58Z"
+      },
+      {
+       "source": "La Teja",
+       "lang": "es",
+       "title": "OIJ y Fiscalía revisan apartamento de Camilo Rodríguez en busca de evidencias",
+       "url": "https://www.lateja.cr/sucesos/oij-y-fiscalia-revisan-apartamento-de-camilo/GN5OMWJTZRE2RCVFUWWGGFHCTY/story/",
+       "publishedAt": "2026-11-17T04:29:20Z"
+      },
+      {
+       "source": "Le Monde",
+       "lang": "en",
+       "title": "Costa Rican journalist gunned down near capital",
+       "url": "https://www.lemonde.fr/en/international/article/2026/11/17/costa-rican-journalist-gunned-down-near-capital_6782668_4.html",
+       "publishedAt": "2026-11-17T04:33:08Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Video capta el momento en que asesinaron a balazos al periodista Camilo Rodríguez",
+       "url": "https://www.nacion.com/sucesos/video-capto-el-momento-en-que-asesinaron-a-balazos/IC77HK3UFZHQBMTWWJFUOXBMMI/story/",
+       "publishedAt": "2026-11-17T04:38:29Z"
+      },
+      {
+       "source": "La Nación (Argentina)",
+       "lang": "es",
+       "title": "Asesinaron en Costa Rica a un periodista que denunciaba actividades del narcotráfico",
+       "url": "https://www.lanacion.com.ar/el-mundo/asesinaron-en-costa-rica-a-un-periodista-que-denunciaba-actividades-del-narcotrafico-nid17112026/",
+       "publishedAt": "2026-11-17T05:06:41Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Gatilleros asesinan al periodista Camilo Rodríguez",
+       "url": "https://www.diarioextra.com/noticia/periodista-camilo-rodriguez-asesinado-por-gatilleros/",
+       "publishedAt": "2026-11-17T06:00:00Z"
+      }
+     ],
+     "id": "sucesos-1",
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      }
+     ],
+     "lastArticle": "2026-11-17T06:00:00Z",
+     "fresh": "sigue",
+     "firstShown": "2026-11-17T00:23:44Z",
+     "stale": false,
+     "narrKind": "extracto",
+     "narrEs": "Según AM Prensa, la mandataria calificó el homicidio como una “mancha contra la libertad de expresión” e instruyó a los cuerpos policiales a colaborar con la investigación para identificar a los responsables. De acuerdo con El Financiero (Costa Rica), el periodista Camilo Rodríguez Chaverri fue asesinado la tarde de este lunes 16 de noviembre. Según Infobae, el comunicador fue atacado mientras viajaba en su vehículo por Santo Domingo de Heredia. De acuerdo con ABC Color (Paraguay), el Organismo de Investigación Judicial (OIJ) informó que el caso se encuentra en investigación para tratar de dar con los responsables del crimen.",
+     "narrNEs": 4,
+     "narrEn": "The Tico Times reports: Journalist Camilo Rodríguez was shot dead on Route 32 in Heredia. Le Monde reports: Camilo Rodriguez, an independent journalist who had linked drug traffickers to politicians, was killed outside the capital as Costa Rica struggles with a surge in organized crime. The Tico Times reports: Prosecutors are examining earlier death threats in the third killing of a journalist in Costa Rica.",
+     "narrNEn": 2
+    },
+    {
+     "headline": "Laura Chinchilla lamenta asesinato de Camilo Rodríguez",
+     "headlineLang": "es",
+     "headlineEs": "Laura Chinchilla lamenta asesinato de Camilo Rodríguez",
+     "headlineEn": null,
+     "summaryEsSource": null,
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "CRHoy",
+      "Diario Extra",
+      "El Mundo CR"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-11-16T18:22:24Z",
+     "lastSeen": "2026-11-17T06:00:00Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Laura Chinchilla lamenta asesinato de Camilo Rodríguez",
+       "url": "https://crhoy.com/nacionales/laura-chinchilla-lamenta-asesinato-de-camilo-rodriguez-es-hora-de-frenar-la-violencia/",
+       "publishedAt": "2026-11-16T18:22:24Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "Laura Chinchilla: Es hora de frenar la violencia que está erosionando como nunca antes la paz en Costa Rica",
+       "url": "https://elmundo.cr/costa-rica/laura-chinchilla-es-hora-de-frenar-la-violencia-que-esta-erosionando-como-nunca-antes-la-paz-en-costa-rica/",
+       "publishedAt": "2026-11-16T23:57:52Z"
+      },
+      {
+       "source": "Diario Extra",
+       "lang": "es",
+       "title": "Figuras públicas y periodistas lamentan asesinato de Camilo Rodríguez",
+       "url": "https://www.diarioextra.com/noticia/figuras-publicas-y-periodistas-lamentan-asesinato-de-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T06:00:00Z"
+      }
+     ],
+     "id": "sucesos-13",
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      }
+     ],
+     "lastArticle": "2026-11-17T06:00:00Z",
+     "fresh": "nuevo",
+     "firstShown": "2026-11-17T06:04:22Z",
+     "stale": false
+    },
+    {
+     "headline": "Colper exige investigar “con celeridad” el asesinato del periodista Camilo Rodríguez",
+     "headlineLang": "es",
+     "headlineEs": "Colper exige investigar “con celeridad” el asesinato del periodista Camilo Rodríguez",
+     "headlineEn": null,
+     "summaryEsSource": "Delfino",
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "Delfino",
+      "El Mundo CR",
+      "Semanario Universidad"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-11-16T23:35:30Z",
+     "lastSeen": "2026-11-17T02:24:37Z",
+     "sources": [
+      {
+       "source": "Delfino",
+       "lang": "es",
+       "title": "Colegio de Periodistas exige investigar con celeridad el asesinato de Camilo Rodríguez",
+       "url": "https://delfino.cr/2026/11/colegio-de-periodistas-exige-investigar-con-celeridad-el-asesinato-de-camilo-rodriguez",
+       "publishedAt": "2026-11-16T23:35:30Z"
+      },
+      {
+       "source": "El Mundo CR",
+       "lang": "es",
+       "title": "Colper exige investigar “con celeridad” el asesinato del periodista Camilo Rodríguez",
+       "url": "https://elmundo.cr/costa-rica/colper-exige-investigar-con-celeridad-el-asesinato-del-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T00:06:31Z"
+      },
+      {
+       "source": "Semanario Universidad",
+       "lang": "es",
+       "title": "Colper exige investigación exhaustiva tras asesinato del periodista Camilo Rodríguez",
+       "url": "https://semanariouniversidad.com/pais/colper-exige-investigacion-exhaustiva-tras-asesinato-del-periodista-camilo-rodriguez/",
+       "publishedAt": "2026-11-17T02:24:37Z"
+      }
+     ],
+     "id": "sucesos-15",
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      }
+     ],
+     "lastArticle": "2026-11-17T02:24:37Z",
+     "fresh": "sigue",
+     "firstShown": "2026-11-17T00:23:44Z",
+     "stale": false
+    },
+    {
+     "headline": "Cámara de empresarios también condena asesinato de Camilo Rodríguez",
+     "headlineLang": "es",
+     "headlineEs": "Cámara de empresarios también condena asesinato de Camilo Rodríguez",
+     "headlineEn": null,
+     "summaryEsSource": "La Nación (Costa Rica)",
+     "summaryEnSource": null,
+     "outlets": 3,
+     "outletNames": [
+      "CRHoy",
+      "La Nación (Costa Rica)",
+      "Teletica (Telenoticias)"
+     ],
+     "languages": [
+      "es"
+     ],
+     "firstSeen": "2026-11-16T21:10:55Z",
+     "lastSeen": "2026-11-17T01:44:35Z",
+     "sources": [
+      {
+       "source": "CRHoy",
+       "lang": "es",
+       "title": "Empresarios rechazan violencia tras asesinato de Camilo Rodríguez",
+       "url": "https://crhoy.com/nacionales/empresarios-rechazan-violencia-tras-asesinato-de-camilo-rodriguez/",
+       "publishedAt": "2026-11-16T21:10:55Z"
+      },
+      {
+       "source": "La Nación (Costa Rica)",
+       "lang": "es",
+       "title": "Uccaep condena asesinato del periodista Camilo Rodríguez y pide investigación pronta y rigurosa",
+       "url": "https://www.nacion.com/el-pais/uccaep-condena-asesinato-del-periodista-camilo/JNGKPB3IONEWFHKB5HXVNSWOMM/story/",
+       "publishedAt": "2026-11-17T01:35:43Z"
+      },
+      {
+       "source": "Teletica (Telenoticias)",
+       "lang": "es",
+       "title": "Cámara de empresarios también condena asesinato de Camilo Rodríguez",
+       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbEluOEhIa2gyZk9BUTBUMTc5OXI4RFNLQTdoenp1Z2pkTDFwWjltS2Z3ZlpFLU5OVFlxdkRXaGlEemlKV1g0YnFFUHNfald5TzlMeDdVSXBZTGpKd0czM21lalNDanlJS1UzMVh3UWYxSE51bXB4cHNRcldYSmxHUGZPSml5clpCLTQzSmw0ejZjSDZqWE5SYmZGZmtrbUs5YldrMHlvNUYySUhs?oc=5",
+       "publishedAt": "2026-11-17T01:44:35Z"
+      }
+     ],
+     "id": "sucesos-16",
+     "chips": [
+      {
+       "id": "costarica",
+       "label": "Costa Rica"
+      }
+     ],
+     "lastArticle": "2026-11-17T01:44:35Z",
+     "fresh": "nuevo",
+     "firstShown": "2026-11-17T06:04:22Z",
+     "stale": false
+    }
+   ]
+  }
+ ]
+}

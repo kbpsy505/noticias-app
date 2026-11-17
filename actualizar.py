@@ -35,7 +35,8 @@ from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 from xml.etree import ElementTree as ET
 
-from feeds import FEEDS, KNOWN_FAILS
+import enlaces
+from feeds import FEEDS, KNOWN_FAILS, WEEKLY_FEEDS
 from vocab import PHRASES, STOP, WORDS
 
 ROOT = Path(__file__).resolve().parent
@@ -45,12 +46,18 @@ REFRESH_HOURS = 3
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 
-NEWS_HOURS = 48          # antigüedad máxima de una nota (noticias)
+PHASE = 7                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
+NEWS_HOURS = 72          # antigüedad máxima de una nota (noticias); Arreglo 6: antes 48 h
 SCIENCE_HOURS = 24 * 7   # ciencia publica más lento
 PAIR_WINDOW_H = 36       # dos notas solo se unen si se publicaron con <= 36 h de diferencia
 SUMMARY_MAX = 400
 MAX_STORIES = 30         # por categoría
 MIN_OUTLETS = 3          # medios distintos necesarios para que una historia aparezca
+# Arreglo 4: pestañas/regiones flacas con umbral de 2 medios (al menos 1 nota que no venga de Google Noticias);
+# esas historias llevan twoOutlets: true y la etiqueta «2 medios». Ciencias se maneja en tema.py.
+MIN_OUTLETS_BY_CAT = {"ciencias": 2, "oceania": 2, "africa": 2, "sudamerica": 2}
+FROZEN_HOURS = 72        # un feed cuya nota más nueva tiene más de 72 h se marca «congelado» (salvo semanales)
+WEEKLY_HOURS = 24 * 10   # tope de «congelado» para los feeds semanales
 
 CATEGORIES = [
     ("sucesos", "Sucesos"),
@@ -203,6 +210,9 @@ def local(tag: str) -> str:
     return tag.split("}")[-1] if tag else ""
 
 
+_ISO_TZ_FIX = re.compile(r"T?Z$")
+
+
 def parse_date(raw: str):
     raw = (raw or "").strip()
     if not raw:
@@ -214,8 +224,11 @@ def parse_date(raw: str):
         return dt.astimezone(timezone.utc)
     except Exception:
         pass
+    # ISO 8601 con espacios o saltos de línea dentro (science.org: «2026-11-16\nT02:15:00\nZ») o «…TZ».
+    iso = re.sub(r"\s+", "", raw)
+    iso = _ISO_TZ_FIX.sub("Z", iso)
     try:
-        dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
         return dt.astimezone(timezone.utc)
@@ -355,6 +368,15 @@ def parse_items(xml_bytes: bytes):
 
 
 def fetch_feed(feed):
+    """Descarga y parsea un feed; los ítems de feeds directos (no Google) alimentan el índice de titulares
+    que sirve para cambiar enlaces de Google Noticias por el enlace real del medio (enlaces.py)."""
+    res = _fetch_feed(feed)
+    if res[1] and not enlaces.is_gn(feed[1]):
+        enlaces.index_items(res[1])
+    return res
+
+
+def _fetch_feed(feed):
     fid, url = feed[0], feed[1]
     err = None
     for attempt in range(2):  # un reintento con cabeceras mínimas
@@ -381,6 +403,17 @@ def fetch_feed(feed):
     except Exception:
         pass
     return feed, None, err
+
+
+def frozen_reason(fid: str, raw_newest, now) -> str | None:
+    """Motivo «congelado» si el feed trae ítems pero ninguno con fecha legible o reciente (Arreglo 5)."""
+    if raw_newest is None:
+        return "congelado: ninguna fecha legible en el feed"
+    limit = WEEKLY_HOURS if fid in WEEKLY_FEEDS else FROZEN_HOURS
+    age = (now - raw_newest).total_seconds() / 3600
+    if age > limit:
+        return f"congelado: la nota más nueva tiene {age / 24:.0f} días"
+    return None
 
 
 # ---------------------------------------------------------------- clasificación
@@ -836,9 +869,9 @@ def _absorb(tab, idx, story):
 
 
 def add_regional_topics(out_cats, reg_cats, region_labels):
-    """Las historias regionales de 3+ medios también salen en su pestaña temática (Política, Sucesos,
-    Guerras, Finanzas), igual que una nota de mercados por una guerra sale en Finanzas y en Guerras.
-    Si la pestaña ya tiene la misma historia (comparten notas), queda la versión con más medios."""
+    """Historias regionales de 3+ medios con tema (Política, Sucesos, Guerras, Finanzas): si la pestaña temática
+    ya tiene la misma historia con menos medios, la versión regional la reemplaza (después final_dedup deja una
+    sola tarjeta). Ya no se agregan copias: el tema queda en «topic» y se cuenta en el informe."""
     by_id = {c["id"]: c for c in out_cats}
     added = Counter()
     for rc in reg_cats:
@@ -867,7 +900,8 @@ def add_regional_topics(out_cats, reg_cats, region_labels):
                 if copy["outlets"] > max(tab[i]["outlets"] for i in dups):
                     _absorb(tab, dups, copy)
                 continue
-            tab.append(copy)
+            # Arreglo 1: ya no se copia. La historia regional queda marcada con «topic» y final_dedup()
+            # decide su pestaña principal (PRIMARY_PRIO); la otra aparición va como chip «También en».
             added[tid] += 1
     for tid in TOPIC_TABS:
         if tid in by_id:
@@ -892,25 +926,33 @@ def load_previous():
 def apply_freshness(cats, prev, now):
     """Marca cada historia como Nuevo/Sigue comparando con la publicación anterior (misma pestaña,
     al menos una nota en común), ordena por actividad reciente y separa las que no tienen notas nuevas en 24 h."""
-    old = {}
+    # Se compara contra TODAS las pestañas de la publicación anterior: con la pestaña principal (Arreglo 1) una
+    # historia puede cambiar de pestaña y no debe salir como «Nuevo». También cuentan los enlaces de Google ya
+    # resueltos (gnUrl) y «En desarrollo» (si se confirma, sube con «Confirmada ✓»).
+    prev_all, prev_dev = [], []
     if prev:
         for c in prev.get("categories", []):
-            old[c["id"]] = [({x["url"] for x in s.get("sources", [])}, s.get("firstShown") or prev.get("updatedAt"))
-                            for s in c.get("stories", [])]
+            for s in c.get("stories", []):
+                urls = {x["url"] for x in s.get("sources", [])} | {x["gnUrl"] for x in s.get("sources", []) if x.get("gnUrl")}
+                (prev_dev if c["id"] == "posibles" else prev_all).append((urls, s.get("firstShown") or prev.get("updatedAt")))
     report = {}
     for c in cats:
-        prev_tab = old.get(c["id"], [])
+        prev_tab = prev_all if c["id"] != "posibles" else prev_all + prev_dev
         for s in c["stories"]:
             urls = {x["url"] for x in s.get("sources", [])}
             hit = next((fs for u, fs in prev_tab if u & urls), None)
             last = max((x["publishedAt"] for x in s.get("sources", []) if x.get("publishedAt")), default=s.get("lastSeen"))
             s["lastArticle"] = last
+            urls |= {x["gnUrl"] for x in s.get("sources", []) if x.get("gnUrl")}
+            hit = next((fs for u, fs in prev_tab if u & urls), None)
             if prev is None:
                 s["fresh"] = None
             elif hit:
                 s["fresh"], s["firstShown"] = "sigue", hit
             else:
                 s["fresh"], s["firstShown"] = "nuevo", iso(now.timestamp())
+                if c["id"] != "posibles" and next((1 for u, _ in prev_dev if u & urls), None):
+                    s["confirmed"] = True     # estaba «En desarrollo» y llegó a 3+ medios
             age_h = max(0.0, (now - datetime.fromisoformat(last.replace("Z", "+00:00"))).total_seconds() / 3600) if last else 999
             s["stale"] = age_h > FRESH_HOURS
             # Actividad: la nota más reciente pesa más; los medios suman con logaritmo.
@@ -924,8 +966,8 @@ def apply_freshness(cats, prev, now):
     return report
 
 
-POSIBLES_MAX = 60          # tope total de la pestaña "Posibles noticias"
-POSIBLES_PER_CHIP = 8      # tope por categoría/región
+POSIBLES_MAX = 150         # tope total de «En desarrollo» (antes Posibles, 60); Arreglo 4
+POSIBLES_PER_CHIP = 15     # tope por categoría/región (antes 8)
 POSIBLES_MIN_PER_CHIP = 3  # se reservan hasta 3 por categoría/región para que no las tapen otras
 POSIBLES_MIN_CHIP = {"cripto": 6}  # Criptomonedas tiene 6 lugares asegurados
 
@@ -935,7 +977,7 @@ def build_posibles(candidates, out_cats, region_labels):
     Se descarta cualquier grupo que comparta una nota con una historia ya confirmada, y los
     grupos repetidos entre el corpus general, el regional y el cripto se fusionan (se queda el
     de más medios y se juntan las etiquetas de categoría/región)."""
-    cat_labels = dict(CATEGORIES) | {"cripto": "Criptomonedas"}
+    cat_labels = dict(CATEGORIES) | {"cripto": "Criptomonedas", "deportes": "Deportes"}
     confirmed = {src["url"] for c in out_cats if c["id"] not in ("buenas", "posibles")
                  for s in c["stories"] for src in s["sources"]}
     kept = []
@@ -1051,6 +1093,404 @@ def order_tabs(cats):
     return first + [c for c in cats if c["id"] not in TAB_FIRST]
 
 
+# ---------------------------------------------------------------- enlaces y deduplicado final (Arreglos 1 y 2)
+
+def resolve_story_links(cats) -> dict:
+    """Cambia los enlaces de Google Noticias de las fuentes por el enlace real del medio (enlaces.py).
+    Prioridad del tope de decodificación: tarjetas de una sola fuente (Buenas) y la primera fuente de cada tarjeta."""
+    first, rest = [], []
+    for c in cats:
+        for s in c.get("stories", []):
+            for i, x in enumerate(s.get("sources", [])):
+                if enlaces.is_gn(x.get("url", "")):
+                    (first if i == 0 or len(s["sources"]) == 1 else rest).append((x["url"], x.get("title", "")))
+    enlaces.resolve_many(first + rest)
+    changed = still = 0
+    for c in cats:
+        for s in c.get("stories", []):
+            out, keys = [], set()
+            for x in s.get("sources", []):
+                u = x.get("url", "")
+                if enlaces.is_gn(u):
+                    real = enlaces.CACHE.get(u)
+                    if real and is_safe_http_url(clean_url(real)):
+                        x["gnUrl"], x["url"] = u, clean_url(real)
+                        x.pop("gn", None)
+                        changed += 1
+                    else:
+                        x["gn"] = True
+                        still += 1
+                k = _url_key(x["url"])
+                if k in keys:      # la misma nota llegó por Google y por el feed directo
+                    continue
+                keys.add(k)
+                out.append(x)
+            # El enlace principal de la tarjeta nunca es de Google si hay otro.
+            out.sort(key=lambda x: bool(x.get("gn")))
+            s["sources"] = out
+    rep = enlaces.report()
+    rep.update({"sourcesResolved": changed, "sourcesStillGoogle": still})
+    return rep
+
+
+def _url_key(u: str) -> str:
+    p = urlparse(u)
+    return (p.netloc.replace("www.", "") + p.path.rstrip("/")).lower()
+
+
+# Prioridad editorial para la pestaña principal de una historia repetida (plan, Arreglo 1; decisión del
+# creador del 2026-11-17: una buena noticia tica va primero en Costa Rica, con chip «También en Avances»).
+# Deportes (Arreglo 7) va antes de Costa Rica: una nota del Saprissa vive en Deportes con chip «También en Costa Rica».
+PRIMARY_PRIO = ["guerras", "sucesos", "deportes", "costarica", "buenas", "finanzas", "cripto", "ciencias", "politica",
+                "mundo"]
+DEDUP_TABS = set(PRIMARY_PRIO)
+TITLE_SAME = 0.85        # titulares casi iguales (Jaccard sobre terms(), une ES/EN por el vocabulario común)
+TITLE_SAME_NAMED = 0.6   # parecidos y con el mismo nombre propio raro, dentro de PAIR_WINDOW_H
+SECTION_OF = {"costarica": "costarica", "guerras": "mundo", "sucesos": "mundo", "politica": "mundo", "mundo": "mundo",
+              "finanzas": "dinero", "cripto": "dinero", "buenas": "avances", "ciencias": "avances", "deportes": "deportes"}
+SECTION_LABELS = {"hoy": "Hoy", "costarica": "Costa Rica", "mundo": "Mundo", "dinero": "Dinero", "deportes": "Deportes",
+                  "avances": "Avances"}
+FACET_OF = {"guerras": "conflictos", "sucesos": "sucesos", "politica": "politica", "finanzas": "finanzas",
+            "cripto": "cripto", "ciencias": "ciencias", "buenas": "buenas"}
+
+
+def _story_terms(s) -> set:
+    out = set()
+    for h in {s.get("headline"), s.get("headlineEs"), s.get("headlineEn")} - {None, ""}:
+        out |= set(terms(GN_TITLE_SUFFIX.sub("", h)))
+    return out
+
+
+def _story_names(s) -> set:
+    out = set()
+    for h in {s.get("headline"), s.get("headlineEs"), s.get("headlineEn")} - {None, ""}:
+        out |= {w.lower() for w in re.findall(r"\b[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{3,}\b", h)}
+    return out - _NOT_NAMES_DEDUP
+
+
+_NOT_NAMES_DEDUP = {"este", "esta", "tras", "para", "como", "with", "after", "says", "from", "that", "this", "what", "when",
+                    "costa", "rica", "estados", "unidos", "united", "states", "trump", "gobierno", "government"}
+
+
+def _ts_of(s):
+    v = s.get("lastSeen") or s.get("firstSeen")
+    try:
+        return datetime.fromisoformat(v.replace("Z", "+00:00")).timestamp()
+    except Exception:
+        return None
+
+
+def same_story(a, b) -> str | None:
+    """Motivo si dos tarjetas son la misma historia: 2+ notas en común (o la mitad de la menor) o titular parecido."""
+    ua, ub = a["_keys"], b["_keys"]
+    shared = len(ua & ub)
+    if shared >= 2 or (shared and shared * 2 >= min(len(ua), len(ub))):
+        return f"enlaces ({shared})"
+    ta, tb = a["_terms"], b["_terms"]
+    if len(ta) < 4 or len(tb) < 4:
+        return None
+    j = len(ta & tb) / len(ta | tb)
+    if j >= TITLE_SAME:
+        return f"titular {j:.2f}"
+    if j >= TITLE_SAME_NAMED and a["_names"] & b["_names"]:
+        x, y = _ts_of(a["s"]), _ts_of(b["s"])
+        if x and y and abs(x - y) <= PAIR_WINDOW_H * 3600:
+            ka, kb = event_kind(a["s"].get("headline", "")), event_kind(b["s"].get("headline", ""))
+            ma, mb = magnitude(a["s"].get("headline", "")), magnitude(b["s"].get("headline", ""))
+            if not (ka and kb and ka != kb) and not (ma and mb and ma != mb):
+                return f"titular {j:.2f} + nombre"
+    return None
+
+
+def _cand_cats(cid, s):
+    """Pestañas posibles de una tarjeta: donde está, su tema regional y Costa Rica si es una buena noticia tica."""
+    out = [cid]
+    if s.get("topic") in DEDUP_TABS and s["topic"] not in out:
+        out.append(s["topic"])
+    if cid == "buenas" and s.get("cr"):
+        out.append("costarica")
+    return out
+
+
+def final_dedup(cats):
+    """Una tarjeta por historia (Arreglos 1 y 2). Une copias entre pestañas y dentro de la misma (enlaces o titular
+    parecido, también ES/EN), elige la pestaña principal por PRIMARY_PRIO y guarda las demás en «alsoIn».
+    Quita de «posibles» lo que ya está confirmado. Devuelve la lista de categorías (mismo orden)."""
+    labels = {c["id"]: c.get("label", c["id"]) for c in cats}
+    cards = []
+    for c in cats:
+        if c["id"] not in DEDUP_TABS:
+            continue
+        for s in c["stories"]:
+            cards.append({"cid": c["id"], "s": s, "_keys": {_url_key(x["url"]) for x in s.get("sources", [])},
+                          "_terms": _story_terms(s), "_names": _story_names(s)})
+    n = len(cards)
+    parent = list(range(n))
+
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    merges = []
+    by_key = defaultdict(list)
+    for i, cd in enumerate(cards):
+        for k in cd["_keys"]:
+            by_key[k].append(i)
+    for i in range(n):
+        for j in range(i + 1, n):
+            if find(i) == find(j):
+                continue
+            why = same_story(cards[i], cards[j])
+            if why:
+                parent[find(j)] = find(i)
+                merges.append({"a": f'{cards[i]["cid"]}: {cards[i]["s"].get("headline", "")[:90]}',
+                               "b": f'{cards[j]["cid"]}: {cards[j]["s"].get("headline", "")[:90]}', "why": why})
+    groups = defaultdict(list)
+    for i in range(n):
+        groups[find(i)].append(cards[i])
+    rank = {c: i for i, c in enumerate(PRIMARY_PRIO)}
+    placed = defaultdict(list)
+    for g in groups.values():
+        cand = []
+        for cd in g:
+            for c in _cand_cats(cd["cid"], cd["s"]):
+                if c not in cand:
+                    cand.append(c)
+        present = [c for c in cand if c in labels] or cand
+        primary = min(present, key=lambda c: rank.get(c, 99))
+        base_cd = max(g, key=lambda cd: (cd["s"].get("outlets", 0), bool(cd["s"].get("narrKind")), cd["cid"] == primary))
+        st = base_cd["s"]
+        names = set(st.get("outletNames") or [])
+        have = {_url_key(x["url"]) for x in st.get("sources", [])}
+        for cd in g:
+            o = cd["s"]
+            if o is st:
+                continue
+            for x in o.get("sources", []):
+                k = _url_key(x["url"])
+                if k not in have:
+                    have.add(k)
+                    st["sources"].append(x)
+                    if x.get("source") and x["source"] not in names:
+                        names.add(x["source"])
+                        st["outlets"] = st.get("outlets", 0) + 1
+            for key in ("subtopic", "subtopicLabel", "cr", "region", "topic", "alsoOnReddit"):
+                if o.get(key) and not st.get(key):
+                    st[key] = o[key]
+            if o.get("mundoRegions"):
+                st["mundoRegions"] = sorted(set(st.get("mundoRegions") or []) | set(o["mundoRegions"]))
+                st["mundoGeneral"] = bool(st.get("mundoGeneral") or o.get("mundoGeneral"))
+                old = {ch["id"] for ch in st.get("chips") or []}
+                st["chips"] = (st.get("chips") or []) + [ch for ch in o.get("chips") or [] if ch["id"] not in old]
+        if names and st.get("outletNames") is not None:
+            st["outletNames"] = sorted(names)
+        st["sources"].sort(key=lambda x: bool(x.get("gn")))
+        cats_in = []
+        for cd in g:
+            if cd["cid"] not in cats_in:
+                cats_in.append(cd["cid"])
+        for c in cand:
+            if c not in cats_in:
+                cats_in.append(c)
+        st["_cats"] = cats_in
+        st["alsoIn"] = [{"id": c, "label": labels.get(c, c)} for c in cats_in if c != primary]
+        if not st["alsoIn"]:
+            st.pop("alsoIn")
+        placed[primary].append(st)
+    confirmed_keys = set()
+    for lst in placed.values():
+        for st in lst:
+            confirmed_keys |= {_url_key(x["url"]) for x in st.get("sources", [])}
+    dropped_pos = 0
+    for c in cats:
+        if c["id"] in DEDUP_TABS:
+            lst = placed.get(c["id"], [])
+            lst.sort(key=lambda s: (s.get("outlets", 0), s.get("lastSeen", "")), reverse=True)
+            for i, st in enumerate(lst):
+                st["id"] = f'{c["id"]}-{i + 1}'
+            c["stories"] = lst
+        elif c["id"] == "posibles":
+            keep = [s for s in c["stories"] if not ({_url_key(x["url"]) for x in s.get("sources", [])} & confirmed_keys)]
+            dropped_pos = len(c["stories"]) - len(keep)
+            c["stories"] = keep
+    # Pestañas nuevas que solo existen como principal (p. ej. Costa Rica sin historias propias)
+    report = {"cardsBefore": n, "storiesAfter": len(groups), "merged": n - len(groups),
+              "posiblesAlreadyConfirmed": dropped_pos, "merges": merges[:200]}
+    return cats, report
+
+
+# Frentes de Conflictos (estructura §6): presentación agrupada, nunca para ocultar.
+CONFLICTS = [
+    ("ucrania-rusia", "Ucrania–Rusia", re.compile(r"(?<![a-z])(ucrani\w*|ukrain\w*|rusia|russia\w*|kiev|kyiv|crimea|kremlin|donbas|zelensk\w*|putin)(?![a-z])")),
+    ("medio-oriente", "Medio Oriente", re.compile(r"(?<![a-z])(israel\w*|gaza|iran\w*|irani|libano|lebanon|hezbol\w*|hamas|yemen\w*|huti\w*|houthi\w*|siria|syria\w*|cisjordania|west bank|palestin\w*)(?![a-z])")),
+    ("sudan", "Sudán", re.compile(r"(?<![a-z])(sudan\w*|darfur|el fasher|rsf)(?![a-z])")),
+    ("sahel-africa", "Sahel y África", re.compile(r"(?<![a-z])(sahel|mali|burkina|niger\b|somalia|al.shabaab|congo|m23|etiopia|ethiopia|tigray)(?![a-z])")),
+    ("asia", "Asia", re.compile(r"(?<![a-z])(myanmar|birmania|taiwan|corea del norte|north korea|cachemira|kashmir|pakistan|afganistan|afghanistan)(?![a-z])")),
+    ("americas", "Américas", re.compile(r"(?<![a-z])(haiti|venezuel\w*|colombia\w*|ecuador\w*|carteles?|cartel)(?![a-z])")),
+]
+
+
+def conflict_front(s):
+    t = fold(" ".join(filter(None, [s.get("headline"), s.get("headlineEs"), s.get("headlineEn")]))).lower()
+    for cid, label, rx in CONFLICTS:
+        if rx.search(t):
+            return {"id": cid, "label": label}
+    return {"id": "otros", "label": "Otros frentes"}
+
+
+HEAVY_TONE = re.compile(r"(?<![a-z])(muert\w*|mueren|murio|asesin\w*|homicid\w*|ataque\w*|bombarde\w*|dead|killed|kills?|"
+                        r"attack\w*|strike\w*|suicid\w*|violaci\w*|secuestr\w*|masacre|tiroteo|shooting|war|guerra)(?![a-z])")
+
+
+def story_tone(s, facets) -> str:
+    """Solo para el ORDEN de Hoy (alternar ritmo); nunca para ocultar, plegar ni poner topes."""
+    if "conflictos" in facets or "sucesos" in facets:
+        return "heavy"
+    t = fold(s.get("headline", "")).lower()
+    if HEAVY_TONE.search(t):
+        return "heavy"
+    if "buenas" in facets or "ciencias" in facets:
+        return "light"
+    return "neutral"
+
+
+def _cr_story(s) -> bool:
+    try:
+        import regiones
+    except Exception:
+        return False
+    t = fold(" ".join(filter(None, [s.get("headline"), s.get("headlineEs")]))).lower()
+    return bool(regiones.KW["costarica"].search(t))
+
+
+def assign_sections(cats) -> dict:
+    """Campos de la estructura de 6 secciones en cada historia: section, facets, alsoIn con sección, tone y
+    conflict. Las categorías viejas (ids) no cambian, así la app Android y las pruebas no se rompen."""
+    per = Counter()
+    for c in cats:
+        cid = c["id"]
+        if cid not in DEDUP_TABS:
+            continue
+        for st in c["stories"]:
+            cats_in = st.pop("_cats", None) or [cid] + ([st["topic"]] if st.get("topic") in DEDUP_TABS else [])
+            facets = []
+            for x in cats_in:
+                f = FACET_OF.get(x)
+                if f and f not in facets:
+                    facets.append(f)
+            is_cr = ("costarica" in cats_in or bool(st.get("cr")) or st.get("region") == "costarica"
+                     or (cid in ("politica", "sucesos") and _cr_story(st)))
+            sec = "costarica" if is_cr and cid not in ("guerras", "deportes") else SECTION_OF.get(cid, "mundo")
+            st["section"] = sec
+            st["facets"] = facets
+            also = []
+            for a in st.get("alsoIn", []):
+                a_sec = SECTION_OF.get(a["id"], "mundo")
+                if a["id"] in ("politica", "sucesos") or a_sec == sec:
+                    a_sec = sec
+                a.update({"section": a_sec, "sectionLabel": SECTION_LABELS[a_sec]})
+                if a_sec == sec:
+                    a["sameSection"] = True
+                also.append(a)
+            if sec == "costarica" and "buenas" in facets and not any(a["section"] == "avances" for a in also):
+                also.append({"id": "buenas", "label": "Buenas noticias", "section": "avances", "sectionLabel": "Avances"})
+            if also:
+                st["alsoIn"] = also
+            st["tone"] = story_tone(st, facets)
+            if "conflictos" in facets:
+                st["conflict"] = conflict_front(st)
+            per[sec] += 1
+    # «En desarrollo» (antes Posibles): cada candidata va al final de su sección según su chip principal.
+    for c in cats:
+        if c["id"] != "posibles":
+            continue
+        for st in c["stories"]:
+            ids = [ch["id"] for ch in st.get("chips", [])]
+            sec = next((SECTION_OF[x] if x != "costarica" else "costarica" for x in DEV_SECTION_PRIO if x in ids),
+                       "mundo")
+            st["section"] = sec
+            st["dev"] = True
+            st["facets"] = [FACET_OF[x] for x in ids if x in FACET_OF]
+            per["dev:" + sec] += 1
+    return dict(per)
+
+
+DEV_SECTION_PRIO = ["deportes", "costarica", "cripto", "finanzas", "ciencias", "buenas", "guerras", "sucesos",
+                    "politica", "mundo"]
+SECTIONS = ["hoy", "costarica", "mundo", "dinero", "deportes", "avances"]
+
+
+def build_home(cats) -> dict:
+    """Portada «Hoy»: guion con ritmo y final (plan de estructura §5.1). Solo ids de historias ya publicadas en
+    sus secciones; la app arma las tarjetas. Bloques sin material se saltan. Sin notificaciones ni «modo calma»:
+    Conflictos y Sucesos van abiertos, con su propio bloque, sin plegar."""
+    live = [st for c in cats if c["id"] in DEDUP_TABS for st in c["stories"] if not st.get("stale")]
+    dev = [st for c in cats if c["id"] == "posibles" for st in c["stories"] if not st.get("stale")]
+    rank = lambda st: (st.get("outlets", 0), st.get("lastArticle") or st.get("lastSeen") or "")
+    live.sort(key=rank, reverse=True)
+    used = set()
+
+    def pick(n, pred, mix=False):
+        """mix: si hay con qué, la 2.ª pieza tiene otro tono que la 1.ª (solo orden; nada se oculta)."""
+        pool_ = [st for st in live if st["id"] not in used and pred(st)]
+        out = []
+        while pool_ and len(out) < n:
+            nxt = pool_[0]
+            if mix and out:
+                nxt = next((st for st in pool_ if st.get("tone") != out[-1].get("tone")), nxt)
+            pool_.remove(nxt)
+            used.add(nxt["id"])
+            out.append(nxt)
+        return [st["id"] for st in out]
+
+    def dev_pick(n):   # «En desarrollo» en Hoy: una por sección, para que no sean todas del mismo tema
+        out, secs = [], set()
+        for st in sorted(dev, key=rank, reverse=True):
+            if st.get("section") not in secs:
+                secs.add(st.get("section"))
+                out.append(st["id"])
+            if len(out) >= n:
+                break
+        return out
+
+    sec = lambda name: (lambda st: st.get("section") == name)
+    fac = lambda f: (lambda st: f in st.get("facets", []))
+    # Cierre: la mejor buena noticia de Avances o de Costa Rica (se reserva primero para que no se gaste antes).
+    closing = pick(1, lambda st: "buenas" in st.get("facets", []) and st.get("section") in ("avances", "costarica"))
+    blocks = [
+        {"id": "ancla"},
+        {"id": "cercano", "title": "Lo cercano", "stories": pick(2, sec("costarica"), mix=True)},
+        {"id": "grande", "title": "Lo grande",
+         "stories": pick(2, lambda st: st.get("section") == "mundo" and "conflictos" not in st.get("facets", []))},
+        {"id": "respiro", "title": "Respiro", "stories": pick(1, sec("avances"))},
+        {"id": "util", "title": "Lo útil", "markets": True, "stories": pick(1, sec("dinero"))},
+        {"id": "conflictos", "title": "Conflictos y sucesos",
+         "stories": pick(3, fac("conflictos")) + pick(1, fac("sucesos"))},
+        {"id": "ligero", "title": "Deportes", "games": True, "stories": pick(1, sec("deportes"))},
+        {"id": "desarrollo", "title": "En desarrollo", "dev": True,
+         "stories": dev_pick(3)},
+        {"id": "cierre", "title": "Para cerrar", "stories": closing},
+    ]
+    count = sum(len(b.get("stories", [])) for b in blocks if not b.get("dev"))
+    return {"blocks": blocks, "count": count}
+
+
+def sections_index(cats, home) -> list:
+    """Las 6 secciones con sus conteos (historias confirmadas y en desarrollo). Las categorías viejas siguen en
+    «categories» con los mismos ids para la app Android."""
+    out = []
+    for sid in SECTIONS:
+        if sid == "hoy":
+            out.append({"id": "hoy", "label": "Hoy", "stories": home["count"] if home else 0, "dev": 0})
+            continue
+        n = sum(1 for c in cats if c["id"] in DEDUP_TABS for st in c["stories"] if st.get("section") == sid)
+        d = sum(1 for c in cats if c["id"] == "posibles" for st in c["stories"] if st.get("section") == sid)
+        out.append({"id": sid, "label": SECTION_LABELS[sid], "stories": n, "dev": d})
+    return out
+
+
 def main():
     now = datetime.now(timezone.utc)
     previous = load_previous()   # leer antes de sobrescribir noticias.json
@@ -1068,6 +1508,7 @@ def main():
             continue
         kept = 0
         newest = None
+        raw_newest = max((d for d in (parse_date(r[2]) for r in rows) if d), default=None)
         gnews = "news.google.com" in url
         for title, link, date_s, desc in rows:
             if gnews:  # Google Noticias agrega « - Medio» al titular y el resumen es solo el titular
@@ -1083,7 +1524,7 @@ def main():
             published = parse_date(date_s)
             if published is None or published > now + timedelta(hours=3):
                 continue
-            hours = SCIENCE_HOURS if hint == "ciencias" else NEWS_HOURS
+            hours = SCIENCE_HOURS if (hint == "ciencias" or fid in WEEKLY_FEEDS) else NEWS_HOURS
             if published < now - timedelta(hours=hours):
                 continue
             summary = desc
@@ -1107,10 +1548,15 @@ def main():
             newest = published if newest is None or published > newest else newest
         ok_feeds.append({"id": fid, "source": source, "lang": lang, "url": url, "itemsInFeed": len(rows),
                          "kept": kept, "newest": newest.strftime("%Y-%m-%dT%H:%M:%SZ") if newest else None})
+        frozen = frozen_reason(fid, raw_newest, now)
+        if frozen:  # responde pero no aporta: se hace visible en feedsFailed en vez de quedarse callado
+            ok_feeds[-1]["frozen"] = True
+            failed.append({"id": fid, "source": source, "url": url, "error": frozen})
+            print(f"FROZEN {fid}: {frozen}")
         print(f"OK   {fid:22s} raw={len(rows):3d} kept={kept}")
 
     for fid, url, reason in KNOWN_FAILS:
-        failed.append({"id": fid, "source": fid, "url": url, "error": reason})
+        failed.append({"id": fid, "source": fid, "url": url, "error": reason, "known": True})
 
     print(f"\nitems={len(pool)}")
     idf, df = build_vectors(pool)
@@ -1262,12 +1708,58 @@ def main():
         print("resultados deportivos", sports_report)
     except Exception as exc:
         print("resultados deportivos FAIL", type(exc).__name__, exc)
-    # Pestaña de marcadores, no de noticias: sin historias; la app la llena con «sports».
-    out_cats.append({"id": "deportes", "label": "Deportes", "kind": "scores", "minOutlets": 0, "stories": []})
+    # Pestaña Deportes: marcadores primero (la app los llena con «sports») y, debajo, noticias deportivas de
+    # consenso (Arreglo 7, deportes_noticias.py). kind «scores+news» (la app vieja solo conocía «scores»).
+    sport_stories, sports_news_report = [], None
+    try:
+        import deportes_noticias
+        sport_stories, sport_cands, sports_news_report = deportes_noticias.build(now, pool)
+        for i, s in enumerate(sport_stories):
+            s.pop("_last", None)
+            s["id"] = f"deportes-{i + 1}"
+        try:   # sus candidatas de 2 medios van a «En desarrollo» de Deportes
+            more, _ = build_posibles(sport_cands, out_cats, region_labels)
+            pos = next((c for c in out_cats if c["id"] == "posibles"), None)
+            if pos is not None:
+                base = len(pos["stories"])
+                for i, c in enumerate(more[:15]):
+                    c["id"] = f"posibles-{base + i + 1}"
+                pos["stories"].extend(more[:15])
+        except Exception as exc:
+            print("deportes posibles FAIL", type(exc).__name__, exc)
+        print("noticias deportivas", {k: v for k, v in sports_news_report.items() if k not in ("feedsOk", "knownFails")})
+    except Exception as exc:  # nunca romper la actualización principal
+        sports_news_report = {"error": f"{type(exc).__name__}: {exc}"}
+        print("noticias deportivas FAIL", type(exc).__name__, exc)
+    summary_counts["deportes"] = len(sport_stories)
+    out_cats.append({"id": "deportes", "label": "Deportes", "kind": "scores+news", "minOutlets": MIN_OUTLETS,
+                     "stories": sport_stories})
 
     final_cats = order_tabs(out_cats)
+    links_report = dedup_report = None
+    section_counts = {}
+    try:  # Arreglos 1 y 2: enlaces reales en vez de Google Noticias, una tarjeta por historia, secciones
+        enlaces.seed_from_previous(previous)
+        links_report = resolve_story_links(final_cats)
+        print("enlaces Google Noticias", links_report)
+        final_cats, dedup_report = final_dedup(final_cats)
+        section_counts = assign_sections(final_cats)
+        print("deduplicado final", {k: v for k, v in dedup_report.items() if k != "merges"}, "secciones", section_counts)
+    except Exception as exc:  # nunca romper la actualización principal
+        import traceback
+        traceback.print_exc()
+        dedup_report = {"error": f"{type(exc).__name__}: {exc}"}
     fresh_report = apply_freshness(final_cats, previous, now)
     print("frescura", fresh_report)
+    home = sections = None
+    try:  # estructura de 6 secciones: portada «Hoy» e índice de secciones
+        home = build_home(final_cats)
+        sections = sections_index(final_cats, home)
+        print("hoy", home["count"], "historias ·", [(b["id"], len(b.get("stories", []))) for b in home["blocks"]])
+    except Exception as exc:
+        import traceback
+        traceback.print_exc()
+        home = sections = None
     narr_report = None
     try:  # relato con IA de todas las fuentes; sin clave o si falla, queda el resumen de un medio
         import narrar
@@ -1283,6 +1775,7 @@ def main():
         "cryptoPricesReport": crypto_prices_report,
         "sports": sports,
         "sportsReport": sports_report,
+        "sportsNews": sports_news_report,
         "nextRefreshAt": next_cron(now).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "refreshHours": REFRESH_HOURS,
         "method": {
@@ -1310,6 +1803,11 @@ def main():
         "regions": region_report,
         "mainMerges": [{"a": a, "b": b, "cos": c, "anchor": an, "shared": sh} for a, b, c, an, sh in main_merges],
         "possible": posibles_report,
+        "links": links_report,
+        "dedup": dedup_report,
+        "sectionCounts": section_counts,
+        "sections": sections,
+        "home": home,
         "narration": narr_report,
     }
     write_json_atomic(OUT, payload)
@@ -1339,6 +1837,15 @@ def validate_payload(payload) -> None:
             for src in st.get("sources", []):
                 if not is_safe_http_url(src.get("url", "")):
                     raise ValueError("url de fuente inválida")
+            if "section" in st and st["section"] not in SECTION_LABELS:
+                raise ValueError("sección inválida")
+    home = payload.get("home")
+    if home is not None:
+        ids = {st.get("id") for c in cats for st in c["stories"]}
+        for b in home.get("blocks", []):
+            for sid in b.get("stories", []):
+                if sid not in ids:
+                    raise ValueError("Hoy apunta a una historia que no existe")
 
 
 def write_json_atomic(path: Path, payload) -> None:

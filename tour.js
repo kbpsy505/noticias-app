@@ -1,6 +1,6 @@
 // Tour de bienvenida: se muestra solo en la primera visita y se puede repetir con el botón "?".
 (function () {
-  const KEY = "noticias_tour_v1";
+  const KEY = "noticias_tour_v2";   // v2: estructura de 6 secciones (quien vio el v1 lo ve una vez más)
   const STEPS = [
     {
       title: "¡Hola! 👋",
@@ -8,14 +8,14 @@
     },
     {
       target: "#tabs",
-      title: "Pestañas",
-      text: "Desliza hacia los lados para ver los temas: Costa Rica, Finanzas, Cripto, Política, Ciencias, Mundo (con filtros por región: Europa, Asia…), Sucesos, Guerras y más. La app abre en Buenas noticias. El número de cada pestaña es cuántas historias tiene.",
+      title: "Seis secciones",
+      text: "Hoy, Costa Rica, Mundo, Dinero, Deportes y Avances. La app abre en Hoy: una portada corta con lo principal de todas las secciones, que termina en «✓ Estás al día». Cada historia sale una sola vez; si toca otra sección, lleva un chip «También en…» que te lleva ahí.",
       onShow: () => scrollTabTo(".tab.on"),
     },
     {
       target: "#list .card .outlets",
       title: "Cuántos medios",
-      text: "Esta etiqueta dice cuántos medios distintos publicaron la historia. En casi todas las pestañas solo aparecen las que publican 3 o más. En Buenas noticias basta 1 medio confiable, y ahí se ve su nombre.",
+      text: "Esta etiqueta dice cuántos medios distintos publicaron la historia. Casi todo lo que ves lo publican 3 o más. En las buenas noticias basta 1 medio confiable; en Ciencias y en algunas regiones, 2 medios, y la tarjeta lo marca con «2 medios».",
     },
     {
       target: "#list .card",
@@ -24,16 +24,16 @@
       tall: true,
     },
     {
-      target: '.tab[data-cat="posibles"]',
-      title: "Posibles noticias",
-      text: "Aquí van las historias que publican solo 2 medios. Todavía no están confirmadas: tómalas con cautela. Si más medios las publican, pasan a su pestaña.",
-      onShow: () => scrollTabTo('.tab[data-cat="posibles"]'),
+      target: '.tab[data-cat="mundo"]',
+      title: "En desarrollo",
+      text: "Al final de cada sección van las historias que por ahora publican solo 2 medios, sin confirmar. Si un tercero las publica, suben a su sección con «Confirmada ✓»; si no, desaparecen en 48 h.",
+      onShow: () => scrollTabTo('.tab[data-cat="mundo"]'),
       onHide: () => scrollTabTo(".tab.on"),
     },
     {
       target: "#schedule",
       title: "Siempre al día",
-      text: "Aquí ves la hora de la última actualización y de la próxima (cada 3 horas, hora de Costa Rica). Justo abajo está el tipo de cambio del dólar y el euro. Para ver este tour otra vez, toca el botón «?» de arriba.",
+      text: "Aquí ves la hora de la última actualización y de la próxima (cada 3 horas, hora de Costa Rica), y el dólar del BCCR. El cuadro completo del tipo de cambio y los precios cripto están en Dinero. Para ver este tour otra vez, toca el botón «?» de arriba.",
       extra: "#tourBtn",
     },
   ];
