@@ -54,7 +54,7 @@ SPORT_KNOWN_FAILS = [
 
 SKIP = re.compile(
     r"(?i)(apuesta|betting|\bodds\b|\bpicks?\b|parlay|pron[oó]stico|predicci[oó]n|prediction|best bets?|"
-    r"d[oó]nde ver|canal(es)? para ver|hora y canal|qu[eé] canal|horario y canal|por tv|transmisi[oó]n en|c[oó]mo ver|where to watch|how to watch|\bstream\w*\b|tv channel|canal de tv|a qu[eé] hora|"
+    r"d[oó]nde ver|canal(es)? para ver|para ver el partido|c[oó]mo ver el|opciones para ver|hora y canal|qu[eé] canal|horario y canal|por tv|transmisi[oó]n en|c[oó]mo ver|where to watch|how to watch|\bstream\w*\b|tv channel|canal de tv|a qu[eé] hora|"
     r"en vivo|en directo|\blive\b|minuto a minuto|as it happened|player ratings|calificaciones|"
     r"\bquiz\b|crucigrama|horóscopo|podcast|p[oó]dcast|\bvideo\b|\bv[ií]deo\b|galer[ií]a|\bfotos\b|in pictures|"
     r"fantasy|ofertas?|descuento|black friday|merch|camiseta a la venta|sponsored|patrocinad)")

@@ -1432,32 +1432,45 @@ def build_home(cats) -> dict:
     live.sort(key=rank, reverse=True)
     used = set()
 
-    def pick(n, pred):
+    def pick(n, pred, mix=False):
+        """mix: si hay con qué, la 2.ª pieza tiene otro tono que la 1.ª (solo orden; nada se oculta)."""
+        pool_ = [st for st in live if st["id"] not in used and pred(st)]
         out = []
-        for st in live:
+        while pool_ and len(out) < n:
+            nxt = pool_[0]
+            if mix and out:
+                nxt = next((st for st in pool_ if st.get("tone") != out[-1].get("tone")), nxt)
+            pool_.remove(nxt)
+            used.add(nxt["id"])
+            out.append(nxt)
+        return [st["id"] for st in out]
+
+    def dev_pick(n):   # «En desarrollo» en Hoy: una por sección, para que no sean todas del mismo tema
+        out, secs = [], set()
+        for st in sorted(dev, key=rank, reverse=True):
+            if st.get("section") not in secs:
+                secs.add(st.get("section"))
+                out.append(st["id"])
             if len(out) >= n:
                 break
-            if st["id"] in used or not pred(st):
-                continue
-            used.add(st["id"])
-            out.append(st["id"])
         return out
 
     sec = lambda name: (lambda st: st.get("section") == name)
     fac = lambda f: (lambda st: f in st.get("facets", []))
-    closing = pick(1, fac("buenas"))
+    # Cierre: la mejor buena noticia de Avances o de Costa Rica (se reserva primero para que no se gaste antes).
+    closing = pick(1, lambda st: "buenas" in st.get("facets", []) and st.get("section") in ("avances", "costarica"))
     blocks = [
         {"id": "ancla"},
-        {"id": "cercano", "title": "Lo cercano", "stories": pick(2, sec("costarica"))},
+        {"id": "cercano", "title": "Lo cercano", "stories": pick(2, sec("costarica"), mix=True)},
         {"id": "grande", "title": "Lo grande",
          "stories": pick(2, lambda st: st.get("section") == "mundo" and "conflictos" not in st.get("facets", []))},
         {"id": "respiro", "title": "Respiro", "stories": pick(1, sec("avances"))},
         {"id": "util", "title": "Lo útil", "markets": True, "stories": pick(1, sec("dinero"))},
         {"id": "conflictos", "title": "Conflictos y sucesos",
          "stories": pick(3, fac("conflictos")) + pick(1, fac("sucesos"))},
-        {"id": "ligero", "title": "Ligero", "games": True, "stories": pick(1, sec("deportes"))},
+        {"id": "ligero", "title": "Deportes", "games": True, "stories": pick(1, sec("deportes"))},
         {"id": "desarrollo", "title": "En desarrollo", "dev": True,
-         "stories": [st["id"] for st in sorted(dev, key=rank, reverse=True)[:3]]},
+         "stories": dev_pick(3)},
         {"id": "cierre", "title": "Para cerrar", "stories": closing},
     ]
     count = sum(len(b.get("stories", [])) for b in blocks if not b.get("dev"))

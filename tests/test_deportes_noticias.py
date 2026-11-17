@@ -6,7 +6,8 @@ def test_filtra_apuestas_en_vivo_y_donde_ver():
     for t in ["Saprissa vs Herediano: dónde ver y a qué hora", "Premier League odds, picks and best bets",
               "Real Madrid - Barcelona en directo, minuto a minuto", "Arsenal 2-1 Chelsea: player ratings",
               "Liverpool v Spurs: live", "Pronóstico y apuestas del clásico",
-              "Argentina vs. Costa Rica: Hora y canales para ver hoy este partido"]:
+              "Argentina vs. Costa Rica: Hora y canales para ver hoy este partido",
+              "Argentina vs. Costa Rica: estas son las opciones para ver el partido"]:
         assert D.SKIP.search(t), t
 
 

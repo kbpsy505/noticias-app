@@ -44,9 +44,10 @@ function buildSections(data) {
     x.bTone = s.tone || "neutral";
     x.bConflict = s.conflict || (x.bFacets.has("conflictos") ? "Otros frentes" : null);
     // «También en…»: máx. 2, a otra sección (o a un filtro de la misma), con el filtro exacto.
-    x.bAlsoIn = (s.alsoIn || []).filter((a) => a.section && SEC_LABEL[a.section]).slice(0, 2).map((a) => {
+    // Si es de la misma sección, el filtro ya sale como etiqueta de la tarjeta: solo chips hacia otra sección.
+    x.bAlsoIn = (s.alsoIn || []).filter((a) => a.section && SEC_LABEL[a.section] && !a.sameSection).slice(0, 2).map((a) => {
       const f = CAT_FILTER[a.id] || null;
-      const lab = a.sameSection ? (FACET_LABEL[f] || a.label) : a.sectionLabel + (f && FACET_LABEL[f] ? " · " + FACET_LABEL[f] : "");
+      const lab = a.sectionLabel + (f && FACET_LABEL[f] ? " · " + FACET_LABEL[f] : "");
       return { section: a.section, facet: f, label: "También en " + lab };
     });
     B.byId[s.id] = x;
@@ -77,7 +78,7 @@ function homeFrom(data) {
     return out;
   };
   const bs = B.bySec;
-  const closing = pick(B.stories.filter((s) => s.bFacets.has("buenas")), 1);
+  const closing = pick(B.stories.filter((s) => s.bFacets.has("buenas") && ["avances", "costarica"].includes(s.bSection)), 1);
   const blocks = [
     { id: "ancla" },
     { id: "cercano", title: "Lo cercano", stories: pick(bs.costarica, 2) },
@@ -85,7 +86,7 @@ function homeFrom(data) {
     { id: "respiro", title: "Respiro", stories: pick(bs.avances, 1) },
     { id: "util", title: "Lo útil", stories: pick(bs.dinero, 1), markets: true },
     { id: "conflictos", title: "Conflictos y sucesos", stories: pick(B.stories, 3, (s) => s.bFacets.has("conflictos")).concat(pick(B.stories, 1, (s) => s.bFacets.has("sucesos"))) },
-    { id: "ligero", title: "Ligero", games: true, stories: pick(bs.deportes, 1) },
+    { id: "ligero", title: "Deportes", games: true, stories: pick(bs.deportes, 1) },
     { id: "desarrollo", title: "En desarrollo", stories: B.dev.filter((s) => !s.stale).slice(0, 3), dev: true },
     { id: "cierre", title: "Para cerrar", stories: closing },
   ];
@@ -259,7 +260,7 @@ function renderHoy(list) {
     if (b.games) {
       const games = topGames(3);
       if (!games.length && !b.stories.length) return;
-      blockTitle(list, b.title, "Deportes");
+      blockTitle(list, b.title, "resultados y una noticia");
       if (games.length) {
         const box = el("section", "mini-games");
         games.forEach(([g, lg]) => box.append(gameCard(g, lg)));
