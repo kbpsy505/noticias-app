@@ -789,6 +789,9 @@ function renderSports(list) {
   list.append(sec);
 }
 
+// «scores» (solo marcadores) o «scores+news» (marcadores arriba y noticias deportivas debajo, Arreglo 7).
+const isScores = (c) => !!c && String(c.kind || "").startsWith("scores");
+
 function renderTabs() {
   const nav = document.getElementById("tabs");
   nav.innerHTML = "";
@@ -796,7 +799,7 @@ function renderTabs() {
     const b = el("button", "tab" + (c.id === state.cat ? " on" : ""));
     b.type = "button";
     b.dataset.cat = c.id;
-    if (c.kind === "scores") {
+    if (isScores(c)) {
       const sp = state.data.sports;
       const live = sp ? sp.leagues.reduce((n, l) => n + ((l.counts && l.counts.in) || 0), 0) : 0;
       b.append(c.label);
@@ -807,7 +810,7 @@ function renderTabs() {
       renderTabs();
       renderList();
       window.scrollTo({ top: 0 });
-      if (c.kind === "scores") spRefresh(state.sportSel, false);
+      if (isScores(c)) spRefresh(state.sportSel, false);
       else clearTimeout(spLive.timer);
     });
     nav.appendChild(b);
@@ -968,7 +971,15 @@ function renderList() {
   const cat = state.data.categories.find((c) => c.id === state.cat);
   if (state.cat === "cripto") renderCrypto(list);
   document.querySelector(".langs").style.display = cat && cat.kind === "scores" ? "none" : "";
-  if (cat && cat.kind === "scores") { renderSports(list); return; }
+  if (isScores(cat)) {
+    renderSports(list);
+    if (cat.stories && cat.stories.length) {
+      list.append(el("h2", "blk-title", "Noticias deportivas"));
+      renderStories(list, cat.id, cat.stories);
+      requestAnimationFrame(() => fitClamps(list));
+    }
+    return;
+  }
   if (!cat || (!cat.stories.length && cat.id !== "mundo")) {
     let msg = "En esta actualización ninguna historia de esta categoría fue publicada por 3 o más medios distintos. Vuelve a revisar en la próxima actualización.";
     if (state.cat === "buenas") msg = "Ahora mismo no hay buenas noticias confirmadas por un medio confiable.";

@@ -46,7 +46,7 @@ REFRESH_HOURS = 3
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 
-PHASE = 5                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
+PHASE = 6                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
 NEWS_HOURS = 72          # antigüedad máxima de una nota (noticias); Arreglo 6: antes 48 h
 SCIENCE_HOURS = 24 * 7   # ciencia publica más lento
 PAIR_WINDOW_H = 36       # dos notas solo se unen si se publicaron con <= 36 h de diferencia
@@ -977,7 +977,7 @@ def build_posibles(candidates, out_cats, region_labels):
     Se descarta cualquier grupo que comparta una nota con una historia ya confirmada, y los
     grupos repetidos entre el corpus general, el regional y el cripto se fusionan (se queda el
     de más medios y se juntan las etiquetas de categoría/región)."""
-    cat_labels = dict(CATEGORIES) | {"cripto": "Criptomonedas"}
+    cat_labels = dict(CATEGORIES) | {"cripto": "Criptomonedas", "deportes": "Deportes"}
     confirmed = {src["url"] for c in out_cats if c["id"] not in ("buenas", "posibles")
                  for s in c["stories"] for src in s["sources"]}
     kept = []
@@ -1140,7 +1140,9 @@ def _url_key(u: str) -> str:
 
 # Prioridad editorial para la pestaña principal de una historia repetida (plan, Arreglo 1; decisión del
 # creador del 2026-11-17: una buena noticia tica va primero en Costa Rica, con chip «También en Avances»).
-PRIMARY_PRIO = ["guerras", "sucesos", "costarica", "buenas", "finanzas", "cripto", "ciencias", "politica", "mundo"]
+# Deportes (Arreglo 7) va antes de Costa Rica: una nota del Saprissa vive en Deportes con chip «También en Costa Rica».
+PRIMARY_PRIO = ["guerras", "sucesos", "deportes", "costarica", "buenas", "finanzas", "cripto", "ciencias", "politica",
+                "mundo"]
 DEDUP_TABS = set(PRIMARY_PRIO)
 TITLE_SAME = 0.85        # titulares casi iguales (Jaccard sobre terms(), une ES/EN por el vocabulario común)
 TITLE_SAME_NAMED = 0.6   # parecidos y con el mismo nombre propio raro, dentro de PAIR_WINDOW_H
@@ -1369,7 +1371,7 @@ def assign_sections(cats) -> dict:
     per = Counter()
     for c in cats:
         cid = c["id"]
-        if cid not in DEDUP_TABS and cid != "deportes":
+        if cid not in DEDUP_TABS:
             continue
         for st in c["stories"]:
             cats_in = st.pop("_cats", None) or [cid] + ([st["topic"]] if st.get("topic") in DEDUP_TABS else [])
@@ -1380,7 +1382,7 @@ def assign_sections(cats) -> dict:
                     facets.append(f)
             is_cr = ("costarica" in cats_in or bool(st.get("cr")) or st.get("region") == "costarica"
                      or (cid in ("politica", "sucesos") and _cr_story(st)))
-            sec = "costarica" if is_cr and cid != "guerras" else SECTION_OF.get(cid, "mundo")
+            sec = "costarica" if is_cr and cid not in ("guerras", "deportes") else SECTION_OF.get(cid, "mundo")
             st["section"] = sec
             st["facets"] = facets
             also = []
@@ -1620,8 +1622,32 @@ def main():
         print("resultados deportivos", sports_report)
     except Exception as exc:
         print("resultados deportivos FAIL", type(exc).__name__, exc)
-    # Pestaña de marcadores, no de noticias: sin historias; la app la llena con «sports».
-    out_cats.append({"id": "deportes", "label": "Deportes", "kind": "scores", "minOutlets": 0, "stories": []})
+    # Pestaña Deportes: marcadores primero (la app los llena con «sports») y, debajo, noticias deportivas de
+    # consenso (Arreglo 7, deportes_noticias.py). kind «scores+news» (la app vieja solo conocía «scores»).
+    sport_stories, sports_news_report = [], None
+    try:
+        import deportes_noticias
+        sport_stories, sport_cands, sports_news_report = deportes_noticias.build(now, pool)
+        for i, s in enumerate(sport_stories):
+            s.pop("_last", None)
+            s["id"] = f"deportes-{i + 1}"
+        try:   # sus candidatas de 2 medios van a «En desarrollo» de Deportes
+            more, _ = build_posibles(sport_cands, out_cats, region_labels)
+            pos = next((c for c in out_cats if c["id"] == "posibles"), None)
+            if pos is not None:
+                base = len(pos["stories"])
+                for i, c in enumerate(more[:15]):
+                    c["id"] = f"posibles-{base + i + 1}"
+                pos["stories"].extend(more[:15])
+        except Exception as exc:
+            print("deportes posibles FAIL", type(exc).__name__, exc)
+        print("noticias deportivas", {k: v for k, v in sports_news_report.items() if k not in ("feedsOk", "knownFails")})
+    except Exception as exc:  # nunca romper la actualización principal
+        sports_news_report = {"error": f"{type(exc).__name__}: {exc}"}
+        print("noticias deportivas FAIL", type(exc).__name__, exc)
+    summary_counts["deportes"] = len(sport_stories)
+    out_cats.append({"id": "deportes", "label": "Deportes", "kind": "scores+news", "minOutlets": MIN_OUTLETS,
+                     "stories": sport_stories})
 
     final_cats = order_tabs(out_cats)
     links_report = dedup_report = None
@@ -1654,6 +1680,7 @@ def main():
         "cryptoPricesReport": crypto_prices_report,
         "sports": sports,
         "sportsReport": sports_report,
+        "sportsNews": sports_news_report,
         "nextRefreshAt": next_cron(now).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "refreshHours": REFRESH_HOURS,
         "method": {
