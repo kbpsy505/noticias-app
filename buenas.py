@@ -75,7 +75,7 @@ GOOD_FEEDS = [
     ("pos-bbc-health", "https://feeds.bbci.co.uk/news/health/rss.xml", "BBC", "bbc", "en", "topic", "salud"),
     ("pos-bbc-tech", "https://feeds.bbci.co.uk/news/technology/rss.xml", "BBC", "bbc", "en", "topic", "ciencia"),
     ("pos-nasa", "https://www.nasa.gov/news-release/feed/", "NASA", "nasa", "en", "topic", "ciencia"),
-    ("pos-esa", "https://www.esa.int/rssfeed/Our_Activities/Space_Science", "ESA", "esa", "en", "topic", "ciencia"),
+    ("pos-esa", "https://www.esa.int/rssfeed/TopNews", "ESA", "esa", "en", "topic", "ciencia"),
     ("pos-nih", "https://www.nih.gov/news-releases/feed.xml", "NIH", "nih", "en", "topic", "salud"),
     ("pos-un-health", "https://news.un.org/feed/subscribe/en/news/topic/health/feed/rss.xml", "UN News", "un", "en", "topic", "salud"),
     ("pos-un-climate", "https://news.un.org/feed/subscribe/en/news/topic/climate-change/feed/rss.xml", "UN News", "un", "en", "topic", "ambiente"),

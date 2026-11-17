@@ -118,7 +118,7 @@ def analyse(path):
     live_fail = [f for f in d.get("feedsFailed", [])]
     known = {k for k in ("reuters", "ap", "washingtonpost", "cnn-espanol", "efe", "independent", "timesofisrael-directo",
                          "semafor", "meduza", "dw-es-mundo", "arabnews / the national", "ukrinform", "wsj-world")}
-    main_live_fail = [f["id"] for f in live_fail if f["id"] not in known and "conocido" not in (f.get("error") or "")
+    main_live_fail = [f["id"] for f in live_fail if f["id"] not in known and not f.get("known") and "conocido" not in (f.get("error") or "")
                       and not (f.get("error") or "").startswith("congelado")]
     frozen = [f["id"] for f in d.get("feedsOk", []) if f.get("itemsInFeed", 0) > 0 and f.get("kept", 0) == 0]
     frozen_marked = [f["id"] for f in live_fail if (f.get("error") or "").startswith("congelado")]
@@ -183,7 +183,7 @@ def table(res):
     for label, k in ROWS:
         out += f"| {label} | " + " | ".join(fmt(r[k]) for r in res) + " |\n"
     out += "| Feeds principales con fallo en vivo | " + " | ".join(fmt(r["mainFeedsFailedLive"]) for r in res) + " |\n"
-    out += "| Feeds principales congelados sin marcar | " + " | ".join(fmt(r["mainFeedsFrozenUnmarked"]) for r in res) + " |\n"
+    out += "| Feeds principales que responden pero aportan 0 notas | " + " | ".join(fmt(r["mainFeedsFrozenUnmarked"]) for r in res) + " |\n"
     out += "| Feeds principales marcados «congelado» | " + " | ".join(fmt(r["mainFeedsFrozenMarked"]) for r in res) + " |\n"
     for s in SECTIONS:
         out += f"| Sección {s}: historias únicas (tarjetas) | " + " | ".join(

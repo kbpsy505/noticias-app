@@ -114,3 +114,13 @@ def test_cantones_en_palabras_clave():
     import regiones
     for t in ("accidente en perez zeledon", "lluvias en sarapiqui", "festival en quepos", "golfito recibe crucero", "upala"):
         assert regiones.KW["costarica"].search(t), t
+
+
+@FASE1
+def test_feed_congelado_se_marca():
+    from datetime import datetime, timedelta, timezone
+    now = datetime(2026, 11, 17, 19, tzinfo=timezone.utc)
+    assert actualizar.frozen_reason("expansion", now - timedelta(days=12), now).startswith("congelado")
+    assert actualizar.frozen_reason("science", None, now).startswith("congelado")
+    assert actualizar.frozen_reason("bbc-top", now - timedelta(hours=2), now) is None
+    assert actualizar.frozen_reason("econ-int", now - timedelta(days=6), now) is None   # semanal

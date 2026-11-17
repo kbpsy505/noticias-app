@@ -35,7 +35,7 @@ from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 from xml.etree import ElementTree as ET
 
-from feeds import FEEDS, KNOWN_FAILS
+from feeds import FEEDS, KNOWN_FAILS, WEEKLY_FEEDS
 from vocab import PHRASES, STOP, WORDS
 
 ROOT = Path(__file__).resolve().parent
@@ -45,12 +45,15 @@ REFRESH_HOURS = 3
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 
+PHASE = 1                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
 NEWS_HOURS = 48          # antigüedad máxima de una nota (noticias)
 SCIENCE_HOURS = 24 * 7   # ciencia publica más lento
 PAIR_WINDOW_H = 36       # dos notas solo se unen si se publicaron con <= 36 h de diferencia
 SUMMARY_MAX = 400
 MAX_STORIES = 30         # por categoría
 MIN_OUTLETS = 3          # medios distintos necesarios para que una historia aparezca
+FROZEN_HOURS = 72        # un feed cuya nota más nueva tiene más de 72 h se marca «congelado» (salvo semanales)
+WEEKLY_HOURS = 24 * 10   # tope de «congelado» para los feeds semanales
 
 CATEGORIES = [
     ("sucesos", "Sucesos"),
@@ -203,6 +206,9 @@ def local(tag: str) -> str:
     return tag.split("}")[-1] if tag else ""
 
 
+_ISO_TZ_FIX = re.compile(r"T?Z$")
+
+
 def parse_date(raw: str):
     raw = (raw or "").strip()
     if not raw:
@@ -214,8 +220,11 @@ def parse_date(raw: str):
         return dt.astimezone(timezone.utc)
     except Exception:
         pass
+    # ISO 8601 con espacios o saltos de línea dentro (science.org: «2026-11-16\nT02:15:00\nZ») o «…TZ».
+    iso = re.sub(r"\s+", "", raw)
+    iso = _ISO_TZ_FIX.sub("Z", iso)
     try:
-        dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
         return dt.astimezone(timezone.utc)
@@ -381,6 +390,17 @@ def fetch_feed(feed):
     except Exception:
         pass
     return feed, None, err
+
+
+def frozen_reason(fid: str, raw_newest, now) -> str | None:
+    """Motivo «congelado» si el feed trae ítems pero ninguno con fecha legible o reciente (Arreglo 5)."""
+    if raw_newest is None:
+        return "congelado: ninguna fecha legible en el feed"
+    limit = WEEKLY_HOURS if fid in WEEKLY_FEEDS else FROZEN_HOURS
+    age = (now - raw_newest).total_seconds() / 3600
+    if age > limit:
+        return f"congelado: la nota más nueva tiene {age / 24:.0f} días"
+    return None
 
 
 # ---------------------------------------------------------------- clasificación
@@ -1068,6 +1088,7 @@ def main():
             continue
         kept = 0
         newest = None
+        raw_newest = max((d for d in (parse_date(r[2]) for r in rows) if d), default=None)
         gnews = "news.google.com" in url
         for title, link, date_s, desc in rows:
             if gnews:  # Google Noticias agrega « - Medio» al titular y el resumen es solo el titular
@@ -1107,10 +1128,15 @@ def main():
             newest = published if newest is None or published > newest else newest
         ok_feeds.append({"id": fid, "source": source, "lang": lang, "url": url, "itemsInFeed": len(rows),
                          "kept": kept, "newest": newest.strftime("%Y-%m-%dT%H:%M:%SZ") if newest else None})
+        frozen = frozen_reason(fid, raw_newest, now)
+        if frozen:  # responde pero no aporta: se hace visible en feedsFailed en vez de quedarse callado
+            ok_feeds[-1]["frozen"] = True
+            failed.append({"id": fid, "source": source, "url": url, "error": frozen})
+            print(f"FROZEN {fid}: {frozen}")
         print(f"OK   {fid:22s} raw={len(rows):3d} kept={kept}")
 
     for fid, url, reason in KNOWN_FAILS:
-        failed.append({"id": fid, "source": fid, "url": url, "error": reason})
+        failed.append({"id": fid, "source": fid, "url": url, "error": reason, "known": True})
 
     print(f"\nitems={len(pool)}")
     idf, df = build_vectors(pool)

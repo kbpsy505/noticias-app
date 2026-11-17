@@ -89,7 +89,7 @@ TOPICS = {
             ("sci-sciencedaily", "https://www.sciencedaily.com/rss/top/science.xml", "ScienceDaily", "sciencedaily", "en", True),
             ("sci-physorg", "https://phys.org/rss-feed/", "Phys.org", "physorg", "en", True),
             ("sci-nasa", "https://www.nasa.gov/news-release/feed/", "NASA", "nasa", "en", True),
-            ("sci-esa", "https://www.esa.int/rssfeed/Our_Activities/Space_News", "ESA", "esa", "en", True),
+            ("sci-esa", "https://www.esa.int/rssfeed/TopNews", "ESA", "esa", "en", True),
             ("sci-smithsonian", "https://www.smithsonianmag.com/rss/science-nature/", "Smithsonian", "smithsonian", "en", True),
             ("sci-quanta", "https://api.quantamagazine.org/feed/", "Quanta", "quanta", "en", True),
             ("sci-ars", "https://feeds.arstechnica.com/arstechnica/science", "Ars Technica", "ars", "en", True),

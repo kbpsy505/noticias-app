@@ -33,7 +33,9 @@ FEEDS = [
     ("elmundo-esp", "https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml", "El Mundo", "unidad-editorial", "es", "politica"),
     ("elmundo-eco", "https://e00-elmundo.uecdn.es/elmundo/rss/economia.xml", "El Mundo", "unidad-editorial", "es", "finanzas"),
     ("elmundo-ciencia", "https://e00-elmundo.uecdn.es/elmundo/rss/ciencia.xml", "El Mundo", "unidad-editorial", "es", "ciencias"),
-    ("expansion", "https://e00-expansion.uecdn.es/rss/portada.xml", "Expansión", "unidad-editorial", "es", "finanzas"),
+    # La portada de Expansión quedó congelada el 5 de noviembre de 2026; mercados y economía siguen vivos.
+    ("expansion-mercados", "https://e00-expansion.uecdn.es/rss/mercados.xml", "Expansión", "unidad-editorial", "es", "finanzas"),
+    ("expansion-economia", "https://e00-expansion.uecdn.es/rss/economia.xml", "Expansión", "unidad-editorial", "es", "finanzas"),
     # --- The Economist, FT, Bloomberg ---
     ("econ-int", "https://www.economist.com/international/rss.xml", "The Economist", "economist", "en", "mundo"),
     ("econ-fin", "https://www.economist.com/finance-and-economics/rss.xml", "The Economist", "economist", "en", "finanzas"),
@@ -145,7 +147,16 @@ FEEDS = [
     ("pravda-ua", "https://www.pravda.com.ua/eng/rss/", "Ukrainska Pravda", "pravda-ua", "en", None),
     ("almonitor", "https://www.al-monitor.com/rss", "Al-Monitor", "almonitor", "en", None),
     ("f24-es-mo", "https://www.france24.com/es/medio-oriente/rss", "France 24 Español", "france24", "es", "mundo"),
+    # --- Conflictos (Arreglo 5): fuentes especializadas con RSS vivo verificado el 2026-11-17 ---
+    ("crisisgroup", "https://www.crisisgroup.org/rss.xml", "International Crisis Group", "crisisgroup", "en", None),
+    ("newhumanitarian", "https://www.thenewhumanitarian.org/rss/all.xml", "The New Humanitarian", "newhumanitarian", "en", None),
+    ("dabanga", "https://www.dabangasudan.org/en/feed", "Radio Dabanga", "dabanga", "en", None),
+    ("guardian-sudan", "https://www.theguardian.com/world/sudan/rss", "The Guardian", "guardian", "en", "mundo"),
 ]
+
+# Feeds que publican poco o por semana: tienen ventana de 7 días (Arreglo 6) y no se marcan
+# «congelados» hasta los 10 días sin notas.
+WEEKLY_FEEDS = {"econ-int", "econ-fin", "econ-biz", "econ-us", "crisisgroup"}
 
 # Intentos que no funcionaron (verificados a mano); se listan en el JSON.
 KNOWN_FAILS = [
@@ -162,4 +173,7 @@ KNOWN_FAILS = [
     ("arabnews / the national", "-", "Medios de propiedad estatal (Arabia Saudí / EAU); no se agregan"),
     ("ukrinform", "-", "Agencia estatal ucraniana; no se agrega a un tema de guerra"),
     ("wsj-world", "https://feeds.a.dj.com/rss/RSSWorldNews.xml", "Congelado en enero de 2025; no es un feed vivo"),
+    ("expansion", "https://e00-expansion.uecdn.es/rss/portada.xml", "Portada congelada desde el 5 de noviembre de 2026; se usan mercados.xml y economia.xml"),
+    ("acled", "https://acleddata.com/feed/", "ACLED no tiene RSS público (404); Crisis Group y The New Humanitarian lo cubren"),
+    ("understandingwar", "https://www.understandingwar.org/rss.xml", "ISW responde 403"),
 ]
