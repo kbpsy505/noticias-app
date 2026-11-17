@@ -2,7 +2,7 @@ const TZ = "America/Costa_Rica";
 const when = new Intl.DateTimeFormat("es-CR", {
   timeZone: TZ, weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit",
 });
-const state = { data: null, cat: "buenas", lang: "all", buenasFilter: "todas", mundoFilter: "todas", mundoInfo: false, olderOpen: {}, cryptoSel: null, sportSel: null, cfbAll: false };
+const state = { data: null, cat: "hoy", lang: "all", buenasFilter: "todas", mundoFilter: "todas", mundoInfo: false, olderOpen: {}, cryptoSel: null, sportSel: null, cfbAll: false };
 
 function fmt(iso) {
   const d = new Date(iso);
@@ -793,6 +793,7 @@ function renderSports(list) {
 const isScores = (c) => !!c && String(c.kind || "").startsWith("scores");
 
 function renderTabs() {
+  if (window.SEC_ON) return secRenderTabs();   // estructura de 6 secciones (secciones.js)
   const nav = document.getElementById("tabs");
   nav.innerHTML = "";
   state.data.categories.forEach((c) => {
@@ -966,6 +967,7 @@ function card(s) {
 }
 
 function renderList() {
+  if (window.SEC_ON) return secRenderList();
   const list = document.getElementById("list");
   list.innerHTML = "";
   const cat = state.data.categories.find((c) => c.id === state.cat);
@@ -1108,7 +1110,7 @@ function renderFoot(data) {
   f.innerHTML = "";
   f.append(
     el("p", null, "Cómo funciona: cada 3 horas se leen " + (st.feedsOk || "?") + " canales RSS públicos (" +
-      (st.itemsGathered || "?") + " notas en esta tanda). Se agrupan las notas que hablan del mismo hecho, en español o inglés, y solo se muestran los grupos que publican al menos 3 medios distintos. Más medios = más consenso. Costa Rica y los filtros por región de Mundo usan la misma regla; la región sale de los lugares que nombran las notas y de dónde son los medios. Excepción: en Buenas noticias basta un medio confiable, y lo que sale de Reddit o 9gag solo se usa como pista."),
+      (st.itemsGathered || "?") + " notas en esta tanda). Se agrupan las notas que hablan del mismo hecho, en español o inglés, y solo se muestran los grupos que publican al menos 3 medios distintos. Más medios = más consenso. Costa Rica y los filtros por región de Mundo usan la misma regla; la región sale de los lugares que nombran las notas y de dónde son los medios. Excepciones: en las buenas noticias basta un medio confiable (lo que sale de Reddit o 9gag solo se usa como pista), y en Ciencias y en Oceanía, África y Sudamérica bastan 2 medios con al menos uno confiable, marcadas «2 medios». Lo que publican 2 medios en el resto va a «En desarrollo»."),
     el("p", null, aboutText(data)),
     el("p", "small", "Medios: " + (data.sourcesUsed || []).join(", ") + ".")
   );
@@ -1129,9 +1131,11 @@ fetch("noticias.json?t=" + Date.now(), { cache: "no-store" })
   })
   .then((data) => {
     state.data = data;
-    if (!data.categories.some((c) => c.id === state.cat)) state.cat = data.categories[0].id;
+    const secciones = typeof seccionesInit === "function" && seccionesInit(data);
+    if (!secciones && !data.categories.some((c) => c.id === state.cat)) state.cat = data.categories[0].id;
     renderSchedule(data);
     renderFx(data);
+    if (secciones) document.getElementById("fx").hidden = true;   // el cuadro completo vive en Dinero
     renderTabs();
     renderList();
     if (state.cat === "deportes") spRefresh(state.sportSel, false);

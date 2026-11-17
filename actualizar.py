@@ -46,7 +46,7 @@ REFRESH_HOURS = 3
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36")
 
-PHASE = 6                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
+PHASE = 7                # fase del plan de mejoras de contenido aplicada en esta rama (pruebas)
 NEWS_HOURS = 72          # antigüedad máxima de una nota (noticias); Arreglo 6: antes 48 h
 SCIENCE_HOURS = 24 * 7   # ciencia publica más lento
 PAIR_WINDOW_H = 36       # dos notas solo se unen si se publicaron con <= 36 h de diferencia
@@ -1402,7 +1402,80 @@ def assign_sections(cats) -> dict:
             if "conflictos" in facets:
                 st["conflict"] = conflict_front(st)
             per[sec] += 1
+    # «En desarrollo» (antes Posibles): cada candidata va al final de su sección según su chip principal.
+    for c in cats:
+        if c["id"] != "posibles":
+            continue
+        for st in c["stories"]:
+            ids = [ch["id"] for ch in st.get("chips", [])]
+            sec = next((SECTION_OF[x] if x != "costarica" else "costarica" for x in DEV_SECTION_PRIO if x in ids),
+                       "mundo")
+            st["section"] = sec
+            st["dev"] = True
+            st["facets"] = [FACET_OF[x] for x in ids if x in FACET_OF]
+            per["dev:" + sec] += 1
     return dict(per)
+
+
+DEV_SECTION_PRIO = ["deportes", "costarica", "cripto", "finanzas", "ciencias", "buenas", "guerras", "sucesos",
+                    "politica", "mundo"]
+SECTIONS = ["hoy", "costarica", "mundo", "dinero", "deportes", "avances"]
+
+
+def build_home(cats) -> dict:
+    """Portada «Hoy»: guion con ritmo y final (plan de estructura §5.1). Solo ids de historias ya publicadas en
+    sus secciones; la app arma las tarjetas. Bloques sin material se saltan. Sin notificaciones ni «modo calma»:
+    Conflictos y Sucesos van abiertos, con su propio bloque, sin plegar."""
+    live = [st for c in cats if c["id"] in DEDUP_TABS for st in c["stories"] if not st.get("stale")]
+    dev = [st for c in cats if c["id"] == "posibles" for st in c["stories"] if not st.get("stale")]
+    rank = lambda st: (st.get("outlets", 0), st.get("lastArticle") or st.get("lastSeen") or "")
+    live.sort(key=rank, reverse=True)
+    used = set()
+
+    def pick(n, pred):
+        out = []
+        for st in live:
+            if len(out) >= n:
+                break
+            if st["id"] in used or not pred(st):
+                continue
+            used.add(st["id"])
+            out.append(st["id"])
+        return out
+
+    sec = lambda name: (lambda st: st.get("section") == name)
+    fac = lambda f: (lambda st: f in st.get("facets", []))
+    closing = pick(1, fac("buenas"))
+    blocks = [
+        {"id": "ancla"},
+        {"id": "cercano", "title": "Lo cercano", "stories": pick(2, sec("costarica"))},
+        {"id": "grande", "title": "Lo grande",
+         "stories": pick(2, lambda st: st.get("section") == "mundo" and "conflictos" not in st.get("facets", []))},
+        {"id": "respiro", "title": "Respiro", "stories": pick(1, sec("avances"))},
+        {"id": "util", "title": "Lo útil", "markets": True, "stories": pick(1, sec("dinero"))},
+        {"id": "conflictos", "title": "Conflictos y sucesos",
+         "stories": pick(3, fac("conflictos")) + pick(1, fac("sucesos"))},
+        {"id": "ligero", "title": "Ligero", "games": True, "stories": pick(1, sec("deportes"))},
+        {"id": "desarrollo", "title": "En desarrollo", "dev": True,
+         "stories": [st["id"] for st in sorted(dev, key=rank, reverse=True)[:3]]},
+        {"id": "cierre", "title": "Para cerrar", "stories": closing},
+    ]
+    count = sum(len(b.get("stories", [])) for b in blocks if not b.get("dev"))
+    return {"blocks": blocks, "count": count}
+
+
+def sections_index(cats, home) -> list:
+    """Las 6 secciones con sus conteos (historias confirmadas y en desarrollo). Las categorías viejas siguen en
+    «categories» con los mismos ids para la app Android."""
+    out = []
+    for sid in SECTIONS:
+        if sid == "hoy":
+            out.append({"id": "hoy", "label": "Hoy", "stories": home["count"] if home else 0, "dev": 0})
+            continue
+        n = sum(1 for c in cats if c["id"] in DEDUP_TABS for st in c["stories"] if st.get("section") == sid)
+        d = sum(1 for c in cats if c["id"] == "posibles" for st in c["stories"] if st.get("section") == sid)
+        out.append({"id": sid, "label": SECTION_LABELS[sid], "stories": n, "dev": d})
+    return out
 
 
 def main():
@@ -1665,6 +1738,15 @@ def main():
         dedup_report = {"error": f"{type(exc).__name__}: {exc}"}
     fresh_report = apply_freshness(final_cats, previous, now)
     print("frescura", fresh_report)
+    home = sections = None
+    try:  # estructura de 6 secciones: portada «Hoy» e índice de secciones
+        home = build_home(final_cats)
+        sections = sections_index(final_cats, home)
+        print("hoy", home["count"], "historias ·", [(b["id"], len(b.get("stories", []))) for b in home["blocks"]])
+    except Exception as exc:
+        import traceback
+        traceback.print_exc()
+        home = sections = None
     narr_report = None
     try:  # relato con IA de todas las fuentes; sin clave o si falla, queda el resumen de un medio
         import narrar
@@ -1711,6 +1793,8 @@ def main():
         "links": links_report,
         "dedup": dedup_report,
         "sectionCounts": section_counts,
+        "sections": sections,
+        "home": home,
         "narration": narr_report,
     }
     write_json_atomic(OUT, payload)
@@ -1740,6 +1824,15 @@ def validate_payload(payload) -> None:
             for src in st.get("sources", []):
                 if not is_safe_http_url(src.get("url", "")):
                     raise ValueError("url de fuente inválida")
+            if "section" in st and st["section"] not in SECTION_LABELS:
+                raise ValueError("sección inválida")
+    home = payload.get("home")
+    if home is not None:
+        ids = {st.get("id") for c in cats for st in c["stories"]}
+        for b in home.get("blocks", []):
+            for sid in b.get("stories", []):
+                if sid not in ids:
+                    raise ValueError("Hoy apunta a una historia que no existe")
 
 
 def write_json_atomic(path: Path, payload) -> None:
