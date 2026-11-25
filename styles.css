@@ -40,7 +40,7 @@ body {
 h1, h2, h3 { text-wrap: balance; }
 button, a, summary { touch-action: manipulation; }
 /* Controles: mantener el dedo no selecciona el texto ni abre el menú de copiar (el contenido sigue seleccionable) */
-:is(button, .sources summary, .fx-banks summary, .older > summary) {
+:is(button, .sources summary, .fx-banks summary, .older > summary, .sis-more > summary) {
   user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
 }
 
@@ -50,7 +50,7 @@ button, a, summary { touch-action: manipulation; }
 
 /* Respuesta al tocar (el resaltado gris del navegador está desactivado arriba) */
 :is(.tab, .lang, .bf, .tour-btn, .tour-tip button, .fx-more):active:not(:disabled) { transform: scale(0.97); }
-:is(.sources, .fx-banks, .mnote) summary:active, .more-btn:active { opacity: 0.7; }
+:is(.sources, .fx-banks, .mnote, .sis-more) summary:active, .more-btn:active, .sis-rep:active { opacity: 0.7; }
 @media (prefers-reduced-motion: no-preference) {
   :is(.tab, .lang, .bf, .tour-btn, .tour-tip button, .fx-more) { transition: transform 160ms var(--ease-out); }
 }
@@ -561,3 +561,61 @@ h2.blk-title.dev-title { margin-block-start: 14px; padding-block-start: 10px; bo
 .chip.ok { background: var(--accent-soft); color: var(--accent); }
 .frente { margin-block-start: 6px; padding: 8px 14px; }
 .frente-t { margin: 0; }
+
+/* Recuadro de sismos en el encabezado (RSN, visible en todas las secciones) */
+.sis {
+  margin-block: 10px 0;
+  max-inline-size: min(100%, 40rem);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sis[hidden] { display: none; }
+.sis-kicker {
+  margin: 0;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 700;
+}
+.sis-latest, .sis-item { margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.sis-head { margin: 0; font-size: 14px; font-weight: 650; display: flex; flex-wrap: wrap; gap: 0 .4em; align-items: baseline; }
+.sis-mag { font-variant-numeric: tabular-nums; font-weight: 750; color: var(--ink); }
+.sis-time { color: var(--ink-2); font-variant-numeric: tabular-nums; font-weight: 550; }
+.sis-place, .sis-felt, .sis-empty { margin: 0; font-size: 13px; line-height: 1.35; color: var(--ink-2); }
+.sis-rep {
+  font-size: 13px; font-weight: 650; color: var(--accent);
+  text-decoration: underline; text-underline-offset: 2px;
+  align-self: start;
+}
+.sis-credit { margin: 0; font-size: 12px; line-height: 1.4; color: var(--muted); }
+.sis-credit a { color: var(--accent); font-weight: 650; text-decoration: underline; text-underline-offset: 2px; }
+.sis-more { margin: 0; }
+.sis-more > summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  min-block-size: 32px;
+  display: flex;
+  align-items: center;
+}
+.sis-more > summary::before { content: "▸"; margin-inline-end: 6px; }
+.sis-more[open] > summary::before { content: "▾"; }
+.sis-list {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sis-item { padding-block-start: 8px; border-block-start: 1px solid var(--line); }
+@media (hover: hover) and (pointer: fine) {
+  .sis-rep:hover, .sis-credit a:hover { color: var(--ink); }
+}

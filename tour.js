@@ -33,8 +33,8 @@
     {
       target: "#schedule",
       title: "Siempre al día",
-      text: "Aquí ves la hora de la última actualización y de la próxima (cada 3 horas, hora de Costa Rica), y el dólar del BCCR. El cuadro completo del tipo de cambio y los precios cripto están en Dinero. Para ver este tour otra vez, toca el botón «?» de arriba.",
-      extra: "#tourBtn",
+      text: "Aquí ves la hora de la última actualización y de la próxima (cada 3 horas, hora de Costa Rica), y el dólar del BCCR. El recuadro de sismos del encabezado trae el último sismo sentido de la Red Sismológica Nacional (UCR-ICE) y se renueva cada 5 minutos; toca «Más sismos» para ver los anteriores. El cuadro completo del tipo de cambio y los precios cripto están en Dinero. Para ver este tour otra vez, toca el botón «?» de arriba.",
+      extra: "#sis",
     },
   ];
 

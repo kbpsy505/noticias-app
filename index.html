@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <!-- CSP: solo scripts/estilos propios; datos de ESPN (marcadores) e imágenes https. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://site.api.espn.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <!-- CSP: solo scripts/estilos propios; datos de ESPN (marcadores), RSS de la RSN e imágenes https. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://site.api.espn.com https://rsn.ucr.ac.cr; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <!-- Barra de estado del color del fondo de la página (la app es solo clara; antes era casi negra) -->
   <meta name="theme-color" content="#f3efe6">
@@ -20,6 +20,7 @@
     <p class="intro">Seis secciones: Hoy, Costa Rica, Mundo, Dinero, Deportes y Avances. Solo aparecen las historias que publican al menos 3 medios distintos (en las buenas noticias basta 1 medio confiable; en Ciencias y en algunas regiones, 2 medios, y la tarjeta lo dice). Lo que publican 2 medios va, sin confirmar, en «En desarrollo» al final de cada sección.</p>
     <p class="schedule" id="schedule">Cargando la última actualización…</p>
     <p class="fxline" id="fxline"></p>
+    <section class="sis" id="sis" hidden aria-label="Sismos de la Red Sismológica Nacional"></section>
     <section class="fx" id="fx" hidden aria-label="Tipo de cambio"></section>
   </header>
 
