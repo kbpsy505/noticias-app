@@ -81,3 +81,51 @@ test("index.html carga secciones.js después de app.js y el tour usa la clave v2
   const tour = readFileSync(path.join(here, "../../tour.js"), "utf8");
   assert.match(tour, /noticias_tour_v2/);
 });
+
+// Parser de sismos (RSS de la RSN) y CSP del encabezado.
+const sisFn = appJs.match(/function sisParseRss\(xmlText\) \{[\s\S]*?\n\}\n/);
+if (!sisFn) throw new Error("app.js debe definir sisParseRss(xmlText)");
+const sisSrc = appJs.match(/function sisClean[\s\S]*function sisParseRss\(xmlText\) \{[\s\S]*?\n\}\n/)[0];
+const sisParseRss = new Function(
+  "const SIS_MAX = 8; const SIS_MONTHS = { enero:1,febrero:2,marzo:3,abril:4,mayo:5,junio:6,julio:7,agosto:8,septiembre:9,setiembre:9,octubre:10,noviembre:11,diciembre:12 };"
+  + sisSrc + "; return sisParseRss;"
+)();
+const sisXml = readFileSync(path.join(here, "../fixtures/rsn-ultimos-sismos.xml"), "utf8");
+
+test("sisParseRss lee sismos sentidos en Mw y descarta los demás", () => {
+  const evs = sisParseRss(sisXml);
+  assert.equal(evs.length, 3);
+  assert.equal(evs[0].magnitude, 4.1);
+  assert.equal(evs[0].magnitudeType, "Mw");
+  assert.equal(evs[0].depthKm, 4);
+  assert.equal(evs[0].latitude, 10.253);
+  assert.equal(evs[0].longitude, -84.374);
+  assert.equal(evs[0].felt, true);
+  assert.equal(evs[0].feltIn, "Ciudad Quesada, Zarcero y Bajos del Toro");
+  assert.equal(evs[0].location, "5 km al Noreste de Tapesco, Zarcero");
+  assert.ok(evs[0].url.startsWith("https://rsn.ucr.ac.cr/"));
+  assert.ok(evs[0].occurredAt.startsWith("2026-11-25T16:14:00"));
+  assert.equal(evs[1].magnitude, 3.7);
+  assert.ok(evs.every((e) => e.felt && e.magnitudeType === "Mw"));
+  assert.ok(!evs.some((e) => (e.location || "").includes("Cabo Blanco")));
+  assert.ok(!evs.some((e) => e.magnitude === 3.1));
+  assert.ok(!evs.some((e) => (e.url || "").startsWith("javascript:")));
+});
+
+test("index.html permite el RSS de la RSN en el CSP y pone el recuadro en el encabezado", () => {
+  const html = readFileSync(path.join(here, "../../index.html"), "utf8");
+  assert.match(html, /connect-src 'self' https:\/\/site\.api\.espn\.com https:\/\/rsn\.ucr\.ac\.cr;/);
+  assert.match(html, /id="sis"/);
+  assert.ok(html.indexOf('id="sis"') < html.indexOf('id="fx"'));
+  assert.doesNotMatch(html, /cdn\.|unpkg|jsdelivr|cloudflare/i);
+});
+
+test("app.js pide el RSS de la RSN cada 5 min y usa setHref en los informes", () => {
+  assert.match(appJs, /SIS_REFRESH_MS = 5 \* 60 \* 1000/);
+  assert.match(appJs, /sisParseRss/);
+  assert.match(appJs, /sisStartRefresh/);
+  assert.match(appJs, /setHref\(a, href\)/);
+  const code = appJs.replace(/\/\*[\s\S]*?\*\//g, "").replace(/\/\/.*$/gm, "");
+  assert.doesNotMatch(code, /Notification|serviceWorker|pushManager/);
+});
+

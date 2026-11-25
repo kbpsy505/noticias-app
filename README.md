@@ -124,6 +124,15 @@ Historias **sin confirmar** que publican **2 medios distintos** (no llegaron a l
 - Crédito: «Datos: TipoCambioCR» bajo las cifras y el botón «Ver más en TipoCambioCR ↗».
 - Si las dos fuentes fallan, el bloque no aparece y el resto de la actualización sigue igual.
 
+## Sismos de la RSN
+
+`sismos.py` guarda, en cada actualización de 3 horas, una foto de los últimos sismos **sentidos** publicados por la [Red Sismológica Nacional (UCR-ICE)](https://rsn.ucr.ac.cr/actividad-sismica/ultimos-sismos) en el RSS de «Últimos sismos». Va en `noticias.json` → `sismos` (informe en `sismosReport`). Es una clave nueva: las existentes no cambian.
+
+- En el encabezado, visible en todas las secciones, un recuadro muestra el último sismo sentido (hora de Costa Rica, magnitud en Mw, lugar, profundidad, «sentido en» y enlace al informe). «Más sismos» despliega hasta 7 anteriores (8 en total).
+- La app pide el mismo RSS cada 5 minutos (el CSP permite `https://rsn.ucr.ac.cr`). Si el pedido falla, se muestra la foto de la última actualización y se dice desde cuándo es.
+- Solo entran informes sentidos en Mw. No se mezclan magnitudes de OVSICORI (Ml) ni del USGS (mb). No hay notificaciones ni colores de alarma.
+- Si el feed de la RSN falla en la actualización, se reutiliza la foto anterior cuando existe.
+
 ## Precios de criptomonedas
 
 `criptoprecios.py` agrega, en cada actualización de 3 horas, los precios de BTC, ETH, SOL, XRP, BNB, DOGE, ADA y USDT, y los guarda en `noticias.json` → `cryptoPrices` (informe en `cryptoPricesReport`). Es la primera sección de la pestaña Criptomonedas, antes de la nota y de las noticias.

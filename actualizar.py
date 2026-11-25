@@ -1693,6 +1693,14 @@ def main():
     except Exception as exc:
         print("tipo de cambio FAIL", type(exc).__name__, exc)
 
+    sismos_data, sismos_report = None, None
+    try:  # sismos sentidos de la RSN para el encabezado; nunca rompe la actualización
+        import sismos
+        sismos_data, sismos_report = sismos.build(now, previous=previous)
+        print("sismos RSN", sismos_report)
+    except Exception as exc:
+        print("sismos RSN FAIL", type(exc).__name__, exc)
+
     crypto_prices, crypto_prices_report = None, None
     try:  # precios y gráficas de cripto para la pestaña Criptomonedas; nunca rompe la actualización
         import criptoprecios
@@ -1771,6 +1779,8 @@ def main():
         "updatedAt": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "exchange": exchange,
         "exchangeReport": exchange_report,
+        "sismos": sismos_data,
+        "sismosReport": sismos_report,
         "cryptoPrices": crypto_prices,
         "cryptoPricesReport": crypto_prices_report,
         "sports": sports,
@@ -1839,6 +1849,16 @@ def validate_payload(payload) -> None:
                     raise ValueError("url de fuente inválida")
             if "section" in st and st["section"] not in SECTION_LABELS:
                 raise ValueError("sección inválida")
+    sis = payload.get("sismos")
+    if sis is not None:
+        if not isinstance(sis, dict) or not isinstance(sis.get("events"), list):
+            raise ValueError("sismos inválido")
+        for ev in sis["events"]:
+            if not isinstance(ev, dict):
+                raise ValueError("sismo inválido")
+            url = ev.get("url") or ""
+            if url and not is_safe_http_url(url):
+                raise ValueError("url de sismo inválida")
     home = payload.get("home")
     if home is not None:
         ids = {st.get("id") for c in cats for st in c["stories"]}

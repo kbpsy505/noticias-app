@@ -63,7 +63,7 @@ def test_broken_feed_does_not_abort_and_json_is_valid(tmp_path):
     def no_curl(*a, **k):
         raise RuntimeError("curl disabled in tests")
 
-    import buenas, cripto, criptoprecios, narrar, regiones, resultados, tema, tipocambio
+    import buenas, cripto, criptoprecios, narrar, regiones, resultados, sismos, tema, tipocambio
 
     def boom(*a, **k):
         raise RuntimeError("offline: módulo opcional omitido en la prueba")
@@ -81,6 +81,7 @@ def test_broken_feed_does_not_abort_and_json_is_valid(tmp_path):
         patch.object(tipocambio, "build", boom),
         patch.object(criptoprecios, "build", boom),
         patch.object(resultados, "build", boom),
+        patch.object(sismos, "build", boom),
         patch.object(narrar, "narrate", boom),
     ]
     subprocess.run = no_curl

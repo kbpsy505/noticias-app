@@ -1124,6 +1124,244 @@ document.querySelectorAll(".lang").forEach((btn) => {
   });
 });
 
+
+// ── Sismos de la RSN (UCR-ICE) en el encabezado.
+// Foto en noticias.json → sismos (cada ~3 h). Al abrir, se pide el RSS oficial
+// cada 5 min; si falla, se muestra la foto con la hora. Solo sismos sentidos en Mw.
+const SIS_FEED = "https://rsn.ucr.ac.cr/actividad-sismica/ultimos-sismos?format=feed&type=rss";
+const SIS_LIST = "https://rsn.ucr.ac.cr/actividad-sismica/ultimos-sismos";
+const SIS_MAX = 8;
+const SIS_REFRESH_MS = 5 * 60 * 1000;
+const SIS_MONTHS = { enero: 1, febrero: 2, marzo: 3, abril: 4, mayo: 5, junio: 6, julio: 7, agosto: 8, septiembre: 9, setiembre: 9, octubre: 10, noviembre: 11, diciembre: 12 };
+const sisClock = new Intl.DateTimeFormat("es-CR", { timeZone: TZ, hour: "numeric", minute: "2-digit" });
+const sisDay = new Intl.DateTimeFormat("es-CR", { timeZone: TZ, day: "numeric", month: "short" });
+const sisLive = { events: null, fetchedAt: null, err: null, from: "snapshot" };
+
+function sisClean(s) {
+  return String(s || "").replace(/<[^>]+>/g, " ").replace(/&nbsp;/gi, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, "\"").replace(/&#39;/g, "'").replace(/\s+/g, " ").replace(/^[\s.,;]+|[\s.,;]+$/g, "");
+}
+function sisNum(s) {
+  const m = String(s || "").replace(",", ".").match(/-?\d+(?:\.\d+)?/);
+  return m ? Number(m[0]) : null;
+}
+function sisFields(html) {
+  const out = {};
+  const re = /<strong>\s*([^<:]+):\s*<\/strong>\s*([^<]*)/gi;
+  let m;
+  while ((m = re.exec(html || ""))) out[sisClean(m[1]).toLowerCase()] = sisClean(m[2]);
+  return out;
+}
+function sisLocalDate(fecha, hora) {
+  const fm = String(fecha || "").match(/(\d{1,2})\s+de\s+([a-záéíóú]+)\s+del?\s+(\d{4})/i);
+  const hm = String(hora || "").match(/(\d{1,2}):(\d{2})\s*([ap])\.?\s*m/i);
+  if (!fm || !hm) return null;
+  const month = SIS_MONTHS[fm[2].toLowerCase()];
+  if (!month) return null;
+  let hour = Number(hm[1]), min = Number(hm[2]);
+  const ap = hm[3].toLowerCase();
+  if (ap === "p" && hour !== 12) hour += 12;
+  if (ap === "a" && hour === 12) hour = 0;
+  const pad = (n) => String(n).padStart(2, "0");
+  const iso = fm[3] + "-" + pad(month) + "-" + pad(Number(fm[1])) + "T" + pad(hour) + ":" + pad(min) + ":00-06:00";
+  const d = new Date(iso);
+  return Number.isNaN(d.getTime()) ? null : d;
+}
+function sisFelt(title, fields, plain) {
+  if (/\bSENTIDO\b/i.test(title || "")) return true;
+  const intens = (fields && fields.intensidades) || "";
+  return /sentido\s+en/i.test(intens) || /sentido\s+en/i.test(plain || "");
+}
+function sisFeltIn(fields, plain) {
+  const intens = (fields && fields.intensidades) || "";
+  let m = intens.match(/sentido\s+en:\s*(.+)/i);
+  if (m) return sisClean(m[1]);
+  m = String(plain || "").match(/sentido\s+en:\s*(.+)/i);
+  return m ? sisClean(m[1]) : "";
+}
+function sisCoords(text) {
+  const parts = String(text || "").split(/\s+y\s+/);
+  if (parts.length !== 2) return { lat: null, lon: null };
+  return { lat: sisNum(parts[0]), lon: sisNum(parts[1]) };
+}
+function sisChunks(xmlText) {
+  const out = [];
+  const re = /<(item|entry)\b[\s\S]*?<\/\1>/gi;
+  let m;
+  while ((m = re.exec(xmlText || ""))) out.push(m[0]);
+  return out;
+}
+function sisChild(chunk, names) {
+  for (const n of names) {
+    const href = chunk.match(new RegExp("<" + n + "\\b[^>]*href=[\"']([^\"']+)[\"']", "i"));
+    if (href) return href[1];
+    const tag = chunk.match(new RegExp("<" + n + "\\b[^>]*>([\\s\\S]*?)</" + n + ">", "i"));
+    if (tag) return tag[1].replace(/^<!\[CDATA\[/, "").replace(/\]\]>$/, "").trim();
+  }
+  return "";
+}
+function sisParseRss(xmlText) {
+  const events = [], seen = {};
+  for (const chunk of sisChunks(xmlText)) {
+    const title = sisClean(sisChild(chunk, ["title"]));
+    const link = sisClean(sisChild(chunk, ["link"]));
+    const guid = sisClean(sisChild(chunk, ["guid", "id"]));
+    const desc = sisChild(chunk, ["description", "summary", "content"]);
+    const pub = sisClean(sisChild(chunk, ["pubDate", "published", "updated"]));
+    const fields = sisFields(desc);
+    const plain = sisClean(desc);
+    if (!sisFelt(title, fields, plain)) continue;
+    const tm = title.match(/SISMO,\s*(.+?),\s*(\d{1,2}:\d{2}\s*[ap]\.?\s*m\.?)\.?,?\s*Mag:\s*([\d.,]+)\s*([A-Za-z]+)?/i);
+    const fecha = fields.fecha || (tm && tm[1]) || "";
+    const hora = fields["hora local"] || fields.hora || (tm && tm[2]) || "";
+    const occurred = sisLocalDate(fecha, hora);
+    const published = pub ? new Date(pub) : null;
+    const mag = sisNum(fields.magnitud || (tm && tm[3]) || "");
+    let mt = (fields.magnitud || "").match(/\b(Mw|ML|Ml|mb|Mww|mB)\b/i);
+    mt = (mt && mt[1]) || (tm && tm[4]) || "Mw";
+    if (String(mt).toLowerCase() !== "mw") continue;
+    const loc = fields["localización"] || fields.localizacion || "";
+    const xy = sisCoords(fields.coordenadas || "");
+    const when = occurred || (published && !Number.isNaN(published.getTime()) ? published : null);
+    if (mag == null || !when) continue;
+    const urlRaw = (link || guid || "").trim();
+    const ev = {
+      id: (guid || urlRaw || title).slice(0, 200),
+      title: title,
+      url: urlRaw,
+      occurredAt: when.toISOString(),
+      occurredLocal: occurred ? occurred.toISOString() : null,
+      magnitude: mag,
+      magnitudeType: "Mw",
+      location: loc,
+      latitude: xy.lat,
+      longitude: xy.lon,
+      depthKm: sisNum(fields.profundidad || ""),
+      felt: true,
+      feltIn: sisFeltIn(fields, plain),
+      origin: fields.origen || "",
+      reviewed: /revisada/i.test(plain),
+      publishedAt: published && !Number.isNaN(published.getTime()) ? published.toISOString() : null,
+    };
+    const key = ev.id || ev.occurredAt;
+    if (seen[key]) continue;
+    seen[key] = true;
+    events.push(ev);
+  }
+  events.sort((a, b) => (b.occurredAt || "").localeCompare(a.occurredAt || ""));
+  return events.slice(0, SIS_MAX);
+}
+
+function sisWhen(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  const now = new Date();
+  const same = sisDay.format(d) === sisDay.format(now);
+  return (same ? "hoy, " : sisDay.format(d) + ", ") + sisClock.format(d);
+}
+function sisMag(n) {
+  return (Number(n).toLocaleString("es-CR", { minimumFractionDigits: 1, maximumFractionDigits: 1 })) + " Mw";
+}
+function sisEvents() {
+  const live = sisLive.events;
+  if (live && live.length) return { events: live.filter((e) => e.felt && String(e.magnitudeType || "Mw").toLowerCase() === "mw").slice(0, SIS_MAX), from: sisLive.from, at: sisLive.fetchedAt, err: sisLive.err };
+  const snap = state.data && state.data.sismos;
+  const evs = (snap && Array.isArray(snap.events)) ? snap.events : [];
+  return { events: evs.filter((e) => e.felt && String(e.magnitudeType || "Mw").toLowerCase() === "mw").slice(0, SIS_MAX), from: "snapshot", at: snap && snap.fetchedAt, err: sisLive.err || (snap && snap.stale) };
+}
+
+function sisLink(text, href, cls) {
+  const a = el("a", cls || null, text);
+  setHref(a, href);
+  a.target = "_blank";
+  a.rel = "noopener";
+  return a;
+}
+
+function sisRow(ev, cls) {
+  const li = el(cls === "sis-latest" ? "div" : "li", cls || "sis-item");
+  const mag = el("span", "sis-mag", ev.magnitude != null ? sisMag(ev.magnitude) : "");
+  const time = el("span", "sis-time", sisWhen(ev.occurredLocal || ev.occurredAt));
+  const head = el("p", "sis-head");
+  head.append(mag, " · ", time);
+  li.append(head);
+  const place = ev.location || "";
+  const depth = ev.depthKm != null ? ev.depthKm.toLocaleString("es-CR") + " km de profundidad" : "";
+  if (place || depth) li.append(el("p", "sis-place", [place, depth].filter(Boolean).join(" · ")));
+  if (ev.feltIn) li.append(el("p", "sis-felt", "Sentido en " + ev.feltIn));
+  if (ev.url) li.append(sisLink("Informe de la RSN ↗", ev.url, "sis-rep"));
+  return li;
+}
+
+function renderSismos() {
+  const box = document.getElementById("sis");
+  if (!box) return;
+  const open = !!(box.querySelector("details.sis-more") && box.querySelector("details.sis-more").open);
+  const info = sisEvents();
+  const evs = info.events;
+  box.innerHTML = "";
+  if (!evs.length) {
+    if (!info.err && !info.at) { box.hidden = true; return; }
+    box.hidden = false;
+    box.append(el("p", "sis-kicker", "Sismos"));
+    box.append(el("p", "sis-empty", info.err ? "Sin conexión con la RSN por ahora." : "No hay sismos sentidos recientes de la RSN."));
+    if (info.at) box.append(el("p", "sis-credit", "Última foto: " + rel(info.at) + " (" + fmt(info.at) + ")."));
+    box.append(sisLink("Últimos sismos en la RSN ↗", SIS_LIST, "sis-rep"));
+    return;
+  }
+  box.hidden = false;
+  const latest = evs[0];
+  box.append(el("p", "sis-kicker", "Sismos"));
+  box.append(sisRow(latest, "sis-latest"));
+  const more = evs.slice(1);
+  if (more.length) {
+    const det = el("details", "sis-more");
+    if (open) det.open = true;
+    det.append(el("summary", null, "Más sismos (" + more.length + ")"));
+    const ol = el("ol", "sis-list");
+    more.forEach((e) => ol.append(sisRow(e)));
+    det.append(ol);
+    box.append(det);
+  }
+  const credit = el("p", "sis-credit");
+  let stamp = info.at ? ((info.from === "live" && !info.err ? "Actualizado " : "Foto de ") + rel(info.at)) : "";
+  if (info.err && evs.length) stamp = (stamp ? stamp + " · " : "") + "sin conexión con la RSN";
+  credit.append(stamp ? stamp + ". " : "");
+  const src = sisLink("RSN (UCR-ICE)", SIS_LIST);
+  src.title = "Red Sismológica Nacional (UCR-ICE)";
+  credit.append("Datos: ", src, ".");
+
+  box.append(credit);
+}
+
+async function sisRefresh() {
+  const ctl = new AbortController();
+  const t = setTimeout(() => ctl.abort(), 20000);
+  try {
+    const r = await fetch(SIS_FEED, { cache: "no-store", signal: ctl.signal });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const evs = sisParseRss(await r.text());
+    sisLive.events = evs;
+    sisLive.fetchedAt = new Date().toISOString();
+    sisLive.err = null;
+    sisLive.from = "live";
+  } catch (e) {
+    sisLive.err = e;
+  } finally {
+    clearTimeout(t);
+  }
+  renderSismos();
+}
+
+function sisStartRefresh() {
+  renderSismos();
+  sisRefresh();
+  if (sisStartRefresh.timer) clearInterval(sisStartRefresh.timer);
+  sisStartRefresh.timer = setInterval(() => {
+    if (typeof document !== "undefined" && document.hidden) return;
+    sisRefresh();
+  }, SIS_REFRESH_MS);
+}
+
 fetch("noticias.json?t=" + Date.now(), { cache: "no-store" })
   .then((r) => {
     if (!r.ok) throw new Error("HTTP " + r.status);
@@ -1136,6 +1374,7 @@ fetch("noticias.json?t=" + Date.now(), { cache: "no-store" })
     renderSchedule(data);
     renderFx(data);
     if (secciones) document.getElementById("fx").hidden = true;   // el cuadro completo vive en Dinero
+    sisStartRefresh();
     renderTabs();
     renderList();
     if (state.cat === "deportes") spRefresh(state.sportSel, false);
@@ -1144,4 +1383,5 @@ fetch("noticias.json?t=" + Date.now(), { cache: "no-store" })
   })
   .catch(() => {
     document.getElementById("schedule").textContent = "No se pudo leer noticias.json.";
+    sisStartRefresh();
   });
