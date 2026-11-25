@@ -1,8 +1,9 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    Estructura de 6 secciones: Hoy · Costa Rica · Mundo · Dinero · Deportes · Avances
    (plan 2026-11-17-estructura-pestanas.md; base: boceto local d5a00dd).
-   Se carga DESPUÉS de app.js. app.js llama a secRenderTabs/secRenderList cuando window.SEC_ON (datos con «section»);
-   con un noticias.json viejo sigue la app de pestañas de siempre.
+   Se carga DESPUÉS de app.js (usa state). app.js espera a este archivo antes de pintar;
+   si el json llegó antes, al final se llama a applyNews. Con un noticias.json viejo (sin «section»)
+   sigue la app de pestañas de siempre.
    Usa los campos que ya calcula actualizar.py: section, facets, alsoIn, tone, conflict, twoOutlets,
    confirmed, dev; y la portada «home». Las categorías viejas siguen en noticias.json (app Android).
    Sin Modo calma y sin notificaciones: Conflictos, Sucesos y las historias sensibles van abiertos y completos.
@@ -453,3 +454,6 @@ function seccionesInit(data) {
   if (q.get("f")) B.secFilter[state.cat] = q.get("f");
   return true;
 }
+
+// Si noticias.json se pintó antes de que este archivo se ejecutara, pasamos a 6 secciones.
+if (state.data && !window.SEC_ON && typeof applyNews === "function") applyNews(state.data);
