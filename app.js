@@ -1362,6 +1362,50 @@ function sisStartRefresh() {
   }, SIS_REFRESH_MS);
 }
 
+// Pinta la app cuando ya hay datos. Se puede llamar otra vez si secciones.js
+// llegó después del json (carrera de carga): entonces pasa de 11 pestañas a 6 secciones.
+function applyNews(data) {
+  state.data = data;
+  const alreadySec = !!window.SEC_ON;
+  const secciones = typeof seccionesInit === "function" && seccionesInit(data);
+  if (alreadySec && secciones) return;   // ya estamos en la vista de 6 secciones
+  if (!secciones && !data.categories.some((c) => c.id === state.cat)) state.cat = data.categories[0].id;
+  renderSchedule(data);
+  renderFx(data);
+  if (secciones) document.getElementById("fx").hidden = true;   // el cuadro completo vive en Dinero
+  sisStartRefresh();
+  renderTabs();
+  renderList();
+  if (state.cat === "deportes") spRefresh(state.sportSel, false);
+  renderFoot(data);
+  if (!applyNews.tourStarted && window.NoticiasTour) {
+    applyNews.tourStarted = true;
+    window.NoticiasTour.maybeStart();
+  }
+}
+
+// secciones.js va después de app.js. Si el json se parsea mientras ese script
+// todavía descarga, esperamos al load/error; si falla, quedan las 11 pestañas.
+function waitForSecciones() {
+  if (typeof seccionesInit === "function") return Promise.resolve(true);
+  const script = document.querySelector('script[src="secciones.js"]')
+    || document.querySelector('script[src^="secciones.js"]');
+  return new Promise((resolve) => {
+    let settled = false;
+    const done = () => {
+      if (settled) return;
+      settled = true;
+      resolve(typeof seccionesInit === "function");
+    };
+    if (script) {
+      script.addEventListener("load", done);
+      script.addEventListener("error", done);
+    }
+    if (typeof seccionesInit === "function") return done();
+    setTimeout(done, 4000);
+  });
+}
+
 fetch("noticias.json?t=" + Date.now(), { cache: "no-store" })
   .then((r) => {
     if (!r.ok) throw new Error("HTTP " + r.status);
@@ -1369,17 +1413,7 @@ fetch("noticias.json?t=" + Date.now(), { cache: "no-store" })
   })
   .then((data) => {
     state.data = data;
-    const secciones = typeof seccionesInit === "function" && seccionesInit(data);
-    if (!secciones && !data.categories.some((c) => c.id === state.cat)) state.cat = data.categories[0].id;
-    renderSchedule(data);
-    renderFx(data);
-    if (secciones) document.getElementById("fx").hidden = true;   // el cuadro completo vive en Dinero
-    sisStartRefresh();
-    renderTabs();
-    renderList();
-    if (state.cat === "deportes") spRefresh(state.sportSel, false);
-    renderFoot(data);
-    if (window.NoticiasTour) window.NoticiasTour.maybeStart();
+    return waitForSecciones().then(() => applyNews(data));
   })
   .catch(() => {
     document.getElementById("schedule").textContent = "No se pudo leer noticias.json.";

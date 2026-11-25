@@ -129,3 +129,73 @@ test("app.js pide el RSS de la RSN cada 5 min y usa setHref en los informes", ()
   assert.doesNotMatch(code, /Notification|serviceWorker|pushManager/);
 });
 
+
+test("app.js espera a secciones.js antes de pintar y expone applyNews para reaplicar", () => {
+  assert.match(appJs, /function applyNews\(data\)/);
+  assert.match(appJs, /function waitForSecciones\(/);
+  assert.match(appJs, /waitForSecciones\(\)\.then\(\(\) => applyNews\(data\)\)/);
+  assert.match(appJs, /script\[src="secciones\.js"\]/);
+  assert.match(appJs, /addEventListener\("load", done\)/);
+  assert.match(appJs, /addEventListener\("error", done\)/);
+  assert.match(appJs, /if \(alreadySec && secciones\) return;/);
+});
+
+test("secciones.js reaplica applyNews si el json llegó antes y SEC_ON sigue en falso", () => {
+  const tail = secJs.trimEnd().split("\n").slice(-3).join("\n");
+  assert.match(secJs, /state\.data && !window\.SEC_ON && typeof applyNews === "function"/);
+  assert.match(tail, /applyNews\(state\.data\);?$/);
+});
+
+// Simula la carrera: el json se «pinta» antes de definir seccionesInit; al cargar
+// secciones.js se llama applyNews y la vista pasa a 6 secciones (no se queda en 11).
+test("carrera de carga: applyNews posterior activa las 6 secciones", () => {
+  const data = {
+    categories: [
+      { id: "buenas", stories: [{ id: "a", section: "avances" }] },
+      { id: "politica", stories: [{ id: "b", section: "mundo" }] },
+    ],
+  };
+  const views = [];
+  let SEC_ON = false;
+  let seccionesInit;
+  function applyNews(payload) {
+    const alreadySec = !!SEC_ON;
+    const secciones = typeof seccionesInit === "function" && seccionesInit(payload);
+    if (alreadySec && secciones) { views.push("skip"); return; }
+    views.push(secciones ? "secciones" : "pestañas");
+  }
+  applyNews(data);
+  assert.deepEqual(views, ["pestañas"]);
+  seccionesInit = (payload) => {
+    if (!payload.categories.some((c) => (c.stories || []).some((s) => s.section))) return false;
+    SEC_ON = true;
+    return true;
+  };
+  if (data && !SEC_ON && typeof applyNews === "function") applyNews(data);
+  assert.equal(SEC_ON, true);
+  assert.deepEqual(views, ["pestañas", "secciones"]);
+  applyNews(data);
+  assert.deepEqual(views, ["pestañas", "secciones", "skip"]);
+});
+
+test("carrera de carga: json viejo sin section se queda en pestañas aunque cargue secciones.js", () => {
+  const data = { categories: [{ id: "buenas", stories: [{ id: "a" }] }] };
+  const views = [];
+  let SEC_ON = false;
+  let seccionesInit;
+  function applyNews(payload) {
+    const alreadySec = !!SEC_ON;
+    const secciones = typeof seccionesInit === "function" && seccionesInit(payload);
+    if (alreadySec && secciones) return;
+    views.push(secciones ? "secciones" : "pestañas");
+  }
+  applyNews(data);
+  seccionesInit = (payload) => {
+    if (!payload.categories.some((c) => (c.stories || []).some((s) => s.section))) return false;
+    SEC_ON = true;
+    return true;
+  };
+  if (data && !SEC_ON && typeof applyNews === "function") applyNews(data);
+  assert.equal(SEC_ON, false);
+  assert.deepEqual(views, ["pestañas", "pestañas"]);
+});
